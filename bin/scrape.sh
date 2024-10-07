@@ -31,3 +31,5 @@ curl_try_all "https://open-services.net/ns/config/shapes/1.0/" "oslc/config-shap
 curl_try_all "https://open-services.net/ns/core/trs" "oslc/trs-vocab"
 curl_try_all "https://open-services.net/ns/core/trspatch" "oslc/trspatch-vocab"
 curl_try_all "https://open-services.net/ns/trs/shapes/3.0/" "oslc/trs-shapes"
+
+curl_try_all "http://www.w3.org/ns/ldp" "w3c/ldp"
