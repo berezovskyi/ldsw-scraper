@@ -92,7 +92,7 @@ curl_try_all "http://purl.org/dc/terms/" "dc/terms"
 # TODO: handle /-ending vocab without #
 # returns HTML incorrectly
 # curl_try_all "http://purl.org/vocab/vann/" "x/vann"
-curl_try_exact "https://purl.org/vocab/vann/vann-vocab-20100607.rdf" "x-vann/vann-vocab.rdf" "application/rdf+xml"
+curl_try_exact "https://purl.org/vocab/vann/vann-vocab-20100607.rdf" "vann/vann-vocab.rdf" "application/rdf+xml"
 
 
 curl_try_all "http://www.w3.org/1999/02/22-rdf-syntax-ns" "w3c/rdf"
