@@ -19,6 +19,9 @@ jobs:
         # "Accept: text/turtle, application/trig, application/rdf+xml;q=0.9, application/ld+json;q=0.9, application/n-triples;q=0.5, application/n-quads;q=0.5"
         mkdir -p data/o/oslc/
         curl "https://open-services.net/ns/core" --header "Accept: text/turtle" > data/o/oslc/core-vocab.ttl
+        curl "https://open-services.net/ns/core" --header "Accept: application/rdf+xml, application/xml;q=0.1" > data/o/oslc/core-vocab.rdf
+        curl "https://open-services.net/ns/core" --header "Accept: application/n-triples" > data/o/oslc/core-vocab.nt
+      
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
