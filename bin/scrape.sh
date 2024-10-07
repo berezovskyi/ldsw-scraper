@@ -22,14 +22,8 @@ function curl_try_all() {
    curl "$uri" --header "Accept: application/ld+json" $CURLOPT >"${outpath}.jsonld" || rm "${outpath}.jsonld"
 }
 
-mkdir -p data/o/oslc/
 curl_try_all "https://open-services.net/ns/core" "oslc/core-vocab"
-# curl "https://open-services.net/ns/core" --header "Accept: text/turtle" $CURLOPT >data/o/oslc/core-vocab.ttl
-# curl "https://open-services.net/ns/core" --header "Accept: application/rdf+xml, application/xml;q=0.1" $CURLOPT >data/o/oslc/core-vocab.rdf
-# curl "https://open-services.net/ns/core" --header "Accept: application/n-triples" $CURLOPT >data/o/oslc/core-vocab.nt
-# curl "https://open-services.net/ns/core" --header "Accept: application/n-quads" $CURLOPT >data/o/oslc/core-vocab.nq
-
 curl_try_all "https://open-services.net/ns/core/shapes/3.0" "oslc/core-shapes"
-# curl "https://open-services.net/ns/core/shapes/3.0" --header "Accept: text/turtle" $CURLOPT >data/o/oslc/core-shapes.ttl
-# curl "https://open-services.net/ns/core/shapes/3.0" --header "Accept: application/rdf+xml, application/xml;q=0.1" $CURLOPT >data/o/oslc/core-shapes.rdf
-# curl "https://open-services.net/ns/core/shapes/3.0" --header "Accept: application/n-triples" $CURLOPT >data/o/oslc/core-shapes.nt
+
+curl_try_all "https://open-services.net/ns/config" "oslc/config-vocab"
+curl_try_all "https://open-services.net/ns/config/shapes/3.0" "oslc/config-shapes"
