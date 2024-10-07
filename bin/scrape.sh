@@ -27,3 +27,6 @@ curl_try_all "https://open-services.net/ns/core/shapes/3.0" "oslc/core-shapes"
 
 curl_try_all "https://open-services.net/ns/config" "oslc/config-vocab"
 curl_try_all "https://open-services.net/ns/config/shapes/1.0/" "oslc/config-shapes"
+
+curl_try_all "https://open-services.net/ns/trs" "oslc/trs-vocab"
+curl_try_all "https://open-services.net/ns/trs/shapes/3.0/" "oslc/trs-shapes"
