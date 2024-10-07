@@ -16,9 +16,9 @@ function curl_try_all() {
 
    curl "$uri" --header "Accept: text/turtle" $CURLOPT > "${outpath}.ttl" || rm "${outpath}.ttl"
    curl "$uri" --header "Accept: application/rdf+xml, application/xml;q=0.1" $CURLOPT "${outpath}.rdf" || rm "${outpath}.rdf"
-   curl "$uri" --header "Accept: application/n-triples" $CURLOPT >"${outpath}.nt" || "${outpath}.nt"
-   curl "$uri" --header "Accept: application/n-quads" $CURLOPT >"${outpath}.nq" || "${outpath}.nq"
-   curl "$uri" --header "Accept: application/trig" $CURLOPT >"${outpath}.trig" || "${outpath}.trig"
+   curl "$uri" --header "Accept: application/n-triples" $CURLOPT >"${outpath}.nt" || rm "${outpath}.nt"
+   curl "$uri" --header "Accept: application/n-quads" $CURLOPT >"${outpath}.nq" || rm "${outpath}.nq"
+   curl "$uri" --header "Accept: application/trig" $CURLOPT >"${outpath}.trig" || rm "${outpath}.trig"
 }
 
 mkdir -p data/o/oslc/
