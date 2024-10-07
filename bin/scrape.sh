@@ -9,6 +9,7 @@ mkdir -p data/o/oslc/
 curl "https://open-services.net/ns/core" --header "Accept: text/turtle" $CURLOPT > data/o/oslc/core-vocab.ttl
 curl "https://open-services.net/ns/core" --header "Accept: application/rdf+xml, application/xml;q=0.1" $CURLOPT > data/o/oslc/core-vocab.rdf
 curl "https://open-services.net/ns/core" --header "Accept: application/n-triples" $CURLOPT > data/o/oslc/core-vocab.nt
+curl "https://open-services.net/ns/core" --header "Accept: application/n-quads" $CURLOPT > data/o/oslc/core-vocab.nq
 
 curl "https://open-services.net/ns/core/shapes/3.0" --header "Accept: text/turtle" $CURLOPT > data/o/oslc/core-shapes.ttl
 curl "https://open-services.net/ns/core/shapes/3.0" --header "Accept: application/rdf+xml, application/xml;q=0.1" $CURLOPT > data/o/oslc/core-shapes.rdf
