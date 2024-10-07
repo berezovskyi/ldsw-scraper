@@ -70,10 +70,11 @@ function curl_try_exact() {
    delete_if_html "${outpath}"
 }
 
-# TODO: handle /-ending vocab without #
-# returns HTML incorrectly
-# curl_try_all "http://purl.org/vocab/vann/" "x/vann"
-curl_try_exact "https://purl.org/vocab/vann/vann-vocab-20100607.rdf" "x-vann/vann-vocab.rdf" "application/rdf+xml"
+
+curl_try_all "http://semweb.mmlab.be/ns/rml" "rml/rml-vocab"
+curl_try_all "http://semweb.mmlab.be/ns/rml-target" "rml/rmlt-vocab"
+curl_try_all "http://semweb.mmlab.be/ns/ql" "rml/ql-vocab"
+curl_try_all "http://www.w3.org/ns/r2rml" "rml/r2rml-vocab"
 
 curl_try_all "https://open-services.net/ns/config" "oslc/config-vocab"
 curl_try_all "https://open-services.net/ns/config/shapes/1.0/" "oslc/config-shapes"
@@ -87,3 +88,12 @@ curl_try_all "https://open-services.net/ns/core/shapes/3.0" "oslc/core-shapes"
 
 curl_try_all "http://www.w3.org/ns/ldp" "w3c/ldp"
 curl_try_all "http://purl.org/dc/terms/" "dc/terms"
+
+# TODO: handle /-ending vocab without #
+# returns HTML incorrectly
+# curl_try_all "http://purl.org/vocab/vann/" "x/vann"
+curl_try_exact "https://purl.org/vocab/vann/vann-vocab-20100607.rdf" "x-vann/vann-vocab.rdf" "application/rdf+xml"
+
+
+curl_try_all "http://www.w3.org/1999/02/22-rdf-syntax-ns" "w3c/rdf"
+curl_try_all "http://www.w3.org/2000/01/rdf-schema" "w3c/rdfs"
