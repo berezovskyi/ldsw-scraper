@@ -70,6 +70,10 @@ function curl_try_exact() {
    delete_if_html "${outpath}"
 }
 
+# bad conneg
+# curl_try_all "http://www.w3.org/2004/02/skos/core" "skos/skos-core"
+curl_try_exact "http://www.w3.org/2004/02/skos/core" "skos/skos-core.rdf" "application/rdf+xml"
+
 curl_try_all "http://semweb.mmlab.be/ns/rml" "rml/rml-vocab"
 curl_try_all "http://semweb.mmlab.be/ns/rml-target" "rml/rmlt-vocab"
 curl_try_all "http://semweb.mmlab.be/ns/ql" "rml/ql-vocab"
