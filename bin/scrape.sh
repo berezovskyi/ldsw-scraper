@@ -19,6 +19,7 @@ function curl_try_all() {
    curl "$uri" --header "Accept: application/n-triples" $CURLOPT >"${outpath}.nt" || rm "${outpath}.nt"
    curl "$uri" --header "Accept: application/n-quads" $CURLOPT >"${outpath}.nq" || rm "${outpath}.nq"
    curl "$uri" --header "Accept: application/trig" $CURLOPT >"${outpath}.trig" || rm "${outpath}.trig"
+   curl "$uri" --header "Accept: application/ld+json" $CURLOPT >"${outpath}.jsonld" || rm "${outpath}.jsonld"
 }
 
 mkdir -p data/o/oslc/
