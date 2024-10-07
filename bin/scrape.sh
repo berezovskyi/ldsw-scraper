@@ -34,22 +34,22 @@ function curl_try_all() {
 
    echo -e "\nFetching ${path}"
 
-   echo -e -n "\tTurtle   "
+   echo -e -n "\tTurtle\t"
    { curl "$uri" --header "Accept: text/turtle" $CURLOPT >"${outpath}.ttl" && echo "✅"; } || { rm "${outpath}.ttl"; }
    delete_if_html "${outpath}.ttl"
-   echo -e -n "\tRDF/XML   "
+   echo -e -n "\tRDF/XML\t"
    { curl "$uri" --header "Accept: application/rdf+xml, application/xml;q=0.1" $CURLOPT >"${outpath}.rdf" && echo "✅"; } || { rm "${outpath}.rdf"; }
    delete_if_html "${outpath}.rdf"
-   echo -e -n "\tN-Triples   "
+   echo -e -n "\tN-Triples\t"
    { curl "$uri" --header "Accept: application/n-triples" $CURLOPT >"${outpath}.nt" && echo "✅"; } || { rm "${outpath}.nt"; }
    delete_if_html "${outpath}.nt"
-   echo -e -n "\tN-Quads   "
+   echo -e -n "\tN-Quads\t"
    { curl "$uri" --header "Accept: application/n-quads" $CURLOPT >"${outpath}.nq" && echo "✅"; } || { rm "${outpath}.nq"; }
    delete_if_html "${outpath}.nq"
-   echo -e -n "\tTriG   "
+   echo -e -n "\tTriG\t"
    { curl "$uri" --header "Accept: application/trig" $CURLOPT >"${outpath}.trig" && echo "✅"; } || { rm "${outpath}.trig"; }
    delete_if_html "${outpath}.trig"
-   echo -e -n "\tJSON-LD   "
+   echo -e -n "\tJSON-LD\t"
    { curl "$uri" --header "Accept: application/ld+json" $CURLOPT >"${outpath}.jsonld" && echo "✅"; } || { rm "${outpath}.jsonld"; }
    delete_if_html "${outpath}.jsonld"
 }
@@ -65,7 +65,7 @@ function curl_try_exact() {
 
    echo -e "\nFetching ${path}"
 
-   echo -e -n "\t${accept}   "
+   echo -e -n "\t${accept}\t"
    { curl "$uri" --header "Accept: ${accept}" $CURLOPT >"${outpath}" && echo "✅"; } || { rm "${outpath}"; }
    delete_if_html "${outpath}"
 }
@@ -78,6 +78,10 @@ curl_try_all "http://semweb.mmlab.be/ns/rml" "rml/rml-vocab"
 curl_try_all "http://semweb.mmlab.be/ns/rml-target" "rml/rmlt-vocab"
 curl_try_all "http://semweb.mmlab.be/ns/ql" "rml/ql-vocab"
 curl_try_all "http://www.w3.org/ns/r2rml" "rml/r2rml-vocab"
+
+curl_try_all "http://open-services.net/ns/sysmlv2" "oslc/sysmlv2-vocab"
+# curl_try_all "http://open-services.net/ns/sysmlv2/shapes/" "oslc/sysmlv2-shapes"
+curl_try_all "http://open-services.net/ns/sysmlv2/shapes/20240801" "oslc/sysmlv2-shapes"
 
 curl_try_all "https://open-services.net/ns/config" "oslc/config-vocab"
 curl_try_all "https://open-services.net/ns/config/shapes/1.0/" "oslc/config-shapes"
