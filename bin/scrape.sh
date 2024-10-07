@@ -12,14 +12,14 @@ function delete_if_html() {
    mime_type=$(file --mime-type "$file_path" | awk '{print $2}')
 
    # Check if the MIME type is text/html
-   if [ "$mime_type" = "text/html" ]; then
+   if [ "$mime_type" = "text/html" ] || [ "$mime_type" = "text/xml" ]; then
       # Additional check for common HTML tags in the first 5 lines
-      if head -n 5 "$file_path" | grep -q "<html>" || head -n 5 "$file_path" | grep -q "<!DOCTYPE html>"; then
+      if head -n 5 "$file_path" | grep -q "<html" || head -n 5 "$file_path" | grep -q "<!DOCTYPE html"; then
          # Delete the file
          rm "$file_path"
-         echo "File $file_path has been deleted because its MIME type is text/html and it contains HTML tags in the first 5 lines."
+         echo "File $file_path has been deleted because its MIME type is text/html or text/xml and it contains HTML tags in the first 5 lines."
       else
-         echo "File $file_path has a MIME type of text/html but does not contain common HTML tags in the first 5 lines. It will not be deleted."
+         echo "File $file_path has a MIME type of text/html or text/xml but does not contain common HTML tags in the first 5 lines. It will not be deleted."
       fi
    fi
 }
@@ -70,7 +70,6 @@ function curl_try_exact() {
    delete_if_html "${outpath}"
 }
 
-
 curl_try_all "http://semweb.mmlab.be/ns/rml" "rml/rml-vocab"
 curl_try_all "http://semweb.mmlab.be/ns/rml-target" "rml/rmlt-vocab"
 curl_try_all "http://semweb.mmlab.be/ns/ql" "rml/ql-vocab"
@@ -94,6 +93,8 @@ curl_try_all "http://purl.org/dc/terms/" "dc/terms"
 # curl_try_all "http://purl.org/vocab/vann/" "x/vann"
 curl_try_exact "https://purl.org/vocab/vann/vann-vocab-20100607.rdf" "vann/vann-vocab.rdf" "application/rdf+xml"
 
+curl_try_all "http://xmlns.com/foaf/0.1/" "foaf/foaf"
+# curl_try_single "http://xmlns.com/foaf/spec/index.rdf" "foaf/foaf"
 
 curl_try_all "http://www.w3.org/1999/02/22-rdf-syntax-ns" "w3c/rdf"
 curl_try_all "http://www.w3.org/2000/01/rdf-schema" "w3c/rdfs"
