@@ -4,7 +4,7 @@ set -uo pipefail
 # set -x
 
 # "Accept: text/turtle, application/trig, application/rdf+xml;q=0.9, application/ld+json;q=0.9, application/n-triples;q=0.5, application/n-quads;q=0.5"
-CURLOPT="-L"
+CURLOPT="-L --fail"
 
 function curl_try_all() {
    uri="$1"
