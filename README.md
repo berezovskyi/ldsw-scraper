@@ -1,2 +1,3 @@
 # ldsw-scraper
-Keep a record or linked data / semweb TBox definitions updates
+
+Keep a record of Linked Data / semweb TBox definitions updates.
