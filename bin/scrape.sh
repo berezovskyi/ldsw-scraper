@@ -6,6 +6,11 @@ set -uo pipefail
 # "Accept: text/turtle, application/trig, application/rdf+xml;q=0.9, application/ld+json;q=0.9, application/n-triples;q=0.5, application/n-quads;q=0.5"
 CURLOPT="-L --fail --silent --show-error"
 
+function sleep_ci() {
+   # we are not in a rush
+   if [ -z ${var+x} ]; then sleep 3; fi
+}
+
 function delete_if_html() {
    file_path="$1"
 
@@ -89,7 +94,57 @@ function curl_try_shex() {
    delete_if_html "${outpath}.shex"
 }
 
+curl_try_all 'http://jazz.net/ns/dcs#' 'oslc/jazz/dcs'
+curl_try_all 'http://jazz.net/ns/mec#' 'oslc/jazz/mec'
+curl_try_all 'http://jazz.net/ns/enterprise_agile#' 'oslc/jazz/enterprise_agile'
+curl_try_all 'http://jazz.net/ns/functional_safety#' 'oslc/jazz/functional_safety'
+curl_try_all 'http://jazz.net/ns/aspice#' 'oslc/jazz/aspice'
+curl_try_all 'http://jazz.net/ns/discovery#' 'oslc/jazz/discovery'
+curl_try_all 'http://jazz.net/ns/sse#' 'oslc/jazz/sse'
+curl_try_all 'http://jazz.net/ns/process/shapes/Iteration' 'oslc/jazz/process_shapes_Iteration'
+curl_try_all 'http://jazz.net/ns/process#' 'oslc/jazz/process'
+curl_try_all 'http://jazz.net/ns/process/shapes/ProjectArea' 'oslc/jazz/process_shapes_ProjectArea'
+curl_try_all 'http://jazz.net/ns/process/shapes/TeamArea' 'oslc/jazz/process_shapes_TeamArea'
+curl_try_all 'http://jazz.net/ns/process/shapes/Timeline' 'oslc/jazz/process_shapes_Timeline'
+curl_try_all 'http://jazz.net/ns/validity#' 'oslc/jazz/validity'
+curl_try_all 'http://jazz.net/ns/ccm#' 'oslc/jazz/ccm'
+curl_try_all 'http://jazz.net/ns/dm/diagram#' 'oslc/jazz/dm_diagram'
+curl_try_all 'http://jazz.net/ns/dm/document#' 'oslc/jazz/dm_document'
+curl_try_all 'http://jazz.net/ns/dm/linktypes#' 'oslc/jazz/dm_linktypes'
+curl_try_all 'http://jazz.net/ns/dm/sketcher#' 'oslc/jazz/dm_sketcher'
+curl_try_all 'http://jazz.net/ns/pd/extensions#' 'oslc/jazz/pd_extensions'
+curl_try_all 'http://jazz.net/ns/psm/focalpoint/datatypes#' 'oslc/jazz/psm_focalpoint_datatypes'
+curl_try_all 'http://jazz.net/ns/psm/focalpoint#' 'oslc/jazz/psm_focalpoint'
+curl_try_all 'http://jazz.net/ns/pd#' 'oslc/jazz/pd'
+curl_try_all 'http://jazz.net/ns/qm/rqm#' 'oslc/jazz/qm_rqm'
+curl_try_all 'http://jazz.net/ns/rm/linktypes#' 'oslc/jazz/rm_linktypes'
+curl_try_all 'http://jazz.net/ns/rm#' 'oslc/jazz/rm'
+curl_try_all 'http://jazz.net/ns/dm/rhapsody/sysml#' 'oslc/jazz/dm_rhapsody_sysml'
+curl_try_all 'http://jazz.net/ns/dm/rhapsody/testing#' 'oslc/jazz/dm_rhapsody_testing'
+curl_try_all 'http://jazz.net/ns/dm/rhapsody/uml#' 'oslc/jazz/dm_rhapsody_uml'
+curl_try_all 'http://jazz.net/ns/dm/rsa/deployment/core#' 'oslc/jazz/dm_rsa_deployment_core'
+curl_try_all 'http://jazz.net/ns/dm/rsa/uml#' 'oslc/jazz/dm_rsa_uml'
+curl_try_all 'http://jazz.net/ns/reporting/sparqlgateway#' 'oslc/jazz/reporting_sparqlgateway'
+curl_try_all 'http://jazz.net/ns/rtc/scm/config#' 'oslc/jazz/rtc_scm_config'
+curl_try_all 'http://jazz.net/ns/qm/rtcp#' 'oslc/jazz/qm_rtcp'
+curl_try_all 'http://jazz.net/ns/reporting/data/dictionary#' 'oslc/jazz/reporting_data_dictionary'
+curl_try_all 'http://jazz.net/ns/am/rmm#' 'oslc/jazz/am_rmm'
+curl_try_all 'http://jazz.net/ns/scm#' 'oslc/jazz/scm'
+curl_try_all 'http://jazz.net/ns/dm/rhapsody/HarmonySE#' 'oslc/jazz/dm_rhapsody_HarmonySE'
+curl_try_all 'http://jazz.net/ns/qm/rqm/labmanagement#' 'oslc/jazz/qm_rqm_labmanagement'
+curl_try_all 'http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#' 'oslc/jazz/dm_rhapsody_UPDM2_MODAF'
+curl_try_all 'http://jazz.net/ns/ism/admin/health#' 'oslc/jazz/ism_admin_health'
+curl_try_all 'http://jazz.net/ns/ism/admin#' 'oslc/jazz/ism_admin'
+curl_try_all 'http://jazz.net/ns/ism/perfmon/tt#' 'oslc/jazz/ism_perfmon_tt'
+curl_try_all 'http://jazz.net/ns/ism/perfmon/itm#' 'oslc/jazz/ism_perfmon_itm'
+curl_try_all 'http://jazz.net/ns/ism/event/omnibus#' 'oslc/jazz/ism_event_omnibus'
+curl_try_all 'http://jazz.net/ns/ism/event/omnibus/itnm#' 'oslc/jazz/ism_event_omnibus_itnm'
+curl_try_all 'http://jazz.net/ns/ism/event/omnibus/misc#' 'oslc/jazz/ism_event_omnibus_misc'
+curl_try_all 'http://jazz.net/ns/ism/event/omnibus/tbsm#' 'oslc/jazz/ism_event_omnibus_tbsm'
+curl_try_all 'http://jazz.net/ns/ism/registry#' 'oslc/jazz/ism_registry'
+
 curl_try_all "http://www.w3.org/ns/csvw" "w3c/CVSW/csvw"
+
 # apparently, LDN spec added a prop to LDP
 curl_try_all "https://www.w3.org/ns/ldp" "w3c/LDP/ldp"
 
