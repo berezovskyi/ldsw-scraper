@@ -1,0 +1,486 @@
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> <http://www.w3.org/2000/01/rdf-schema#label> "Standard" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> <http://www.w3.org/2000/01/rdf-schema#comment> "A Standard is 'Any norm, convention or requirement' (Wikipedia).  In PLM RDL, the typical standard is a Technical Standard and should be classified as such." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006771> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-001 Information Item Category" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004040> <http://www.w3.org/2000/01/rdf-schema#label> "Estimated Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004040> <http://www.w3.org/2000/01/rdf-schema#comment> "An Estimated datum originates in an analysis of expected behaviour of the relevant quantity, typically with significant uncertainty." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004040> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003560> <http://www.w3.org/2000/01/rdf-schema#label> "non-SI unit of measure" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003560> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/Scale> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003560> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006769> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-DP-002 Structural Facility Elements" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006769> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006769> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004038> <http://www.w3.org/2000/01/rdf-schema#label> "Calculated Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004038> <http://www.w3.org/2000/01/rdf-schema#comment> "A Calculated datum is an output value of a simulation or similar model of behaviour of the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004038> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545> <http://www.w3.org/2000/01/rdf-schema#label> "is specified magnitude of" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a magnitude to the physical quantity of which it is a specification" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004923> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004923> <http://www.w3.org/2000/01/rdf-schema#label> "ISA-5.1 identifier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004923> <http://www.w3.org/2000/01/rdf-schema#comment> "Symbol reference in ISA-5.1 given in Z004" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004923> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003558> <http://www.w3.org/2000/01/rdf-schema#label> "SI derived unit" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003558> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003558> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005608> <http://www.w3.org/2000/01/rdf-schema#label> "minCarbonAtoms" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005608> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum (inclusive) number of carbon atoms in the chemical composistion represented by this datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005608> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005608> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005608> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004908> <http://www.w3.org/2000/01/rdf-schema#label> "Document" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004908> <http://www.w3.org/2000/01/rdf-schema#comment> "A document." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004908> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004908> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-7167-7321> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://www.w3.org/2002/07/owl#imports> <http://rds.posccaesar.org/ontology/lis14/ont/core> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/dc/elements/1.1/description> "Core ontology for PLM RDL." .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/dc/terms/modified> "2022-09-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/dc/elements/1.1/title> "core" .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://www.w3.org/2000/01/rdf-schema#label> "core" .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://www.w3.org/2000/01/rdf-schema#comment> "Core ontology for PLM RDL." .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/pav/hasPreviousVersion> <http://rds.posccaesar.org/ontology/plm/ont/core/0.9.0> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://rdfs.org/ns/void#exampleResource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://www.w3.org/2004/02/skos/core#changeNote> "Moved definitions from core to chebi/uom" .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/JSON-LD> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://www.w3.org/2002/07/owl#versionIRI> <http://rds.posccaesar.org/ontology/plm/ont/core/0.9.1> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://xmlns.com/foaf/0.1/homepage> <http://rds.posccaesar.org/ontology/plm/doc/core> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://www.w3.org/2002/07/owl#versionInfo> "0.9.1" .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://rdfs.org/ns/void#sparqlEndpoint> <https://rds.posccaesar.org/ontology/sparql> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/vocab/vann/preferredNamespacePrefix> "rdl" .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://rds.posccaesar.org/ontology/plm/rdl/> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://ns.ottr.xyz/0.4/status> <http://ns.ottr.xyz/0.4/incomplete> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/dc/terms/publisher> <http://www.posccaesar.org/> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/pav/lastUpdateOn> "2022-09-26T23:40:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/OWL_Manchester> .
+<http://rds.posccaesar.org/ontology/plm/ont/core> <http://purl.org/dc/terms/issued> "2022-01-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006763> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006767> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006763> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006763> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-001 rationale" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006763> <http://www.w3.org/2000/01/rdf-schema#comment> "NORSOK Z-001 rationale for information item type: The function of the information item and/or why it is needed." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006763> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> <http://www.w3.org/2000/01/rdf-schema#label> "Interpreted Quantity Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity datum for which an interpretation of relevance is provided. Classification of a datum in terms of its method of production (origin), type of aggregation, etc., helps clarify why the datum exists and for which purposes it  may be relevant." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504> <http://www.w3.org/2000/01/rdf-schema#label> "datum type of shortcut property" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504> <http://www.w3.org/2000/01/rdf-schema#comment> "Which type of quantification datum is, implicitly, represented by the data property (e.g., Mass Quantity Datum, Length Quantity Datum as subclasses of lis:QuantityDatum)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004045> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004045> <http://www.w3.org/2000/01/rdf-schema#comment> "A Nominal datum represents a conventional (and, in many cases, standardised) magnitude used to classify the relevant artefact." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004045> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003552> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003552> <http://www.w3.org/2000/01/rdf-schema#label> "has no match in scheme" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003552> <http://www.w3.org/2000/01/rdf-schema#comment> "Use this relation to express that the subject concept has no matching concept in the target SKOS scheme." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003552> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602> <http://www.w3.org/2000/01/rdf-schema#label> "IEC CDD RDL entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://cdd.iec.ch/> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602> <http://www.w3.org/2000/01/rdf-schema#comment> "IEC CDD entities have non-informative identifiers, like \"0112/2///61360_4#AAA013\" (\"antenna\")." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the IEC Common Data Dictionary." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/2000/01/rdf-schema#label> "note" .
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/2000/01/rdf-schema#comment> "A general note, for any purpose." .
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003772> <http://www.w3.org/2000/01/rdf-schema#label> "External RDL individual" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003772> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual resource that is part of an external reference data library." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003772> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537> <http://www.w3.org/2000/01/rdf-schema#label> "Specification" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537> <http://www.w3.org/2000/01/rdf-schema#comment> "A Specification is a document that states an explicit set of requirements to be satisfied by a material, design, product, or service." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006770> <http://www.w3.org/2000/01/rdf-schema#label> "ISO/IEC 81355 Information Item" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004928> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004928> <http://www.w3.org/2000/01/rdf-schema#label> "DEXPI P&ID Symbol" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004928> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation to DEXPI symbol for use in P&ID for this artefact" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004928> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a physical quantity to the concept that describes its SI dimension" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/2002/07/owl#inverseOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/representedBy> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004052> <http://www.w3.org/2000/01/rdf-schema#label> "Absolute Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004052> <http://www.w3.org/2000/01/rdf-schema#comment> "An Absolute datum represents a limit magnitude of the relevant quantity, at which operation can only be sustained for a limited time or number of cycles." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004052> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-001 definition" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768> <http://www.w3.org/2000/01/rdf-schema#comment> "NORSOK Z-001 content definition: What the information item is expected to contain." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004037> <http://www.w3.org/2000/01/rdf-schema#label> "Specified Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004037> <http://www.w3.org/2000/01/rdf-schema#comment> "A Specified datum originates in (is prescribed in) a requirement or specification expressing constraints on the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004037> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544> <http://www.w3.org/2000/01/rdf-schema#label> "specified magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a physical quantity to its specified magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544> <http://www.w3.org/2002/07/owl#inverseOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004922> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004922> <http://www.w3.org/2000/01/rdf-schema#label> "Z004 identifier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004922> <http://www.w3.org/2000/01/rdf-schema#comment> "Symbol ID used in Z004" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004922> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme" .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of concepts, optionally including statements about semantic relationships between those concepts." .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003557> <http://www.w3.org/2000/01/rdf-schema#label> "SI base unit" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003557> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003557> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004935> <http://www.w3.org/2000/01/rdf-schema#label> "ChEBI classifier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004935> <http://www.w3.org/2000/01/rdf-schema#comment> "A classifier (type) resource that is part of the ChEBI reference data library." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004935> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004935> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503> <http://www.w3.org/2000/01/rdf-schema#label> "quantification type of shortcut property" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503> <http://www.w3.org/2000/01/rdf-schema#comment> "How values of the data property are, implicitly, obtained (e.g., measured-as, assigned-as-nominal-value, as subproperties of lis:qualityQuantifiedAs)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004044> <http://www.w3.org/2000/01/rdf-schema#label> "Test Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004044> <http://www.w3.org/2000/01/rdf-schema#comment> "A Test datum represents a magnitude of the relevant quantity that is prescribed for, or reported from, test operation." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004044> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551> <http://www.w3.org/2000/01/rdf-schema#label> "is nominal magnitude of" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a magnitude to the physical quantity of which it is a nominal magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730> <http://www.w3.org/2000/01/rdf-schema#label> "dimension of" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from an SI dimension concept to a physical quantity that it describes" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/represents> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/qudt/qudt-public-repo> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771> <http://www.w3.org/2000/01/rdf-schema#label> "QUDT ontology entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the QUDT - Quantities, Units, Dimensions and dataTypes ontology." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://endpoint.dexpi.org/> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://dexpi.org/wp-content/uploads/2020/09/DEXPI-PID-Specification-1.3.pdf#section.3.2.> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/2000/01/rdf-schema#label> "DEXPI model entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://dexpi.org/> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the DEXPI Information Model." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the DEXPI Information Model is a UML entity. Many entities have legacy PCA RDL references. Also available from the DEXPI SPARQL endpoint with URIs like http://sandbox.dexpi.org/informationmodel/AreaIsa95." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003536> <http://www.w3.org/2000/01/rdf-schema#label> "Discipline" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003536> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003536> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004914> <http://www.w3.org/2000/01/rdf-schema#label> "ChEBI ontology entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004914> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.ebi.ac.uk/chebi/> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004914> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the Chemical Entities of Biological Interest (ChEBI) ontology" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/pav/createdBy> <http://www.w3.org/2000/01/rdf-schema#label> "Created by" .
+<http://purl.org/pav/createdBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/pav/> .
+<http://purl.org/pav/createdBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent primary responsible for making the digital artifact or resource representation." .
+<http://purl.org/pav/createdBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "An idea or notion; a unit of thought." .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549> <http://www.w3.org/2000/01/rdf-schema#label> "is rated magnitude of" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a magnitude to the physical quantity of which it is a rating" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927> <http://www.w3.org/2000/01/rdf-schema#label> "P&ID Symbol" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation to symbol for use in P&ID for this artefact" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/List_of_physical_quantities> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728> <http://www.w3.org/2000/01/rdf-schema#label> "SI Physical Dimension" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728> <http://www.w3.org/2000/01/rdf-schema#comment> "A combination of basic physical dimensions, with exponents. Note that the choice and order of letters varies widely among sources. The format used here follows the Wikipedia entry." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510> <http://www.w3.org/2000/01/rdf-schema#label> "default unit of measure" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510> <http://www.w3.org/2000/01/rdf-schema#comment> "For a quantity datum class, pointer to default unit of measure" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004051> <http://www.w3.org/2000/01/rdf-schema#label> "Continuous Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004051> <http://www.w3.org/2000/01/rdf-schema#comment> "A Continuous datum represents a default magnitude of the relevant quantity, during sustained operation within normal variations." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004051> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769> <http://www.w3.org/2000/01/rdf-schema#label> "applicable unit of measure" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769> <http://www.w3.org/2000/01/rdf-schema#comment> "For a quantity datum class, pointer to applicable unit of measure" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/pav/createdOn> <http://www.w3.org/2000/01/rdf-schema#label> "Created on" .
+<http://purl.org/pav/createdOn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/pav/> .
+<http://purl.org/pav/createdOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of creation of the resource representation." .
+<http://purl.org/pav/createdOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006767> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-001 Information Item" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006767> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006767> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036> <http://www.w3.org/2000/01/rdf-schema#label> "Regularity Specified Quantity Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity datum which ..." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003543> <http://www.w3.org/2000/01/rdf-schema#label> "Technical Standard" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003543> <http://www.w3.org/2000/01/rdf-schema#comment> "A technical standard is an established norm or requirement in regard to technical systems. It is usually a formal document that establishes uniform engineering or technical criteria, methods, processes and practices. In contrast, a custom, convention, company product, corporate standard, etc. that becomes generally accepted and dominant is often called a de facto standard. (Wikipedia)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003543> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003543> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004921> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004921> <http://www.w3.org/2000/01/rdf-schema#label> "dexpi identifier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004921> <http://www.w3.org/2000/01/rdf-schema#comment> "Symbol Reference ID to be sent in DEXPI transfer file" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004921> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004049> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004049> <http://www.w3.org/2000/01/rdf-schema#comment> "A Minimum datum represents a minimal magnitude of the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004049> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556> <http://www.w3.org/2000/01/rdf-schema#label> "SI unit" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/Scale> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical Composition Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606> <http://www.w3.org/2000/01/rdf-schema#comment> "A datum characterizing a material composition." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context." .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> <http://www.w3.org/2000/01/rdf-schema#label> "External RDL classifier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> <http://www.w3.org/2000/01/rdf-schema#comment> "A classifier (type) resource that is part of an external reference data library." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919> <http://www.w3.org/2000/01/rdf-schema#label> "Symbol" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919> <http://www.w3.org/2000/01/rdf-schema#comment> " A symbol or icon for use in graphical representations." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502> <http://www.w3.org/2000/01/rdf-schema#label> "quality type of shortcut property" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502> <http://www.w3.org/2000/01/rdf-schema#comment> "Which quality is, implicitly, represented by the data property (e.g., Mass, Length as subclasses of lis:Quality)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004043> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004043> <http://www.w3.org/2000/01/rdf-schema#comment> "An Operating datum represents a magnitude of the relevant quantity prescribed for, or reported from, normal operation." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004043> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550> <http://www.w3.org/2000/01/rdf-schema#label> "nominal magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a physical quantity to its nominal magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550> <http://www.w3.org/2002/07/owl#inverseOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/HajoRijgersberg/OM> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770> <http://www.w3.org/2000/01/rdf-schema#label> "OM ontology entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.foodvoc.org/page/om-2> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the Ontology of units of Measure (OM)." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2000/01/rdf-schema#label> "PCA RDL entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.posccaesar.org/> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2000/01/rdf-schema#comment> "PCA RDL entities have non-informative identifiers, like \"http://data.posccaesar.org/rdl/RDS349874\" (\"AREA\")." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the legacy PCA reference data library." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548> <http://www.w3.org/2000/01/rdf-schema#label> "rated magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a physical quantity to its rated magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548> <http://www.w3.org/2002/07/owl#inverseOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004050> <http://www.w3.org/2000/01/rdf-schema#label> "Actual Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004050> <http://www.w3.org/2000/01/rdf-schema#comment> "An Actual datum represents a singular measured magnitude of the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004050> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006766> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006771> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006766> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006766> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-001 describes structural element" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006766> <http://www.w3.org/2000/01/rdf-schema#comment> "NORSOK Z-001 describes structural element: typical NORSOK Z-DP-002 category of structural element or system that the information item describes." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> <http://www.w3.org/2000/01/rdf-schema#label> "Range Specifying Quantity Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity datum which characterises the range of variation of the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003542> <http://www.w3.org/2000/01/rdf-schema#label> "National Standard" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003542> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard developed by a national standards organization. In general, each country or economy has a single recognized national standards body (NSB). A national standards body is likely the sole member from that economy in ISO; ISO currently has 161 members. National standards bodies usually do not prepare the technical content of standards, which instead is developed by national technical societies. (Wikipedia)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003542> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003542> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920> <http://www.w3.org/2000/01/rdf-schema#label> "P&ID Symbol" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920> <http://www.w3.org/2000/01/rdf-schema#comment> " A symbol for use in piping and instrumentation diagrams." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004048> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004048> <http://www.w3.org/2000/01/rdf-schema#comment> "A Maximum datum represents a maximal magnitude of the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004048> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003555> <http://www.w3.org/2000/01/rdf-schema#label> "SI derived quantity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003555> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003555> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502> <http://www.w3.org/2000/01/rdf-schema#label> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that is part of an external reference data library." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006773> <http://www.w3.org/2000/01/rdf-schema#label> "Z-001 Information Item" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006773> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006773> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> <http://www.w3.org/2000/01/rdf-schema#label> "defining source for shortcut quantification data property" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> <http://www.w3.org/2000/01/rdf-schema#comment> "Pointer from a 'shortcut' data property to quantification related resources that define its meaning" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004042> <http://www.w3.org/2000/01/rdf-schema#label> "Design Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004042> <http://www.w3.org/2000/01/rdf-schema#comment> "A Design datum represents a limit magnitude of the relevant quantity within which full function is expected." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004042> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2000/01/rdf-schema#label> "OntoCAPE ontology entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE entities have informative, local file system identifiers, like \"file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange\" (\"EnthalpyChange\"). For the PLM RDL, we introduce PCA URIs to represent OntoCAPE entities." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the OntoCAPE ontology." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547> <http://www.w3.org/2000/01/rdf-schema#label> "is measured magnitude of" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a magnitude to the physical quantity of which it is a measurement" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006765> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006770> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006765> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006765> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-001 interests stakeholder category" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006765> <http://www.w3.org/2000/01/rdf-schema#comment> "NORSOK Z-001 interests stakeholder category: typical CFIHOS discipline code of stakeholder with interest in the information item." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity Datum with specified Scope" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity datum for which the scope to which it applies (design, operations, etc.)  is specified." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003541> <http://www.w3.org/2000/01/rdf-schema#label> "Material Standard" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003541> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard specifying material grades, properties, or manufacturing requirements relevant for product properties." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003541> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003541> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004047> <http://www.w3.org/2000/01/rdf-schema#label> "Average Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004047> <http://www.w3.org/2000/01/rdf-schema#comment> "An Average datum represents an average of a set of magnitudes of the relevant quantity, typically a set of measurements or calculated values." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004047> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003554> <http://www.w3.org/2000/01/rdf-schema#label> "SI base quantity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003554> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003554> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005604> <http://www.w3.org/2000/01/rdf-schema#label> "Material Composition" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005604> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of material." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005604> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/Quality> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005604> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/2000/01/rdf-schema#label> "Collection" .
+<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/2000/01/rdf-schema#comment> "A meaningful collection of concepts." .
+<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject> .
+<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> <http://www.w3.org/2000/01/rdf-schema#label> "External RDL entity collection" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of SKOS concepts from one or more external reference data libraries. Identifiers are URIs, as defined in the external source where provided by the source. Where not, for instance if the external RDL provides only string identifiers, local URIs are introduced to represent each external concept." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Collection> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003539> <http://www.w3.org/2000/01/rdf-schema#label> "Industry Organization Standard" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003539> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard issued by an industry-based standards developing organization." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003539> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003539> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006772> <http://www.w3.org/2000/01/rdf-schema#label> "CFIHOS Discipline" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004041> <http://www.w3.org/2000/01/rdf-schema#label> "Set Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004041> <http://www.w3.org/2000/01/rdf-schema#comment> "A Set datum originates in a configuration, as a fixed magnitude to be maintained for the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004041> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity Class" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001> <http://www.w3.org/2000/01/rdf-schema#label> "CFIHOS RDL entities" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.jip36-cfihos.org> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001> <http://www.w3.org/2000/01/rdf-schema#comment> "CFIHOS entities have non-informative identifiers, like \"CFIHOS-00000003\" (\"AREA\")." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity defined by the CFIHOS reference data library." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004039> <http://www.w3.org/2000/01/rdf-schema#label> "Measured Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004039> <http://www.w3.org/2000/01/rdf-schema#comment> "A Measured datum originates in a monitoring of the relevant quantity." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004039> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546> <http://www.w3.org/2000/01/rdf-schema#label> "measured magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a physical quantity to its measured magnitude" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546> <http://www.w3.org/2000/01/rdf-schema#range> <http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546> <http://www.w3.org/2002/07/owl#inverseOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924> <http://www.w3.org/2000/01/rdf-schema#label> "Symbol identifier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier used for symbols/icons" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003559> <http://www.w3.org/2000/01/rdf-schema#label> "non-SI Quantity Class" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003559> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003559> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005609> <http://www.w3.org/2000/01/rdf-schema#label> "maxCarbonAtoms" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005609> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum (inclusive) number of carbon atoms in the chemical composistion represented by this datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005609> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005609> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005609> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006764> <http://www.w3.org/2000/01/rdf-schema#domain> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006769> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006764> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006764> <http://www.w3.org/2000/01/rdf-schema#label> "NORSOK Z-001 extended definition" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006764> <http://www.w3.org/2000/01/rdf-schema#comment> "NORSOK Z-001 content definition extended: Discipline specific content definition." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity Datum with specified Provenance" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity datum for which the origin is provided: whether the datum is measured, calculated, or provided as part of a specification, etc." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003540> <http://www.w3.org/2000/01/rdf-schema#label> "International Standard" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003540> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard developed by an international standards organization. (Other published standards may well also be used internationally.)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003540> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003540> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505> <http://www.w3.org/2000/01/rdf-schema#label> "unit of measure of shortcut property" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505> <http://www.w3.org/2000/01/rdf-schema#comment> "Which unit of measure applies, implicitly, to values of the data property (e.g., kilogram, millimetre as members of lis:UnitOfMeasure)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004046> <http://www.w3.org/2000/01/rdf-schema#label> "Normal Datum" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004046> <http://www.w3.org/2000/01/rdf-schema#comment> "A Normal datum represents a magnitude of the relevant quantity that is expected or typical for operation." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004046> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553> <http://www.w3.org/2000/01/rdf-schema#label> "SI Quantity Class" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

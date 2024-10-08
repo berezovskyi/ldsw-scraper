@@ -1,0 +1,821 @@
+<http://data.posccaesar.org/rdl/RDS9711287> <http://www.w3.org/2000/01/rdf-schema#label> "CHEMICAL REACTING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9711287> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9711287> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9711287> <http://purl.org/dc/terms/identifier> "RDS9711287" .
+<http://data.posccaesar.org/rdl/RDS9711287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9711287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9693827> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153> <http://www.w3.org/2000/01/rdf-schema#label> "Barring" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153> <http://www.w3.org/2000/01/rdf-schema#comment> "Blocking by obstructing, block up, or shut off by or as if by a barrier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bf3278b93b849f2b27424991ceb18cc8c <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bf3278b93b849f2b27424991ceb18cc8c <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Bf3278b93b849f2b27424991ceb18cc8c <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9693287> .
+_:Bf3278b93b849f2b27424991ceb18cc8c <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bf3278b93b849f2b27424991ceb18cc8c <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137> .
+_:Bf3278b93b849f2b27424991ceb18cc8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://data.posccaesar.org/rdl/RDS9685097> <http://www.w3.org/2000/01/rdf-schema#label> "CONTROLLING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9685097> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9685097> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9685097> <http://purl.org/dc/terms/identifier> "RDS9685097" .
+<http://data.posccaesar.org/rdl/RDS9685097> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9685097> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9653822> <http://www.w3.org/2000/01/rdf-schema#label> "STORING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9653822> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9653822> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9653822> <http://purl.org/dc/terms/identifier> "RDS9653822" .
+<http://data.posccaesar.org/rdl/RDS9653822> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9653822> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9657467> <http://www.w3.org/2000/01/rdf-schema#label> "RECEIVING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9657467> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9657467> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9657467> <http://purl.org/dc/terms/identifier> "RDS9657467" .
+<http://data.posccaesar.org/rdl/RDS9657467> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9657467> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9656792> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138> <http://www.w3.org/2000/01/rdf-schema#label> "Reducing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that reduces size, amount, extent, or number" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B2838feef2737566acb0150a6f736e06c <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B2838feef2737566acb0150a6f736e06c <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B2838feef2737566acb0150a6f736e06c <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> .
+_:B2838feef2737566acb0150a6f736e06c <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B2838feef2737566acb0150a6f736e06c <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> .
+_:B2838feef2737566acb0150a6f736e06c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9684422> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> <http://www.w3.org/2000/01/rdf-schema#label> "Cooling" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#TemperatureChange'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9684422> <http://www.w3.org/2000/01/rdf-schema#label> "COOLING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9684422> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9684422> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9684422> <http://purl.org/dc/terms/identifier> "RDS9684422" .
+<http://data.posccaesar.org/rdl/RDS9684422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9684422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Be1cc264384cab10e9abfa9f276dc7ae1 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Be1cc264384cab10e9abfa9f276dc7ae1 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Be1cc264384cab10e9abfa9f276dc7ae1 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> .
+_:Be1cc264384cab10e9abfa9f276dc7ae1 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Be1cc264384cab10e9abfa9f276dc7ae1 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> .
+_:Be1cc264384cab10e9abfa9f276dc7ae1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://www.w3.org/2000/01/rdf-schema#label> "Separation (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'Separation' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://purl.org/dc/terms/identifier> "Separation" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Bae8f17cefd96a04f601a94103008e1eb <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bae8f17cefd96a04f601a94103008e1eb <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Bae8f17cefd96a04f601a94103008e1eb <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> .
+_:Bae8f17cefd96a04f601a94103008e1eb <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bae8f17cefd96a04f601a94103008e1eb <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002> .
+_:Bae8f17cefd96a04f601a94103008e1eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:Be4d6697137c8b228c82dd71696dd0e38 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Be4d6697137c8b228c82dd71696dd0e38 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Be4d6697137c8b228c82dd71696dd0e38 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS16015785> .
+_:Be4d6697137c8b228c82dd71696dd0e38 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Be4d6697137c8b228c82dd71696dd0e38 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+_:Be4d6697137c8b228c82dd71696dd0e38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://data.posccaesar.org/rdl/RDS16015785> <http://www.w3.org/2000/01/rdf-schema#label> "PROCESS (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS16015785> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS16015785> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS16015785> <http://purl.org/dc/terms/identifier> "RDS16015785" .
+<http://data.posccaesar.org/rdl/RDS16015785> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS16015785> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9654947> <http://www.w3.org/2000/01/rdf-schema#label> "SENSING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9654947> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9654947> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9654947> <http://purl.org/dc/terms/identifier> "RDS9654947" .
+<http://data.posccaesar.org/rdl/RDS9654947> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9654947> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9681902> <http://www.w3.org/2000/01/rdf-schema#label> "DEFLECTING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9681902> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9681902> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9681902> <http://purl.org/dc/terms/identifier> "RDS9681902" .
+<http://data.posccaesar.org/rdl/RDS9681902> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9681902> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B4a95ccec98dfff39c4a3267d090a91c0 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B4a95ccec98dfff39c4a3267d090a91c0 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B4a95ccec98dfff39c4a3267d090a91c0 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> .
+_:B4a95ccec98dfff39c4a3267d090a91c0 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B4a95ccec98dfff39c4a3267d090a91c0 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> .
+_:B4a95ccec98dfff39c4a3267d090a91c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004145> <http://www.w3.org/2000/01/rdf-schema#label> "Transmitting Radio Frequency" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004145> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004145> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B8c0e69eb73b1ff50f8b126fd5a5c1dbd <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B8c0e69eb73b1ff50f8b126fd5a5c1dbd <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B8c0e69eb73b1ff50f8b126fd5a5c1dbd <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9673082> .
+_:B8c0e69eb73b1ff50f8b126fd5a5c1dbd <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B8c0e69eb73b1ff50f8b126fd5a5c1dbd <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139> .
+_:B8c0e69eb73b1ff50f8b126fd5a5c1dbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://data.posccaesar.org/rdl/RDS9657917> <http://www.w3.org/2000/01/rdf-schema#label> "PUMPING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9657917> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9657917> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9657917> <http://purl.org/dc/terms/identifier> "RDS9657917" .
+<http://data.posccaesar.org/rdl/RDS9657917> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9657917> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://data.posccaesar.org/rdl/RDS359189> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> <http://www.w3.org/2000/01/rdf-schema#label> "Enthalpy Change" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#EnthalpyChange'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9667367> <http://www.w3.org/2000/01/rdf-schema#label> "GUIDING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9667367> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9667367> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9667367> <http://purl.org/dc/terms/identifier> "RDS9667367" .
+<http://data.posccaesar.org/rdl/RDS9667367> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9667367> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS10792819> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018> <http://www.w3.org/2000/01/rdf-schema#label> "Gas Liquid Separation" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#Separation'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bc9f6ed20c0213b868e48753ff2c41834 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bc9f6ed20c0213b868e48753ff2c41834 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Bc9f6ed20c0213b868e48753ff2c41834 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS327667805> .
+_:Bc9f6ed20c0213b868e48753ff2c41834 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bc9f6ed20c0213b868e48753ff2c41834 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141> .
+_:Bc9f6ed20c0213b868e48753ff2c41834 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://data.posccaesar.org/rdl/RDS9652292> <http://www.w3.org/2000/01/rdf-schema#label> "TRANSPORTING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9652292> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9652292> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9652292> <http://purl.org/dc/terms/identifier> "RDS9652292" .
+<http://data.posccaesar.org/rdl/RDS9652292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9652292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9677312> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152> <http://www.w3.org/2000/01/rdf-schema#label> "Displaying" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152> <http://www.w3.org/2000/01/rdf-schema#comment> "Exhibiting to the sight or mind" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ba52e3c719a060be320d5ca6c4dcf859e <http://www.w3.org/2002/07/owl#unionOf> _:B016518c9X2Da4ebX2D4100X2Da79aX2Ddbcc670f4a9b .
+_:Ba52e3c719a060be320d5ca6c4dcf859e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9693827> <http://www.w3.org/2000/01/rdf-schema#label> "BARRING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9693827> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9693827> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9693827> <http://purl.org/dc/terms/identifier> "RDS9693827" .
+<http://data.posccaesar.org/rdl/RDS9693827> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9693827> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9679517> <http://www.w3.org/2000/01/rdf-schema#label> "DESORBING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9679517> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9679517> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9679517> <http://purl.org/dc/terms/identifier> "RDS9679517" .
+<http://data.posccaesar.org/rdl/RDS9679517> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9679517> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B166147dde498de81d66591b842f93924 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B166147dde498de81d66591b842f93924 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B166147dde498de81d66591b842f93924 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9685097> .
+_:B166147dde498de81d66591b842f93924 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B166147dde498de81d66591b842f93924 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140> .
+_:B166147dde498de81d66591b842f93924 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9693287> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137> <http://www.w3.org/2000/01/rdf-schema#label> "Bifurcating" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137> <http://www.w3.org/2000/01/rdf-schema#comment> "Splitting by branching or separating in two parts" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B171130c253c8ca9cf544589db127ac7c <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B171130c253c8ca9cf544589db127ac7c <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B171130c253c8ca9cf544589db127ac7c <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9698327> .
+_:B171130c253c8ca9cf544589db127ac7c <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B171130c253c8ca9cf544589db127ac7c <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014> .
+_:B171130c253c8ca9cf544589db127ac7c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9666872> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012> <http://www.w3.org/2000/01/rdf-schema#label> "Heating" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#TemperatureChange'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B016518c9X2Da4ebX2D4100X2Da79aX2Ddbcc670f4a9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B70cd77a2X2D3d7aX2D4cdaX2D8b94X2D08db8d96c31c .
+_:B016518c9X2Da4ebX2D4100X2Da79aX2Ddbcc670f4a9b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> .
+_:B32c84eb22f571000f713159f0ae21e44 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B32c84eb22f571000f713159f0ae21e44 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B32c84eb22f571000f713159f0ae21e44 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> .
+_:B32c84eb22f571000f713159f0ae21e44 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B32c84eb22f571000f713159f0ae21e44 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> .
+_:B32c84eb22f571000f713159f0ae21e44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:B9dab202dc3aa47e548511e729fef81cb <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B9dab202dc3aa47e548511e729fef81cb <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B9dab202dc3aa47e548511e729fef81cb <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9656792> .
+_:B9dab202dc3aa47e548511e729fef81cb <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B9dab202dc3aa47e548511e729fef81cb <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138> .
+_:B9dab202dc3aa47e548511e729fef81cb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'Reaction' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://purl.org/dc/terms/identifier> "Reaction" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B2b7f7ece295bd9df305fd88a64d3e826 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B2b7f7ece295bd9df305fd88a64d3e826 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B2b7f7ece295bd9df305fd88a64d3e826 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> .
+_:B2b7f7ece295bd9df305fd88a64d3e826 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B2b7f7ece295bd9df305fd88a64d3e826 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> .
+_:B2b7f7ece295bd9df305fd88a64d3e826 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004144> <http://www.w3.org/2000/01/rdf-schema#label> "Transmitting Optical" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004144> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004144> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9661922> <http://www.w3.org/2000/01/rdf-schema#label> "MEASURING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9661922> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9661922> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9661922> <http://purl.org/dc/terms/identifier> "RDS9661922" .
+<http://data.posccaesar.org/rdl/RDS9661922> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9661922> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B2c3bd0d7106ba25d82673857013dadb7 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B2c3bd0d7106ba25d82673857013dadb7 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B2c3bd0d7106ba25d82673857013dadb7 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9647297> .
+_:B2c3bd0d7106ba25d82673857013dadb7 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B2c3bd0d7106ba25d82673857013dadb7 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> .
+_:B2c3bd0d7106ba25d82673857013dadb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:Badccee196d2c453f4747205fc5f2ac9e <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Badccee196d2c453f4747205fc5f2ac9e <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Badccee196d2c453f4747205fc5f2ac9e <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS10802134> .
+_:Badccee196d2c453f4747205fc5f2ac9e <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Badccee196d2c453f4747205fc5f2ac9e <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> .
+_:Badccee196d2c453f4747205fc5f2ac9e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://data.posccaesar.org/rdl/RDS9671102> <http://www.w3.org/2000/01/rdf-schema#label> "FIXING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9671102> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9671102> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9671102> <http://purl.org/dc/terms/identifier> "RDS9671102" .
+<http://data.posccaesar.org/rdl/RDS9671102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9671102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> <http://www.w3.org/2004/02/skos/core#relatedMatch> <http://data.posccaesar.org/rdl/RDS365579> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> <http://www.w3.org/2000/01/rdf-schema#label> "Entropy Change" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> <http://www.w3.org/2000/01/rdf-schema#comment> "Not in OntoCAPE" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9651302> <http://www.w3.org/2000/01/rdf-schema#label> "WEIGHING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9651302> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9651302> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9651302> <http://purl.org/dc/terms/identifier> "RDS9651302" .
+<http://data.posccaesar.org/rdl/RDS9651302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9651302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Bb2852d3cabb6cdf23f17cb6d78df7d8f <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bb2852d3cabb6cdf23f17cb6d78df7d8f <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Bb2852d3cabb6cdf23f17cb6d78df7d8f <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9654947> .
+_:Bb2852d3cabb6cdf23f17cb6d78df7d8f <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bb2852d3cabb6cdf23f17cb6d78df7d8f <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133> .
+_:Bb2852d3cabb6cdf23f17cb6d78df7d8f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9679517> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017> <http://www.w3.org/2000/01/rdf-schema#label> "Desorbing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#Separation'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS10792819> <http://www.w3.org/2000/01/rdf-schema#label> "VAPOUR-LIQUID SEPARATION (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS10792819> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS10792819> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS10792819> <http://purl.org/dc/terms/identifier> "RDS10792819" .
+<http://data.posccaesar.org/rdl/RDS10792819> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS10792819> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9663902> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151> <http://www.w3.org/2000/01/rdf-schema#label> "Injecting" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151> <http://www.w3.org/2000/01/rdf-schema#comment> "Inserting a substance into some material using some force" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://www.w3.org/2000/01/rdf-schema#label> "TemperatureChange (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'TemperatureChange' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://purl.org/dc/terms/identifier> "TemperatureChange" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9677312> <http://www.w3.org/2000/01/rdf-schema#label> "DISPLAYING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9677312> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9677312> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9677312> <http://purl.org/dc/terms/identifier> "RDS9677312" .
+<http://data.posccaesar.org/rdl/RDS9677312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9677312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Bf583097dd442de4d0d07a9df1b56ea3e <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bf583097dd442de4d0d07a9df1b56ea3e <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Bf583097dd442de4d0d07a9df1b56ea3e <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9677312> .
+_:Bf583097dd442de4d0d07a9df1b56ea3e <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bf583097dd442de4d0d07a9df1b56ea3e <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152> .
+_:Bf583097dd442de4d0d07a9df1b56ea3e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9685322> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136> <http://www.w3.org/2000/01/rdf-schema#label> "Connecting" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136> <http://www.w3.org/2000/01/rdf-schema#comment> "Joining or fastening, or linking together, often by means of something intervening." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B1c9abc4f4f842e8a148f56c45a7cd11f <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B1c9abc4f4f842e8a148f56c45a7cd11f <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B1c9abc4f4f842e8a148f56c45a7cd11f <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9661922> .
+_:B1c9abc4f4f842e8a148f56c45a7cd11f <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B1c9abc4f4f842e8a148f56c45a7cd11f <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135> .
+_:B1c9abc4f4f842e8a148f56c45a7cd11f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9657917> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> <http://www.w3.org/2000/01/rdf-schema#label> "Pumping" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#PressureChangeOfLiquid'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9667367> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149> <http://www.w3.org/2000/01/rdf-schema#label> "Guiding" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149> <http://www.w3.org/2000/01/rdf-schema#comment> "Acting by directing, regulating, or managing toward some desirable end, course, way, or development" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B02418f1aX2D0961X2D45d6X2D9cccX2D06401b85b836 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B4fa35183X2Da3a4X2D435dX2Db926X2Dc22022106e85 .
+_:B02418f1aX2D0961X2D45d6X2D9cccX2D06401b85b836 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> .
+_:B61ea8e2bdafeebb07aa98501927d561f <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B61ea8e2bdafeebb07aa98501927d561f <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B61ea8e2bdafeebb07aa98501927d561f <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9684422> .
+_:B61ea8e2bdafeebb07aa98501927d561f <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B61ea8e2bdafeebb07aa98501927d561f <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013> .
+_:B61ea8e2bdafeebb07aa98501927d561f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://www.w3.org/2000/01/rdf-schema#label> "EnthalpyChange (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'EnthalpyChange' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://purl.org/dc/terms/identifier> "EnthalpyChange" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Bcd650b9731395474490d1adeb4973b44 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bcd650b9731395474490d1adeb4973b44 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Bcd650b9731395474490d1adeb4973b44 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9671102> .
+_:Bcd650b9731395474490d1adeb4973b44 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bcd650b9731395474490d1adeb4973b44 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148> .
+_:Bcd650b9731395474490d1adeb4973b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:B97dfa2669a49f761b0d4850f7e48cc94 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B97dfa2669a49f761b0d4850f7e48cc94 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B97dfa2669a49f761b0d4850f7e48cc94 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9679517> .
+_:B97dfa2669a49f761b0d4850f7e48cc94 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B97dfa2669a49f761b0d4850f7e48cc94 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017> .
+_:B97dfa2669a49f761b0d4850f7e48cc94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9652292> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009> <http://www.w3.org/2000/01/rdf-schema#label> "Transporting" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009> <http://www.w3.org/2000/01/rdf-schema#comment> "Not in OntoCAPE" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9652247> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> <http://www.w3.org/2000/01/rdf-schema#label> "Transmitting" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> <http://www.w3.org/2000/01/rdf-schema#comment> "Sending out a signal through some carrier" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9681902> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156> <http://www.w3.org/2000/01/rdf-schema#label> "Deflecting" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156> <http://www.w3.org/2000/01/rdf-schema#comment> "Turning away from a straight course of fixed direction" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Be1a9bcbcf13bf3e7c6b7d39c8a9b1f31 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Be1a9bcbcf13bf3e7c6b7d39c8a9b1f31 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Be1a9bcbcf13bf3e7c6b7d39c8a9b1f31 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9693827> .
+_:Be1a9bcbcf13bf3e7c6b7d39c8a9b1f31 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Be1a9bcbcf13bf3e7c6b7d39c8a9b1f31 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153> .
+_:Be1a9bcbcf13bf3e7c6b7d39c8a9b1f31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003> <http://www.w3.org/2000/01/rdf-schema#label> "Unit Operation" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#UnitOperation'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ba52e3c719a060be320d5ca6c4dcf859e .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9673082> <http://www.w3.org/2000/01/rdf-schema#label> "EXPANDING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9673082> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9673082> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9673082> <http://purl.org/dc/terms/identifier> "RDS9673082" .
+<http://data.posccaesar.org/rdl/RDS9673082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9673082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9666872> <http://www.w3.org/2000/01/rdf-schema#label> "HEATING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9666872> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9666872> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9666872> <http://purl.org/dc/terms/identifier> "RDS9666872" .
+<http://data.posccaesar.org/rdl/RDS9666872> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9666872> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B34613a52b9fd6ebc96acdaa64c1bbd56 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B34613a52b9fd6ebc96acdaa64c1bbd56 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B34613a52b9fd6ebc96acdaa64c1bbd56 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9667367> .
+_:B34613a52b9fd6ebc96acdaa64c1bbd56 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B34613a52b9fd6ebc96acdaa64c1bbd56 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149> .
+_:B34613a52b9fd6ebc96acdaa64c1bbd56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:Bc6abc954be641370c7d8a451741d9fcf <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bc6abc954be641370c7d8a451741d9fcf <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Bc6abc954be641370c7d8a451741d9fcf <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS15936236> .
+_:Bc6abc954be641370c7d8a451741d9fcf <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bc6abc954be641370c7d8a451741d9fcf <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021> .
+_:Bc6abc954be641370c7d8a451741d9fcf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9657467> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9685322> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9693827> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9679517> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS10792819> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9693287> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9681902> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9685097> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9654902> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9671102> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS327667805> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9652292> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9654947> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9652247> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9657917> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9661922> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9685862> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9673082> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS10802134> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9651302> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS16015785> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9647297> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS365579> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9663902> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9698327> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9677312> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9653822> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9666872> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9656792> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9667367> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS15936236> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9684422> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS359189> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> <http://www.w3.org/2004/02/skos/core#member> <http://data.posccaesar.org/rdl/RDS9711287> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9654902> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150> <http://www.w3.org/2000/01/rdf-schema#label> "Sending" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150> <http://www.w3.org/2000/01/rdf-schema#comment> "Acting by directing, ordering, or requesting to go" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bd6ada78e8f53876b9e99fed9b570df9c <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bd6ada78e8f53876b9e99fed9b570df9c <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Bd6ada78e8f53876b9e99fed9b570df9c <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9652292> .
+_:Bd6ada78e8f53876b9e99fed9b570df9c <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bd6ada78e8f53876b9e99fed9b570df9c <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009> .
+_:Bd6ada78e8f53876b9e99fed9b570df9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://data.posccaesar.org/rdl/RDS9656792> <http://www.w3.org/2000/01/rdf-schema#label> "REDUCING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9656792> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9656792> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9656792> <http://purl.org/dc/terms/identifier> "RDS9656792" .
+<http://data.posccaesar.org/rdl/RDS9656792> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9656792> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS327667805> <http://www.w3.org/2000/01/rdf-schema#label> "CLOSING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS327667805> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS327667805> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS327667805> <http://purl.org/dc/terms/identifier> "RDS327667805" .
+<http://data.posccaesar.org/rdl/RDS327667805> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS327667805> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS10802134> <http://www.w3.org/2000/01/rdf-schema#label> "GAS COMPRESSION (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS10802134> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS10802134> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS10802134> <http://purl.org/dc/terms/identifier> "RDS10802134" .
+<http://data.posccaesar.org/rdl/RDS10802134> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS10802134> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9661922> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135> <http://www.w3.org/2000/01/rdf-schema#label> "Measuring" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135> <http://www.w3.org/2000/01/rdf-schema#comment> "Transforming an aspect of something in a value expressed in a unit of measure" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9652247> <http://www.w3.org/2000/01/rdf-schema#label> "TRANSMITTING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9652247> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9652247> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9652247> <http://purl.org/dc/terms/identifier> "RDS9652247" .
+<http://data.posccaesar.org/rdl/RDS9652247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9652247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS10802134> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> <http://www.w3.org/2000/01/rdf-schema#label> "Compression" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#PressureChangeOfGas'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9671102> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148> <http://www.w3.org/2000/01/rdf-schema#label> "Fixing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148> <http://www.w3.org/2000/01/rdf-schema#comment> "Acting by making firm, stable or stationary" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B53fe422e28d6d4adcfac6878dae71f5d <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B53fe422e28d6d4adcfac6878dae71f5d <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B53fe422e28d6d4adcfac6878dae71f5d <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9685862> .
+_:B53fe422e28d6d4adcfac6878dae71f5d <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B53fe422e28d6d4adcfac6878dae71f5d <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155> .
+_:B53fe422e28d6d4adcfac6878dae71f5d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:B5ea14a9b4acc86d664230278ccd4c9b3 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B5ea14a9b4acc86d664230278ccd4c9b3 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B5ea14a9b4acc86d664230278ccd4c9b3 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9657917> .
+_:B5ea14a9b4acc86d664230278ccd4c9b3 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B5ea14a9b4acc86d664230278ccd4c9b3 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> .
+_:B5ea14a9b4acc86d664230278ccd4c9b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://www.w3.org/2000/01/rdf-schema#label> "UnitOperation (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'UnitOperation' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://purl.org/dc/terms/identifier> "UnitOperation" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9653822> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> <http://www.w3.org/2000/01/rdf-schema#label> "Containing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> <http://www.w3.org/2000/01/rdf-schema#comment> "Not in OntoCAPE" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B4fa35183X2Da3a4X2D435dX2Db926X2Dc22022106e85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:B4fa35183X2Da3a4X2D435dX2Db926X2Dc22022106e85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004142> <http://www.w3.org/2000/01/rdf-schema#label> "Opening" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004142> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004142> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS15936236> <http://www.w3.org/2000/01/rdf-schema#label> "TANK STORAGE (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS15936236> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS15936236> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS15936236> <http://purl.org/dc/terms/identifier> "RDS15936236" .
+<http://data.posccaesar.org/rdl/RDS15936236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS15936236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9685862> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155> <http://www.w3.org/2000/01/rdf-schema#label> "Conducting" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155> <http://www.w3.org/2000/01/rdf-schema#comment> "Conveying energy or material" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9647297> <http://www.w3.org/2000/01/rdf-schema#label> "SEPARATING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9647297> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9647297> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9647297> <http://purl.org/dc/terms/identifier> "RDS9647297" .
+<http://data.posccaesar.org/rdl/RDS9647297> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9647297> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002> <http://www.w3.org/2000/01/rdf-schema#label> "Process Step" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#ProcessStep'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> <http://www.w3.org/2004/02/skos/core#member> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://www.w3.org/2004/02/skos/core#note> "not an Activity." .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://www.w3.org/2004/02/skos/core#note> "ENTHALPY in PCA RDL is a SinglePropertyDimension entity" .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS359189> .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#relatedMatch> .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> .
+_:Bde7ad1d0438ae1c1ebfa0091a9baaf37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:B657d0f678c56e11276db74d0e9052395 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B657d0f678c56e11276db74d0e9052395 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B657d0f678c56e11276db74d0e9052395 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9654902> .
+_:B657d0f678c56e11276db74d0e9052395 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B657d0f678c56e11276db74d0e9052395 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150> .
+_:B657d0f678c56e11276db74d0e9052395 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:Bdcf033320d6e43c350af33c43be708c0 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bdcf033320d6e43c350af33c43be708c0 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Bdcf033320d6e43c350af33c43be708c0 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9653822> .
+_:Bdcf033320d6e43c350af33c43be708c0 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bdcf033320d6e43c350af33c43be708c0 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> .
+_:Bdcf033320d6e43c350af33c43be708c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:Bd7e4c8b99b38108a14d2bd847d0bc912 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bd7e4c8b99b38108a14d2bd847d0bc912 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Bd7e4c8b99b38108a14d2bd847d0bc912 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9657467> .
+_:Bd7e4c8b99b38108a14d2bd847d0bc912 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bd7e4c8b99b38108a14d2bd847d0bc912 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154> .
+_:Bd7e4c8b99b38108a14d2bd847d0bc912 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:B3a81d3a0e1052cbc64646d8e5dfb4985 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B3a81d3a0e1052cbc64646d8e5dfb4985 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B3a81d3a0e1052cbc64646d8e5dfb4985 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9663902> .
+_:B3a81d3a0e1052cbc64646d8e5dfb4985 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B3a81d3a0e1052cbc64646d8e5dfb4985 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151> .
+_:B3a81d3a0e1052cbc64646d8e5dfb4985 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:B01eef5fbbec604bb405b4001f0c2e35e <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B01eef5fbbec604bb405b4001f0c2e35e <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B01eef5fbbec604bb405b4001f0c2e35e <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS10792819> .
+_:B01eef5fbbec604bb405b4001f0c2e35e <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B01eef5fbbec604bb405b4001f0c2e35e <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018> .
+_:B01eef5fbbec604bb405b4001f0c2e35e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://xmlns.com/foaf/0.1/homepage> <http://rds.posccaesar.org/ontology/plm/doc/process> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/vocab/vann/preferredNamespacePrefix> "rdl" .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://www.w3.org/2004/02/skos/core#changeNote> "Changed sparql endpoint" .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://rdfs.org/ns/void#exampleResource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://rdfs.org/ns/void#sparqlEndpoint> <https://rds.posccaesar.org/ontology/sparql> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/terms/publisher> <http://www.posccaesar.org/> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://www.w3.org/2000/01/rdf-schema#comment> "Process ontology for PLM RDL. Includes unit operations, reaction, transport." .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://rds.posccaesar.org/ontology/plm/rdl/> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/elements/1.1/title> "process" .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/pav/contributedBy> <https://dblp.org/pid/227/6122.html> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/pav/hasPreviousVersion> <http://rds.posccaesar.org/ontology/plm/ont/process/0.9.0> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/terms/issued> "2021-08-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://www.w3.org/2002/07/owl#imports> <http://rds.posccaesar.org/ontology/plm/ont/core> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://ns.ottr.xyz/0.4/status> <http://ns.ottr.xyz/0.4/incomplete> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://www.w3.org/2002/07/owl#versionInfo> "0.9.1" .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-7167-7321> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-1172-478X> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/elements/1.1/contributor> <https://dblp.org/pid/227/6122.html> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/pav/lastUpdateOn> "2022-09-26T23:40:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://www.w3.org/2002/07/owl#versionIRI> <http://rds.posccaesar.org/ontology/plm/ont/process/0.9.1> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/pav/contributedBy> <https://orcid.org/0000-0002-1172-478X> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/terms/modified> "2022-09-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/terms/subject> <https://en.wikipedia.org/wiki/Chemical_plant> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/JSON-LD> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://purl.org/dc/elements/1.1/description> "Process ontology for PLM RDL. Includes unit operations, reaction, transport." .
+<http://rds.posccaesar.org/ontology/plm/ont/process> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/OWL_Manchester> .
+<http://data.posccaesar.org/rdl/RDS9693287> <http://www.w3.org/2000/01/rdf-schema#label> "BIFURCATING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9693287> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9693287> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9693287> <http://purl.org/dc/terms/identifier> "RDS9693287" .
+<http://data.posccaesar.org/rdl/RDS9693287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9693287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://www.w3.org/2000/01/rdf-schema#label> "PressureChangeOfLiquid (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'PressureChangeOfLiquid' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://purl.org/dc/terms/identifier> "PressureChangeOfLiquid" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B8f75981a9264e5557cfbbccb3689c5be <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B8f75981a9264e5557cfbbccb3689c5be <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B8f75981a9264e5557cfbbccb3689c5be <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9666872> .
+_:B8f75981a9264e5557cfbbccb3689c5be <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B8f75981a9264e5557cfbbccb3689c5be <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012> .
+_:B8f75981a9264e5557cfbbccb3689c5be <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9651302> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134> <http://www.w3.org/2000/01/rdf-schema#label> "Weighing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134> <http://www.w3.org/2000/01/rdf-schema#comment> "Measuring a mass" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004147> <http://www.w3.org/2000/01/rdf-schema#label> "Transmitting Digital Signal" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004147> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://www.w3.org/2004/02/skos/core#note> "not an Activity." .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://www.w3.org/2004/02/skos/core#note> "ENTROPY in PCA RDL is a SinglePropertyDimension entity" .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS365579> .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#relatedMatch> .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004> .
+_:B94ebb7ffb69540f44bf1cadea3aa6a46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://www.w3.org/2000/01/rdf-schema#label> "ProcessStep (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'ProcessStep' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://purl.org/dc/terms/identifier> "ProcessStep" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Ba03281a033da2ca3a72d1060aa9dfc64 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Ba03281a033da2ca3a72d1060aa9dfc64 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Ba03281a033da2ca3a72d1060aa9dfc64 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9651302> .
+_:Ba03281a033da2ca3a72d1060aa9dfc64 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Ba03281a033da2ca3a72d1060aa9dfc64 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134> .
+_:Ba03281a033da2ca3a72d1060aa9dfc64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://data.posccaesar.org/rdl/RDS9654902> <http://www.w3.org/2000/01/rdf-schema#label> "SENDING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9654902> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9654902> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9654902> <http://purl.org/dc/terms/identifier> "RDS9654902" .
+<http://data.posccaesar.org/rdl/RDS9654902> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9654902> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS365579> <http://www.w3.org/2000/01/rdf-schema#label> "ENTROPY (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS365579> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS365579> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS365579> <http://purl.org/dc/terms/identifier> "RDS365579" .
+<http://data.posccaesar.org/rdl/RDS365579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS365579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9647297> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> <http://www.w3.org/2000/01/rdf-schema#label> "Separating" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#Separation'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B948ac9171b3c2adb1b088d0dad413171 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B948ac9171b3c2adb1b088d0dad413171 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B948ac9171b3c2adb1b088d0dad413171 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9652247> .
+_:B948ac9171b3c2adb1b088d0dad413171 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B948ac9171b3c2adb1b088d0dad413171 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> .
+_:B948ac9171b3c2adb1b088d0dad413171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS327667805> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141> <http://www.w3.org/2000/01/rdf-schema#label> "Closing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141> <http://www.w3.org/2000/01/rdf-schema#comment> "Acting by contracting, folding, swinging, or sliding so as to leave no opening." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9698327> <http://www.w3.org/2000/01/rdf-schema#label> "ABSORBING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9698327> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9698327> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9698327> <http://purl.org/dc/terms/identifier> "RDS9698327" .
+<http://data.posccaesar.org/rdl/RDS9698327> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9698327> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:B16f626b670466f2a4de6127a45c3250a <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B16f626b670466f2a4de6127a45c3250a <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:B16f626b670466f2a4de6127a45c3250a <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9711287> .
+_:B16f626b670466f2a4de6127a45c3250a <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B16f626b670466f2a4de6127a45c3250a <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> .
+_:B16f626b670466f2a4de6127a45c3250a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9657467> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154> <http://www.w3.org/2000/01/rdf-schema#label> "Receiving" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154> <http://www.w3.org/2000/01/rdf-schema#comment> "Acquiring in a passive way" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B06ab1843c45191fd0d96529e9d28fa4f <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B06ab1843c45191fd0d96529e9d28fa4f <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:B06ab1843c45191fd0d96529e9d28fa4f <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9685322> .
+_:B06ab1843c45191fd0d96529e9d28fa4f <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:B06ab1843c45191fd0d96529e9d28fa4f <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136> .
+_:B06ab1843c45191fd0d96529e9d28fa4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:B97666eabX2Dcc72X2D4440X2D9794X2D0efa15e0bca4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B02418f1aX2D0961X2D45d6X2D9cccX2D06401b85b836 .
+_:B97666eabX2Dcc72X2D4440X2D9794X2D0efa15e0bca4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> .
+_:B70cd77a2X2D3d7aX2D4cdaX2D8b94X2D08db8d96c31c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B3b2627f8X2Ddd6cX2D4b7cX2Daec7X2D3bd627b69834 .
+_:B70cd77a2X2D3d7aX2D4cdaX2D8b94X2D08db8d96c31c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS16015785> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> <http://www.w3.org/2000/01/rdf-schema#label> "Plant Process" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/lis14/rdl/Activity> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9673082> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139> <http://www.w3.org/2000/01/rdf-schema#label> "Expanding" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139> <http://www.w3.org/2000/01/rdf-schema#comment> "Increasing in extent, size, number, volume, or scope" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9698327> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014> <http://www.w3.org/2000/01/rdf-schema#label> "Absorbing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#Separation'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Bccb97f1bd4989b880cceca2bbbe73b9d <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bccb97f1bd4989b880cceca2bbbe73b9d <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Bccb97f1bd4989b880cceca2bbbe73b9d <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002> .
+_:Bccb97f1bd4989b880cceca2bbbe73b9d <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bccb97f1bd4989b880cceca2bbbe73b9d <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003> .
+_:Bccb97f1bd4989b880cceca2bbbe73b9d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:Bf9183b1e3ea4c94a70c0ec2b9cb3c954 <http://purl.org/pav/createdOn> "2021-08-31T09:00:22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bf9183b1e3ea4c94a70c0ec2b9cb3c954 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-7167-7321> .
+_:Bf9183b1e3ea4c94a70c0ec2b9cb3c954 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003> .
+_:Bf9183b1e3ea4c94a70c0ec2b9cb3c954 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bf9183b1e3ea4c94a70c0ec2b9cb3c954 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005> .
+_:Bf9183b1e3ea4c94a70c0ec2b9cb3c954 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://www.w3.org/2000/01/rdf-schema#label> "PressureChangeOfGas (OntoCAPE concept)" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://www.w3.org/2000/01/rdf-schema#comment> "OntoCAPE concept 'PressureChangeOfGas' is defined in the OntoCAPE 'process.owl' module." .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://purl.org/dc/terms/identifier> "PressureChangeOfGas" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Bafa6ce24728c333734c137b94ffd3ef1 <http://purl.org/pav/createdOn> "2022-02-22T09:43:38Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bafa6ce24728c333734c137b94ffd3ef1 <http://purl.org/pav/createdBy> <https://orcid.org/0000-0002-9888-0557> .
+_:Bafa6ce24728c333734c137b94ffd3ef1 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://data.posccaesar.org/rdl/RDS9681902> .
+_:Bafa6ce24728c333734c137b94ffd3ef1 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2004/02/skos/core#closeMatch> .
+_:Bafa6ce24728c333734c137b94ffd3ef1 <http://www.w3.org/2002/07/owl#annotatedSource> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156> .
+_:Bafa6ce24728c333734c137b94ffd3ef1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9654947> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133> <http://www.w3.org/2000/01/rdf-schema#label> "Sensing" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133> <http://www.w3.org/2000/01/rdf-schema#comment> "Observing by touching with an object sensitive for an intended property" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004146> <http://www.w3.org/2000/01/rdf-schema#label> "Transmitting Analog Signal" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004146> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS15936236> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021> <http://www.w3.org/2000/01/rdf-schema#label> "Tank Storage" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021> <http://www.w3.org/2000/01/rdf-schema#comment> "Not in OntoCAPE" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS359189> <http://www.w3.org/2000/01/rdf-schema#label> "ENTHALPY (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS359189> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS359189> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS359189> <http://purl.org/dc/terms/identifier> "RDS359189" .
+<http://data.posccaesar.org/rdl/RDS359189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS359189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9711287> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#Reaction'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.posccaesar.org/rdl/RDS9685322> <http://www.w3.org/2000/01/rdf-schema#label> "CONNECTING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9685322> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9685322> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9685322> <http://purl.org/dc/terms/identifier> "RDS9685322" .
+<http://data.posccaesar.org/rdl/RDS9685322> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9685322> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9663902> <http://www.w3.org/2000/01/rdf-schema#label> "INJECTING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9663902> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9663902> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9663902> <http://purl.org/dc/terms/identifier> "RDS9663902" .
+<http://data.posccaesar.org/rdl/RDS9663902> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9663902> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.posccaesar.org/rdl/RDS9685862> <http://www.w3.org/2000/01/rdf-schema#label> "CONDUCTING (PCA RDL concept)" .
+<http://data.posccaesar.org/rdl/RDS9685862> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003> .
+<http://data.posccaesar.org/rdl/RDS9685862> <http://www.w3.org/2000/01/rdf-schema#comment> "External RDL entity" .
+<http://data.posccaesar.org/rdl/RDS9685862> <http://purl.org/dc/terms/identifier> "RDS9685862" .
+<http://data.posccaesar.org/rdl/RDS9685862> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503> .
+<http://data.posccaesar.org/rdl/RDS9685862> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000019> <http://www.w3.org/2000/01/rdf-schema#label> "Three Phase Separation" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000019> <http://www.w3.org/2000/01/rdf-schema#comment> "See OntoCAPE 'process.owl#Separation'" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000019> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:B3b2627f8X2Ddd6cX2D4b7cX2Daec7X2D3bd627b69834 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B97666eabX2Dcc72X2D4440X2D9794X2D0efa15e0bca4 .
+_:B3b2627f8X2Ddd6cX2D4b7cX2Daec7X2D3bd627b69834 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.posccaesar.org/rdl/RDS9685097> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140> <http://www.w3.org/2000/01/rdf-schema#label> "Controlling" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140> <http://www.w3.org/2000/01/rdf-schema#comment> "Influencing by exercising restraining or directing guidance" .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

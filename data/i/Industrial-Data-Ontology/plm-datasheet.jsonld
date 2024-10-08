@@ -1,0 +1,657 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Axiom",
+    "annotatedProperty" : "owl:deprecated",
+    "annotatedSource" : "rdfs:comment",
+    "annotatedTarget" : "true",
+    "explanatoryNote" : "The IOF Annotation Property Guide V2.2 states, \"comment MUST NOT be used\"."
+  }, {
+    "@id" : "dc:rights",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/elements/1.1/",
+    "label" : "rights"
+  }, {
+    "@id" : "dcterms:contributor",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "contributor"
+  }, {
+    "@id" : "dcterms:creator",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "creator",
+    "subPropertyOf" : "dcterms:contributor"
+  }, {
+    "@id" : "dcterms:description",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "description"
+  }, {
+    "@id" : "dcterms:issued",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "issued"
+  }, {
+    "@id" : "dcterms:license",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "license"
+  }, {
+    "@id" : "dcterms:modified",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "modified"
+  }, {
+    "@id" : "dcterms:publisher",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "publisher"
+  }, {
+    "@id" : "dcterms:source",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "source"
+  }, {
+    "@id" : "dcterms:title",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://purl.org/dc/terms/",
+    "label" : "title"
+  }, {
+    "@id" : "pav:contributedBy",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : {
+      "@id" : "http://purl.org/pav/"
+    },
+    "label" : "contributedBy",
+    "subPropertyOf" : "dcterms:contributor"
+  }, {
+    "@id" : "pav:createdBy",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : {
+      "@id" : "http://purl.org/pav/"
+    },
+    "label" : "createdBy",
+    "subPropertyOf" : "dcterms:creator"
+  }, {
+    "@id" : "pav:derivedFrom",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : {
+      "@id" : "http://purl.org/pav/"
+    },
+    "label" : "derivedFrom"
+  }, {
+    "@id" : "pav:lastUpdateOn",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : {
+      "@id" : "http://purl.org/pav/"
+    },
+    "label" : "lastUpdateOn"
+  }, {
+    "@id" : "pav:previousVersion",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : {
+      "@id" : "http://purl.org/pav/"
+    },
+    "label" : "previousVersion"
+  }, {
+    "@id" : "lis:InformationObject",
+    "@type" : "owl:Class",
+    "label" : "InformationObject"
+  }, {
+    "@id" : "lis:QualityDatum",
+    "@type" : "owl:Class",
+    "label" : "QualityDatum"
+  }, {
+    "@id" : "lis:datumUOM",
+    "@type" : "owl:ObjectProperty",
+    "label" : "datumUOM"
+  }, {
+    "@id" : "lis:datumValue",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "datumValue"
+  }, {
+    "@id" : "lis:hasPart",
+    "@type" : "owl:ObjectProperty",
+    "label" : "hasPart"
+  }, {
+    "@id" : "lis:isAbout",
+    "@type" : "owl:ObjectProperty",
+    "label" : "isAbout"
+  }, {
+    "@id" : "lis:partOf",
+    "@type" : "owl:ObjectProperty",
+    "label" : "partOf"
+  }, {
+    "@id" : "http://rds.posccaesar.org/ontology/plm/ont/datasheet",
+    "@type" : "owl:Ontology",
+    "rights" : "Copyright POSC Caesar Association",
+    "creator" : "https://orcid.org/0000-0002-7167-7321",
+    "description" : "The Datasheet Ontology is a vocabulary for a \"proto-semantic\" representation of datasheet contents, intended as a part of the POSC Caesar RDL. The ontology was developed by the DISC collaboration on digitalisation, Q3 2023.",
+    "issued" : "2023-09-15",
+    "license" : "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modified" : "2023-09-15",
+    "publisher" : "http://www.posccaesar.org",
+    "title" : "Datasheet Ontology",
+    "lastUpdateOn" : "2023-09-15T10:49:05Z",
+    "comment" : "The Datasheet Ontology is a vocabulary for a \"proto-semantic\" representation of datasheet contents",
+    "label" : "Datasheet Ontology",
+    "imports" : "http://rds.posccaesar.org/ontology/plm/ont/document",
+    "versionIRI" : "http://rds.posccaesar.org/ontology/plm/ont/datasheet/0.1",
+    "versionInfo" : "0.1 2023-09-15"
+  }, {
+    "@id" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "rdl:PCA_100004908",
+    "range" : "rdl:PCA_100029505"
+  }, {
+    "@id" : "rdl:PCA_100004908",
+    "@type" : "owl:Class",
+    "label" : "Document",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "rdl:PCA_100029504",
+    "@type" : "owl:Class",
+    "label" : "Datasheet",
+    "seeAlso" : "https://en.wikipedia.org/wiki/Datasheet",
+    "subClassOf" : "rdl:PCA_100004908",
+    "example" : "A process datasheet, an instrument datasheet.",
+    "naturalLanguageDefinition" : "A datasheet is a document with labelled entries for describing the characteristics of an entity."
+  }, {
+    "@id" : "rdl:PCA_100029505",
+    "@type" : "owl:Class",
+    "comment" : [ "The use of \"elementary\" in the definition of 'datasheet datum' means that any part of a datasheet datum fails to express a full a assertion. Thus, if a datum reads \"Linesize out 0.5 inch\", neither of \"Linesize out\", \"0.5\", and \"inch\" expresses a statement on its own.", "A datasheet datum will often be used to represent a semantic relationship in reified form. We use the term \"proto-semantic\" to informally describe the purpose of this kind of representation: a typical datasheet datum of interest contains information that motivates the introduction of semantic axioms." ],
+    "label" : "Datasheet Datum",
+    "seeAlso" : "",
+    "subClassOf" : "lis:InformationObject",
+    "example" : "A composite field with label \"weight\", a subfield for unit of measure, and a subfield for a numeric value for recording the mass of the datasheet subject; a field labelled \"coating\" with a subfield for recording the coating type of the datasheet subject; an unlabelled field that provides the title of the datasheet; a field labelled \"operating conditions\" to indicate the start of a topical datasheet section.",
+    "naturalLanguageDefinition" : "A 'datasheet datum' is an entry on a 'datasheet' that is suitable for making an elementary assertion."
+  }, {
+    "@id" : "rdl:PCA_100029506",
+    "@type" : "owl:ObjectProperty",
+    "label" : "contains datum",
+    "seeAlso" : "",
+    "subPropertyOf" : "lis:hasPart",
+    "example" : "Spreadsheet C143-1 contains the 'relationship datum' \"Location code: AP100\"; the 'section datum' \"Equipment Conditions\"; the 'quantity datum' \"Line wall thickness 2.77 mm\".",
+    "naturalLanguageDefinition" : "If x 'contains datum' y, then x is a 'document', y is a 'datasheet datum', and y appears as an entry on x."
+  }, {
+    "@id" : "rdl:PCA_100029507",
+    "@type" : "owl:ObjectProperty",
+    "label" : "datum on document",
+    "seeAlso" : {
+      "@id" : "http://example.org/rdl/PCA_100029506"
+    },
+    "subPropertyOf" : [ "rdl:PCA_100029514", "lis:partOf" ],
+    "inverseOf" : "rdl:PCA_100029506",
+    "isPrimitive" : "false",
+    "usageNote" : "For annotations, see the inverse relation 'contains datum'."
+  }, {
+    "@id" : "rdl:PCA_100029508",
+    "@type" : "owl:Class",
+    "comment" : "The class 'attribute datum' is intended as an abstract class, with subclasses 'relationship datum' and 'quantity datum'.",
+    "label" : "Attribute Datum",
+    "seeAlso" : "",
+    "subClassOf" : "rdl:PCA_100029505",
+    "example" : "",
+    "naturalLanguageDefinition" : "An 'attribute datum' is a reified relationship with subject and attribute. To obtain a full relationship, use subclasses 'relationship datum' or 'quantity datum'."
+  }, {
+    "@id" : "rdl:PCA_100029509",
+    "@type" : "owl:Class",
+    "comment" : "For the special case of relata that are classes, use 'classification datum'.",
+    "label" : "Relationship Datum",
+    "seeAlso" : "",
+    "subClassOf" : "rdl:PCA_100029508",
+    "example" : "",
+    "naturalLanguageDefinition" : "A 'relationship datum' is a reified relationship, with a subject related by an attribute to an individual."
+  }, {
+    "@id" : "rdl:PCA_100029510",
+    "@type" : "owl:Class",
+    "comment" : "The 'datum attribute' relationship on a 'classification datum' serves as an informal record of the significance of the (reified) classification. I.e., while any individual will be a member of several classes, the 'datum attribute' should point to a (shortcut) property that indicates the significance of the classification in question; this metadata is in general significant. For example, the 'datum attribute' can indicate that the classification establishes EX class, or the line size, of the subject.",
+    "label" : "Classification Datum",
+    "seeAlso" : "",
+    "subClassOf" : "rdl:PCA_100029509",
+    "example" : "",
+    "naturalLanguageDefinition" : "A 'classification datum' is a reified classification, with a subject classified by a punned class."
+  }, {
+    "@id" : "rdl:PCA_100029511",
+    "@type" : "owl:Class",
+    "label" : "Datasheet Quantity Datum",
+    "seeAlso" : "",
+    "subClassOf" : [ "rdl:PCA_100029508", "lis:QualityDatum" ],
+    "example" : "",
+    "naturalLanguageDefinition" : ""
+  }, {
+    "@id" : "rdl:PCA_100029512",
+    "@type" : "owl:Class",
+    "comment" : "Datasheet datums that belong to a case need to be related to the relevant case. Point to the 'case' using the relation 'datum of case'.",
+    "label" : "Case Datum",
+    "seeAlso" : "",
+    "subClassOf" : "rdl:PCA_100029505",
+    "example" : "",
+    "naturalLanguageDefinition" : "A 'case datum' represents a simulated or hypothetical case."
+  }, {
+    "@id" : "rdl:PCA_100029513",
+    "@type" : "owl:Class",
+    "label" : "Section Datum",
+    "seeAlso" : "",
+    "subClassOf" : "rdl:PCA_100029505",
+    "example" : "\"General\", \"Equipment Conditions\", \"Special Conditions\"",
+    "naturalLanguageDefinition" : "A 'section datum' represents a section of a datasheet, and generally provides a title for the section."
+  }, {
+    "@id" : "rdl:PCA_100029514",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "rdl:PCA_100029505",
+    "label" : "datum related to",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "This is an \"abstract\" superproperty for the object properties that characterize datasheet datums."
+  }, {
+    "@id" : "rdl:PCA_100029515",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "A simpler version of the definition: This property points to the last datasheet revision that changed the value of the datum. (This is informal, a datum is identified relatively to the datasheet it appears on; it doesn't actually \"change value\", but is related to earlier iterations that appear in the same place, as part a series.)",
+    "label" : "datum last revised in",
+    "range" : "rdl:PCA_100029504",
+    "seeAlso" : "",
+    "subPropertyOf" : "rdl:PCA_100029514",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x is a 'datum last revised in' y, then x is a 'datasheet datum' on a datasheet z, y is the current or an earlier version of z, and y is the earliest version since which the value that x has on z has remained the same."
+  }, {
+    "@id" : "rdl:PCA_100029516",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "In line with the reified approach of the datasheet datum approach, the subject of a datum will generally appear on the left side of the datum attribute, after lifting to an OWL axiom.",
+    "domain" : "rdl:PCA_100029508",
+    "label" : "datum subject",
+    "seeAlso" : "",
+    "subPropertyOf" : [ "rdl:PCA_100029514", "lis:isAbout" ],
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum subject' y, then x is an 'attribute datum' that characterises y."
+  }, {
+    "@id" : "rdl:PCA_100029517",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "rdl:PCA_100029509",
+    "label" : "datum object",
+    "seeAlso" : "",
+    "subPropertyOf" : "rdl:PCA_100029514",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum object' y, then x is a 'relationship datum' that relates its 'datum subject' to the individual y, i.e., x is a reified relationship."
+  }, {
+    "@id" : "rdl:PCA_100029518",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Reified classes should be typed with a \"classifier\" subclass of skos:Concept.",
+    "domain" : "rdl:PCA_100029510",
+    "label" : "datum classifier",
+    "range" : "skos:Concept",
+    "seeAlso" : "",
+    "subPropertyOf" : "rdl:PCA_100029517",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum classifier' y, then x is a 'classification datum' that relates its 'datum subject' to a punned class y of which x is a member, i.e., x is a reified classification."
+  }, {
+    "@id" : "rdl:PCA_100029519",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "rdl:PCA_100029508",
+    "label" : "datum attribute",
+    "seeAlso" : "",
+    "subPropertyOf" : "rdl:PCA_100029514",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum attribute' y, then x is an 'attribute datum' that relates x to an object or quantity datum by the relation y, i.e., x is a reified relationship."
+  }, {
+    "@id" : "rdl:PCA_100029520",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Consider whether to let an attribute datum point to the 'case datum' instead of the 'case', as this may simplify processing.",
+    "label" : "datum of case",
+    "range" : "rdl:PCA_100029524",
+    "seeAlso" : "",
+    "subPropertyOf" : "rdl:PCA_100029514",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x is a 'datum of case' y, then (1) x is an 'attribute datum' valid only in the alternative case/scenario/possible world represented by 'case' y, or (2) x is a 'case datum' that serves to record the case on the datasheet."
+  }, {
+    "@id" : "rdl:PCA_100029521",
+    "@type" : "owl:AnnotationProperty",
+    "domain" : "rdl:PCA_100029505",
+    "label" : "datum label",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum label' y, then y is the descriptive label of the datasheet datum entry x."
+  }, {
+    "@id" : "rdl:PCA_100029522",
+    "@type" : "owl:AnnotationProperty",
+    "domain" : "rdl:PCA_100029505",
+    "label" : "datum value",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum value' y, then y is the literal string value of the datasheet datum entry x."
+  }, {
+    "@id" : "rdl:PCA_100029523",
+    "@type" : [ "owl:FunctionalProperty", "owl:DatatypeProperty" ],
+    "comment" : "This relation may not need to be a data property. Consider whether typing as annotation property is sufficient.",
+    "domain" : "rdl:PCA_100029504",
+    "label" : "datasheet revision number",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datasheet revision number' y, then x is a 'datasheet' and y is a string value that represents the unique revision of x."
+  }, {
+    "@id" : "rdl:PCA_100029524",
+    "@type" : "owl:Class",
+    "comment" : "A case is typically established as a simulation, but may also represent an alternative configuration, etc.",
+    "label" : "Case",
+    "seeAlso" : "",
+    "subClassOf" : "lis:InformationObject",
+    "example" : "A scenario simulated as operations over 15 years; the state of affairs on given that a design alternative is selected.",
+    "naturalLanguageDefinition" : "A case is a scenario, a possible world, within which certain attribute values are valid."
+  }, {
+    "@id" : "rdl:PCA_100029525",
+    "@type" : "owl:ObjectProperty",
+    "label" : "datum in section",
+    "range" : "rdl:PCA_100029513",
+    "seeAlso" : "",
+    "subPropertyOf" : "rdl:PCA_100029514",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x is a 'datum in section' y, then x is a 'datasheet datum', y is a 'section datum', and x appears in the datasheet section represented by y."
+  }, {
+    "@id" : "rdl:PCA_100029532",
+    "@type" : "owl:AnnotationProperty",
+    "domain" : "rdl:PCA_100029505",
+    "label" : "datum source row",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum source row' y, then y is the row in which x appears on the source datasheet."
+  }, {
+    "@id" : "rdl:PCA_100029533",
+    "@type" : "owl:AnnotationProperty",
+    "domain" : "rdl:PCA_100029505",
+    "label" : "datum source column",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum source column' y, then y is the column in which x appears on the source datasheet."
+  }, {
+    "@id" : "rdl:PCA_100029534",
+    "@type" : "owl:AnnotationProperty",
+    "domain" : "rdl:PCA_100029505",
+    "label" : "datum source filename",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum source filename' y, then y is the filename of the source datasheet in which x appears (without directory path)."
+  }, {
+    "@id" : "rdl:PCA_100029535",
+    "@type" : "owl:AnnotationProperty",
+    "domain" : "rdl:PCA_100029505",
+    "label" : "datum source sort index",
+    "seeAlso" : "",
+    "example" : "",
+    "naturalLanguageDefinition" : "If x has 'datum source sort index' y, then y is the number of the row describing x in the OTTR mapping worksheet. This provides a sort order for queries."
+  }, {
+    "@id" : "rdf:PlainLiteral",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "rdfs:Literal",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "rdfs:comment",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2000/01/rdf-schema#",
+    "label" : "comment",
+    "deprecated" : "true"
+  }, {
+    "@id" : "rdfs:isDefinedBy",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2000/01/rdf-schema#",
+    "label" : "isDefinedBy",
+    "subPropertyOf" : "rdfs:seeAlso"
+  }, {
+    "@id" : "rdfs:label",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2000/01/rdf-schema#",
+    "label" : "label"
+  }, {
+    "@id" : "rdfs:seeAlso",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2000/01/rdf-schema#",
+    "label" : "see also"
+  }, {
+    "@id" : "xsd:dateTime",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "xsd:decimal",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "xsd:integer",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "xsd:string",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "skos:Concept",
+    "@type" : "owl:Class",
+    "label" : "Concept"
+  }, {
+    "@id" : "skos:altLabel",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Alternative label for the ontology resource.",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "altLabel",
+    "subPropertyOf" : "rdfs:label"
+  }, {
+    "@id" : "skos:definition",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "definition",
+    "subPropertyOf" : "skos:note"
+  }, {
+    "@id" : "skos:example",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "example",
+    "subPropertyOf" : "skos:note"
+  }, {
+    "@id" : "skos:note",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "note"
+  }, {
+    "@id" : "skos:prefLabel",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Preferred label for the ontology resource.",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "prefLabel",
+    "subPropertyOf" : "rdfs:label"
+  }, {
+    "@id" : "skos:scopeNote",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "scopeNote",
+    "subPropertyOf" : "skos:note"
+  }, {
+    "@id" : "foaf:isPrimaryTopicOf",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://xmlns.com/foaf/spec/",
+    "label" : "isPrimaryTopicOf"
+  }, {
+    "@id" : "iof-av:adaptedFrom",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "adaptedFrom",
+    "subPropertyOf" : "dcterms:source"
+  }, {
+    "@id" : "iof-av:directSource",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "directSource",
+    "subPropertyOf" : "dcterms:source"
+  }, {
+    "@id" : "iof-av:explanatoryNote",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "explanatoryNote",
+    "subPropertyOf" : "skos:note"
+  }, {
+    "@id" : "iof-av:firstOrderLogicDefinition",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "firstOrderLogicDefinition",
+    "subPropertyOf" : "skos:definition"
+  }, {
+    "@id" : "iof-av:naturalLanguageDefinition",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "naturalLanguageDefinition",
+    "subPropertyOf" : "skos:definition"
+  }, {
+    "@id" : "iof-av:primitiveRationale",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "primitiveRationale",
+    "subPropertyOf" : "skos:note"
+  }, {
+    "@id" : "iof-av:semiFormalNaturalLanguageAxiom",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "semiFormalNaturalLanguageAxiom",
+    "subPropertyOf" : "skos:note"
+  }, {
+    "@id" : "iof-av:semiFormalNaturalLanguageDefinition",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "semiFormalNaturalLanguageDefinition",
+    "subPropertyOf" : "skos:definition"
+  }, {
+    "@id" : "iof-av:synonym",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "synonym",
+    "subPropertyOf" : "skos:altLabel"
+  }, {
+    "@id" : "iof-av:usageNote",
+    "@type" : "owl:AnnotationProperty",
+    "isDefinedBy" : "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "label" : "usageNote",
+    "subPropertyOf" : "skos:note"
+  } ],
+  "@context" : {
+    "naturalLanguageDefinition" : {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "usageNote" : {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"
+    },
+    "isPrimitive" : {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive"
+    },
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "lastUpdateOn" : {
+      "@id" : "http://purl.org/pav/lastUpdateOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "explanatoryNote" : {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"
+    },
+    "annotatedTarget" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedTarget"
+    },
+    "annotatedProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedProperty",
+      "@type" : "@id"
+    },
+    "annotatedSource" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedSource",
+      "@type" : "@id"
+    },
+    "@vocab" : "http://rds.posccaesar.org/ontology/plm/ont/datasheet#",
+    "dol" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#",
+    "pav" : "http://purl.org/pav/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype" : "http://purl.org/dc/dcmitype/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ssn" : "http://www.w3.org/ns/ssn/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "lis" : "http://rds.posccaesar.org/ontology/lis14/rdl/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "iof-av" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
+    "rdl" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "time" : "http://www.w3.org/2006/time#",
+    "obo" : "http://purl.obolibrary.org/obo/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

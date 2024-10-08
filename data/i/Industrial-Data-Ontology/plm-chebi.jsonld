@@ -1,0 +1,1879 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:partOf",
+    "someValuesFrom" : "lis:Stream"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_15377",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_15377",
+    "PCA_100004929" : "2",
+    "PCA_100004931" : "1",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "water (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_155827",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_155827",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "argon-39 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_16136",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_16136",
+    "PCA_100004929" : "2",
+    "PCA_100004933" : "1",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "hydrogen sulfide (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_16183",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_16183",
+    "PCA_100004929" : "4",
+    "PCA_100004932" : "1",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "methane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_16236",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_16236",
+    "PCA_100004929" : "6",
+    "PCA_100004931" : "1",
+    "PCA_100004932" : "2",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "ethanol (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_16526",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_16526",
+    "PCA_100004931" : "2",
+    "PCA_100004932" : "1",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "carbon dioxide (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_17590",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_17590",
+    "PCA_100004929" : "18",
+    "PCA_100004932" : "8",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "octane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176566",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176566",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "calcium-43 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176570",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176570",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "molybdenum-98 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176571",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176571",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "strontium-88 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176572",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176572",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "rubidium-85 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176573",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176573",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "selenium-82 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176574",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176574",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "zinc-66 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176575",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176575",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nickel-60 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176578",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176578",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "cobalt-59 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176583",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176583",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "manganese-55 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_176584",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_176584",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "arsenic-75 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_17790",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_17790",
+    "PCA_100004929" : "4",
+    "PCA_100004931" : "1",
+    "PCA_100004932" : "1",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "methanol (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_17997",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_17997",
+    "PCA_100004930" : "2",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "dinitrogen (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_18248",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_18248",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "iron (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_18276",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_18276",
+    "PCA_100004929" : "2",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "dihydrogen (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_18291",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_18291",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "manganese (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_22927",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_22927",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "bromine (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_22977",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_22977",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "cadmium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_22984",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_22984",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "calcium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_23116",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_23116",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "chlorine (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_24061",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_24061",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "fluorine (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_24632",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_24632",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "hydrocarbon (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_24859",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_24859",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "iodine (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_25016",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_25016",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lead (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_25195",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_25195",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "mercury (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_25555",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_25555",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nitrogen (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_25805",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_25805",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "oxygen (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_26216",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_26216",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "potassium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_26708",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_26708",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sodium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_26833",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_26833",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27007",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27007",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tin (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27214",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27214",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "uranium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27363",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27363",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "zinc (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27560",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27560",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "boron (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27563",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27563",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "arsenic (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27568",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27568",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "selenium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27573",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27573",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "silicon (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27594",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27594",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "carbon (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27638",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27638",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "cobalt (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27698",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27698",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "vanadium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_27998",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_27998",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tungsten (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_28073",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_28073",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "chromium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_28112",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_28112",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nickel (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_28659",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_28659",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "phosphorus (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_28685",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_28685",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "molybdenum (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_28694",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_28694",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "copper (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_28984",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_28984",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "aluminium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_29021",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_29021",
+    "PCA_100004929" : "14",
+    "PCA_100004932" : "6",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "hexane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_29236",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_29236",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "protium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_29237",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_29237",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "deuterium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_29238",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_29238",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tritium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_29287",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_29287",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "gold (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30145",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30145",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lithium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30217",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30217",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "helium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30218",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30218",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "helium-3 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30219",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30219",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "helium-4 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30362",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30362",
+    "PCA_100004929" : "12",
+    "PCA_100004932" : "5",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "isopentane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30363",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30363",
+    "PCA_100004929" : "10",
+    "PCA_100004932" : "4",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "isobutane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30415",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30415",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "astatine (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30430",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30430",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "indium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30440",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30440",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "thallium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30441",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30441",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "germanium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30452",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30452",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tellurium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30501",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30501",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "beryllium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30512",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30512",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "silver (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30513",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30513",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "antimony (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30514",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30514",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "caesium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30682",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30682",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "ruthenium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30687",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30687",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "osmium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_30742",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_30742",
+    "PCA_100004929" : "6",
+    "PCA_100004931" : "2",
+    "PCA_100004932" : "2",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "ethylene glycol (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_32594",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_32594",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "barium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_32879",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_32879",
+    "PCA_100004929" : "8",
+    "PCA_100004932" : "3",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "propane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_32892",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_32892",
+    "PCA_100004929" : "20",
+    "PCA_100004932" : "9",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nonane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_32999",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_32999",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "europium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33301",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33301",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "bismuth (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33310",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33310",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "neon (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33313",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33313",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33314",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33314",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "radon (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33322",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33322",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "rubidium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33323",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33323",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "francium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33324",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33324",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "strontium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33325",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33325",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "radium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33330",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33330",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "scandium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33331",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33331",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "yttrium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33336",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33336",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lanthanum (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33337",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33337",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "actinium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33341",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33341",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "titanium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33342",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33342",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "zirconium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33343",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33343",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "hafnium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33344",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33344",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "niobium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33346",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33346",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "rutherfordium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33348",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33348",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tantalum (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33349",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33349",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "dubnium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33351",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33351",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "seaborgium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33353",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33353",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "technetium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33355",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33355",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "bohrium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33357",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33357",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "hassium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33359",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33359",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "rhodium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33361",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33361",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "meitnerium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33363",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33363",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "palladium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33364",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33364",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "platinum (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33367",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33367",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "darmstadtium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33368",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33368",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "roentgenium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33369",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33369",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "cerium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33371",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33371",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "technetium-99 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33372",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33372",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "neodymium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33373",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33373",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "promethium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33374",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33374",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "samarium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33375",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33375",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "gadolinium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33376",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33376",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "terbium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33377",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33377",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "dysprosium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33379",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33379",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "erbium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33380",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33380",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "thulium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33381",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33381",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "ytterbium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33382",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33382",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lutetium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33385",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33385",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "thorium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33386",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33386",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "protactinium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33387",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33387",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "neptunium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33388",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33388",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "plutonium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33389",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33389",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "americium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33390",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33390",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "curium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33391",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33391",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "berkelium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33392",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33392",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "californium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33393",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33393",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "einsteinium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33394",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33394",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "fermium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33395",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33395",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "mendelevium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33396",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33396",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nobelium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33397",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33397",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lawrencium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33491",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33491",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "radon-220 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33492",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33492",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "radon-222 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33493",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33493",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "radon-219 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33517",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33517",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "copernicium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33815",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33815",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "oxygen-18 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33818",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33818",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "oxygen-16 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_33819",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_33819",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "oxygen-17 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36927",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36927",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "carbon-14 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36928",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36928",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "carbon-13 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36929",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36929",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "carbon-11 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36930",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36930",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "carbon-10 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36931",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36931",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "carbon-12 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36932",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36932",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "oxygen-15 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36933",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36933",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "oxygen-19 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36934",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36934",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nitrogen-15 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36935",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36935",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nitrogen-13 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36936",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36936",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nitrogen-16 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36937",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36937",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nitrogen-17 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36938",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36938",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "nitrogen-14 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36939",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36939",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "fluorine-18 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_36940",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_36940",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "fluorine-19 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37003",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37003",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "helium-6 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37004",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37004",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "helium-8 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37340",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37340",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-210 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37341",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37341",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-211 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37342",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37342",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-212 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37343",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37343",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-213 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37344",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37344",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-214 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37345",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37345",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-215 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37346",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37346",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-216 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37347",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37347",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-217 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37348",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37348",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-218 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37350",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37350",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-190 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37351",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37351",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-191 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37352",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37352",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-192 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37353",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37353",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-193 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37354",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37354",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-194 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37355",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37355",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-195 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37356",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37356",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-196 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37357",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37357",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-197 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37358",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37358",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-198 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37359",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37359",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-199 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37360",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37360",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-200 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37361",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37361",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-201 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37362",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37362",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-202 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37363",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37363",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-203 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37364",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37364",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-204 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37365",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37365",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-205 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37366",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37366",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-206 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37367",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37367",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-207 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37368",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37368",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-208 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37369",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37369",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "polonium-209 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37802",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37802",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "thallium-203 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37803",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37803",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "thallium-205 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37804",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37804",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "thallium-201 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37805",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37805",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "thallium-199 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37808",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37808",
+    "PCA_100004929" : "10",
+    "PCA_100004932" : "4",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "butane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37830",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37830",
+    "PCA_100004929" : "12",
+    "PCA_100004932" : "5",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "pentane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37968",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37968",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "aluminium-27 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37969",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37969",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "aluminium-26 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37970",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37970",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "aluminium-28 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37971",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37971",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "phosphorus-31 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37972",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37972",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "phosphorus-32 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37973",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37973",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "phosphorus-33 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37974",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37974",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "silicon-29 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37975",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37975",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "silicon-28 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37976",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37976",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "silicon-30 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37977",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37977",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "silicon-31 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37978",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37978",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "silicon-32 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37979",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37979",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur-32 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37980",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37980",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur-33 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37981",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37981",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur-34 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37982",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37982",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur-36 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37983",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37983",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur-35 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37984",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37984",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur-37 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_37985",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_37985",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sulfur-38 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_42266",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_42266",
+    "PCA_100004929" : "6",
+    "PCA_100004932" : "2",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "ethane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_43098",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_43098",
+    "PCA_100004929" : "16",
+    "PCA_100004932" : "7",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "heptane (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_44926",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_44926",
+    "PCA_100004929" : "14",
+    "PCA_100004931" : "4",
+    "PCA_100004932" : "6",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "triethylene glycol (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_46807",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_46807",
+    "PCA_100004929" : "10",
+    "PCA_100004931" : "3",
+    "PCA_100004932" : "4",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "diethylene glycol (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49475",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49475",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "argon (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49631",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49631",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "gallium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49648",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49648",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "holmium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49666",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49666",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "iridium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49696",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49696",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "krypton (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49828",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49828",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "praseodymium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49882",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49882",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "rhenium (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_49957",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_49957",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "xenon (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_50076",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_50076",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "chromium-51 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52230",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52230",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tin-119 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52231",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52231",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tin-120 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52232",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52232",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tin-118 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52233",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52233",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tin-116 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52234",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52234",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tin-117 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52235",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52235",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tin-115 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52451",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52451",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "boron-11 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52452",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52452",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tellurium-125 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52453",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52453",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "xenon-129 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52457",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52457",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "selenium-77 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52458",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52458",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lithium-7 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52459",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52459",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "rubidium-87 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52460",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52460",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "niobium-93 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52462",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52462",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "tungsten-183 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52619",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52619",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "cadmium-111 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52620",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52620",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "cadmium-113 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52621",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52621",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lithium-6 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52622",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52622",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "yttrium-89 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52623",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52623",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "iron-57 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52624",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52624",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "antimony-121 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52626",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52626",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "antimony-123 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52627",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52627",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "lanthanum-139 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52631",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52631",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "iodine-127 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52632",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52632",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "potassium-39 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52633",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52633",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "molybdenum-95 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52634",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52634",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "sodium-23 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52635",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52635",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "scandium-45 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52636",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52636",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "iodine-129 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52637",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52637",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "europium-151 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52743",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52743",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "bromine-79 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52758",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52758",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "germanium-73 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_52763",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_52763",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "magnesium-25 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_5631",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_5631",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "heavy metal (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_77014",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_77014",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "boron-10 (ChEBI concept)"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/CHEBI_82623",
+    "@type" : [ "rdl:PCA_100004935", "owl:NamedIndividual" ],
+    "identifier" : "http://purl.obolibrary.org/obo/CHEBI_82623",
+    "isDefinedBy" : "rdl:PCA_100004914",
+    "label" : "zinc-65 (ChEBI concept)"
+  }, {
+    "@id" : "dc:identifier",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "lis:Stream",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "lis:partOf",
+    "@type" : "owl:ObjectProperty"
+  }, {
+    "@id" : "http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt",
+    "@type" : "owl:Ontology",
+    "status" : "ottr:incomplete",
+    "creator" : "orcid:0000-0001-8076-7460",
+    "description" : "ChEBI entities ontology for PLM RDL",
+    "title" : "chebi",
+    "issued" : "2022-02-25",
+    "license" : "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modified" : "2022-09-26",
+    "publisher" : "http://www.posccaesar.org/",
+    "createdBy" : "orcid:0000-0001-8076-7460",
+    "hasPreviousVersion" : "http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt/0.9.1",
+    "lastUpdateOn" : "2022-09-26T23:40:00Z",
+    "preferredNamespacePrefix" : "rdl",
+    "preferredNamespaceUri" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "feature" : [ "http://www.w3.org/ns/formats/N-Triples", "http://www.w3.org/ns/formats/Turtle", "http://www.w3.org/ns/formats/OWL_Manchester", "http://www.w3.org/ns/formats/JSON-LD", "http://www.w3.org/ns/formats/RDF_XML" ],
+    "sparqlEndpoint" : "https://rds.posccaesar.org/ontology/sparql",
+    "comment" : "ChEBI entities ontology for PLM RDL",
+    "label" : "chebi",
+    "imports" : "http://rds.posccaesar.org/ontology/plm/ont/core",
+    "versionIRI" : "http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt/0.9.2",
+    "versionInfo" : "0.9.2",
+    "changeNote" : "Added chebi entities",
+    "homepage" : "http://rds.posccaesar.org/ontology/plm/doc/chebi-adapt"
+  }, {
+    "@id" : "rdl:PCA_100004912",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The ChEBI entity defining the substance this chemical component consist of",
+    "domain" : "rdl:PCA_100004939",
+    "label" : "chemical substance",
+    "range" : "rdl:PCA_100004935"
+  }, {
+    "@id" : "rdl:PCA_100004914",
+    "member" : [ "http://purl.obolibrary.org/obo/CHEBI_23116", "http://purl.obolibrary.org/obo/CHEBI_30682", "http://purl.obolibrary.org/obo/CHEBI_176574", "http://purl.obolibrary.org/obo/CHEBI_46807", "http://purl.obolibrary.org/obo/CHEBI_27560", "http://purl.obolibrary.org/obo/CHEBI_37367", "http://purl.obolibrary.org/obo/CHEBI_37354", "http://purl.obolibrary.org/obo/CHEBI_37003", "http://purl.obolibrary.org/obo/CHEBI_36940", "http://purl.obolibrary.org/obo/CHEBI_33372", "http://purl.obolibrary.org/obo/CHEBI_32999", "http://purl.obolibrary.org/obo/CHEBI_36933", "http://purl.obolibrary.org/obo/CHEBI_49696", "http://purl.obolibrary.org/obo/CHEBI_37977", "http://purl.obolibrary.org/obo/CHEBI_37362", "http://purl.obolibrary.org/obo/CHEBI_37342", "http://purl.obolibrary.org/obo/CHEBI_176583", "http://purl.obolibrary.org/obo/CHEBI_25016", "http://purl.obolibrary.org/obo/CHEBI_36927", "http://purl.obolibrary.org/obo/CHEBI_33493", "http://purl.obolibrary.org/obo/CHEBI_33394", "http://purl.obolibrary.org/obo/CHEBI_37363", "http://purl.obolibrary.org/obo/CHEBI_28984", "http://purl.obolibrary.org/obo/CHEBI_52452", "http://purl.obolibrary.org/obo/CHEBI_49648", "http://purl.obolibrary.org/obo/CHEBI_52621", "http://purl.obolibrary.org/obo/CHEBI_176571", "http://purl.obolibrary.org/obo/CHEBI_33818", "http://purl.obolibrary.org/obo/CHEBI_30513", "http://purl.obolibrary.org/obo/CHEBI_52459", "http://purl.obolibrary.org/obo/CHEBI_37973", "http://purl.obolibrary.org/obo/CHEBI_52235", "http://purl.obolibrary.org/obo/CHEBI_49475", "http://purl.obolibrary.org/obo/CHEBI_33382", "http://purl.obolibrary.org/obo/CHEBI_176572", "http://purl.obolibrary.org/obo/CHEBI_52460", "http://purl.obolibrary.org/obo/CHEBI_27568", "http://purl.obolibrary.org/obo/CHEBI_49828", "http://purl.obolibrary.org/obo/CHEBI_30363", "http://purl.obolibrary.org/obo/CHEBI_52635", "http://purl.obolibrary.org/obo/CHEBI_24859", "http://purl.obolibrary.org/obo/CHEBI_26216", "http://purl.obolibrary.org/obo/CHEBI_52636", "http://purl.obolibrary.org/obo/CHEBI_52230", "http://purl.obolibrary.org/obo/CHEBI_37357", "http://purl.obolibrary.org/obo/CHEBI_33355", "http://purl.obolibrary.org/obo/CHEBI_33368", "http://purl.obolibrary.org/obo/CHEBI_52623", "http://purl.obolibrary.org/obo/CHEBI_33348", "http://purl.obolibrary.org/obo/CHEBI_33376", "http://purl.obolibrary.org/obo/CHEBI_52624", "http://purl.obolibrary.org/obo/CHEBI_37803", "http://purl.obolibrary.org/obo/CHEBI_30687", "http://purl.obolibrary.org/obo/CHEBI_176566", "http://purl.obolibrary.org/obo/CHEBI_33322", "http://purl.obolibrary.org/obo/CHEBI_25555", "http://purl.obolibrary.org/obo/CHEBI_37970", "http://purl.obolibrary.org/obo/CHEBI_33397", "http://purl.obolibrary.org/obo/CHEBI_24632", "http://purl.obolibrary.org/obo/CHEBI_33343", "http://purl.obolibrary.org/obo/CHEBI_37983", "http://purl.obolibrary.org/obo/CHEBI_33323", "http://purl.obolibrary.org/obo/CHEBI_33336", "http://purl.obolibrary.org/obo/CHEBI_33364", "http://purl.obolibrary.org/obo/CHEBI_27573", "http://purl.obolibrary.org/obo/CHEBI_27594", "http://purl.obolibrary.org/obo/CHEBI_176575", "http://purl.obolibrary.org/obo/CHEBI_32892", "http://purl.obolibrary.org/obo/CHEBI_37805", "http://purl.obolibrary.org/obo/CHEBI_37355", "http://purl.obolibrary.org/obo/CHEBI_37004", "http://purl.obolibrary.org/obo/CHEBI_33373", "http://purl.obolibrary.org/obo/CHEBI_36934", "http://purl.obolibrary.org/obo/CHEBI_17790", "http://purl.obolibrary.org/obo/CHEBI_27698", "http://purl.obolibrary.org/obo/CHEBI_29236", "http://purl.obolibrary.org/obo/CHEBI_52619", "http://purl.obolibrary.org/obo/CHEBI_16183", "http://purl.obolibrary.org/obo/CHEBI_37978", "http://purl.obolibrary.org/obo/CHEBI_16136", "http://purl.obolibrary.org/obo/CHEBI_37350", "http://purl.obolibrary.org/obo/CHEBI_36928", "http://purl.obolibrary.org/obo/CHEBI_37343", "http://purl.obolibrary.org/obo/CHEBI_37364", "http://purl.obolibrary.org/obo/CHEBI_33395", "http://purl.obolibrary.org/obo/CHEBI_33361", "http://purl.obolibrary.org/obo/CHEBI_37351", "http://purl.obolibrary.org/obo/CHEBI_33341", "http://purl.obolibrary.org/obo/CHEBI_26708", "http://purl.obolibrary.org/obo/CHEBI_52453", "http://purl.obolibrary.org/obo/CHEBI_36930", "http://purl.obolibrary.org/obo/CHEBI_29021", "http://purl.obolibrary.org/obo/CHEBI_28073", "http://purl.obolibrary.org/obo/CHEBI_52763", "http://purl.obolibrary.org/obo/CHEBI_33819", "http://purl.obolibrary.org/obo/CHEBI_36936", "http://purl.obolibrary.org/obo/CHEBI_30501", "http://purl.obolibrary.org/obo/CHEBI_30514", "http://purl.obolibrary.org/obo/CHEBI_37974", "http://purl.obolibrary.org/obo/CHEBI_33390", "http://purl.obolibrary.org/obo/CHEBI_82623", "http://purl.obolibrary.org/obo/CHEBI_36937", "http://purl.obolibrary.org/obo/CHEBI_33391", "http://purl.obolibrary.org/obo/CHEBI_18248", "http://purl.obolibrary.org/obo/CHEBI_52462", "http://purl.obolibrary.org/obo/CHEBI_18276", "http://purl.obolibrary.org/obo/CHEBI_52637", "http://purl.obolibrary.org/obo/CHEBI_49666", "http://purl.obolibrary.org/obo/CHEBI_44926", "http://purl.obolibrary.org/obo/CHEBI_52231", "http://purl.obolibrary.org/obo/CHEBI_33815", "http://purl.obolibrary.org/obo/CHEBI_27998", "http://purl.obolibrary.org/obo/CHEBI_52232", "http://purl.obolibrary.org/obo/CHEBI_37358", "http://purl.obolibrary.org/obo/CHEBI_30452", "http://purl.obolibrary.org/obo/CHEBI_33369", "http://purl.obolibrary.org/obo/CHEBI_37359", "http://purl.obolibrary.org/obo/CHEBI_33349", "http://purl.obolibrary.org/obo/CHEBI_52758", "http://purl.obolibrary.org/obo/CHEBI_33377", "http://purl.obolibrary.org/obo/CHEBI_37804", "http://purl.obolibrary.org/obo/CHEBI_33310", "http://purl.obolibrary.org/obo/CHEBI_37346", "http://purl.obolibrary.org/obo/CHEBI_30440", "http://purl.obolibrary.org/obo/CHEBI_37971", "http://purl.obolibrary.org/obo/CHEBI_22977", "http://purl.obolibrary.org/obo/CHEBI_33331", "http://purl.obolibrary.org/obo/CHEBI_33344", "http://purl.obolibrary.org/obo/CHEBI_37347", "http://purl.obolibrary.org/obo/CHEBI_33324", "http://purl.obolibrary.org/obo/CHEBI_33337", "http://purl.obolibrary.org/obo/CHEBI_28659", "http://purl.obolibrary.org/obo/CHEBI_33386", "http://purl.obolibrary.org/obo/CHEBI_176584", "http://purl.obolibrary.org/obo/CHEBI_37980", "http://purl.obolibrary.org/obo/CHEBI_33387", "http://purl.obolibrary.org/obo/CHEBI_32879", "http://purl.obolibrary.org/obo/CHEBI_27007", "http://purl.obolibrary.org/obo/CHEBI_37356", "http://purl.obolibrary.org/obo/CHEBI_5631", "http://purl.obolibrary.org/obo/CHEBI_33374", "http://purl.obolibrary.org/obo/CHEBI_36935", "http://purl.obolibrary.org/obo/CHEBI_27563", "http://purl.obolibrary.org/obo/CHEBI_49631", "http://purl.obolibrary.org/obo/CHEBI_29237", "http://purl.obolibrary.org/obo/CHEBI_37979", "http://purl.obolibrary.org/obo/CHEBI_36929", "http://purl.obolibrary.org/obo/CHEBI_37344", "http://purl.obolibrary.org/obo/CHEBI_33396", "http://purl.obolibrary.org/obo/CHEBI_37352", "http://purl.obolibrary.org/obo/CHEBI_37365", "http://purl.obolibrary.org/obo/CHEBI_30415", "http://purl.obolibrary.org/obo/CHEBI_36931", "http://purl.obolibrary.org/obo/CHEBI_28112", "http://purl.obolibrary.org/obo/CHEBI_33363", "http://purl.obolibrary.org/obo/CHEBI_29287", "http://purl.obolibrary.org/obo/CHEBI_24061", "http://purl.obolibrary.org/obo/CHEBI_52631", "http://purl.obolibrary.org/obo/CHEBI_37975", "http://purl.obolibrary.org/obo/CHEBI_37360", "http://purl.obolibrary.org/obo/CHEBI_37340", "http://purl.obolibrary.org/obo/CHEBI_17590", "http://purl.obolibrary.org/obo/CHEBI_18291", "http://purl.obolibrary.org/obo/CHEBI_36938", "http://purl.obolibrary.org/obo/CHEBI_33491", "http://purl.obolibrary.org/obo/CHEBI_22927", "http://purl.obolibrary.org/obo/CHEBI_33392", "http://purl.obolibrary.org/obo/CHEBI_27363", "http://purl.obolibrary.org/obo/CHEBI_77014", "http://purl.obolibrary.org/obo/CHEBI_52233", "http://purl.obolibrary.org/obo/CHEBI_33380", "http://purl.obolibrary.org/obo/CHEBI_155827", "http://purl.obolibrary.org/obo/CHEBI_33357", "http://purl.obolibrary.org/obo/CHEBI_25805", "http://purl.obolibrary.org/obo/CHEBI_28694", "http://purl.obolibrary.org/obo/CHEBI_52633", "http://purl.obolibrary.org/obo/CHEBI_15377", "http://purl.obolibrary.org/obo/CHEBI_52626", "http://purl.obolibrary.org/obo/CHEBI_30742", "http://purl.obolibrary.org/obo/CHEBI_49957", "http://purl.obolibrary.org/obo/CHEBI_30441", "http://purl.obolibrary.org/obo/CHEBI_37972", "http://purl.obolibrary.org/obo/CHEBI_37368", "http://purl.obolibrary.org/obo/CHEBI_37348", "http://purl.obolibrary.org/obo/CHEBI_33325", "http://purl.obolibrary.org/obo/CHEBI_33353", "http://purl.obolibrary.org/obo/CHEBI_33359", "http://purl.obolibrary.org/obo/CHEBI_30145", "http://purl.obolibrary.org/obo/CHEBI_30217", "http://purl.obolibrary.org/obo/CHEBI_26833", "http://purl.obolibrary.org/obo/CHEBI_33313", "http://purl.obolibrary.org/obo/CHEBI_42266", "http://purl.obolibrary.org/obo/CHEBI_37981", "http://purl.obolibrary.org/obo/CHEBI_33388", "http://purl.obolibrary.org/obo/CHEBI_30218", "http://purl.obolibrary.org/obo/CHEBI_37808", "http://purl.obolibrary.org/obo/CHEBI_33517", "http://purl.obolibrary.org/obo/CHEBI_29238", "http://purl.obolibrary.org/obo/CHEBI_176573", "http://purl.obolibrary.org/obo/CHEBI_16236", "http://purl.obolibrary.org/obo/CHEBI_30430", "http://purl.obolibrary.org/obo/CHEBI_37345", "http://purl.obolibrary.org/obo/CHEBI_27214", "http://purl.obolibrary.org/obo/CHEBI_37353", "http://purl.obolibrary.org/obo/CHEBI_33330", "http://purl.obolibrary.org/obo/CHEBI_37366", "http://purl.obolibrary.org/obo/CHEBI_32594", "http://purl.obolibrary.org/obo/CHEBI_33371", "http://purl.obolibrary.org/obo/CHEBI_36932", "http://purl.obolibrary.org/obo/CHEBI_33351", "http://purl.obolibrary.org/obo/CHEBI_28685", "http://purl.obolibrary.org/obo/CHEBI_37968", "http://purl.obolibrary.org/obo/CHEBI_52632", "http://purl.obolibrary.org/obo/CHEBI_16526", "http://purl.obolibrary.org/obo/CHEBI_37976", "http://purl.obolibrary.org/obo/CHEBI_37969", "http://purl.obolibrary.org/obo/CHEBI_37361", "http://purl.obolibrary.org/obo/CHEBI_37341", "http://purl.obolibrary.org/obo/CHEBI_33492", "http://purl.obolibrary.org/obo/CHEBI_33385", "http://purl.obolibrary.org/obo/CHEBI_36939", "http://purl.obolibrary.org/obo/CHEBI_33393", "http://purl.obolibrary.org/obo/CHEBI_52451", "http://purl.obolibrary.org/obo/CHEBI_17997", "http://purl.obolibrary.org/obo/CHEBI_22984", "http://purl.obolibrary.org/obo/CHEBI_37984", "http://purl.obolibrary.org/obo/CHEBI_52457", "http://purl.obolibrary.org/obo/CHEBI_176570", "http://purl.obolibrary.org/obo/CHEBI_30512", "http://purl.obolibrary.org/obo/CHEBI_52620", "http://purl.obolibrary.org/obo/CHEBI_52234", "http://purl.obolibrary.org/obo/CHEBI_37985", "http://purl.obolibrary.org/obo/CHEBI_52458", "http://purl.obolibrary.org/obo/CHEBI_33381", "http://purl.obolibrary.org/obo/CHEBI_30362", "http://purl.obolibrary.org/obo/CHEBI_33379", "http://purl.obolibrary.org/obo/CHEBI_52634", "http://purl.obolibrary.org/obo/CHEBI_43098", "http://purl.obolibrary.org/obo/CHEBI_52627", "http://purl.obolibrary.org/obo/CHEBI_37369", "http://purl.obolibrary.org/obo/CHEBI_33346", "http://purl.obolibrary.org/obo/CHEBI_49882", "http://purl.obolibrary.org/obo/CHEBI_33367", "http://purl.obolibrary.org/obo/CHEBI_52622", "http://purl.obolibrary.org/obo/CHEBI_33375", "http://purl.obolibrary.org/obo/CHEBI_27638", "http://purl.obolibrary.org/obo/CHEBI_25195", "http://purl.obolibrary.org/obo/CHEBI_52743", "http://purl.obolibrary.org/obo/CHEBI_37802", "http://purl.obolibrary.org/obo/CHEBI_50076", "http://purl.obolibrary.org/obo/CHEBI_37830", "http://purl.obolibrary.org/obo/CHEBI_176578", "http://purl.obolibrary.org/obo/CHEBI_33301", "http://purl.obolibrary.org/obo/CHEBI_33314", "http://purl.obolibrary.org/obo/CHEBI_37982", "http://purl.obolibrary.org/obo/CHEBI_33342", "http://purl.obolibrary.org/obo/CHEBI_33389", "http://purl.obolibrary.org/obo/CHEBI_30219" ]
+  }, {
+    "@id" : "rdl:PCA_100004929",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Number of hydrogen atoms in the referenced ChEBI entity",
+    "domain" : "rdl:PCA_100001503",
+    "label" : "hasHydrogenAtoms",
+    "range" : "xsd:nonNegativeInteger"
+  }, {
+    "@id" : "rdl:PCA_100004930",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Number of nitrogen atoms in the referenced ChEBI entity",
+    "domain" : "rdl:PCA_100001503",
+    "label" : "hasNitrogenAtoms",
+    "range" : "xsd:nonNegativeInteger"
+  }, {
+    "@id" : "rdl:PCA_100004931",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Number of oxygen atoms in the referenced ChEBI entity",
+    "domain" : "rdl:PCA_100001503",
+    "label" : "hasOxygenAtoms",
+    "range" : "xsd:nonNegativeInteger"
+  }, {
+    "@id" : "rdl:PCA_100004932",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Number of carbon atoms in the referenced ChEBI entity",
+    "domain" : "rdl:PCA_100001503",
+    "label" : "hasCarbonAtoms",
+    "range" : "xsd:nonNegativeInteger"
+  }, {
+    "@id" : "rdl:PCA_100004933",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Number of sulfur atoms in the referenced ChEBI entity",
+    "domain" : "rdl:PCA_100001503",
+    "label" : "hasSulfurAtoms",
+    "range" : "xsd:nonNegativeInteger"
+  }, {
+    "@id" : "rdl:PCA_100004939",
+    "@type" : "owl:Class",
+    "label" : "Chemical",
+    "subClassOf" : "lis:Compound"
+  }, {
+    "@id" : "rdl:PCA_100005000",
+    "@type" : "owl:Class",
+    "comment" : "A chemical component of a stream",
+    "label" : "Chemical component of stream",
+    "subClassOf" : [ "_:b0", "rdl:PCA_100004939" ]
+  }, {
+    "@id" : "rdl:PCA_100005605",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The datum determining this material composition quality",
+    "domain" : "rdl:PCA_100005604",
+    "label" : "chemically determined as",
+    "range" : "rdl:PCA_100005606"
+  }, {
+    "@id" : "rdl:PCA_100005607",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The ChEBI concept describing the chemical referred to by a chemical composition datum",
+    "domain" : "rdl:PCA_100005606",
+    "label" : "chemical",
+    "range" : "rdl:PCA_100004935"
+  }, {
+    "@id" : "skos:member",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "PCA_100004931" : {
+      "@id" : "http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004931",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "PCA_100004929" : {
+      "@id" : "http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004929",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "PCA_100004933" : {
+      "@id" : "http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004933",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "PCA_100004932" : {
+      "@id" : "http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004932",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "PCA_100004930" : {
+      "@id" : "http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004930",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator",
+      "@type" : "@id"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "feature" : {
+      "@id" : "http://rdfs.org/ns/void#feature",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://ns.ottr.xyz/0.4/status",
+      "@type" : "@id"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "lastUpdateOn" : {
+      "@id" : "http://purl.org/pav/lastUpdateOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "createdBy" : {
+      "@id" : "http://purl.org/pav/createdBy",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "sparqlEndpoint" : {
+      "@id" : "http://rdfs.org/ns/void#sparqlEndpoint",
+      "@type" : "@id"
+    },
+    "hasPreviousVersion" : {
+      "@id" : "http://purl.org/pav/hasPreviousVersion",
+      "@type" : "@id"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "@vocab" : "http://www.semanticweb.org/owl/owlapi/turtle#",
+    "o-rdfs" : "http://tpl.ottr.xyz/rdfs/0.1/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "rstr" : "http://tpl.ottr.xyz/owl/restriction/0.1/",
+    "pca" : "http://data.posccaesar.org/rdl/",
+    "sd" : "http://www.w3.org/ns/sparql-service-description#",
+    "o-docttr" : "http://tpl.ottr.xyz/p/docttr/0.1/",
+    "listpl" : "http://rds.posccaesar.org/ontology/lis14/tpl/0.1/",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "lis" : "http://rds.posccaesar.org/ontology/lis14/rdl/",
+    "ottr" : "http://ns.ottr.xyz/0.4/",
+    "o-owl-ma" : "http://tpl.ottr.xyz/owl/macro/0.1/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "plmtpl" : "http://rds.posccaesar.org/ontology/plm/tpl/0.1/",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "reqtpl" : "http://w3id.org/requirement-ontology/tpl/0.1/",
+    "req" : "https://w3id.org/requirement-ontology/rdl/",
+    "void" : "http://rdfs.org/ns/void#",
+    "pav" : "http://purl.org/pav/",
+    "o-rdf" : "http://tpl.ottr.xyz/rdf/0.1/",
+    "o-owl-ut" : "http://tpl.ottr.xyz/owl/util/0.1/",
+    "orcid" : "https://orcid.org/",
+    "ntpl" : "http://norsok.org/templates/",
+    "ex" : "http://example.org/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "o-owl-dec" : "http://tpl.ottr.xyz/owl/declaration/0.1/",
+    "o-owl-re" : "http://tpl.ottr.xyz/owl/restriction/0.1/",
+    "rdl" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "rrdl" : "http://w3id.org/readi/rdl/",
+    "o-owl-ax" : "http://tpl.ottr.xyz/owl/axiom/0.1/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

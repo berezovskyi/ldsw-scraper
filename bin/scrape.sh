@@ -27,7 +27,8 @@ function delete_if_html() {
 function curl_try_all() {
    uri="$1"
    path="$2"
-   outpath="data/${path:0:1}/${path}"
+   firstchar="${path:0:1}"
+   outpath="data/${firstchar,,}/${path}"
    outdir=$(dirname "$outpath")
 
    mkdir -p "$outdir"
@@ -58,7 +59,8 @@ function curl_try_exact() {
    uri="$1"
    path="$2"
    accept="$3"
-   outpath="data/${path:0:1}/${path}"
+   firstchar="${path:0:1}"
+   outpath="data/${firstchar,,}/${path}"
    outdir=$(dirname "$outpath")
 
    mkdir -p "$outdir"
@@ -74,7 +76,8 @@ function curl_try_exact() {
 function curl_try_shex() {
    uri="$1"
    path="$2"
-   outpath="data/${path:0:1}/${path}"
+   firstchar="${path:0:1}"
+   outpath="data/${firstchar,,}/${path}"
    outdir=$(dirname "$outpath")
 
    mkdir -p "$outdir"
@@ -86,6 +89,45 @@ function curl_try_shex() {
    delete_if_html "${outpath}.shex"
 }
 
+curl_try_all "http://www.w3.org/ns/csvw" "w3c/CVSW/csvw"
+# apparently, LDN spec added a prop to LDP
+curl_try_all "https://www.w3.org/ns/ldp" "w3c/LDP/ldp"
+
+curl_try_all "https://www.w3.org/ns/activitystreams" "w3c/ActivityStreams/as"
+
+curl_try_all "http://purl.org/NET/scovo#" "scovo/scovo"
+# curl_try_all "http://vocab.deri.ie/scovo" "scovo/scovo"
+
+curl_try_exact "http://purl.org/linked-data/cube#" "w3c/Data-Cube/qb.ttl" "text/turtle"
+curl_try_all "https://www.w3.org/ns/org#" "w3c/org/org"
+
+# bad conneg
+# curl_try_all "http://purl.org/goodrelations/v1" "goodrelations/goodrelations"
+curl_try_exact "http://purl.org/goodrelations/v1" "goodrelations/goodrelations.rdf" "application/rdf+xml"
+
+curl_try_exact "https://spec.ottr.xyz/wOTTR/0.4.5/all.owl.ttl" "OTTR/all.owl.ttl" "text/turtle"
+curl_try_exact "http://spec.ottr.xyz/wOTTR/0.4/core-vocabulary.owl.ttl" "OTTR/core-vocabulary.owl.ttl" "text/turtle"
+curl_try_exact "http://spec.ottr.xyz/wOTTR/0.4/core-grammar.shacl.ttl" "OTTR/core-grammar.shacl.ttl" "text/turtle"
+curl_try_exact "http://spec.ottr.xyz/rOTTR/0.2/types.owl.ttl" "OTTR/types.owl.ttl" "text/turtle"
+curl_try_exact "http://spec.ottr.xyz/rOTTR/0.2/types.shacl.ttl" "OTTR/types.shacl.ttl" "text/turtle"
+curl_try_exact "http://spec.ottr.xyz/rOTTR/0.2/puntypes.shacl.ttl" "OTTR/puntypes.shacl.ttl" "text/turtle"
+
+curl_try_exact "http://vocab.org/waiver/vocab.rdf" "WAIVER/waiver.rdf" "application/rdf+xml"
+
+curl_try_all "https://www.w3.org/ns/sparql-service-description" "w3c/SPARQL-SD/sd"
+curl_try_all "http://rdfs.org/ns/void" "w3c/VoID/void"
+curl_try_all "http://www.w3.org/ns/prov-o" "w3c/PROV/prov-o"
+curl_try_all "http://www.w3.org/ns/prov" "w3c/PROV/prov"
+
+curl_try_all "http://rds.posccaesar.org/ontology/lis14/ont/core" "Industrial-Data-Ontology/ido-core"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/core" "Industrial-Data-Ontology/plm-core"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt" "Industrial-Data-Ontology/plm-chebi"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/process" "Industrial-Data-Ontology/plm-process"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/equipment" "Industrial-Data-Ontology/plm-equipment"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/uom" "Industrial-Data-Ontology/plm-uom"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/datasheet" "Industrial-Data-Ontology/plm-datasheet"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/norsok-z001" "Industrial-Data-Ontology/plm-norsok-z001"
+curl_try_all "http://rds.posccaesar.org/ontology/plm/ont/core-collect" "Industrial-Data-Ontology/plm-core-collect"
 
 # curl_try_all "http://xmlns.com/wordnet/1.6" "wordnet/wordnet"
 curl_try_exact "https://www.w3.org/2006/03/wn/wn20/schemas/wnfull.rdfs" "wordnet/wnfull.rdf" "application/rdf+xml" 

@@ -1,0 +1,859 @@
+{
+  "@graph" : [ {
+    "@id" : "dcterms:identifier",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "An unambiguous reference to the resource within a given context.",
+    "isDefinedBy" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+    "label" : "identifier",
+    "range" : "rdfs:Literal"
+  }, {
+    "@id" : "pav:createdBy",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "An agent primary responsible for making the digital artifact or resource representation.",
+    "isDefinedBy" : "http://purl.org/pav/",
+    "label" : "Created by"
+  }, {
+    "@id" : "pav:createdOn",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "The date of creation of the resource representation.",
+    "isDefinedBy" : "http://purl.org/pav/",
+    "label" : "Created on"
+  }, {
+    "@id" : "http://rds.posccaesar.org/ontology/plm/ont/core",
+    "@type" : "owl:Ontology",
+    "status" : "ottr:incomplete",
+    "creator" : "orcid:0000-0002-7167-7321",
+    "description" : "Core ontology for PLM RDL.",
+    "title" : "core",
+    "issued" : "2022-01-26",
+    "license" : "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modified" : "2022-09-26",
+    "publisher" : "http://www.posccaesar.org/",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "hasPreviousVersion" : "http://rds.posccaesar.org/ontology/plm/ont/core/0.9.0",
+    "lastUpdateOn" : "2022-09-26T23:40:00Z",
+    "preferredNamespacePrefix" : "rdl",
+    "preferredNamespaceUri" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "exampleResource" : "rdl:PCA_100000011",
+    "feature" : [ "http://www.w3.org/ns/formats/N-Triples", "http://www.w3.org/ns/formats/JSON-LD", "http://www.w3.org/ns/formats/RDF_XML", "http://www.w3.org/ns/formats/Turtle", "http://www.w3.org/ns/formats/OWL_Manchester" ],
+    "sparqlEndpoint" : "https://rds.posccaesar.org/ontology/sparql",
+    "comment" : "Core ontology for PLM RDL.",
+    "label" : "core",
+    "imports" : "http://rds.posccaesar.org/ontology/lis14/ont/core",
+    "versionIRI" : "http://rds.posccaesar.org/ontology/plm/ont/core/0.9.1",
+    "versionInfo" : "0.9.1",
+    "changeNote" : "Moved definitions from core to chebi/uom",
+    "homepage" : "http://rds.posccaesar.org/ontology/plm/doc/core"
+  }, {
+    "@id" : "rdl:PCA_100000501",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Pointer from a 'shortcut' data property to quantification related resources that define its meaning",
+    "domain" : "owl:DatatypeProperty",
+    "label" : "defining source for shortcut quantification data property",
+    "range" : "rdfs:Resource",
+    "subPropertyOf" : "rdfs:isDefinedBy"
+  }, {
+    "@id" : "rdl:PCA_100000502",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Which quality is, implicitly, represented by the data property (e.g., Mass, Length as subclasses of lis:Quality)",
+    "domain" : "owl:DatatypeProperty",
+    "label" : "quality type of shortcut property",
+    "range" : "owl:Class",
+    "subPropertyOf" : "rdl:PCA_100000501"
+  }, {
+    "@id" : "rdl:PCA_100000503",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "How values of the data property are, implicitly, obtained (e.g., measured-as, assigned-as-nominal-value, as subproperties of lis:qualityQuantifiedAs)",
+    "domain" : "owl:DatatypeProperty",
+    "label" : "quantification type of shortcut property",
+    "range" : "owl:ObjectProperty",
+    "subPropertyOf" : "rdl:PCA_100000501"
+  }, {
+    "@id" : "rdl:PCA_100000504",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Which type of quantification datum is, implicitly, represented by the data property (e.g., Mass Quantity Datum, Length Quantity Datum as subclasses of lis:QuantityDatum)",
+    "domain" : "owl:DatatypeProperty",
+    "label" : "datum type of shortcut property",
+    "range" : "owl:Class",
+    "subPropertyOf" : "rdl:PCA_100000501"
+  }, {
+    "@id" : "rdl:PCA_100000505",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Which unit of measure applies, implicitly, to values of the data property (e.g., kilogram, millimetre as members of lis:UnitOfMeasure)",
+    "domain" : "owl:DatatypeProperty",
+    "label" : "unit of measure of shortcut property",
+    "range" : "owl:NamedIndividual",
+    "subPropertyOf" : "rdl:PCA_100000501"
+  }, {
+    "@id" : "rdl:PCA_100000510",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "For a quantity datum class, pointer to default unit of measure",
+    "domain" : "owl:Class",
+    "label" : "default unit of measure",
+    "range" : "owl:NamedIndividual",
+    "subPropertyOf" : "rdfs:seeAlso"
+  }, {
+    "@id" : "rdl:PCA_100001501",
+    "@type" : "owl:Class",
+    "comment" : "A collection of SKOS concepts from one or more external reference data libraries. Identifiers are URIs, as defined in the external source where provided by the source. Where not, for instance if the external RDL provides only string identifiers, local URIs are introduced to represent each external concept.",
+    "label" : "External RDL entity collection",
+    "subClassOf" : "skos:Collection"
+  }, {
+    "@id" : "rdl:PCA_100001502",
+    "@type" : "owl:Class",
+    "comment" : "An entity that is part of an external reference data library.",
+    "label" : "External RDL entity",
+    "subClassOf" : "skos:Concept"
+  }, {
+    "@id" : "rdl:PCA_100001503",
+    "@type" : "owl:Class",
+    "comment" : "A classifier (type) resource that is part of an external reference data library.",
+    "label" : "External RDL classifier",
+    "subClassOf" : "rdl:PCA_100001502"
+  }, {
+    "@id" : "rdl:PCA_100002001",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : [ "CFIHOS entities have non-informative identifiers, like \"CFIHOS-00000003\" (\"AREA\").", "An entity defined by the CFIHOS reference data library." ],
+    "isDefinedBy" : "https://www.jip36-cfihos.org",
+    "label" : "CFIHOS RDL entities"
+  }, {
+    "@id" : "rdl:PCA_100002002",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : [ "OntoCAPE entities have informative, local file system identifiers, like \"file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange\" (\"EnthalpyChange\"). For the PLM RDL, we introduce PCA URIs to represent OntoCAPE entities.", "An entity defined by the OntoCAPE ontology." ],
+    "isDefinedBy" : "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape",
+    "label" : "OntoCAPE ontology entities"
+  }, {
+    "@id" : "rdl:PCA_100002003",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : [ "PCA RDL entities have non-informative identifiers, like \"http://data.posccaesar.org/rdl/RDS349874\" (\"AREA\").", "An entity defined by the legacy PCA reference data library." ],
+    "isDefinedBy" : "http://data.posccaesar.org/",
+    "label" : "PCA RDL entities"
+  }, {
+    "@id" : "rdl:PCA_100002004",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : [ "An entity defined by the DEXPI Information Model.", "An entity defined by the DEXPI Information Model is a UML entity. Many entities have legacy PCA RDL references. Also available from the DEXPI SPARQL endpoint with URIs like http://sandbox.dexpi.org/informationmodel/AreaIsa95." ],
+    "isDefinedBy" : "https://dexpi.org/",
+    "label" : "DEXPI model entities",
+    "seeAlso" : [ "https://endpoint.dexpi.org/", "https://dexpi.org/wp-content/uploads/2020/09/DEXPI-PID-Specification-1.3.pdf#section.3.2." ]
+  }, {
+    "@id" : "rdl:PCA_100003536",
+    "@type" : "owl:Class",
+    "label" : "Discipline",
+    "subClassOf" : "skos:Concept"
+  }, {
+    "@id" : "rdl:PCA_100003537",
+    "@type" : "owl:Class",
+    "comment" : "A Specification is a document that states an explicit set of requirements to be satisfied by a material, design, product, or service.",
+    "label" : "Specification",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "rdl:PCA_100003538",
+    "@type" : "owl:Class",
+    "comment" : "A Standard is 'Any norm, convention or requirement' (Wikipedia).  In PLM RDL, the typical standard is a Technical Standard and should be classified as such.",
+    "label" : "Standard",
+    "subClassOf" : "rdl:PCA_100003537"
+  }, {
+    "@id" : "rdl:PCA_100003539",
+    "@type" : "owl:Class",
+    "comment" : "A standard issued by an industry-based standards developing organization.",
+    "label" : "Industry Organization Standard",
+    "subClassOf" : "rdl:PCA_100003538"
+  }, {
+    "@id" : "rdl:PCA_100003540",
+    "@type" : "owl:Class",
+    "comment" : "A standard developed by an international standards organization. (Other published standards may well also be used internationally.)",
+    "label" : "International Standard",
+    "subClassOf" : "rdl:PCA_100003538"
+  }, {
+    "@id" : "rdl:PCA_100003541",
+    "@type" : "owl:Class",
+    "comment" : "A standard specifying material grades, properties, or manufacturing requirements relevant for product properties.",
+    "label" : "Material Standard",
+    "subClassOf" : "rdl:PCA_100003538"
+  }, {
+    "@id" : "rdl:PCA_100003542",
+    "@type" : "owl:Class",
+    "comment" : "A standard developed by a national standards organization. In general, each country or economy has a single recognized national standards body (NSB). A national standards body is likely the sole member from that economy in ISO; ISO currently has 161 members. National standards bodies usually do not prepare the technical content of standards, which instead is developed by national technical societies. (Wikipedia)",
+    "label" : "National Standard",
+    "subClassOf" : "rdl:PCA_100003538"
+  }, {
+    "@id" : "rdl:PCA_100003543",
+    "@type" : "owl:Class",
+    "comment" : "A technical standard is an established norm or requirement in regard to technical systems. It is usually a formal document that establishes uniform engineering or technical criteria, methods, processes and practices. In contrast, a custom, convention, company product, corporate standard, etc. that becomes generally accepted and dominant is often called a de facto standard. (Wikipedia)",
+    "label" : "Technical Standard",
+    "subClassOf" : "rdl:PCA_100003538"
+  }, {
+    "@id" : "rdl:PCA_100003544",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a physical quantity to its specified magnitude",
+    "domain" : "lis:PhysicalQuantity",
+    "label" : "specified magnitude",
+    "range" : "lis:QuantityDatum",
+    "subPropertyOf" : "lis:qualityQuantifiedAs",
+    "inverseOf" : "rdl:PCA_100003545"
+  }, {
+    "@id" : "rdl:PCA_100003545",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a magnitude to the physical quantity of which it is a specification",
+    "domain" : "lis:QuantityDatum",
+    "label" : "is specified magnitude of",
+    "range" : "lis:PhysicalQuantity",
+    "subPropertyOf" : "lis:quantifiesQuality"
+  }, {
+    "@id" : "rdl:PCA_100003546",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a physical quantity to its measured magnitude",
+    "domain" : "lis:PhysicalQuantity",
+    "label" : "measured magnitude",
+    "range" : "lis:QuantityDatum",
+    "subPropertyOf" : "lis:qualityQuantifiedAs",
+    "inverseOf" : "rdl:PCA_100003547"
+  }, {
+    "@id" : "rdl:PCA_100003547",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a magnitude to the physical quantity of which it is a measurement",
+    "domain" : "lis:QuantityDatum",
+    "label" : "is measured magnitude of",
+    "range" : "lis:PhysicalQuantity",
+    "subPropertyOf" : "lis:quantifiesQuality"
+  }, {
+    "@id" : "rdl:PCA_100003548",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a physical quantity to its rated magnitude",
+    "domain" : "lis:PhysicalQuantity",
+    "label" : "rated magnitude",
+    "range" : "lis:QuantityDatum",
+    "subPropertyOf" : "lis:qualityQuantifiedAs",
+    "inverseOf" : "rdl:PCA_100003549"
+  }, {
+    "@id" : "rdl:PCA_100003549",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a magnitude to the physical quantity of which it is a rating",
+    "domain" : "lis:QuantityDatum",
+    "label" : "is rated magnitude of",
+    "range" : "lis:PhysicalQuantity",
+    "subPropertyOf" : "lis:quantifiesQuality"
+  }, {
+    "@id" : "rdl:PCA_100003550",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a physical quantity to its nominal magnitude",
+    "domain" : "lis:PhysicalQuantity",
+    "label" : "nominal magnitude",
+    "range" : "lis:QuantityDatum",
+    "subPropertyOf" : "lis:qualityQuantifiedAs",
+    "inverseOf" : "rdl:PCA_100003551"
+  }, {
+    "@id" : "rdl:PCA_100003551",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from a magnitude to the physical quantity of which it is a nominal magnitude",
+    "domain" : "lis:QuantityDatum",
+    "label" : "is nominal magnitude of",
+    "range" : "lis:PhysicalQuantity",
+    "subPropertyOf" : "lis:quantifiesQuality"
+  }, {
+    "@id" : "rdl:PCA_100003552",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Use this relation to express that the subject concept has no matching concept in the target SKOS scheme.",
+    "label" : "has no match in scheme",
+    "range" : "skos:ConceptScheme"
+  }, {
+    "@id" : "rdl:PCA_100003553",
+    "@type" : "owl:Class",
+    "label" : "SI Quantity Class",
+    "subClassOf" : "rdl:PCA_100004054"
+  }, {
+    "@id" : "rdl:PCA_100003554",
+    "@type" : "owl:Class",
+    "label" : "SI base quantity",
+    "subClassOf" : "rdl:PCA_100003553"
+  }, {
+    "@id" : "rdl:PCA_100003555",
+    "@type" : "owl:Class",
+    "label" : "SI derived quantity",
+    "subClassOf" : "rdl:PCA_100003553"
+  }, {
+    "@id" : "rdl:PCA_100003556",
+    "@type" : "owl:Class",
+    "label" : "SI unit",
+    "subClassOf" : "lis:Scale"
+  }, {
+    "@id" : "rdl:PCA_100003557",
+    "@type" : "owl:Class",
+    "label" : "SI base unit",
+    "subClassOf" : "rdl:PCA_100003556"
+  }, {
+    "@id" : "rdl:PCA_100003558",
+    "@type" : "owl:Class",
+    "label" : "SI derived unit",
+    "subClassOf" : "rdl:PCA_100003556"
+  }, {
+    "@id" : "rdl:PCA_100003559",
+    "@type" : "owl:Class",
+    "label" : "non-SI Quantity Class",
+    "subClassOf" : "rdl:PCA_100004054"
+  }, {
+    "@id" : "rdl:PCA_100003560",
+    "@type" : "owl:Class",
+    "label" : "non-SI unit of measure",
+    "subClassOf" : "lis:Scale"
+  }, {
+    "@id" : "rdl:PCA_100003728",
+    "@type" : "owl:Class",
+    "comment" : "A combination of basic physical dimensions, with exponents. Note that the choice and order of letters varies widely among sources. The format used here follows the Wikipedia entry.",
+    "label" : "SI Physical Dimension",
+    "seeAlso" : "https://en.wikipedia.org/wiki/List_of_physical_quantities",
+    "subClassOf" : "skos:Concept"
+  }, {
+    "@id" : "rdl:PCA_100003729",
+    "@type" : [ "owl:FunctionalProperty", "owl:ObjectProperty" ],
+    "comment" : "Relation from a physical quantity to the concept that describes its SI dimension",
+    "domain" : "lis:PhysicalQuantity",
+    "label" : "has dimension",
+    "range" : "rdl:PCA_100003728",
+    "subPropertyOf" : "lis:representedBy",
+    "inverseOf" : "rdl:PCA_100003730"
+  }, {
+    "@id" : "rdl:PCA_100003730",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Relation from an SI dimension concept to a physical quantity that it describes",
+    "domain" : "rdl:PCA_100003728",
+    "label" : "dimension of",
+    "range" : "lis:PhysicalQuantity",
+    "subPropertyOf" : "lis:represents"
+  }, {
+    "@id" : "rdl:PCA_100003769",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "For a quantity datum class, pointer to applicable unit of measure",
+    "domain" : "owl:Class",
+    "label" : "applicable unit of measure",
+    "range" : "owl:NamedIndividual",
+    "subPropertyOf" : "rdfs:seeAlso"
+  }, {
+    "@id" : "rdl:PCA_100003770",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : "An entity defined by the Ontology of units of Measure (OM).",
+    "isDefinedBy" : "http://www.foodvoc.org/page/om-2",
+    "label" : "OM ontology entities",
+    "seeAlso" : "https://github.com/HajoRijgersberg/OM"
+  }, {
+    "@id" : "rdl:PCA_100003771",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : "An entity defined by the QUDT - Quantities, Units, Dimensions and dataTypes ontology.",
+    "isDefinedBy" : "http://qudt.org/",
+    "label" : "QUDT ontology entities",
+    "seeAlso" : "https://github.com/qudt/qudt-public-repo"
+  }, {
+    "@id" : "rdl:PCA_100003772",
+    "@type" : "owl:Class",
+    "comment" : "An individual resource that is part of an external reference data library.",
+    "label" : "External RDL individual",
+    "subClassOf" : "rdl:PCA_100001502"
+  }, {
+    "@id" : "rdl:PCA_100004032",
+    "@type" : "owl:Class",
+    "comment" : "Quantity datum for which an interpretation of relevance is provided. Classification of a datum in terms of its method of production (origin), type of aggregation, etc., helps clarify why the datum exists and for which purposes it  may be relevant.",
+    "label" : "Interpreted Quantity Datum",
+    "subClassOf" : "lis:QuantityDatum"
+  }, {
+    "@id" : "rdl:PCA_100004033",
+    "@type" : "owl:Class",
+    "comment" : "Quantity datum for which the origin is provided: whether the datum is measured, calculated, or provided as part of a specification, etc.",
+    "label" : "Quantity Datum with specified Provenance",
+    "subClassOf" : "rdl:PCA_100004032"
+  }, {
+    "@id" : "rdl:PCA_100004034",
+    "@type" : "owl:Class",
+    "comment" : "Quantity datum for which the scope to which it applies (design, operations, etc.)  is specified.",
+    "label" : "Quantity Datum with specified Scope",
+    "subClassOf" : "rdl:PCA_100004032"
+  }, {
+    "@id" : "rdl:PCA_100004035",
+    "@type" : "owl:Class",
+    "comment" : "Quantity datum which characterises the range of variation of the relevant quantity.",
+    "label" : "Range Specifying Quantity Datum",
+    "subClassOf" : "rdl:PCA_100004032"
+  }, {
+    "@id" : "rdl:PCA_100004036",
+    "@type" : "owl:Class",
+    "comment" : "Quantity datum which ...",
+    "label" : "Regularity Specified Quantity Datum",
+    "subClassOf" : "rdl:PCA_100004032"
+  }, {
+    "@id" : "rdl:PCA_100004037",
+    "@type" : "owl:Class",
+    "comment" : "A Specified datum originates in (is prescribed in) a requirement or specification expressing constraints on the relevant quantity.",
+    "label" : "Specified Datum",
+    "subClassOf" : "rdl:PCA_100004033"
+  }, {
+    "@id" : "rdl:PCA_100004038",
+    "@type" : "owl:Class",
+    "comment" : "A Calculated datum is an output value of a simulation or similar model of behaviour of the relevant quantity.",
+    "label" : "Calculated Datum",
+    "subClassOf" : "rdl:PCA_100004033"
+  }, {
+    "@id" : "rdl:PCA_100004039",
+    "@type" : "owl:Class",
+    "comment" : "A Measured datum originates in a monitoring of the relevant quantity.",
+    "label" : "Measured Datum",
+    "subClassOf" : "rdl:PCA_100004033"
+  }, {
+    "@id" : "rdl:PCA_100004040",
+    "@type" : "owl:Class",
+    "comment" : "An Estimated datum originates in an analysis of expected behaviour of the relevant quantity, typically with significant uncertainty.",
+    "label" : "Estimated Datum",
+    "subClassOf" : "rdl:PCA_100004033"
+  }, {
+    "@id" : "rdl:PCA_100004041",
+    "@type" : "owl:Class",
+    "comment" : "A Set datum originates in a configuration, as a fixed magnitude to be maintained for the relevant quantity.",
+    "label" : "Set Datum",
+    "subClassOf" : "rdl:PCA_100004033"
+  }, {
+    "@id" : "rdl:PCA_100004042",
+    "@type" : "owl:Class",
+    "comment" : "A Design datum represents a limit magnitude of the relevant quantity within which full function is expected.",
+    "label" : "Design Datum",
+    "subClassOf" : "rdl:PCA_100004034"
+  }, {
+    "@id" : "rdl:PCA_100004043",
+    "@type" : "owl:Class",
+    "comment" : "An Operating datum represents a magnitude of the relevant quantity prescribed for, or reported from, normal operation.",
+    "label" : "Operating Datum",
+    "subClassOf" : "rdl:PCA_100004034"
+  }, {
+    "@id" : "rdl:PCA_100004044",
+    "@type" : "owl:Class",
+    "comment" : "A Test datum represents a magnitude of the relevant quantity that is prescribed for, or reported from, test operation.",
+    "label" : "Test Datum",
+    "subClassOf" : "rdl:PCA_100004034"
+  }, {
+    "@id" : "rdl:PCA_100004045",
+    "@type" : "owl:Class",
+    "comment" : "A Nominal datum represents a conventional (and, in many cases, standardised) magnitude used to classify the relevant artefact.",
+    "label" : "Nominal Datum",
+    "subClassOf" : "rdl:PCA_100004035"
+  }, {
+    "@id" : "rdl:PCA_100004046",
+    "@type" : "owl:Class",
+    "comment" : "A Normal datum represents a magnitude of the relevant quantity that is expected or typical for operation.",
+    "label" : "Normal Datum",
+    "subClassOf" : "rdl:PCA_100004035"
+  }, {
+    "@id" : "rdl:PCA_100004047",
+    "@type" : "owl:Class",
+    "comment" : "An Average datum represents an average of a set of magnitudes of the relevant quantity, typically a set of measurements or calculated values.",
+    "label" : "Average Datum",
+    "subClassOf" : "rdl:PCA_100004035"
+  }, {
+    "@id" : "rdl:PCA_100004048",
+    "@type" : "owl:Class",
+    "comment" : "A Maximum datum represents a maximal magnitude of the relevant quantity.",
+    "label" : "Maximum Datum",
+    "subClassOf" : "rdl:PCA_100004035"
+  }, {
+    "@id" : "rdl:PCA_100004049",
+    "@type" : "owl:Class",
+    "comment" : "A Minimum datum represents a minimal magnitude of the relevant quantity.",
+    "label" : "Minimum Datum",
+    "subClassOf" : "rdl:PCA_100004035"
+  }, {
+    "@id" : "rdl:PCA_100004050",
+    "@type" : "owl:Class",
+    "comment" : "An Actual datum represents a singular measured magnitude of the relevant quantity.",
+    "label" : "Actual Datum",
+    "subClassOf" : "rdl:PCA_100004035"
+  }, {
+    "@id" : "rdl:PCA_100004051",
+    "@type" : "owl:Class",
+    "comment" : "A Continuous datum represents a default magnitude of the relevant quantity, during sustained operation within normal variations.",
+    "label" : "Continuous Datum",
+    "subClassOf" : "rdl:PCA_100004036"
+  }, {
+    "@id" : "rdl:PCA_100004052",
+    "@type" : "owl:Class",
+    "comment" : "An Absolute datum represents a limit magnitude of the relevant quantity, at which operation can only be sustained for a limited time or number of cycles.",
+    "label" : "Absolute Datum",
+    "subClassOf" : "rdl:PCA_100004036"
+  }, {
+    "@id" : "rdl:PCA_100004054",
+    "@type" : "owl:Class",
+    "label" : "Quantity Class",
+    "subClassOf" : "skos:Concept"
+  }, {
+    "@id" : "rdl:PCA_100004908",
+    "@type" : "owl:Class",
+    "comment" : "A document.",
+    "label" : "Document",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "rdl:PCA_100004914",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : "An entity defined by the Chemical Entities of Biological Interest (ChEBI) ontology",
+    "isDefinedBy" : "https://www.ebi.ac.uk/chebi/",
+    "label" : "ChEBI ontology entities"
+  }, {
+    "@id" : "rdl:PCA_100004919",
+    "@type" : "owl:Class",
+    "comment" : " A symbol or icon for use in graphical representations.",
+    "label" : "Symbol",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "rdl:PCA_100004920",
+    "@type" : "owl:Class",
+    "comment" : " A symbol for use in piping and instrumentation diagrams.",
+    "label" : "P&ID Symbol",
+    "subClassOf" : "rdl:PCA_100004919"
+  }, {
+    "@id" : "rdl:PCA_100004921",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Symbol Reference ID to be sent in DEXPI transfer file",
+    "label" : "dexpi identifier",
+    "subPropertyOf" : "rdl:PCA_100004924"
+  }, {
+    "@id" : "rdl:PCA_100004922",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Symbol ID used in Z004",
+    "label" : "Z004 identifier",
+    "subPropertyOf" : "rdl:PCA_100004924"
+  }, {
+    "@id" : "rdl:PCA_100004923",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Symbol reference in ISA-5.1 given in Z004",
+    "label" : "ISA-5.1 identifier",
+    "subPropertyOf" : "rdl:PCA_100004924"
+  }, {
+    "@id" : "rdl:PCA_100004924",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Identifier used for symbols/icons",
+    "domain" : "rdl:PCA_100004919",
+    "label" : "Symbol identifier"
+  }, {
+    "@id" : "rdl:PCA_100004927",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Relation to symbol for use in P&ID for this artefact",
+    "domain" : "rdl:PCA_100001001",
+    "label" : "P&ID Symbol",
+    "range" : "rdl:PCA_100004920"
+  }, {
+    "@id" : "rdl:PCA_100004928",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Relation to DEXPI symbol for use in P&ID for this artefact",
+    "label" : "DEXPI P&ID Symbol",
+    "subPropertyOf" : "rdl:PCA_100004927"
+  }, {
+    "@id" : "rdl:PCA_100004935",
+    "@type" : "owl:Class",
+    "comment" : "A classifier (type) resource that is part of the ChEBI reference data library.",
+    "label" : "ChEBI classifier",
+    "subClassOf" : "rdl:PCA_100001503"
+  }, {
+    "@id" : "rdl:PCA_100005602",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "comment" : [ "IEC CDD entities have non-informative identifiers, like \"0112/2///61360_4#AAA013\" (\"antenna\").", "An entity defined by the IEC Common Data Dictionary." ],
+    "isDefinedBy" : "https://cdd.iec.ch/",
+    "label" : "IEC CDD RDL entities"
+  }, {
+    "@id" : "rdl:PCA_100005604",
+    "@type" : "owl:Class",
+    "comment" : "Composition of material.",
+    "label" : "Material Composition",
+    "subClassOf" : "lis:Quality"
+  }, {
+    "@id" : "rdl:PCA_100005606",
+    "@type" : "owl:Class",
+    "comment" : "A datum characterizing a material composition.",
+    "label" : "Chemical Composition Datum",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "rdl:PCA_100005608",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "The minimum (inclusive) number of carbon atoms in the chemical composistion represented by this datum",
+    "domain" : "rdl:PCA_100005606",
+    "label" : "minCarbonAtoms",
+    "range" : "xsd:nonNegativeInteger"
+  }, {
+    "@id" : "rdl:PCA_100005609",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "The maximum (inclusive) number of carbon atoms in the chemical composistion represented by this datum",
+    "domain" : "rdl:PCA_100005606",
+    "label" : "maxCarbonAtoms",
+    "range" : "xsd:nonNegativeInteger"
+  }, {
+    "@id" : "rdl:PCA_100006763",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "NORSOK Z-001 rationale for information item type: The function of the information item and/or why it is needed.",
+    "domain" : "rdl:PCA_100006767",
+    "label" : "NORSOK Z-001 rationale",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "rdl:PCA_100006764",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "NORSOK Z-001 content definition extended: Discipline specific content definition.",
+    "domain" : "rdl:PCA_100006769",
+    "label" : "NORSOK Z-001 extended definition",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "rdl:PCA_100006765",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "NORSOK Z-001 interests stakeholder category: typical CFIHOS discipline code of stakeholder with interest in the information item.",
+    "domain" : "rdl:PCA_100006770",
+    "label" : "NORSOK Z-001 interests stakeholder category",
+    "range" : "skos:Concept"
+  }, {
+    "@id" : "rdl:PCA_100006766",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "NORSOK Z-001 describes structural element: typical NORSOK Z-DP-002 category of structural element or system that the information item describes.",
+    "domain" : "rdl:PCA_100006771",
+    "label" : "NORSOK Z-001 describes structural element",
+    "range" : "skos:Concept"
+  }, {
+    "@id" : "rdl:PCA_100006767",
+    "@type" : "owl:Class",
+    "label" : "NORSOK Z-001 Information Item",
+    "subClassOf" : "rdl:PCA_100001503"
+  }, {
+    "@id" : "rdl:PCA_100006768",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "NORSOK Z-001 content definition: What the information item is expected to contain.",
+    "domain" : "rdl:PCA_100006768",
+    "label" : "NORSOK Z-001 definition",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "rdl:PCA_100006769",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "label" : "NORSOK Z-DP-002 Structural Facility Elements"
+  }, {
+    "@id" : "rdl:PCA_100006770",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "label" : "ISO/IEC 81355 Information Item"
+  }, {
+    "@id" : "rdl:PCA_100006771",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "label" : "NORSOK Z-001 Information Item Category"
+  }, {
+    "@id" : "rdl:PCA_100006772",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "label" : "CFIHOS Discipline"
+  }, {
+    "@id" : "rdl:PCA_100006773",
+    "@type" : "owl:NamedIndividual",
+    "rdf:type" : {
+      "@id" : "rdl:PCA_100001501"
+    },
+    "label" : "Z-001 Information Item"
+  }, {
+    "@id" : "skos:Collection",
+    "@type" : "owl:Class",
+    "comment" : "A meaningful collection of concepts.",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "Collection",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "skos:Concept",
+    "@type" : "owl:Class",
+    "comment" : "An idea or notion; a unit of thought.",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "Concept",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "skos:ConceptScheme",
+    "@type" : "owl:Class",
+    "comment" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "Concept Scheme",
+    "subClassOf" : "lis:InformationObject"
+  }, {
+    "@id" : "skos:note",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "A general note, for any purpose.",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "note"
+  } ],
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator",
+      "@type" : "@id"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "createdBy" : {
+      "@id" : "http://purl.org/pav/createdBy",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "feature" : {
+      "@id" : "http://rdfs.org/ns/void#feature",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "hasPreviousVersion" : {
+      "@id" : "http://purl.org/pav/hasPreviousVersion",
+      "@type" : "@id"
+    },
+    "exampleResource" : {
+      "@id" : "http://rdfs.org/ns/void#exampleResource",
+      "@type" : "@id"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "sparqlEndpoint" : {
+      "@id" : "http://rdfs.org/ns/void#sparqlEndpoint",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://ns.ottr.xyz/0.4/status",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "lastUpdateOn" : {
+      "@id" : "http://purl.org/pav/lastUpdateOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "@vocab" : "http://www.semanticweb.org/owl/owlapi/turtle#",
+    "o-rdfs" : "http://tpl.ottr.xyz/rdfs/0.1/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "rstr" : "http://tpl.ottr.xyz/owl/restriction/0.1/",
+    "pca" : "http://data.posccaesar.org/rdl/",
+    "sd" : "http://www.w3.org/ns/sparql-service-description#",
+    "o-docttr" : "http://tpl.ottr.xyz/p/docttr/0.1/",
+    "listpl" : "http://rds.posccaesar.org/ontology/lis14/tpl/0.1/",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "lis" : "http://rds.posccaesar.org/ontology/lis14/rdl/",
+    "ottr" : "http://ns.ottr.xyz/0.4/",
+    "o-owl-ma" : "http://tpl.ottr.xyz/owl/macro/0.1/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "plmtpl" : "http://rds.posccaesar.org/ontology/plm/tpl/0.1/",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "reqtpl" : "http://w3id.org/requirement-ontology/tpl/0.1/",
+    "req" : "https://w3id.org/requirement-ontology/rdl/",
+    "void" : "http://rdfs.org/ns/void#",
+    "pav" : "http://purl.org/pav/",
+    "o-rdf" : "http://tpl.ottr.xyz/rdf/0.1/",
+    "o-owl-ut" : "http://tpl.ottr.xyz/owl/util/0.1/",
+    "orcid" : "https://orcid.org/",
+    "ntpl" : "http://norsok.org/templates/",
+    "ex" : "http://example.org/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "o-owl-dec" : "http://tpl.ottr.xyz/owl/declaration/0.1/",
+    "o-owl-re" : "http://tpl.ottr.xyz/owl/restriction/0.1/",
+    "rdl" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "rrdl" : "http://w3id.org/readi/rdl/",
+    "o-owl-ax" : "http://tpl.ottr.xyz/owl/axiom/0.1/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

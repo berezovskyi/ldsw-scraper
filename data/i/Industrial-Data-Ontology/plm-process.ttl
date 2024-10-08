@@ -1,0 +1,1220 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix pca: <http://data.posccaesar.org/rdl/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdl: <http://rds.posccaesar.org/ontology/plm/rdl/> .
+@prefix req: <https://w3id.org/requirement-ontology/rdl/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ntpl: <http://norsok.org/templates/> .
+@prefix ottr: <http://ns.ottr.xyz/0.4/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rrdl: <http://w3id.org/readi/rdl/> .
+@prefix rstr: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix listpl: <http://rds.posccaesar.org/ontology/lis14/tpl/0.1/> .
+@prefix o-rdfs: <http://tpl.ottr.xyz/rdfs/0.1/> .
+@prefix plmtpl: <http://rds.posccaesar.org/ontology/plm/tpl/0.1/> .
+@prefix reqtpl: <http://w3id.org/requirement-ontology/tpl/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix o-docttr: <http://tpl.ottr.xyz/p/docttr/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-owl-ma: <http://tpl.ottr.xyz/owl/macro/0.1/> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ut: <http://tpl.ottr.xyz/owl/util/0.1/> .
+@prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/> .
+@base <http://rds.posccaesar.org/ontology/plm/ont/process> .
+
+<http://rds.posccaesar.org/ontology/plm/ont/process> rdf:type owl:Ontology ;
+                                                      owl:versionIRI <http://rds.posccaesar.org/ontology/plm/ont/process/0.9.1> ;
+                                                      owl:imports <http://rds.posccaesar.org/ontology/plm/ont/core> ;
+                                                      ottr:status ottr:incomplete ;
+                                                      dc:contributor <https://dblp.org/pid/227/6122.html> ,
+                                                                     <https://orcid.org/0000-0002-1172-478X> ;
+                                                      dc:creator <https://orcid.org/0000-0002-7167-7321> ;
+                                                      dc:description "Process ontology for PLM RDL. Includes unit operations, reaction, transport." ;
+                                                      dc:title "process" ;
+                                                      dcterms:issued "2021-08-30"^^xsd:date ;
+                                                      dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                                                      dcterms:modified "2022-09-26"^^xsd:date ;
+                                                      dcterms:publisher <http://www.posccaesar.org/> ;
+                                                      dcterms:subject <https://en.wikipedia.org/wiki/Chemical_plant> ;
+                                                      pav:contributedBy <https://dblp.org/pid/227/6122.html> ,
+                                                                        <https://orcid.org/0000-0002-1172-478X> ;
+                                                      pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+                                                      pav:hasPreviousVersion <http://rds.posccaesar.org/ontology/plm/ont/process/0.9.0> ;
+                                                      pav:lastUpdateOn "2022-09-26T23:40:00Z"^^xsd:dateTime ;
+                                                      vann:preferredNamespacePrefix "rdl" ;
+                                                      vann:preferredNamespaceUri rdl: ;
+                                                      void:exampleResource rdl:PCA_100000011 ;
+                                                      void:feature <http://www.w3.org/ns/formats/JSON-LD> ,
+                                                                   <http://www.w3.org/ns/formats/N-Triples> ,
+                                                                   <http://www.w3.org/ns/formats/OWL_Manchester> ,
+                                                                   <http://www.w3.org/ns/formats/RDF_XML> ,
+                                                                   <http://www.w3.org/ns/formats/Turtle> ;
+                                                      void:sparqlEndpoint <https://rds.posccaesar.org/ontology/sparql> ;
+                                                      rdfs:comment "Process ontology for PLM RDL. Includes unit operations, reaction, transport." ;
+                                                      rdfs:label "process" ;
+                                                      owl:versionInfo "0.9.1" ;
+                                                      skos:changeNote "Changed sparql endpoint" ;
+                                                      foaf:homepage <http://rds.posccaesar.org/ontology/plm/doc/process> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+skos:closeMatch rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#member
+skos:member rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#relatedMatch
+skos:relatedMatch rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001
+rdl:PCA_100000001 rdf:type owl:Class ;
+                  rdfs:subClassOf lis:Activity ;
+                  rdfs:label "Plant Process" ;
+                  skos:closeMatch pca:RDS16015785 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000001 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS16015785 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002
+rdl:PCA_100000002 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#ProcessStep'" ;
+                  rdfs:label "Process Step" ;
+                  skos:closeMatch rdl:PCA_100003001 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000002 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003001 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003
+rdl:PCA_100000003 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000002 ,
+                                  [ rdf:type owl:Class ;
+                                    owl:unionOf ( rdl:PCA_100000004
+                                                  rdl:PCA_100000005
+                                                  rdl:PCA_100000006
+                                                  rdl:PCA_100000007
+                                                  rdl:PCA_100000008
+                                                  rdl:PCA_100000009
+                                                )
+                                  ] ;
+                  rdfs:comment "See OntoCAPE 'process.owl#UnitOperation'" ;
+                  rdfs:label "Unit Operation" ;
+                  skos:closeMatch rdl:PCA_100003002 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000003 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003002 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004
+rdl:PCA_100000004 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Not in OntoCAPE" ;
+                  rdfs:label "Entropy Change" ;
+                  skos:relatedMatch pca:RDS365579 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000004 ;
+   owl:annotatedProperty skos:relatedMatch ;
+   owl:annotatedTarget pca:RDS365579 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime ;
+   skos:note "ENTROPY in PCA RDL is a SinglePropertyDimension entity" ,
+             "not an Activity."
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005
+rdl:PCA_100000005 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#EnthalpyChange'" ;
+                  rdfs:label "Enthalpy Change" ;
+                  skos:closeMatch rdl:PCA_100003003 ;
+                  skos:relatedMatch pca:RDS359189 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000005 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003003 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000005 ;
+   owl:annotatedProperty skos:relatedMatch ;
+   owl:annotatedTarget pca:RDS359189 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime ;
+   skos:note "ENTHALPY in PCA RDL is a SinglePropertyDimension entity" ,
+             "not an Activity."
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006
+rdl:PCA_100000006 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#Reaction'" ;
+                  rdfs:label "Reaction" ;
+                  skos:closeMatch pca:RDS9711287 ,
+                                  rdl:PCA_100003004 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000006 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9711287 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000006 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003004 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007
+rdl:PCA_100000007 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#Separation'" ;
+                  rdfs:label "Separating" ;
+                  skos:closeMatch pca:RDS9647297 ,
+                                  rdl:PCA_100003005 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000007 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9647297 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000007 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003005 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008
+rdl:PCA_100000008 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Not in OntoCAPE" ;
+                  rdfs:label "Containing" ;
+                  skos:closeMatch pca:RDS9653822 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000008 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9653822 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009
+rdl:PCA_100000009 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Not in OntoCAPE" ;
+                  rdfs:label "Transporting" ;
+                  skos:closeMatch pca:RDS9652292 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000009 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9652292 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010
+rdl:PCA_100000010 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000004 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#PressureChangeOfGas'" ;
+                  rdfs:label "Compression" ;
+                  skos:closeMatch pca:RDS10802134 ,
+                                  rdl:PCA_100003006 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000010 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS10802134 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000010 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003006 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011
+rdl:PCA_100000011 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000004 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#PressureChangeOfLiquid'" ;
+                  rdfs:label "Pumping" ;
+                  skos:closeMatch pca:RDS9657917 ,
+                                  rdl:PCA_100003007 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000011 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9657917 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000011 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003007 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012
+rdl:PCA_100000012 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000005 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#TemperatureChange'" ;
+                  rdfs:label "Heating" ;
+                  skos:closeMatch pca:RDS9666872 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000012 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9666872 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013
+rdl:PCA_100000013 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000005 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#TemperatureChange'" ;
+                  rdfs:label "Cooling" ;
+                  skos:closeMatch pca:RDS9684422 ,
+                                  rdl:PCA_100003009 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000013 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9684422 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000013 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget rdl:PCA_100003009 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014
+rdl:PCA_100000014 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000007 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#Separation'" ;
+                  rdfs:label "Absorbing" ;
+                  skos:closeMatch pca:RDS9698327 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000014 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9698327 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017
+rdl:PCA_100000017 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000007 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#Separation'" ;
+                  rdfs:label "Desorbing" ;
+                  skos:closeMatch pca:RDS9679517 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000017 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9679517 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018
+rdl:PCA_100000018 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000007 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#Separation'" ;
+                  rdfs:label "Gas Liquid Separation" ;
+                  skos:closeMatch pca:RDS10792819 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000018 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS10792819 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000019
+rdl:PCA_100000019 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000007 ;
+                  rdfs:comment "See OntoCAPE 'process.owl#Separation'" ;
+                  rdfs:label "Three Phase Separation" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021
+rdl:PCA_100000021 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000008 ;
+                  rdfs:comment "Not in OntoCAPE" ;
+                  rdfs:label "Tank Storage" ;
+                  skos:closeMatch pca:RDS15936236 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100000021 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS15936236 ;
+   pav:createdBy <https://orcid.org/0000-0002-7167-7321> ;
+   pav:createdOn "2021-08-31T09:00:22Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133
+rdl:PCA_100004133 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Observing by touching with an object sensitive for an intended property" ;
+                  rdfs:label "Sensing" ;
+                  skos:closeMatch pca:RDS9654947 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004133 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9654947 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134
+rdl:PCA_100004134 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Measuring a mass" ;
+                  rdfs:label "Weighing" ;
+                  skos:closeMatch pca:RDS9651302 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004134 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9651302 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135
+rdl:PCA_100004135 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Transforming an aspect of something in a value expressed in a unit of measure" ;
+                  rdfs:label "Measuring" ;
+                  skos:closeMatch pca:RDS9661922 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004135 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9661922 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136
+rdl:PCA_100004136 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Joining or fastening, or linking together, often by means of something intervening." ;
+                  rdfs:label "Connecting" ;
+                  skos:closeMatch pca:RDS9685322 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004136 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9685322 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137
+rdl:PCA_100004137 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Splitting by branching or separating in two parts" ;
+                  rdfs:label "Bifurcating" ;
+                  skos:closeMatch pca:RDS9693287 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004137 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9693287 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138
+rdl:PCA_100004138 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "An activity that reduces size, amount, extent, or number" ;
+                  rdfs:label "Reducing" ;
+                  skos:closeMatch pca:RDS9656792 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004138 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9656792 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139
+rdl:PCA_100004139 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Increasing in extent, size, number, volume, or scope" ;
+                  rdfs:label "Expanding" ;
+                  skos:closeMatch pca:RDS9673082 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004139 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9673082 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140
+rdl:PCA_100004140 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Influencing by exercising restraining or directing guidance" ;
+                  rdfs:label "Controlling" ;
+                  skos:closeMatch pca:RDS9685097 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004140 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9685097 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141
+rdl:PCA_100004141 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Acting by contracting, folding, swinging, or sliding so as to leave no opening." ;
+                  rdfs:label "Closing" ;
+                  skos:closeMatch pca:RDS327667805 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004141 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS327667805 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004142
+rdl:PCA_100004142 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:label "Opening" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143
+rdl:PCA_100004143 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Sending out a signal through some carrier" ;
+                  rdfs:label "Transmitting" ;
+                  skos:closeMatch pca:RDS9652247 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004143 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9652247 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004144
+rdl:PCA_100004144 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100004143 ;
+                  rdfs:label "Transmitting Optical" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004145
+rdl:PCA_100004145 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100004143 ;
+                  rdfs:label "Transmitting Radio Frequency" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004146
+rdl:PCA_100004146 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100004143 ;
+                  rdfs:label "Transmitting Analog Signal" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004147
+rdl:PCA_100004147 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100004143 ;
+                  rdfs:label "Transmitting Digital Signal" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148
+rdl:PCA_100004148 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Acting by making firm, stable or stationary" ;
+                  rdfs:label "Fixing" ;
+                  skos:closeMatch pca:RDS9671102 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004148 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9671102 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149
+rdl:PCA_100004149 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Acting by directing, regulating, or managing toward some desirable end, course, way, or development" ;
+                  rdfs:label "Guiding" ;
+                  skos:closeMatch pca:RDS9667367 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004149 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9667367 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150
+rdl:PCA_100004150 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Acting by directing, ordering, or requesting to go" ;
+                  rdfs:label "Sending" ;
+                  skos:closeMatch pca:RDS9654902 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004150 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9654902 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151
+rdl:PCA_100004151 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Inserting a substance into some material using some force" ;
+                  rdfs:label "Injecting" ;
+                  skos:closeMatch pca:RDS9663902 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004151 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9663902 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152
+rdl:PCA_100004152 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Exhibiting to the sight or mind" ;
+                  rdfs:label "Displaying" ;
+                  skos:closeMatch pca:RDS9677312 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004152 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9677312 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153
+rdl:PCA_100004153 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Blocking by obstructing, block up, or shut off by or as if by a barrier" ;
+                  rdfs:label "Barring" ;
+                  skos:closeMatch pca:RDS9693827 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004153 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9693827 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154
+rdl:PCA_100004154 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Acquiring in a passive way" ;
+                  rdfs:label "Receiving" ;
+                  skos:closeMatch pca:RDS9657467 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004154 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9657467 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155
+rdl:PCA_100004155 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Conveying energy or material" ;
+                  rdfs:label "Conducting" ;
+                  skos:closeMatch pca:RDS9685862 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004155 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9685862 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156
+rdl:PCA_100004156 rdf:type owl:Class ;
+                  rdfs:subClassOf rdl:PCA_100000001 ;
+                  rdfs:comment "Turning away from a straight course of fixed direction" ;
+                  rdfs:label "Deflecting" ;
+                  skos:closeMatch pca:RDS9681902 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource rdl:PCA_100004156 ;
+   owl:annotatedProperty skos:closeMatch ;
+   owl:annotatedTarget pca:RDS9681902 ;
+   pav:createdBy <https://orcid.org/0000-0002-9888-0557> ;
+   pav:createdOn "2022-02-22T09:43:38Z"^^xsd:dateTime
+ ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://data.posccaesar.org/rdl/RDS10792819
+pca:RDS10792819 rdf:type owl:NamedIndividual ,
+                         rdl:PCA_100001503 ;
+                dcterms:identifier "RDS10792819" ;
+                rdfs:comment "External RDL entity" ;
+                rdfs:isDefinedBy rdl:PCA_100002003 ;
+                rdfs:label "VAPOUR-LIQUID SEPARATION (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS10802134
+pca:RDS10802134 rdf:type owl:NamedIndividual ,
+                         rdl:PCA_100001503 ;
+                dcterms:identifier "RDS10802134" ;
+                rdfs:comment "External RDL entity" ;
+                rdfs:isDefinedBy rdl:PCA_100002003 ;
+                rdfs:label "GAS COMPRESSION (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS15936236
+pca:RDS15936236 rdf:type owl:NamedIndividual ,
+                         rdl:PCA_100001503 ;
+                dcterms:identifier "RDS15936236" ;
+                rdfs:comment "External RDL entity" ;
+                rdfs:isDefinedBy rdl:PCA_100002003 ;
+                rdfs:label "TANK STORAGE (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS16015785
+pca:RDS16015785 rdf:type owl:NamedIndividual ,
+                         rdl:PCA_100001503 ;
+                dcterms:identifier "RDS16015785" ;
+                rdfs:comment "External RDL entity" ;
+                rdfs:isDefinedBy rdl:PCA_100002003 ;
+                rdfs:label "PROCESS (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS327667805
+pca:RDS327667805 rdf:type owl:NamedIndividual ,
+                          rdl:PCA_100001503 ;
+                 dcterms:identifier "RDS327667805" ;
+                 rdfs:comment "External RDL entity" ;
+                 rdfs:isDefinedBy rdl:PCA_100002003 ;
+                 rdfs:label "CLOSING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS359189
+pca:RDS359189 rdf:type owl:NamedIndividual ,
+                       rdl:PCA_100001503 ;
+              dcterms:identifier "RDS359189" ;
+              rdfs:comment "External RDL entity" ;
+              rdfs:isDefinedBy rdl:PCA_100002003 ;
+              rdfs:label "ENTHALPY (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS365579
+pca:RDS365579 rdf:type owl:NamedIndividual ,
+                       rdl:PCA_100001503 ;
+              dcterms:identifier "RDS365579" ;
+              rdfs:comment "External RDL entity" ;
+              rdfs:isDefinedBy rdl:PCA_100002003 ;
+              rdfs:label "ENTROPY (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9647297
+pca:RDS9647297 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9647297" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "SEPARATING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9651302
+pca:RDS9651302 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9651302" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "WEIGHING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9652247
+pca:RDS9652247 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9652247" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "TRANSMITTING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9652292
+pca:RDS9652292 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9652292" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "TRANSPORTING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9653822
+pca:RDS9653822 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9653822" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "STORING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9654902
+pca:RDS9654902 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9654902" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "SENDING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9654947
+pca:RDS9654947 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9654947" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "SENSING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9656792
+pca:RDS9656792 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9656792" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "REDUCING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9657467
+pca:RDS9657467 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9657467" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "RECEIVING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9657917
+pca:RDS9657917 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9657917" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "PUMPING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9661922
+pca:RDS9661922 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9661922" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "MEASURING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9663902
+pca:RDS9663902 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9663902" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "INJECTING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9666872
+pca:RDS9666872 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9666872" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "HEATING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9667367
+pca:RDS9667367 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9667367" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "GUIDING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9671102
+pca:RDS9671102 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9671102" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "FIXING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9673082
+pca:RDS9673082 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9673082" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "EXPANDING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9677312
+pca:RDS9677312 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9677312" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "DISPLAYING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9679517
+pca:RDS9679517 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9679517" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "DESORBING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9681902
+pca:RDS9681902 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9681902" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "DEFLECTING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9684422
+pca:RDS9684422 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9684422" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "COOLING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9685097
+pca:RDS9685097 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9685097" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "CONTROLLING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9685322
+pca:RDS9685322 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9685322" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "CONNECTING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9685862
+pca:RDS9685862 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9685862" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "CONDUCTING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9693287
+pca:RDS9693287 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9693287" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "BIFURCATING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9693827
+pca:RDS9693827 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9693827" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "BARRING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9698327
+pca:RDS9698327 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9698327" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "ABSORBING (PCA RDL concept)" .
+
+
+###  http://data.posccaesar.org/rdl/RDS9711287
+pca:RDS9711287 rdf:type owl:NamedIndividual ,
+                        rdl:PCA_100001503 ;
+               dcterms:identifier "RDS9711287" ;
+               rdfs:comment "External RDL entity" ;
+               rdfs:isDefinedBy rdl:PCA_100002003 ;
+               rdfs:label "CHEMICAL REACTING (PCA RDL concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001
+rdl:PCA_100003001 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "ProcessStep" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'ProcessStep' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "ProcessStep (OntoCAPE concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002
+rdl:PCA_100003002 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "UnitOperation" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'UnitOperation' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "UnitOperation (OntoCAPE concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003
+rdl:PCA_100003003 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "EnthalpyChange" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'EnthalpyChange' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "EnthalpyChange (OntoCAPE concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004
+rdl:PCA_100003004 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "Reaction" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'Reaction' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "Reaction (OntoCAPE concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005
+rdl:PCA_100003005 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "Separation" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'Separation' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "Separation (OntoCAPE concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006
+rdl:PCA_100003006 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "PressureChangeOfGas" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'PressureChangeOfGas' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "PressureChangeOfGas (OntoCAPE concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007
+rdl:PCA_100003007 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "PressureChangeOfLiquid" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'PressureChangeOfLiquid' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "PressureChangeOfLiquid (OntoCAPE concept)" .
+
+
+###  http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009
+rdl:PCA_100003009 rdf:type owl:NamedIndividual ,
+                           rdl:PCA_100001503 ;
+                  dcterms:identifier "TemperatureChange" ;
+                  rdfs:comment "External RDL entity" ,
+                               "OntoCAPE concept 'TemperatureChange' is defined in the OntoCAPE 'process.owl' module." ;
+                  rdfs:isDefinedBy rdl:PCA_100002002 ,
+                                   <https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape> ;
+                  rdfs:label "TemperatureChange (OntoCAPE concept)" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+rdl:PCA_100002002 skos:member rdl:PCA_100003001 ,
+                              rdl:PCA_100003002 ,
+                              rdl:PCA_100003003 ,
+                              rdl:PCA_100003004 ,
+                              rdl:PCA_100003005 ,
+                              rdl:PCA_100003006 ,
+                              rdl:PCA_100003007 ,
+                              rdl:PCA_100003009 .
+
+
+rdl:PCA_100002003 skos:member pca:RDS10792819 ,
+                              pca:RDS10802134 ,
+                              pca:RDS15936236 ,
+                              pca:RDS16015785 ,
+                              pca:RDS327667805 ,
+                              pca:RDS359189 ,
+                              pca:RDS365579 ,
+                              pca:RDS9647297 ,
+                              pca:RDS9651302 ,
+                              pca:RDS9652247 ,
+                              pca:RDS9652292 ,
+                              pca:RDS9653822 ,
+                              pca:RDS9654902 ,
+                              pca:RDS9654947 ,
+                              pca:RDS9656792 ,
+                              pca:RDS9657467 ,
+                              pca:RDS9657917 ,
+                              pca:RDS9661922 ,
+                              pca:RDS9663902 ,
+                              pca:RDS9666872 ,
+                              pca:RDS9667367 ,
+                              pca:RDS9671102 ,
+                              pca:RDS9673082 ,
+                              pca:RDS9677312 ,
+                              pca:RDS9679517 ,
+                              pca:RDS9681902 ,
+                              pca:RDS9684422 ,
+                              pca:RDS9685097 ,
+                              pca:RDS9685322 ,
+                              pca:RDS9685862 ,
+                              pca:RDS9693287 ,
+                              pca:RDS9693827 ,
+                              pca:RDS9698327 ,
+                              pca:RDS9711287 .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

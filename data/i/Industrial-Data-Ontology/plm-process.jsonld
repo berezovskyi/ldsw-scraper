@@ -1,0 +1,1157 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004137",
+    "annotatedTarget" : "pca:RDS9693287"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000010",
+    "annotatedTarget" : "rdl:PCA_100003006"
+  }, {
+    "@id" : "_:b10",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004140",
+    "annotatedTarget" : "pca:RDS9685097"
+  }, {
+    "@id" : "_:b11",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000014",
+    "annotatedTarget" : "pca:RDS9698327"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000007",
+    "annotatedTarget" : "rdl:PCA_100003005"
+  }, {
+    "@id" : "_:b14",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004138",
+    "annotatedTarget" : "pca:RDS9656792"
+  }, {
+    "@id" : "_:b15",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000011",
+    "annotatedTarget" : "rdl:PCA_100003007"
+  }, {
+    "@id" : "_:b16",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000007",
+    "annotatedTarget" : "pca:RDS9647297"
+  }, {
+    "@id" : "_:b17",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000010",
+    "annotatedTarget" : "pca:RDS10802134"
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004133",
+    "annotatedTarget" : "pca:RDS9654947"
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004152",
+    "annotatedTarget" : "pca:RDS9677312"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000013",
+    "annotatedTarget" : "rdl:PCA_100003009"
+  }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004135",
+    "annotatedTarget" : "pca:RDS9661922"
+  }, {
+    "@id" : "_:b23",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000013",
+    "annotatedTarget" : "pca:RDS9684422"
+  }, {
+    "@id" : "_:b24",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004148",
+    "annotatedTarget" : "pca:RDS9671102"
+  }, {
+    "@id" : "_:b25",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000017",
+    "annotatedTarget" : "pca:RDS9679517"
+  }, {
+    "@id" : "_:b26",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004153",
+    "annotatedTarget" : "pca:RDS9693827"
+  }, {
+    "@id" : "_:b27",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004149",
+    "annotatedTarget" : "pca:RDS9667367"
+  }, {
+    "@id" : "_:b28",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000021",
+    "annotatedTarget" : "pca:RDS15936236"
+  }, {
+    "@id" : "_:b29",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000009",
+    "annotatedTarget" : "pca:RDS9652292"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000002",
+    "annotatedTarget" : "rdl:PCA_100003001"
+  }, {
+    "@id" : "_:b30",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004155",
+    "annotatedTarget" : "pca:RDS9685862"
+  }, {
+    "@id" : "_:b31",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000011",
+    "annotatedTarget" : "pca:RDS9657917"
+  }, {
+    "@id" : "_:b32",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:relatedMatch",
+    "annotatedSource" : "rdl:PCA_100000005",
+    "annotatedTarget" : "pca:RDS359189",
+    "note" : [ "not an Activity.", "ENTHALPY in PCA RDL is a SinglePropertyDimension entity" ]
+  }, {
+    "@id" : "_:b33",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004150",
+    "annotatedTarget" : "pca:RDS9654902"
+  }, {
+    "@id" : "_:b34",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000008",
+    "annotatedTarget" : "pca:RDS9653822"
+  }, {
+    "@id" : "_:b35",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004154",
+    "annotatedTarget" : "pca:RDS9657467"
+  }, {
+    "@id" : "_:b36",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004151",
+    "annotatedTarget" : "pca:RDS9663902"
+  }, {
+    "@id" : "_:b37",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000018",
+    "annotatedTarget" : "pca:RDS10792819"
+  }, {
+    "@id" : "_:b38",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000012",
+    "annotatedTarget" : "pca:RDS9666872"
+  }, {
+    "@id" : "_:b39",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:relatedMatch",
+    "annotatedSource" : "rdl:PCA_100000004",
+    "annotatedTarget" : "pca:RDS365579",
+    "note" : [ "not an Activity.", "ENTROPY in PCA RDL is a SinglePropertyDimension entity" ]
+  }, {
+    "@id" : "_:b4",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000001",
+    "annotatedTarget" : "pca:RDS16015785"
+  }, {
+    "@id" : "_:b40",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004134",
+    "annotatedTarget" : "pca:RDS9651302"
+  }, {
+    "@id" : "_:b41",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004143",
+    "annotatedTarget" : "pca:RDS9652247"
+  }, {
+    "@id" : "_:b42",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000006",
+    "annotatedTarget" : "pca:RDS9711287"
+  }, {
+    "@id" : "_:b43",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004136",
+    "annotatedTarget" : "pca:RDS9685322"
+  }, {
+    "@id" : "_:b46",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000003",
+    "annotatedTarget" : "rdl:PCA_100003002"
+  }, {
+    "@id" : "_:b47",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000005",
+    "annotatedTarget" : "rdl:PCA_100003003"
+  }, {
+    "@id" : "_:b48",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004156",
+    "annotatedTarget" : "pca:RDS9681902"
+  }, {
+    "@id" : "_:b5",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "createdOn" : "2021-08-31T09:00:22Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100000006",
+    "annotatedTarget" : "rdl:PCA_100003004"
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004139",
+    "annotatedTarget" : "pca:RDS9673082"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Axiom",
+    "createdBy" : "orcid:0000-0002-9888-0557",
+    "createdOn" : "2022-02-22T09:43:38Z",
+    "annotatedProperty" : "skos:closeMatch",
+    "annotatedSource" : "rdl:PCA_100004141",
+    "annotatedTarget" : "pca:RDS327667805"
+  }, {
+    "@id" : "_:b8",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "rdl:PCA_100000004", "rdl:PCA_100000005", "rdl:PCA_100000006", "rdl:PCA_100000007", "rdl:PCA_100000008", "rdl:PCA_100000009" ]
+    }
+  }, {
+    "@id" : "pca:RDS10792819",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS10792819",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "VAPOUR-LIQUID SEPARATION (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS10802134",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS10802134",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "GAS COMPRESSION (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS15936236",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS15936236",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "TANK STORAGE (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS16015785",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS16015785",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "PROCESS (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS327667805",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS327667805",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "CLOSING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS359189",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS359189",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "ENTHALPY (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS365579",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS365579",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "ENTROPY (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9647297",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9647297",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "SEPARATING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9651302",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9651302",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "WEIGHING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9652247",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9652247",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "TRANSMITTING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9652292",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9652292",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "TRANSPORTING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9653822",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9653822",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "STORING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9654902",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9654902",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "SENDING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9654947",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9654947",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "SENSING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9656792",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9656792",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "REDUCING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9657467",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9657467",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "RECEIVING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9657917",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9657917",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "PUMPING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9661922",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9661922",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "MEASURING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9663902",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9663902",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "INJECTING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9666872",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9666872",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "HEATING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9667367",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9667367",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "GUIDING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9671102",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9671102",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "FIXING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9673082",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9673082",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "EXPANDING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9677312",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9677312",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "DISPLAYING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9679517",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9679517",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "DESORBING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9681902",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9681902",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "DEFLECTING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9684422",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9684422",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "COOLING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9685097",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9685097",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "CONTROLLING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9685322",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9685322",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "CONNECTING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9685862",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9685862",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "CONDUCTING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9693287",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9693287",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "BIFURCATING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9693827",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9693827",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "BARRING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9698327",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9698327",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "ABSORBING (PCA RDL concept)"
+  }, {
+    "@id" : "pca:RDS9711287",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "RDS9711287",
+    "comment" : "External RDL entity",
+    "isDefinedBy" : "rdl:PCA_100002003",
+    "label" : "CHEMICAL REACTING (PCA RDL concept)"
+  }, {
+    "@id" : "http://rds.posccaesar.org/ontology/plm/ont/process",
+    "@type" : "owl:Ontology",
+    "status" : "ottr:incomplete",
+    "contributor" : [ "orcid:0000-0002-1172-478X", "https://dblp.org/pid/227/6122.html" ],
+    "creator" : "orcid:0000-0002-7167-7321",
+    "description" : "Process ontology for PLM RDL. Includes unit operations, reaction, transport.",
+    "title" : "process",
+    "issued" : "2021-08-30",
+    "license" : "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modified" : "2022-09-26",
+    "publisher" : "http://www.posccaesar.org/",
+    "subject" : "https://en.wikipedia.org/wiki/Chemical_plant",
+    "contributedBy" : [ "https://dblp.org/pid/227/6122.html", "orcid:0000-0002-1172-478X" ],
+    "createdBy" : "orcid:0000-0002-7167-7321",
+    "hasPreviousVersion" : "http://rds.posccaesar.org/ontology/plm/ont/process/0.9.0",
+    "lastUpdateOn" : "2022-09-26T23:40:00Z",
+    "preferredNamespacePrefix" : "rdl",
+    "preferredNamespaceUri" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "exampleResource" : "rdl:PCA_100000011",
+    "feature" : [ "http://www.w3.org/ns/formats/N-Triples", "http://www.w3.org/ns/formats/Turtle", "http://www.w3.org/ns/formats/JSON-LD", "http://www.w3.org/ns/formats/RDF_XML", "http://www.w3.org/ns/formats/OWL_Manchester" ],
+    "sparqlEndpoint" : "https://rds.posccaesar.org/ontology/sparql",
+    "comment" : "Process ontology for PLM RDL. Includes unit operations, reaction, transport.",
+    "label" : "process",
+    "imports" : "http://rds.posccaesar.org/ontology/plm/ont/core",
+    "versionIRI" : "http://rds.posccaesar.org/ontology/plm/ont/process/0.9.1",
+    "versionInfo" : "0.9.1",
+    "changeNote" : "Changed sparql endpoint",
+    "homepage" : "http://rds.posccaesar.org/ontology/plm/doc/process"
+  }, {
+    "@id" : "rdl:PCA_100000001",
+    "@type" : "owl:Class",
+    "label" : "Plant Process",
+    "subClassOf" : "lis:Activity",
+    "closeMatch" : "pca:RDS16015785"
+  }, {
+    "@id" : "rdl:PCA_100000002",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#ProcessStep'",
+    "label" : "Process Step",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "rdl:PCA_100003001"
+  }, {
+    "@id" : "rdl:PCA_100000003",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#UnitOperation'",
+    "label" : "Unit Operation",
+    "subClassOf" : [ "_:b8", "rdl:PCA_100000002" ],
+    "closeMatch" : "rdl:PCA_100003002"
+  }, {
+    "@id" : "rdl:PCA_100000004",
+    "@type" : "owl:Class",
+    "comment" : "Not in OntoCAPE",
+    "label" : "Entropy Change",
+    "subClassOf" : "rdl:PCA_100000001",
+    "relatedMatch" : "pca:RDS365579"
+  }, {
+    "@id" : "rdl:PCA_100000005",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#EnthalpyChange'",
+    "label" : "Enthalpy Change",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "rdl:PCA_100003003",
+    "relatedMatch" : "pca:RDS359189"
+  }, {
+    "@id" : "rdl:PCA_100000006",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#Reaction'",
+    "label" : "Reaction",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : [ "rdl:PCA_100003004", "pca:RDS9711287" ]
+  }, {
+    "@id" : "rdl:PCA_100000007",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#Separation'",
+    "label" : "Separating",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : [ "rdl:PCA_100003005", "pca:RDS9647297" ]
+  }, {
+    "@id" : "rdl:PCA_100000008",
+    "@type" : "owl:Class",
+    "comment" : "Not in OntoCAPE",
+    "label" : "Containing",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9653822"
+  }, {
+    "@id" : "rdl:PCA_100000009",
+    "@type" : "owl:Class",
+    "comment" : "Not in OntoCAPE",
+    "label" : "Transporting",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9652292"
+  }, {
+    "@id" : "rdl:PCA_100000010",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#PressureChangeOfGas'",
+    "label" : "Compression",
+    "subClassOf" : "rdl:PCA_100000004",
+    "closeMatch" : [ "rdl:PCA_100003006", "pca:RDS10802134" ]
+  }, {
+    "@id" : "rdl:PCA_100000011",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#PressureChangeOfLiquid'",
+    "label" : "Pumping",
+    "subClassOf" : "rdl:PCA_100000004",
+    "closeMatch" : [ "rdl:PCA_100003007", "pca:RDS9657917" ]
+  }, {
+    "@id" : "rdl:PCA_100000012",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#TemperatureChange'",
+    "label" : "Heating",
+    "subClassOf" : "rdl:PCA_100000005",
+    "closeMatch" : "pca:RDS9666872"
+  }, {
+    "@id" : "rdl:PCA_100000013",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#TemperatureChange'",
+    "label" : "Cooling",
+    "subClassOf" : "rdl:PCA_100000005",
+    "closeMatch" : [ "rdl:PCA_100003009", "pca:RDS9684422" ]
+  }, {
+    "@id" : "rdl:PCA_100000014",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#Separation'",
+    "label" : "Absorbing",
+    "subClassOf" : "rdl:PCA_100000007",
+    "closeMatch" : "pca:RDS9698327"
+  }, {
+    "@id" : "rdl:PCA_100000017",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#Separation'",
+    "label" : "Desorbing",
+    "subClassOf" : "rdl:PCA_100000007",
+    "closeMatch" : "pca:RDS9679517"
+  }, {
+    "@id" : "rdl:PCA_100000018",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#Separation'",
+    "label" : "Gas Liquid Separation",
+    "subClassOf" : "rdl:PCA_100000007",
+    "closeMatch" : "pca:RDS10792819"
+  }, {
+    "@id" : "rdl:PCA_100000019",
+    "@type" : "owl:Class",
+    "comment" : "See OntoCAPE 'process.owl#Separation'",
+    "label" : "Three Phase Separation",
+    "subClassOf" : "rdl:PCA_100000007"
+  }, {
+    "@id" : "rdl:PCA_100000021",
+    "@type" : "owl:Class",
+    "comment" : "Not in OntoCAPE",
+    "label" : "Tank Storage",
+    "subClassOf" : "rdl:PCA_100000008",
+    "closeMatch" : "pca:RDS15936236"
+  }, {
+    "@id" : "rdl:PCA_100002002",
+    "member" : [ "rdl:PCA_100003009", "rdl:PCA_100003007", "rdl:PCA_100003006", "rdl:PCA_100003005", "rdl:PCA_100003004", "rdl:PCA_100003003", "rdl:PCA_100003002", "rdl:PCA_100003001" ]
+  }, {
+    "@id" : "rdl:PCA_100002003",
+    "member" : [ "pca:RDS9657467", "pca:RDS9685322", "pca:RDS9693827", "pca:RDS9679517", "pca:RDS10792819", "pca:RDS9693287", "pca:RDS9681902", "pca:RDS9685097", "pca:RDS9654902", "pca:RDS9671102", "pca:RDS327667805", "pca:RDS9652292", "pca:RDS9654947", "pca:RDS9652247", "pca:RDS9657917", "pca:RDS9661922", "pca:RDS9685862", "pca:RDS9673082", "pca:RDS10802134", "pca:RDS9651302", "pca:RDS16015785", "pca:RDS9647297", "pca:RDS365579", "pca:RDS9663902", "pca:RDS9698327", "pca:RDS9677312", "pca:RDS9653822", "pca:RDS9666872", "pca:RDS9656792", "pca:RDS9667367", "pca:RDS15936236", "pca:RDS9684422", "pca:RDS359189", "pca:RDS9711287" ]
+  }, {
+    "@id" : "rdl:PCA_100003001",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "ProcessStep",
+    "comment" : [ "OntoCAPE concept 'ProcessStep' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "ProcessStep (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100003002",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "UnitOperation",
+    "comment" : [ "OntoCAPE concept 'UnitOperation' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "UnitOperation (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100003003",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "EnthalpyChange",
+    "comment" : [ "OntoCAPE concept 'EnthalpyChange' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "EnthalpyChange (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100003004",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "Reaction",
+    "comment" : [ "OntoCAPE concept 'Reaction' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "Reaction (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100003005",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "Separation",
+    "comment" : [ "OntoCAPE concept 'Separation' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "Separation (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100003006",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "PressureChangeOfGas",
+    "comment" : [ "OntoCAPE concept 'PressureChangeOfGas' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "PressureChangeOfGas (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100003007",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "PressureChangeOfLiquid",
+    "comment" : [ "OntoCAPE concept 'PressureChangeOfLiquid' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "PressureChangeOfLiquid (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100003009",
+    "@type" : [ "rdl:PCA_100001503", "owl:NamedIndividual" ],
+    "identifier" : "TemperatureChange",
+    "comment" : [ "OntoCAPE concept 'TemperatureChange' is defined in the OntoCAPE 'process.owl' module.", "External RDL entity" ],
+    "isDefinedBy" : [ "https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape", "rdl:PCA_100002002" ],
+    "label" : "TemperatureChange (OntoCAPE concept)"
+  }, {
+    "@id" : "rdl:PCA_100004133",
+    "@type" : "owl:Class",
+    "comment" : "Observing by touching with an object sensitive for an intended property",
+    "label" : "Sensing",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9654947"
+  }, {
+    "@id" : "rdl:PCA_100004134",
+    "@type" : "owl:Class",
+    "comment" : "Measuring a mass",
+    "label" : "Weighing",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9651302"
+  }, {
+    "@id" : "rdl:PCA_100004135",
+    "@type" : "owl:Class",
+    "comment" : "Transforming an aspect of something in a value expressed in a unit of measure",
+    "label" : "Measuring",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9661922"
+  }, {
+    "@id" : "rdl:PCA_100004136",
+    "@type" : "owl:Class",
+    "comment" : "Joining or fastening, or linking together, often by means of something intervening.",
+    "label" : "Connecting",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9685322"
+  }, {
+    "@id" : "rdl:PCA_100004137",
+    "@type" : "owl:Class",
+    "comment" : "Splitting by branching or separating in two parts",
+    "label" : "Bifurcating",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9693287"
+  }, {
+    "@id" : "rdl:PCA_100004138",
+    "@type" : "owl:Class",
+    "comment" : "An activity that reduces size, amount, extent, or number",
+    "label" : "Reducing",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9656792"
+  }, {
+    "@id" : "rdl:PCA_100004139",
+    "@type" : "owl:Class",
+    "comment" : "Increasing in extent, size, number, volume, or scope",
+    "label" : "Expanding",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9673082"
+  }, {
+    "@id" : "rdl:PCA_100004140",
+    "@type" : "owl:Class",
+    "comment" : "Influencing by exercising restraining or directing guidance",
+    "label" : "Controlling",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9685097"
+  }, {
+    "@id" : "rdl:PCA_100004141",
+    "@type" : "owl:Class",
+    "comment" : "Acting by contracting, folding, swinging, or sliding so as to leave no opening.",
+    "label" : "Closing",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS327667805"
+  }, {
+    "@id" : "rdl:PCA_100004142",
+    "@type" : "owl:Class",
+    "label" : "Opening",
+    "subClassOf" : "rdl:PCA_100000001"
+  }, {
+    "@id" : "rdl:PCA_100004143",
+    "@type" : "owl:Class",
+    "comment" : "Sending out a signal through some carrier",
+    "label" : "Transmitting",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9652247"
+  }, {
+    "@id" : "rdl:PCA_100004144",
+    "@type" : "owl:Class",
+    "label" : "Transmitting Optical",
+    "subClassOf" : "rdl:PCA_100004143"
+  }, {
+    "@id" : "rdl:PCA_100004145",
+    "@type" : "owl:Class",
+    "label" : "Transmitting Radio Frequency",
+    "subClassOf" : "rdl:PCA_100004143"
+  }, {
+    "@id" : "rdl:PCA_100004146",
+    "@type" : "owl:Class",
+    "label" : "Transmitting Analog Signal",
+    "subClassOf" : "rdl:PCA_100004143"
+  }, {
+    "@id" : "rdl:PCA_100004147",
+    "@type" : "owl:Class",
+    "label" : "Transmitting Digital Signal",
+    "subClassOf" : "rdl:PCA_100004143"
+  }, {
+    "@id" : "rdl:PCA_100004148",
+    "@type" : "owl:Class",
+    "comment" : "Acting by making firm, stable or stationary",
+    "label" : "Fixing",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9671102"
+  }, {
+    "@id" : "rdl:PCA_100004149",
+    "@type" : "owl:Class",
+    "comment" : "Acting by directing, regulating, or managing toward some desirable end, course, way, or development",
+    "label" : "Guiding",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9667367"
+  }, {
+    "@id" : "rdl:PCA_100004150",
+    "@type" : "owl:Class",
+    "comment" : "Acting by directing, ordering, or requesting to go",
+    "label" : "Sending",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9654902"
+  }, {
+    "@id" : "rdl:PCA_100004151",
+    "@type" : "owl:Class",
+    "comment" : "Inserting a substance into some material using some force",
+    "label" : "Injecting",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9663902"
+  }, {
+    "@id" : "rdl:PCA_100004152",
+    "@type" : "owl:Class",
+    "comment" : "Exhibiting to the sight or mind",
+    "label" : "Displaying",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9677312"
+  }, {
+    "@id" : "rdl:PCA_100004153",
+    "@type" : "owl:Class",
+    "comment" : "Blocking by obstructing, block up, or shut off by or as if by a barrier",
+    "label" : "Barring",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9693827"
+  }, {
+    "@id" : "rdl:PCA_100004154",
+    "@type" : "owl:Class",
+    "comment" : "Acquiring in a passive way",
+    "label" : "Receiving",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9657467"
+  }, {
+    "@id" : "rdl:PCA_100004155",
+    "@type" : "owl:Class",
+    "comment" : "Conveying energy or material",
+    "label" : "Conducting",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9685862"
+  }, {
+    "@id" : "rdl:PCA_100004156",
+    "@type" : "owl:Class",
+    "comment" : "Turning away from a straight course of fixed direction",
+    "label" : "Deflecting",
+    "subClassOf" : "rdl:PCA_100000001",
+    "closeMatch" : "pca:RDS9681902"
+  }, {
+    "@id" : "skos:closeMatch",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:member",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:relatedMatch",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "closeMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "createdOn" : {
+      "@id" : "http://purl.org/pav/createdOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "createdBy" : {
+      "@id" : "http://purl.org/pav/createdBy",
+      "@type" : "@id"
+    },
+    "annotatedTarget" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedTarget",
+      "@type" : "@id"
+    },
+    "annotatedProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedProperty",
+      "@type" : "@id"
+    },
+    "annotatedSource" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedSource",
+      "@type" : "@id"
+    },
+    "relatedMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "@type" : "@id"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "exampleResource" : {
+      "@id" : "http://rdfs.org/ns/void#exampleResource",
+      "@type" : "@id"
+    },
+    "sparqlEndpoint" : {
+      "@id" : "http://rdfs.org/ns/void#sparqlEndpoint",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "contributedBy" : {
+      "@id" : "http://purl.org/pav/contributedBy",
+      "@type" : "@id"
+    },
+    "feature" : {
+      "@id" : "http://rdfs.org/ns/void#feature",
+      "@type" : "@id"
+    },
+    "hasPreviousVersion" : {
+      "@id" : "http://purl.org/pav/hasPreviousVersion",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "http://ns.ottr.xyz/0.4/status",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor",
+      "@type" : "@id"
+    },
+    "lastUpdateOn" : {
+      "@id" : "http://purl.org/pav/lastUpdateOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/terms/subject",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "@vocab" : "http://www.semanticweb.org/owl/owlapi/turtle#",
+    "o-rdfs" : "http://tpl.ottr.xyz/rdfs/0.1/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "rstr" : "http://tpl.ottr.xyz/owl/restriction/0.1/",
+    "pca" : "http://data.posccaesar.org/rdl/",
+    "sd" : "http://www.w3.org/ns/sparql-service-description#",
+    "o-docttr" : "http://tpl.ottr.xyz/p/docttr/0.1/",
+    "listpl" : "http://rds.posccaesar.org/ontology/lis14/tpl/0.1/",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "lis" : "http://rds.posccaesar.org/ontology/lis14/rdl/",
+    "ottr" : "http://ns.ottr.xyz/0.4/",
+    "o-owl-ma" : "http://tpl.ottr.xyz/owl/macro/0.1/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "plmtpl" : "http://rds.posccaesar.org/ontology/plm/tpl/0.1/",
+    "om" : "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "reqtpl" : "http://w3id.org/requirement-ontology/tpl/0.1/",
+    "req" : "https://w3id.org/requirement-ontology/rdl/",
+    "void" : "http://rdfs.org/ns/void#",
+    "pav" : "http://purl.org/pav/",
+    "o-rdf" : "http://tpl.ottr.xyz/rdf/0.1/",
+    "o-owl-ut" : "http://tpl.ottr.xyz/owl/util/0.1/",
+    "orcid" : "https://orcid.org/",
+    "ntpl" : "http://norsok.org/templates/",
+    "ex" : "http://example.org/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "o-owl-dec" : "http://tpl.ottr.xyz/owl/declaration/0.1/",
+    "o-owl-re" : "http://tpl.ottr.xyz/owl/restriction/0.1/",
+    "rdl" : "http://rds.posccaesar.org/ontology/plm/rdl/",
+    "rrdl" : "http://w3id.org/readi/rdl/",
+    "o-owl-ax" : "http://tpl.ottr.xyz/owl/axiom/0.1/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}
