@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:oslcem="http://jazz.net/ns/ism/event/omnibus#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:oslcemb="http://jazz.net/ns/ism/event/omnibus/tbsm#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:oslcemp="http://jazz.net/ns/ism/event/omnibus/itnm#"
+    xmlns:oslcemm="http://jazz.net/ns/ism/event/omnibus/misc#"
+    xmlns:crtv="http://open-services.net/ns/crtv#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/tbsm#">
+    <dcterms:title>IBM Tivoli Netcool/OMNIbus Event Management TBSM Vocabulary</dcterms:title>
+    <dcterms:source rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementTBSMVocabulary"/>
+    <dcterms:license rdf:resource="http://jazz.net/ns/license.html"/>
+    <dcterms:description>The IBM Tivoli Netcool/OMNIbus Event Management TBSM Vocabulary defines the set of event properties that are either enriched and/or utilized by the IBM Tivoli Business Service Manager product.</dcterms:description>
+    <dcterms:dateCopyrighted>2013</dcterms:dateCopyrighted>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>Netcool/OMNIbus Event Management TBSM</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/tbsm#bsmIdentity">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>bsmIdentity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/tbsm#"/>
+    <rdfs:comment>Identity value of the IBM Tivoli Business Service Manager service that the event is related too.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

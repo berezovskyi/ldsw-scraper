@@ -1,0 +1,222 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:process="http://jazz.net/ns/process#"
+    xmlns:acp="http://jazz.net/ns/acp#"
+    xmlns:acc="http://open-services.net/ns/core/acc#"
+    xmlns:shapes="http://jazz.net/ns/process/shapes/"
+    xmlns:oslc="http://open-services.net/ns/core#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#instanceShape">
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#instanceShape"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <dcterms:description rdf:parseType="Literal">The link to the shape of this team area resource.</dcterms:description>
+    <oslc:range rdf:resource="http://open-services.net/ns/core#ResourceShape"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:name>instanceShape</oslc:name>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#accessContext">
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core/acc#accessContext"/>
+    <dcterms:description rdf:parseType="Literal">The link to the access context of this team area resource.</dcterms:description>
+    <oslc:name>accessContext</oslc:name>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:range rdf:resource="http://open-services.net/ns/core/acc#AccessContext"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#modified">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>modified</oslc:name>
+    <dcterms:description rdf:parseType="Literal">This property is modification date of the team area definition.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/modified"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#projectArea">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#ProjectArea"/>
+    <oslc:valueShape rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>projectArea</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The link to the project area of the team area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#projectArea"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#childTeamArea">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#TeamArea"/>
+    <oslc:valueShape rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#ChildTeamAreaShape"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Inline"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+    <oslc:name>childTeamArea</oslc:name>
+    <dcterms:description rdf:parseType="Literal">A link to a child team area of the team area.</dcterms:description>
+    <oslc:inversePropertyDefinition rdf:resource="http://jazz.net/ns/process#parentTeamArea"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#summary">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>summary</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The summary of the team area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#summary"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#parentOfChildTeamArea">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#TeamArea"/>
+    <oslc:valueShape rdf:resource="http://jazz.net/ns/process/shapes/TeamArea"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Inline"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>parentTeamArea</oslc:name>
+    <dcterms:description>The link to the parent team area of this child team area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#parentTeamArea"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea">
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#admins"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#ResourceShape"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#projectArea"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#history"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#parentTeamArea"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#childTeamArea"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#summary"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#instanceShape"/>
+    <dcterms:title rdf:parseType="Literal">Jazz Foundation Team Area.</dcterms:title>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#modified"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#description"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#archived"/>
+    <dcterms:description rdf:parseType="Literal">This shape describes team area resources hosted by the Jazz Foundation Process component.</dcterms:description>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#title"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#accessContext"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#roles"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#iterations"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#members"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#accessControl"/>
+    <oslc:describes rdf:resource="http://jazz.net/ns/process#TeamArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#admins">
+    <oslc:name>admins</oslc:name>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#admins"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Admins"/>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of administrators of the team area.</dcterms:description>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#archived">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>archived</oslc:name>
+    <dcterms:description rdf:parseType="Literal">This boolean property is true when the team area is archived.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#archive"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#roles">
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Roles"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of roles of the team area.</dcterms:description>
+    <oslc:name>roles</oslc:name>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#roles"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#description">
+    <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>description</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The description of the team area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#members">
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:name>members</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of members of the team area.</dcterms:description>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#members"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Members"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#ChildTeamAreaShape">
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#title"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#parentOfChildTeamArea"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/TeamArea#archived"/>
+    <oslc:describes rdf:resource="http://jazz.net/ns/process#TeamArea"/>
+    <dcterms:description rdf:parseType="Literal">This shape describes properties of child team areas that are included in the representation of the parent team area.</dcterms:description>
+    <dcterms:title rdf:parseType="Literal">Jazz Foundation Child Team Area.</dcterms:title>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#ResourceShape"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#accessControl">
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>accessControl</oslc:name>
+    <dcterms:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The link to the access control record of this team area resource.&#xD;
+This property is deprecated.&#xD;
+Use &lt;a href="http://open-services.net/ns/core/acc#accessContent"&gt;&lt;code&gt;acc:accessContext&lt;/code&gt;&lt;/a&gt; instead.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/acp#accessControl"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#title">
+    <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>title</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The title of the team area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#iterations">
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#iterations"/>
+    <oslc:name>iterations</oslc:name>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Iterations"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <dcterms:description rdf:parseType="Literal">The link to the iterations of the team area.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#history">
+    <oslc:name>history</oslc:name>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <dcterms:description rdf:parseType="Literal">The link to the history of the team area.</dcterms:description>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#history"/>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#History"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/TeamArea#parentTeamArea">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#TeamArea"/>
+    <oslc:valueShape rdf:resource="http://jazz.net/ns/process/shapes/TeamArea"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>parentTeamArea</oslc:name>
+    <dcterms:description>The link to the parent team area of this team area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#parentTeamArea"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+</rdf:RDF>

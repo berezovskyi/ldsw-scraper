@@ -1,0 +1,396 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:crtv="http://open-services.net/ns/crtv#"
+    xmlns:oslc="http://open-services.net/ns/core#"
+    xmlns:itm="http://jazz.net/ns/ism/perfmon/itm#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:pm="http://open-services.net/ns/pm#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#applicationHealth">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesHealthStatusVocabulary"/>
+    <rdfs:comment>Specifies the health of an enterprise application using health:OK, health:Warning, health:Error, health:Unknown.</rdfs:comment>
+    <rdfs:label>applicationHealth</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#WindowsServer2008">
+    <rdfs:comment>Indicates that the operating system type is Windows Server 2008. </rdfs:comment>
+    <rdfs:label>Windows Server 2008</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Windows7">
+    <rdfs:comment>Indicates that the operating system type is Windows 7. </rdfs:comment>
+    <rdfs:label>Windows 7</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#WindowsNT">
+    <rdfs:comment>Indicates that the operating system type is Windows NT. </rdfs:comment>
+    <rdfs:label>Windows NT</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topSlowestPortalPages">
+    <rdfs:comment>The slowest-responding web portal pages. For example, those being served by a web portal server, sorted by response time. </rdfs:comment>
+    <rdfs:label>topSlowestPortalPages</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#WindowsServer2012">
+    <rdfs:comment>Indicates that the operating system type is Windows Server 2012. </rdfs:comment>
+    <rdfs:label>Windows Server 2012</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#SessionsInUse">
+    <rdfs:comment>Sessions in use within some context.  The percentage of  sessions that are in use out of the maximum number of sessions configured for an Oracle database instance, for example.</rdfs:comment>
+    <rdfs:label>Sessions in use</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#WindowsVista">
+    <rdfs:comment>Indicates that the operating system type is Windows Vista. </rdfs:comment>
+    <rdfs:label>Windows Vista</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Open">
+    <rdfs:seeAlso rdf:resource="http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm"/>
+    <rdfs:comment>Indicates that a resource is open. In the case of Oracle database instances, an open database is one that is started, mounted, and available for access by clients.</rdfs:comment>
+    <rdfs:label>Open</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Started">
+    <rdfs:seeAlso rdf:resource="http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm"/>
+    <rdfs:comment>Indicates that a resource, such as a database instance, is started.</rdfs:comment>
+    <rdfs:label>Started</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#OpenMigrate">
+    <rdfs:seeAlso rdf:resource="http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm"/>
+    <rdfs:comment>Indicates that a resource, such as a database instance, has been opened so that migration or upgrade can be performed.</rdfs:comment>
+    <rdfs:label>OpenMigrate</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#putStatus">
+    <rdfs:comment>Indicates whether 'puts' are enabled or disabled for an IBM MQ queue. Valid values are any subclass of http://jazz.net/ns/ism/perfmon/itm#ConfigurationSetting, for example http://jazz.net/ns/ism/perfmon/itm#Enabled or http://jazz.net/ns/ism/perfmon/itm#Disabled.</rdfs:comment>
+    <rdfs:label>putStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topProcessesforCPUUtil">
+    <rdfs:comment>The top consumers of CPU resource, for example amongst those running in a computer operating system. Other examples include Java Virtual Machines and Database Management Systems. </rdfs:comment>
+    <rdfs:label>topProcessesforCPUUtil</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#affinity">
+    <rdfs:comment>An affinity in the ITM context is a way of associating a version of an agent product with the attribute groups, situations, and other ITM artifacts it supports.</rdfs:comment>
+    <rdfs:label>affinity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topDBConnectionPoolsInUse">
+    <rdfs:comment>The top database connection pools in use. For example, those in use by a web application server, sorted by utilization. </rdfs:comment>
+    <rdfs:label>topDBConnectionPoolsInUse</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#WindowsXP">
+    <rdfs:comment>Indicates that the operating system type is Windows XP. </rdfs:comment>
+    <rdfs:label>Windows XP</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#managedSystemName">
+    <rdfs:comment>Specifies the ITM product-specific internal identifier for the monitored resource used in many ITM APIs, including non-HTTP APIs. Allows products that use ITM's monitored resource identifier in their products to correlate them with crtv resources.</rdfs:comment>
+    <rdfs:label>managedSystemName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#InputHandles">
+    <rdfs:comment>Input handles or connection metric. ITM measures the number of applications that have a handle open to an input queue, for example.</rdfs:comment>
+    <rdfs:label>Input handles</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#LibraryCacheHitRatio">
+    <rdfs:comment>Measures the library cache efficiency. In ITM, this as measured by the percentage of times the fully parsed or compiled representation of PL/SQL blocks and SQL statements are already in memory in an Oracle database.</rdfs:comment>
+    <rdfs:label>Library Cache Hit Ratio</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#BufferUsed">
+    <rdfs:comment>Measures utilization of buffers such as DB2 Fast Communication Manager buffers.</rdfs:comment>
+    <rdfs:label>Buffer Used</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Disabled">
+    <rdfs:comment>Configuration setting that indicates a particular behavior is disabled.</rdfs:comment>
+    <rdfs:label>Disabled</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/ism/perfmon/itm#ConfigurationSetting"/>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#AIX">
+    <rdfs:comment>Indicates that the operating system type is AIX. </rdfs:comment>
+    <rdfs:label>AIX</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#internalID">
+    <rdfs:comment>This property is not intended for use by OSLC-only client applications.  It allows correlation between entries in ITM's internal resource repository with the resources ITM registers with Registry Services. </rdfs:comment>
+    <rdfs:label>internalID</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#ConnectionEntriesUsed">
+    <rdfs:comment>Measures utilization of connection entries such as DB2 Fast Communication Manager connection entries.</rdfs:comment>
+    <rdfs:label>Connection Entries used</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#attributeValue">
+    <rdfs:comment>Value of the attribute identified by the itm:attribute property, which is an attribute in an ITM attribute group that identifies a column as a primay key value for the attribute group. </rdfs:comment>
+    <rdfs:label>attributeValue</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Windows8">
+    <rdfs:comment>Indicates that the operating system type is Windows 8. </rdfs:comment>
+    <rdfs:label>Windows 8</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#DataFileFreeUtil">
+    <rdfs:comment>Relative number of unused data files.  The percentage of files that are not open compared to the maximum number of files that are allowed to be open at the same time by an Oracle database, for example.</rdfs:comment>
+    <rdfs:label>Data file free utilization</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#OutputHandles">
+    <rdfs:comment>Output handles or connection metric. ITM measures the number of applications that have a handle open to an output queue, for example.</rdfs:comment>
+    <rdfs:label>Output handles</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#applicationStatus">
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"/>
+    <rdfs:comment>A sequence of crtv:ServiceInstance resources representing enterprise applications and sorted alphabetically and whose operational status is provided in terms of pm:availabilityStatus. </rdfs:comment>
+    <rdfs:label>applicationStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#zOS">
+    <rdfs:comment>Indicates that the operating system type is zOS. </rdfs:comment>
+    <rdfs:label>zOS</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#attribute">
+    <rdfs:comment>Name of an ITM attribute, for example one that is a primary key for the resource. It is an attribute in the attribute group specified for the itm:attributeGroup property. The attribute name should be the value of the *COLUMN: tag from the agent's ODI file. </rdfs:comment>
+    <rdfs:label>attribute</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#">
+    <rdfs:comment>Predicates within this vocabulary are generally defined without constraints on the units used, or which resources they apply to, in order to maximize potential re-use. One way ITM uses them is as part of ems:Measure resources when exposing pm:PerformanceMonitoringRecord resources; in that context, units of measure etc. are supplied by other predicates on the ems:Measure resources.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://www.ibm.com/software/products/us/en/tivomoni/"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0"/>
+    <rdfs:label>IBM Tivoli Monitoring Vocabulary</rdfs:label>
+    <dcterms:description>The IBM Tivoli Monitoring vocabulary.</dcterms:description>
+    <dcterms:title>IBM Tivoli Monitoring Vocabulary</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#osType">
+    <rdfs:comment>The type of operating system running on a crtv:ComputerSystem instance, such as itm:Windows2000.</rdfs:comment>
+    <rdfs:label>osType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#PrimaryKey">
+    <rdfs:comment>A resource that helps client programs correlate ITM's OSLC resources with resources exposed via other interfaces, for example those that might be expressed as a row in an ODI table.</rdfs:comment>
+    <rdfs:label>Primary Key</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#zVM">
+    <rdfs:comment>Indicates that the operating system type is zVM. </rdfs:comment>
+    <rdfs:label>zVM</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topProcessesforRealMemUtil">
+    <rdfs:comment>The top consumers of real memory, for example amongst those running in a computer operating system, for example. </rdfs:comment>
+    <rdfs:label>topProcessesforRealMemUtil</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#SunOS">
+    <rdfs:comment>Indicates that the operating system type is SunOS. </rdfs:comment>
+    <rdfs:label>SunOS</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#IBMi">
+    <rdfs:comment>Indicates that the operating system type is IBM i. </rdfs:comment>
+    <rdfs:label>IBM i</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#NativeIdentity">
+    <rdfs:comment>A resource that helps client programs correlate ITM's OSLC resources with resources exposed via other ITM interfaces.</rdfs:comment>
+    <rdfs:label>Native Identity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topTablespaceUsage">
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/"/>
+    <rdfs:comment>Lists a sequence of table space resources used by a database and sorted by utilization; ITM currently uses crtv:TableSpace resources, but clients should tolerate others in the future. </rdfs:comment>
+    <rdfs:label>topTablespaceUsage</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#HP-UX">
+    <rdfs:comment>Indicates that the operating system type is HP-UX. </rdfs:comment>
+    <rdfs:label>HP-UX</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topJ2CConnectionPoolsInUse">
+    <rdfs:comment>The top J2C connection pools in use. For example, those in use by a web application server, sorted by utilization. </rdfs:comment>
+    <rdfs:label>topJ2CConnectionPoolsInUse</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Enabled">
+    <rdfs:comment>Configuration setting that indicates a particular behavior is enabled.</rdfs:comment>
+    <rdfs:label>Enabled</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/ism/perfmon/itm#ConfigurationSetting"/>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Windows2000">
+    <rdfs:comment>Indicates that the operating system type is Windows 2000. </rdfs:comment>
+    <rdfs:label>Windows 2000</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#commandServerStatus">
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"/>
+    <rdfs:comment>Status of an IBM MQ server in terms of pm:availabilityStatus values.</rdfs:comment>
+    <rdfs:label>commandServerStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#attributeGroup">
+    <rdfs:comment>This property specifies the name of the ITM attribute group that has a row which uniquely identifies the resource internally within ITM. It should be the value of the *TABLE: tag for the attribute group from the agent's ODI file. </rdfs:comment>
+    <rdfs:label>attributeGroup</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topProcessesforVirtMemUtil">
+    <rdfs:comment>The top consumers of virtual memory, for example amongst those running in a computer operating system, for example. </rdfs:comment>
+    <rdfs:label>topProcessesforVirtMemUtil</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#monitoringAgentsByStatus">
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"/>
+    <rdfs:comment>The list of monitoring agents sorted by pm:availabilityStatus values, for example those running in an operating system. </rdfs:comment>
+    <rdfs:label>monitoringAgentsByStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#primaryKey">
+    <rdfs:comment>This property links to a resource that contains the the attribute and attribute value for the primary key of an ITM ODI attribute group. If multiple attributes in the attribute group are required to uniquely identify the resource then there should be multiple instances of this property. </rdfs:comment>
+    <rdfs:label>primaryKey</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#ConfigurationSetting">
+    <rdfs:comment>Class that categories configuration settings.</rdfs:comment>
+    <rdfs:label>ConfigurationSetting</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#MaxChannelsUsed">
+    <rdfs:comment>Channels used by a message server, for example. ITM measures the maximum number of channels used.</rdfs:comment>
+    <rdfs:label>Maximum number of channels used</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#nativeIdentity">
+    <rdfs:comment>Links to a resource containing properties used in many non-HTTP ITM APIs to identify the subject resource in those other API contexts.</rdfs:comment>
+    <rdfs:label>nativeIdentity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topThreadPoolsInUse">
+    <rdfs:comment>The top thread pools in use. For example, those used by a web application server, sorted by utilization. </rdfs:comment>
+    <rdfs:label>topThreadPoolsInUse</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#getStatus">
+    <rdfs:comment>Indicates whether 'gets' are enabled or disabled for an IBM MQ queue. Valid values are any subclass of http://jazz.net/ns/ism/perfmon/itm#ConfigurationSetting, for example http://jazz.net/ns/ism/perfmon/itm#Enabled or http://jazz.net/ns/ism/perfmon/itm#Disabled.</rdfs:comment>
+    <rdfs:label>getStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#WindowsServer2003">
+    <rdfs:comment>Indicates that the operating system type is Windows Server 2003. </rdfs:comment>
+    <rdfs:label>Windows Server 2003</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Offline">
+    <rdfs:seeAlso rdf:resource="http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm"/>
+    <rdfs:comment>Indicates that a resource, such as a database instance, is offline.</rdfs:comment>
+    <rdfs:label>Offline</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#ProcessesInUse">
+    <rdfs:comment>Processes in use within some context.  The percentage of  processes that are connected to an Oracle database instance out of the maximum number of configured processes for that instance, for example.</rdfs:comment>
+    <rdfs:label>Processes in use</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#topSlowestServiceComponents">
+    <rdfs:comment>The top slowest-responding service components. For example, those in use by a web application server. </rdfs:comment>
+    <rdfs:label>topSlowestServiceComponents</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#instanceName">
+    <rdfs:comment>For ITM multi-instance agents, this property specifies the agent's instance name if it has been configured by a user.  If no instance name has been configured, this property should be absent (omitted).</rdfs:comment>
+    <rdfs:label>instanceName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Mounted">
+    <rdfs:seeAlso rdf:resource="http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm"/>
+    <rdfs:comment>Indicates that a resource, such as a database instance, is mounted.</rdfs:comment>
+    <rdfs:label>Mounted</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#MaxActiveChannelsUsed">
+    <rdfs:comment>Active channels used by a message server, for example. ITM measures the maximum number of active channels.</rdfs:comment>
+    <rdfs:label>Maximum number of active channels used</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#channelInitiatorStatus">
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"/>
+    <rdfs:comment>Status of an IBM MQ channel initiator in terms of pm:availabilityStatus values. </rdfs:comment>
+    <rdfs:label>channelInitiatorStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#Linux">
+    <rdfs:comment>Indicates that the operating system type is Linux. </rdfs:comment>
+    <rdfs:label>Linux</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#disksByPercentageSpaceUsed">
+    <rdfs:comment>A list of disks sorted by percentage space used, for example those used by a computer operating system.</rdfs:comment>
+    <rdfs:label>disksByPercentageSpaceUsed</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/itm#DlqDepth">
+    <rdfs:comment>Measures the depth of the dead letter queue on, for example, a message server.</rdfs:comment>
+    <rdfs:label>Dead letter queue depth</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/itm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

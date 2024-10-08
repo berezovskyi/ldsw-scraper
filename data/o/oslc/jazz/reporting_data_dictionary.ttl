@@ -1,0 +1,233 @@
+# Reporting Data Dictionary Vocabulary
+# Arthur Ryman
+# Created 2012-10-08
+# Modified 2014-07-10
+# Modified 2014-08-07
+# Modified 2014-12-17 Corrected typos, links.
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oslc: <http://open-services.net/ns/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix dd: <http://jazz.net/ns/reporting/data/dictionary#> .
+
+# prefixes for terms used in the vocabulary
+
+<#dcterms> a oslc:PrefixDefinition ;
+	oslc:prefix "dcterms" ;
+	oslc:prefixBase dcterms: .
+
+<#dd> a oslc:PrefixDefinition ;
+	oslc:prefix "dd" ;
+	oslc:prefixBase dd: .
+
+<#oslc> a oslc:PrefixDefinition ;
+	oslc:prefix "oslc" ;
+	oslc:prefixBase oslc: .
+
+# the vocabulary
+
+dd:
+	a owl:Ontology ;
+	dcterms:title "Reporting Data Dictionary Vocabulary" ;
+	dcterms:description "This vocabulary defines data dictionary concepts used in reporting documentation." ;
+	rdfs:label "Reporting Data Dictionary" ;
+	rdfs:seeAlso <https://jazz.net/wiki/bin/view/LinkedData/ReportingDataDictionaryVocabulary> ;
+	dcterms:source <https://jazz.net/wiki/pub/LinkedData/ReportingDataDictionaryVocabulary/dd-vocabulary.ttl> ;
+	dcterms:license <https://jazz.net/ns/license.html> ;
+	dcterms:dateCopyrighted "2012, 2014" .
+
+# classes
+
+dd:DataDictionary
+	a rdfs:Class ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "DataDictionary" ;
+	rdfs:comment """A data dictionary for some product.
+A data dictionary describes all the resource types provided by the product,
+and all the properties of the resources.
+Every data dictionary has a title (dcterms:title), short identifier (oslc:shortId),
+default application name (dd:applicationName), product name (dd:productionName), product version (dd:productVersion), 
+and a set of topics (dd:Topic).""" ;
+	rdfs:seeAlso dcterms:title, oslc:shortId, dd:applicationName, dd:productName, dd:productVersion, dd:Topic .
+
+dd:Topic
+	a rdfs:Class ;
+	rdfs:subClassOf dd:Item ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "Topic" ;
+	rdfs:comment """A topic describes some resource type and corresponds to some UI element (dd:uiElement).
+Every topic is part of some data dictionary (dcterms:isPartOf).
+Every topic is also an item (dd:Item).
+Every topic contains a set of subordinate data items (dd:Item) which are part of the topic (dcterms:isPartof).""" ;
+	rdfs:seeAlso dd:uiElement , dd:Item .
+	 
+dd:Item
+	a rdfs:Class ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "Item" ;
+	rdfs:comment """A data item describes some property of a resource type. 
+Every data item is part of some topic (dcterms:isPartOf).
+Every data item may have a set of data dictionary properties (dd:uiElement, dd:uiField, etc.)
+and a description (dcterms:description).""" ;
+	rdfs:seeAlso dd:uiElement , dd:uiField .
+	
+dd:Change
+	a rdfs:Class ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "Change" ;
+	rdfs:comment """A change describes a modification that was made to a topic or data item in some product version.""" .
+      
+# properties
+
+dd:applicationName
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "applicationName" ;
+	rdfs:comment """The default web application name of the product described by the data dictionary, e.g. "ccm".""" ;
+	rdfs:domain dd:DataDictionary .
+
+dd:productName
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "productName" ;
+	rdfs:comment """The name of the product described by the data dictionary, e.g. "Rational Team Concert".""" ;
+	rdfs:domain dd:DataDictionary .
+
+dd:productVersion
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "productVersion" ;
+	rdfs:comment """The version of the product described by the data dictionary, e.g. "4.0.4.2".""" ;
+	rdfs:domain dd:DataDictionary .
+
+dd:sampleInput
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "sampleInput" ;
+	rdfs:comment "Sample input as it appears in the user interface." ;
+	rdfs:domain dd:Item .
+      
+dd:uiElement
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "uiElement" ;
+	rdfs:comment "Name of user interface element." ;
+	rdfs:domain dd:Item .
+
+dd:uiField
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "uiField" ;
+	rdfs:comment "Name of user interface field." ;
+	rdfs:domain dd:Item .
+
+dd:restApiResource
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "restApiResource" ;
+	rdfs:comment "Name of REST API resource." ;
+	rdfs:domain dd:Item .
+      
+dd:restApiPropertyPath
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "restApiPropertyPath" ;
+	rdfs:comment "XPath of REST API property." ;
+	rdfs:domain dd:Item .
+
+dd:xdcResource
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "xdcResource" ;
+	rdfs:comment "Name of XDC resource." ;
+	rdfs:domain dd:Item .
+      
+dd:xdcDataMappingTable
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "xdcDataMappingTable" ;
+	rdfs:comment "Name of XDC data mapping table." ;
+	rdfs:domain dd:Item .
+      
+dd:xdcColumnName
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "xdcColumnName" ;
+	rdfs:comment "Name of XDC column." ;
+	rdfs:domain dd:Item .
+      
+dd:dataWarehouseSchema
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "dataWarehouseSchema" ;
+	rdfs:comment "Name of data warehouse database schema." ;
+	rdfs:domain dd:Item .
+      
+dd:dataWarehouseTable
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "dataWarehouseTable" ;
+	rdfs:comment "Name of data warehouse database table." ;
+	rdfs:domain dd:Item .
+      
+dd:dataWarehouseColumn
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "dataWarehouseColumn" ;
+	rdfs:comment "Name of data warehouse database column." ;
+	rdfs:domain dd:Item .
+      
+dd:fmModelPath
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "fmModelPath" ;
+	rdfs:comment "Path of Framework Manager model." ;
+	rdfs:domain dd:Item .
+      
+dd:fmModelQuerySubject
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "fmModelQuerySubject" ;
+	rdfs:comment "Name of Framework Manager model query subject." ;
+	rdfs:domain dd:Item .
+      
+dd:fmModelQueryItem
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "fmModelQueryItem" ;
+	rdfs:comment "Name of Framework Manager model query item." ;
+	rdfs:domain dd:Item .
+      
+dd:sampleOutput
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "sampleOutput" ;
+	rdfs:comment """Row number of the item in the table.
+This property can be used to sort the items into the order defined by the author of the dictionary.
+This property uniquely identifies the item within the dictionary.""" ;
+	rdfs:domain dd:Item .
+	
+dd:rowNumber
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "sampleOuput" ;
+	rdfs:comment "Sample output as it appears in a report." ;
+	rdfs:domain dd:Item .
+	
+dd:hasChange
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "hasChange" ;
+	rdfs:comment "A change made to this topic or data item." ;
+	rdfs:domain dd:Item ;
+	rdfs:range dd:Change .
+
+dd:changedInVersion
+	a rdf:Property ;
+	rdfs:isDefinedBy dd: ;
+	rdfs:label "changedInVersion" ;
+	rdfs:comment "The version in which this change was made." ;
+	rdfs:domain dd:Change .

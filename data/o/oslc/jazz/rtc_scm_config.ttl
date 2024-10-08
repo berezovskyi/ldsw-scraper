@@ -1,0 +1,75 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rtc_scm_config: <http://jazz.net/ns/rtc/scm/config#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix oslc: <http://open-services.net/ns/core#>.
+@prefix oslc_config: <http://open-services.net/ns/config#>.
+@prefix vc: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+
+
+<#oslc_config> a oslc:PrefixDefinition ;
+	oslc:prefix "oslc_config" ;
+	oslc:prefixBase oslc_config: .
+
+<#rtc_scm_config> a oslc:PrefixDefinition ;
+	oslc:prefix "rtc_scm_config" ;
+	oslc:prefixBase rtc_scm_config: .
+
+
+rtc_scm_config:
+	a owl:Ontology ;
+	dcterms:title "The Rational Team Concert Configuration Management Vocabulary" ;
+	dcterms:description """Vocabulary terms from the Rational Team Concert Configuration Management namespace.
+These terms are intended to complement the OSLC Configuration Management vocabulary with
+terms that are specific to Rational Team Concert."""^^rdf:XMLLiteral ;
+	rdfs:label "Rational Team Concert Configuration Management"@en-US ;
+	rdfs:seeAlso <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-ccm/trunk/specs/config-mgt.html> ;
+	dcterms:source <https://jazz.net/wiki/pub/LinkedData/RtcScmConfigVocabulary/rtcscmconfig-vocabulary.ttl> ;
+	dcterms:license <http://jazz.net/ns/license.html> ;
+	dcterms:dateCopyrighted "2014" .
+
+# rdf classes to describe OSLC configuration types
+
+rtc_scm_config:ConfigStream
+	a rdfs:Class ;
+	vc:term_status "stable" ;
+	dcterms:date "2014-09-25T00:00:00.000Z";
+	rdfs:isDefinedBy rtc_scm_config: ;
+	rdfs:label "ConfigStream" ;
+	rdfs:comment """A configuration that is a Rational Team Concert stream.
+The resource probably also has the type oslc_config:Configuration.
+RTC stream configurations typically have an oslc_config:accepts property with
+the value rtc_scm_config:ConfigBaseline as an RTC stream may have component
+baselines as contributions.
+Also, instances will normally have an oslc_config:acceptedBy property with the
+value oslc_config:Configuration since RTC streams may appear within an
+OSLC configuration hierarchy."""@en-US ;
+	rdfs:seeAlso oslc_config:Configuration , oslc_config:accepts , oslc_config:acceptedBy , rtc_scm_config:ConfigBaseline .
+
+rtc_scm_config:ConfigSnapshot
+	a rdfs:Class ;
+	vc:term_status "stable" ;
+	dcterms:date "2014-09-25T00:00:00.000Z";
+	rdfs:isDefinedBy rtc_scm_config: ;
+	rdfs:label "ConfigSnapshot" ;
+	rdfs:comment """A configuration that is a Rational Team Concert snapshot.
+The resource probably also has the type oslc_config:Configuration.
+RTC snapshots will normally have an oslc_config:acceptedBy property with the
+value oslc_config:Configuration since RTC snapshots may appear within an
+OSLC configuration hierarchy."""@en-US ;
+	rdfs:seeAlso oslc_config:Configuration , oslc_config:acceptedBy .
+
+rtc_scm_config:ConfigBaseline
+	a rdfs:Class ;
+	vc:term_status "stable" ;
+	dcterms:date "2014-09-25T00:00:00.000Z";
+	rdfs:isDefinedBy rtc_scm_config: ;
+	rdfs:label "ConfigBaseline" ;
+	rdfs:comment """A configuration that is a Rational Team Concert baseline.
+The resource probably also has the type oslc_config:Configuration.
+RTC baselines typically have no oslc_config:accepts property and
+an oslc_config:acceptedBy property with the value oslc_config:Configuration
+since RTC baselines may only appear as leaf nodes in an OSLC 
+configuration hierarchy."""@en-US ;
+	rdfs:seeAlso oslc_config:Configuration , oslc_config:accepts , oslc_config:acceptedBy .

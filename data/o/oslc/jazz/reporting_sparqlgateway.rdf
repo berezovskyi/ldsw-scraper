@@ -1,0 +1,208 @@
+<rdf:RDF
+    xmlns:gw="http://jazz.net/ns/reporting/sparqlgateway#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:oslc="http://open-services.net/ns/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#resultsLabel">
+    <rdfs:comment>A human-readable label for the set of all query results. This corresponds to the set of all bindings.</rdfs:comment>
+    <rdfs:label>resultsLabel</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#oauthConsumerKey">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/OAuth"/>
+    <rdfs:comment>The OAuth consumer key for this endpoint.</rdfs:comment>
+    <rdfs:label>oauthConsumerKey</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#queriesEndpoint">
+    <rdfs:comment>The endpoint resource that this query is sent to.</rdfs:comment>
+    <rdfs:label>queriesEndpoint</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#Gateway">
+    <rdfs:comment>The set of SPARQL Gateway services. A gateway service contains a list of endpoints and a list of queries.</rdfs:comment>
+    <rdfs:label>Gateway</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#oauthConsumerSecret">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/OAuth"/>
+    <rdfs:comment>The OAuth consumer secret for this endpoint.</rdfs:comment>
+    <rdfs:label>oauthConsumerSecret</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasEndpointList">
+    <rdfs:comment>The list of endpoints hosted by the gateway.</rdfs:comment>
+    <rdfs:label>hasEndpointList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#resultLabel">
+    <rdfs:comment>A human-readable label for an individual query result. This corresponds to a binding for the variables.</rdfs:comment>
+    <rdfs:label>resultLabel</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#sparqlQuery">
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-sparql-query/"/>
+    <rdfs:comment>The SPARQL query string of this query resource. This is a valid string in the SPARQL Query Language for RDF.</rdfs:comment>
+    <rdfs:label>sparqlQuery</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasCognosXml">
+    <rdfs:seeAlso rdf:resource="http://www.ibm.com/developerworks/data/library/cognos/infrastructure/databases/page476.html"/>
+    <rdfs:comment>The Cognos XML data source associated with this resource.</rdfs:comment>
+    <rdfs:label>hasCognosXml</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasDataService">
+    <rdfs:comment>The Reportable REST V1 data service associated with this resource.</rdfs:comment>
+    <rdfs:label>hasDataService</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#memberEndpoint">
+    <rdfs:comment>An endpoint resource that belongs to this endpoint list.</rdfs:comment>
+    <rdfs:label>memberEndpoint</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#inGateway">
+    <rdfs:comment>The gateway that hosts this resource.</rdfs:comment>
+    <rdfs:label>inGateway</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#Query">
+    <rdfs:comment>The set of SPARQL queries. A query has a SPARQL statement and optional result variable type information.</rdfs:comment>
+    <rdfs:label>Query</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#QueryList">
+    <rdfs:comment>The set of SPARQL query lists. A query list contains a set of queries.</rdfs:comment>
+    <rdfs:label>QueryList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#position">
+    <rdfs:comment>The integer position, starting from 1, of this variable within the SPARQL query.</rdfs:comment>
+    <rdfs:label>position</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasDataServiceXsd">
+    <rdfs:comment>The URL of the Reportable REST V1 XML Schema for this resource.</rdfs:comment>
+    <rdfs:label>hasDataServiceXsd</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#Endpoint">
+    <rdfs:comment>The set of SPARQL endpoints. An endpoint has a URL and optional authentication information.</rdfs:comment>
+    <rdfs:label>EndPoint</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#sparqlEndpointLocation">
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-sparql-protocol/"/>
+    <rdfs:comment>The URL of the SPARQL endpoint. This URL supports the SPARQL Protocol for RDF.</rdfs:comment>
+    <rdfs:label>sparqlEndpointLocation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/LinkedData/SparqlGatewayVocabulary"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/SparqlGatewayVocabulary/gw-vocabulary.ttl"/>
+    <rdfs:label>SPARQL Gateway</rdfs:label>
+    <dcterms:description>The SPARQL Gateway vocabulary defines defines SPARQL endpoint, queries, and related reporting concepts.</dcterms:description>
+    <dcterms:title>SPARQL Gateway Vocabulary</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasSparqlResults">
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-sparql-XMLres/"/>
+    <rdfs:comment>The URL of the SPARQL results in XML format for this query.</rdfs:comment>
+    <rdfs:label>hasSparqlResults</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasVariable">
+    <rdfs:comment>A variable that belongs to this SPARQL query.</rdfs:comment>
+    <rdfs:label>hasVariable</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#oauthEnabled">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/OAuth"/>
+    <rdfs:comment>Boolean value. When true, OAuth is used for this endpoint.</rdfs:comment>
+    <rdfs:label>oauthEnabled</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#gw">
+    <oslc:prefixBase rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <oslc:prefix>gw</oslc:prefix>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#PrefixDefinition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#nextIdentifier">
+    <rdfs:comment>The identifier of the next resource to be created in this list.</rdfs:comment>
+    <rdfs:label>nextIdentifier</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasQueryList">
+    <rdfs:comment>The list of queries hosted by the gateway.</rdfs:comment>
+    <rdfs:label>hasQueryList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#inQueryList">
+    <rdfs:comment>The query list that contains this query resource.</rdfs:comment>
+    <rdfs:label>inQueryList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#hasDatatype">
+    <rdfs:comment>The XML Schema datatype, e.g. xsd:string, of this SPARQL variable.</rdfs:comment>
+    <rdfs:label>hasDatatype</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#modifiedBy">
+    <rdfs:comment>The agent that last modified this resource.</rdfs:comment>
+    <rdfs:label>modifiedBy</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#Variable">
+    <rdfs:comment>The set of SPARQL variables. A variable is bound in a query result and has optional result type information.</rdfs:comment>
+    <rdfs:label>Variable</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#memberQuery">
+    <rdfs:comment>A query resource that belongs to this query list.</rdfs:comment>
+    <rdfs:label>memberQuery</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#EndpointList">
+    <rdfs:comment>The set of SPARQL endpoint lists. An endpoint list contains a set of endpoints.</rdfs:comment>
+    <rdfs:label>EndpointList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/reporting/sparqlgateway#inEndpointList">
+    <rdfs:comment>The endpoint list that contains this endpoint resource.</rdfs:comment>
+    <rdfs:label>inEndpointList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/reporting/sparqlgateway#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

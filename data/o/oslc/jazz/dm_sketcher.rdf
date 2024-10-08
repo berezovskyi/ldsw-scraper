@@ -1,0 +1,17 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/sketcher#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:title>Sketcher Vocabulary</dcterms:title>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <dcterms:dateCopyrighted>2012</dcterms:dateCopyrighted> 
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/sketcher#Sketch">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Sketch</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/sketcher#"/>
+  </rdf:Description>
+</rdf:RDF>

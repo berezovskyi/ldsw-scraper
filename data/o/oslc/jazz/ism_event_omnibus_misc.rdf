@@ -1,0 +1,216 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:oslcem="http://jazz.net/ns/ism/event/omnibus#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:oslcemb="http://jazz.net/ns/ism/event/omnibus/tbsm#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:oslcemp="http://jazz.net/ns/ism/event/omnibus/itnm#"
+    xmlns:oslcemm="http://jazz.net/ns/ism/event/omnibus/misc#"
+    xmlns:crtv="http://open-services.net/ns/crtv#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#NotDefined">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>NotDefined</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of not defined. Indicated by the value 0 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>0</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#TimeDomainViolation">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>TimeDomainViolation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of time domain violation. Indicated by the value 10 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>10</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#EnvironmentalAlarm">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>EnvironmentalAlarm</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of environmental alarm. Indicated by the value 5 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>5</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#x733SpecificProb">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>x733SpecificProb</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>Identifies additional information for the probable cause of the event as defined in the ITU X.733 standard. Specifies a set of identifiers for use in managed object instance identification.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#">
+    <dcterms:title>IBM Tivoli Netcool/OMNIbus Event Management Misc Vocabulary</dcterms:title>
+    <dcterms:source rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary"/>
+    <dcterms:license rdf:resource="http://jazz.net/ns/license.html"/>
+    <dcterms:description>The IBM Tivoli Netcool/OMNIbus Event Management Misc Vocabulary defines the set of non-core event properties that are available, but are not not directly related to any specific IBM Tivoli product. This is also the name space that can be used by OMNIbus customers for mapping any user defined event columns to a property in the event shape.</dcterms:description>
+    <dcterms:dateCopyrighted>2013</dcterms:dateCopyrighted>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>Netcool/OMNIbus Event Management Misc</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#physicalPort">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>physicalPort</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The port number indicated by the event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#CommunicationsAlarm">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>CommunicationsAlarm</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of communications alarm. Indicated by the value 1 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>1</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#EquipmentAlarm">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>EquipmentAlarm</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of equipment alarm. Indicated by the value 4 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>4</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#url">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>url</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>Optional URL which provides a link to additional information, which may be a vendor's device or ENMS.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#x733ProbableCause">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>x733ProbableCause</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>Indicates the ITU X.733 standard probable cause of event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#x733CorrNotif">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>x733CorrNotif</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>A list of all notifications with which this notification event is correlated. (ITU X.733 standard)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#SecurityServiceViolation">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>SecurityServiceViolation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of security service violation. Indicated by the value 9 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>9</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#PhysicalViolation">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>PhysicalViolation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of physical violation. Indicated by the value 8 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>8</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>X733EventType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The set of ITU X.733 standard event types for an event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#hasX733EventType"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#X733EventType"/>
+    <rdfs:label>x733EventType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>Indicates the ITU X.733 standard event type. 0: Not defined, 1: Communications, 2: Quality of Service, 3: Processing Error, 4: Equipment, 5: Environmental, 6: Integrity Violation, 7: Operational Violation, 8: Physical Violation, 9: Security Service Violation, 10: Time Domain Violation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#Quality-of-ServiceAlarm">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>Quality-of-ServiceAlarm</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of quality-of-service alarm. Indicated by the value 2 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>2</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#hasX733EventType">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#EnvironmentalAlarm"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#SecurityServiceViolation"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#TimeDomainViolation"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#NotDefined"/>
+    <rdfs:comment>The event has this oslcemm:X733EventType resource. This is the object property associated with oslcemm:x733EventType.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#IntegrityViolation"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#ProcessingError"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#Quality-of-ServiceAlarm"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#PhysicalViolation"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#EquipmentAlarm"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#x733EventType"/>
+    <rdfs:label>hasX733EventType</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#CommunicationsAlarm"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#OperationalViolation"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementMiscVocabulary#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#location">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>location</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>Indicates the physical location of the device, host or service for which the event was generated.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#ProcessingError">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>ProcessingError</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of processing error. Indicated by the value 3 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>3</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#OperationalViolation">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>OperationalViolation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of operational violation. Indicated by the value 7 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>7</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#physicalSlot">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>physicalSlot</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The slot number indicated by the event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#IntegrityViolation">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#x733EventType"/>
+    <rdfs:label>IntegrityViolation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The event has an ITU X.733 standard event type of integrity violation. Indicated by the value 6 for oslcemm:x733EventType.</rdfs:comment>
+    <rdf:value>6</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#X733EventType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#poll">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>poll</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The frequency of polling for this event in seconds.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#extendedAttr">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>extendedAttr</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>Holds name-value pairs of additional information for which no dedicated property exists in the event shape.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus/misc#physicalCard">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>physicalCard</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus/misc#"/>
+    <rdfs:comment>The card name or description indicated by the event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

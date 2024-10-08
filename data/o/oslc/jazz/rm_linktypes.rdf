@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:jazz_rmlt="http://jazz.net/ns/rm/linktypes#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/rm/linktypes#embeds">
+    <rdfs:label xml:lang="en-US">Embeds</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm/linktypes#"/>
+    <rdfs:comment>Tracks a containment relationship between Requirements Management artifacts</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm/linktypes#">
+    <dcterms:dateCopyrighted>2012</dcterms:dateCopyrighted>
+    <dcterms:license rdf:resource="http://jazz.net/ns/license.html"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/bin/view/Main/RmLtResourceVocabulary/rmlt-vocabulary.ttl"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/rm/"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/"/>
+    <rdfs:label xml:lang="en-US">The Rational Requirements Management Link Type Vocabulary</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:title>The Rational Requirements Management Link Type Vocabulary</dcterms:title>
+    <dcterms:description rdf:parseType="Literal">Defines Requirements Management Link Type Vocabulary.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm/linktypes#termReference">
+    <rdfs:label xml:lang="en-US">Term Reference</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm/linktypes#"/>
+    <rdfs:comment>Captures glossary-based relationships between part of a Requirements Management artifact (e.g., a word or phrase) and a Glossary Term.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm/linktypes#decomposes">
+    <rdfs:label xml:lang="en-US">Decomposes</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm/linktypes#"/>
+    <rdfs:comment>Represents decomposition relationship between requirements</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm/linktypes#synonym">
+    <rdfs:label xml:lang="en-US">Synonym</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm/linktypes#"/>
+    <rdfs:comment>Relates two Requirements Management Glossary Terms that have the same meaning.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm/linktypes#extracted">
+    <rdfs:label xml:lang="en-US">Extracted</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm/linktypes#"/>
+    <rdfs:comment>Captures when the content of a Requirements Management artifact has been created from content of another Requirements Management artifact.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

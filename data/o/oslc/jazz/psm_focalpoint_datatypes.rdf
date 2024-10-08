@@ -1,0 +1,701 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:fpdt="http://jazz.net/ns/psm/focalpoint/datatypes#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#includeLast">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryElementTable"/>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryAttributeTable"/>
+    <rdfs:comment>Optional. If absent include all change events. If present include last 10 or 20 change events.</rdfs:comment>
+    <rdfs:label>includeLast</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#isSummary">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>true if the row is a summary. </rdfs:comment>
+    <rdfs:label>isSummary</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#displayType">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>The display type of the graph (e.g. line or bar).</rdfs:comment>
+    <rdfs:label>displayType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Link">
+    <rdfs:comment>A list is a collection of either text attributes or link attributes.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Link"/>
+    <rdfs:comment>A link from one element to another. The target can be either in this workspace, or in another workspace.</rdfs:comment>
+    <rdfs:label>Link</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#row">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>Multivalued. A row that is contained in a table.</rdfs:comment>
+    <rdfs:label>row</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#rangeTo">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>The end of the time range. This is either a fixed date of the value of some date attribute.</rdfs:comment>
+    <rdfs:label>rangeTo</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#columnNo">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>An integer. The column number, starting from 1, of a column or cell within a table.</rdfs:comment>
+    <rdfs:label>columnNo</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#isLocked">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>	true if the row is locked.</rdfs:comment>
+    <rdfs:label>isLocked</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ComplexDatatype"/>
+    <rdfs:comment>A Focal Point complex datatype. This is an abstract class.</rdfs:comment>
+    <rdfs:label>ComplexDatatype</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Bar">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>Bar chart.</rdfs:comment>
+    <rdfs:label>Bar</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#DisplayType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#trendLine">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>Optional. If present, a trend line is included in the graph.</rdfs:comment>
+    <rdfs:label>trendLine</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#IntegrationLink">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_IntegrationLink"/>
+    <rdfs:comment>A list of linked OSLC resources residing in a different repository.</rdfs:comment>
+    <rdfs:label>IntegrationLink</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Quarter">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A time interval of one quarter year.</rdfs:comment>
+    <rdfs:label>Quarter</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>A rectangular table of values in a time grid.</rdfs:comment>
+    <rdfs:label>ScenarioType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#changeEvent">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>Multivalued. A change event in the history set determined by the date range and the sample interval.</rdfs:comment>
+    <rdfs:label>changeEvent</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#endDate">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The end date of this sheet.</rdfs:comment>
+    <rdfs:label>endDate</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Small">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"/>
+    <rdfs:comment>Size small.</rdfs:comment>
+    <rdfs:label>Small</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#HistoryElementTable">
+    <rdfs:comment>A series of change events of all attributes of an element.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryElementTable"/>
+    <rdfs:comment>History of all attributes in an element is provided as a table.</rdfs:comment>
+    <rdfs:label>HistoryElementTable</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#History"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#TextEntry">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TextEntry"/>
+    <rdfs:comment>An entry in a list of text items.</rdfs:comment>
+    <rdfs:label>TextEntry</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#attachment">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"/>
+    <rdfs:comment>Multivalued. A file attachment contained in the list of attachments.</rdfs:comment>
+    <rdfs:label>attachment</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Cell">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>A cell in a table.</rdfs:comment>
+    <rdfs:label>Cell</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Matrix">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Matrix"/>
+    <rdfs:comment>A matrix attribute consists of several text, float or integer attributes in a grid.</rdfs:comment>
+    <rdfs:label>Matrix</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Table"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#sheet">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>A sheet in a time grid.</rdfs:comment>
+    <rdfs:label>sheet</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Year">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A time interval of one year.</rdfs:comment>
+    <rdfs:label>Year</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#DisplayType">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A graph display type (e.g. bar or line).</rdfs:comment>
+    <rdfs:label>DisplayType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Day">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A time interval of one day.</rdfs:comment>
+    <rdfs:label>Day</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#image">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>The link to the image of the graph.</rdfs:comment>
+    <rdfs:label>image</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Row">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>A row in a table.</rdfs:comment>
+    <rdfs:label>Row</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#isHeading">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>true if the row is a heading.</rdfs:comment>
+    <rdfs:label>isHeading</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Column">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>A column in a table.</rdfs:comment>
+    <rdfs:label>Column</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#rangeFromAttribute">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>Optional. If a date attribute is used to define the start of the range, this is its name.</rdfs:comment>
+    <rdfs:label>rangeFromAttribute</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#History">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_History"/>
+    <rdfs:comment>History can display attribute or element history for an element.</rdfs:comment>
+    <rdfs:label>History</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#contentType">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"/>
+    <rdfs:comment>The content type of the attached file (e.g. 'text/plain').</rdfs:comment>
+    <rdfs:label>contentType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#TrendLine">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"/>
+    <rdfs:comment>A straight line that is fitted to the time series of historical values of an attribute.</rdfs:comment>
+    <rdfs:label>TrendLine</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#sampleInterval">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>Optional. If absent then all of the history values within the range are graphed. If present, then only the most recent value within the specified time interval (e.g. daily, weekly) is graphed.</rdfs:comment>
+    <rdfs:label>sampleInterval</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Url">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Url"/>
+    <rdfs:comment>A link to a specific resource on the Internet (e.g. http://www.ibm.com).</rdfs:comment>
+    <rdfs:label>Url</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Table">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>A Focal Point table datatype. A table is a rectangular array of cells. This is an abstract class.</rdfs:comment>
+    <rdfs:label>Table</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#isBenefit">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>	true if the row is a benefit. false if the row is a cost.</rdfs:comment>
+    <rdfs:label>isBenefit</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Text">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Text"/>
+    <rdfs:comment>A text field where a member enters and edits text.</rdfs:comment>
+    <rdfs:label>Text</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#scenarioType">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>Optional. The scenario type of this scheet. If absent then the scenario type is unset.</rdfs:comment>
+    <rdfs:label>scenarioType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#ChangeEvent">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ChangeEvent"/>
+    <rdfs:comment>A record of a change to an attribute of an element.</rdfs:comment>
+    <rdfs:label>ChangeEvent</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#HistoryAttributeTable">
+    <rdfs:comment>A series of change events of one attribute of an element.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryAttributeTable"/>
+    <rdfs:comment>History of one attribute is provided as a table.</rdfs:comment>
+    <rdfs:label>HistoryAttributeTable</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#History"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#timeSeries">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>A time series of numeric attribute history values. This is a multivalued property. The graph may contain zero or more time series.</rdfs:comment>
+    <rdfs:label>timeSeries</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#cell">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>A cell that is contained in a row.</rdfs:comment>
+    <rdfs:label>cell</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Choice">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Choice"/>
+    <rdfs:comment>A list of predefined items that a member may select a single item from (e.g. status).</rdfs:comment>
+    <rdfs:label>Choice</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Month">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A time interval of one month.</rdfs:comment>
+    <rdfs:label>Month</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Sheet">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>A rectangular table of values in a time grid.</rdfs:comment>
+    <rdfs:label>Sheet</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#contentLength">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"/>
+    <rdfs:comment>The length in bytes of the attached file (e.g. 4200).</rdfs:comment>
+    <rdfs:label>contentLength</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Integer">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Integer"/>
+    <rdfs:comment>A real number that contains no fractional part (e.g. 42).</rdfs:comment>
+    <rdfs:label>Integer</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#File">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"/>
+    <rdfs:comment>A document, image or other file in the database, or a list of such files. Maximum total size is 50 MB.</rdfs:comment>
+    <rdfs:label>File</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#rowNo">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>An integer. The row number, starting from 1, of a row or cell within a table.</rdfs:comment>
+    <rdfs:label>rowNo</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#valueFrom">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"/>
+    <rdfs:comment>The value of the trend line at the start date of the range.</rdfs:comment>
+    <rdfs:label>valueFrom</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#MultiChoice">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_MultiChoice"/>
+    <rdfs:comment>A list of predefined items that a member may select multiple items from.</rdfs:comment>
+    <rdfs:label>MultiChoice</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#content">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"/>
+    <rdfs:comment>The content of the attached file. An octet stream.</rdfs:comment>
+    <rdfs:label>content</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_SimpleDatatype"/>
+    <rdfs:comment>A Focal Point simple datatype. This is an abstract class.</rdfs:comment>
+    <rdfs:label>SimpleDatatype</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#column">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"/>
+    <rdfs:comment>Multivalued. A column that is contained in a table.</rdfs:comment>
+    <rdfs:label>column</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Line">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>Line chart.</rdfs:comment>
+    <rdfs:label>Line</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#DisplayType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Week">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A time interval of one week.</rdfs:comment>
+    <rdfs:label>Week</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A time interval (e.g. year, quarter, month).</rdfs:comment>
+    <rdfs:label>TimeInterval</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#value">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_SimpleDatatype"/>
+    <rdfs:comment>A primary or natural value of a simple datatype.</rdfs:comment>
+    <rdfs:label>value</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#fitToRange">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"/>
+    <rdfs:comment>True if the trend line is computed for historical values within the range of the graph. Otherwise, the trend line is fitted to all historical values.</rdfs:comment>
+    <rdfs:label>fitToRange</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Date">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Date"/>
+    <rdfs:comment>A date value (for example 3/31/2010).</rdfs:comment>
+    <rdfs:label>Date</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#text">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Text"/>
+    <rdfs:comment>One or more lines of plain text.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_CheckBox"/>
+    <rdfs:comment>Textual value for display purposes.</rdfs:comment>
+    <rdfs:label>text</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#valueTo">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"/>
+    <rdfs:comment>The value of the trend line at the end date of the range.</rdfs:comment>
+    <rdfs:label>valueTo</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#HistoryNone">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryNone"/>
+    <rdfs:comment>No history is provided.</rdfs:comment>
+    <rdfs:label>HistoryNone</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#History"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#i">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ComplexDatatype"/>
+    <rdfs:comment>The position of the resource in an ordered list, starting from 1.</rdfs:comment>
+    <rdfs:label>i</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Datatype">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Datatype"/>
+    <rdfs:comment>A Focal Point datatype. This is abstract superclass of all Focal Point datatypes.</rdfs:comment>
+    <rdfs:label>Datatype</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#unit">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The unit of measure for this row.</rdfs:comment>
+    <rdfs:label>unit</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Likely">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The estimated most likely value.</rdfs:comment>
+    <rdfs:label>Likely</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#High">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The estimated high value.</rdfs:comment>
+    <rdfs:label>High</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Size">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"/>
+    <rdfs:comment>A graph size (e.g. small, medium, or large).</rdfs:comment>
+    <rdfs:label>Size</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#">
+    <dcterms:dateCopyrighted>2012</dcterms:dateCopyrighted>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/Main/FocalPointDatatypesVocabulary/fpdt-vocabulary.ttl"/>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes"/>
+    <rdfs:label>Focal Point Datatypes</rdfs:label>
+    <dcterms:description>The Focal Point datatypes vocabulary defines datatypes supported as attribute values.</dcterms:description>
+    <dcterms:title>Focal Point Datatypes Vocabulary</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Mirror">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Mirror"/>
+    <rdfs:comment>A mirrored value of another attribute in another element.</rdfs:comment>
+    <rdfs:label>Mirror</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Float">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Float"/>
+    <rdfs:comment>A real number that contains a fractional part (e.g. 3.14).</rdfs:comment>
+    <rdfs:label>Float</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Large">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"/>
+    <rdfs:comment>Size large.</rdfs:comment>
+    <rdfs:label>Large</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#HistoryGraph">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>History of one or more numeric attributes is provided as a graph.</rdfs:comment>
+    <rdfs:label>HistoryGraph</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#History"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Version">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Version"/>
+    <rdfs:comment>A number or character that automatically increases based on changes in other attributes.</rdfs:comment>
+    <rdfs:label>Version</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Medium">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"/>
+    <rdfs:comment>Size medium.</rdfs:comment>
+    <rdfs:label>Medium</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#Size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Low">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The estimated low value.</rdfs:comment>
+    <rdfs:label>Low</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#forAttribute">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>The name of the attribute whose history is being graphed.</rdfs:comment>
+    <rdfs:label>forAttribute</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#TimeGrid">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>Use this for calculations based on a time line.</rdfs:comment>
+    <rdfs:label>TimeGrid</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#IncomingLinks">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_IncomingLinks"/>
+    <rdfs:comment>A list of elements that link to this element.</rdfs:comment>
+    <rdfs:label>IncomingLinks</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#GraphTimeSeries">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"/>
+    <rdfs:comment>A graph time series.</rdfs:comment>
+    <rdfs:label>GraphTimeSeries</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#timeInterval">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The time interval used for this sheet.</rdfs:comment>
+    <rdfs:label>timeInterval</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#startDate">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The start date of this sheet.</rdfs:comment>
+    <rdfs:label>startDate</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Actual">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"/>
+    <rdfs:comment>The actual value.</rdfs:comment>
+    <rdfs:label>Actual</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#UniqueId">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_UniqueId"/>
+    <rdfs:comment>A text field where the value must be unique. When new elements are created, the unique id attribute is automatically assigned a unique value.</rdfs:comment>
+    <rdfs:label>UniqueId</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Lock">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Lock"/>
+    <rdfs:comment>A selection of attributes that can be locked from editing. When the lock attribute is activated for an element the attributes selected in the lock attribute cannot be edited and the element cannot be deleted.</rdfs:comment>
+    <rdfs:label>Lock</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#rangeFrom">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>The start of the time range. This is either a fixed date of the value of some date attribute.</rdfs:comment>
+    <rdfs:label>rangeFrom</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#rangeToAttribute">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>Optional. If a date attribute is used to define the end of the range, this is its name.</rdfs:comment>
+    <rdfs:label>rangeToAttribute</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Attachment">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"/>
+    <rdfs:comment>A file attachment.</rdfs:comment>
+    <rdfs:label>Attachment</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#CheckBox">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_CheckBox"/>
+    <rdfs:comment>A box that a member can select or clear to turn an option on or off.</rdfs:comment>
+    <rdfs:label>CheckBox</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#Heading">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Heading"/>
+    <rdfs:comment>An attribute consisting only of a title, used primarily for layout purposes.</rdfs:comment>
+    <rdfs:label>Heading</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint/datatypes#size">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"/>
+    <rdfs:comment>The size of the graph.</rdfs:comment>
+    <rdfs:label>size</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint/datatypes#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,668 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/dc/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-2_Capability_Taxonomy">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StV-2 Capability Taxonomy</rdfs:label>
+    <rdfs:comment>StV-2 Capability Taxonomy is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-6b_State_Transition_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-6b State Transition Description</rdfs:label>
+    <rdfs:comment>OV-6b State Transition Description is a sub-class of Statechart which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StrategicViewPkg-ContainsViews">
+    <rdfs:comment>ContainsViews included in Strategic View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Strategic_View_Pkg"/>
+    <rdfs:label>ContainsViews in Strategic View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-6_Capability_to_Operational_Activities_Mapping">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StV-6 Capability to Operational Activities Mapping</rdfs:label>
+    <rdfs:comment>StV-6 Capability to Operational Activities Mapping is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Acquisition_View_Pkg">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Acquisition View Pkg</rdfs:label>
+    <rdfs:comment>Acquisition View Pkg is a sub-class of View which is defined in http://jazz.net/ns/dm/rhapsody/updm2#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-9_Technology_and_Skills_Forecast_Map">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-9 Technology and Skills Forecast Map</rdfs:label>
+    <rdfs:comment>SV-9 Technology and Skills Forecast Map is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AV-2_Data_Dictionay_Table">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>AV-2 Data Dictionay Table</rdfs:label>
+    <rdfs:comment>AV-2 Data Dictionay Table is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-5b_Function_to_Service_Function_Traceability_Matrix">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-5b Function to Service Function Traceability Matrix</rdfs:label>
+    <rdfs:comment>SV-5b Function to Service Function Traceability Matrix is a sub-class of MatrixView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-12a_Service_Provision">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-12a Service Provision</rdfs:label>
+    <rdfs:comment>SV-12a Service Provision is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Operational_View_Pkg">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Operational View Pkg</rdfs:label>
+    <rdfs:comment>Operational View Pkg is a sub-class of View which is defined in http://jazz.net/ns/dm/rhapsody/updm2#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TV-Overview">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>TV-Overview</rdfs:label>
+    <rdfs:comment>TV-Overview is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-7ResourcePerformanceParametersMatrix-forDocumentation">
+    <rdfs:comment>forDocumentation included in SV-7 Resource Performance Parameters Matrix</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-7_Resource_Performance_Parameters_Matrix"/>
+    <rdfs:label>forDocumentation in SV-7 Resource Performance Parameters Matrix</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Technical_Standards_View_Pkg">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Technical Standards View Pkg</rdfs:label>
+    <rdfs:comment>Technical Standards View Pkg is a sub-class of View which is defined in http://jazz.net/ns/dm/rhapsody/updm2#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#ServiceOrientatedViewPkg-ContainsViews">
+    <rdfs:comment>ContainsViews included in Service Orientated View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Service_Orientated_View_Pkg"/>
+    <rdfs:label>ContainsViews in Service Orientated View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-3OperationalResourceFlowMatrix-forDocumentation">
+    <rdfs:comment>forDocumentation included in OV-3 Operational Resource Flow Matrix</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-3_Operational_Resource_Flow_Matrix"/>
+    <rdfs:label>forDocumentation in OV-3 Operational Resource Flow Matrix</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-1_Resource_Interaction_Specification_BDD">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-1 Resource Interaction Specification BDD</rdfs:label>
+    <rdfs:comment>SV-1 Resource Interaction Specification BDD is a sub-class of Block_Definition_Diagram which is defined in http://jazz.net/ns/dm/rhapsody/sysml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-6SystemsDataExchangeMatrix-forDocumentation">
+    <rdfs:comment>forDocumentation included in SV-6 Systems Data Exchange  Matrix</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-6_Systems_Data_Exchange__Matrix"/>
+    <rdfs:label>forDocumentation in SV-6 Systems Data Exchange  Matrix</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-3CapabilityPhasing-forDocumentation">
+    <rdfs:comment>forDocumentation included in StV-3 Capability Phasing</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-3_Capability_Phasing"/>
+    <rdfs:label>forDocumentation in StV-3 Capability Phasing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#ServiceOrientatedViewPkg-RootView">
+    <rdfs:comment>RootView included in Service Orientated View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Service_Orientated_View_Pkg"/>
+    <rdfs:label>RootView in Service Orientated View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#All_View_Pkg">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>All View Pkg</rdfs:label>
+    <rdfs:comment>All View Pkg is a sub-class of View which is defined in http://jazz.net/ns/dm/rhapsody/updm2#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-4c_Service_Interaction_Specification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-4c Service Interaction Specification</rdfs:label>
+    <rdfs:comment>SOV-4c Service Interaction Specification is a sub-class of SequenceDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-4_Organizational_Relationship_Chart-Actual">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-4 Organizational Relationship Chart-Actual</rdfs:label>
+    <rdfs:comment>OV-4 Organizational Relationship Chart-Actual is a sub-class of StructureDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-2_Communications_Description_BDD">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-2 Communications Description BDD</rdfs:label>
+    <rdfs:comment>SV-2 Communications Description BDD is a sub-class of Block_Definition_Diagram which is defined in http://jazz.net/ns/dm/rhapsody/sysml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-4a_Service_Constraints">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-4a Service Constraints</rdfs:label>
+    <rdfs:comment>SOV-4a Service Constraints is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-10b_Resource_State_Transition_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-10b Resource State Transition Description</rdfs:label>
+    <rdfs:comment>SV-10b Resource State Transition Description is a sub-class of Statechart which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-10c_Resource_Event_Trace_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-10c Resource Event Trace Description</rdfs:label>
+    <rdfs:comment>SV-10c Resource Event Trace Description is a sub-class of SequenceDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TechnicalStandardsViewPkg-ContainsViews">
+    <rdfs:comment>ContainsViews included in Technical Standards View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Technical_Standards_View_Pkg"/>
+    <rdfs:label>ContainsViews in Technical Standards View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StrategicViewPkg-RootView">
+    <rdfs:comment>RootView included in Strategic View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Strategic_View_Pkg"/>
+    <rdfs:label>RootView in Strategic View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TechnicalStandardsViewPkg-RootView">
+    <rdfs:comment>RootView included in Technical Standards View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Technical_Standards_View_Pkg"/>
+    <rdfs:label>RootView in Technical Standards View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-2_Service_Interface_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-2 Service Interface Description</rdfs:label>
+    <rdfs:comment>SOV-2 Service Interface Description is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-6a_Operational_Rules_Model">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-6a Operational Rules Model</rdfs:label>
+    <rdfs:comment>OV-6a Operational Rules Model is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Environment_Definition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Environment Definition</rdfs:label>
+    <rdfs:comment>Environment Definition is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AcquisitionViewPkg-ContainsViews">
+    <rdfs:comment>ContainsViews included in Acquisition View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Acquisition_View_Pkg"/>
+    <rdfs:label>ContainsViews in Acquisition View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SystemViewPkg-RootView">
+    <rdfs:comment>RootView included in System View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#System_View_Pkg"/>
+    <rdfs:label>RootView in System View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-1_Service_Taxonomy">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-1 Service Taxonomy</rdfs:label>
+    <rdfs:comment>SOV-1 Service Taxonomy is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#System_View_Pkg">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>System View Pkg</rdfs:label>
+    <rdfs:comment>System View Pkg is a sub-class of View which is defined in http://jazz.net/ns/dm/rhapsody/updm2#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OperationalViewPkg-RootView">
+    <rdfs:comment>RootView included in Operational View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Operational_View_Pkg"/>
+    <rdfs:label>RootView in Operational View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-1_Resource_Interaction_Specification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-1 Resource Interaction Specification</rdfs:label>
+    <rdfs:comment>SV-1 Resource Interaction Specification is a sub-class of Internal_Block_Diagram which is defined in http://jazz.net/ns/dm/rhapsody/sysml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OperationalViewPkg-ContainsViews">
+    <rdfs:comment>ContainsViews included in Operational View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Operational_View_Pkg"/>
+    <rdfs:label>ContainsViews in Operational View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-6_Capability_to_Operational_Activities_Mapping_Table">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StV-6 Capability to Operational Activities Mapping Table</rdfs:label>
+    <rdfs:comment>StV-6 Capability to Operational Activities Mapping Table is a sub-class of MatrixView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-5_Capability_to_Organizational_Deployment_Diagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StV-5 Capability to Organizational Deployment Diagram</rdfs:label>
+    <rdfs:comment>StV-5 Capability to Organizational Deployment Diagram is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-3_Capability_Phasing">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StV-3 Capability Phasing</rdfs:label>
+    <rdfs:comment>StV-3 Capability Phasing is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-2_Operational_Node_Relationship_Description_BDD">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-2 Operational Node Relationship Description BDD</rdfs:label>
+    <rdfs:comment>OV-2 Operational Node Relationship Description BDD is a sub-class of Block_Definition_Diagram which is defined in http://jazz.net/ns/dm/rhapsody/sysml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TV-2StandardsForecast-forDocumentation">
+    <rdfs:comment>forDocumentation included in TV-2 Standards Forecast</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TV-2_Standards_Forecast"/>
+    <rdfs:label>forDocumentation in TV-2 Standards Forecast</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-4b_Service_State_Model">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-4b Service State Model</rdfs:label>
+    <rdfs:comment>SOV-4b Service State Model is a sub-class of Statechart which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-5_Operational_Activity_Model">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-5 Operational Activity Model</rdfs:label>
+    <rdfs:comment>OV-5 Operational Activity Model is a sub-class of ActivityDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-11_Physical_Schema">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-11 Physical Schema</rdfs:label>
+    <rdfs:comment>SV-11 Physical Schema is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-2_Communications_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-2 Communications Description</rdfs:label>
+    <rdfs:comment>SV-2 Communications Description is a sub-class of Internal_Block_Diagram which is defined in http://jazz.net/ns/dm/rhapsody/sysml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-6_Systems_Data_Exchange__Matrix">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-6 Systems Data Exchange  Matrix</rdfs:label>
+    <rdfs:comment>SV-6 Systems Data Exchange  Matrix is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-5_Function_to_Operational_Activity_and_Service_Function_Mapping">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-5 Function to Operational Activity and Service Function Mapping</rdfs:label>
+    <rdfs:comment>SV-5 Function to Operational Activity and Service Function Mapping is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-6CapabilitytoOperationalActivitiesMappingTable-forDocumentation">
+    <rdfs:comment>forDocumentation included in StV-6 Capability to Operational Activities Mapping Table</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-6_Capability_to_Operational_Activities_Mapping_Table"/>
+    <rdfs:label>forDocumentation in StV-6 Capability to Operational Activities Mapping Table</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-10a_Resource_Constraints_Specification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-10a Resource Constraints Specification</rdfs:label>
+    <rdfs:comment>SV-10a Resource Constraints Specification is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Service_Orientated_View_Pkg">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Service Orientated View Pkg</rdfs:label>
+    <rdfs:comment>Service Orientated View Pkg is a sub-class of View which is defined in http://jazz.net/ns/dm/rhapsody/updm2#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-3_Capability_to_Services_Mapping">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-3 Capability to Services Mapping</rdfs:label>
+    <rdfs:comment>SOV-3 Capability to Services Mapping is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AllViewPkg-ContainsViews">
+    <rdfs:comment>ContainsViews included in All View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#All_View_Pkg"/>
+    <rdfs:label>ContainsViews in All View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AllViewPkg-RootView">
+    <rdfs:comment>RootView included in All View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#All_View_Pkg"/>
+    <rdfs:label>RootView in All View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TV-1_Standards_Profile">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>TV-1 Standards Profile</rdfs:label>
+    <rdfs:comment>TV-1 Standards Profile is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-6aOperationalRulesModel-forDocumentation">
+    <rdfs:comment>forDocumentation included in OV-6a Operational Rules Model</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-6a_Operational_Rules_Model"/>
+    <rdfs:label>forDocumentation in OV-6a Operational Rules Model</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#">
+    <j.0:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <j.0:dateCopyrighted>2015</j.0:dateCopyrighted>
+	<j.0:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/RhapsodyUPDM2MODAFVocabulary/UPDM2_MODAF-vacabulary.ttl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <j.0:title>The UPDM2_MODAF Vocabulary</j.0:title>
+    <j.0:description rdf:parseType="Literal">
+			All vocabulary URIs defined in the UPDM2_MODAF namespace.
+		</j.0:description>
+    <rdfs:label>UPDM2_MODAF</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-5a_Function_to_Operational_Activity_Traceability_Matrix">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-5a Function to Operational Activity Traceability Matrix</rdfs:label>
+    <rdfs:comment>SV-5a Function to Operational Activity Traceability Matrix is a sub-class of MatrixView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-5aFunctiontoOperationalActivityTraceabilityMatrix-forDocumentation">
+    <rdfs:comment>forDocumentation included in SV-5a Function to Operational Activity Traceability Matrix</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-5a_Function_to_Operational_Activity_Traceability_Matrix"/>
+    <rdfs:label>forDocumentation in SV-5a Function to Operational Activity Traceability Matrix</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-3_Operational_Resource_Flow_Matrix">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-3 Operational Resource Flow Matrix</rdfs:label>
+    <rdfs:comment>OV-3 Operational Resource Flow Matrix is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-1a_High_Level_Operational_Concept_Graphic">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-1a High Level Operational Concept Graphic</rdfs:label>
+    <rdfs:comment>OV-1a High Level Operational Concept Graphic is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AcquisitionViewPkg-RootView">
+    <rdfs:comment>RootView included in Acquisition View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Acquisition_View_Pkg"/>
+    <rdfs:label>RootView in Acquisition View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SystemViewPkg-ContainsViews">
+    <rdfs:comment>ContainsViews included in System View Pkg</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#System_View_Pkg"/>
+    <rdfs:label>ContainsViews in System View Pkg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-4_Functionality_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-4 Functionality Description</rdfs:label>
+    <rdfs:comment>SV-4 Functionality Description is a sub-class of ActivityDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-2_Operational_Node_Relationship_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-2 Operational Node Relationship Description</rdfs:label>
+    <rdfs:comment>OV-2 Operational Node Relationship Description is a sub-class of Internal_Block_Diagram which is defined in http://jazz.net/ns/dm/rhapsody/sysml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-1_High_Level_Operational_Concept">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-1 High Level Operational Concept</rdfs:label>
+    <rdfs:comment>OV-1 High Level Operational Concept is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Strategic_View_Pkg">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Strategic View Pkg</rdfs:label>
+    <rdfs:comment>Strategic View Pkg is a sub-class of View which is defined in http://jazz.net/ns/dm/rhapsody/updm2#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AcV-2_Programme_Timlines">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>AcV-2 Programme Timlines</rdfs:label>
+    <rdfs:comment>AcV-2 Programme Timlines is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-6c_Event_Trace_Description">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-6c Event Trace Description</rdfs:label>
+    <rdfs:comment>OV-6c Event Trace Description is a sub-class of SequenceDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-4_Organizational_Relationship_Chart-Typical">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-4 Organizational Relationship Chart-Typical</rdfs:label>
+    <rdfs:comment>OV-4 Organizational Relationship Chart-Typical is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-3_Resource_Interaction_Matrix">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-3 Resource Interaction Matrix</rdfs:label>
+    <rdfs:comment>SV-3 Resource Interaction Matrix is a sub-class of MatrixView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#OV-7_Information_Model">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>OV-7 Information Model</rdfs:label>
+    <rdfs:comment>OV-7 Information Model is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-9_Technology_and_Skills_Forecast">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-9 Technology and Skills Forecast</rdfs:label>
+    <rdfs:comment>SV-9 Technology and Skills Forecast is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-4_Capability_Dependencies">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StV-4 Capability Dependencies</rdfs:label>
+    <rdfs:comment>StV-4 Capability Dependencies is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-9TechnologyandSkillsForecast-forDocumentation">
+    <rdfs:comment>forDocumentation included in SV-9 Technology and Skills Forecast</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-9_Technology_and_Skills_Forecast"/>
+    <rdfs:label>forDocumentation in SV-9 Technology and Skills Forecast</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-10aResourceConstraintsSpecification-forDocumentation">
+    <rdfs:comment>forDocumentation included in SV-10a Resource Constraints Specification</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-10a_Resource_Constraints_Specification"/>
+    <rdfs:label>forDocumentation in SV-10a Resource Constraints Specification</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-8_Capability_Configuration_Management">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-8 Capability Configuration Management</rdfs:label>
+    <rdfs:comment>SV-8 Capability Configuration Management is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-3ResourceInteractionMatrix-forDocumentation">
+    <rdfs:comment>forDocumentation included in SV-3 Resource Interaction Matrix</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-3_Resource_Interaction_Matrix"/>
+    <rdfs:label>forDocumentation in SV-3 Resource Interaction Matrix</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-7_Resource_Performance_Parameters_Matrix">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-7 Resource Performance Parameters Matrix</rdfs:label>
+    <rdfs:comment>SV-7 Resource Performance Parameters Matrix is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TV-1StandardsProfile-forDocumentation">
+    <rdfs:comment>forDocumentation included in TV-1 Standards Profile</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TV-1_Standards_Profile"/>
+    <rdfs:label>forDocumentation in TV-1 Standards Profile</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-5_Service_Functionality">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-5 Service Functionality</rdfs:label>
+    <rdfs:comment>SOV-5 Service Functionality is a sub-class of ActivityDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#StV-1_Enterprise_Vision">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StV-1 Enterprise Vision</rdfs:label>
+    <rdfs:comment>StV-1 Enterprise Vision is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AV-1_Overview_and_Summary_Information_Structured_View">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>AV-1 Overview and Summary Information Structured View</rdfs:label>
+    <rdfs:comment>AV-1 Overview and Summary Information Structured View is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SOV-3_Capability_to_Services_Mapping_Table">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SOV-3 Capability to Services Mapping Table</rdfs:label>
+    <rdfs:comment>SOV-3 Capability to Services Mapping Table is a sub-class of MatrixView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#SV-12b_Service_Composition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SV-12b Service Composition</rdfs:label>
+    <rdfs:comment>SV-12b Service Composition is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#TV-2_Standards_Forecast">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>TV-2 Standards Forecast</rdfs:label>
+    <rdfs:comment>TV-2 Standards Forecast is a sub-class of TableView which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#Measures">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Measures</rdfs:label>
+    <rdfs:comment>Measures is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#AcV-1_Acquisition_Clusters">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>AcV-1 Acquisition Clusters</rdfs:label>
+    <rdfs:comment>AcV-1 Acquisition Clusters is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

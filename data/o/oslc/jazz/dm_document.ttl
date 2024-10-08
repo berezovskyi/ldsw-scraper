@@ -1,0 +1,18 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://jazz.net/ns/dm/document#Document>
+      a       rdfs:Class ;
+      rdfs:comment "A class representing a rich text document." ;
+      rdfs:isDefinedBy <http://jazz.net/ns/dm/document#> ;
+      rdfs:label "Document" .
+
+<http://jazz.net/ns/dm/document#>
+      a       owl:Ontology ;
+      dcterms:dateCopyrighted
+              "2012" ;
+      dcterms:description "This is the DM rich text document vocabulary" ;
+      dcterms:license <https://jazz.net/ns/license.html> ;
+      dcterms:title "The DM Rich Text Document Vocabulary" .

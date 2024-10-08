@@ -1,0 +1,260 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:process="http://jazz.net/ns/process#"
+    xmlns:acp="http://jazz.net/ns/acp#"
+    xmlns:acc="http://open-services.net/ns/core/acc#"
+    xmlns:shapes="http://jazz.net/ns/process/shapes/"
+    xmlns:oslc="http://open-services.net/ns/core#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#readAccessList">
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#readAccessList"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <dcterms:description rdf:parseType="Literal">The link to the read access list of the project area.</dcterms:description>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:name>readAccessList</oslc:name>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#ReadAccessList"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#summary">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>summary</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The summary of the project area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#summary"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#isAccessPublic">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>isAccessPublic</oslc:name>
+    <dcterms:description rdf:parseType="Literal">This boolean property is true when the project area is public.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#isAccessPublic"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea">
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#title"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#ResourceShape"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#summary"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#archived"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#projectAdmins"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#members"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#teamAreas"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#isAccessPublic"/>
+    <dcterms:title rdf:parseType="Literal">Jazz Foundation Project Area.</dcterms:title>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#isAccessVisibleToMembers"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#instanceShape"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#admins"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#accessControl"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#timelines"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#isInitialized"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#roles"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#modified"/>
+    <oslc:describes rdf:resource="http://jazz.net/ns/process#ProjectArea"/>
+    <dcterms:description rdf:parseType="Literal">This shape describes project area resources hosted by the Jazz Foundation Process component.</dcterms:description>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#readAccessList"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#links"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#history"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#isAccessVisibleToAccessList"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#accessContext"/>
+    <oslc:property rdf:resource="http://jazz.net/ns/process/shapes/ProjectArea#description"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#isAccessVisibleToAccessList">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>isAccessVisible to AccessList</oslc:name>
+    <dcterms:description rdf:parseType="Literal">This boolean property is true when the project area is visible to members of the read access list.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#isAccessVisibleToAccessList"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#roles">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Roles"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#roles"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of roles of the project area.</dcterms:description>
+    <oslc:name>roles</oslc:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#projectAdmins">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#ProjectAdmins"/>
+    <oslc:name>projectAdmins</oslc:name>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#projectAdmins"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <dcterms:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The link to the collection of project administrators of the project area.&#xD;
+This property is deprecated.&#xD;
+Use &lt;a href="http://jazz.net/ns/process#admins"&gt;&lt;code&gt;process:admins&lt;/code&gt;&lt;/a&gt; instead.&#xD;
+</dcterms:description>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#description">
+    <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>description</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The description of the project area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#links">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Links"/>
+    <oslc:name>links</oslc:name>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#links"/>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of links of the project area.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#accessControl">
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>accessControl</oslc:name>
+    <dcterms:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">The link to the access control record of this project area resource.&#xD;
+This property is deprecated.&#xD;
+Use &lt;a href="http://open-services.net/ns/core/acc#accessContent"&gt;&lt;code&gt;acc:accessContext&lt;/code&gt;&lt;/a&gt; instead.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/acp#accessControl"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#members">
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:name>members</oslc:name>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#members"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of members of the project area.</dcterms:description>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Members"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#title">
+    <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>title</oslc:name>
+    <dcterms:description rdf:parseType="Literal">The title of the project area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#modified">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>modified</oslc:name>
+    <dcterms:description rdf:parseType="Literal">This property is modification date of the project area definition.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/modified"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#history">
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <dcterms:description rdf:parseType="Literal">The link to the history of the project area.</dcterms:description>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#History"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#history"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:name>history</oslc:name>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#timelines">
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Timelines"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#timelines"/>
+    <oslc:name>timelines</oslc:name>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of timelines of the project area.</dcterms:description>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#admins">
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <dcterms:description rdf:parseType="Literal">The link to the collection of administrators of the project area.</dcterms:description>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>admins</oslc:name>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#admins"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#Admins"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#archived">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>archived</oslc:name>
+    <dcterms:description rdf:parseType="Literal">This boolean property is true when the project area is archived.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#archive"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#instanceShape">
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:name>instanceShape</oslc:name>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:range rdf:resource="http://open-services.net/ns/core#ResourceShape"/>
+    <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#instanceShape"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <dcterms:description rdf:parseType="Literal">The link to the shape of this project area resource.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#accessContext">
+    <oslc:name>accessContext</oslc:name>
+    <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core/acc#accessContext"/>
+    <dcterms:description rdf:parseType="Literal">The link to the access context of this project area resource.</dcterms:description>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:range rdf:resource="http://open-services.net/ns/core/acc#AccessContext"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#isInitialized">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:defaultValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:defaultValue>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+    <oslc:name>isInitialized</oslc:name>
+    <dcterms:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">This optional boolean property is true when the project area is initialized.&#xD;
+If this property is absent then the project area is initialized.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#isAccessProject"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#teamAreas">
+    <dcterms:description rdf:parseType="Literal">The link to the collection of team areas of the project area.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#teamAreas"/>
+    <oslc:hidden rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:hidden>
+    <oslc:range rdf:resource="http://jazz.net/ns/process#TeamAreas"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+    <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+    <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oslc:readOnly>
+    <oslc:name>teamAreas</oslc:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/process/shapes/ProjectArea#isAccessVisibleToMembers">
+    <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+    <oslc:name>isAccessVisibleToMembers</oslc:name>
+    <dcterms:description rdf:parseType="Literal">This boolean property is true when the project area is visible to its members.</dcterms:description>
+    <oslc:propertyDefinition rdf:resource="http://jazz.net/ns/process#isAccessVisibleToMembers"/>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#Property"/>
+  </rdf:Description>
+</rdf:RDF>

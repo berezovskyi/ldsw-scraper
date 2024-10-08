@@ -1,0 +1,148 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:jazz_rm="http://jazz.net/ns/rm#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Glossary">
+    <rdfs:label xml:lang="en-US">Glossary</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A glossary of terms.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#UserInterfacePart">
+    <rdfs:label xml:lang="en-US">User Interface Part</rdfs:label>
+    <vs:term_status>archaic</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a user interface part.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Composite">
+    <rdfs:label xml:lang="en-US">Composite</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A composition of elements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Storyboard">
+    <rdfs:label xml:lang="en-US">Story Board</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a user interface story board.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#WrapperResource">
+    <rdfs:label xml:lang="en-US">File</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A resource representing a file.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#BusinessProcessDiagram">
+    <rdfs:label xml:lang="en-US">Business Process Diagram</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a business process diagram.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Module">
+    <rdfs:label xml:lang="en-US">Module</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A hierarchy of requirements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Sketch">
+    <rdfs:label xml:lang="en-US">Sketch</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a user interface sketch.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#UseCaseDiagram">
+    <rdfs:label xml:lang="en-US">Use Case Diagram</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a use case diagram.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#ScreenFlow">
+    <rdfs:label xml:lang="en-US">Screen Flow</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a user interface screen flow.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Attachment">
+    <rdfs:label xml:lang="en-US">Attachment</rdfs:label>
+    <vs:term_status>archaic</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents an attachment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Part">
+    <rdfs:label xml:lang="en-US">Part</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a user interface part.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#primaryText">
+    <rdfs:label xml:lang="en-US">Primary Text</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Primary content of a textual requirement.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Term">
+    <rdfs:label xml:lang="en-US">Term</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A term from a glossary.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Diagram">
+    <rdfs:label xml:lang="en-US">Diagram</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A diagram.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Text">
+    <rdfs:label xml:lang="en-US">Text</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a requirement with textual content.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#UserInterfaceSketch">
+    <rdfs:label xml:lang="en-US">User Interface Sketch</rdfs:label>
+    <vs:term_status>archaic</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a user interface sketch.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#SimpleFlowDiagram">
+    <rdfs:label xml:lang="en-US">Simple Flow Diagram</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a simple flow diagram.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#StoryBoard">
+    <rdfs:label xml:lang="en-US">Story Board</rdfs:label>
+    <vs:term_status>archaic</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>Represents a user interface story board.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Document">
+    <rdfs:label xml:lang="en-US">Document</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A document.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#">
+    <dcterms:dateCopyrighted>2012, 2015</dcterms:dateCopyrighted>
+    <dcterms:license rdf:resource="http://jazz.net/ns/license.html"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/bin/view/Main/RmResourceVocabulary/rm-vocabulary.ttl"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/"/>
+    <rdfs:label xml:lang="en-US">IBM Requirements Management</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:title>The IBM Requirements Management Vocabulary</dcterms:title>
+    <dcterms:description rdf:parseType="Literal">Vocabulary terms from the IBM Requirements Management namespace.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/rm#Collection">
+    <rdfs:label xml:lang="en-US">Collection</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/rm#"/>
+    <rdfs:comment>A collection of requirements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

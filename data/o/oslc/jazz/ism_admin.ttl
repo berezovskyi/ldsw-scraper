@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix admin: <http://jazz.net/ns/ism/admin#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix health: <http://jazz.net/ns/ism/admin/health#> .
+@prefix auto: <http://open-services.net/ns/auto#> .
+@prefix crtv: <http://open-services.net/ns/crtv#> .
+
+# the vocabulary
+ 
+admin:
+	a owl:Ontology ;
+	dcterms:title "Administration Services Vocabulary" ;
+	dcterms:description "The Administration Services vocabulary defines admin:AdministrableResource, admin:AdministrativeJob and related concepts." ;
+	rdfs:label "Administration Services" ;
+	dcterms:license <https://jazz.net/ns/license.html> ;
+	dcterms:dateCopyrighted "2012" .
+	
+# classes	
+
+admin:AdministrativeJob
+	a rdfs:Class ;
+	rdfs:isDefinedBy admin: ;
+	rdfs:label "AdministrativeJob" ;
+	rdfs:comment "It describes common administration tasks that are performed on a collection of target resources, by Administration Services.  The common administration tasks, such as - availability, configuration-change, problem-determination, preventive-maintenance, corrective-maintenance, lifecycle-task, etc.  It contains a collection of automation used in the context of performing an administration task. For example, a configuration-change task will use the automation to perform predefined action such as pre-requisite-check, get-config-state, perform-config-change, config-health-check, backup-config-state, restore-config-state, etc.  It also contains a collection of all the dependent administration tasks.".
+
+admin:AdministrableResource
+	a rdfs:Class ;
+	rdfs:isDefinedBy admin: ;
+	rdfs:label "AdministrableResource" ;
+	rdfs:comment "It describes a resource that is administered.  The resource can be an instance of an application, service, database, middleware, operating system, etc.  It represents the target for the admin:AdministrativeJob.".
+
+# Properties
+
+admin:platform 
+	a rdf:Property ;
+	rdfs:isDefinedBy admin: ;
+	rdfs:label "platform" ;
+	rdfs:comment "The URI to the applicable crtv:OperatingSystem for the target resources; for example, admin:AdministrableResource, admin:AdministrativeJob.";
+	rdfs:seeAlso <http://open-services.net/wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/>.
+
+admin:automatedBy
+	a rdf:Property ;
+	rdfs:isDefinedBy admin: ;
+	rdfs:label "automatedBy" ;
+	rdfs:comment "The URI to the auto:AutomationPlan for the admin:AdministrativeJob.";
+	rdfs:seeAlso <http://open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/> .
+	
+admin:userGuide
+	a rdf:Property ;
+	rdfs:isDefinedBy admin: ;
+	rdfs:label "userGuide" ;
+	rdfs:comment "The URI to the user-guide documentation for the resource; for example, an admin:AdministrativeJob.".
+
+admin:targetResource
+	a rdf:Property ;
+	rdfs:isDefinedBy admin: ;
+	rdfs:label "targetResource" ;
+	rdfs:comment "The URI to the target admin:AdministrableResources for the admin:AdministrativeJob.".
+
+admin:healthStatus
+	a rdf:Property ;
+	rdfs:isDefinedBy admin: ;
+	rdfs:label "healthStatus" ;
+	rdfs:comment "The URI to the health:HealthStatus resource for the admin:AdministrableResource and admin:AdministrativeJob.";
+	rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesHealthStatusVocabulary> .

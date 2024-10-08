@@ -1,0 +1,618 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:oslcem="http://jazz.net/ns/ism/event/omnibus#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:oslcemb="http://jazz.net/ns/ism/event/omnibus/tbsm#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:oslcemp="http://jazz.net/ns/ism/event/omnibus/itnm#"
+    xmlns:oslcemm="http://jazz.net/ns/ism/event/omnibus/misc#"
+    xmlns:crtv="http://open-services.net/ns/crtv#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Journal">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Journal"/>
+    <rdfs:label>Journal</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The representation of a journal entry that documents some action or update to an associated event resource that has been performed by either an automatic or operator action.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#ownerUID">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#foaf_Person"/>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
+    <rdfs:label>ownerUID</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The URI reference to the event service provider user that currently owns the resource or was created by.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#SuppressEscl">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>SuppressEscl</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The set of suppression or escalation settings for an event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#serverSerial">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>serverSerial</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The IBM Tivoli Netcool/OMNIbus originating server serial number of the event resource.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#summary">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>summary</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Human readable text summary of of the resource. For an event resource this describes the event condition and the affected managed object instance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Indeterminate">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#severity"/>
+    <rdfs:label>Indeterminate</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a severity of indeterminate. Indicated by the value 1 for oslcem:severity.</rdfs:comment>
+    <rdf:value>1</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Minor">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#severity"/>
+    <rdfs:label>Minor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a severity of minor. Indicated by the value 3 for oslcem:severity.</rdfs:comment>
+    <rdf:value>3</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Detail">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Detail"/>
+    <rdfs:label>Detail</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The representation of an entry that provides details on a raw data element from the event source for an associated event. Data elements can become a detail entry when the data element has not been mapped to the event resource due to mapping problems or is considered to be extended event data.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#userId">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>userId</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Numeric IBM Tivoli Netcool/OMNIbus user identifier.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Clear">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#severity"/>
+    <rdfs:label>Clear</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a severity of clear. Indicated by the value 0 for oslcem:severity.</rdfs:comment>
+    <rdf:value>0</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#userName">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>userName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Human-readable Netcool/OMNIbus user name identifier.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#detailValue">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>detailValue</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The detail resource attribute value.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#expireTime">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>expireTime</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The number of seconds from the time this event was last received until it is cleared automatically.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Grade">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#grade"/>
+    <rdfs:label>Grade</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The set of grades for an event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#customer">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>customer</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The name of the customer affected by this event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#taskList">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>taskList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Indicates whether a user has added the event to the Task List.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Resolution">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>Resolution</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of resolution. Indicated by the value 2 for oslcem:type.</rdfs:comment>
+    <rdf:value>2</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#class">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>class</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event class used to identify the event collector or vendor from which the event was generated.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#groupId">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>groupId</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Numeric IBM Tivoli Netcool/OMNIbus group identifier.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#acknowledged">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>acknowledged</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Indicates whether the event has been acknowledged.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#detailName">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>detailName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The name of the detail resource value stored in the detail value (oslcem:detailValue) property.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#service">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>service</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The name of the service affected by this event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Escalated-Level3">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>Escalated-Level3</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a suppression or escalation setting of escalated-level 3. Indicated by the value 3 for oslcem:suppressEscl.</rdfs:comment>
+    <rdf:value>3</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#internalLast">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>internalLast</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The time when this resource was last updated by the event service provider.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Hidden">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>Hidden</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a suppression or escalation setting of hidden. Indicated by the value 5 for oslcem:suppressEscl.</rdfs:comment>
+    <rdf:value>5</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Information">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>Information</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of information. Indicated by the value 13 for oslcem:type.</rdfs:comment>
+    <rdf:value>13</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#flash">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>flash</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The Tivoli Netcool/OMNIbus flashing indicator for the resource used by the user interface.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#ownerGID">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#foaf_Group"/>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/#term_Group"/>
+    <rdfs:label>ownerGID</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The URI reference to the event service provider group that currently owns the resource.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Suppressed">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>Suppressed</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a suppression or escalation setting of suppressed. Indicated by the value 4 for oslcem:suppressEscl.</rdfs:comment>
+    <rdf:value>4</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#name">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>name</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The name of the detail resource value stored in the detail value (oslcem:detail) property.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#hasSeverity">
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Minor"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus#Severity"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Warning"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Severity"/>
+    <rdfs:label>hasSeverity</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Critical"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Clear"/>
+    <rdfs:comment>The event has this oslcem:Severity resource. This is the object property associated with oslcem:severity.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#severity"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Indeterminate"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Major"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#hasType">
+    <rdfs:comment>The event has this oslcem:Type resource. This is the object property associated with oslcem:type.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#type"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Information"/>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#VisionaryProblem"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#MoreSevere"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#TypeNotSet"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#LessSevere"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#VisionaryResolution"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Resolution"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+    <rdfs:label>hasType</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Problem"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#ISMNewAlarm"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#ISMOldAlarm"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#alertKey">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>alertKey</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The descriptive key that indicates the managed object instance referenced by the event. For example, the disk partition indicated by a file system full alert or the switch port indicated by a utilization alert.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#">
+    <dcterms:title>IBM Tivoli Netcool/OMNIbus Event Management Core Vocabulary</dcterms:title>
+    <dcterms:source rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary"/>
+    <dcterms:license rdf:resource="http://jazz.net/ns/license.html"/>
+    <dcterms:description>The IBM Tivoli Netcool/OMNIbus Event Management Core Vocabulary defines events, journals, details and event collection identifier pattern resources and related concepts. To Support the concept of event and journal ownership there are also a set of "read-only" utility resources, user and group that are provided.</dcterms:description>
+    <dcterms:dateCopyrighted>2013</dcterms:dateCopyrighted>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>Netcool/OMNIbus Event Management Core</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#sequence">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>sequence</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The sequence number of the detail resource. This is used to order detail resources related to the same event resource.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#agent">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>agent</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The descriptive name of a sub-manager that generated the event. For example, vendor or standard MIB name from which the trap event was generated from.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#journal">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Journal"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/ns/core#ResponseInfo"/>
+    <rdfs:label>journal</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus#Journal"/>
+    <rdfs:comment>The URI reference that will fetch all journal resources that have been made against this event resource in the event service provider.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#VisionaryProblem">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>VisionaryProblem</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of visionary problem. Indicated by the value 3 for oslcem:type.</rdfs:comment>
+    <rdf:value>3</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#ISMNewAlarm">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>ISMNewAlarm</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of ism new alarm. Indicated by the value 7 for oslcem:type.</rdfs:comment>
+    <rdf:value>7</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#VisionaryResolution">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>VisionaryResolution</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of visionary resolution. Indicated by the value 4 for oslcem:type.</rdfs:comment>
+    <rdf:value>4</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#TypeNotSet">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>TypeNotSet</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of type not set. Indicated by the value 0 for oslcem:type.</rdfs:comment>
+    <rdf:value>0</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Critical">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#severity"/>
+    <rdfs:label>Critical</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a severity of critical. Indicated by the value 5 for oslcem:severity.</rdfs:comment>
+    <rdf:value>5</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Problem">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>Problem</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of problem. Indicated by the value 1 for oslcem:type.</rdfs:comment>
+    <rdf:value>1</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Escalated-Level2">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>Escalated-Level2</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a suppression or escalation setting of escalated-level 2. Indicated by the value 2 for oslcem:suppressEscl.</rdfs:comment>
+    <rdf:value>2</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#grade">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Grade"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasGrade"/>
+    <rdfs:label>grade</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Indicates the state of escalation for the event. This property is an integer representation of the grade defined by oslcem:hasGrade. Default type values of the vocabulary include 0: Not Escalated, 1: Escalated.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#serial">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>serial</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The IBM Tivoli Netcool/OMNIbus serial number of the event resource.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#nodeAlias">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>nodeAlias</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The alias for the managed entity. For network devices or hosts, this should be the logical (layer-3) address of the entity. For IP devices or hosts, this must be the IP address.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#LessSevere">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>LessSevere</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of less severe. Indicated by the value 12 for oslcem:type.</rdfs:comment>
+    <rdf:value>12</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#ISMOldAlarm">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>ISMOldAlarm</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of ism old alarm. Indicated by the value 8 for oslcem:type.</rdfs:comment>
+    <rdf:value>8</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#lastOccurrence">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>lastOccurrence</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The time when this resource was last updated by the service provider. For an event resource, this represents the time at which this event was last updated by the event collector.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#tally">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>tally</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Automatically maintained count of the the number of inserts and updates of the event from the event source.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Escalated">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#grade"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>Escalated</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a grade of escalated. Indicated by the value 1 for oslcem:grade.</rdfs:comment>
+    <rdfs:comment>The event has a suppression or escalation setting of escalated. Indicated by the value 1 for oslcem:suppressEscl.</rdfs:comment>
+    <rdf:value>1</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#hasGrade">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#NotEscalated"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Grade"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#grade"/>
+    <rdfs:label>hasGrade</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus#Grade"/>
+    <rdfs:comment>The event has this oslcem:Grade resource. This is the object property associated with oslcem:grade.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#severity">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasSeverity"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Severity"/>
+    <rdfs:label>severity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Indicates the severity level of a resource. It indicates how the perceived capability of the managed object has been affected. This property is an integer representation of the severity defined by oslcem:hasSeverity. Default severity values for the vocabulary include 0: (Clear) Event is resolved. 1: (Indeterminate) Severity level cannot be determined. 2: (Warning: Potential or impending service affecting fault. 3: (Minor) Non-service affecting fault condition. 4: (Major) Service affecting condition. 5: (Critical) Service affecting condition requiring urgent action.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Severity">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#severity"/>
+    <rdfs:label>Severity</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The set of severities for an event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Warning">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#severity"/>
+    <rdfs:label>Warning</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a severity of warning. Indicated by the value 2 for oslcem:severity.</rdfs:comment>
+    <rdf:value>2</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#serverName">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>serverName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The IBM Tivoli Netcool/OMNIbus originating server name of the event resource.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#detail">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Detail"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/ns/core#ResponseInfo"/>
+    <rdfs:label>detail</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus#Detail"/>
+    <rdfs:comment>The URI reference that will fetch all detail entries that have been made against the event in the event service provider.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#probeSubSecondId">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>probeSubSecondId</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>For events that an event collector sends within the same one-second interval, and which therefore have the same oslcem:lastOccurence value, is added to this property field to differentiate the oslcem:lastOccurrence times.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#type">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasType"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Type"/>
+    <rdfs:label>type</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The type of alarm, where type refers to the problem or resolution state of the event. This property is an integer representation of the type defined by oslcem:hasType. Default type values of the vocabulary include 0: Type not set, 1: Problem, 2: Resolution.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#event">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Event"/>
+    <rdfs:label>event</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus#Event"/>
+    <rdfs:comment>The URI reference to an event resource that is associated to the current resource.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#hasSuppressEscl">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Hidden"/>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Suppressed"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Maintenance"/>
+    <rdfs:label>hasSuppressEscl</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#SuppressEscl"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated-Level3"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated-Level2"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+    <rdfs:comment>The event has this oslcem:SuppressEscl resource. This is the object property associated with oslcem:suppressEscl.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Normal"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#suppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#description">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>description</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Human-readable IBM Tivoli Netcool/OMNIbus group name description.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#NotEscalated">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#grade"/>
+    <rdfs:label>NotEscalated</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a grade of not escalated. Indicated by the value 0 for oslcem:grade.</rdfs:comment>
+    <rdf:value>0</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Grade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Normal">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>Normal</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a suppression or escalation setting of normal. Indicated by the value 0 for oslcem:suppressEscl.</rdfs:comment>
+    <rdf:value>0</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#node">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>node</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Identifies the managed entity that the resource is related to. For an event resource this identifies the managed entity from which the alarm originated in the form of a hostname.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#stateChange">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>stateChange</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>An automatically maintained time stamp of the last insert or update of the event from any source.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#suppressEscl">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasSuppressEscl"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#SuppressEscl"/>
+    <rdfs:label>suppressEscl</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Used to suppress or escalate the event. This property is an integer representation of the supression or escalation setting defined by oslcem:hasSuppressEscl. Default suppression and escalation values of the vocabulary include 0: Normal, 2: Escalated, 3: Escalated-Level 2, 3: Escalated-Level 3, 4: Suppressed, 5: Hidden, 6: Maintenance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#attrValue">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>attrValue</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Specifies whether the attribute value of the detail resource (oslcem:detailValue) is valid, or just the name (oslcem:detailName) is valid.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Maintenance">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#suppressEscl"/>
+    <rdfs:label>Maintenance</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a suppression or escalation setting of maintenance. Indicated by the value 6 for oslcem:suppressEscl.</rdfs:comment>
+    <rdf:value>6</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#SuppressEscl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Major">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#severity"/>
+    <rdfs:label>Major</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a severity of major. Indicated by the value 4 for oslcem:severity.</rdfs:comment>
+    <rdf:value>4</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Event">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Event"/>
+    <rdfs:label>Event</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>Representation of an event that has been collected from an arbitrary event source, such as a computer system, network device, application, log file, etc.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#manager">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>manager</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The descriptive name of the event collector that collected and forwarded the event to the event service provider.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#Type">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>Type</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The set of types for an event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#MoreSevere">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ism/event/omnibus#type"/>
+    <rdfs:label>MoreSevere</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The event has a type of more severe. Indicated by the value 11 for oslcem:type.</rdfs:comment>
+    <rdf:value>11</rdf:value>
+    <rdf:type rdf:resource="http://jazz.net/ns/ism/event/omnibus#Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/event/omnibus#alertGroup">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"/>
+    <rdfs:label>alertGroup</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/event/omnibus#"/>
+    <rdfs:comment>The descriptive name of the failure type indicated by the event.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

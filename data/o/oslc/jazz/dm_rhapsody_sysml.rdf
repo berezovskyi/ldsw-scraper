@@ -1,0 +1,885 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/dc/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-ConstraintBlocks">
+    <rdfs:comment>Block ConstraintBlocks is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block ConstraintBlocks in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock-ProxyPorts">
+    <rdfs:comment>InterfaceBlock ProxyPorts is a container of InterfaceBlock types owned by InterfaceBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>InterfaceBlock ProxyPorts in InterfaceBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#link-instantiates">
+    <rdfs:comment>Instantiates is one to many  relation from Link to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Instantiates in Link</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Unit-dimension">
+    <rdfs:comment>dimension is one to many  relation from Unit to Dimension</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>dimension in Unit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ChangeStructuralFeatureEvent-structuralFeature">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>structuralFeature in ChangeStructuralFeatureEvent</rdfs:label>
+	<vs:term_status>stable</vs:term_status>
+	<rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:comment>structuralFeatureis one to many  relation from ChangeStructuralFeatureEvent to Attribute</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-Allocations">
+    <rdfs:comment>ConstraintBlock Allocations is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock Allocations in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock-StandardPorts">
+    <rdfs:comment>InterfaceBlock StandardPorts is a container of InterfaceBlock types owned by InterfaceBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>InterfaceBlock StandardPorts in InterfaceBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#link-toPort">
+    <rdfs:comment>ToPort is one to many  relation from Link to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ToPort in Link</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#overwrite">
+    <rdfs:comment>Overwrite</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Overwrite</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ChangeStructuralFeatureEvent">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ChangeStructuralFeatureEvent</rdfs:label>
+    <rdfs:comment>ChangeStructuralFeatureEvent is a sub-class of Event which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#rate-rateType">
+    <rdfs:comment>rate-rateType is one to many  relation from Rate to rate-rateType_Kind</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>rate-rateType in Rate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-ConstraintProperties">
+    <rdfs:comment>ConstraintBlock ConstraintProperties is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock ConstraintProperties in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Conform">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Conform</rdfs:label>
+    <rdfs:comment>Conform is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-ValueTypes">
+    <rdfs:comment>Block ValueTypes is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block ValueTypes in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Test_Case">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Test Case</rdfs:label>
+    <rdfs:comment>Test Case is a sub-class of Operation which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Package_Diagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Package Diagram</rdfs:label>
+    <rdfs:comment>Package Diagram is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#">
+    <j.0:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <j.0:dateCopyrighted>2015</j.0:dateCopyrighted>
+	<j.0:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/RhapsodySysMLVocabulary/SysML-vacabulary.ttl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <j.0:title>The Rational Rhapsody SysML Vocabulary.</j.0:title>
+    <j.0:description rdf:parseType="Literal">
+			All vocabulary URIs defined in the Rhapsody SysML namespace.
+		</j.0:description>
+    <rdfs:label>Rhapsody SysML</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-Units">
+    <rdfs:comment>ConstraintBlock Units is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock Units in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#flowProperty-direction">
+    <rdfs:comment>flowProperty-direction is one to many  relation from FlowProperty to flowProperty-direction_Kind</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>flowProperty-direction in FlowProperty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ProxyPort">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ProxyPort</rdfs:label>
+    <rdfs:comment>ProxyPort is a sub-class of Port which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintView-Values">
+    <rdfs:comment>Values included in ConstraintView</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintView"/>
+    <rdfs:label>Values in ConstraintView</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#rate-rate">
+    <rdfs:comment>rate included in Rate</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#rate"/>
+    <rdfs:label>rate in Rate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#SysMLPort">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SysMLPort</rdfs:label>
+    <rdfs:comment>SysMLPort is a sub-class of AbstractPort which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-BindingConnectors">
+    <rdfs:comment>Block BindingConnectors is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block BindingConnectors in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-Satisfactions">
+    <rdfs:comment>ConstraintBlock Satisfactions is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock Satisfactions in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#continuous">
+    <rdfs:comment>Continuous</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Continuous</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ValueType-dimension">
+    <rdfs:comment>dimension is one to many  relation from ValueType to Dimension</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>dimension in ValueType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#directedFeature-direction">
+    <rdfs:comment>directedFeature-direction is one to many  relation from DirectedFeature to directedFeature-direction_Kind</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>directedFeature-direction in DirectedFeature</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ExpressionForMatlab">
+    <rdfs:comment>ExpressionForMatlab</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ExpressionForMatlab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-FlowProperties">
+    <rdfs:comment>Block FlowProperties is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block FlowProperties in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#viewpoint-languages">
+    <rdfs:comment>languages included in Viewpoint</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#Viewpoint"/>
+    <rdfs:label>languages in Viewpoint</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#discrete">
+    <rdfs:comment>Discrete</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Discrete</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block_Definition_Diagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Block Definition Diagram</rdfs:label>
+    <rdfs:comment>Block Definition Diagram is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#viewpoint-methods">
+    <rdfs:comment>methods included in Viewpoint</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#Viewpoint"/>
+    <rdfs:label>methods in Viewpoint</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#link-toObject">
+    <rdfs:comment>ToObject is one to many  relation from Link to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ToObject in Link</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintParameter">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ConstraintParameter</rdfs:label>
+    <rdfs:comment>ConstraintParameter is a sub-class of FlowPort which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#FullPort">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>FullPort</rdfs:label>
+    <rdfs:comment>FullPort is a sub-class of Port which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#satisfy-body">
+    <rdfs:comment>body included in Satisfaction</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#Satisfaction"/>
+    <rdfs:label>body in Satisfaction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Refinement">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Refinement</rdfs:label>
+    <rdfs:comment>Refinement is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock-FullPorts">
+    <rdfs:comment>InterfaceBlock FullPorts is a container of InterfaceBlock types owned by InterfaceBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>InterfaceBlock FullPorts in InterfaceBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-Blocks">
+    <rdfs:comment>Block Blocks is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block Blocks in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#viewpoint-purpose">
+    <rdfs:comment>purpose included in Viewpoint</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#Viewpoint"/>
+    <rdfs:label>purpose in Viewpoint</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Allocation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Allocation</rdfs:label>
+    <rdfs:comment>Allocation is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#StandardPort">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StandardPort</rdfs:label>
+    <rdfs:comment>StandardPort is a sub-class of Port which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#changeStructuralFeatureEvent-structuralFeature">
+    <rdfs:comment>structuralFeature is one to many  relation from ChangeStructuralFeatureEvent to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>structuralFeature in ChangeStructuralFeatureEvent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Value_Binding___Deprecated__">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Value Binding (Deprecated)</rdfs:label>
+    <rdfs:comment>Value Binding (Deprecated) is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#CentralBuffer">
+    <rdfs:comment>CentralBuffer</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>CentralBuffer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#decompose">
+    <rdfs:comment>Decomposition</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Decomposition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>InterfaceBlock</rdfs:label>
+    <rdfs:comment>InterfaceBlock is a sub-class of Block</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ValueType">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ValueType</rdfs:label>
+    <rdfs:comment>ValueType is a sub-class of Type which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#BindingConnector-SourceContext">
+    <rdfs:comment>SourceContext is one to many  relation from BindingConnector to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>SourceContext in BindingConnector</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Satisfaction">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Satisfaction</rdfs:label>
+    <rdfs:comment>Satisfaction is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Flow_Attribute">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Flow Attribute</rdfs:label>
+    <rdfs:comment>Flow Attribute is a sub-class of Attribute which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#controlOperator">
+    <rdfs:comment>ControlOperator</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ControlOperator</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#View">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>View</rdfs:label>
+    <rdfs:comment>View is a sub-class of Package which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Unit">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Unit</rdfs:label>
+    <rdfs:comment>Unit is a sub-class of Type which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#DataType">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DataType</rdfs:label>
+    <rdfs:comment>DataType is a sub-class of Type which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ReferenceToParametricDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ReferenceToParametricDiagram</rdfs:label>
+    <rdfs:comment>ReferenceToParametricDiagram is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#FlowSpecification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>FlowSpecification</rdfs:label>
+    <rdfs:comment>FlowSpecification is a sub-class of Interface which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-Interfaces">
+    <rdfs:comment>Block Interfaces is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block Interfaces in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-Allocations">
+    <rdfs:comment>Block Allocations is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block Allocations in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#PCE">
+    <rdfs:comment>PCE</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>PCE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-InternalBlockDiagrams">
+    <rdfs:comment>Block InternalBlockDiagrams is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block InternalBlockDiagrams in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#connector">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Connector</rdfs:label>
+    <rdfs:comment>Connector is a sub-class of Link which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#localPostcondition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>LocalPostcondition</rdfs:label>
+    <rdfs:comment>LocalPostcondition is a sub-class of Constraint which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-FullPorts">
+    <rdfs:comment>Block FullPorts is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block FullPorts in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ReferenceToInstance">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ReferenceToInstance</rdfs:label>
+    <rdfs:comment>ReferenceToInstance is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-ConstraintBlocks">
+    <rdfs:comment>ConstraintBlock ConstraintBlocks is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock ConstraintBlocks in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ParticipantProperty-end">
+    <rdfs:comment>end is one to many  relation from ParticipantProperty to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>end in ParticipantProperty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-DataTypes">
+    <rdfs:comment>ConstraintBlock DataTypes is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock DataTypes in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#viewpoint-concerns">
+    <rdfs:comment>concerns included in Viewpoint</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#Viewpoint"/>
+    <rdfs:label>concerns in Viewpoint</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#directedFeature">
+    <rdfs:comment>DirectedFeature</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DirectedFeature</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Activity_D">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Activity_D</rdfs:label>
+    <rdfs:comment>Activity_D is a sub-class of Class which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintProperty">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ConstraintProperty</rdfs:label>
+    <rdfs:comment>ConstraintProperty is a sub-class of Object which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Viewpoint">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Viewpoint</rdfs:label>
+    <rdfs:comment>Viewpoint is a sub-class of Class which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintProperty-BindingConnectors">
+    <rdfs:comment>ConstraintProperty BindingConnectors is a container of ConstraintProperty types owned by ConstraintProperty</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintProperty BindingConnectors in ConstraintProperty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#viewpoint-stakeholders">
+    <rdfs:comment>stakeholders included in Viewpoint</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#Viewpoint"/>
+    <rdfs:label>stakeholders in Viewpoint</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Dimension">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Dimension</rdfs:label>
+    <rdfs:comment>Dimension is a sub-class of Type which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#BindingConnector-Value">
+    <rdfs:comment>Value included in BindingConnector</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#BindingConnector"/>
+    <rdfs:label>Value in BindingConnector</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock-FlowPorts">
+    <rdfs:comment>InterfaceBlock FlowPorts is a container of InterfaceBlock types owned by InterfaceBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>InterfaceBlock FlowPorts in InterfaceBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#localPrecondition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>LocalPrecondition</rdfs:label>
+    <rdfs:comment>LocalPrecondition is a sub-class of Constraint which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#BindingConnector">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>BindingConnector</rdfs:label>
+    <rdfs:comment>BindingConnector is a sub-class of Flow which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ExpressionForMatlab-additionalMatlabPath">
+    <rdfs:comment>additionalMatlabPath included in ExpressionForMatlab</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#ExpressionForMatlab"/>
+    <rdfs:label>additionalMatlabPath in ExpressionForMatlab</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-connectors">
+    <rdfs:comment>Block connectors is a container of Connector types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block connectors in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ValueType-unit">
+    <rdfs:comment>unit is one to many  relation from ValueType to Unit</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>unit in ValueType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Parametric_Diagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Parametric Diagram</rdfs:label>
+    <rdfs:comment>Parametric Diagram is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#link-fromPort">
+    <rdfs:comment>FromPort is one to many  relation from Link to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>FromPort in Link</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#FlowProperty">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>FlowProperty</rdfs:label>
+    <rdfs:comment>FlowProperty is a sub-class of Flow_Attribute</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-Blocks">
+    <rdfs:comment>ConstraintBlock Blocks is a container of Block types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock Blocks in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#link-fromObject">
+    <rdfs:comment>FromObject is one to many  relation from Link to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>FromObject in Link</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#optional">
+    <rdfs:comment>Optional Transition</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Optional Transition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#rate">
+    <rdfs:comment>Rate</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Rate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Internal_Block_Diagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Internal Block Diagram</rdfs:label>
+    <rdfs:comment>Internal Block Diagram is a sub-class of StructureDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintProperty-Verifications">
+    <rdfs:comment>ConstraintProperty Verifications is a container of ConstraintProperty types owned by ConstraintProperty</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintProperty Verifications in ConstraintProperty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Verification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Verification</rdfs:label>
+    <rdfs:comment>Verification is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-StandardPorts">
+    <rdfs:comment>Block StandardPorts is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block StandardPorts in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Link">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Link</rdfs:label>
+    <rdfs:comment>Link is a sub-class of IUnit which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintProperty-Allocations">
+    <rdfs:comment>ConstraintProperty Allocations is a container of ConstraintProperty types owned by ConstraintProperty</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintProperty Allocations in ConstraintProperty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintView-Settings">
+    <rdfs:comment>Settings included in ConstraintView</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintView"/>
+    <rdfs:label>Settings in ConstraintView</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-ParametricDiagrams">
+    <rdfs:comment>ConstraintBlock ParametricDiagrams is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock ParametricDiagrams in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock-connectors">
+    <rdfs:comment>InterfaceBlock connectors is a container of InterfaceBlock types owned by InterfaceBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>InterfaceBlock connectors in InterfaceBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-ProxyPorts">
+    <rdfs:comment>Block ProxyPorts is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block ProxyPorts in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintView">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ConstraintView</rdfs:label>
+    <rdfs:comment>ConstraintView is a sub-class of Package which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock-FlowProperties">
+    <rdfs:comment>InterfaceBlock FlowProperties is a container of InterfaceBlock types owned by InterfaceBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>InterfaceBlock FlowProperties in InterfaceBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#DataStore">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DataStore</rdfs:label>
+    <rdfs:comment>DataStore is a sub-class of CentralBuffer</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#BindingConnector-TargetContext">
+    <rdfs:comment>TargetContext is one to many  relation from BindingConnector to null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>TargetContext in BindingConnector</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ConstraintBlock</rdfs:label>
+    <rdfs:comment>ConstraintBlock is a sub-class of Class which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-Units">
+    <rdfs:comment>Block Units is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block Units in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintView-PlotSettings">
+    <rdfs:comment>PlotSettings included in ConstraintView</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintView"/>
+    <rdfs:label>PlotSettings in ConstraintView</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-DataTypes">
+    <rdfs:comment>Block DataTypes is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block DataTypes in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-BindingConnectors">
+    <rdfs:comment>ConstraintBlock BindingConnectors is a container of BindingConnector types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock BindingConnectors in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Block</rdfs:label>
+    <rdfs:comment>Block is a sub-class of Class which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#InterfaceBlock-BindingConnectors">
+    <rdfs:comment>InterfaceBlock BindingConnectors is a container of InterfaceBlock types owned by InterfaceBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>InterfaceBlock BindingConnectors in InterfaceBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-ParametricDiagrams">
+    <rdfs:comment>Block ParametricDiagrams is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block ParametricDiagrams in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-ConstraintProperties">
+    <rdfs:comment>Block ConstraintProperties is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block ConstraintProperties in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ParticipantProperty">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ParticipantProperty</rdfs:label>
+    <rdfs:comment>ParticipantProperty is a sub-class of Object which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-Satisfactions">
+    <rdfs:comment>Block Satisfactions is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block Satisfactions in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintProperty-Satisfactions">
+    <rdfs:comment>ConstraintProperty Satisfactions is a container of ConstraintProperty types owned by ConstraintProperty</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintProperty Satisfactions in ConstraintProperty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-FlowPorts">
+    <rdfs:comment>Block FlowPorts is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block FlowPorts in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintProperty-ConstraintParameters">
+    <rdfs:comment>ConstraintProperty ConstraintParameters is a container of ConstraintProperty types owned by ConstraintProperty</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintProperty ConstraintParameters in ConstraintProperty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Block-InterfaceBlocks">
+    <rdfs:comment>Block InterfaceBlocks is a container of Block types owned by Block</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>Block InterfaceBlocks in Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#ConstraintBlock-ValueTypes">
+    <rdfs:comment>ConstraintBlock ValueTypes is a container of ConstraintBlock types owned by ConstraintBlock</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdfs:label>ConstraintBlock ValueTypes in ConstraintBlock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/sysml#Requirements_Diagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/sysml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Requirements Diagram</rdfs:label>
+    <rdfs:comment>Requirements Diagram is a sub-class of ObjectModelDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

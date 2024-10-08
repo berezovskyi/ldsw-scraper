@@ -1,0 +1,84 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix oslc: <http://open-services.net/ns/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix validity: <http://jazz.net/ns/validity#> .
+
+<http://jazz.net/ns/validity#>
+  a owl:Ontology ;
+  dcterms:title "Defines the vocabulary for validity elements." ;
+  dcterms:description "The vocabulary terms defined in the validity namespace."^^rdf:XMLLiteral ;
+  rdfs:label "validity" ;
+  dcterms:source <https://jazz.net/wiki/pub/LinkedData/JazzLinkValidityVocabulary/LinkValidityVocabulary.ttl> ;
+  dcterms:license <https://jazz.net/ns/license.html> ;
+  dcterms:dateCopyrighted "2015" .
+
+
+# --- Classes
+
+<http://jazz.net/ns/validity#LinkValidity>
+  a rdfs:Class ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Link Validity" ;
+  rdfs:comment "Information about the validity of a link." .
+
+<http://jazz.net/ns/validity#ValidityProfile>
+  a rdfs:Class ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Validity Profile" ;
+  rdfs:comment "A profile under which link validity may be established." .
+
+<http://jazz.net/ns/validity#ValidityStatus>
+  a rdfs:Class ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Validity Status" ;
+  rdfs:comment "The validity status of a link (valid or invalid)." .
+
+
+# --- Properties
+
+<http://jazz.net/ns/validity#contentHash>
+  a rdf:Property ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Content hash value" ;
+  rdfs:comment "The hash of the contents of a resource." .
+
+<http://jazz.net/ns/validity#profile>
+  a rdf:Property ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Profile" ;
+  rdfs:comment "The profile under which the link validity has been established." .
+
+<http://jazz.net/ns/validity#validateSourceHash>
+  a rdf:Property ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "validateSourceHash" ;
+  rdfs:comment "The source hash of the link to be validated." .
+
+<http://jazz.net/ns/validity#validateTargetHash>
+  a rdf:Property ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "validateTargetHash" ;
+  rdfs:comment "The target hash of the link to be validated." .
+
+<http://jazz.net/ns/validity#status>
+  a rdf:Property ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Status" ;
+  rdfs:comment "The validity status of the link (valid or invalid)." .
+
+# --- Individuals
+
+<http://jazz.net/ns/validity#Valid>
+  a validity:ValidityStatus ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Valid" ;
+  rdfs:comment "Valid status" .
+
+<http://jazz.net/ns/validity#Invalid>
+  a validity:ValidityStatus ;
+  rdfs:isDefinedBy <http://jazz.net/ns/validity#> ;
+  rdfs:label "Invalid" ;
+  rdfs:comment "Invalid status" .
+

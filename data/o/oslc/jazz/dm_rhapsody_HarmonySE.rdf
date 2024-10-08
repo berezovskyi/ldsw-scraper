@@ -1,0 +1,76 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/dc/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#SDGenerationTarget">
+    <rdfs:comment>SDGenerationTarget</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SDGenerationTarget</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#Activity_View">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Activity View</rdfs:label>
+    <rdfs:comment>Activity View is a sub-class of UseCase which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#trace">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Trace</rdfs:label>
+    <rdfs:comment>Trace is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#DecomposedOperation">
+    <rdfs:comment>DecomposedOperation</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DecomposedOperation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#moe-weight">
+    <rdfs:comment>weight included in Moe</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#moe"/>
+    <rdfs:label>weight in Moe</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#moe">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Moe</rdfs:label>
+    <rdfs:comment>Moe is a sub-class of Attribute which is defined in http://jazz.net/ns/dm/rhapsody/uml#</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#scenarios">
+    <rdfs:comment>Scenarios</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Scenarios</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#">
+    <j.0:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <j.0:dateCopyrighted>2015</j.0:dateCopyrighted>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<j.0:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/RhapsodyHarmonySEVocabulary/HarmonySE-vacabulary.ttl"/>
+    <j.0:title>The HarmonySE Vocabulary.</j.0:title>
+    <j.0:description rdf:parseType="Literal">
+	All vocabulary URIs defined in the HarmonySE namespace.
+	</j.0:description>
+    <rdfs:label>HarmonySE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/HarmonySE#InterfacesPkg">
+    <rdfs:comment>InterfacesPkg</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/HarmonySE#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>InterfacesPkg</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

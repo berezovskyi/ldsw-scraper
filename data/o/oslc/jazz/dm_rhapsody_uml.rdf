@@ -1,0 +1,1457 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://purl.org/dc/terms/"
+    xmlns:dcterms="http://purl.org/dc/terms#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Pin">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Pin</rdfs:label>
+    <rdfs:comment>Pin is a sub-class of Connector</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#StateSendAction">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StateSendAction</rdfs:label>
+    <rdfs:comment>StateSendAction is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#annotation-specification">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#Annotation"/>
+    <rdfs:label>Specification in Annotation</rdfs:label>
+    <rdfs:comment>Specification included in Annotation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#annotation-specificationRTF">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>Specification as RTF in Annotation</rdfs:label>
+    <rdfs:comment>Specification as RTF included in Annotation</rdfs:comment>
+	<vs:term_status>archaic</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-useCases">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>UseCases in Package</rdfs:label>
+    <rdfs:comment>UseCases is a container of UseCase types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#variable-type">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Type in Variable</rdfs:label>
+    <rdfs:comment>Type is one to many  relation from Variable to Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-isCtor">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#InternalOperation"/>
+    <rdfs:label>Constructor in InternalOperation</rdfs:label>
+    <rdfs:comment>Constructor included in InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#objectNode-inState">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>InState in ObjectNode</rdfs:label>
+    <rdfs:comment>InState is one to many  relation from ObjectNode to State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#flow-conveyed">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Conveyed in Flow</rdfs:label>
+    <rdfs:comment>Conveyed is one to many  relation from Flow to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-flows">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Flows in Classifier</rdfs:label>
+    <rdfs:comment>Flows is a container of Flow types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Requirement">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Requirement</rdfs:label>
+    <rdfs:comment>Requirement is a sub-class of Annotation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#objectNode-representedElement">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>RepresentedElement in ObjectNode</rdfs:label>
+    <rdfs:comment>RepresentedElement is one to many  relation from ObjectNode to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Attribute">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Attribute</rdfs:label>
+    <rdfs:comment>Attribute is a sub-class of Variable</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#pin-type">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Type in Pin</rdfs:label>
+    <rdfs:comment>Type is one to many  relation from Pin to Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#VeryAbstractDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>VeryAbstractDiagram</rdfs:label>
+    <rdfs:comment>VeryAbstractDiagram is a sub-class of IUnit</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#MergeNode">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>MergeNode</rdfs:label>
+    <rdfs:comment>MergeNode is a sub-class of Connector</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Annotation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Annotation</rdfs:label>
+    <rdfs:comment>Annotation is a sub-class of IUnit</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-actors">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Actors in Package</rdfs:label>
+    <rdfs:comment>Actors is a container of Actor types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#link-toObject">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ToObject in Link</rdfs:label>
+    <rdfs:comment>ToObject is one to many  relation from Link to Object</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#communicationDiagram-logicalCollaboration">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>LogicalCollaboration in Communication Diagram</rdfs:label>
+    <rdfs:comment>LogicalCollaboration is a container of Collaboration types owned by Communication Diagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#state-internalTransitions">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Internal Transitions in State</rdfs:label>
+    <rdfs:comment>Internal Transitions is one to many  relation from State to Transition</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#HistoryConnector">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>HistoryConnector</rdfs:label>
+    <rdfs:comment>HistoryConnector is a sub-class of Connector</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Flow">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Flow</rdfs:label>
+    <rdfs:comment>Flow is a sub-class of ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-deploymentDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>DeploymentDiagrams in Package</rdfs:label>
+    <rdfs:comment>DeploymentDiagrams is a container of DeploymentDiagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#class-objectModelDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ObjectModelDiagrams in Class</rdfs:label>
+    <rdfs:comment>ObjectModelDiagrams is a container of ObjectModelDiagram types owned by Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Reception">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Reception</rdfs:label>
+    <rdfs:comment>Reception is a sub-class of InterfaceItem</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#InterfaceItem">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>InterfaceItem</rdfs:label>
+    <rdfs:comment>InterfaceItem is a sub-class of Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#project-packages">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Packages in Project</rdfs:label>
+    <rdfs:comment>Packages is a container of Package types owned by Project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#associationEnd-associationClass">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>AssociationClass in AssociationEnd</rdfs:label>
+    <rdfs:comment>AssociationClass is one to many  relation from AssociationEnd to Association</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#InternalOperation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>InternalOperation</rdfs:label>
+    <rdfs:comment>InternalOperation is a sub-class of InterfaceItem</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-returnTypes">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ReturnTypes in InternalOperation</rdfs:label>
+    <rdfs:comment>ReturnTypes is a container of Classifier types owned by InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-dependencies">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Dependencies in ModelElement</rdfs:label>
+    <rdfs:comment>Dependencies is a container of Dependency types owned by ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#useCase-diagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Referenced Sequence Diagrams in UseCase</rdfs:label>
+    <rdfs:comment>Referenced Sequence Diagrams is a container of VeryAbstractDiagram types owned by UseCase</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#pin-corePin">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>CorePin in Pin</rdfs:label>
+    <rdfs:comment>CorePin is one to many  relation from Pin to Pin</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-panelDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>PanelDiagrams in Package</rdfs:label>
+    <rdfs:comment>PanelDiagrams is a container of PanelDiagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#InstanceValue">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>InstanceValue</rdfs:label>
+    <rdfs:comment>InstanceValue is a sub-class of ValueSpecification</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-timingDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>TimingDiagrams in Package</rdfs:label>
+    <rdfs:comment>TimingDiagrams is a container of Timing Diagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Event">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Event</rdfs:label>
+    <rdfs:comment>Event is a sub-class of InterfaceItem</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#PanelDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>PanelDiagram</rdfs:label>
+    <rdfs:comment>PanelDiagram is a sub-class of AbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-instanceSpecifications">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>InstanceSpecifications in Package</rdfs:label>
+    <rdfs:comment>InstanceSpecifications is a container of InstanceSpecification types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Actor">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Actor</rdfs:label>
+    <rdfs:comment>Actor is a sub-class of Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-tags">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Tags in ModelElement</rdfs:label>
+    <rdfs:comment>Tags is a container of Tag types owned by ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-files">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Files in Package</rdfs:label>
+    <rdfs:comment>Files is a container of Module types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ActivityAction">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Action</rdfs:label>
+    <rdfs:comment>Action is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-objects">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Objects in Package</rdfs:label>
+    <rdfs:comment>Objects is a container of Object types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#DecisionNode">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DecisionNode</rdfs:label>
+    <rdfs:comment>DecisionNode is a sub-class of Condition</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#AcceptTimeEvent">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>AcceptTimeEvent</rdfs:label>
+    <rdfs:comment>AcceptTimeEvent is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#class-types">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Types in Class</rdfs:label>
+    <rdfs:comment>Types is a container of Type types owned by Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#statechart-states">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>States in Statechart</rdfs:label>
+    <rdfs:comment>States is a container of State types owned by Statechart</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#state-actionOnEntry">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#State"/>
+    <rdfs:label>Action On Entry in State</rdfs:label>
+    <rdfs:comment>Action On Entry included in State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Stereotype">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Stereotype</rdfs:label>
+    <rdfs:comment>Stereotype is a sub-class of Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Project">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Project</rdfs:label>
+    <rdfs:comment>Project is a sub-class of IUnit</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#statechart-views">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Views in Statechart</rdfs:label>
+    <rdfs:comment>Views is a container of StatechartDiagram types owned by Statechart</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#DefaultTransition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DefaultTransition</rdfs:label>
+    <rdfs:comment>DefaultTransition is a sub-class of Transition</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#useCase-objectModelDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ObjectModelDiagrams in UseCase</rdfs:label>
+    <rdfs:comment>ObjectModelDiagrams is a container of ObjectModelDiagram types owned by UseCase</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#dependency-dependsOn">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>DependsOn in Dependency</rdfs:label>
+    <rdfs:comment>DependsOn is one to many  relation from Dependency to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Connector">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Connector</rdfs:label>
+    <rdfs:comment>Connector is a sub-class of SCNode</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#AssociationEnd">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>AssociationEnd</rdfs:label>
+    <rdfs:comment>AssociationEnd is a sub-class of relation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#project-communicationDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>CommunicationDiagrams in Project</rdfs:label>
+    <rdfs:comment>CommunicationDiagrams is a container of Communication Diagram types owned by Project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#instanceValue-value">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Value (instance) in ValueSpecification</rdfs:label>
+    <rdfs:comment>Value (instance) is one to many  relation from ValueSpecification to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#relation-initialValue">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#relation"/>
+    <rdfs:label>Value in relation</rdfs:label>
+    <rdfs:comment>Value included in relation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#class-structureDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>StructureDiagrams in Class</rdfs:label>
+    <rdfs:comment>StructureDiagrams is a container of StructureDiagram types owned by Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-templateParameters">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>TemplateParameters in ModelElement</rdfs:label>
+    <rdfs:comment>TemplateParameters is a container of ModelElement types owned by ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Tag">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Tag</rdfs:label>
+    <rdfs:comment>Tag is a sub-class of Variable</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#flow-end2ObjectPort">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>End2ObjectPort in Flow</rdfs:label>
+    <rdfs:comment>End2ObjectPort is one to many  relation from Flow to Port</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-types">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Types in Package</rdfs:label>
+    <rdfs:comment>Types is a container of Type types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-isInline">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#InternalOperation"/>
+    <rdfs:label>Inline in InternalOperation</rdfs:label>
+    <rdfs:comment>Inline included in InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-ports">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Ports in Classifier</rdfs:label>
+    <rdfs:comment>Ports is a container of Port types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#TimingDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Timing Diagram</rdfs:label>
+    <rdfs:comment>Timing Diagram is a sub-class of SequenceDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Operation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Operation</rdfs:label>
+    <rdfs:comment>Operation is a sub-class of InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#statechart-connectors">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Connectors in Statechart</rdfs:label>
+    <rdfs:comment>Connectors is a container of Connector types owned by Statechart</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Transition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Transition</rdfs:label>
+    <rdfs:comment>Transition is a sub-class of ISILow</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#reception-event">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Event in Reception</rdfs:label>
+    <rdfs:comment>Event is one to many  relation from Reception to Event</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#statechart-rootState">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>RootState in Statechart</rdfs:label>
+    <rdfs:comment>RootState is one to many  relation from Statechart to State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#variable-myType">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>MyType in Variable</rdfs:label>
+    <rdfs:comment>MyType is a container of Classifier types owned by Variable</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#tag-baseTag">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>BaseTag in Tag</rdfs:label>
+    <rdfs:comment>BaseTag is one to many  relation from Tag to Tag</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ObjectValue">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ObjectValue</rdfs:label>
+    <rdfs:comment>ObjectValue is a sub-class of Dependency</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Enum">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Enum</rdfs:label>
+    <rdfs:comment>Enum is a sub-class of Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-constraints">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Constraints in ModelElement</rdfs:label>
+    <rdfs:comment>Constraints is a container of Constraint types owned by ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#StatechartDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StatechartDiagram</rdfs:label>
+    <rdfs:comment>StatechartDiagram is a sub-class of VeryAbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#defaultTransition-ofState">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>OfState in DefaultTransition</rdfs:label>
+    <rdfs:comment>OfState is one to many  relation from DefaultTransition to State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#sequenceDiagram-logicalCollaboration">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>LogicalCollaboration in SequenceDiagram</rdfs:label>
+    <rdfs:comment>LogicalCollaboration is a container of Collaboration types owned by SequenceDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ComponentDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ComponentDiagram</rdfs:label>
+    <rdfs:comment>ComponentDiagram is a sub-class of AbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-stereotypes">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Stereotypes in ModelElement</rdfs:label>
+    <rdfs:comment>Stereotypes is one to many  relation from ModelElement to Stereotype</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#class-statecharts">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Statecharts in Class</rdfs:label>
+    <rdfs:comment>Statecharts is a container of Statechart types owned by Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-isTrigger">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#InternalOperation"/>
+    <rdfs:label>Trigger in InternalOperation</rdfs:label>
+    <rdfs:comment>Trigger included in InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#statechart-transitions">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Transitions in Statechart</rdfs:label>
+    <rdfs:comment>Transitions is a container of Transition types owned by Statechart</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Generalization">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Generalization</rdfs:label>
+    <rdfs:comment>Generalization is a sub-class of AbstructDependency</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Package">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Package</rdfs:label>
+    <rdfs:comment>Package is a sub-class of Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Link">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Link</rdfs:label>
+    <rdfs:comment>Link is a sub-class of IUnit</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-objectModelDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ObjectModelDiagrams in Package</rdfs:label>
+    <rdfs:comment>ObjectModelDiagrams is a container of ObjectModelDiagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#InstanceSpecification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>InstanceSpecification</rdfs:label>
+    <rdfs:comment>InstanceSpecification is a sub-class of ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#SysMLPort">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SysMLPort</rdfs:label>
+    <rdfs:comment>SysMLPort is a sub-class of AbstractPort</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Collaboration">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Collaboration</rdfs:label>
+    <rdfs:comment>Collaboration is a sub-class of ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#StaticBlock">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StaticBlock</rdfs:label>
+    <rdfs:comment>StaticBlock is a sub-class of Operation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Interface">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Interface</rdfs:label>
+    <rdfs:comment>Interface is a sub-class of Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Statechart">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Statechart</rdfs:label>
+    <rdfs:comment>Statechart is a sub-class of Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-generalizations">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Generalizations in Classifier</rdfs:label>
+    <rdfs:comment>Generalizations is a container of Generalization types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#acceptEventAction-event">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Event in AcceptEventAction</rdfs:label>
+    <rdfs:comment>Event is one to many  relation from AcceptEventAction to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#project-panelDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>PanelDiagrams in Project</rdfs:label>
+    <rdfs:comment>PanelDiagrams is a container of PanelDiagram types owned by Project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#DeepHistoryConnector">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DeepHistoryConnector</rdfs:label>
+    <rdfs:comment>DeepHistoryConnector is a sub-class of HistoryConnector</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Fork">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Fork</rdfs:label>
+    <rdfs:comment>Fork is a sub-class of Connector</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ControlFlow">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ControlFlow</rdfs:label>
+    <rdfs:comment>ControlFlow is a sub-class of Transition</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#state-nestedStateChart">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>NestedStateChart in State</rdfs:label>
+    <rdfs:comment>NestedStateChart is a container of Statechart types owned by State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#CallOperation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>CallOperation</rdfs:label>
+    <rdfs:comment>CallOperation is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Constraint">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Constraint</rdfs:label>
+    <rdfs:comment>Constraint is a sub-class of Annotation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#CommunicationDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Communication Diagram</rdfs:label>
+    <rdfs:comment>Communication Diagram is a sub-class of AbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Variable">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Variable</rdfs:label>
+    <rdfs:comment>Variable is a sub-class of IUnit</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#class-links">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Links in Class</rdfs:label>
+    <rdfs:comment>Links is a container of Link types owned by Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#class-sequenceDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>SequenceDiagrams in Class</rdfs:label>
+    <rdfs:comment>SequenceDiagrams is a container of SequenceDiagram types owned by Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#requirement-requirementUserID">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#Requirement"/>
+    <rdfs:label>Requirement User ID in Requirement</rdfs:label>
+    <rdfs:comment>Requirement User ID included in Requirement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-containedStereotypes">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ContainedStereotypes in Package</rdfs:label>
+    <rdfs:comment>ContainedStereotypes is a container of Stereotype types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#callOperation-target">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Target in CallOperation</rdfs:label>
+    <rdfs:comment>Target is one to many  relation from CallOperation to relation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-collaborationDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>CollaborationDiagrams in Package</rdfs:label>
+    <rdfs:comment>CollaborationDiagrams is a container of Communication Diagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-packages">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Packages in Package</rdfs:label>
+    <rdfs:comment>Packages is a container of Package types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#state-actionOnExit">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#State"/>
+    <rdfs:label>Action On Exit in State</rdfs:label>
+    <rdfs:comment>Action On Exit included in State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#relation-otherClass">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>OtherClass in relation</rdfs:label>
+    <rdfs:comment>OtherClass is one to many  relation from relation to Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#FlowPort">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>FlowPort</rdfs:label>
+    <rdfs:comment>FlowPort is a sub-class of SysMLPort</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Class">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Class</rdfs:label>
+    <rdfs:comment>Class is a sub-class of Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#flow-end1ObjectPort">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>End1ObjectPort in Flow</rdfs:label>
+    <rdfs:comment>End1ObjectPort is one to many  relation from Flow to Port</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#owner">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>owner in ModelElement</rdfs:label>
+    <rdfs:comment>owner is one to many  relation from ModelElement to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ObjectModelDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ObjectModelDiagram</rdfs:label>
+    <rdfs:comment>ObjectModelDiagram is a sub-class of AbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#State">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>State</rdfs:label>
+    <rdfs:comment>State is a sub-class of SCNode</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#attribute-visibility">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Visibility in Attribute</rdfs:label>
+    <rdfs:comment>Visibility is one to one relation from Attribute to attribute-visibility_Kind</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-raiseExceptions">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>RaiseExceptions in InternalOperation</rdfs:label>
+    <rdfs:comment>RaiseExceptions is a container of Classifier types owned by InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Class_Diagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Class Diagram</rdfs:label>
+    <rdfs:comment>Class Diagram is a sub-class of ObjectModelDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Port">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Port</rdfs:label>
+    <rdfs:comment>Port is a sub-class of AbstractPort</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#">
+    <rdfs:seeAlso rdf:resource="http://www.omg.org/spec/UML/2.5/"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Unified_Modeling_Language"/>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/help-dev/dm/index.jsp"/>
+    <j.0:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <j.0:dateCopyrighted>2016</j.0:dateCopyrighted>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <j.0:title>The Rational Rhapsody UML Metamodel.
+		</j.0:title>
+    <j.0:description rdf:parseType="Literal">
+			All vocabulary URIs defined in the Rhapsody UML namespace.
+		</j.0:description>
+    <rdfs:label>Rhapsody UML</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#StructureDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>StructureDiagram</rdfs:label>
+    <rdfs:comment>StructureDiagram is a sub-class of ObjectModelDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#referenceActivity-referencedActivity">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ReferencedActivity in ReferenceActivity</rdfs:label>
+    <rdfs:comment>ReferencedActivity is one to many  relation from ReferenceActivity to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#generalization-general">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Super Class in Generalization</rdfs:label>
+    <rdfs:comment>Super Class is one to many  relation from Generalization to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#state-defaultTransition">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>DefaultTransition in State</rdfs:label>
+    <rdfs:comment>DefaultTransition is one to many  relation from State to DefaultTransition</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-returnType">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ReturnType in InternalOperation</rdfs:label>
+    <rdfs:comment>ReturnType is one to many  relation from InternalOperation to Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-links">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Links in Package</rdfs:label>
+    <rdfs:comment>Links is a container of Link types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-variables">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Variables in Package</rdfs:label>
+    <rdfs:comment>Variables is a container of Attribute types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-useCaseDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>UseCaseDiagrams in Package</rdfs:label>
+    <rdfs:comment>UseCaseDiagrams is a container of UseCaseDiagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Classifier">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Classifier</rdfs:label>
+    <rdfs:comment>Classifier is a sub-class of IUnit</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#interruptibleRegion">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>InterruptibleRegion</rdfs:label>
+    <rdfs:comment>InterruptibleRegion is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#componentDiagram-defaultOwner">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>DefaultOwner in ComponentDiagram</rdfs:label>
+    <rdfs:comment>DefaultOwner is one to many  relation from ComponentDiagram to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#callOperation-operation">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Operation in CallOperation</rdfs:label>
+    <rdfs:comment>Operation is one to many  relation from CallOperation to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-attributes">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Attributes in Classifier</rdfs:label>
+    <rdfs:comment>Attributes is a container of Attribute types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ModelElement">
+    <rdfs:comment>ModelElement</rdfs:comment>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ModelElement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Condition">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Condition</rdfs:label>
+    <rdfs:comment>Condition is a sub-class of Connector</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-operations">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Operations in Classifier</rdfs:label>
+    <rdfs:comment>Operations is a container of InterfaceItem types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-componentDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ComponentDiagrams in Package</rdfs:label>
+    <rdfs:comment>ComponentDiagrams is a container of ComponentDiagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Dependency">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Dependency</rdfs:label>
+    <rdfs:comment>Dependency is a sub-class of AbstructDependency</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-isDtor">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#InternalOperation"/>
+    <rdfs:label>Destructor in InternalOperation</rdfs:label>
+    <rdfs:comment>Destructor included in InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-events">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Events in Package</rdfs:label>
+    <rdfs:comment>Events is a container of Event types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Object">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Object</rdfs:label>
+    <rdfs:comment>Object is a sub-class of relation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-templateInstance">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>TemplateInstance in ModelElement</rdfs:label>
+    <rdfs:comment>TemplateInstance is a container of ModelElement types owned by ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-label">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#ModelElement"/>
+    <rdfs:label>Label in ModelElement</rdfs:label>
+    <rdfs:comment>Label included in ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#project-deploymentDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>DeploymentDiagrams in Project</rdfs:label>
+    <rdfs:comment>DeploymentDiagrams is a container of DeploymentDiagram types owned by Project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#literalSpecification-value">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#ValueSpecification"/>
+    <rdfs:label>Value (literal) in ValueSpecification</rdfs:label>
+    <rdfs:comment>Value (literal) included in ValueSpecification</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Association">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Association</rdfs:label>
+    <rdfs:comment>Association is a sub-class of Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Derivation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Derivation</rdfs:label>
+    <rdfs:comment>Derivation is a sub-class of Dependency</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#actor-actors">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Actors in Actor</rdfs:label>
+    <rdfs:comment>Actors is a container of Actor types owned by Actor</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-classes">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Classes in Package</rdfs:label>
+    <rdfs:comment>Classes is a container of Class types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-parts">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Parts in Classifier</rdfs:label>
+    <rdfs:comment>Parts is a container of Object types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#LiteralSpecification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>LiteralSpecification</rdfs:label>
+    <rdfs:comment>LiteralSpecification is a sub-class of ValueSpecification</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ValueSpecification">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ValueSpecification</rdfs:label>
+    <rdfs:comment>ValueSpecification is a sub-class of ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#link-fromObject">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>FromObject in Link</rdfs:label>
+    <rdfs:comment>FromObject is one to many  relation from Link to Object</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-redefines">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Redefines in ModelElement</rdfs:label>
+    <rdfs:comment>Redefines is one to many  relation from ModelElement to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#InitialFlow">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Initial Flow</rdfs:label>
+    <rdfs:comment>Initial Flow is a sub-class of DefaultTransition</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#DeploymentDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>DeploymentDiagram</rdfs:label>
+    <rdfs:comment>DeploymentDiagram is a sub-class of AbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#association-associationEnd1">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>AssociationEnd1 in Association</rdfs:label>
+    <rdfs:comment>AssociationEnd1 is one to many  relation from Association to AssociationEnd</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ObjectNode">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ObjectNode</rdfs:label>
+    <rdfs:comment>ObjectNode is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Realization">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Realization</rdfs:label>
+    <rdfs:comment>Realization is a sub-class of Generalization</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#relation-linkType">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Link Type in relation</rdfs:label>
+    <rdfs:comment>Link Type is one to many  relation from relation to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Type">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Type</rdfs:label>
+    <rdfs:comment>Type is a sub-class of Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-associationEnds">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>AssociationEnds in Classifier</rdfs:label>
+    <rdfs:comment>AssociationEnds is a container of relation types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#flow-end1">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>End1 in Flow</rdfs:label>
+    <rdfs:comment>End1 is one to many  relation from Flow to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-functions">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Functions in Package</rdfs:label>
+    <rdfs:comment>Functions is a container of Operation types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-sequenceDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>SequenceDiagrams in Package</rdfs:label>
+    <rdfs:comment>SequenceDiagrams is a container of SequenceDiagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ShallowHistoryConnector">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ShallowHistoryConnector</rdfs:label>
+    <rdfs:comment>ShallowHistoryConnector is a sub-class of HistoryConnector</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#association-associationEnd2">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>AssociationEnd2 in Association</rdfs:label>
+    <rdfs:comment>AssociationEnd2 is one to many  relation from Association to AssociationEnd</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#package-structureDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>StructureDiagrams in Package</rdfs:label>
+    <rdfs:comment>StructureDiagrams is a container of StructureDiagram types owned by Package</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-description">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#ModelElement"/>
+    <rdfs:label>Description in ModelElement</rdfs:label>
+    <rdfs:comment>Description included in ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#modelElement-requirements">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Requirements in ModelElement</rdfs:label>
+    <rdfs:comment>Requirements is a container of Requirement types owned by ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#project-componentDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ComponentDiagrams in Project</rdfs:label>
+    <rdfs:comment>ComponentDiagrams is a container of ComponentDiagram types owned by Project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#relation">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>relation</rdfs:label>
+    <rdfs:comment>relation is a sub-class of IUnit</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ActivityDiagramGE">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ActivityDiagramGE</rdfs:label>
+    <rdfs:comment>ActivityDiagramGE is a sub-class of StatechartDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#project-sequenceDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>SequenceDiagrams in Project</rdfs:label>
+    <rdfs:comment>SequenceDiagrams is a container of SequenceDiagram types owned by Project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-visibility">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Visibility in InternalOperation</rdfs:label>
+    <rdfs:comment>Visibility is one to one relation from InternalOperation to internalOperation-visibility_Kind</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-associations">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Associations in Classifier</rdfs:label>
+    <rdfs:comment>Associations is a container of Association types owned by Classifier</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#useCase-useCases">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>UseCases in UseCase</rdfs:label>
+    <rdfs:comment>UseCases is a container of UseCase types owned by UseCase</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#link-instantiates">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Instantiates in Link</rdfs:label>
+    <rdfs:comment>Instantiates is one to many  relation from Link to relation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#CallBehavior">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>CallBehavior</rdfs:label>
+    <rdfs:comment>CallBehavior is a sub-class of ReferenceActivity</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#classifier-mainBehavior">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>MainBehavior in Classifier</rdfs:label>
+    <rdfs:comment>MainBehavior is one to many  relation from Classifier to Statechart</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#flow-end2">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>End2 in Flow</rdfs:label>
+    <rdfs:comment>End2 is one to many  relation from Flow to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#SequenceDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>SequenceDiagram</rdfs:label>
+    <rdfs:comment>SequenceDiagram is a sub-class of AbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#class-classes">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Classes in Class</rdfs:label>
+    <rdfs:comment>Classes is a container of Class types owned by Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#relation-multiplicity">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#relation"/>
+    <rdfs:label>Multiplicity in relation</rdfs:label>
+    <rdfs:comment>Multiplicity included in relation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#object-implicitClass">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ImplicitClass in Object</rdfs:label>
+    <rdfs:comment>ImplicitClass is a container of Class types owned by Object</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#internalOperation-sequenceDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>SequenceDiagrams in InternalOperation</rdfs:label>
+    <rdfs:comment>SequenceDiagrams is a container of SequenceDiagram types owned by InternalOperation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#AcceptEventAction">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>AcceptEventAction</rdfs:label>
+    <rdfs:comment>AcceptEventAction is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ActivityFinal">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ActivityFinal</rdfs:label>
+    <rdfs:comment>ActivityFinal is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#UseCaseDiagram">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>UseCaseDiagram</rdfs:label>
+    <rdfs:comment>UseCaseDiagram is a sub-class of AbstractDiagram</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#statechart-diagram">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>Diagram in Statechart</rdfs:label>
+    <rdfs:comment>Diagram is one to many  relation from Statechart to ModelElement</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ReferenceActivity">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ReferenceActivity</rdfs:label>
+    <rdfs:comment>ReferenceActivity is a sub-class of State</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#variable-valueSpecifications">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ValueSpecifications in Variable</rdfs:label>
+    <rdfs:comment>ValueSpecifications is a container of ValueSpecification types owned by Variable</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#UseCase">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>UseCase</rdfs:label>
+    <rdfs:comment>UseCase is a sub-class of Class</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#ObjectFlow">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>ObjectFlow</rdfs:label>
+    <rdfs:comment>ObjectFlow is a sub-class of Transition</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#project-objectModelDiagrams">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdfs:label>ObjectModelDiagrams in Project</rdfs:label>
+    <rdfs:comment>ObjectModelDiagrams is a container of ObjectModelDiagram types owned by Project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/rhapsody/uml#Module">
+    <vs:term_status>stable</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/rhapsody/uml#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Module</rdfs:label>
+    <rdfs:comment>Module is a sub-class of Object</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

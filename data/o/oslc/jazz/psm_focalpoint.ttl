@@ -1,0 +1,390 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fps: <http://jazz.net/ns/psm/focalpoint#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ 
+# the vocabulary
+ 
+fps:
+	a owl:Ontology ;
+	dcterms:title "Focal Point Vocabulary" ;
+	dcterms:description "The Focal Point vocabulary defines workspaces, modules, elements, attributes, views, and related concepts." ;
+	rdfs:label "Focal Point" ;
+	rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPLinkedData> ;
+	dcterms:source <https://jazz.net/wiki/pub/Main/FocalPointVocabulary/fps-vocabulary.ttl> ;
+	dcterms:license <https://jazz.net/ns/license.html> ;
+	dcterms:dateCopyrighted "2012" .
+	
+# classes	
+
+fps:Attribute
+	a rdfs:Class ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Attribute" ;
+	rdfs:comment "A Focal Point attribute of some element. An attribute is defined by a module and has values in elements." .
+	
+fps:Element
+	a rdfs:Class ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Element" ;
+	rdfs:comment "A Focal Point element in some module. An element has a set of attributes." .
+	
+fps:Folder	
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Folder" ;
+	rdfs:comment "A Focal Point folder in some module. A folder contains elements and folders." .
+
+fps:Module
+	a rdfs:Class ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Module" ;
+	rdfs:comment "A Focal Point module in some workspace. A module contains a set of elements." .
+
+fps:Service
+	a rdfs:Class ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Service" ;
+	rdfs:comment "A Focal Point application instance. An instance contains a set of workspaces." .
+	
+fps:View
+	a rdfs:Class ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "View" ;
+	rdfs:comment "A Focal Point view on some module. A view selects a subset of elements and attributes." .
+
+fps:Workspace
+	a rdfs:Class ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Workspace" ;
+	rdfs:comment "A Focal Point workspace in some application instance. A workspace defines a set of modules and views, and contains a set of elements." .
+
+# Properties
+
+fps:attributeName 
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "attributeName" ;
+	rdfs:comment "The name of this attribute." .
+	
+fps:checkBoxesAreSelectedInTheChart 
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "checkBoxesAreSelectedInTheChart" ;
+	rdfs:comment "Indicates if check boxes are selected in the chart for this resource." .
+
+fps:childElement
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "childElement" ;
+	rdfs:comment "The subject element folder contains the object element." ;
+	rdfs:domain fps:Folder ;
+	rdfs:range fps:Element .
+
+fps:count
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "count" ;
+	rdfs:comment "The number of elements in the module." ;
+	rdfs:domain fps:Module .
+
+fps:elementTypeName
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "elementTypeName" ;
+	rdfs:comment "The Add button name of the module that contains this element." ;
+	rdfs:domain fps:Element .
+
+fps:fullList
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "fullList" ;
+	rdfs:comment  "A list of elements with attributes included." .
+
+fps:fullTree
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "fullTree" ;
+	rdfs:comment  "A tree of elements with child element hierarchy and attributes included." .
+
+fps:indexList
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "indexList" ;
+	rdfs:comment  "A list of elements with no attributes included." .
+
+fps:indexTree
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "indexTree" ;
+	rdfs:comment  "A tree of elements with child element hierarchy but no attributes included." .
+
+fps:genericLink
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "genericLink" ;
+	rdfs:comment "Links an element to its generic graph. " .
+	
+fps:htmlLink
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "htmlLink" ;
+	rdfs:comment "The HTML representation of this element." .
+		
+fps:id
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "id" ;
+	rdfs:comment "A unique identifier for this resource." .
+	
+fps:isAddable
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "isAddable" ;
+	rdfs:comment "Is this view addable?" ;
+	rdfs:domain fps:View .
+	
+fps:memberAttribute
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "memberAttribute" ;
+	rdfs:comment "An attribute that is a member of this element. " ;
+	rdfs:domain fps:Element ;
+	rdfs:range fps:Attribute .
+
+fps:memberElement
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "memberElement" ;
+	rdfs:comment "An element that is a member of this module. " ;
+	rdfs:domain fps:Module ;
+	rdfs:range fps:Element .
+
+fps:memberModule
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "memberModule" ;
+	rdfs:comment "A module that is a member of this workspace. " ;
+	rdfs:domain fps:Workspace ;
+	rdfs:range fps:Module .
+
+fps:memberView
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "memberView" ;
+	rdfs:comment "A view that is a member of this workspace. " ;
+	rdfs:domain fps:Workspace ;
+	rdfs:range fps:View .
+
+fps:memberWorkspace
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "memberWorkspace" ;
+	rdfs:comment "A workspace that is a member of this service. " ;
+	rdfs:domain fps:Service ;
+	rdfs:range fps:Workspace .
+		
+fps:modifiedBy
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "modifiedBy" ;
+	rdfs:comment "The user that last modified this resource." .
+
+fps:mspLink
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "mspLink" ;
+	rdfs:comment "The Microsoft project representation of this element." .
+		
+fps:onModule
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "onModule" ;
+	rdfs:comment "The module on which this view is defined." ;
+	rdfs:domain fps:View ;
+	rdfs:range fps:Module .
+
+fps:owner
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "owner" ;
+	rdfs:comment "The user that owns this resource." .
+	
+fps:property
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "property" ;
+	rdfs:comment "The property URI associated with an attribute." .
+	
+fps:writeable
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "writeable" ;
+	rdfs:comment "Is this attribute writeable?" .
+	
+# built-in modules
+
+@base <https://jazz.net/wiki/bin/view/Main/FPBuiltInModules> .
+
+fps:UserModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "UserModule" ;
+	rdfs:comment "A Focal Point module in some workspace. A module contains a set of elements." ;
+	rdfs:seeAlso <#fps_UserModule> .
+
+fps:memberUser
+	a rdf:Property ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "memberUser" ;
+	rdfs:comment "A person that is authorized to access this server." ;
+	rdfs:seeAlso <#fps_UserModule> .
+	
+fps:MemberModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "MemberModule" ;
+	rdfs:comment "This module contains users that can access this workspace. Users must be defined in the user module." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:CriterionModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "CriterionModule" ;
+	rdfs:comment "This module contains the criteria that you use to prioritize elements and visualize the results." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:ReleaseModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "ReleaseModule" ;
+	rdfs:comment "This module contains the releases for planning elements." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:CheckpointModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "CheckpointModule" ;
+	rdfs:comment "This module contains the checkpoints that you use to review elements." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:ResourceTypeModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "ResourceTypeModule" ;
+	rdfs:comment "This module contains the resource types that you use to plan elements." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:PlanModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "PlanModule" ;
+	rdfs:comment "This module contains your saved plans." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:ChartModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "ChartModule" ;
+	rdfs:comment "When a chart is saved in the Visualize frame, an element that contains the chart contents is saved in this module." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:ReportModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "ReportModule" ;
+	rdfs:comment "This module stores generated reports." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:BaselineModule
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Module ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "BaselineModule" ;
+	rdfs:comment "This module contains saved baselines." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .	
+
+# built-in elements
+
+fps:Member
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Member" ;
+	rdfs:comment "A user that can access this workspace. Users must be defined in the user module." ;
+	rdfs:seeAlso <#fps_Member> .
+
+fps:Criterion
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Criterion" ;
+	rdfs:comment "A criterion that you use to prioritize elements and visualize the results." ;
+	rdfs:seeAlso <#fps_Criterion> .
+
+fps:Release
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Release" ;
+	rdfs:comment "A releases for planning elements." ;
+	rdfs:seeAlso <#Release> .
+
+fps:Checkpoint
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Checkpoint" ;
+	rdfs:comment "A checkpoint that you use to review elements." ;
+	rdfs:seeAlso <#fps_Checkpoint> .
+
+fps:ResourceType
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "ResourceType" ;
+	rdfs:comment "A resource type that you use to plan elements." ;
+	rdfs:seeAlso <#fps_ResourceType> .
+
+fps:Plan
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Plan" ;
+	rdfs:comment "A saved plan." ;
+	rdfs:seeAlso <#fps_Plan> .
+
+fps:Chart
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Chart" ;
+	rdfs:comment "A chart saved in the Visualize frame." ;
+	rdfs:seeAlso <#fps_Chart> .
+
+fps:Report
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Report" ;
+	rdfs:comment "A generated report." ;
+	rdfs:seeAlso <#Built_In_Workspace_Modules> .
+
+fps:Baseline
+	a rdfs:Class ;
+	rdfs:subClassOf fps:Element ;
+	rdfs:isDefinedBy fps: ;
+	rdfs:label "Baseline" ;
+	rdfs:comment "A saved baseline." ;
+	rdfs:seeAlso <#fps_Baseline> .		

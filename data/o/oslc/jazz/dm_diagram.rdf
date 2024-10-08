@@ -1,0 +1,25 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/diagram#">
+    <dcterms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defines the vocabulary for diagram like elements.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM Diagram Vocabulary</dcterms:title>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <dcterms:dateCopyrighted>2012</dcterms:dateCopyrighted> 
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/diagram#Diagram">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diagram</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/diagram#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resources of this type are able to be rendered as an image.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/diagram#diagramElement">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diagram Element</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies a resource that is shown in the rendered image.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/diagram#"/>
+  </rdf:Description>
+</rdf:RDF>

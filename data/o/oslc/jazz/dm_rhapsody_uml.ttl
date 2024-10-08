@@ -1,0 +1,1471 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rhp_updm1:  <http://jazz.net/ns/dm/rhapsody/updml1#> .
+@prefix rhp_updm2:  <http://jazz.net/ns/dm/rhapsody/updm2#> .
+@prefix dm:      <http://jazz.net/ns/dm/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix UPDML1:  <http://jazz.net/ns/dm/rhapsody/updml1#> .
+@prefix SysML:   <http://jazz.net/ns/dm/rhapsody/sysml#> .
+@prefix rhp_uml:  <http://jazz.net/ns/dm/rhapsody/uml#> .
+@prefix dmui:    <http://jazz.net/ns/dm/ui#> .
+@prefix rhp_soaml:  <http://jazz.net/ns/dm/rhapsody/soaml#> .
+@prefix UPDM20:  <http://jazz.net/ns/dm/rhapsody/updm20#> .
+@prefix dmoslc:  <http://jazz.net/ns/dm/oslc#> .
+@prefix rhp_sysml:  <http://jazz.net/ns/dm/rhapsody/sysml#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix dmindex:  <http://jazz.net/ns/dm/index#> .
+@prefix rhp_reporting:  <http://jazz.net/ns/dm/reporting#> .
+@prefix dmcg:    <http://jazz.net/ns/dm/codegen#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix UML:     <http://jazz.net/ns/dm/rhapsody/uml#> .
+@prefix Autosar:  <http://jazz.net/ns/dm/rhapsody/autosar_40#> .
+@prefix dmeditor:  <http://jazz.net/ns/dm/editor#> .
+@prefix HarmonySE:  <http://jazz.net/ns/dm/rhapsody/HarmonySE#> .
+@prefix rm:      <http://open-services.net/ns/rm#> .
+@prefix vs:      <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+UML:Pin
+      a       rdfs:Class ;
+      rdfs:comment "Pin is a sub-class of Connector" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Pin" ;
+      vs:term_status "stable" .
+
+UML:StateSendAction
+      a       rdfs:Class ;
+      rdfs:comment "StateSendAction is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "StateSendAction" ;
+      vs:term_status "stable" .
+
+UML:annotation-specification
+      a       rdf:Property ;
+      rdfs:comment "Specification included in Annotation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Specification in Annotation" ;
+      rdfs:seeAlso UML:Annotation ;
+      vs:term_status "stable" .
+
+UML:package-useCases
+      a       rdf:Property ;
+      rdfs:comment "UseCases is a container of UseCase types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "UseCases in Package" ;
+      vs:term_status "stable" .
+
+UML:variable-type
+      a       rdf:Property ;
+      rdfs:comment "Type is one to many  relation from Variable to Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Type in Variable" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-isCtor
+      a       rdf:Property ;
+      rdfs:comment "Constructor included in InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Constructor in InternalOperation" ;
+      rdfs:seeAlso UML:InternalOperation ;
+      vs:term_status "stable" .
+
+UML:objectNode-inState
+      a       rdf:Property ;
+      rdfs:comment "InState is one to many  relation from ObjectNode to State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "InState in ObjectNode" ;
+      vs:term_status "stable" .
+
+UML:flow-conveyed
+      a       rdf:Property ;
+      rdfs:comment "Conveyed is one to many  relation from Flow to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Conveyed in Flow" ;
+      vs:term_status "stable" .
+
+UML:classifier-flows
+      a       rdf:Property ;
+      rdfs:comment "Flows is a container of Flow types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Flows in Classifier" ;
+      vs:term_status "stable" .
+
+UML:Requirement
+      a       rdfs:Class ;
+      rdfs:comment "Requirement is a sub-class of Annotation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Requirement" ;
+      vs:term_status "stable" .
+
+UML:objectNode-representedElement
+      a       rdf:Property ;
+      rdfs:comment "RepresentedElement is one to many  relation from ObjectNode to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "RepresentedElement in ObjectNode" ;
+      vs:term_status "stable" .
+
+UML:Attribute
+      a       rdfs:Class ;
+      rdfs:comment "Attribute is a sub-class of Variable" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Attribute" ;
+      vs:term_status "stable" .
+
+UML:pin-type
+      a       rdf:Property ;
+      rdfs:comment "Type is one to many  relation from Pin to Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Type in Pin" ;
+      vs:term_status "stable" .
+
+UML:VeryAbstractDiagram
+      a       rdfs:Class ;
+      rdfs:comment "VeryAbstractDiagram is a sub-class of IUnit" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "VeryAbstractDiagram" ;
+      vs:term_status "stable" .
+
+UML:MergeNode
+      a       rdfs:Class ;
+      rdfs:comment "MergeNode is a sub-class of Connector" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "MergeNode" ;
+      vs:term_status "stable" .
+
+UML:Annotation
+      a       rdfs:Class ;
+      rdfs:comment "Annotation is a sub-class of IUnit" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Annotation" ;
+      vs:term_status "stable" .
+
+UML:package-actors
+      a       rdf:Property ;
+      rdfs:comment "Actors is a container of Actor types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Actors in Package" ;
+      vs:term_status "stable" .
+
+UML:link-toObject
+      a       rdf:Property ;
+      rdfs:comment "ToObject is one to many  relation from Link to Object" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ToObject in Link" ;
+      vs:term_status "stable" .
+
+UML:communicationDiagram-logicalCollaboration
+      a       rdf:Property ;
+      rdfs:comment "LogicalCollaboration is a container of Collaboration types owned by Communication Diagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "LogicalCollaboration in Communication Diagram" ;
+      vs:term_status "stable" .
+
+UML:state-internalTransitions
+      a       rdf:Property ;
+      rdfs:comment "Internal Transitions is one to many  relation from State to Transition" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Internal Transitions in State" ;
+      vs:term_status "stable" .
+
+UML:HistoryConnector
+      a       rdfs:Class ;
+      rdfs:comment "HistoryConnector is a sub-class of Connector" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "HistoryConnector" ;
+      vs:term_status "stable" .
+
+UML:Flow
+      a       rdfs:Class ;
+      rdfs:comment "Flow is a sub-class of ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Flow" ;
+      vs:term_status "stable" .
+
+UML:package-deploymentDiagrams
+      a       rdf:Property ;
+      rdfs:comment "DeploymentDiagrams is a container of DeploymentDiagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DeploymentDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:class-objectModelDiagrams
+      a       rdf:Property ;
+      rdfs:comment "ObjectModelDiagrams is a container of ObjectModelDiagram types owned by Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectModelDiagrams in Class" ;
+      vs:term_status "stable" .
+
+UML:Reception
+      a       rdfs:Class ;
+      rdfs:comment "Reception is a sub-class of InterfaceItem" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Reception" ;
+      vs:term_status "stable" .
+
+UML:InterfaceItem
+      a       rdfs:Class ;
+      rdfs:comment "InterfaceItem is a sub-class of Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "InterfaceItem" ;
+      vs:term_status "stable" .
+
+UML:project-packages
+      a       rdf:Property ;
+      rdfs:comment "Packages is a container of Package types owned by Project" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Packages in Project" ;
+      vs:term_status "stable" .
+
+UML:associationEnd-associationClass
+      a       rdf:Property ;
+      rdfs:comment "AssociationClass is one to many  relation from AssociationEnd to Association" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "AssociationClass in AssociationEnd" ;
+      vs:term_status "stable" .
+
+UML:InternalOperation
+      a       rdfs:Class ;
+      rdfs:comment "InternalOperation is a sub-class of InterfaceItem" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "InternalOperation" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-returnTypes
+      a       rdf:Property ;
+      rdfs:comment "ReturnTypes is a container of Classifier types owned by InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ReturnTypes in InternalOperation" ;
+      vs:term_status "stable" .
+
+UML:modelElement-dependencies
+      a       rdf:Property ;
+      rdfs:comment "Dependencies is a container of Dependency types owned by ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Dependencies in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:useCase-diagrams
+      a       rdf:Property ;
+      rdfs:comment "Referenced Sequence Diagrams is a container of VeryAbstractDiagram types owned by UseCase" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Referenced Sequence Diagrams in UseCase" ;
+      vs:term_status "stable" .
+
+UML:pin-corePin
+      a       rdf:Property ;
+      rdfs:comment "CorePin is one to many  relation from Pin to Pin" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "CorePin in Pin" ;
+      vs:term_status "stable" .
+
+UML:package-panelDiagrams
+      a       rdf:Property ;
+      rdfs:comment "PanelDiagrams is a container of PanelDiagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "PanelDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:InstanceValue
+      a       rdfs:Class ;
+      rdfs:comment "InstanceValue is a sub-class of ValueSpecification" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "InstanceValue" ;
+      vs:term_status "stable" .
+
+UML:package-timingDiagrams
+      a       rdf:Property ;
+      rdfs:comment "TimingDiagrams is a container of Timing Diagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "TimingDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:Event
+      a       rdfs:Class ;
+      rdfs:comment "Event is a sub-class of InterfaceItem" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Event" ;
+      vs:term_status "stable" .
+
+UML:PanelDiagram
+      a       rdfs:Class ;
+      rdfs:comment "PanelDiagram is a sub-class of AbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "PanelDiagram" ;
+      vs:term_status "stable" .
+
+UML:package-instanceSpecifications
+      a       rdf:Property ;
+      rdfs:comment "InstanceSpecifications is a container of InstanceSpecification types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "InstanceSpecifications in Package" ;
+      vs:term_status "stable" .
+
+UML:Actor
+      a       rdfs:Class ;
+      rdfs:comment "Actor is a sub-class of Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Actor" ;
+      vs:term_status "stable" .
+
+UML:modelElement-tags
+      a       rdf:Property ;
+      rdfs:comment "Tags is a container of Tag types owned by ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Tags in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:package-files
+      a       rdf:Property ;
+      rdfs:comment "Files is a container of Module types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Files in Package" ;
+      vs:term_status "stable" .
+
+UML:ActivityAction
+      a       rdfs:Class ;
+      rdfs:comment "Action is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Action" ;
+      vs:term_status "stable" .
+
+UML:package-objects
+      a       rdf:Property ;
+      rdfs:comment "Objects is a container of Object types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Objects in Package" ;
+      vs:term_status "stable" .
+
+UML:DecisionNode
+      a       rdfs:Class ;
+      rdfs:comment "DecisionNode is a sub-class of Condition" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DecisionNode" ;
+      vs:term_status "stable" .
+
+UML:AcceptTimeEvent
+      a       rdfs:Class ;
+      rdfs:comment "AcceptTimeEvent is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "AcceptTimeEvent" ;
+      vs:term_status "stable" .
+
+UML:class-types
+      a       rdf:Property ;
+      rdfs:comment "Types is a container of Type types owned by Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Types in Class" ;
+      vs:term_status "stable" .
+
+UML:statechart-states
+      a       rdf:Property ;
+      rdfs:comment "States is a container of State types owned by Statechart" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "States in Statechart" ;
+      vs:term_status "stable" .
+
+UML:state-actionOnEntry
+      a       rdf:Property ;
+      rdfs:comment "Action On Entry included in State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Action On Entry in State" ;
+      rdfs:seeAlso UML:State ;
+      vs:term_status "stable" .
+
+UML:Stereotype
+      a       rdfs:Class ;
+      rdfs:comment "Stereotype is a sub-class of Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Stereotype" ;
+      vs:term_status "stable" .
+	  
+UML:annotation-specificationRTF
+      a       rdf:Property ;
+      rdfs:comment "Specification as RTF included in Annotation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Specification as RTF in Annotation" ;
+      vs:term_status "archaic" .
+
+UML:Project
+      a       rdfs:Class ;
+      rdfs:comment "Project is a sub-class of IUnit" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Project" ;
+      vs:term_status "stable" .
+
+UML:statechart-views
+      a       rdf:Property ;
+      rdfs:comment "Views is a container of StatechartDiagram types owned by Statechart" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Views in Statechart" ;
+      vs:term_status "stable" .
+
+UML:DefaultTransition
+      a       rdfs:Class ;
+      rdfs:comment "DefaultTransition is a sub-class of Transition" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DefaultTransition" ;
+      vs:term_status "stable" .
+
+UML:useCase-objectModelDiagrams
+      a       rdf:Property ;
+      rdfs:comment "ObjectModelDiagrams is a container of ObjectModelDiagram types owned by UseCase" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectModelDiagrams in UseCase" ;
+      vs:term_status "stable" .
+
+UML:dependency-dependsOn
+      a       rdf:Property ;
+      rdfs:comment "DependsOn is one to many  relation from Dependency to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DependsOn in Dependency" ;
+      vs:term_status "stable" .
+
+UML:Connector
+      a       rdfs:Class ;
+      rdfs:comment "Connector is a sub-class of SCNode" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Connector" ;
+      vs:term_status "stable" .
+
+UML:AssociationEnd
+      a       rdfs:Class ;
+      rdfs:comment "AssociationEnd is a sub-class of relation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "AssociationEnd" ;
+      vs:term_status "stable" .
+
+UML:project-communicationDiagrams
+      a       rdf:Property ;
+      rdfs:comment "CommunicationDiagrams is a container of Communication Diagram types owned by Project" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "CommunicationDiagrams in Project" ;
+      vs:term_status "stable" .
+
+UML:instanceValue-value
+      a       rdf:Property ;
+      rdfs:comment "Value (instance) is one to many  relation from ValueSpecification to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Value (instance) in ValueSpecification" ;
+      vs:term_status "stable" .
+
+UML:relation-initialValue
+      a       rdf:Property ;
+      rdfs:comment "Value included in relation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Value in relation" ;
+      rdfs:seeAlso UML:relation ;
+      vs:term_status "stable" .
+
+UML:class-structureDiagrams
+      a       rdf:Property ;
+      rdfs:comment "StructureDiagrams is a container of StructureDiagram types owned by Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "StructureDiagrams in Class" ;
+      vs:term_status "stable" .
+
+UML:modelElement-templateParameters
+      a       rdf:Property ;
+      rdfs:comment "TemplateParameters is a container of ModelElement types owned by ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "TemplateParameters in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:Tag
+      a       rdfs:Class ;
+      rdfs:comment "Tag is a sub-class of Variable" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Tag" ;
+      vs:term_status "stable" .
+
+UML:flow-end2ObjectPort
+      a       rdf:Property ;
+      rdfs:comment "End2ObjectPort is one to many  relation from Flow to Port" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "End2ObjectPort in Flow" ;
+      vs:term_status "stable" .
+
+UML:package-types
+      a       rdf:Property ;
+      rdfs:comment "Types is a container of Type types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Types in Package" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-isInline
+      a       rdf:Property ;
+      rdfs:comment "Inline included in InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Inline in InternalOperation" ;
+      rdfs:seeAlso UML:InternalOperation ;
+      vs:term_status "stable" .
+
+UML:classifier-ports
+      a       rdf:Property ;
+      rdfs:comment "Ports is a container of Port types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Ports in Classifier" ;
+      vs:term_status "stable" .
+
+UML:TimingDiagram
+      a       rdfs:Class ;
+      rdfs:comment "Timing Diagram is a sub-class of SequenceDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Timing Diagram" ;
+      vs:term_status "stable" .
+
+UML:Operation
+      a       rdfs:Class ;
+      rdfs:comment "Operation is a sub-class of InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Operation" ;
+      vs:term_status "stable" .
+
+UML:statechart-connectors
+      a       rdf:Property ;
+      rdfs:comment "Connectors is a container of Connector types owned by Statechart" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Connectors in Statechart" ;
+      vs:term_status "stable" .
+
+UML:Transition
+      a       rdfs:Class ;
+      rdfs:comment "Transition is a sub-class of ISILow" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Transition" ;
+      vs:term_status "stable" .
+
+UML:reception-event
+      a       rdf:Property ;
+      rdfs:comment "Event is one to many  relation from Reception to Event" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Event in Reception" ;
+      vs:term_status "stable" .
+
+UML:statechart-rootState
+      a       rdf:Property ;
+      rdfs:comment "RootState is one to many  relation from Statechart to State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "RootState in Statechart" ;
+      vs:term_status "stable" .
+
+UML:variable-myType
+      a       rdf:Property ;
+      rdfs:comment "MyType is a container of Classifier types owned by Variable" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "MyType in Variable" ;
+      vs:term_status "stable" .
+
+UML:tag-baseTag
+      a       rdf:Property ;
+      rdfs:comment "BaseTag is one to many  relation from Tag to Tag" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "BaseTag in Tag" ;
+      vs:term_status "stable" .
+
+UML:ObjectValue
+      a       rdfs:Class ;
+      rdfs:comment "ObjectValue is a sub-class of Dependency" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectValue" ;
+      vs:term_status "stable" .
+
+UML:Enum
+      a       rdfs:Class ;
+      rdfs:comment "Enum is a sub-class of Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Enum" ;
+      vs:term_status "stable" .
+
+UML:modelElement-constraints
+      a       rdf:Property ;
+      rdfs:comment "Constraints is a container of Constraint types owned by ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Constraints in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:StatechartDiagram
+      a       rdfs:Class ;
+      rdfs:comment "StatechartDiagram is a sub-class of VeryAbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "StatechartDiagram" ;
+      vs:term_status "stable" .
+
+UML:defaultTransition-ofState
+      a       rdf:Property ;
+      rdfs:comment "OfState is one to many  relation from DefaultTransition to State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "OfState in DefaultTransition" ;
+      vs:term_status "stable" .
+
+UML:sequenceDiagram-logicalCollaboration
+      a       rdf:Property ;
+      rdfs:comment "LogicalCollaboration is a container of Collaboration types owned by SequenceDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "LogicalCollaboration in SequenceDiagram" ;
+      vs:term_status "stable" .
+
+UML:ComponentDiagram
+      a       rdfs:Class ;
+      rdfs:comment "ComponentDiagram is a sub-class of AbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ComponentDiagram" ;
+      vs:term_status "stable" .
+
+UML:modelElement-stereotypes
+      a       rdf:Property ;
+      rdfs:comment "Stereotypes is one to many  relation from ModelElement to Stereotype" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Stereotypes in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:class-statecharts
+      a       rdf:Property ;
+      rdfs:comment "Statecharts is a container of Statechart types owned by Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Statecharts in Class" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-isTrigger
+      a       rdf:Property ;
+      rdfs:comment "Trigger included in InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Trigger in InternalOperation" ;
+      rdfs:seeAlso UML:InternalOperation ;
+      vs:term_status "stable" .
+
+UML:statechart-transitions
+      a       rdf:Property ;
+      rdfs:comment "Transitions is a container of Transition types owned by Statechart" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Transitions in Statechart" ;
+      vs:term_status "stable" .
+
+UML:Generalization
+      a       rdfs:Class ;
+      rdfs:comment "Generalization is a sub-class of AbstructDependency" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Generalization" ;
+      vs:term_status "stable" .
+
+UML:Package
+      a       rdfs:Class ;
+      rdfs:comment "Package is a sub-class of Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Package" ;
+      vs:term_status "stable" .
+
+UML:Link
+      a       rdfs:Class ;
+      rdfs:comment "Link is a sub-class of IUnit" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Link" ;
+      vs:term_status "stable" .
+
+UML:package-objectModelDiagrams
+      a       rdf:Property ;
+      rdfs:comment "ObjectModelDiagrams is a container of ObjectModelDiagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectModelDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:InstanceSpecification
+      a       rdfs:Class ;
+      rdfs:comment "InstanceSpecification is a sub-class of ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "InstanceSpecification" ;
+      vs:term_status "stable" .
+
+UML:SysMLPort
+      a       rdfs:Class ;
+      rdfs:comment "SysMLPort is a sub-class of AbstractPort" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "SysMLPort" ;
+      vs:term_status "stable" .
+
+UML:Collaboration
+      a       rdfs:Class ;
+      rdfs:comment "Collaboration is a sub-class of ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Collaboration" ;
+      vs:term_status "stable" .
+
+UML:StaticBlock
+      a       rdfs:Class ;
+      rdfs:comment "StaticBlock is a sub-class of Operation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "StaticBlock" ;
+      vs:term_status "stable" .
+
+UML:Interface
+      a       rdfs:Class ;
+      rdfs:comment "Interface is a sub-class of Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Interface" ;
+      vs:term_status "stable" .
+
+UML:Statechart
+      a       rdfs:Class ;
+      rdfs:comment "Statechart is a sub-class of Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Statechart" ;
+      vs:term_status "stable" .
+
+UML:classifier-generalizations
+      a       rdf:Property ;
+      rdfs:comment "Generalizations is a container of Generalization types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Generalizations in Classifier" ;
+      vs:term_status "stable" .
+
+UML:acceptEventAction-event
+      a       rdf:Property ;
+      rdfs:comment "Event is one to many  relation from AcceptEventAction to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Event in AcceptEventAction" ;
+      vs:term_status "stable" .
+
+UML:project-panelDiagrams
+      a       rdf:Property ;
+      rdfs:comment "PanelDiagrams is a container of PanelDiagram types owned by Project" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "PanelDiagrams in Project" ;
+      vs:term_status "stable" .
+
+UML:DeepHistoryConnector
+      a       rdfs:Class ;
+      rdfs:comment "DeepHistoryConnector is a sub-class of HistoryConnector" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DeepHistoryConnector" ;
+      vs:term_status "stable" .
+
+UML:Fork
+      a       rdfs:Class ;
+      rdfs:comment "Fork is a sub-class of Connector" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Fork" ;
+      vs:term_status "stable" .
+
+UML:ControlFlow
+      a       rdfs:Class ;
+      rdfs:comment "ControlFlow is a sub-class of Transition" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ControlFlow" ;
+      vs:term_status "stable" .
+
+UML:state-nestedStateChart
+      a       rdf:Property ;
+      rdfs:comment "NestedStateChart is a container of Statechart types owned by State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "NestedStateChart in State" ;
+      vs:term_status "stable" .
+
+UML:CallOperation
+      a       rdfs:Class ;
+      rdfs:comment "CallOperation is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "CallOperation" ;
+      vs:term_status "stable" .
+
+UML:Constraint
+      a       rdfs:Class ;
+      rdfs:comment "Constraint is a sub-class of Annotation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Constraint" ;
+      vs:term_status "stable" .
+
+UML:CommunicationDiagram
+      a       rdfs:Class ;
+      rdfs:comment "Communication Diagram is a sub-class of AbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Communication Diagram" ;
+      vs:term_status "stable" .
+
+UML:Variable
+      a       rdfs:Class ;
+      rdfs:comment "Variable is a sub-class of IUnit" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Variable" ;
+      vs:term_status "stable" .
+
+UML:class-links
+      a       rdf:Property ;
+      rdfs:comment "Links is a container of Link types owned by Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Links in Class" ;
+      vs:term_status "stable" .
+
+UML:class-sequenceDiagrams
+      a       rdf:Property ;
+      rdfs:comment "SequenceDiagrams is a container of SequenceDiagram types owned by Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "SequenceDiagrams in Class" ;
+      vs:term_status "stable" .
+
+UML:requirement-requirementUserID
+      a       rdf:Property ;
+      rdfs:comment "Requirement User ID included in Requirement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Requirement User ID in Requirement" ;
+      rdfs:seeAlso UML:Requirement ;
+      vs:term_status "stable" .
+
+UML:package-containedStereotypes
+      a       rdf:Property ;
+      rdfs:comment "ContainedStereotypes is a container of Stereotype types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ContainedStereotypes in Package" ;
+      vs:term_status "stable" .
+
+UML:callOperation-target
+      a       rdf:Property ;
+      rdfs:comment "Target is one to many  relation from CallOperation to relation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Target in CallOperation" ;
+      vs:term_status "stable" .
+
+UML:package-collaborationDiagrams
+      a       rdf:Property ;
+      rdfs:comment "CollaborationDiagrams is a container of Communication Diagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "CollaborationDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:package-packages
+      a       rdf:Property ;
+      rdfs:comment "Packages is a container of Package types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Packages in Package" ;
+      vs:term_status "stable" .
+
+UML:state-actionOnExit
+      a       rdf:Property ;
+      rdfs:comment "Action On Exit included in State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Action On Exit in State" ;
+      rdfs:seeAlso UML:State ;
+      vs:term_status "stable" .
+
+UML:relation-otherClass
+      a       rdf:Property ;
+      rdfs:comment "OtherClass is one to many  relation from relation to Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "OtherClass in relation" ;
+      vs:term_status "stable" .
+
+UML:FlowPort
+      a       rdfs:Class ;
+      rdfs:comment "FlowPort is a sub-class of SysMLPort" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "FlowPort" ;
+      vs:term_status "stable" .
+
+UML:Class
+      a       rdfs:Class ;
+      rdfs:comment "Class is a sub-class of Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Class" ;
+      vs:term_status "stable" .
+
+UML:flow-end1ObjectPort
+      a       rdf:Property ;
+      rdfs:comment "End1ObjectPort is one to many  relation from Flow to Port" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "End1ObjectPort in Flow" ;
+      vs:term_status "stable" .
+
+UML:owner
+      a       rdf:Property ;
+      rdfs:comment "owner is one to many  relation from ModelElement to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "owner in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:ObjectModelDiagram
+      a       rdfs:Class ;
+      rdfs:comment "ObjectModelDiagram is a sub-class of AbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectModelDiagram" ;
+      vs:term_status "stable" .
+
+UML:State
+      a       rdfs:Class ;
+      rdfs:comment "State is a sub-class of SCNode" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "State" ;
+      vs:term_status "stable" .
+
+UML:attribute-visibility
+      a       rdf:Property ;
+      rdfs:comment "Visibility is one to one relation from Attribute to attribute-visibility_Kind" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Visibility in Attribute" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-raiseExceptions
+      a       rdf:Property ;
+      rdfs:comment "RaiseExceptions is a container of Classifier types owned by InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "RaiseExceptions in InternalOperation" ;
+      vs:term_status "stable" .
+
+UML:Class_Diagram
+      a       rdfs:Class ;
+      rdfs:comment "Class Diagram is a sub-class of ObjectModelDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Class Diagram" ;
+      vs:term_status "stable" .
+
+UML:Port
+      a       rdfs:Class ;
+      rdfs:comment "Port is a sub-class of AbstractPort" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Port" ;
+      vs:term_status "stable" .
+
+UML:  a       owl:Ontology ;
+      rdfs:label "Rhapsody UML" ;
+      rdfs:seeAlso <http://www.omg.org/spec/UML/2.5/> , <http://en.wikipedia.org/wiki/Unified_Modeling_Language> , <https://jazz.net/help-dev/dm/index.jsp> ;
+      dcterms:dateCopyrighted
+              "2016" ;
+      dcterms:description """
+			All vocabulary URIs defined in the Rhapsody UML namespace.
+		"""^^rdf:XMLLiteral ;
+      dcterms:license <https://jazz.net/ns/license.html> ;
+      dcterms:title """The Rational Rhapsody UML Metamodel.
+		""" .
+
+UML:StructureDiagram
+      a       rdfs:Class ;
+      rdfs:comment "StructureDiagram is a sub-class of ObjectModelDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "StructureDiagram" ;
+      vs:term_status "stable" .
+
+UML:referenceActivity-referencedActivity
+      a       rdf:Property ;
+      rdfs:comment "ReferencedActivity is one to many  relation from ReferenceActivity to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ReferencedActivity in ReferenceActivity" ;
+      vs:term_status "stable" .
+
+UML:generalization-general
+      a       rdf:Property ;
+      rdfs:comment "Super Class is one to many  relation from Generalization to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Super Class in Generalization" ;
+      vs:term_status "stable" .
+
+UML:state-defaultTransition
+      a       rdf:Property ;
+      rdfs:comment "DefaultTransition is one to many  relation from State to DefaultTransition" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DefaultTransition in State" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-returnType
+      a       rdf:Property ;
+      rdfs:comment "ReturnType is one to many  relation from InternalOperation to Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ReturnType in InternalOperation" ;
+      vs:term_status "stable" .
+
+UML:package-links
+      a       rdf:Property ;
+      rdfs:comment "Links is a container of Link types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Links in Package" ;
+      vs:term_status "stable" .
+
+UML:package-variables
+      a       rdf:Property ;
+      rdfs:comment "Variables is a container of Attribute types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Variables in Package" ;
+      vs:term_status "stable" .
+
+UML:package-useCaseDiagrams
+      a       rdf:Property ;
+      rdfs:comment "UseCaseDiagrams is a container of UseCaseDiagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "UseCaseDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:Classifier
+      a       rdfs:Class ;
+      rdfs:comment "Classifier is a sub-class of IUnit" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Classifier" ;
+      vs:term_status "stable" .
+
+UML:interruptibleRegion
+      a       rdfs:Class ;
+      rdfs:comment "InterruptibleRegion is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "InterruptibleRegion" ;
+      vs:term_status "stable" .
+
+UML:componentDiagram-defaultOwner
+      a       rdf:Property ;
+      rdfs:comment "DefaultOwner is one to many  relation from ComponentDiagram to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DefaultOwner in ComponentDiagram" ;
+      vs:term_status "stable" .
+
+UML:callOperation-operation
+      a       rdf:Property ;
+      rdfs:comment "Operation is one to many  relation from CallOperation to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Operation in CallOperation" ;
+      vs:term_status "stable" .
+
+UML:classifier-attributes
+      a       rdf:Property ;
+      rdfs:comment "Attributes is a container of Attribute types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Attributes in Classifier" ;
+      vs:term_status "stable" .
+
+UML:ModelElement
+      a       rdfs:Class ;
+      rdfs:comment "ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ModelElement" ;
+      vs:term_status "stable" .
+
+UML:Condition
+      a       rdfs:Class ;
+      rdfs:comment "Condition is a sub-class of Connector" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Condition" ;
+      vs:term_status "stable" .
+
+UML:classifier-operations
+      a       rdf:Property ;
+      rdfs:comment "Operations is a container of InterfaceItem types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Operations in Classifier" ;
+      vs:term_status "stable" .
+
+UML:package-componentDiagrams
+      a       rdf:Property ;
+      rdfs:comment "ComponentDiagrams is a container of ComponentDiagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ComponentDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:Dependency
+      a       rdfs:Class ;
+      rdfs:comment "Dependency is a sub-class of AbstructDependency" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Dependency" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-isDtor
+      a       rdf:Property ;
+      rdfs:comment "Destructor included in InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Destructor in InternalOperation" ;
+      rdfs:seeAlso UML:InternalOperation ;
+      vs:term_status "stable" .
+
+UML:package-events
+      a       rdf:Property ;
+      rdfs:comment "Events is a container of Event types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Events in Package" ;
+      vs:term_status "stable" .
+
+UML:Object
+      a       rdfs:Class ;
+      rdfs:comment "Object is a sub-class of relation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Object" ;
+      vs:term_status "stable" .
+
+UML:modelElement-templateInstance
+      a       rdf:Property ;
+      rdfs:comment "TemplateInstance is a container of ModelElement types owned by ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "TemplateInstance in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:modelElement-label
+      a       rdf:Property ;
+      rdfs:comment "Label included in ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Label in ModelElement" ;
+      rdfs:seeAlso UML:ModelElement ;
+      vs:term_status "stable" .
+
+UML:project-deploymentDiagrams
+      a       rdf:Property ;
+      rdfs:comment "DeploymentDiagrams is a container of DeploymentDiagram types owned by Project" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DeploymentDiagrams in Project" ;
+      vs:term_status "stable" .
+
+UML:literalSpecification-value
+      a       rdf:Property ;
+      rdfs:comment "Value (literal) included in ValueSpecification" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Value (literal) in ValueSpecification" ;
+      rdfs:seeAlso UML:ValueSpecification ;
+      vs:term_status "stable" .
+
+UML:Association
+      a       rdfs:Class ;
+      rdfs:comment "Association is a sub-class of Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Association" ;
+      vs:term_status "stable" .
+
+UML:Derivation
+      a       rdfs:Class ;
+      rdfs:comment "Derivation is a sub-class of Dependency" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Derivation" ;
+      vs:term_status "stable" .
+
+UML:actor-actors
+      a       rdf:Property ;
+      rdfs:comment "Actors is a container of Actor types owned by Actor" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Actors in Actor" ;
+      vs:term_status "stable" .
+
+UML:package-classes
+      a       rdf:Property ;
+      rdfs:comment "Classes is a container of Class types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Classes in Package" ;
+      vs:term_status "stable" .
+
+UML:classifier-parts
+      a       rdf:Property ;
+      rdfs:comment "Parts is a container of Object types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Parts in Classifier" ;
+      vs:term_status "stable" .
+
+UML:LiteralSpecification
+      a       rdfs:Class ;
+      rdfs:comment "LiteralSpecification is a sub-class of ValueSpecification" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "LiteralSpecification" ;
+      vs:term_status "stable" .
+
+UML:ValueSpecification
+      a       rdfs:Class ;
+      rdfs:comment "ValueSpecification is a sub-class of ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ValueSpecification" ;
+      vs:term_status "stable" .
+
+UML:link-fromObject
+      a       rdf:Property ;
+      rdfs:comment "FromObject is one to many  relation from Link to Object" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "FromObject in Link" ;
+      vs:term_status "stable" .
+
+UML:modelElement-redefines
+      a       rdf:Property ;
+      rdfs:comment "Redefines is one to many  relation from ModelElement to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Redefines in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:InitialFlow
+      a       rdfs:Class ;
+      rdfs:comment "Initial Flow is a sub-class of DefaultTransition" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Initial Flow" ;
+      vs:term_status "stable" .
+
+UML:DeploymentDiagram
+      a       rdfs:Class ;
+      rdfs:comment "DeploymentDiagram is a sub-class of AbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "DeploymentDiagram" ;
+      vs:term_status "stable" .
+
+UML:association-associationEnd1
+      a       rdf:Property ;
+      rdfs:comment "AssociationEnd1 is one to many  relation from Association to AssociationEnd" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "AssociationEnd1 in Association" ;
+      vs:term_status "stable" .
+
+UML:ObjectNode
+      a       rdfs:Class ;
+      rdfs:comment "ObjectNode is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectNode" ;
+      vs:term_status "stable" .
+
+UML:Realization
+      a       rdfs:Class ;
+      rdfs:comment "Realization is a sub-class of Generalization" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Realization" ;
+      vs:term_status "stable" .
+
+UML:relation-linkType
+      a       rdf:Property ;
+      rdfs:comment "Link Type is one to one relation from relation to relation-linkType_Kind";
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Link Type in relation";
+      vs:term_status "stable" .
+
+UML:Type
+      a       rdfs:Class ;
+      rdfs:comment "Type is a sub-class of Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Type" ;
+      vs:term_status "stable" .
+
+UML:classifier-associationEnds
+      a       rdf:Property ;
+      rdfs:comment "AssociationEnds is a container of relation types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "AssociationEnds in Classifier" ;
+      vs:term_status "stable" .
+
+UML:flow-end1
+      a       rdf:Property ;
+      rdfs:comment "End1 is one to many  relation from Flow to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "End1 in Flow" ;
+      vs:term_status "stable" .
+
+UML:package-functions
+      a       rdf:Property ;
+      rdfs:comment "Functions is a container of Operation types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Functions in Package" ;
+      vs:term_status "stable" .
+
+UML:package-sequenceDiagrams
+      a       rdf:Property ;
+      rdfs:comment "SequenceDiagrams is a container of SequenceDiagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "SequenceDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:ShallowHistoryConnector
+      a       rdfs:Class ;
+      rdfs:comment "ShallowHistoryConnector is a sub-class of HistoryConnector" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ShallowHistoryConnector" ;
+      vs:term_status "stable" .
+
+UML:association-associationEnd2
+      a       rdf:Property ;
+      rdfs:comment "AssociationEnd2 is one to many  relation from Association to AssociationEnd" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "AssociationEnd2 in Association" ;
+      vs:term_status "stable" .
+
+UML:package-structureDiagrams
+      a       rdf:Property ;
+      rdfs:comment "StructureDiagrams is a container of StructureDiagram types owned by Package" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "StructureDiagrams in Package" ;
+      vs:term_status "stable" .
+
+UML:modelElement-description
+      a       rdf:Property ;
+      rdfs:comment "Description included in ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Description in ModelElement" ;
+      rdfs:seeAlso UML:ModelElement ;
+      vs:term_status "stable" .
+
+UML:modelElement-requirements
+      a       rdf:Property ;
+      rdfs:comment "Requirements is a container of Requirement types owned by ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Requirements in ModelElement" ;
+      vs:term_status "stable" .
+
+UML:project-componentDiagrams
+      a       rdf:Property ;
+      rdfs:comment "ComponentDiagrams is a container of ComponentDiagram types owned by Project" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ComponentDiagrams in Project" ;
+      vs:term_status "stable" .
+
+UML:relation
+      a       rdfs:Class ;
+      rdfs:comment "relation is a sub-class of IUnit" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "relation" ;
+      vs:term_status "stable" .
+
+UML:ActivityDiagramGE
+      a       rdfs:Class ;
+      rdfs:comment "ActivityDiagramGE is a sub-class of StatechartDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ActivityDiagramGE" ;
+      vs:term_status "stable" .
+
+UML:project-sequenceDiagrams
+      a       rdf:Property ;
+      rdfs:comment "SequenceDiagrams is a container of SequenceDiagram types owned by Project" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "SequenceDiagrams in Project" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-visibility
+      a       rdf:Property ;
+      rdfs:comment "Visibility is one to one relation from InternalOperation to internalOperation-visibility_Kind" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Visibility in InternalOperation" ;
+      vs:term_status "stable" .
+
+UML:classifier-associations
+      a       rdf:Property ;
+      rdfs:comment "Associations is a container of Association types owned by Classifier" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Associations in Classifier" ;
+      vs:term_status "stable" .
+
+UML:useCase-useCases
+      a       rdf:Property ;
+      rdfs:comment "UseCases is a container of UseCase types owned by UseCase" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "UseCases in UseCase" ;
+      vs:term_status "stable" .
+
+UML:link-instantiates
+      a       rdf:Property ;
+      rdfs:comment "Instantiates is one to many  relation from Link to relation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Instantiates in Link" ;
+      vs:term_status "stable" .
+
+UML:CallBehavior
+      a       rdfs:Class ;
+      rdfs:comment "CallBehavior is a sub-class of ReferenceActivity" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "CallBehavior" ;
+      vs:term_status "stable" .
+
+UML:classifier-mainBehavior
+      a       rdf:Property ;
+      rdfs:comment "MainBehavior is one to many  relation from Classifier to Statechart" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "MainBehavior in Classifier" ;
+      vs:term_status "stable" .
+
+UML:flow-end2
+      a       rdf:Property ;
+      rdfs:comment "End2 is one to many  relation from Flow to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "End2 in Flow" ;
+      vs:term_status "stable" .
+
+UML:SequenceDiagram
+      a       rdfs:Class ;
+      rdfs:comment "SequenceDiagram is a sub-class of AbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "SequenceDiagram" ;
+      vs:term_status "stable" .
+
+UML:class-classes
+      a       rdf:Property ;
+      rdfs:comment "Classes is a container of Class types owned by Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Classes in Class" ;
+      vs:term_status "stable" .
+
+UML:relation-multiplicity
+      a       rdf:Property ;
+      rdfs:comment "Multiplicity included in relation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Multiplicity in relation" ;
+      rdfs:seeAlso UML:relation ;
+      vs:term_status "stable" .
+
+UML:object-implicitClass
+      a       rdf:Property ;
+      rdfs:comment "ImplicitClass is a container of Class types owned by Object" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ImplicitClass in Object" ;
+      vs:term_status "stable" .
+
+UML:internalOperation-sequenceDiagrams
+      a       rdf:Property ;
+      rdfs:comment "SequenceDiagrams is a container of SequenceDiagram types owned by InternalOperation" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "SequenceDiagrams in InternalOperation" ;
+      vs:term_status "stable" .
+
+UML:AcceptEventAction
+      a       rdfs:Class ;
+      rdfs:comment "AcceptEventAction is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "AcceptEventAction" ;
+      vs:term_status "stable" .
+
+UML:ActivityFinal
+      a       rdfs:Class ;
+      rdfs:comment "ActivityFinal is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ActivityFinal" ;
+      vs:term_status "stable" .
+
+UML:UseCaseDiagram
+      a       rdfs:Class ;
+      rdfs:comment "UseCaseDiagram is a sub-class of AbstractDiagram" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "UseCaseDiagram" ;
+      vs:term_status "stable" .
+
+UML:statechart-diagram
+      a       rdf:Property ;
+      rdfs:comment "Diagram is one to many  relation from Statechart to ModelElement" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Diagram in Statechart" ;
+      vs:term_status "stable" .
+
+UML:ReferenceActivity
+      a       rdfs:Class ;
+      rdfs:comment "ReferenceActivity is a sub-class of State" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ReferenceActivity" ;
+      vs:term_status "stable" .
+
+UML:variable-valueSpecifications
+      a       rdf:Property ;
+      rdfs:comment "ValueSpecifications is a container of ValueSpecification types owned by Variable" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ValueSpecifications in Variable" ;
+      vs:term_status "stable" .
+
+UML:UseCase
+      a       rdfs:Class ;
+      rdfs:comment "UseCase is a sub-class of Class" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "UseCase" ;
+      vs:term_status "stable" .
+
+UML:ObjectFlow
+      a       rdfs:Class ;
+      rdfs:comment "ObjectFlow is a sub-class of Transition" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectFlow" ;
+      vs:term_status "stable" .
+
+UML:project-objectModelDiagrams
+      a       rdf:Property ;
+      rdfs:comment "ObjectModelDiagrams is a container of ObjectModelDiagram types owned by Project" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "ObjectModelDiagrams in Project" ;
+      vs:term_status "stable" .
+
+UML:Module
+      a       rdfs:Class ;
+      rdfs:comment "Module is a sub-class of Object" ;
+      rdfs:isDefinedBy UML: ;
+      rdfs:label "Module" ;
+      vs:term_status "stable" .

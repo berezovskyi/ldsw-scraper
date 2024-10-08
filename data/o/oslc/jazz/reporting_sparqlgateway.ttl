@@ -1,0 +1,217 @@
+# The SPARQL Gateway Vocabulary
+# Arthur Ryman, ryman@ca.ibm.com
+# Modified 2013-03-05
+# Modified 2014-12-17 Moved to LinkedData wiki 
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oslc: <http://open-services.net/ns/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix gw: <http://jazz.net/ns/reporting/sparqlgateway#> .
+
+<#gw> a oslc:PrefixDefinition ;
+	oslc:prefix "gw" ;
+	oslc:prefixBase gw: .
+
+# the ontology
+
+gw:
+	a owl:Ontology ;
+	dcterms:title "SPARQL Gateway Vocabulary" ;
+	dcterms:description "The SPARQL Gateway vocabulary defines defines SPARQL endpoint, queries, and related reporting concepts." ;
+	rdfs:label "SPARQL Gateway" ;
+	dcterms:source <https://jazz.net/wiki/pub/LinkedData/SparqlGatewayVocabulary/gw-vocabulary.ttl> ;
+	rdfs:seeAlso <https://jazz.net/wiki/bin/view/LinkedData/SparqlGatewayVocabulary> .
+
+# the classes
+
+gw:Endpoint
+	a rdfs:Class ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "EndPoint" ;
+	rdfs:comment "The set of SPARQL endpoints. An endpoint has a URL and optional authentication information." .
+
+gw:EndpointList
+	a rdfs:Class ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "EndpointList" ;
+	rdfs:comment "The set of SPARQL endpoint lists. An endpoint list contains a set of endpoints." .
+
+gw:Gateway
+	a rdfs:Class ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "Gateway" ;
+	rdfs:comment "The set of SPARQL Gateway services. A gateway service contains a list of endpoints and a list of queries." .
+	
+gw:Query
+	a rdfs:Class ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "Query" ;
+	rdfs:comment "The set of SPARQL queries. A query has a SPARQL statement and optional result variable type information." .
+
+gw:QueryList
+	a rdfs:Class ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "QueryList" ;
+	rdfs:comment "The set of SPARQL query lists. A query list contains a set of queries." .
+
+gw:Variable 
+	a rdfs:Class ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "Variable" ;
+	rdfs:comment "The set of SPARQL variables. A variable is bound in a query result and has optional result type information." .
+
+# the properties
+
+gw:hasCognosXml 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasCognosXml" ;
+	rdfs:comment "The Cognos XML data source associated with this resource." ;
+	rdfs:seeAlso <http://www.ibm.com/developerworks/data/library/cognos/infrastructure/databases/page476.html> .
+
+gw:hasDataService 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasDataService" ;
+	rdfs:comment "The Reportable REST V1 data service associated with this resource." .
+
+gw:hasDataServiceXsd  
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasDataServiceXsd" ;
+	rdfs:comment "The URL of the Reportable REST V1 XML Schema for this resource." .
+	
+gw:hasDatatype 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasDatatype" ;
+	rdfs:comment "The XML Schema datatype, e.g. xsd:string, of this SPARQL variable." .
+
+gw:hasEndpointList 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasEndpointList" ;
+	rdfs:comment "The list of endpoints hosted by the gateway." .
+
+gw:hasQueryList 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasQueryList" ;
+	rdfs:comment "The list of queries hosted by the gateway." .
+	
+gw:hasSparqlResults 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasSparqlResults" ;
+	rdfs:comment "The URL of the SPARQL results in XML format for this query." ;
+	rdfs:seeAlso <http://www.w3.org/TR/rdf-sparql-XMLres/> .
+	
+gw:hasVariable 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "hasVariable" ;
+	rdfs:comment "A variable that belongs to this SPARQL query." .
+
+gw:inEndpointList 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "inEndpointList" ;
+	rdfs:comment "The endpoint list that contains this endpoint resource." .
+
+gw:inGateway 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "inGateway" ;
+	rdfs:comment "The gateway that hosts this resource." .
+	
+gw:inQueryList 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "inQueryList" ;
+	rdfs:comment "The query list that contains this query resource." .
+
+gw:memberEndpoint 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "memberEndpoint" ;
+	rdfs:comment "An endpoint resource that belongs to this endpoint list." .
+	
+gw:memberQuery 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "memberQuery" ;
+	rdfs:comment "A query resource that belongs to this query list." .
+	
+gw:modifiedBy 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "modifiedBy" ;
+	rdfs:comment "The agent that last modified this resource." .
+	
+gw:nextIdentifier 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "nextIdentifier" ;
+	rdfs:comment "The identifier of the next resource to be created in this list." .
+
+gw:oauthConsumerKey
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "oauthConsumerKey" ;
+	rdfs:comment "The OAuth consumer key for this endpoint." ;
+	rdfs:seeAlso <http://en.wikipedia.org/wiki/OAuth> .
+		
+gw:oauthConsumerSecret
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "oauthConsumerSecret" ;
+	rdfs:comment "The OAuth consumer secret for this endpoint." ;
+	rdfs:seeAlso <http://en.wikipedia.org/wiki/OAuth> .
+		
+gw:oauthEnabled
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "oauthEnabled" ;
+	rdfs:comment "Boolean value. When true, OAuth is used for this endpoint." ;
+	rdfs:seeAlso <http://en.wikipedia.org/wiki/OAuth> .
+
+gw:position 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "position" ;
+	rdfs:comment "The integer position, starting from 1, of this variable within the SPARQL query." .
+
+gw:queriesEndpoint 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "queriesEndpoint" ;
+	rdfs:comment "The endpoint resource that this query is sent to." .
+
+gw:resultLabel 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "resultLabel" ;
+	rdfs:comment "A human-readable label for an individual query result. This corresponds to a binding for the variables." .
+	
+gw:resultsLabel 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "resultsLabel" ;
+	rdfs:comment "A human-readable label for the set of all query results. This corresponds to the set of all bindings." .
+	
+gw:sparqlEndpointLocation 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "sparqlEndpointLocation" ;
+	rdfs:comment "The URL of the SPARQL endpoint. This URL supports the SPARQL Protocol for RDF." ;
+	rdfs:seeAlso <http://www.w3.org/TR/rdf-sparql-protocol/> .
+
+gw:sparqlQuery 
+	a rdf:Property ;
+	rdfs:isDefinedBy gw: ;
+	rdfs:label "sparqlQuery" ;
+	rdfs:comment "The SPARQL query string of this query resource. This is a valid string in the SPARQL Query Language for RDF." ;
+	rdfs:seeAlso <http://www.w3.org/TR/rdf-sparql-query/> .

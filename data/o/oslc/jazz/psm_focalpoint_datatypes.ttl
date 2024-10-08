@@ -1,0 +1,729 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fpdt: <http://jazz.net/ns/psm/focalpoint/datatypes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@base <https://jazz.net/wiki/bin/view/Main/FPDatatypes> .
+
+ 
+# the vocabulary
+ 
+fpdt:
+	a owl:Ontology ;
+	dcterms:title "Focal Point Datatypes Vocabulary" ;
+	dcterms:description "The Focal Point datatypes vocabulary defines datatypes supported as attribute values." ;
+	rdfs:label "Focal Point Datatypes" ;
+	rdfs:seeAlso <> ;
+	dcterms:source <https://jazz.net/wiki/pub/Main/FocalPointDatatypesVocabulary/fpdt-vocabulary.ttl> ;
+	dcterms:license <https://jazz.net/ns/license.html> ;
+	dcterms:dateCopyrighted "2012" .
+	
+# classes	
+
+fpdt:Datatype
+	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Datatype" ;
+	rdfs:comment "A Focal Point datatype. This is abstract superclass of all Focal Point datatypes." ;
+	rdfs:seeAlso <#fpdt_Datatype> .
+	
+fpdt:SimpleDatatype
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:Datatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "SimpleDatatype" ;
+	rdfs:comment "A Focal Point simple datatype. This is an abstract class." ;
+	rdfs:seeAlso <#fpdt_SimpleDatatype> .
+
+fpdt:ComplexDatatype
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:Datatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "ComplexDatatype" ;
+	rdfs:comment "A Focal Point complex datatype. This is an abstract class." ;
+	rdfs:seeAlso <#fpdt_ComplexDatatype> .
+	
+fpdt:Table
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:ComplexDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Table" ;
+	rdfs:comment "A Focal Point table datatype. A table is a rectangular array of cells. This is an abstract class." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:Column
+	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Column" ;
+	rdfs:comment "A column in a table." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:Row
+	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Row" ;
+	rdfs:comment "A row in a table." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:Cell
+	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Cell" ;
+	rdfs:comment "A cell in a table." ;
+	rdfs:seeAlso <#fpdt_Table> .
+	
+fpdt:row
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "row" ;
+	rdfs:comment "Multivalued. A row that is contained in a table." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:column
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "column" ;
+	rdfs:comment "Multivalued. A column that is contained in a table." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:columnNo
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "columnNo" ;
+	rdfs:comment "An integer. The column number, starting from 1, of a column or cell within a table." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:rowNo
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "rowNo" ;
+	rdfs:comment "An integer. The row number, starting from 1, of a row or cell within a table." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:cell
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "cell" ;
+	rdfs:comment "A cell that is contained in a row." ;
+	rdfs:seeAlso <#fpdt_Table> .
+
+fpdt:CheckBox
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "CheckBox" ;
+	rdfs:comment "A box that a member can select or clear to turn an option on or off." ;
+	rdfs:seeAlso <#fpdt_CheckBox> .
+
+fpdt:Choice
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Choice" ;
+	rdfs:comment "A list of predefined items that a member may select a single item from (e.g. status)." ;
+	rdfs:seeAlso <#fpdt_Choice> .
+
+fpdt:Date
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Date" ;
+	rdfs:comment "A date value (for example 3/31/2010)." ;
+	rdfs:seeAlso <#fpdt_Date> .
+
+fpdt:File
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:ComplexDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "File" ;
+	rdfs:comment "A document, image or other file in the database, or a list of such files. Maximum total size is 50 MB." ;
+	rdfs:seeAlso <#fpdt_File> .
+
+fpdt:Float
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Float" ;
+	rdfs:comment "A real number that contains a fractional part (e.g. 3.14)." ;
+	rdfs:seeAlso <#fpdt_Float> .
+
+fpdt:Heading
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Heading" ;
+	rdfs:comment "An attribute consisting only of a title, used primarily for layout purposes." ;
+	rdfs:seeAlso <#fpdt_Heading> .
+ 	
+fpdt:History
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "History" ;
+	rdfs:comment "History can display attribute or element history for an element." ;
+	rdfs:seeAlso <#fpdt_History> .
+
+fpdt:IncomingLinks
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "IncomingLinks" ;
+	rdfs:comment "A list of elements that link to this element." ;
+	rdfs:seeAlso <#fpdt_IncomingLinks> .
+
+fpdt:Integer
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Integer" ;
+	rdfs:comment "A real number that contains no fractional part (e.g. 42)." ;
+	rdfs:seeAlso <#fpdt_Integer> .
+
+fpdt:IntegrationLink
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "IntegrationLink" ;
+	rdfs:comment "A list of linked OSLC resources residing in a different repository." ;
+	rdfs:seeAlso <#fpdt_IntegrationLink> .
+
+fpdt:Link
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Link" ;
+	rdfs:comment "A link from one element to another. The target can be either in this workspace, or in another workspace." ;
+	rdfs:seeAlso <#fpdt_Link> .
+
+fpdt:Link
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Link" ;
+	rdfs:comment "A list is a collection of either text attributes or link attributes." ;
+	rdfs:seeAlso <#fpdt_Link> .
+ 	 	
+fpdt:Lock
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Lock" ;
+	rdfs:comment "A selection of attributes that can be locked from editing. When the lock attribute is activated for an element the attributes selected in the lock attribute cannot be edited and the element cannot be deleted." ;
+	rdfs:seeAlso <#fpdt_Lock> .
+
+fpdt:Matrix
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:Table ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Matrix" ;
+	rdfs:comment "A matrix attribute consists of several text, float or integer attributes in a grid." ;
+	rdfs:seeAlso <#fpdt_Matrix> .
+ 	 	 	
+fpdt:Mirror
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:Datatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Mirror" ;
+	rdfs:comment "A mirrored value of another attribute in another element." ;
+	rdfs:seeAlso <#fpdt_Mirror> .
+
+fpdt:MultiChoice
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:Datatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "MultiChoice" ;
+	rdfs:comment "A list of predefined items that a member may select multiple items from." ;
+	rdfs:seeAlso <#fpdt_MultiChoice> .
+	
+fpdt:Text
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Text" ;
+	rdfs:comment "A text field where a member enters and edits text." ;
+	rdfs:seeAlso <#fpdt_Text> .
+
+fpdt:TimeGrid
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:ComplexDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "TimeGrid" ;
+	rdfs:comment "Use this for calculations based on a time line." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:Url
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Url" ;
+	rdfs:comment "A link to a specific resource on the Internet (e.g. http://www.ibm.com)." ;
+	rdfs:seeAlso <#fpdt_Url> .
+
+fpdt:UniqueId
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "UniqueId" ;
+	rdfs:comment "A text field where the value must be unique. When new elements are created, the unique id attribute is automatically assigned a unique value." ;
+	rdfs:seeAlso <#fpdt_UniqueId> .
+ 	 	 	
+fpdt:Version
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:SimpleDatatype ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Version" ;
+	rdfs:comment "A number or character that automatically increases based on changes in other attributes." ;
+	rdfs:seeAlso <#fpdt_Version> .
+	 	 
+fpdt:Attachment
+	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Attachment" ;
+	rdfs:comment "A file attachment." ;
+	rdfs:seeAlso <#fpdt_File> .
+
+fpdt:value
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "value" ;
+	rdfs:comment "A primary or natural value of a simple datatype." ;
+	rdfs:seeAlso <#fpdt_SimpleDatatype> .
+
+fpdt:attachment
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "attachment" ;
+	rdfs:comment "Multivalued. A file attachment contained in the list of attachments." ;
+	rdfs:seeAlso <#fpdt_File> .
+
+fpdt:content
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "content" ;
+	rdfs:comment "The content of the attached file. An octet stream." ;
+	rdfs:seeAlso <#fpdt_File> .
+
+fpdt:contentType
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "contentType" ;
+	rdfs:comment "The content type of the attached file (e.g. 'text/plain')." ;
+	rdfs:seeAlso <#fpdt_File> .
+
+fpdt:contentLength
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "contentLength" ;
+	rdfs:comment "The length in bytes of the attached file (e.g. 4200)." ;
+	rdfs:seeAlso <#fpdt_File> .
+
+fpdt:i
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "i" ;
+	rdfs:comment "The position of the resource in an ordered list, starting from 1." ;
+	rdfs:seeAlso <#fpdt_ComplexDatatype> .
+
+fpdt:text
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "text" ;
+	rdfs:comment "Textual value for display purposes." ;
+	rdfs:seeAlso <#fpdt_CheckBox> .
+	
+fpdt:HistoryNone
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:History ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "HistoryNone" ;
+	rdfs:comment "No history is provided." ;
+	rdfs:seeAlso <#fpdt_HistoryNone> .
+	
+fpdt:HistoryGraph
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:History ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "HistoryGraph" ;
+	rdfs:comment "History of one or more numeric attributes is provided as a graph." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+
+fpdt:HistoryAttributeTable
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:History ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "HistoryAttributeTable" ;
+	rdfs:comment "History of one attribute is provided as a table." ;
+	rdfs:seeAlso <#fpdt_HistoryAttributeTable> .
+
+fpdt:HistoryElementTable
+	a rdfs:Class ;
+	rdfs:subClassOf fpdt:History ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "HistoryElementTable" ;
+	rdfs:comment "History of all attributes in an element is provided as a table." ;
+	rdfs:seeAlso <#fpdt_HistoryElementTable> .
+
+fpdt:image
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "image" ;
+	rdfs:comment "The link to the image of the graph." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+
+fpdt:size
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "size" ;
+	rdfs:comment "The size of the graph." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+
+fpdt:rangeFrom
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "rangeFrom" ;
+	rdfs:comment "The start of the time range. This is either a fixed date of the value of some date attribute." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+
+fpdt:rangeFromAttribute
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "rangeFromAttribute" ;
+	rdfs:comment "Optional. If a date attribute is used to define the start of the range, this is its name." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+
+fpdt:rangeTo
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "rangeTo" ;
+	rdfs:comment "The end of the time range. This is either a fixed date of the value of some date attribute." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+
+fpdt:rangeToAttribute
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "rangeToAttribute" ;
+	rdfs:comment "Optional. If a date attribute is used to define the end of the range, this is its name." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+
+fpdt:timeSeries
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "timeSeries" ;
+	rdfs:comment "A time series of numeric attribute history values. This is a multivalued property. The graph may contain zero or more time series." ;
+	rdfs:seeAlso <#fpdt_HistoryGraph> .
+	
+fpdt:Size
+	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Size" ;
+	rdfs:comment "A graph size (e.g. small, medium, or large)." ;
+	rdfs:seeAlso <#fpdt_Size> .
+
+fpdt:Small
+	a fpdt:Size ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Small" ;
+	rdfs:comment "Size small." ;
+	rdfs:seeAlso <#fpdt_Size> .
+
+fpdt:Medium
+	a fpdt:Size ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Medium" ;
+	rdfs:comment "Size medium." ;
+	rdfs:seeAlso <#fpdt_Size> .
+
+fpdt:Large
+	a fpdt:Size ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Large" ;
+	rdfs:comment "Size large." ;
+	rdfs:seeAlso <#fpdt_Size> .
+
+fpdt:GraphTimeSeries
+	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "GraphTimeSeries" ;
+	rdfs:comment "A graph time series." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:forAttribute
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "forAttribute" ;
+	rdfs:comment "The name of the attribute whose history is being graphed." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:displayType
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "displayType" ;
+	rdfs:comment "The display type of the graph (e.g. line or bar)." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:sampleInterval
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "sampleInterval" ;
+	rdfs:comment "Optional. If absent then all of the history values within the range are graphed. If present, then only the most recent value within the specified time interval (e.g. daily, weekly) is graphed." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:trendLine
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "trendLine" ;
+	rdfs:comment "Optional. If present, a trend line is included in the graph." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:changeEvent
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "changeEvent" ;
+	rdfs:comment "Multivalued. A change event in the history set determined by the date range and the sample interval." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+ 
+fpdt:DisplayType
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "DisplayType" ;
+	rdfs:comment "A graph display type (e.g. bar or line)." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:Bar
+	a fpdt:DisplayType ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Bar" ;
+	rdfs:comment "Bar chart." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:Line
+	a fpdt:DisplayType ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Line" ;
+	rdfs:comment "Line chart." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:TimeInterval
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "TimeInterval" ;
+	rdfs:comment "A time interval (e.g. year, quarter, month)." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:Year
+	a fpdt:TimeInterval ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Year" ;
+	rdfs:comment "A time interval of one year." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:Quarter
+	a fpdt:TimeInterval ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Quarter" ;
+	rdfs:comment "A time interval of one quarter year." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:Month
+	a fpdt:TimeInterval ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Month" ;
+	rdfs:comment "A time interval of one month." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:Week
+	a fpdt:TimeInterval ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Week" ;
+	rdfs:comment "A time interval of one week." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:Day
+	a fpdt:TimeInterval ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Day" ;
+	rdfs:comment "A time interval of one day." ;
+	rdfs:seeAlso <#fpdt_GraphTimeSeries> .
+
+fpdt:TrendLine
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "TrendLine" ;
+	rdfs:comment "A straight line that is fitted to the time series of historical values of an attribute." ;
+	rdfs:seeAlso <#fpdt_TrendLine> .
+
+fpdt:valueFrom
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "valueFrom" ;
+	rdfs:comment "The value of the trend line at the start date of the range." ;
+	rdfs:seeAlso <#fpdt_TrendLine> .
+ 
+fpdt:valueTo
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "valueTo" ;
+	rdfs:comment "The value of the trend line at the end date of the range." ;
+	rdfs:seeAlso <#fpdt_TrendLine> .
+ 
+fpdt:fitToRange
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "fitToRange" ;
+	rdfs:comment "True if the trend line is computed for historical values within the range of the graph. Otherwise, the trend line is fitted to all historical values." ;
+	rdfs:seeAlso <#fpdt_TrendLine> .
+ 
+fpdt:ChangeEvent
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "ChangeEvent" ;
+	rdfs:comment "A record of a change to an attribute of an element." ;
+	rdfs:seeAlso <#fpdt_ChangeEvent> .
+
+fpdt:HistoryAttributeTable
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "HistoryAttributeTable" ;
+	rdfs:comment "A series of change events of one attribute of an element." ;
+	rdfs:seeAlso <#fpdt_HistoryAttributeTable> .
+ 	
+fpdt:includeLast
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "includeLast" ;
+	rdfs:comment "Optional. If absent include all change events. If present include last 10 or 20 change events." ;
+	rdfs:seeAlso <#fpdt_HistoryAttributeTable> , <#fpdt_HistoryElementTable> .
+ 
+fpdt:HistoryElementTable
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "HistoryElementTable" ;
+	rdfs:comment "A series of change events of all attributes of an element." ;
+	rdfs:seeAlso <#fpdt_HistoryElementTable> .
+
+fpdt:TextEntry
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "TextEntry" ;
+	rdfs:comment "An entry in a list of text items." ;
+	rdfs:seeAlso <#fpdt_TextEntry> .
+ 	
+fpdt:text
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "text" ;
+	rdfs:comment "One or more lines of plain text." ;
+	rdfs:seeAlso <#fpdt_Text> .
+
+fpdt:Sheet
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Sheet" ;
+	rdfs:comment "A rectangular table of values in a time grid." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+ 	
+fpdt:ScenarioType
+ 	a rdfs:Class ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "ScenarioType" ;
+	rdfs:comment "A rectangular table of values in a time grid." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+ 	
+fpdt:High
+	a fpdt:ScenarioType ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "High" ;
+	rdfs:comment "The estimated high value." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:Low
+	a fpdt:ScenarioType ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Low" ;
+	rdfs:comment "The estimated low value." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:Likely
+	a fpdt:ScenarioType ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Likely" ;
+	rdfs:comment "The estimated most likely value." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:Actual
+	a fpdt:ScenarioType ; 	
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "Actual" ;
+	rdfs:comment "The actual value." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:sheet
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "sheet" ;
+	rdfs:comment "A sheet in a time grid." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:timeInterval
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "timeInterval" ;
+	rdfs:comment "The time interval used for this sheet." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:startDate
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "startDate" ;
+	rdfs:comment "The start date of this sheet." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:endDate
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "endDate" ;
+	rdfs:comment "The end date of this sheet." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:scenarioType
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "scenarioType" ;
+	rdfs:comment "Optional. The scenario type of this scheet. If absent then the scenario type is unset." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:isSummary
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "isSummary" ;
+	rdfs:comment "true if the row is a summary. " ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:isHeading
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "isHeading" ;
+	rdfs:comment "true if the row is a heading." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:isLocked
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "isLocked" ;
+	rdfs:comment "	true if the row is locked." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:isBenefit
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "isBenefit" ;
+	rdfs:comment "	true if the row is a benefit. false if the row is a cost." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .
+
+fpdt:unit
+	a rdf:Property ;
+	rdfs:isDefinedBy fpdt: ;
+	rdfs:label "unit" ;
+	rdfs:comment "The unit of measure for this row." ;
+	rdfs:seeAlso <#fpdt_TimeGrid> .

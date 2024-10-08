@@ -1,0 +1,143 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:oslc="http://open-services.net/ns/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ccm="http://jazz.net/ns/ccm#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#">
+    <dcterms:dateCopyrighted>2014</dcterms:dateCopyrighted>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/CcmVocabulary/ccm-vocabulary.ttl"/>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/LinkedData/CcmVocabulary"/>
+    <rdfs:label>Rational CCM Vocabulary</rdfs:label>
+    <dcterms:description>This vocabulary defines Change and Configuration Management concepts that are specific to Rational products.</dcterms:description>
+    <dcterms:title>Rational Change and Configuration Management (CCM) Vocabulary</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity3pts">
+    <rdfs:comment>The complexity of the story is 3 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:value>
+    <rdfs:label>3 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity13pts">
+    <rdfs:comment>The complexity of the story is 13 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</rdf:value>
+    <rdfs:label>13 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity0pts">
+    <rdfs:comment>The complexity of the story has not been determined yet.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:value>
+    <rdfs:label>0 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity100pts">
+    <rdfs:comment>The complexity of the story is 100 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:value>
+    <rdfs:label>100 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Impact">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#ImpactMajor"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#ImpactSignificant"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#ImpactModerate"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#ImpactMinor"/>
+    <rdfs:comment>A value used to describe the qualitative impact of an adoption item.</rdfs:comment>
+    <rdfs:label>Impact</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity2pts">
+    <rdfs:comment>The complexity of the story is 2 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:value>
+    <rdfs:label>2 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity">
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity13pts"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity5pts"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity8pts"/>
+    <rdfs:label>Complexity</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity40pts"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity2pts"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity3pts"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdfs:comment>A value used to describe the complexity of a story, measured in story points.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity0pts"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity20pts"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity100pts"/>
+    <rdfs:seeAlso rdf:resource="http://jazz.net/ns/ccm#Complexity1pt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity1pt">
+    <rdfs:comment>The complexity of the story is 1 point.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:value>
+    <rdfs:label>1 pt</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity40pts">
+    <rdfs:comment>The complexity of the story is 40 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:value>
+    <rdfs:label>40 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#ImpactSignificant">
+    <rdfs:comment>The impact of the adoption item is significant.</rdfs:comment>
+    <rdfs:label>significant</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Impact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#ImpactMinor">
+    <rdfs:comment>The impact of the adoption item is minor.</rdfs:comment>
+    <rdfs:label>minor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Impact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity8pts">
+    <rdfs:comment>The complexity of the story is 8 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</rdf:value>
+    <rdfs:label>8 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity20pts">
+    <rdfs:comment>The complexity of the story is 20 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:value>
+    <rdfs:label>20 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#Complexity5pts">
+    <rdfs:comment>The complexity of the story is 5 points.</rdfs:comment>
+    <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:value>
+    <rdfs:label>5 pts</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Complexity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#ImpactMajor">
+    <rdfs:comment>The impact of the adoption item is major.</rdfs:comment>
+    <rdfs:label>major</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Impact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ccm">
+    <oslc:prefixBase rdf:resource="http://jazz.net/ns/ccm#"/>
+    <oslc:prefix>ccm</oslc:prefix>
+    <rdf:type rdf:resource="http://open-services.net/ns/core#PrefixDefinition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ccm#ImpactModerate">
+    <rdfs:comment>The impact of the adoption item is moderate.</rdfs:comment>
+    <rdfs:label>moderate</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ccm#"/>
+    <rdf:type rdf:resource="http://jazz.net/ns/ccm#Impact"/>
+  </rdf:Description>
+</rdf:RDF>

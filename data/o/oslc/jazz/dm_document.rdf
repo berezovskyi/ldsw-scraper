@@ -1,0 +1,19 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/document#">
+    <dcterms:title>The DM Rich Text Document Vocabulary</dcterms:title>
+    <dcterms:description>This is the DM rich text document vocabulary</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <dcterms:dateCopyrighted>2012</dcterms:dateCopyrighted> 
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/dm/document#Document">
+    <rdfs:label>Document</rdfs:label>
+    <rdfs:comment>A class representing a rich text document.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/dm/document#"/>
+  </rdf:Description>
+</rdf:RDF>

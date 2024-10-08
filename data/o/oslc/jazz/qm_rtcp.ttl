@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rtcp: <http://jazz.net/ns/qm/rtcp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ 
+# the vocabulary
+ 
+rtcp:
+	a owl:Ontology ;
+	dcterms:title "Rational Test Control Panel Vocabulary" ;
+	dcterms:description "The Rational Test Control Panel vocabulary defines concepts related to Service Virtualization. The URI for this vocabulary is also used to identify the Rational Test Control Panel product itself." ;
+	rdfs:label "RTCP" ;
+	rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/RtcpVocabulary> ;
+	dcterms:source <https://jazz.net/wiki/pub/Main/RtcpVocabulary/rtcp-vocabulary.ttl> ;
+	dcterms:license <https://jazz.net/ns/license.html> ;
+	dcterms:dateCopyrighted "2013" .
+
+rtcp:ServiceVirtualization
+	rdfs:isDefinedBy rtcp: ;
+	rdfs:label "ServiceVirtualization" ;
+	rdfs:comment "Service Virtualization. This term can be used as the oslc:usage value on an oslc:ServiceProvider or oslc:Service to indicate that the service(s) provide control or management of Virtual Services.";
+	rdfs:seeAlso <http://www.ibm.com/software/rational/servicevirtualization/> .

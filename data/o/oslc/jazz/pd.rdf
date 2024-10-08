@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Licensed Materials (See http://jazz.net/ns/license.html) - Property of IBM. -->
+<!-- Copyright IBM Corporation 2012,2013. All Rights Reserved. -->
+<!-- U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:ldp="http://www.w3.org/ns/ldp#"
+    xmlns:pd="http://jazz.net/ns/pd#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#Item">
+    <rdfs:comment>An Item describes properties of a class of product, system, component, or part.
+	For example, the &lt;code&gt;:CarX12&lt;/code&gt; instance of the &lt;code&gt;pd:Item&lt;/code&gt; class describes properties of the X12 model of a car product line, and is not itself a car.</rdfs:comment>
+    <rdfs:label>Item</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/pd#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#view">
+    <rdfs:range rdf:resource="http://jazz.net/ns/pd#View"/>
+    <rdfs:comment>The object is a view of the subject resource, which is typically but not necessarily an Item.</rdfs:comment>
+    <rdfs:label>view</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/pd#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#View">
+    <rdfs:comment>A view of the parts of an Item.</rdfs:comment>
+    <rdfs:label>View</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/pd#"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ldp#Container"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#ViewVersion">
+    <rdfs:comment>A ViewVersion is a version of a View.</rdfs:comment>
+    <rdfs:label>ViewVersion</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/pd#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#Part">
+    <rdfs:comment>A Part represents the usage of some child Item within a View of a parent Item.</rdfs:comment>
+    <rdfs:label>Part</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/pd#"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ldp#Container"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#viewType">
+    <rdfs:domain rdf:resource="http://jazz.net/ns/pd#View"/>
+    <rdfs:comment>Identifies the type of a view.</rdfs:comment>
+    <rdfs:label>viewType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/pd#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#">
+    <dcterms:dateCopyrighted>2012,2013</dcterms:dateCopyrighted>
+    <dcterms:license rdf:resource="http://jazz.net/ns/license.html"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/Main/ProductAndPartDefinitionVocabulary/pd-vocabulary.ttl"/>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/cooluris"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/ISO_10303"/>
+    <rdfs:label>Products and Parts</rdfs:label>
+    <dcterms:description>&lt;h3&gt;Rational Product and Part vocabulary.&lt;/h3&gt;
+	The Rational Product and Part vocabulary defines items, views, and parts, using concepts similar to those in &lt;a href="http://en.wikipedia.org/wiki/ISO_10303"&gt;ISO 10303&lt;/a&gt;.
+	This vocabulary describes &lt;em&gt;Information Resources&lt;/em&gt;, not real-world objects.</dcterms:description>
+    <dcterms:title>Rational Product and Part vocabulary</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/pd#ItemVersion">
+    <rdfs:comment>An ItemVersion is a version of an Item (&lt;em&gt;note&lt;/em&gt;, not an instance of the class).</rdfs:comment>
+    <rdfs:label>ItemVersion</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/pd#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+</rdf:RDF>

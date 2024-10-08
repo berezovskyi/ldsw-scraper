@@ -1,0 +1,70 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:tt="http://jazz.net/ns/ism/perfmon/tt#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#protocol">
+    <rdfs:comment>The value of the 'ProtocolName' context used to identify an aggregate in the TOAGGCTX table. This property is a friendly name for the protocol used by a crtv:ServerAccessPoint.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/ns/crtv#ServerAccessPoint"/>
+    <rdfs:label>protocol</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/tt#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#componentName">
+    <rdfs:comment>The value of the 'ComponentName' context used to identify an aggregate in the TOAGGCTX table. This property typically aligns with the rdf:type attribute of a crtv:SoftwareServer.</rdfs:comment>
+    <rdfs:label>componentName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/tt#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#toId">
+    <rdfs:comment>The internal ID that the Transaction Reporter agent uses to index interaction metrics in the TOINTGMET and TOINTCMET tables. A crtv:Path resource can have one-or-more values for toId which can be used to obtain metrics associated with the resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/TTVocabulary#fromId"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/ns/crtv#Path"/>
+    <rdfs:label>toId</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/tt#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#fromId">
+    <rdfs:comment>The internal ID that the Transaction Reporter agent uses to index interaction metrics in the TOINTGMET and TOINTCMET tables. A crtv:Path resource can have one-or-more values for fromId which can be used to obtain metrics associated with the resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/TTVocabulary#toId"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/ns/crtv#Path"/>
+    <rdfs:label>fromId</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/tt#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#">
+    <dcterms:dateCopyrighted>2013</dcterms:dateCopyrighted>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/TransactionTrackingVocabulary/tt-vocabulary.ttl"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0"/>
+    <rdfs:seeAlso rdf:resource="http://www-03.ibm.com/software/products/us/en/compositeapplicationmanagerfortransactions/"/>
+    <rdfs:label>ITCAM for Transactions: Transaction Tracking Vocabulary</rdfs:label>
+    <dcterms:description>The ITCAM for Transactions: Transaction Tracking vocabulary. This vocabulary is applied to resources defined in the Common Resource Type Vocabulary with information on how to get transaction performance metrics from the Transaction Reporter agent.</dcterms:description>
+    <dcterms:title>ITCAM for Transactions: Transaction Tracking Vocabulary</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#id">
+    <rdfs:comment>The internal ID that the Transaction Reporter agent uses to index aggregate metrics in the TOAGGGMET and TOAGGCMET tables. A crtv:Transaction resource can have one-or-more values for aggregateID which can be used to query metrics associated with the resource.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/ns/crtv#SoftwareServer"/>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/ns/crtv#Application"/>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-schema/#ch_resource"/>
+    <rdfs:label>id</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/tt#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#applicationName">
+    <rdfs:comment>The value of the 'ApplicationName' context used to identify an aggregate in the TOAGGCTX table. This property typically aligns with the crtv:name attribute of a crtv:SoftwareServer.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-schema/#ch_resource"/>
+    <rdfs:label>applicationName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/tt#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/ism/perfmon/tt#transactionName">
+    <rdfs:comment>The value of the 'TransactionName' context used to identify an aggregate in the TOAGGCTX table. This property typically aligns with the crtv:name attribute of a crtv:Transaction.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-schema/#ch_resource"/>
+    <rdfs:label>transactionName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/ism/perfmon/tt#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

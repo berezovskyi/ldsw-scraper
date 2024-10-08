@@ -1,0 +1,156 @@
+# CCM Vocabulary
+# Arthur Ryman
+# Created 2014-12-16
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oslc: <http://open-services.net/ns/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix ccm: <http://jazz.net/ns/ccm#> .
+
+# prefixes for terms used in the vocabulary
+
+<#ccm> a oslc:PrefixDefinition ;
+	oslc:prefix "ccm" ;
+	oslc:prefixBase ccm: .
+
+# the vocabulary
+
+ccm:
+	a owl:Ontology ;
+	dcterms:title "Rational Change and Configuration Management (CCM) Vocabulary" ;
+	dcterms:description "This vocabulary defines Change and Configuration Management concepts that are specific to Rational products." ;
+	rdfs:label "Rational CCM Vocabulary" ;
+	rdfs:seeAlso <https://jazz.net/wiki/bin/view/LinkedData/CcmVocabulary> ;
+	dcterms:source <https://jazz.net/wiki/pub/LinkedData/CcmVocabulary/ccm-vocabulary.ttl> ;
+	dcterms:license <https://jazz.net/ns/license.html> ;
+	dcterms:dateCopyrighted "2014" .
+
+# classes
+
+ccm:Complexity
+	a rdfs:Class ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "Complexity" ;
+	rdfs:comment "A value used to describe the complexity of a story, measured in story points." ;
+	rdfs:seeAlso
+		ccm:Complexity0pts ,
+		ccm:Complexity1pt ,
+		ccm:Complexity2pts ,
+		ccm:Complexity3pts ,
+		ccm:Complexity5pts ,
+		ccm:Complexity8pts ,
+		ccm:Complexity13pts ,
+		ccm:Complexity20pts ,
+		ccm:Complexity40pts ,
+		ccm:Complexity100pts .
+		
+ccm:Impact
+	a rdfs:Class ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "Impact" ;
+	rdfs:comment "A value used to describe the qualitative impact of an adoption item." ;
+	rdfs:seeAlso
+		ccm:ImpactMinor ,
+		ccm:ImpactModerate ,
+		ccm:ImpactSignificant ,
+		ccm:ImpactMajor .
+
+# individuals
+
+ccm:Complexity0pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "0 pts" ;
+	rdf:value 0 ;
+	rdfs:comment "The complexity of the story has not been determined yet." .
+
+ccm:Complexity1pt
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "1 pt" ;
+	rdf:value 1 ;
+	rdfs:comment "The complexity of the story is 1 point." .
+
+ccm:Complexity2pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "2 pts" ;
+	rdf:value 2 ;
+	rdfs:comment "The complexity of the story is 2 points." .
+
+ccm:Complexity3pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "3 pts" ;
+	rdf:value 3 ;
+	rdfs:comment "The complexity of the story is 3 points." .
+
+ccm:Complexity5pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "5 pts" ;
+	rdf:value 5 ;
+	rdfs:comment "The complexity of the story is 5 points." .
+
+ccm:Complexity8pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "8 pts" ;
+	rdf:value 8 ;
+	rdfs:comment "The complexity of the story is 8 points." .
+
+ccm:Complexity13pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "13 pts" ;
+	rdf:value 13 ;
+	rdfs:comment "The complexity of the story is 13 points." .
+
+ccm:Complexity20pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "20 pts" ;
+	rdf:value 20 ;
+	rdfs:comment "The complexity of the story is 20 points." .
+
+ccm:Complexity40pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "40 pts" ;
+	rdf:value 40 ;
+	rdfs:comment "The complexity of the story is 40 points." .
+
+ccm:Complexity100pts
+	a ccm:Complexity ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "100 pts" ;
+	rdf:value 100 ;
+	rdfs:comment "The complexity of the story is 100 points." .
+
+ccm:ImpactMinor
+	a ccm:Impact ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "minor" ;
+	rdfs:comment "The impact of the adoption item is minor." .
+
+ccm:ImpactModerate
+	a ccm:Impact ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "moderate" ;
+	rdfs:comment "The impact of the adoption item is moderate." .
+
+ccm:ImpactSignificant
+	a ccm:Impact ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "significant" ;
+	rdfs:comment "The impact of the adoption item is significant." .
+
+ccm:ImpactMajor
+	a ccm:Impact ;
+	rdfs:isDefinedBy ccm: ;
+	rdfs:label "major" ;
+	rdfs:comment "The impact of the adoption item is major." .
+				

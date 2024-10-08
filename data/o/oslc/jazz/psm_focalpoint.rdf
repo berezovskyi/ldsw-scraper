@@ -1,0 +1,380 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:fps="http://jazz.net/ns/psm/focalpoint#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#ReportModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module stores generated reports.</rdfs:comment>
+    <rdfs:label>ReportModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#writeable">
+    <rdfs:comment>Is this attribute writeable?</rdfs:comment>
+    <rdfs:label>writeable</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#UserModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_UserModule"/>
+    <rdfs:comment>A Focal Point module in some workspace. A module contains a set of elements.</rdfs:comment>
+    <rdfs:label>UserModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Report">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>A generated report.</rdfs:comment>
+    <rdfs:label>Report</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#indexTree">
+    <rdfs:comment>A tree of elements with child element hierarchy but no attributes included.</rdfs:comment>
+    <rdfs:label>indexTree</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#indexList">
+    <rdfs:comment>A list of elements with no attributes included.</rdfs:comment>
+    <rdfs:label>indexList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#checkBoxesAreSelectedInTheChart">
+    <rdfs:comment>Indicates if check boxes are selected in the chart for this resource.</rdfs:comment>
+    <rdfs:label>checkBoxesAreSelectedInTheChart</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Folder">
+    <rdfs:comment>A Focal Point folder in some module. A folder contains elements and folders.</rdfs:comment>
+    <rdfs:label>Folder</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#onModule">
+    <rdfs:range rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#View"/>
+    <rdfs:comment>The module on which this view is defined.</rdfs:comment>
+    <rdfs:label>onModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#ChartModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>When a chart is saved in the Visualize frame, an element that contains the chart contents is saved in this module.</rdfs:comment>
+    <rdfs:label>ChartModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Release">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Release"/>
+    <rdfs:comment>A releases for planning elements.</rdfs:comment>
+    <rdfs:label>Release</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Baseline">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_Baseline"/>
+    <rdfs:comment>A saved baseline.</rdfs:comment>
+    <rdfs:label>Baseline</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#childElement">
+    <rdfs:range rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Folder"/>
+    <rdfs:comment>The subject element folder contains the object element.</rdfs:comment>
+    <rdfs:label>childElement</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Chart">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_Chart"/>
+    <rdfs:comment>A chart saved in the Visualize frame.</rdfs:comment>
+    <rdfs:label>Chart</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Attribute">
+    <rdfs:comment>A Focal Point attribute of some element. An attribute is defined by a module and has values in elements.</rdfs:comment>
+    <rdfs:label>Attribute</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#id">
+    <rdfs:comment>A unique identifier for this resource.</rdfs:comment>
+    <rdfs:label>id</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#property">
+    <rdfs:comment>The property URI associated with an attribute.</rdfs:comment>
+    <rdfs:label>property</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Service">
+    <rdfs:comment>A Focal Point application instance. An instance contains a set of workspaces.</rdfs:comment>
+    <rdfs:label>Service</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#CheckpointModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module contains the checkpoints that you use to review elements.</rdfs:comment>
+    <rdfs:label>CheckpointModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#fullTree">
+    <rdfs:comment>A tree of elements with child element hierarchy and attributes included.</rdfs:comment>
+    <rdfs:label>fullTree</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#fullList">
+    <rdfs:comment>A list of elements with attributes included.</rdfs:comment>
+    <rdfs:label>fullList</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Plan">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_Plan"/>
+    <rdfs:comment>A saved plan.</rdfs:comment>
+    <rdfs:label>Plan</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Checkpoint">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_Checkpoint"/>
+    <rdfs:comment>A checkpoint that you use to review elements.</rdfs:comment>
+    <rdfs:label>Checkpoint</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#attributeName">
+    <rdfs:comment>The name of this attribute.</rdfs:comment>
+    <rdfs:label>attributeName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#htmlLink">
+    <rdfs:comment>The HTML representation of this element.</rdfs:comment>
+    <rdfs:label>htmlLink</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#View">
+    <rdfs:comment>A Focal Point view on some module. A view selects a subset of elements and attributes.</rdfs:comment>
+    <rdfs:label>View</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#memberAttribute">
+    <rdfs:range rdf:resource="http://jazz.net/ns/psm/focalpoint#Attribute"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdfs:comment>An attribute that is a member of this element. </rdfs:comment>
+    <rdfs:label>memberAttribute</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Criterion">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_Criterion"/>
+    <rdfs:comment>A criterion that you use to prioritize elements and visualize the results.</rdfs:comment>
+    <rdfs:label>Criterion</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#elementTypeName">
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdfs:comment>The Add button name of the module that contains this element.</rdfs:comment>
+    <rdfs:label>elementTypeName</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Element">
+    <rdfs:comment>A Focal Point element in some module. An element has a set of attributes.</rdfs:comment>
+    <rdfs:label>Element</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Workspace">
+    <rdfs:comment>A Focal Point workspace in some application instance. A workspace defines a set of modules and views, and contains a set of elements.</rdfs:comment>
+    <rdfs:label>Workspace</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#ResourceTypeModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module contains the resource types that you use to plan elements.</rdfs:comment>
+    <rdfs:label>ResourceTypeModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#owner">
+    <rdfs:comment>The user that owns this resource.</rdfs:comment>
+    <rdfs:label>owner</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#ReleaseModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module contains the releases for planning elements.</rdfs:comment>
+    <rdfs:label>ReleaseModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#isAddable">
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#View"/>
+    <rdfs:comment>Is this view addable?</rdfs:comment>
+    <rdfs:label>isAddable</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#BaselineModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module contains saved baselines.</rdfs:comment>
+    <rdfs:label>BaselineModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#genericLink">
+    <rdfs:comment>Links an element to its generic graph. </rdfs:comment>
+    <rdfs:label>genericLink</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Module">
+    <rdfs:comment>A Focal Point module in some workspace. A module contains a set of elements.</rdfs:comment>
+    <rdfs:label>Module</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#ResourceType">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_ResourceType"/>
+    <rdfs:comment>A resource type that you use to plan elements.</rdfs:comment>
+    <rdfs:label>ResourceType</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#MemberModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module contains users that can access this workspace. Users must be defined in the user module.</rdfs:comment>
+    <rdfs:label>MemberModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#memberElement">
+    <rdfs:range rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdfs:comment>An element that is a member of this module. </rdfs:comment>
+    <rdfs:label>memberElement</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#modifiedBy">
+    <rdfs:comment>The user that last modified this resource.</rdfs:comment>
+    <rdfs:label>modifiedBy</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#">
+    <dcterms:dateCopyrighted>2012</dcterms:dateCopyrighted>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html"/>
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/Main/FocalPointVocabulary/fps-vocabulary.ttl"/>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPLinkedData"/>
+    <rdfs:label>Focal Point</rdfs:label>
+    <dcterms:description>The Focal Point vocabulary defines workspaces, modules, elements, attributes, views, and related concepts.</dcterms:description>
+    <dcterms:title>Focal Point Vocabulary</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#memberView">
+    <rdfs:range rdf:resource="http://jazz.net/ns/psm/focalpoint#View"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Workspace"/>
+    <rdfs:comment>A view that is a member of this workspace. </rdfs:comment>
+    <rdfs:label>memberView</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#memberWorkspace">
+    <rdfs:range rdf:resource="http://jazz.net/ns/psm/focalpoint#Workspace"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Service"/>
+    <rdfs:comment>A workspace that is a member of this service. </rdfs:comment>
+    <rdfs:label>memberWorkspace</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#Member">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_Member"/>
+    <rdfs:comment>A user that can access this workspace. Users must be defined in the user module.</rdfs:comment>
+    <rdfs:label>Member</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#PlanModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module contains your saved plans.</rdfs:comment>
+    <rdfs:label>PlanModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#count">
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdfs:comment>The number of elements in the module.</rdfs:comment>
+    <rdfs:label>count</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#CriterionModule">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#Built_In_Workspace_Modules"/>
+    <rdfs:comment>This module contains the criteria that you use to prioritize elements and visualize the results.</rdfs:comment>
+    <rdfs:label>CriterionModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdfs:subClassOf rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#memberModule">
+    <rdfs:range rdf:resource="http://jazz.net/ns/psm/focalpoint#Module"/>
+    <rdfs:domain rdf:resource="http://jazz.net/ns/psm/focalpoint#Workspace"/>
+    <rdfs:comment>A module that is a member of this workspace. </rdfs:comment>
+    <rdfs:label>memberModule</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#memberUser">
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/FPBuiltInModules#fps_UserModule"/>
+    <rdfs:comment>A person that is authorized to access this server.</rdfs:comment>
+    <rdfs:label>memberUser</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jazz.net/ns/psm/focalpoint#mspLink">
+    <rdfs:comment>The Microsoft project representation of this element.</rdfs:comment>
+    <rdfs:label>mspLink</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://jazz.net/ns/psm/focalpoint#"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>

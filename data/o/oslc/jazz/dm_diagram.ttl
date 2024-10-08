@@ -1,0 +1,24 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://jazz.net/ns/dm/diagram#Diagram>
+      a       rdfs:Class ;
+      rdfs:comment "Resources of this type are able to be rendered as an image."^^<http://www.w3.org/2001/XMLSchema#string> ;
+      rdfs:isDefinedBy <http://jazz.net/ns/dm/diagram#> ;
+      rdfs:label "Diagram"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jazz.net/ns/dm/diagram#diagramElement>
+      a       rdf:Property ;
+      rdfs:comment "Identifies a resource that is shown in the rendered image."^^<http://www.w3.org/2001/XMLSchema#string> ;
+      rdfs:isDefinedBy <http://jazz.net/ns/dm/diagram#> ;
+      rdfs:label "Diagram Element"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://jazz.net/ns/dm/diagram#>
+      a       owl:Ontology ;
+      dcterms:dateCopyrighted
+              "2012" ;
+      dcterms:description "Defines the vocabulary for diagram like elements."^^<http://www.w3.org/2001/XMLSchema#string> ;
+      dcterms:license <https://jazz.net/ns/license.html> ;
+      dcterms:title "DM Diagram Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
