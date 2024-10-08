@@ -86,6 +86,16 @@ function curl_try_shex() {
    delete_if_html "${outpath}.shex"
 }
 
+
+# curl_try_all "http://xmlns.com/wordnet/1.6" "wordnet/wordnet"
+curl_try_exact "https://www.w3.org/2006/03/wn/wn20/schemas/wnfull.rdfs" "wordnet/wnfull.rdf" "application/rdf+xml" 
+
+curl_try_exact "https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl" "Basic-Formal-Ontology/bfo.rdf" "application/rdf+xml" 
+
+# no conneg
+# curl_try_all "http://xmlns.com/wot/0.1/" "web-of-trust/wot"
+curl_try_exact "http://xmlns.com/wot/0.1/index.rdf" "web-of-trust/wot.rdf" "application/rdf+xml" 
+
 curl_try_all "http://www.w3.org/ns/solid/terms" "solid/solid-terms"
 curl_try_all "http://www.w3.org/ns/pim/space" "w3c/pim/space"
 curl_try_all "http://www.w3.org/ns/pim/arg" "w3c/pim/arg"
