@@ -8,7 +8,7 @@ CURLOPT="-L --fail --silent --show-error"
 
 function sleep_ci() {
    # we are not in a rush
-   if [ -z ${var+x} ]; then sleep 3; fi
+   if [ -z ${CI+x} ]; then sleep 3; fi
 }
 
 function delete_if_html() {
@@ -43,18 +43,28 @@ function curl_try_all() {
    echo -e -n "\tTurtle\t"
    { curl "$uri" --header "Accept: text/turtle" $CURLOPT >"${outpath}.ttl" && echo "✅"; } || { rm "${outpath}.ttl"; }
    delete_if_html "${outpath}.ttl"
+   sleep_ci
+   
    echo -e -n "\tRDF/XML\t"
    { curl "$uri" --header "Accept: application/rdf+xml, application/xml;q=0.1" $CURLOPT >"${outpath}.rdf" && echo "✅"; } || { rm "${outpath}.rdf"; }
    delete_if_html "${outpath}.rdf"
+   sleep_ci
+   
    echo -e -n "\tN-Triples\t"
    { curl "$uri" --header "Accept: application/n-triples" $CURLOPT >"${outpath}.nt" && echo "✅"; } || { rm "${outpath}.nt"; }
    delete_if_html "${outpath}.nt"
+   sleep_ci
+   
    echo -e -n "\tN-Quads\t"
    { curl "$uri" --header "Accept: application/n-quads" $CURLOPT >"${outpath}.nq" && echo "✅"; } || { rm "${outpath}.nq"; }
    delete_if_html "${outpath}.nq"
+   sleep_ci
+   
    echo -e -n "\tTriG\t"
    { curl "$uri" --header "Accept: application/trig" $CURLOPT >"${outpath}.trig" && echo "✅"; } || { rm "${outpath}.trig"; }
    delete_if_html "${outpath}.trig"
+   sleep_ci
+   
    echo -e -n "\tJSON-LD\t"
    { curl "$uri" --header "Accept: application/ld+json" $CURLOPT >"${outpath}.jsonld" && echo "✅"; } || { rm "${outpath}.jsonld"; }
    delete_if_html "${outpath}.jsonld"
