@@ -1,0 +1,35 @@
+
+
+
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <owl:Ontology rdf:about="">
+        <dc:creator rdf:resource="http://web.mit.edu/dsheets/www/foaf.rdf#dsheets"/>
+        <dc:date>2006-07-26</dc:date>
+        <dc:description>This is a vocabulary for describing HTTP headers.</dc:description>
+        <dc:title>HTTP Header Vocabulary</dc:title>
+        <comment>This vocabulary is a one deemed to contain all HTTP headers.
+The rdflib.js library uses it as for relationships between an HTTP response
+and the  content (value) of the HTTP header in that response.     The ontology
+is deemed to contain one property for every HTTP header, standard or not.
+The property in this ontology has a localname which is the header field converted
+to lower case.</comment>
+    </owl:Ontology>
+
+    <rdf:Property rdf:about="#content-type">
+        <comment>See the HTTP specification</comment>
+        <domain rdf:resource="http#Message"/>
+        <isDefinedBy rdf:resource=""/>
+        <label>content type</label>
+        <range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdf:Property>
+
+    <foaf:Person rdf:about="http://web.mit.edu/dsheets/www/foaf.rdf#dsheets">
+        <foaf:mbox rdf:resource="mailto:dsheets@mit.edu"/>
+        <foaf:name>David Sheets</foaf:name>
+    </foaf:Person>
+</rdf:RDF>

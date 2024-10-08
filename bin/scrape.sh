@@ -70,31 +70,68 @@ function curl_try_exact() {
    delete_if_html "${outpath}"
 }
 
+
+function curl_try_shex() {
+   uri="$1"
+   path="$2"
+   outpath="data/${path:0:1}/${path}"
+   outdir=$(dirname "$outpath")
+
+   mkdir -p "$outdir"
+
+   echo -e "\nFetching ${path}"
+
+   echo -e -n "\tShEx\t"
+   { curl "$uri" --header "Accept: text/shex" $CURLOPT >"${outpath}.shex" && echo "✅"; } || { rm "${outpath}.shex"; }
+   delete_if_html "${outpath}.shex"
+}
+
+curl_try_all "http://www.w3.org/ns/solid/terms" "solid/solid-terms"
+curl_try_all "http://www.w3.org/ns/pim/space" "w3c/pim/space"
+curl_try_all "http://www.w3.org/ns/pim/arg" "w3c/pim/arg"
+
+# not an RDF resource
+curl_try_shex "http://www.w3.org/2002/12/cal/ical" "w3c/w3c-ical/ical"
+# note the typo in application/rdf+xml
+# curl_try_all "https://www.w3.org/2002/12/cal/icaltzd" "w3c/w3c-ical/icaltzd.rdf"
+curl_try_exact "https://www.w3.org/2002/12/cal/icaltzd" "w3c/w3c-ical/icaltzd.rdf" "applications/rdf+xml"
+
+curl_try_all "http://www.w3.org/ns/auth/acl" "w3c/auth/WAC/acl"
+curl_try_all "http://www.w3.org/ns/auth/cert" "w3c/auth/WebID-TLS/cert"
+curl_try_all "http://www.w3.org/ns/posix/stat" "w3c/w3c-posix/stat"
+# bad conneg
+# curl_try_all "http://usefulinc.com/ns/doap" "doap/doap"
+curl_try_exact "http://usefulinc.com/ns/doap" "doap/doap.rdf" "application/rdf+xml"
+curl_try_all "http://purl.org/dc/elements/1.1/" "dc/elements/dc"
+curl_try_all "http://www.w3.org/2007/ont/http" "w3c/w3c-ont/http"
+curl_try_all "http://www.w3.org/2007/ont/httph" "w3c/w3c-ont/httph"
+
 # bad conneg
 # curl_try_all "http://www.w3.org/2004/02/skos/core" "skos/skos-core"
 curl_try_exact "http://www.w3.org/2004/02/skos/core" "skos/skos-core.rdf" "application/rdf+xml"
 
-curl_try_all "http://semweb.mmlab.be/ns/rml" "rml/rml-vocab"
-curl_try_all "http://semweb.mmlab.be/ns/rml-target" "rml/rmlt-vocab"
-curl_try_all "http://semweb.mmlab.be/ns/ql" "rml/ql-vocab"
-curl_try_all "http://www.w3.org/ns/r2rml" "rml/r2rml-vocab"
+curl_try_all "http://semweb.mmlab.be/ns/rml" "rml/rml-vocab/rml"
+curl_try_all "http://semweb.mmlab.be/ns/rml-target" "rml/rml-target/rmlt"
+# TODO: more here http://semweb.mmlab.be/ns/
+# curl_try_all "http://semweb.mmlab.be/ns/ql" "rml/ql-vocab/ql"
+curl_try_all "http://www.w3.org/ns/r2rml" "rml/r2rml-vocab/r2rml"
 
-curl_try_all "http://open-services.net/ns/sysmlv2" "oslc/sysmlv2-vocab"
+curl_try_all "http://open-services.net/ns/sysmlv2" "oslc/oslc-sysmlv2/sysmlv2"
 # curl_try_all "http://open-services.net/ns/sysmlv2/shapes/" "oslc/sysmlv2-shapes"
-curl_try_all "http://open-services.net/ns/sysmlv2/shapes/20240801" "oslc/sysmlv2-shapes"
+curl_try_all "http://open-services.net/ns/sysmlv2/shapes/20240801" "oslc/oslc-sysmlv2/sysmlv2-shapes"
 
-curl_try_all "https://open-services.net/ns/config" "oslc/config-vocab"
-curl_try_all "https://open-services.net/ns/config/shapes/1.0/" "oslc/config-shapes"
+curl_try_all "https://open-services.net/ns/config" "oslc/oslc-config/config"
+curl_try_all "https://open-services.net/ns/config/shapes/1.0/" "oslc/oslc-config/config-shapes"
 
-curl_try_all "https://open-services.net/ns/core/trs" "oslc/trs-vocab"
-curl_try_all "https://open-services.net/ns/core/trspatch" "oslc/trspatch-vocab"
-curl_try_all "https://open-services.net/ns/trs/shapes/3.0/" "oslc/trs-shapes"
+curl_try_all "https://open-services.net/ns/core/trs" "oslc/oslc-trs/trs"
+curl_try_all "https://open-services.net/ns/core/trspatch" "oslc/oslc-trs/trspatch"
+curl_try_all "https://open-services.net/ns/trs/shapes/3.0/" "oslc/oslc-trs/trs-shapes"
 
-curl_try_all "https://open-services.net/ns/core" "oslc/core-vocab"
-curl_try_all "https://open-services.net/ns/core/shapes/3.0" "oslc/core-shapes"
+curl_try_all "https://open-services.net/ns/core" "oslc/oslc-core/core"
+curl_try_all "https://open-services.net/ns/core/shapes/3.0" "oslc/oslc-core/core-shapes"
 
-curl_try_all "http://www.w3.org/ns/ldp" "w3c/ldp"
-curl_try_all "http://purl.org/dc/terms/" "dc/terms"
+curl_try_all "http://www.w3.org/ns/ldp" "w3c/w3c-ldp"
+curl_try_all "http://purl.org/dc/terms/" "dc/terms/dcterms"
 
 # TODO: handle /-ending vocab without #
 # returns HTML incorrectly
@@ -104,5 +141,5 @@ curl_try_exact "https://purl.org/vocab/vann/vann-vocab-20100607.rdf" "vann/vann-
 curl_try_all "http://xmlns.com/foaf/0.1/" "foaf/foaf"
 # curl_try_single "http://xmlns.com/foaf/spec/index.rdf" "foaf/foaf"
 
-curl_try_all "http://www.w3.org/1999/02/22-rdf-syntax-ns" "w3c/rdf"
-curl_try_all "http://www.w3.org/2000/01/rdf-schema" "w3c/rdfs"
+curl_try_all "http://www.w3.org/1999/02/22-rdf-syntax-ns" "w3c/rdf/rdf"
+curl_try_all "http://www.w3.org/2000/01/rdf-schema" "w3c/rdf/rdfs"
