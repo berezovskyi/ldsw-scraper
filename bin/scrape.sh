@@ -104,6 +104,9 @@ function curl_try_shex() {
    delete_if_html "${outpath}.shex"
 }
 
+curl_try_all 'http://w3id.org/express#' 'ifcOWL/express'
+curl_try_all 'http://w3id.org/list#' 'ifcOWL/list'
+
 curl_try_all 'http://jazz.net/ns/dcs#' 'oslc/jazz/dcs'
 curl_try_all 'http://jazz.net/ns/mec#' 'oslc/jazz/mec'
 curl_try_all 'http://jazz.net/ns/enterprise_agile#' 'oslc/jazz/enterprise_agile'
