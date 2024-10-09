@@ -8,7 +8,7 @@ CURLOPT="-L --fail --silent --show-error"
 
 function sleep_ci() {
    # we are not in a rush
-   if [ -z ${CI+x} ]; then sleep 3; fi
+   if [ ! -z ${CI+x} ]; then sleep 3; fi
 }
 
 function delete_if_html() {
