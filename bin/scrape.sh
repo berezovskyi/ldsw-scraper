@@ -178,7 +178,7 @@ function sleep_ci() {
    # we are not in a rush
    # but 3s increases CI runs 10x
 
-   if [ ! -z ${CI+x} ]; then sleep 0.3; fi
+   if [ ! -z ${CI+x} ]; then sleep 0.1; fi
 }
 
 function delete_if_html() {
