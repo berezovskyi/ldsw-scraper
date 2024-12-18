@@ -70,7 +70,7 @@ rdfs:isDefinedBy a rdf:Property ;
 	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
 	rdfs:subPropertyOf rdfs:seeAlso ;
 	rdfs:label "isDefinedBy" ;
-	rdfs:comment "The defininition of the subject resource." ;
+	rdfs:comment "The definition of the subject resource." ;
 	rdfs:range rdfs:Resource ;
 	rdfs:domain rdfs:Resource .
 
@@ -89,8 +89,7 @@ rdfs:Container a rdfs:Class ;
 rdfs:ContainerMembershipProperty a rdfs:Class ;
 	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
 	rdfs:label "ContainerMembershipProperty" ;
-	rdfs:comment """The class of container membership properties, rdf:_1, rdf:_2, ...,
-                    all of which are sub-properties of 'member'.""" ;
+	rdfs:comment """The class of container membership properties, rdf:_1, rdf:_2, ..., all of which are sub-properties of 'member'.""" ;
 	rdfs:subClassOf rdf:Property .
 
 rdfs:member a rdf:Property ;

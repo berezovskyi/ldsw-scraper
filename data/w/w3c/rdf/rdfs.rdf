@@ -81,7 +81,7 @@
   <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
   <rdfs:label>isDefinedBy</rdfs:label>
-  <rdfs:comment>The defininition of the subject resource.</rdfs:comment>
+  <rdfs:comment>The definition of the subject resource.</rdfs:comment>
   <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
 </rdf:Property>
@@ -103,8 +103,7 @@
 <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
   <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
   <rdfs:label>ContainerMembershipProperty</rdfs:label>
-  <rdfs:comment>The class of container membership properties, rdf:_1, rdf:_2, ...,
-                    all of which are sub-properties of 'member'.</rdfs:comment>
+  <rdfs:comment>The class of container membership properties, rdf:_1, rdf:_2, ..., all of which are sub-properties of 'member'.</rdfs:comment>
   <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 </rdfs:Class>
 
