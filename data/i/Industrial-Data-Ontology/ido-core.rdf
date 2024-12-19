@@ -2,6 +2,7 @@
     xmlns:qudt="http://qudt.org/schema/qudt/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns="http://rds.posccaesar.org/ontology/lis14/ont/core#"
+    xmlns:iof-core="https://spec.industrialontologies.org/ontology/core/Core/"
     xmlns:iof-av="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:dol="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#"
@@ -20,28 +21,28 @@
     xmlns:lis="http://rds.posccaesar.org/ontology/lis14/rdl/"
     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/">
   <owl:Ontology rdf:about="http://rds.posccaesar.org/ontology/lis14/ont/core">
-    <pav:previousVersion rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core/2.0"/>
     <rdfs:label>Industrial Data Ontology</rdfs:label>
-    <owl:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core/3.0"/>
+    <owl:versionInfo>4.0 Proposed DIS November 2024</owl:versionInfo>
     <dc:rights>Copyright POSC Caesar Association</dc:rights>
     <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <pav:lastUpdateOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2024-03-11T17:13:33Z</pav:lastUpdateOn>
     <pav:hasEarlierVersion rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core/1.0"/>
     <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-9736-8316"/>
     <dcterms:description>The Industrial Data Ontology is an upper ontology for industrial data, inspired by the ISO 15926-2 data model and Basic Formal Ontology.</dcterms:description>
     <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6228-1317"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2024-11-28</dcterms:modified>
     <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-7336-3932"/>
-    <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"/>
     <dcterms:contributor rdf:resource="https://orcid.org/0009-0005-8440-2238"/>
     <dcterms:title>Industrial Data Ontology</dcterms:title>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2024-03-11</dcterms:modified>
+    <pav:hasEarlierVersion rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core/2.0"/>
     <dcterms:publisher rdf:resource="https://www.posccaesar.org"/>
-    <owl:versionInfo>3.0 ISO Committee Draft March 2024</owl:versionInfo>
+    <owl:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core/4.0"/>
+    <pav:previousVersion rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core/3.0"/>
     <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-5509-8899"/>
     <rdfs:comment>The Industrial Data Ontology is an upper ontology for industrial data, inspired by the ISO 15926-2 data model and Basic Formal Ontology.</rdfs:comment>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+    <pav:lastUpdateOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-11-28T14:33:46Z</pav:lastUpdateOn>
     <dcterms:creator rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
   </owl:Ontology>
   <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
@@ -61,23 +62,20 @@
     <skos:example>The temperature of a fluid stream, the tensile strength of a bolt, the length of a pipeline, the colour of a surface coating, the familiarity of a specialist with a modification procedure, the quality of a window of being open or closed.</skos:example>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
-    <rdfs:comment>The class Quality and its subclass PhysicalQuantity are inspired by corresponding classes included in the DOLCE and BFO (BFO_0000019) upper ontologies.</rdfs:comment>
     <iof-av:primitiveRationale>Qualities cover a broad range of what is commonly referred to as "properties". It is beyond the scope of IDO to precisely determine what should be included.</iof-av:primitiveRationale>
+    <rdfs:comment>The class Quality and its subclass PhysicalQuantity are inspired by corresponding classes included in the DOLCE and BFO upper ontologies.</rdfs:comment>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
     <rdfs:label>Quality</rdfs:label>
-    <rdfs:comment>DOLCE describes qualities as follows: "Qualities can be seen as the basic entities we can perceive or measure: shapes, colors, sizes, sounds, smells, as well as weights, lengths, electrical charges... 'Quality' is often used as a synonymous of 'property', but this is not the case in this upper ontology: qualities are particulars, properties are universals.  Qualities inhere to entities: every entity (including qualities themselves) comes with certain qualities, which exist as long as the entity exists."</rdfs:comment>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     <rdfs:seeAlso>ISO 15926-2:2003 'property'</rdfs:seeAlso>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Compound">
-    <iof-av:usageNote>For explicit meaning of a 'compound' subclass, such as "steel [object]", employ an RDL 'quality' class representing "material composition", with restrictions to a modelling construct representing steel.</iof-av:usageNote>
     <iof-av:naturalLanguageDefinition>A physical object with a defined material composition.</iof-av:naturalLanguageDefinition>
     <skos:altLabel>Compound</skos:altLabel>
-    <iof-av:usageNote>The class 'compound' serves as an ultimate "book-keeping" superclass for a taxonomy of material make-up. It has been found useful in managing classifications (of physical objects) according to material composition. It carries no distinguishing constraints, since any physical object will have material composition. The class 'compound' would perhaps better be named "physical object classified according to material composition".</iof-av:usageNote>
-    <iof-av:usageNote>This is an abstract concept, or hook, to allow sub-classes to be added as needed.</iof-av:usageNote>
-    <iof-av:usageNote>Renamed class. Checked materially in OED.</iof-av:usageNote>
+    <iof-av:usageNote>Renamed class. Checked materially in Oxford English Dictionary.</iof-av:usageNote>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
+    <iof-av:usageNote>A typical RDL includes classes that categorise individuals according to material composition. This class is suitable as the top node of such a taxonomy.</iof-av:usageNote>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
@@ -88,13 +86,13 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <skos:example>Types of material composition, such as 316 stainless steel, reinforced concrete, and carbon monoxide.</skos:example>
     <iof-av:primitiveRationale>The semantics of materials, of which compounds would be a specialisation, is beyond the scope of IDO.</iof-av:primitiveRationale>
     <rdfs:label>MateriallyClassifiedObject</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
     </rdfs:subClassOf>
     <skos:scopeNote>Natural kinds are expressly not to be classified as 'compound'. The class 'compound' is only to be used to classify amounts of matter, with non-semantic auxiliaries used to refer to chemical composition. The semantics of natural kinds such as "helium", "steel", or "hydrocarbon" is out of scope for IDO.</skos:scopeNote>
-    <skos:example>Individual objects that have composition such as 316 stainless steel, reinforced concrete, carbon monoxide</skos:example>
     <rdfs:seeAlso>ISO 15926-2:2003 'class_of_compound'</rdfs:seeAlso>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Activity">
@@ -106,8 +104,6 @@
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal"/>
     </rdfs:subClassOf>
     <rdfs:label>Activity</rdfs:label>
-    <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:seeAlso rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
@@ -118,6 +114,8 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:seeAlso rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process"/>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
     <iof-av:naturalLanguageDefinition>A temporal entity in which one or more physical objects participate.</iof-av:naturalLanguageDefinition>
@@ -135,31 +133,25 @@
     <rdfs:seeAlso rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity"/>
     <iof-av:naturalLanguageDefinition>A quality that can be quantified by measurement.</iof-av:naturalLanguageDefinition>
     <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/ssn/ObservableProperty"/>
+    <iof-av:primitiveRationale>It is beyond the scope of IDO to give an account of measurement.</iof-av:primitiveRationale>
     <rdfs:seeAlso>ISO 15926-2:2003 'property'</rdfs:seeAlso>
     <rdfs:label>PhysicalQuantity</rdfs:label>
-    <iof-av:primitiveRationale>The notion of "unit of measure" is employed in the definition of 'physical quantity'. It is beyond the scope of IDO to give an account of measurement.</iof-av:primitiveRationale>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum">
-    <iof-av:usageNote>A scalar quantity datum has a unique unit of measure and a unique numeric value. This class is inspired by the class "scalar measurement datum" of the Information Artefact Ontology.</iof-av:usageNote>
+    <iof-av:usageNote>A scalar quantity datum has a unique unit of measure and a unique numeric value. This class is inspired by the class "scalar measurement datum" of the Information Artifact Ontology.</iof-av:usageNote>
     <skos:example>10 kilograms, 220 volt.</skos:example>
     <rdfs:seeAlso rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
     <rdfs:label>ScalarQuantityDatum</rdfs:label>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</iof-av:isPrimitive>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:someValuesFrom rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
+          <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</iof-av:isPrimitive>
-    <iof-av:naturalLanguageDefinition>A quality datum that quantifies a physical quantity with a numeric value and a scale.</iof-av:naturalLanguageDefinition>
-    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/QualityDatum"/>
-    </rdfs:subClassOf>
-    <iof-av:semiFormalNaturalLanguageAxiom>If x is a 'scalar quantity datum', then x is a 'quality datum' which 'quantifies quality' some 'physical quantity', and has a 'datum uom' relationship to a 'unit of measure' and a 'datum value' relationship to a literal value.</iof-av:semiFormalNaturalLanguageAxiom>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
@@ -170,7 +162,21 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <iof-av:naturalLanguageDefinition>A quality datum that quantifies a physical quantity with a numeric value and a scale.</iof-av:naturalLanguageDefinition>
+    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/QualityDatum"/>
+    </rdfs:subClassOf>
+    <iof-av:semiFormalNaturalLanguageAxiom>If x is a 'scalar quantity datum', then x is a 'quality datum' which 'quantifies quality' some 'physical quantity', and has a 'datum uom' relationship to a 'unit of measure' and a 'datum value' relationship to a literal value.</iof-av:semiFormalNaturalLanguageAxiom>
     <rdfs:seeAlso rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Role">
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -178,17 +184,30 @@
     <rdfs:seeAlso>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasRole"/>
     </rdfs:seeAlso>
-    <rdfs:comment>This class is intended to serve the same purpose as the ISO 15926-2:2003 'role' entity type, as well as the same-named BFO class (BFO_0000023).</rdfs:comment>
     <skos:example>The role of an interior space (a 'site') as a meeting room is realized when it serves as the space for conducting meetings. The site may be assigned a storage room role at a different time.</skos:example>
-    <rdfs:comment>As with any 'potential', the existence of a role is dependent on its bearer. A particular meeting room's role may therefore not be transferred to a different room; a different role individual with similar classification would be needed.</rdfs:comment>
     <iof-av:primitiveRationale>Making the notion of assignment (to a task) fully precise is beyond the scope of IDO. With complex intentions notions of obligation, which are often required in role assignments, this is particularly clear.</iof-av:primitiveRationale>
     <skos:example>The role an individual person takes in a work situation, such as a manager. A student role.</skos:example>
+    <skos:scopeNote>This class is intended to serve the same purpose as the ISO 15926-2:2003 'role' entity type, as well as the same-named BFO class (BFO_0000023).</skos:scopeNote>
     <rdfs:seeAlso>ISO 15926-2:2003 'role', 'role_and_domain'</rdfs:seeAlso>
-    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
     <iof-av:naturalLanguageDefinition>A potential that is assigned to an object.</iof-av:naturalLanguageDefinition>
+    <iof-av:adaptedFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
     <rdfs:label>Role</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Potential"/>
+    </rdfs:subClassOf>
+    <iof-av:usageNote>As with any 'potential', the existence of a role is dependent on its bearer. A particular meeting room's role may therefore not be transferred to a different room; a different role individual with similar classification would be needed.</iof-av:usageNote>
+  </owl:Class>
+  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalArtefact">
+    <iof-av:usageNote>The superclass of 'physical artefact' is not 'inanimate physical object', in order to allow for artificially made organisms.</iof-av:usageNote>
+    <iof-av:usageNote>A typical RDL includes classes that represent industrial item types, such as equipment, devices, assemblies, buildings, and products, among other elements. This class is suitable as the top node in a taxonomy of such classes.</iof-av:usageNote>
+    <iof-av:primitiveRationale>To give a precise account of "making" goes beyond the scope of IDO. An account would engage notions on which there is no clear consensus, including intentional notions of intended purpose, and of goal-directed action; of permanence and integrity; etc. There is an abundance of edge cases for "physical artefact".</iof-av:primitiveRationale>
+    <iof-av:naturalLanguageDefinition>A 'physical object' that has been created as the result of deliberate activity.</iof-av:naturalLanguageDefinition>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</iof-av:isPrimitive>
+    <skos:example>a pressure transmitter, a process plant, a wrench, a computer.</skos:example>
+    <rdfs:label>PhysicalArtefact</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Instant">
@@ -210,7 +229,6 @@
     >true</iof-av:isPrimitive>
     <skos:example>A wall, a fluid stream, a welder, a printed manual, a seafloor.</skos:example>
     <iof-av:primitiveRationale>A precise account of what it means to be a physical object is beyond the scope of IDO. There is no obvious consensus on the notion of "material".</iof-av:primitiveRationale>
-    <rdfs:seeAlso>ISO 15926-2:2003 'materialized_physical_object'</rdfs:seeAlso>
     <iof-av:usageNote>Installed software is considered a physical object.</iof-av:usageNote>
     <rdfs:seeAlso>ISO 15926-2:2003 'physical_object'</rdfs:seeAlso>
     <rdfs:subClassOf>
@@ -246,10 +264,11 @@
     >true</iof-av:isPrimitive>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Function">
+    <iof-av:adaptedFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    <iof-av:primitiveRationale>Making the notion of meeting a requirement fully precise is beyond the scope of IDO.</iof-av:primitiveRationale>
     <iof-av:usageNote>The typical 'function' of a hammer is realized when the hammer participates as the tool in a successful nail-driving activity. If the hammer has multiple functions, such as extracting nails using a claw or shaping objects with a ball, each function should be represented with a distinct individual.</iof-av:usageNote>
     <iof-av:naturalLanguageDefinition>A capability that meets a design requirement.</iof-av:naturalLanguageDefinition>
     <rdfs:label>Function</rdfs:label>
-    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
     <rdfs:seeAlso>
@@ -259,12 +278,10 @@
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
     </rdfs:subClassOf>
     <rdfs:seeAlso>ISO 15926-2:2003 'functional_physical_object'</rdfs:seeAlso>
-    <iof-av:primitiveRationale>Making the notion of purpose, or "existence for being", fully precise is beyond the scope of IDO.</iof-av:primitiveRationale>
     <skos:example>The function of a motor to apply a specified torque to a shaft.</skos:example>
-    <rdfs:comment>Inspired by the BFO class "function" (BFO_0000034).</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/MaterialCompositionQuality">
-    <iof-av:primitiveRationale>A precise account of of "chemical properties" is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <iof-av:primitiveRationale>A precise account of chemical properties is beyond the scope of IDO.</iof-av:primitiveRationale>
     <iof-av:naturalLanguageDefinition>A quality that can be characterised in terms of chemical or material properties.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
@@ -277,8 +294,13 @@
     <rdfs:label>Event</rdfs:label>
     <rdfs:comment>An 'event' doesn't need to be temporally connected. For example, several instances of switching on a heater over a week may be represented by a single 'event' individual; it will occupy a non-singular 'instant region'. The details of a singular event part may be modelled by relating the event to 'instant' individuals.</rdfs:comment>
     <rdfs:seeAlso rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#achievement"/>
+    <rdfs:comment>Event is close in meaning to BFO's 'process boundary', and to DOLCE's 'achievement'. Note that BFO's 'process boundary' is a sibling class to 'process', even though the definition annotation states it to be a "temporal part of a process". It's not obvious why the event/process boundary should not have the same participants as the parent activity/process.</rdfs:comment>
     <skos:example>The beginning of a lifting operation, the end of a measurement activity, the midpoint between beginning and end of an activity.</skos:example>
     <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</iof-av:isPrimitive>
+    <rdfs:seeAlso>ISO 15926-2:2003 'event'</rdfs:seeAlso>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom>
@@ -289,29 +311,26 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:comment>Event is close in meaning to BFO's 'process boundary', and to DOLCE's 'achievement'. Note that BFO's 'process boundary' is a sibling class to 'process', even though the definition annotation states it to be a "temporal part of a process". It's not obvious why the event/process boundary shouldn't have the same participants as the parent activity/process.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
-    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >false</iof-av:isPrimitive>
-    <rdfs:seeAlso>ISO 15926-2:2003 'event'</rdfs:seeAlso>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Dependent">
     <rdfs:seeAlso>ISO 15926-2:2003 'property', 'functional_physical_object'</rdfs:seeAlso>
-    <iof-av:primitiveRationale>To provide necessary and sufficient conditions is beyond scope of IDO. Note that the BFO analogue, 'specifically dependent continuant', is defined in terms of the primitive relation 'specifically depends on' (s-depends on), which is not included in IDO.</iof-av:primitiveRationale>
+    <skos:scopeNote>Any 'object' will be the bearer of various 'dependent' entities, but any 'temporal' entity has only an indirect relationship to 'dependent's. This is in line with BFO.</skos:scopeNote>
     <iof-av:adaptedFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
     <skos:altLabel>Dependent Entity</skos:altLabel>
     <rdfs:comment>The class Dependent is closely related to "specifically dependent continuant" in BFO (BFO_0000020).</rdfs:comment>
+    <iof-av:primitiveRationale>Providing necessary and sufficient conditions for dependence is beyond the scope of IDO. Note that the BFO analogue, 'specifically dependent continuant', is defined in terms of the primitive relation 'specifically depends on' (s-depends on), which is not included in IDO.</iof-av:primitiveRationale>
+    <skos:example>The colour of a surface, the temperature of a medium, a technical contact role, the storage-space role of a room.</skos:example>
     <iof-av:naturalLanguageDefinition>An entity that is an inherent quality or realizable potential of an object.</iof-av:naturalLanguageDefinition>
+    <rdfs:seeAlso>
+      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipantQualityQuantifiedAs"/>
+    </rdfs:seeAlso>
+    <iof-av:usageNote>A common need is to relate a measure based on a 'physical quantity' to an 'activity', like average speed to a transport activity. This may not be implemented with an 'average speed' entity that is dependent on the transport. For a suitable representation pattern, see the class 'activity profile' and related resources. A "shortcut" approach may use the relation 'has participant quality quantified as'.</iof-av:usageNote>
     <rdfs:seeAlso>
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/ActivityProfile"/>
     </rdfs:seeAlso>
-    <skos:example>The colour of a surface, the temperature of a medium, a technical contact role.</skos:example>
-    <skos:example>The colour of a surface, the temperature of a medium, the storage-space role of a room.</skos:example>
-    <rdfs:comment>There is no direct analogue to 'dependent' entities in ISO 15926-2:2003. However, ISO 15926-2:2003 'property' and 'functional_physical_object' largely serve the same purpose as, respectively, 'quality' and 'potential'.</rdfs:comment>
     <rdfs:label>Dependent</rdfs:label>
-    <skos:scopeNote>Any 'object' will be the bearer of various 'dependent' entities, but any 'temporal' entity has only an indirect relationship to 'dependent's. This is in line with BFO, but also a common source of confusion. A common need is to relate a measure based on a 'physical quantity' to an 'activity', like average speed to a transport activity; this may not be implemented as an "average speed" dependent entity of the transport. For a suitable representation pattern, see the class 'activity profile' and related resources.</skos:scopeNote>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/IntervalRegion">
     <iof-av:primitiveRationale>(This class could be considered non-primitive, defined in terms of 'temporal region' and each part mapping by 'has temporal extent' to 'interval'.)</iof-av:primitiveRationale>
@@ -331,7 +350,6 @@
     <skos:example>The capability of a motor to generate power, of a pump to generate head and flow. The capability to use a hammer as a paperweight, which is not it's primary capability (function).</skos:example>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74979"/>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/SIO_000112"/>
-    <rdfs:comment>The term 'capability' appears as a class in 6 different OBO Foundry ontologies, with identifiers obo:SIO_000112, obo:MF_0000043, and obo:NCIT_C74979.</rdfs:comment>
     <rdfs:seeAlso>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasCapability"/>
     </rdfs:seeAlso>
@@ -345,6 +363,14 @@
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject">
     <iof-av:usageNote>Artefact types tend to be described primarily in terms of 'function'; for example, the "minimal" definition of a pump would be, "a physical artefact, the function of which is to pump (to be the active participant in a pumping activity)". This kind of definition places no restriction on physical make-up and is suitable for a subclass of 'functional object'. Note that the activity type of 'pumping' is here a precursor to the definition of the physical object type 'pump'. A taxonomy of pump classes should extend from a class 'pump' defined solely in terms of function, as above.</iof-av:usageNote>
+    <iof-av:naturalLanguageDefinition>An 'Object' that provides a required 'Function'.</iof-av:naturalLanguageDefinition>
+    <iof-av:usageNote>Most artefacts are both physical and functional objects as a functional object is any object that has a function.</iof-av:usageNote>
+    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+    <iof-av:usageNote>This class can be used as a root class for functional classification of objects, including physical objects.</iof-av:usageNote>
+    <rdfs:seeAlso>ISO 15926-2:2003 'functional_physical_object'</rdfs:seeAlso>
+    <skos:example>A pump, a hammer, a password.</skos:example>
+    <iof-av:usageNote>Note that it is possible to model without explicitly using this class, as any object that has a function can be inferred to be a functional object.</iof-av:usageNote>
+    <iof-av:usageNote>A "tag", when included in an IDO asset model, should in general have a type that is subclass of both 'functional object' and 'physical artefact'.</iof-av:usageNote>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Function"/>
@@ -353,16 +379,11 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
-    <rdfs:seeAlso>ISO 15926-2:2003 'functional_physical_object'</rdfs:seeAlso>
-    <skos:example>A pump, a hammer, a password.</skos:example>
-    <iof-av:usageNote>A "tag" (see [[term:tag]]), when included in an IDO asset model, should in general have a type that is subclass of both 'functional object' and 'artefact'.</iof-av:usageNote>
-    <iof-av:naturalLanguageDefinition>An 'object' that provides a required 'function'.</iof-av:naturalLanguageDefinition>
     <iof-av:usageNote>A password must be concretized, this is done when it is entered, the password performs the function of unlocking the computer. The password participates in the unlocking process through its concretization.</iof-av:usageNote>
     <rdfs:label>FunctionalObject</rdfs:label>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</iof-av:isPrimitive>
-    <iof-av:semiFormalNaturalLanguageAxiom>If x is a 'functional object', then x is an 'object' that 'has function' some 'function'.</iof-av:semiFormalNaturalLanguageAxiom>
+    <iof-av:semiFormalNaturalLanguageAxiom>If x is a 'functional object', then x is an 'object' that 'has function' some 'Function'.</iof-av:semiFormalNaturalLanguageAxiom>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Scale">
     <skos:example>centimetre, kilogram per minute, degree Celsius, lunar distance, kilo-lines of code</skos:example>
@@ -376,24 +397,23 @@
     >true</iof-av:isPrimitive>
     <skos:scopeNote>Arguably, IDO conflates the notions of "unit of measure" and "scale" in an unhealthy way. While a unit of measure is a definite magnitude, a scale arises from fixing a number range to express multiples of the unit of measure. One may argue that a unit of measure has an implicit scale, obtained by multiplying the unit by any number; this will then allow for undefined or meaningless expressions like "minus 10 Kelvin".</skos:scopeNote>
     <iof-av:naturalLanguageDefinition>A unit of measure that, when paired with a number, unambiguously describes the magnitude of a physical quantity.</iof-av:naturalLanguageDefinition>
-    <iof-av:usageNote>The permissible number range for a scale may be expressed in OWL. Semi-formal example: If 'Celsius' is the 'uom of datum' of x, then any 'datum value' of x is within the range of -273,1 to infinity.</iof-av:usageNote>
+    <iof-av:usageNote>OWL data ranges can capture the acceptable numerical range for a scale. For instance, the 'datum value' of any 'quality datum' that has Celsius as 'datum uom' can be limited to the range from -273.15 upwards to infinity.</iof-av:usageNote>
     <rdfs:label>Scale</rdfs:label>
     <rdfs:seeAlso>ISO 15926-2:2003 'scale'</rdfs:seeAlso>
     <rdfs:seeAlso rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Scale"/>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Person">
+    <iof-av:primitiveRationale>Providing precise semantics of what "human" amounts to is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <iof-av:naturalLanguageDefinition>An organism that is a human.</iof-av:naturalLanguageDefinition>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</iof-av:isPrimitive>
+    <skos:scopeNote>In an RDL, subclasses of 'person' will typically require 'role' restrictions to be considered fully explicit. For example, 'maintenance engineer' will be a subclass of 'person', as every engineer is a person. To capture what a maintenance engineer does, a role restriction can say that any member is the bearer of an engineering role, and what the role amounts to will be represented by the kinds of activities that count as realizations of the role.</skos:scopeNote>
+    <skos:example>A human being.</skos:example>
     <rdfs:seeAlso>ISO 15926-2:2003 'class_of_person'</rdfs:seeAlso>
+    <rdfs:label>Person</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Organism"/>
     </rdfs:subClassOf>
-    <skos:example>A human being.</skos:example>
-    <iof-av:naturalLanguageDefinition>An organism that is a human.</iof-av:naturalLanguageDefinition>
-    <iof-av:primitiveRationale>Providing precise semantics of what "human" amounts to is beyond the scope of IDO.</iof-av:primitiveRationale>
-    <rdfs:label>Person</rdfs:label>
-    <iof-av:usageNote>Don't want to use engineer in the example as an engineer is a person with a human role</iof-av:usageNote>
-    <skos:scopeNote>In industry use cases, subclasses of 'person' will typically require role attributions to be considered fully explicit. For example, 'maintenance engineer' is an obvious subclass of 'person', as every engineer is a person; use a 'role' to say what a maintenance engineer does. I.e., such a class may be augmented with a restriction to say that any member is the bearer of an engineering role; what the role amounts to will then be captured by the kinds of activities that count as realizations of the role.</skos:scopeNote>
-    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >true</iof-av:isPrimitive>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Interval">
     <rdfs:seeAlso rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval"/>
@@ -419,10 +439,10 @@
     <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Disposition">
-    <rdfs:comment>An object may not lose a disposition without undergoing physical change.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    <iof-av:primitiveRationale>Making the notion of "appropriate physical environment" fully precise is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <iof-av:primitiveRationale>Making the notion of "dependence on an object's structure" fully precise is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <skos:scopeNote>An object may not lose a disposition without undergoing physical change.</skos:scopeNote>
     <iof-av:naturalLanguageDefinition>A potential whose realization is dependent on an object's structure.</iof-av:naturalLanguageDefinition>
+    <iof-av:adaptedFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Potential"/>
     </rdfs:subClassOf>
@@ -431,16 +451,15 @@
     <rdfs:seeAlso>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasDisposition"/>
     </rdfs:seeAlso>
-    <rdfs:comment>Inspired by the BFO class 'disposition' (BFO_0000016).</rdfs:comment>
     <skos:example>The disposition of a steel bar to corrode, the disposition of a gasket to leak. The disposition to overflow a memory buffer.</skos:example>
     <rdfs:label>Disposition</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Organization">
-    <iof-av:usageNote>Adapted from IOF.</iof-av:usageNote>
     <iof-av:primitiveRationale>A comprehensive definition of the notion of organization is beyond the scope of IDO (it would determine which kinds of aggregations of people, and which kinds of roles, are appropriate for organizations).</iof-av:primitiveRationale>
     <iof-av:naturalLanguageDefinition>An object comprising one or more persons who identify by some name and pursue a common set of plans and objectives.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
+    <iof-av:adaptedFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Organization"/>
     <skos:example>A standards body, a service team, a workgroup, a company</skos:example>
     <rdfs:seeAlso>ISO 15926-2:2003 'class_of_organization'</rdfs:seeAlso>
     <rdfs:label>Organization</rdfs:label>
@@ -460,9 +479,9 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject">
-    <iof-av:usageNote>A common application of 'information object' is in representing facts about the vocabulary of the ontology itself. The OWL facility of "punning" treats OWL classes and properties as OWL individuals, enabling OWL object properties to be applied to them. In use cases that involve punning, the SKOS vocabulary is recommended to be used: the SKOS notions of 'concept', 'concept scheme', and 'collection' should be represented as subclasses of 'information object'.</iof-av:usageNote>
     <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
-    <iof-av:primitiveRationale>The definition implicitly calls on the BFO notion of generic dependence, as captured in BFO's 'generically dependent continuant', for which IDO doesn't have an analogue.</iof-av:primitiveRationale>
+    <iof-av:usageNote>A common application of 'information object' is in representing facts about the vocabulary of the ontology itself. The OWL facility of "punning" treats OWL classes and properties as OWL individuals, enabling OWL object properties to be applied to them. In use cases that involve punning, the SKOS vocabulary is recommended to be used, with the SKOS classes 'concept', 'concept scheme', and 'collection'  as subclasses of 'information object'.</iof-av:usageNote>
+    <iof-av:primitiveRationale>The notion of aboutness is not defined.</iof-av:primitiveRationale>
     <iof-av:naturalLanguageDefinition>An object that captures information about something.</iof-av:naturalLanguageDefinition>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     <rdfs:seeAlso>ISO 15926-2:2003 'class_of_information_object'</rdfs:seeAlso>
@@ -508,7 +527,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/ShapeQuality">
-    <iof-av:primitiveRationale>A precise account of of "spatial properties" is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <iof-av:primitiveRationale>A precise account of geometries is beyond the scope of IDO.</iof-av:primitiveRationale>
     <iof-av:naturalLanguageDefinition>A quality that can be characterised in terms of geometry.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
@@ -528,13 +547,11 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/PhaseQuality">
-    <iof-av:primitiveRationale>A precise account of of "material phase" is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <iof-av:primitiveRationale>A precise account of material phase is beyond the scope of IDO.</iof-av:primitiveRationale>
     <iof-av:naturalLanguageDefinition>A 'quality' that can be characterised in terms of material phase.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
     <skos:example>The liquid quality of an amount of molten steel, the solid quality of a steel gasket.</skos:example>
-    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >true</owl:deprecated>
     <rdfs:label>PhaseQuality</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
   </owl:Class>
@@ -554,8 +571,8 @@
     >true</iof-av:isPrimitive>
     <skos:example>10 volts, high (of pressure), low (of temperature), category 3 (as used to rate the strength 'quality' of a storm), 3 MB (a file size), qualifications, grades.</skos:example>
     <skos:scopeNote>Introduce subclasses of 'quality datum' in RDL to distinguish categories of data, such as nominal versus measured values.</skos:scopeNote>
-    <iof-av:primitiveRationale>A precise account of the notion of representation of magnitudes is beyond scope of IDO.</iof-av:primitiveRationale>
     <rdfs:label>QualityDatum</rdfs:label>
+    <iof-av:primitiveRationale>A precise account of the  representation of magnitudes is beyond the scope of IDO.</iof-av:primitiveRationale>
     <iof-av:usageNote>Quantification may be on nominal, ordinal, and other scales.</iof-av:usageNote>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
     <iof-av:naturalLanguageDefinition>An information object that quantifies a quality.</iof-av:naturalLanguageDefinition>
@@ -585,10 +602,10 @@
     <skos:scopeNote>Locations such as countries and cities are also considered sites.</skos:scopeNote>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
     <iof-av:naturalLanguageDefinition>A location determined in relation to one or more physical objects.</iof-av:naturalLanguageDefinition>
-    <rdfs:comment>This class is inspired by the BFO/Information Artefact Ontology class BFO_0000029 'site'.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Location"/>
     </rdfs:subClassOf>
+    <rdfs:comment>This class is inspired by the BFO class 'site'.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Actual">
     <iof-av:primitiveRationale>The notion of concrete implementation, of providing an actual item to serve a design, is not defined. An explication should be given in terms of systems engineering practices.</iof-av:primitiveRationale>
@@ -602,6 +619,9 @@
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/ActivityProfile">
     <iof-av:usageNote>Typically, a physical quantity of a participant, such as a "pressure" individual, is selected, and the "pressure profile" of the activity is introduced. The relation 'profile of quality' links to that pressure quality individual that defines (is the basis for abstraction to) the activity profile. By means of the relation 'profile quantity datum', the activity profile can be related to 'quantity datum' individuals, to which aggregation can be applied, giving a basis for classification of the activity profile; for example, as a "rising pressure" activity.</iof-av:usageNote>
     <rdfs:comment>The name "ActivityProfile"  has been chosen because lis:Activity corresponds to BFO's 'process'.</rdfs:comment>
+    <iof-av:primitiveRationale>A precise account of the notion of selective abstraction is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <skos:example>The BFO 2.0 reference guide provides good examples, like "constant speed profile", "acceleration profile", and "irregular beat profile".</skos:example>
+    <iof-av:naturalLanguageDefinition>An activity obtained by "selective abstraction" to just that part of an activity that consists in varying or maintaining a specified 'quality' of a participant.</iof-av:naturalLanguageDefinition>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
@@ -610,9 +630,6 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <iof-av:primitiveRationale>A precise account of the notion of selective abstraction is beyond the scope of IDO.</iof-av:primitiveRationale>
-    <skos:example>The BFO 2.0 reference guide provides good examples, like "constant speed profile", "acceleration profile", and "irregular beat profile".</skos:example>
-    <iof-av:naturalLanguageDefinition>An activity obtained by "selective abstraction" to just that part of an activity that consists in varying or maintaining a specified 'quality' of a participant.</iof-av:naturalLanguageDefinition>
     <skos:example>An 'activity profile' of an 'activity' involving rotating equipment, instantiating a class "100 revolutions per minute".</skos:example>
     <iof-av:adaptedFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
     <rdfs:label>ActivityProfile</rdfs:label>
@@ -623,32 +640,30 @@
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal">
     <iof-av:primitiveRationale>A comprehensive account of time, and of the unfolding of events in time, is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <iof-av:naturalLanguageDefinition>An entity that is part of time or takes place in time.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
-    <iof-av:naturalLanguageDefinition>An entity that is part of time or takes place in time.</iof-av:naturalLanguageDefinition>
-    <rdfs:comment>In ISO 15926-2:2003, Activity is not a supertype of Event; in BFO, 'process' is not a supertype of 'process boundary'. This may indicate that 'event' in IDO should in fact not be a subclass of 'activity'.</rdfs:comment>
+    <skos:example>A moment in time, a period of time, an activity or process, a beginning, a closing event.</skos:example>
     <skos:altLabel>Temporal Entity</skos:altLabel>
     <rdfs:seeAlso rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant"/>
-    <skos:example>A moment in time, a period of time, an activity or process, a beginning, a closing event.</skos:example>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
     <rdfs:label>Temporal</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Potential">
     <owl:disjointWith rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
     <skos:example>The sealing function of a gasket, the disposition of a steel bar to corrode.</skos:example>
+    <iof-av:usageNote>Use OWL property chains to enforce constraints on how the bearer needs to participate in order for an activity to count as a realization.</iof-av:usageNote>
+    <iof-av:adaptedFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
-    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
     <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Dependent"/>
     <iof-av:primitiveRationale>The necessary condition for being a 'potential' is that activity type and participation type are provided. It is however not clear what sufficient conditions would consist in, as these would at least involve a notion of successful execution for the relevant activities, which goes beyond the scope of IDO.</iof-av:primitiveRationale>
     <skos:altLabel>Realizable Entity</skos:altLabel>
     <rdfs:label>Potential</rdfs:label>
     <iof-av:naturalLanguageDefinition>A dependent entity that can potentially be realised through participation in an activity.</iof-av:naturalLanguageDefinition>
-    <rdfs:comment>Use OWL property chains to enforce constraints on how the bearer needs to participate in order for an activity to count as a realization.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Phase">
-    <skos:example>A solid object, a liquid object, a gaseous object.</skos:example>
-    <iof-av:usageNote>The class 'phase' serves as an ultimate "book-keeping" superclass for a taxonomy of phases.  It carries no distinguishing constraints, since any physical object will have phase.</iof-av:usageNote>
+    <iof-av:usageNote>An RDL can include classes that categorise individuals according to material phase. This class is suitable as the top node of such a taxonomy.</iof-av:usageNote>
     <iof-av:usageNote>Definition from Oxford English Dictionary.</iof-av:usageNote>
     <rdfs:label>Phase</rdfs:label>
     <rdfs:subClassOf>
@@ -660,35 +675,24 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <iof-av:naturalLanguageDefinition>A physical object with a distinct and homogeneous form.</iof-av:naturalLanguageDefinition>
+    <skos:example>Solid object, liquid object, gaseous object.</skos:example>
     <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
     <rdfs:seeAlso>ISO 15926-2:2003 'phase'</rdfs:seeAlso>
     <iof-av:primitiveRationale>The semantics of phases is beyond the scope of IDO.</iof-av:primitiveRationale>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
   </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Artefact">
-    <skos:example>a pressure transmitter, a process plant, a wrench, a computer.</skos:example>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
-    <iof-av:usageNote>The superclass of 'artefact' is not 'inanimate physical object', in order to allow for artificially made organisms as 'artefact's.</iof-av:usageNote>
-    <iof-av:naturalLanguageDefinition>A 'physical object' that has been created as the result of deliberate activity.</iof-av:naturalLanguageDefinition>
-    <rdfs:label>Artefact</rdfs:label>
-    <iof-av:usageNote>In IDO, the term 'artefact' is reserved for physical objects, on the consideration that any information object will be a made entity.</iof-av:usageNote>
-    <iof-av:usageNote>This is an appropriate superclass "hook" for building a hierarchy of industrial item types, including types of equipment, devices, assemblies, buildings, and products.</iof-av:usageNote>
-    <iof-av:primitiveRationale>To give a precise account of "making" goes beyond the scope of IDO. An account would engage notions on which there is no clear consensus, including intentional notions of intended purpose, and of goal-directed action; of permanence and integrity; etc. There is an abundance of edge cases for "artefact".</iof-av:primitiveRationale>
-    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >true</iof-av:isPrimitive>
-  </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/System">
     <iof-av:usageNote>Most industrial assets are both 'system' and 'inanimate physical object'. When modelling, e.g., a pump system, that system will be an 'inanimate physical object', with the pump part related to the pump system by 'has functional part'. The domain and range restrictions on 'has functional part' then imply that the pump system has type 'system', and the pump has type 'functional object'.</iof-av:usageNote>
+    <iof-av:naturalLanguageDefinition>A 'functional object' with one or more functional parts whose functions contribute to its function.</iof-av:naturalLanguageDefinition>
     <rdfs:seeAlso>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/functionalPartOf"/>
     </rdfs:seeAlso>
+    <iof-av:primitiveRationale>A precise account of the nature of dependency between the function of a system, as a whole, and the functions of its parts is beyond the scope of IDO.</iof-av:primitiveRationale>
     <skos:example>An electrical network, an HVAC system, a pumping system, a compressor.</skos:example>
     <rdfs:label>System</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject"/>
-    <iof-av:primitiveRationale>A precise account of the nature of dependency between the function of a system, as a whole, and the functions of its parts is (likely) beyond the scope of IDO.</iof-av:primitiveRationale>
     <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/ssn/System"/>
-    <iof-av:naturalLanguageDefinition>A 'functional object' with one or more functional parts whose functions contribute to the function of the system.</iof-av:naturalLanguageDefinition>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject"/>
@@ -707,7 +711,6 @@
     <skos:example>The cube-shaped region extending 1 metre in each direction from origo, the line extending 10 metres from origo along the z axis, two points with coordinates on a two-dimensional plane; the location of a container at 10:00 AM.</skos:example>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
-    <iof-av:usageNote>The extent of a 'spatial location' may be given either in terms of a spatial frame of reference, for instance with coordinates, or by position relative to material entities at a point in time.</iof-av:usageNote>
     <iof-av:naturalLanguageDefinition>A location defined relative to a spatial reference system.</iof-av:naturalLanguageDefinition>
     <skos:scopeNote>The position of a 'spatial location' is fixed (relative to the frame of reference); it is not dependent on changing positions of 'physical object's.</skos:scopeNote>
     <rdfs:label>SpatialLocation</rdfs:label>
@@ -760,7 +763,7 @@
     >true</iof-av:isPrimitive>
   </owl:Class>
   <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Interest">
-    <iof-av:primitiveRationale>Accounting for the notion of (mental) attitude is beyond the scope of IDO.</iof-av:primitiveRationale>
+    <iof-av:primitiveRationale>Accounting for  (mental) attitudes of value is beyond the scope of IDO.</iof-av:primitiveRationale>
     <iof-av:naturalLanguageDefinition>A potential, the realization of which is of value for the bearer.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
@@ -808,6 +811,7 @@
     </rdfs:subPropertyOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs">
+    <iof-av:usageNote>The range of 'quality quantified as' is 'quality datum', which includes data that do not follow the "unit of measure with value" pattern. Examples are colours and chemical composition categories.</iof-av:usageNote>
     <iof-av:naturalLanguageDefinition>If x is a 'quality quantified as' y, then x is an 'quality' that is 'represented in' the 'quality datum' y.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</iof-av:isPrimitive>
@@ -823,7 +827,6 @@
     <rdfs:subPropertyOf>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/representedIn"/>
     </rdfs:subPropertyOf>
-    <iof-av:usageNote>The range of 'quality quantified as' is 'quality datum', which includes data that don't follow the "unit of measure with value" pattern. Examples are colours and chemical composition categories.</iof-av:usageNote>
     <skos:example>The nominal outer diameter of a pipe is 324 mm, the measured temperature of a boiler is 150 degrees Celsius, the colour of a surface is 'red'.</skos:example>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/createdBy">
@@ -1065,13 +1068,14 @@
     <rdfs:comment>Intuitively, 'profile quantity datum' should only point to quantity data recorded while the activity is taking place. This can not be enforced with OWL restrictions on the relation (it would require a "diamond" pattern). However, with a suitable date or time data property value restriction, an individual activity can constrain related quantity data.</rdfs:comment>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasQualityQuantifiedAs">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/representedIn"/>
-    </rdfs:subPropertyOf>
     <owl:propertyChainAxiom rdf:parseType="Collection">
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality"/>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs"/>
     </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/representedIn"/>
+    </rdfs:subPropertyOf>
+    <iof-av:usageNote>This relation is suitable as the top node in a taxonomy of "shortcut" relations that relate objects directly to quality datums, leaving the quality implicit.</iof-av:usageNote>
     <rdfs:label>hasQualityQuantifiedAs</rdfs:label>
     <iof-av:naturalLanguageDefinition>If x 'has quality quantified as' y, then x is an 'object', and y is a 'quality datum' that 'quantifies quality' a 'quality' of x.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
@@ -1082,7 +1086,6 @@
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQualityOf"/>
     </rdfs:seeAlso>
     <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
-    <iof-av:usageNote>This is an informally "abstract" superproperty of "shortcut" relations that relate objects directly to quality datums, leaving the quality implicit.</iof-av:usageNote>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/ends">
     <iof-av:usageNote>For annotations, see the inverse relation 'has ending'.</iof-av:usageNote>
@@ -1201,11 +1204,11 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipantQualityQuantifiedAs">
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QualityDatum"/>
-    <iof-av:usageNote>Suitable as a superproperty for properties that assign aggregate datums to activities, to assign average, maximum, or minimum quantification datums.</iof-av:usageNote>
     <iof-av:primitiveRationale>The notion of "during" used here goes beyond OWL expressivity.</iof-av:primitiveRationale>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
     <iof-av:naturalLanguageDefinition>If x 'has participant quality quantified as' y, then x is an 'activity', y is a 'quality datum', and at a time within (inclusive) the duration of x, y 'quantifies quality' a 'quality' of a participant in x.</iof-av:naturalLanguageDefinition>
+    <iof-av:usageNote>This relation is suitable as the top node in a taxonomy of relations that assign aggregate datums to activities.</iof-av:usageNote>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQualityOfParticipantIn"/>
     <skos:example>Pressure of a stream during a pumping activity, the voltage provided to a motor during a test run.</skos:example>
     <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
@@ -1214,19 +1217,18 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasActiveParticipant">
     <iof-av:usageNote>With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a pump's primary function is realized in pumping activities, but only provided the pump is actually doing the pumping, acting as an "agent" or "subject".</iof-av:usageNote>
-    <iof-av:usageNote>This is a covering relation for participation that involves acting on other participants.</iof-av:usageNote>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label>hasActiveParticipant</rdfs:label>
+    <iof-av:primitiveRationale>The distinction between active and participation participation is primitive.</iof-av:primitiveRationale>
+    <iof-av:naturalLanguageDefinition>If x 'has active participant' y, then x is an active participant in y.</iof-av:naturalLanguageDefinition>
+    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</iof-av:isPrimitive>
+    <skos:example>A hammer is the tool in a nail-driving activity, a pressure transmitter outputs data in a monitoring activity, a maintenance engineer replaces an instrument in a repair activity, a light sensor controls the level of illumination.</skos:example>
     <rdfs:seeAlso>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/activeParticipantIn"/>
     </rdfs:seeAlso>
-    <iof-av:primitiveRationale>The distinction between active and participation participation is primitive.</iof-av:primitiveRationale>
-    <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >true</iof-av:isPrimitive>
-    <iof-av:naturalLanguageDefinition>If x 'has active participant' y, then x is an active participant in y.</iof-av:naturalLanguageDefinition>
-    <skos:example>A hammer is the tool in a nail-driving activity, a pressure transmitter outputs data in a monitoring activity, a maintenance engineer replaces an instrument in a repair activity, a light sensor controls the level of illumination.</skos:example>
+    <rdfs:label>hasActiveParticipant</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+    </rdfs:subPropertyOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/connectedTo">
     <rdfs:label>connectedTo</rdfs:label>
@@ -1244,10 +1246,13 @@
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasFunctionalPart">
     <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/partOf"/>
+    <iof-av:usageNote>Note that, for physical objects, 'has functional part' is a specialization of 'has arranged part'.</iof-av:usageNote>
     <iof-av:primitiveRationale>The notion of "contributing function" is not fully accounted for in IDO.</iof-av:primitiveRationale>
     <iof-av:naturalLanguageDefinition>If x 'has functional part' y, then x is a 'system' of which y is a part, and y has one or more functions that contribute to the function of x.</iof-av:naturalLanguageDefinition>
+    <iof-av:usageNote>'has functional part' provides a compact way of modeling that is not expressive enough to model multiple functional breakdowns. Note that modeling 'has part' directly between Function/Disposition instances gives a higher flexibility and precision, in particular when objects have multiple functions or dispositions.</iof-av:usageNote>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
+    <iof-av:usageNote>If 'has part' relationship is modeled between Function/Disposition instances, 'has functional part' can be inferred between the objects that are bearers of the respective functions/dispositions if the corresponding rules are implemented.</iof-av:usageNote>
     <iof-av:usageNote>'has functional part' is used to represent the functional break-down of a system. Where x is a functional part of a system y, the realisation of one or more functions of x contributes to the performance of y.</iof-av:usageNote>
     <rdfs:label>hasFunctionalPart</rdfs:label>
     <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/System"/>
@@ -1263,7 +1268,6 @@
     </rdfs:seeAlso>
     <rdfs:label>potentialOf</rdfs:label>
     <rdfs:comment>This relation is used in the property chain for 'has participant', for inferring participation in a temporal entity (typically, an activity).</rdfs:comment>
-    <rdfs:comment>Generic relation from a 'potential' to the bearer (or, for the less common cases of multiply dependent realizable entities, to the bearers).</rdfs:comment>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential"/>
     </owl:inverseOf>
@@ -1277,7 +1281,6 @@
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/capabilityOf"/>
     </rdfs:seeAlso>
     <rdfs:label>hasCapability</rdfs:label>
-    <rdfs:comment>Inspired by the introduction of the class 'capability' in recent works by Barry Smith, this relation complements 'has disposition' and 'has function'.</rdfs:comment>
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
     <rdfs:subPropertyOf>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasDisposition"/>
@@ -1310,8 +1313,8 @@
     <rdfs:label>isAbout</rdfs:label>
     <skos:example>A regulation describes a procedure, a datum quantifies a quality, a nameplate provides basic information about a pressure vessel, a log file traces quantity values during an activity.</skos:example>
     <iof-av:primitiveRationale>A comprehensive account of aboutness is beyond the scope of IDO.</iof-av:primitiveRationale>
-    <skos:scopeNote>The 'is about' relation is intended as a superrelation for the broad range of relations between information objects and entities, including describing, naming, characterisation, and evaluation.</skos:scopeNote>
     <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+    <skos:scopeNote>This relation is suitable as the top node in a taxonomy of relations between information objects and entities, including describing, naming, characterisation, and evaluation.</skos:scopeNote>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/participantIn">
     <iof-av:usageNote>For annotations, see the inverse relation 'has participant'.</iof-av:usageNote>
@@ -1429,9 +1432,9 @@
     <iof-av:usageNote>An asset model with 'implements' relationships supports compatibility checks for implementing objects, to uncover possible violations of requirements.  This is requires a transformation of the asset model, as follows: replace each 'implements'/'implementedBy' relationship with identity (owl:sameAs), and replace classifications as 'specified' or 'actual' with just 'object' for the participant individuals.  Any semantic inconsistency between the the specified object and the implementing object may then be discovered by OWL reasoning.</iof-av:usageNote>
     <iof-av:explanatoryNote>The domain and range restrictions to disjunct classes 'actual' and 'specified' prevent chains of 'implements' relationships.</iof-av:explanatoryNote>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/implementedBy"/>
+    <skos:scopeNote>The 'implements' relation is central to the intended use of IDO. It allows for a record of different individuals being installed or otherwise serving as a specified object over time. Typically, a serial-numbered physical artefact is installed as a "specification" individual (a "tag") at one time, and later replaced with another serial-numbered physical artefact. The 'implements' relation carries semantic restrictions only to ensure no object is both Actual and Specified. No further constraints are given, to allow 'implements' relationships even where restrictions on the specification object are inconsistent with those on the implementing (installed) object.</skos:scopeNote>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
-    <skos:scopeNote>The 'implements' relation is central to the intended use of IDO. It allows for a record of different individuals being installed or otherwise serving as a specified object over time. Typically, a serial-numbered artefact is installed as a "specification" individual (a "tag") at one time, and later replaced with another serial-numbered artefact. The 'implements' relation carries semantic restrictions only to ensure no object is both Actual and Specified. No further constraints are given, to allow 'implements' relationships even where restrictions on the specification object are inconsistent with those on the implementing (installed) object.</skos:scopeNote>
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Specified"/>
     <skos:example>Pump P-101 is a tag, and ACME pumps with serial numbers 457636 and 457711 implement (have been installed as) this pump.</skos:example>
     <iof-av:naturalLanguageDefinition>If x 'implements' y, then x is a 'specified' entity, y is an 'actual' entity, and at some time, x is the same individual as y.</iof-av:naturalLanguageDefinition>
@@ -1440,7 +1443,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasTemporalExtent">
     <iof-av:naturalLanguageDefinition>If x 'has temporal extent' y, then x is a 'temporal' entity, and y is a temporal region which is the temporal extent of x.</iof-av:naturalLanguageDefinition>
-    <skos:example>A well drilling activity takes place in a 20-hour interval, a control system is switched on at 10:00.</skos:example>
+    <skos:example>A well drilling activity takes place in a 20-hour interval, a control system is switched on at 10:00 AM.</skos:example>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/temporalExtentOf"/>
     <rdfs:subPropertyOf>
       <owl:SymmetricProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo"/>
@@ -1495,28 +1498,28 @@
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
     <iof-av:primitiveRationale>The notion of participation is primitive.</iof-av:primitiveRationale>
-    <owl:propertyChainAxiom rdf:parseType="Collection">
-      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/realizes"/>
-      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/potentialOf"/>
-    </owl:propertyChainAxiom>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/participatesIn"/>
     <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
+    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    <rdfs:comment>A property chain axiom secures that a participant in part of an activity participates in the activity as a whole.</rdfs:comment>
     <owl:propertyChainAxiom rdf:parseType="Collection">
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityPart"/>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
     </owl:propertyChainAxiom>
-    <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-    <rdfs:comment>A property chain axiom secures that a participant in part of an activity participates in the activity as a whole.</rdfs:comment>
     <skos:example>A pump participates in (a) pumping (activity), an electric transformer participates in voltage conversion, a stream of water participates in dilution, a bolt participates in a connection.</skos:example>
     <iof-av:naturalLanguageDefinition>If x 'has participant' y, then x is an 'activity', and y is an 'object' that participates in x.</iof-av:naturalLanguageDefinition>
     <iof-av:usageNote>A property chain axiom secures that when a realizable (a 'disposition' or 'role') is 'realized in' an activity, the activity has the bearer as a participant.</iof-av:usageNote>
+    <rdfs:seeAlso>ISO 15926-2:2003 'participation'</rdfs:seeAlso>
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/realizes"/>
+      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/potentialOf"/>
+    </owl:propertyChainAxiom>
     <owl:propertyChainAxiom rdf:parseType="Collection">
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/profileOfQuality"/>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/qualityOf"/>
     </owl:propertyChainAxiom>
-    <rdfs:seeAlso>ISO 15926-2:2003 'participation'</rdfs:seeAlso>
     <rdfs:label>hasParticipant</rdfs:label>
     <iof-av:usageNote>A property chain axiom secures that when an activity has a 'profile quantity datum', the bearer of the quantity is a participant in the activity.</iof-av:usageNote>
   </owl:ObjectProperty>
@@ -1593,8 +1596,8 @@
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Compound"/>
-    <iof-av:usageNote>This is a hook for sub-properties to assist with representation of concepts associated with, e.g., recyclability.</iof-av:usageNote>
     <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
+    <iof-av:usageNote>An RDL can include parthood relations that identify parts by their materials, supporting recyclability efforts and similar use cases.  This relation is suitable as the top node of a taxonomy of such relations. These include "reinforced with material"  or "has a matrix with material" which cannot be aligned with  lis:hasAssembledPart or lis:hasArrangedPart.</iof-av:usageNote>
     <skos:example>A laptop cover has aluminium and plastic material parts.</skos:example>
     <rdfs:label>hasMaterialPart</rdfs:label>
     <iof-av:primitiveRationale>The reference in the definition to some 'material composition quality' possessed by the part can not be captured in OWL.</iof-av:primitiveRationale>
@@ -1631,12 +1634,10 @@
     >true</iof-av:isPrimitive>
     <iof-av:naturalLanguageDefinition>If x 'has potential' y, then x is an 'object', and y is a 'potential' that is dependent on x.</iof-av:naturalLanguageDefinition>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/potentialOf"/>
-    <rdfs:comment>Generic relation for assigning  'potential' entities (typically, dispositions or roles) to bearers.</rdfs:comment>
     <iof-av:primitiveRationale>The relation of dependence is not defined in IDO.</iof-av:primitiveRationale>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasInterest">
     <skos:example>An intention to start a process, a plan to modify a plant, an approval of a certification.</skos:example>
-    <rdfs:seeAlso>ISO 15926-2:2003 'lifecycle_stage'</rdfs:seeAlso>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -1645,12 +1646,12 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <rdfs:seeAlso>ISO 15926-2:2003 'lifecycle_stage'</rdfs:seeAlso>
     <iof-av:naturalLanguageDefinition>x 'has interest' y if and only if x is an 'organization' or 'organism', x 'has potential' y, and y is an 'interest'.</iof-av:naturalLanguageDefinition>
     <rdfs:comment>Note, the use of "potential" in the definition does not imply "not actual", only "not necessarily actual".</rdfs:comment>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</iof-av:isPrimitive>
     <rdfs:label>hasInterest</rdfs:label>
-    <iof-av:explanatoryNote>The relation of interest receives a related, but different treatment in Merrell, et al., "Capabilities" (cf. annotations on 'capability'), p. 14: "We take the 'has an interest in' relation to be primitive, ... [T]he domain of this relation is: all organisms and groups of organisms, ... [T]he range is process in BFO terms, specifically all processes that are the realizations of dispositions." With IDO, the range is instead a 'potential'; this allows for interests that are not realized.</iof-av:explanatoryNote>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/interestOf"/>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
     <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential"/>
@@ -1733,25 +1734,24 @@
     </owl:inverseOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasPassiveParticipant">
-    <iof-av:usageNote>This is a covering relation for passive participation, i.e., being acted on by other participants in an activity, or playing a supporting role.</iof-av:usageNote>
-    <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/passiveParticipantIn"/>
+    <iof-av:usageNote>With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a bolt is a passive participant in a bolt-driving activity, where its disposition to enter a threaded hole is realized (distinct from the bolt's function, which is realized in a subsequent activity of holding pieces together).</iof-av:usageNote>
     <iof-av:primitiveRationale>The distinction between active and participation participation is primitive.</iof-av:primitiveRationale>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+    <iof-av:naturalLanguageDefinition>if x 'has passive participant' y, then x is a passive participant in y.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
-    <rdfs:label>hasPassiveParticipant</rdfs:label>
     <skos:example>A metal plate is perforated in a drilling activity, a volume of liquid is heated in a heat transmission activity, a loading ramp is the location of an offloading activity, a fluid medium is pumped, a piece of metal is shaped, a stream of data is filtered.</skos:example>
-    <iof-av:naturalLanguageDefinition>if x 'has passive participant' y, then x is a passive participant in y.</iof-av:naturalLanguageDefinition>
-    <iof-av:usageNote>With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a bolt is a passive participant in a bolt-driving activity, where its disposition to enter a threaded hole is realized (distinct from the bolt's function, which is realized in a subsequent activity of holding pieces together).</iof-av:usageNote>
+    <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/passiveParticipantIn"/>
+    <rdfs:label>hasPassiveParticipant</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/concretizes">
     <rdfs:label>concretizes</rdfs:label>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizedBy"/>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000164"/>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+    <iof-av:usageNote>There are two main, and very different, uses of 'concretizes' for an information object y.  (1) The information object is made concrete in printed or electronic copies. Each copy will have patterns of ink or configurations of electrons that map to y: a quality of appropriate similarity.  (2) The information object is made concrete by a performance according to the specification given by y.</iof-av:usageNote>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
-    <skos:scopeNote>Inspired by BFO's "concretizes". The constraints on 'concretizes' in IDO closely matches that employed in BFO-ISO (obo:BFO_0000059), and not the RO or the IAO (obo:RO_0000059).</skos:scopeNote>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -1760,11 +1760,10 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <skos:scopeNote>Inspired by BFO's "concretizes". The constraints on 'concretizes' in IDO closely matches that employed in BFO-ISO (obo:BFO_0000059), and not the RO or the IAO (obo:RO_0000059).</skos:scopeNote>
     <skos:example>A report is produced as paper copies, a spreadsheet document is shown on a computer screen, a plan is carried out, a device operates according to a functional specification, a software program is executed.</skos:example>
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-    <iof-av:usageNote>There are two main, and very different, uses of 'concretizes' for an information object y.  (1) The information object is made concrete in printed or electronic copies. Each copy will have patterns of ink or configurations of electrons that map to y: a quality of appropriate similarity.  (2) The information object is made concrete by a performance according to the specification given by y. A 'process profile' of the performance will map to the pattern of y in an appropriate way.</iof-av:usageNote>
     <iof-av:primitiveRationale>A comprehensive definition of what it means to be a copy, or manifest a pattern, is beyond the scope of IDO. The definition given here is clearly incomplete.</iof-av:primitiveRationale>
-    <iof-av:usageNote>The relation of concretization is under-documented, especially when it comes to concretization as entities to be realized in activities, or activities themselves; we follow the latter, as is done in BFO-ISO, where the performance of a musical piece is the concretization. Other BFO documentation says the intention to perform is the concretization.  The current annotations and axioms in IDO represent a best effort, but may need to be changed.</iof-av:usageNote>
     <iof-av:naturalLanguageDefinition>If x 'concretizes' y, then y is an 'information object', and x is a 'physical object' copy of y, or an 'activity' performance of y.</iof-av:naturalLanguageDefinition>
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
   </owl:ObjectProperty>
@@ -1944,11 +1943,11 @@
     <skos:example>A temperature activity profile of a heating process represents just that part of the process which is a variation in temperature.</skos:example>
     <iof-av:naturalLanguageDefinition>x is a 'profile of quality' y if and only if x is an 'activity profile' that varies only in the 'quality' y.</iof-av:naturalLanguageDefinition>
     <skos:scopeNote>'profile of quality' should be considered a functional property (i.e., an 'activity profile' is a profile of only a single 'quality'). However, in OWL, an object property with property chain restrictions may not be combined with cardinality restrictions. Correct cardinalities must therefore be maintained with rules external to the ontology.</skos:scopeNote>
-    <iof-av:usageNote>A property chain axiom ensures that a quantity datum individual associated with an activity profile by 'profile quantity datum' quantifies a quality which defines the activity profile by 'profile of quality'.</iof-av:usageNote>
     <owl:propertyChainAxiom rdf:parseType="Collection">
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/profileQuantityDatum"/>
       <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality"/>
     </owl:propertyChainAxiom>
+    <iof-av:usageNote>A property chain axiom ensures that a quantity datum individual associated with an activity profile by 'profile quantity datum' quantifies a quality which defines the activity profile by 'profile of quality'.</iof-av:usageNote>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</iof-av:isPrimitive>
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
@@ -1998,7 +1997,7 @@
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantityValue">
     <iof-av:usageNote>When introducing shortcut properties as subproperties, annotations should be provided to explain the intended quantity type, any quantification type (e.g., measured, nominal, etc.), and unit of measure.</iof-av:usageNote>
-    <iof-av:usageNote>This relation is "abstract" (in the object-orientation sense of the word), a "hook": it serves only as a parent for specialised data properties. It serves as a super-property for "shortcut" relations that combine a quality, and a unit of measure into a simple data property.</iof-av:usageNote>
+    <iof-av:usageNote>This relation is suitable as the top node in a taxonomy of "shortcut" relations that combine quality and unit of measure into a single, simple data property.</iof-av:usageNote>
     <iof-av:naturalLanguageDefinition>If x has 'quality quantity value' y, then x is an 'object', and y is a literal value that quantifies a quality of x.</iof-av:naturalLanguageDefinition>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >false</iof-av:isPrimitive>
@@ -2038,14 +2037,13 @@
     <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal"/>
     <skos:example>A vessel is emptied before inspection, a valve is opened before draining of a pipeline, firmware is installed before the equipment begins to operate.</skos:example>
     <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal"/>
-    <rdfs:comment>This relation is introduced for the DL profile as a top relation for various temporal relations between activities (only).</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label>occursRelativeTo</rdfs:label>
     <iof-av:primitiveRationale>The notion of relative location in time is introduced with this relation.</iof-av:primitiveRationale>
     <rdfs:seeAlso>ISO 15926-2:2003 'temporal_sequence'</rdfs:seeAlso>
-    <iof-av:usageNote>This relation is "abstract" (in the object-orientation sense of the word) in that it serves only as a parent relation to specialised relations of relative temporal location.</iof-av:usageNote>
     <iof-av:isPrimitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</iof-av:isPrimitive>
+    <iof-av:usageNote>This relation is suitable as the top node in a taxonomy of relations of relative temporal location.</iof-av:usageNote>
   </owl:SymmetricProperty>
   <owl:FunctionalProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM">
     <rdfs:seeAlso rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"/>
@@ -2083,10 +2081,6 @@
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/hasSpatialExtent">
     <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000210"/>
-    <iof-av:primitiveRationale>The notion of  "spatial extension" of an object is not fully defined.</iof-av:primitiveRationale>
-    <rdfs:seeAlso rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#exact-location"/>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/SpatialLocation"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/locatedRelativeTo"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -2095,6 +2089,10 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
+    <iof-av:primitiveRationale>The notion of  "spatial extension" of an object is not fully defined.</iof-av:primitiveRationale>
+    <rdfs:seeAlso rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#exact-location"/>
+    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/SpatialLocation"/>
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/locatedRelativeTo"/>
     <rdfs:label>hasSpatialExtent</rdfs:label>
     <rdfs:seeAlso rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/spatialExtentOf"/>
     <iof-av:usageNote>The 'site' of an object will occupy different 'spatial location's over time if the location and size of the object changes.</iof-av:usageNote>
@@ -2105,52 +2103,44 @@
     <skos:example>The volume occupied by an process skid, the volume occupied by a volume of flammable gas.</skos:example>
   </owl:FunctionalProperty>
   <owl:Axiom>
-    <rdfs:comment>unitCode is a property in the Schema.org vocabulary.</rdfs:comment>
-    <owl:annotatedTarget>https://schema.org/unitCode</owl:annotatedTarget>
+    <rdfs:comment>'instant' is defined in OWL Time as "A temporal entity with zero extent or duration".</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.w3.org/2006/time#Instant"/>
     <owl:annotatedProperty>
       <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
         <rdfs:label>see also</rdfs:label>
         <rdfs:isDefinedBy>http://www.w3.org/2000/01/rdf-schema#</rdfs:isDefinedBy>
       </owl:AnnotationProperty>
     </owl:annotatedProperty>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Instant"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>RO_0002536 is 'measurement property has unit', an annotation property in the Relations Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002536"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000051 is 'has part', in the Information Artefact Ontology and in the Relations Ontology (in the latter, BFO_0000051 appears as a subrelation of 'overlaps').</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
+    <rdfs:comment>Organization is a class in the IOF Core ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Organization"/>
+    <owl:annotatedProperty>
+      <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">
+        <rdfs:subPropertyOf>
+          <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+            <rdfs:label>source</rdfs:label>
+            <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
+          </owl:AnnotationProperty>
+        </rdfs:subPropertyOf>
+        <rdfs:label>adaptedFrom</rdfs:label>
+        <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
+      </owl:AnnotationProperty>
+    </owl:annotatedProperty>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Organization"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>From the DOLCE description of 'endurant': "The main characteristic of endurants is that all of them are independent essential wholes. ..."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>IAO_0000136 is 'is about', in the Information Artifact Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/isAbout"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>From the DOLCE description of 'perdurant': "Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states. ..."</rdfs:comment>
+    <rdfs:comment>From the DOLCE description of 'perdurant': "Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states."</rdfs:comment>
     <owl:annotatedTarget rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>This class is included for coverage of ISO 15926-2:2003, which has 'phase', but many classes don't have a need for it.</rdfs:comment>
-    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
-    >true</owl:annotatedTarget>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#deprecated"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhaseQuality"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>IAO_0000032 is 'scalar measurement datum', a class in the Information Artifact Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/transformedFrom">
     <rdfs:subPropertyOf>
@@ -2163,43 +2153,86 @@
     <rdfs:comment>This annotation property is used for stating that the current resource originates from another resource by transformation.</rdfs:comment>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000217 is 'spatially projects onto at all times'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000217"/>
+    <rdfs:comment>IAO_0000109 is 'measurement datum', a class in the Information Artifact Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/siteOf"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QualityDatum"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000054 is 'has realization' in BFO-ISO, and 'realized in' in the Relations Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+    <rdfs:comment>BFO_0000224 is 'has last instant' in BFO-ISO, defined for 'temporal region' (differently from 'has ending' in IDO, defined for 'activity').</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000224"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasEnding"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>RO_0001015 is 'location of' in the Relations Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/contains"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>RO_0000081 is 'role of' in the Relations Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/roleOf"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000164 is 'concretizes at all times', from BFO-ISO</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000164"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizes"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource">
-    <rdfs:subPropertyOf>
-      <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
-        <rdfs:label>source</rdfs:label>
-        <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
-      </owl:AnnotationProperty>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
     <rdfs:label>directSource</rdfs:label>
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <skos:scopeNote>In IDO, ’information object’ is represented as a subclass of ’object’. According to the BFO literature, and applied in the Information Artifact Ontology and other BFO compliant ontologies, information artifacts are (multiply) dependent objects. a /sibling/ class to ’independent continuant’ rather than a subclass, as used in IDO.</skos:scopeNote>
-    <rdfs:comment>BFO_0000004 is 'independent continuant'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    <rdfs:comment>obo:BFO_0000148 is 'zero-dimensional temporal region'</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InstantRegion"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/pav/previousVersion">
     <rdfs:label>previousVersion</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000171 is 'located in at some time' in BFO-ISO. This relation has domain and range restricted to 'independent continuant' and not 'spatial region', meaning it's a relation between entities that are material objects or determined by material objects, only.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+    <rdfs:comment>QUDT explains 'quantity kind' as, "any observable property that can be measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/locatedRelativeTo"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <iof-av:explanatoryNote>In ISO 15926-2:2003, the term "quality or characteristic" is used to explain what the entity type 'property' represents (clause 5.2.26.5, notes 1 and 2). Note 2 reads, "The types of characteristic or quality, such as temperature or density, are instances of class_of_property."</iof-av:explanatoryNote>
+    <owl:annotatedTarget>ISO 15926-2:2003 'property'</owl:annotatedTarget>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>IAO_0000004 is the data property 'has measurement value', in the Information Artifact Ontology.</rdfs:comment>
+    <rdfs:comment>BFO-ISO declares no data properties.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>QUDT describes 'quantity value' as follows. "A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>SSN offers the following as an example for ActuatableProperty, a subclass of Property: "A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/ActuatableProperty"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000031 is 'generically dependent continuant'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
     <rdfs:label>example</rdfs:label>
@@ -2216,16 +2249,28 @@
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>RO_0002170 is 'connected to', in the Relations Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002170"/>
+    <rdfs:comment>BFO_0000057 is 'has participant at some time'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/connectedTo"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>'instant' is defined in OWL Time as "A temporal entity with zero extent or duration".</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    <rdfs:comment>SSN defines 'Property' as follows (2017): "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/Property"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Instant"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>DOLCE defines 'physical-quality' as, "A quality inherent in a physical endurant."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000197 is 'inheres in'</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasDisposition"/>
   </owl:Axiom>
   <owl:Axiom>
     <rdfs:comment>BFO_0000003 is 'occurrent'.</rdfs:comment>
@@ -2234,72 +2279,79 @@
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>RO_0002536 is 'measurement property has unit', an annotation property in the Relations Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002536"/>
+    <skos:scopeNote>In IDO, ’information object’ is represented as a subclass of ’object’. According to the BFO literature, and applied in the Information Artifact Ontology and other BFO compliant ontologies, information artifacts are (multiply) dependent objects. a /sibling/ class to ’independent continuant’ rather than a subclass, as used in IDO.</skos:scopeNote>
+    <rdfs:comment>BFO_0000004 is 'independent continuant'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>The SSN offers the following as an example for ObservableProperty, a subclass of Property: "The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/ObservableProperty"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000117 is 'has occurrent part' in BFO-ISO. This relation has 'occurrent' as domain and range, where the IDO 'has activity part' is restricted to just 'activity'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityPart"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>The SSN offers the following as an example for ActuatableProperty, a subclass of Property: "A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty." Note that IDO doesn't provide an analogue.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/ActuatableProperty"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
     <rdfs:label>rights</rdfs:label>
     <rdfs:isDefinedBy>http://purl.org/dc/elements/1.1/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+    <rdfs:label>scopeNote</rdfs:label>
+    <rdfs:isDefinedBy>http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    <rdfs:comment>Note to clarify meaning or use of an ontology resource.</rdfs:comment>
+  </owl:AnnotationProperty>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Dependent"/>
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
   <owl:Axiom>
-    <rdfs:comment>ISO 15926-2:2003, p. 112, states, "A stream is a physical_object that is material or energy moving along a path, where the path is the basis of identity and may be constrained. The stream consists of the temporal parts of those things that are in the stream whilst they are in it."</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'stream'</owl:annotatedTarget>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Stream"/>
+    <rdfs:comment>BFO_0000016 is 'disposition'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    <owl:annotatedProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Disposition"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000199 is 'occupies temporal region'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
+    <rdfs:comment>RO_0000085 is 'has function'</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasTemporalExtent"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasFunction"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000164 is 'concretizes at all times', from BFO-ISO</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000164"/>
+    <rdfs:comment>BFO_0000200 is 'occupies spatiotemporal region'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000200"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizes"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000117 is 'has occurrent part' in BFO-ISO.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasSpatiotemporalExtent"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive">
     <rdfs:label>isPrimitive</rdfs:label>
-    <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/&gt;</rdfs:isDefinedBy>
+    <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000006 is 'spatial region'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+    <rdfs:comment>BFO_0000217 is 'spatially projects onto at all times'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000217"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/SpatialLocation"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/siteOf"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>hasSimpleResult is a data property in the Semantic Sensor Networks ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/hasSimpleResult"/>
+    <rdfs:comment>SIO_000112 is 'capability'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SIO_000112"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000066 is 'occurs in'</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/occursIn"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>OM2 explains 'quantity' as, "A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>RO_0000053 is 'has characteristic', which in the Relation Ontology also has 'quality of' as a subrelation.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/pav/contributedBy">
     <rdfs:subPropertyOf>
@@ -2312,38 +2364,44 @@
     <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>RO_0001015 is 'location of' in the Relations Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+    <rdfs:comment>UO_0000000 is 'unit', a class in the OBO Units of measure ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/contains"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/UnitOfMeasure"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>IAO_0000030 is 'information content entity', a subclass of BFO_0000031 'generically dependent continuant' defined in the Information Artifact Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/pav/lastUpdateOn">
     <rdfs:label>lastUpdateOn</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000057 is 'has participant at some time'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    <rdfs:comment>RO_0000059 is 'concretizes', from the Relations Ontology; also used in the Information Artifact Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizes"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>OM 2 describes 'measure' as follows. "A measure combines a number to a unit of measure. For example, '3 m' is a measure."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
+    <rdfs:comment>BFO_0000171 is 'located in at some time' in BFO-ISO. This relation has domain and range restricted to 'independent continuant' and not 'spatial region', meaning it's a relation between entities that are material objects or determined by material objects, only.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/locatedRelativeTo"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>numericValue is a data property in QUDT.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/numericValue"/>
+    <rdfs:comment>IAO_0000033 is 'directive information entity' in the Information Artifact Ontology. See, e.g., subtypes 'action specification', 'objective specification', 'plan specification'; and specifically, 'software' as a subtype of 'plan specification'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000016 is 'disposition'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Disposition"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasInterest"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/mergedFrom">
     <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/originatesFrom"/>
@@ -2351,16 +2409,28 @@
     <rdfs:comment>This annotation property is used for stating that the current resource originates from one or several other resources by merging.</rdfs:comment>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000144 is 'process profile'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-    <owl:annotatedProperty>
-      <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
-        <rdfs:label>adaptedFrom</rdfs:label>
-        <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
-      </owl:AnnotationProperty>
-    </owl:annotatedProperty>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ActivityProfile"/>
+    <rdfs:comment>IAO_0000039 is 'has measurement unit label' in the Information Artifact Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>RO_0000091 is 'has disposition'</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasDisposition"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>IAO_0000032 is 'scalar measurement datum', a class in the Information Artifact Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>ISO 15926-2:2003, 5.2.10.2 provides an example as, "A car manufacturing activity causes the beginning of a car".</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'class_of_cause_of_beginning_of_class_of_individual'</owl:annotatedTarget>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/creates"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">
     <rdfs:subPropertyOf>
@@ -2374,38 +2444,74 @@
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000202 is 'temporal interval'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000202"/>
+    <rdfs:comment>BFO_0000006 is 'spatial region'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Interval"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/SpatialLocation"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000034 is 'function'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    <rdfs:comment>ISO 15926-2:2003, 4.7.17 states, "... activities are considered to be space-time extensions in which other individuals and events participate."</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'activity'</owl:annotatedTarget>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Function"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/pav/hasEarlierVersion">
     <rdfs:label>hasEarlierVersion</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>ISO 15926-2:2003, p. 132 provides an example as, "A car manufacturing activity causes the beginning of a car".</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'class_of_cause_of_beginning_of_class_of_individual'</owl:annotatedTarget>
+    <rdfs:comment>BFO_0000210 is 'occupies spatial region at some time' in BFO-ISO. This relation has domain restricted to 'independent continuant' and not 'spatial region', and range to 'spatial region', meaning it's a relation from entities that are material objects or determined by material objects, to spatial regions determined independently of material objects.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000210"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/creates"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/locatedRelativeTo"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>The SSN definition of 'Property' (2017): "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    <rdfs:comment>BFO_0000222 is 'has first instant' in BFO-ISO, defined for 'temporal region' (differently from 'has beginning' in IDO, defined for 'activity').</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000222"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasBeginning"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>'interval' is defined in OWL Time as "A temporal entity with an extent or duration".</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Interval"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>ISO 15926-2:2003, p. 110, states, "A functional_physical_object is a physical_object that has functional, rather than material, continuity as its basis for identity. Adjacent temporal parts of a functional_physical_object need not have common matter or energy, provided the matter or energy of each temporal part fulfils the same function."</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'functional_physical_object'</owl:annotatedTarget>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000011 is 'spatiotemporal region'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/SpatiotemporalRegion"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>PATO_0000001 is 'quality'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>IAO_0000417 is 'is quality measured as' of the Information Artefact Ontology. In IDO, the term "quantified" replaces "measured" to support cases where measurement is not involved, as in, e.g., estimates.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+    <rdfs:comment>BFO_0000124 is 'location of at some time' in BFO-ISO.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000124"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/contains"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000144 is 'process profile'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    <owl:annotatedProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ActivityProfile"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000034 is 'function'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    <owl:annotatedProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Function"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
     <rdfs:label>modified</rdfs:label>
@@ -2416,64 +2522,10 @@
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>RO_0000057 is 'has participant'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    <rdfs:comment>hasSimpleResult is a data property in the Semantic Sensor Networks ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/hasSimpleResult"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>MF_0000043 is 'capability'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>'interval' is defined in OWL Time as "A temporal entity with an extent or duration".</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.w3.org/2006/time#Interval"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Interval"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>QUDT provides the following subclasses of 'scale': 'Enumeration scale', 'Interval scale', 'Nominal scale', 'Ordinal scale', 'Ratio scale'. Note that the notion of nominal scales diverges in being a coding scheme, with numbers not implying relative magnitude.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/Scale"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Scale"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000124 is 'location of at some time' in BFO-ISO.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000124"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/contains"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000063 is 'precedes' in BFO-ISO.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/before"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>Derived from the relation 'lifecycle_stage' of ISO 15926-2:2003, which has the attribute pair 'interest'/'interested'; 'class_of_lifecycle_stage' provides examples of specialisations as, "EXAMPLE Planned, required, expected, and proposed can be represented by instances of [class_of_lifecycle_stage]." Following this, 'interest of' is a superproperty suitable for various intentional relationships, such as planning, approving, or ordering. With IDO, we restrict interest to 'potential' entities, while in ISO 15926-2:2003 the domain and range are both unrestricted.</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'lifecycle_stage'</owl:annotatedTarget>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasInterest"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>The SSN definition of 'System' (2017): "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other Systems."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/System"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/System"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>IAO_0000039 is 'has measurement unit label' in the Information Artifact Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>IAO_0000033 is 'directive information entity' in the Information Artifact Ontology. See, e.g., subtypes 'action specification', 'objective specification', 'plan specification'; and specifically, 'software' as a subtype of 'plan specification'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasInterest"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
   </owl:Axiom>
   <owl:Axiom>
     <rdfs:comment>PATO_0001018 is 'physical quality', defined in the Information Artifact Ontology as "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." Note that this is distinct from 'physical object quality'; see annotation to lis:Quality.</rdfs:comment>
@@ -2482,95 +2534,60 @@
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000066 is 'occurs in'</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+    <rdfs:comment>BFO_0000008 is 'temporal region'</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/occursIn"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/TemporalRegion"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>From the DOLCE description of 'endurant': "The main characteristic of endurants is that all of them are independent essential wholes. ..."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>The definition is lifted directly from 'feature whole part' of ISO 15926-2:2003.</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'feature_whole_part'</owl:annotatedTarget>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasFeature"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/pav/derivedFrom">
     <rdfs:label>derivedFrom</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <iof-av:explanatoryNote>BFO_0000024 is 'fiat object part'. This is at least very close in meaning to 'feature' as defined in in ISO 15926.</iof-av:explanatoryNote>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    <rdfs:comment>ISO 15926-2:2003, p. 122: "A class_of_inanimate_physical_object is a class_of_arranged\-_individual whose members are not living."</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'class_of_inanimate_physical_object'</owl:annotatedTarget>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Feature"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>ISO 15926-2:2003, subclause 4.7.17 states, "... activities are considered to be space-time extensions in which other individuals and events participate."</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'activity'</owl:annotatedTarget>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>DOLCE defines 'physical-quality' as, "A quality inherent in a physical endurant."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-quality"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>PATO_0001241 is 'physical object quality', defined in the Information Artifact Ontology as "A quality which inheres in a continuant".</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
     <iof-av:usageNote>IDO includes a number of rdfs:comment annotations. Clarify how to reconcile this with the IOF Annotation Property Guide V2.2, which states that "comment MUST NOT be used".</iof-av:usageNote>
     <rdfs:label>comment</rdfs:label>
     <rdfs:isDefinedBy>http://www.w3.org/2000/01/rdf-schema#</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/SpatiotemporalRegion"/>
+      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/TemporalRegion"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000019 is 'quality'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <iof-av:explanatoryNote>BFO_0000040 is 'material entity'.</iof-av:explanatoryNote>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>UO_0000000 is 'unit', a class in the OBO Units of measure ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/UnitOfMeasure"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>SIO_000112 is 'capability'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/SIO_000112"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
+    <rdfs:comment>BFO_0000023 is 'role'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <owl:annotatedProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
     <rdfs:label>description</rdfs:label>
     <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000017 is 'realizable entity'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <rdfs:comment>BFO_0000063 is 'precedes' in BFO-ISO.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Potential"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <iof-av:explanatoryNote>In ISO 15926-2:2003, the term "quality or characteristic" is used to explain what the entity type 'property' represents (clause 5.2.26.5, notes 1 and 2). Note 2 reads, "The types of characteristic or quality, such as temperature or density, are instances of class_of_property."</iof-av:explanatoryNote>
-    <owl:annotatedTarget>ISO 15926-2:2003 'property'</owl:annotatedTarget>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000031 is 'generically dependent continuant'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000024 is 'fiat object part' in BFO-ISO.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasArrangedPart"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/before"/>
   </owl:Axiom>
   <owl:Axiom>
     <rdfs:comment>BFO_0000020 is 'specifically dependent continuant'.</rdfs:comment>
@@ -2579,21 +2596,45 @@
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Dependent"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>OM2 explains 'quantity' as, "A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity"/>
+    <rdfs:comment>BFO_0000054 is 'has realization' in BFO-ISO, and 'realized in' in the Relations Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000011 is 'spatiotemporal region'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+    <rdfs:comment>Derived from the relation 'lifecycle_stage' of ISO 15926-2:2003, which has the attribute pair 'interest'/'interested'; 'class_of_lifecycle_stage' provides examples of specialisations as, "EXAMPLE Planned, required, expected, and proposed can be represented by instances of [class_of_lifecycle_stage]." Following this, 'interest of' is a superproperty suitable for various intentional relationships, such as planning, approving, or ordering. With IDO, we restrict interest to 'potential' entities, while in ISO 15926-2:2003 the domain and range are both unrestricted.</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'lifecycle_stage'</owl:annotatedTarget>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/SpatiotemporalRegion"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasInterest"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000019 is 'quality'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000059 is 'concretizes at some time', from BFO-ISO</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizes"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000062 is 'preceded by' in BFO-ISO.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/after"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
     <rdfs:label>publisher</rdfs:label>
     <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
+  <owl:Axiom>
+    <rdfs:comment>NCIT_C74979 is 'capability'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74979"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
+  </owl:Axiom>
   <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/synonym">
     <rdfs:subPropertyOf>
       <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
@@ -2612,22 +2653,16 @@
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>RO_0000085 is 'has function'</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+    <rdfs:comment>RO_0002170 is 'connected to', in the Relations Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0002170"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasFunction"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/connectedTo"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000059 is 'concretizes at some time', from BFO-ISO</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+    <rdfs:comment>PATO_0001241 is 'physical object quality', defined in the Information Artifact Ontology as "A quality which inheres in a continuant".</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizes"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>IDO asserts that 'physical object' and 'activity' are disjunct classes. In contrast to this, and according to a 4D approach, ISO 15926-2:2003, p. 26, states that "physical_object and activity are not mutually exclusive. A possible_individual can be both".</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'physical_object'</owl:annotatedTarget>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
@@ -2635,16 +2670,46 @@
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000200 is 'occupies spatiotemporal region'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000200"/>
+    <rdfs:comment>numericValue is a data property in QUDT.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/numericValue"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasSpatiotemporalExtent"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>NCIT_C74979 is 'capability'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74979"/>
+    <rdfs:comment>unitCode is a property in the Schema.org vocabulary.</rdfs:comment>
+    <owl:annotatedTarget>https://schema.org/unitCode</owl:annotatedTarget>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumUOM"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000051 is 'has part', in the Information Artifact Ontology and in the Relations Ontology (in the latter, BFO_0000051 appears as a subrelation of 'overlaps').</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>'unit' is a class in the Ontology of units of Measure (OM 2).</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/UnitOfMeasure"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>RO_0000057 is 'has participant'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000117 is 'has occurrent part' in BFO-ISO. This relation has 'occurrent' as domain and range, where the IDO 'has activity part' is restricted to just 'activity'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityPart"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>IAO_0000417 is 'is quality measured as' of the Information Artifact Ontology. In IDO, the term "quantified" replaces "measured" to support cases where measurement is not involved, as in, e.g., estimates.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs"/>
   </owl:Axiom>
   <owl:Axiom>
     <rdfs:comment>BFO_0000183 is 'environs' from BFO</rdfs:comment>
@@ -2653,34 +2718,10 @@
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/siteOf"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>ISO 15926-2:2003, p. 110, states, "A functional_physical_object is a physical_object that has functional, rather than material, continuity as its basis for identity. Adjacent temporal parts of a functional_physical_object need not have common matter or energy, provided the matter or energy of each temporal part fulfils the same function."</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'functional_physical_object'</owl:annotatedTarget>
+    <rdfs:comment>DOLCE describes qualities as follows: "Qualities can be seen as the basic entities we can perceive or measure: shapes, colors, sizes, sounds, smells, as well as weights, lengths, electrical charges... 'Quality' is often used as a synonymous of 'property', but this is not the case in this upper ontology: qualities are particulars, properties are universals.  Qualities inhere to entities: every entity (including qualities themselves) comes with certain qualities, which exist as long as the entity exists."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/FunctionalObject"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000178 is 'has continuant part of at some time' in BFO-ISO.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000038 is 'one-dimensional temporal region' in BFO-ISO.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/IntervalRegion"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>hasNumericalValue is a data property in the Ontology of Units of Measure.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>'unit' is a class in the Ontology of units of Measure (OM 2).</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/UnitOfMeasure"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -2689,28 +2730,10 @@
     <rdfs:comment>Preferred label for the ontology resource.</rdfs:comment>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000224 is 'has last instant' in BFO-ISO, defined for 'temporal region' (differently from 'has ending' in IDO, defined for 'activity').</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000224"/>
+    <rdfs:comment>RO_0000086 is 'has quality' in the Relations Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasEnding"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000197 is 'inheres in'</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasDisposition"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>PATO_0000001 is 'quality'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>RO_0000091 is 'has disposition'</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasDisposition"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="http://purl.org/pav/createdBy">
     <rdfs:subPropertyOf>
@@ -2729,109 +2752,47 @@
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>The definition is lifted directly from 'feature whole part' of ISO 15926-2:2003.</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'feature_whole_part'</owl:annotatedTarget>
+    <rdfs:comment>BFO_0000117 is 'has occurrent part' in BFO-ISO.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasFeature"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>IAO_0000004 is the data property 'has measurement value', in the Information Artefact Ontology.</rdfs:comment>
-    <rdfs:comment>BFO-ISO declares no data properties.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
+    <rdfs:comment>BFO_0000199 is 'occupies temporal region'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000199"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
-  </owl:Axiom>
-  <owl:AllDisjointClasses>
-    <owl:members rdf:parseType="Collection">
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Dependent"/>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Temporal"/>
-    </owl:members>
-  </owl:AllDisjointClasses>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000035 is 'process boundary'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Event"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasTemporalExtent"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000196 is 'bearer of', a more generic relation than 'has potential' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+    <rdfs:comment>SSN offers the following examples for ObservableProperty, a subclass of Property: "The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/ObservableProperty"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>IAO_0000109 is 'measurement datum', a class in the Information Artifact Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <rdfs:comment>BFO_0000202 is 'temporal interval'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000202"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QualityDatum"/>
-  </owl:Axiom>
-  <owl:AllDisjointClasses>
-    <owl:members rdf:parseType="Collection">
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/SpatiotemporalRegion"/>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/TemporalRegion"/>
-    </owl:members>
-  </owl:AllDisjointClasses>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000062 is 'preceded by' in BFO-ISO.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/after"/>
-  </owl:Axiom>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
-    <rdfs:label>issued</rdfs:label>
-    <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
-  </owl:AnnotationProperty>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Interval"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>BFO_0000029 is 'site'</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    <rdfs:comment>IAO_0000136 is 'is about', in the Information Artifact Ontology.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Site"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/isAbout"/>
   </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000008 is 'temporal region'</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/TemporalRegion"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>RO_0000053 is 'has characteristic', which in the Relation Ontology also has 'quality of' as a subrelation.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000222 is 'has first instant' in BFO-ISO, defined for 'temporal region' (differently from 'has beginning' in IDO, defined for 'activity').</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000222"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasBeginning"/>
-  </owl:Axiom>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-    <rdfs:label>license</rdfs:label>
-    <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-    <rdfs:label>title</rdfs:label>
-    <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
-  </owl:AnnotationProperty>
   <owl:Axiom>
     <rdfs:comment>BFO_0000210 is 'occupies spatial region at some time' (from BFO-ISO)</rdfs:comment>
     <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000210"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasSpatialExtent"/>
   </owl:Axiom>
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <rdfs:label>isDefinedBy</rdfs:label>
-    <rdfs:isDefinedBy>http://www.w3.org/2000/01/rdf-schema#</rdfs:isDefinedBy>
-  </owl:AnnotationProperty>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000178 is 'has continuant part of at some time' in BFO-ISO.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPart"/>
+  </owl:Axiom>
   <owl:AllDisjointClasses>
     <owl:members rdf:parseType="Collection">
       <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
@@ -2841,38 +2802,102 @@
     </owl:members>
   </owl:AllDisjointClasses>
   <owl:Axiom>
-    <rdfs:comment>ISO 15926-2:2003, p. 122: "A class_of_inanimate_physical_object is a class_of_arranged\-_individual whose members are not living."</rdfs:comment>
-    <owl:annotatedTarget>ISO 15926-2:2003 'class_of_inanimate_physical_object'</owl:annotatedTarget>
+    <rdfs:comment>BFO_0000017 is 'realizable entity'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <owl:annotatedProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Potential"/>
+  </owl:Axiom>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+    <rdfs:label>issued</rdfs:label>
+    <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
+  </owl:AnnotationProperty>
+  <owl:Axiom>
+    <rdfs:comment>MF_0000043 is 'capability'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InanimatePhysicalObject"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Capability"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000035 is 'process boundary'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Event"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000067 is 'contains process', from RO, where an annotation says the 'editor preferred term' is "site of". There are subtle differences in the range and domain restrictions between BFO's 'environs' and RO's 'contains process': where RO has domain as the broad 'independent continuant' only, BFO has ('site' or 'material entity'); where RO has range as 'occurrent', BFO has ('process' or 'process boundary').</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/siteOf"/>
+  </owl:Axiom>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+    <rdfs:label>license</rdfs:label>
+    <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+    <rdfs:label>title</rdfs:label>
+    <rdfs:isDefinedBy>http://purl.org/dc/terms/</rdfs:isDefinedBy>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <rdfs:label>isDefinedBy</rdfs:label>
+    <rdfs:isDefinedBy>http://www.w3.org/2000/01/rdf-schema#</rdfs:isDefinedBy>
+  </owl:AnnotationProperty>
+  <owl:Axiom>
+    <iof-av:explanatoryNote>BFO_0000040 is 'material entity'.</iof-av:explanatoryNote>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>The SSN definition of 'System' (2017): "System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other Systems."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/System"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>OM 2 describes 'measure' as follows. "A measure combines a number to a unit of measure. For example, '3 m' is a measure."</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">
     <rdfs:label>explanatoryNote</rdfs:label>
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>obo:BFO_0000148 is 'zero-dimensional temporal region'</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+    <rdfs:comment>IDO asserts that 'physical object' and 'activity' are disjunct classes. In contrast to this, and according to a 4D approach, ISO 15926-2:2003, p. 26, states that "physical_object and activity are not mutually exclusive. A possible_individual can be both".</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'physical_object'</owl:annotatedTarget>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InstantRegion"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>QUDT explains 'quantity kind' as, "any observable property that can be measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+    <rdfs:comment>BFO_0000024 is 'fiat object part' in BFO-ISO.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasArrangedPart"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>RO_0000059 is 'concretizes', from the Relations Ontology; also used in the Information Artifact Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+    <rdfs:comment>BFO_0000038 is 'one-dimensional temporal region' in BFO-ISO.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/concretizes"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/IntervalRegion"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>QUDT describes 'quantity value' as follows. "A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit."</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
+    <rdfs:comment>hasNumericalValue is a data property in the Ontology of Units of Measure.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/ScalarQuantityDatum"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/datumValue"/>
+  </owl:Axiom>
+  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/splitFrom">
+    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/originatesFrom"/>
+    <rdfs:label>splitFrom</rdfs:label>
+    <rdfs:comment>This annotation property is used for stating that the current resource originates from another resource by splitting.</rdfs:comment>
+  </owl:AnnotationProperty>
+  <owl:Axiom>
+    <rdfs:comment>BFO_0000029 is 'site'</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Site"/>
   </owl:Axiom>
   <owl:Axiom>
     <rdfs:comment>BFO_0000055 is 'realizes' in BFO-ISO.</rdfs:comment>
@@ -2881,39 +2906,10 @@
     <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/realizes"/>
   </owl:Axiom>
   <owl:Axiom>
-    <rdfs:comment>IAO_0000030 is 'information content entity', a subclass of BFO_0000031 'generically dependent continuant' defined in the Information Artifact Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <rdfs:comment>BFO_0000196 is 'bearer of', a more generic relation than 'has potential' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000023 is 'role'.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
-  </owl:Axiom>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/splitFrom">
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/originatesFrom"/>
-    <rdfs:label>splitFrom</rdfs:label>
-    <rdfs:comment>This annotation property is used for stating that the current resource originates from another resource by splitting.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000210 is 'occupies spatial region at some time' in BFO-ISO. This relation has domain restricted to 'independent continuant' and not 'spatial region', and range to 'spatial region', meaning it's a relation from entities that are material objects or determined by material objects, to spatial regions determined independently of material objects.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000210"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/locatedRelativeTo"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>BFO_0000067 is 'contains process', from RO, where an annotation says the 'editor preferred term' is "site of". There are subtle differences in the range and domain restrictions between BFO's 'environs' and RO's 'contains process': where RO has domain as the broad 'independent continuant' only, BFO has ('site' or 'material entity'); where RO has range as 'occurrent', BFO has ('process' or 'process boundary').</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/siteOf"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <rdfs:comment>RO_0000081 is 'role of' in the Relations Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/roleOf"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasPotential"/>
   </owl:Axiom>
   <owl:AnnotationProperty rdf:about="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
@@ -2921,9 +2917,21 @@
     <rdfs:isDefinedBy>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</rdfs:isDefinedBy>
   </owl:AnnotationProperty>
   <owl:Axiom>
-    <rdfs:comment>RO_0000086 is 'has quality' in the Relations Ontology.</rdfs:comment>
-    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+    <iof-av:explanatoryNote>BFO_0000024 is 'fiat object part'. This is at least very close in meaning to 'feature' as defined in in ISO 15926.</iof-av:explanatoryNote>
+    <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
     <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasQuality"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Feature"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>ISO 15926-2:2003, p. 112, states, "A stream is a physical_object that is material or energy moving along a path, where the path is the basis of identity and may be constrained. The stream consists of the temporal parts of those things that are in the stream whilst they are in it."</rdfs:comment>
+    <owl:annotatedTarget>ISO 15926-2:2003 'stream'</owl:annotatedTarget>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Stream"/>
+  </owl:Axiom>
+  <owl:Axiom>
+    <rdfs:comment>QUDT provides the following subclasses of 'scale': 'Enumeration scale', 'Interval scale', 'Nominal scale', 'Ordinal scale', 'Ratio scale'. Note that the notion of nominal scales diverges in being a coding scheme, with numbers not implying relative magnitude.</rdfs:comment>
+    <owl:annotatedTarget rdf:resource="http://qudt.org/schema/qudt/Scale"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Scale"/>
   </owl:Axiom>
 </rdf:RDF>

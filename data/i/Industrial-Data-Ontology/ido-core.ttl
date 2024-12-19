@@ -19,11 +19,11 @@
 @prefix iof-av: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
 @base <http://rds.posccaesar.org/ontology/lis14/ont/core> .
 
 <http://rds.posccaesar.org/ontology/lis14/ont/core> rdf:type owl:Ontology ;
-                                                     owl:versionIRI <http://rds.posccaesar.org/ontology/lis14/ont/core/3.0> ;
-                                                     owl:imports iof-av: ;
+                                                     owl:versionIRI <http://rds.posccaesar.org/ontology/lis14/ont/core/4.0> ;
                                                      dc:rights "Copyright POSC Caesar Association" ;
                                                      dcterms:contributor <https://orcid.org/0000-0002-5509-8899> ,
                                                                          <https://orcid.org/0000-0002-6228-1317> ,
@@ -34,15 +34,16 @@
                                                      dcterms:creator <https://orcid.org/0000-0002-7167-7321> ;
                                                      dcterms:description "The Industrial Data Ontology is an upper ontology for industrial data, inspired by the ISO 15926-2 data model and Basic Formal Ontology." ;
                                                      dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-                                                     dcterms:modified "2024-03-11"^^xsd:date ;
+                                                     dcterms:modified "2024-11-28"^^xsd:date ;
                                                      dcterms:publisher <https://www.posccaesar.org> ;
                                                      dcterms:title "Industrial Data Ontology" ;
-                                                     pav:hasEarlierVersion <http://rds.posccaesar.org/ontology/lis14/ont/core/1.0> ;
-                                                     pav:lastUpdateOn "2024-03-11T17:13:33Z"^^xsd:dateTime ;
-                                                     pav:previousVersion <http://rds.posccaesar.org/ontology/lis14/ont/core/2.0> ;
+                                                     pav:hasEarlierVersion <http://rds.posccaesar.org/ontology/lis14/ont/core/1.0> ,
+                                                                           <http://rds.posccaesar.org/ontology/lis14/ont/core/2.0> ;
+                                                     pav:lastUpdateOn "2024-11-28T14:33:46Z"^^xsd:dateTime ;
+                                                     pav:previousVersion <http://rds.posccaesar.org/ontology/lis14/ont/core/3.0> ;
                                                      rdfs:comment "The Industrial Data Ontology is an upper ontology for industrial data, inspired by the ISO 15926-2 data model and Basic Formal Ontology." ;
                                                      rdfs:label "Industrial Data Ontology" ;
-                                                     owl:versionInfo "3.0 ISO Committee Draft March 2024" .
+                                                     owl:versionInfo "4.0 Proposed DIS November 2024" .
 
 #################################################################
 #    Annotation properties
@@ -208,6 +209,13 @@ skos:prefLabel rdf:type owl:AnnotationProperty ;
                rdfs:subPropertyOf rdfs:label .
 
 
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty ;
+               rdfs:comment "Note to clarify meaning or use of an ontology resource." ;
+               rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core" ;
+               rdfs:label "scopeNote" .
+
+
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom
 iof-av:adaptedFrom rdf:type owl:AnnotationProperty ;
                    rdfs:isDefinedBy "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" ;
@@ -237,7 +245,7 @@ iof-av:firstOrderLogicDefinition rdf:type owl:AnnotationProperty ;
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive
 iof-av:isPrimitive rdf:type owl:AnnotationProperty ;
-                   rdfs:isDefinedBy "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/>" ;
+                   rdfs:isDefinedBy "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" ;
                    rdfs:label "isPrimitive" .
 
 
@@ -449,8 +457,7 @@ lis:concretizes rdf:type owl:ObjectProperty ;
                 iof-av:isPrimitive "true"^^xsd:boolean ;
                 iof-av:naturalLanguageDefinition "If x 'concretizes' y, then y is an 'information object', and x is a 'physical object' copy of y, or an 'activity' performance of y." ;
                 iof-av:primitiveRationale "A comprehensive definition of what it means to be a copy, or manifest a pattern, is beyond the scope of IDO. The definition given here is clearly incomplete." ;
-                iof-av:usageNote "The relation of concretization is under-documented, especially when it comes to concretization as entities to be realized in activities, or activities themselves; we follow the latter, as is done in BFO-ISO, where the performance of a musical piece is the concretization. Other BFO documentation says the intention to perform is the concretization.  The current annotations and axioms in IDO represent a best effort, but may need to be changed." ,
-                                 "There are two main, and very different, uses of 'concretizes' for an information object y.  (1) The information object is made concrete in printed or electronic copies. Each copy will have patterns of ink or configurations of electrons that map to y: a quality of appropriate similarity.  (2) The information object is made concrete by a performance according to the specification given by y. A 'process profile' of the performance will map to the pattern of y in an appropriate way." .
+                iof-av:usageNote "There are two main, and very different, uses of 'concretizes' for an information object y.  (1) The information object is made concrete in printed or electronic copies. Each copy will have patterns of ink or configurations of electrons that map to y: a quality of appropriate similarity.  (2) The information object is made concrete by a performance according to the specification given by y." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:concretizes ;
@@ -572,7 +579,7 @@ lis:creates rdf:type owl:ObjectProperty ;
    owl:annotatedSource lis:creates ;
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget "ISO 15926-2:2003 'class_of_cause_of_beginning_of_class_of_individual'" ;
-   rdfs:comment "ISO 15926-2:2003, p. 132 provides an example as, \"A car manufacturing activity causes the beginning of a car\"."
+   rdfs:comment "ISO 15926-2:2003, 5.2.10.2 provides an example as, \"A car manufacturing activity causes the beginning of a car\"."
  ] .
 
 
@@ -687,8 +694,7 @@ lis:hasActiveParticipant rdf:type owl:ObjectProperty ;
                          iof-av:isPrimitive "true"^^xsd:boolean ;
                          iof-av:naturalLanguageDefinition "If x 'has active participant' y, then x is an active participant in y." ;
                          iof-av:primitiveRationale "The distinction between active and participation participation is primitive." ;
-                         iof-av:usageNote "This is a covering relation for participation that involves acting on other participants." ,
-                                          "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a pump's primary function is realized in pumping activities, but only provided the pump is actually doing the pumping, acting as an \"agent\" or \"subject\"." .
+                         iof-av:usageNote "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a pump's primary function is realized in pumping activities, but only provided the pump is actually doing the pumping, acting as an \"agent\" or \"subject\"." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/hasActivityBound
@@ -798,7 +804,6 @@ lis:hasBeginning rdf:type owl:ObjectProperty ;
 lis:hasCapability rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf lis:hasDisposition ;
                   rdfs:range lis:Capability ;
-                  rdfs:comment "Inspired by the introduction of the class 'capability' in recent works by Barry Smith, this relation complements 'has disposition' and 'has function'." ;
                   rdfs:label "hasCapability" ;
                   rdfs:seeAlso lis:capabilityOf ;
                   skos:example "A pressure sensor has the capability of being a level sensor, a wall has the capability of noise insulation." ;
@@ -918,7 +923,10 @@ lis:hasFunctionalPart rdf:type owl:ObjectProperty ;
                       iof-av:isPrimitive "true"^^xsd:boolean ;
                       iof-av:naturalLanguageDefinition "If x 'has functional part' y, then x is a 'system' of which y is a part, and y has one or more functions that contribute to the function of x." ;
                       iof-av:primitiveRationale "The notion of \"contributing function\" is not fully accounted for in IDO." ;
-                      iof-av:usageNote "'has functional part' is used to represent the functional break-down of a system. Where x is a functional part of a system y, the realisation of one or more functions of x contributes to the performance of y." .
+                      iof-av:usageNote "'has functional part' is used to represent the functional break-down of a system. Where x is a functional part of a system y, the realisation of one or more functions of x contributes to the performance of y." ,
+                                       "'has functional part' provides a compact way of modeling that is not expressive enough to model multiple functional breakdowns. Note that modeling 'has part' directly between Function/Disposition instances gives a higher flexibility and precision, in particular when objects have multiple functions or dispositions." ,
+                                       "If 'has part' relationship is modeled between Function/Disposition instances, 'has functional part' can be inferred between the objects that are bearers of the respective functions/dispositions if the corresponding rules are implemented." ,
+                                       "Note that, for physical objects, 'has functional part' is a specialization of 'has arranged part'." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/hasInterest
@@ -935,7 +943,6 @@ lis:hasInterest rdf:type owl:ObjectProperty ;
                              lis:interestOf ,
                              "ISO 15926-2:2003 'lifecycle_stage'" ;
                 skos:example "An intention to start a process, a plan to modify a plant, an approval of a certification." ;
-                iof-av:explanatoryNote "The relation of interest receives a related, but different treatment in Merrell, et al., \"Capabilities\" (cf. annotations on 'capability'), p. 14: \"We take the 'has an interest in' relation to be primitive, ... [T]he domain of this relation is: all organisms and groups of organisms, ... [T]he range is process in BFO terms, specifically all processes that are the realizations of dispositions.\" With IDO, the range is instead a 'potential'; this allows for interests that are not realized." ;
                 iof-av:isPrimitive "false"^^xsd:boolean ;
                 iof-av:naturalLanguageDefinition "x 'has interest' y if and only if x is an 'organization' or 'organism', x 'has potential' y, and y is an 'interest'." .
 
@@ -965,7 +972,7 @@ lis:hasMaterialPart rdf:type owl:ObjectProperty ;
                     iof-av:isPrimitive "true"^^xsd:boolean ;
                     iof-av:naturalLanguageDefinition "If x 'has material part' y, then x is a 'physical object', and y is a maximal part of x that has a certain 'material composition quality'." ;
                     iof-av:primitiveRationale "The reference in the definition to some 'material composition quality' possessed by the part can not be captured in OWL." ;
-                    iof-av:usageNote "This is a hook for sub-properties to assist with representation of concepts associated with, e.g., recyclability." .
+                    iof-av:usageNote "An RDL can include parthood relations that identify parts by their materials, supporting recyclability efforts and similar use cases.  This relation is suitable as the top node of a taxonomy of such relations. These include \"reinforced with material\"  or \"has a matrix with material\" which cannot be aligned with  lis:hasAssembledPart or lis:hasArrangedPart." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/hasPart
@@ -989,7 +996,7 @@ lis:hasPart rdf:type owl:ObjectProperty ;
    owl:annotatedSource lis:hasPart ;
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget obo:BFO_0000051 ;
-   rdfs:comment "BFO_0000051 is 'has part', in the Information Artefact Ontology and in the Relations Ontology (in the latter, BFO_0000051 appears as a subrelation of 'overlaps')."
+   rdfs:comment "BFO_0000051 is 'has part', in the Information Artifact Ontology and in the Relations Ontology (in the latter, BFO_0000051 appears as a subrelation of 'overlaps')."
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -1059,7 +1066,7 @@ lis:hasParticipantQualityQuantifiedAs rdf:type owl:ObjectProperty ;
                                       iof-av:isPrimitive "true"^^xsd:boolean ;
                                       iof-av:naturalLanguageDefinition "If x 'has participant quality quantified as' y, then x is an 'activity', y is a 'quality datum', and at a time within (inclusive) the duration of x, y 'quantifies quality' a 'quality' of a participant in x." ;
                                       iof-av:primitiveRationale "The notion of \"during\" used here goes beyond OWL expressivity." ;
-                                      iof-av:usageNote "Suitable as a superproperty for properties that assign aggregate datums to activities, to assign average, maximum, or minimum quantification datums." .
+                                      iof-av:usageNote "This relation is suitable as the top node in a taxonomy of relations that assign aggregate datums to activities." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/hasPassiveParticipant
@@ -1071,8 +1078,7 @@ lis:hasPassiveParticipant rdf:type owl:ObjectProperty ;
                           iof-av:isPrimitive "true"^^xsd:boolean ;
                           iof-av:naturalLanguageDefinition "if x 'has passive participant' y, then x is a passive participant in y." ;
                           iof-av:primitiveRationale "The distinction between active and participation participation is primitive." ;
-                          iof-av:usageNote "This is a covering relation for passive participation, i.e., being acted on by other participants in an activity, or playing a supporting role." ,
-                                           "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a bolt is a passive participant in a bolt-driving activity, where its disposition to enter a threaded hole is realized (distinct from the bolt's function, which is realized in a subsequent activity of holding pieces together)." .
+                          iof-av:usageNote "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a bolt is a passive participant in a bolt-driving activity, where its disposition to enter a threaded hole is realized (distinct from the bolt's function, which is realized in a subsequent activity of holding pieces together)." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/hasPhysicalQuantity
@@ -1091,7 +1097,6 @@ lis:hasPhysicalQuantity rdf:type owl:ObjectProperty ;
 lis:hasPotential rdf:type owl:ObjectProperty ;
                  rdfs:domain lis:Object ;
                  rdfs:range lis:Potential ;
-                 rdfs:comment "Generic relation for assigning  'potential' entities (typically, dispositions or roles) to bearers." ;
                  rdfs:label "hasPotential" ;
                  rdfs:seeAlso obo:BFO_0000196 ,
                               obo:RO_0000053 ,
@@ -1170,7 +1175,7 @@ lis:hasQualityQuantifiedAs rdf:type owl:ObjectProperty ;
                            skos:example "The GeoSPARQL object property geo:hasLength relates (spatial) objects to datums that provide length with number and unit of measure. lis:hasQualityQuantifiedAs is suitable as a superproperty in an alignment with GeoSPARQL data that includes geo:hasLength relationships." ;
                            iof-av:isPrimitive "false"^^xsd:boolean ;
                            iof-av:naturalLanguageDefinition "If x 'has quality quantified as' y, then x is an 'object', and y is a 'quality datum' that 'quantifies quality' a 'quality' of x." ;
-                           iof-av:usageNote "This is an informally \"abstract\" superproperty of \"shortcut\" relations that relate objects directly to quality datums, leaving the quality implicit." .
+                           iof-av:usageNote "This relation is suitable as the top node in a taxonomy of \"shortcut\" relations that relate objects directly to quality datums, leaving the quality implicit." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/hasResident
@@ -1268,7 +1273,7 @@ lis:hasTemporalExtent rdf:type owl:ObjectProperty ;
                       rdfs:label "hasTemporalExtent" ;
                       rdfs:seeAlso obo:BFO_0000199 ,
                                    lis:temporalExtentOf ;
-                      skos:example "A well drilling activity takes place in a 20-hour interval, a control system is switched on at 10:00." ;
+                      skos:example "A well drilling activity takes place in a 20-hour interval, a control system is switched on at 10:00 AM." ;
                       iof-av:isPrimitive "true"^^xsd:boolean ;
                       iof-av:naturalLanguageDefinition "If x 'has temporal extent' y, then x is a 'temporal' entity, and y is a temporal region which is the temporal extent of x." ;
                       iof-av:primitiveRationale "The notion of temporal extension is primitive." .
@@ -1309,7 +1314,7 @@ lis:implements rdf:type owl:ObjectProperty ;
                rdfs:label "implements" ;
                rdfs:seeAlso lis:implementedBy ;
                skos:example "Pump P-101 is a tag, and ACME pumps with serial numbers 457636 and 457711 implement (have been installed as) this pump." ;
-               skos:scopeNote "The 'implements' relation is central to the intended use of IDO. It allows for a record of different individuals being installed or otherwise serving as a specified object over time. Typically, a serial-numbered artefact is installed as a \"specification\" individual (a \"tag\") at one time, and later replaced with another serial-numbered artefact. The 'implements' relation carries semantic restrictions only to ensure no object is both Actual and Specified. No further constraints are given, to allow 'implements' relationships even where restrictions on the specification object are inconsistent with those on the implementing (installed) object." ;
+               skos:scopeNote "The 'implements' relation is central to the intended use of IDO. It allows for a record of different individuals being installed or otherwise serving as a specified object over time. Typically, a serial-numbered physical artefact is installed as a \"specification\" individual (a \"tag\") at one time, and later replaced with another serial-numbered physical artefact. The 'implements' relation carries semantic restrictions only to ensure no object is both Actual and Specified. No further constraints are given, to allow 'implements' relationships even where restrictions on the specification object are inconsistent with those on the implementing (installed) object." ;
                iof-av:explanatoryNote "The domain and range restrictions to disjunct classes 'actual' and 'specified' prevent chains of 'implements' relationships." ;
                iof-av:isPrimitive "true"^^xsd:boolean ;
                iof-av:naturalLanguageDefinition "If x 'implements' y, then x is a 'specified' entity, y is an 'actual' entity, and at some time, x is the same individual as y." ;
@@ -1337,7 +1342,7 @@ lis:isAbout rdf:type owl:ObjectProperty ;
                          lis:representedIn ,
                          "ISO 15926-2:2003 'representation_of_thing'" ;
             skos:example "A regulation describes a procedure, a datum quantifies a quality, a nameplate provides basic information about a pressure vessel, a log file traces quantity values during an activity." ;
-            skos:scopeNote "The 'is about' relation is intended as a superrelation for the broad range of relations between information objects and entities, including describing, naming, characterisation, and evaluation." ;
+            skos:scopeNote "This relation is suitable as the top node in a taxonomy of relations between information objects and entities, including describing, naming, characterisation, and evaluation." ;
             iof-av:isPrimitive "true"^^xsd:boolean ;
             iof-av:naturalLanguageDefinition "If x 'is about' y, then x is an 'information object' of relevance to y." ;
             iof-av:primitiveRationale "A comprehensive account of aboutness is beyond the scope of IDO." .
@@ -1413,14 +1418,13 @@ lis:occursRelativeTo rdf:type owl:ObjectProperty ,
                               owl:SymmetricProperty ;
                      rdfs:domain lis:Temporal ;
                      rdfs:range lis:Temporal ;
-                     rdfs:comment "This relation is introduced for the DL profile as a top relation for various temporal relations between activities (only)." ;
                      rdfs:label "occursRelativeTo" ;
                      rdfs:seeAlso "ISO 15926-2:2003 'temporal_sequence'" ;
                      skos:example "A vessel is emptied before inspection, a valve is opened before draining of a pipeline, firmware is installed before the equipment begins to operate." ;
                      iof-av:isPrimitive "true"^^xsd:boolean ;
                      iof-av:naturalLanguageDefinition "If x 'occurs relative to' y, then x and y are 'temporal' entities, with temporal location." ;
                      iof-av:primitiveRationale "The notion of relative location in time is introduced with this relation." ;
-                     iof-av:usageNote "This relation is \"abstract\" (in the object-orientation sense of the word) in that it serves only as a parent relation to specialised relations of relative temporal location." .
+                     iof-av:usageNote "This relation is suitable as the top node in a taxonomy of relations of relative temporal location." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/partOf
@@ -1464,8 +1468,7 @@ lis:physicalQuantityOf rdf:type owl:ObjectProperty ;
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/potentialOf
 lis:potentialOf rdf:type owl:ObjectProperty ;
                 owl:inverseOf lis:hasPotential ;
-                rdfs:comment "Generic relation from a 'potential' to the bearer (or, for the less common cases of multiply dependent realizable entities, to the bearers)." ,
-                             "This relation is used in the property chain for 'has participant', for inferring participation in a temporal entity (typically, an activity)." ;
+                rdfs:comment "This relation is used in the property chain for 'has participant', for inferring participation in a temporal entity (typically, an activity)." ;
                 rdfs:label "potentialOf" ;
                 rdfs:seeAlso lis:hasPotential ;
                 iof-av:isPrimitive "false"^^xsd:boolean ;
@@ -1542,13 +1545,13 @@ lis:qualityQuantifiedAs rdf:type owl:ObjectProperty ;
                         skos:example "The nominal outer diameter of a pipe is 324 mm, the measured temperature of a boiler is 150 degrees Celsius, the colour of a surface is 'red'." ;
                         iof-av:isPrimitive "false"^^xsd:boolean ;
                         iof-av:naturalLanguageDefinition "If x is a 'quality quantified as' y, then x is an 'quality' that is 'represented in' the 'quality datum' y." ;
-                        iof-av:usageNote "The range of 'quality quantified as' is 'quality datum', which includes data that don't follow the \"unit of measure with value\" pattern. Examples are colours and chemical composition categories." .
+                        iof-av:usageNote "The range of 'quality quantified as' is 'quality datum', which includes data that do not follow the \"unit of measure with value\" pattern. Examples are colours and chemical composition categories." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:qualityQuantifiedAs ;
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget obo:IAO_0000417 ;
-   rdfs:comment "IAO_0000417 is 'is quality measured as' of the Information Artefact Ontology. In IDO, the term \"quantified\" replaces \"measured\" to support cases where measurement is not involved, as in, e.g., estimates."
+   rdfs:comment "IAO_0000417 is 'is quality measured as' of the Information Artifact Ontology. In IDO, the term \"quantified\" replaces \"measured\" to support cases where measurement is not involved, as in, e.g., estimates."
  ] .
 
 
@@ -1796,7 +1799,7 @@ lis:datumValue rdf:type owl:DatatypeProperty ,
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget obo:IAO_0000004 ;
    rdfs:comment "BFO-ISO declares no data properties." ,
-                "IAO_0000004 is the data property 'has measurement value', in the Information Artefact Ontology."
+                "IAO_0000004 is the data property 'has measurement value', in the Information Artifact Ontology."
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -1828,7 +1831,7 @@ lis:qualityQuantityValue rdf:type owl:DatatypeProperty ;
                          skos:example "Mass in kilograms, pressure in barg." ;
                          iof-av:isPrimitive "false"^^xsd:boolean ;
                          iof-av:naturalLanguageDefinition "If x has 'quality quantity value' y, then x is an 'object', and y is a literal value that quantifies a quality of x." ;
-                         iof-av:usageNote "This relation is \"abstract\" (in the object-orientation sense of the word), a \"hook\": it serves only as a parent for specialised data properties. It serves as a super-property for \"shortcut\" relations that combine a quality, and a unit of measure into a simple data property." ,
+                         iof-av:usageNote "This relation is suitable as the top node in a taxonomy of \"shortcut\" relations that combine quality and unit of measure into a single, simple data property." ,
                                           "When introducing shortcut properties as subproperties, annotations should be provided to explain the intended quantity type, any quantification type (e.g., measured, nominal, etc.), and unit of measure." .
 
 
@@ -1859,7 +1862,7 @@ lis:Activity rdf:type owl:Class ;
    owl:annotatedSource lis:Activity ;
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget "ISO 15926-2:2003 'activity'" ;
-   rdfs:comment "ISO 15926-2:2003, subclause 4.7.17 states, \"... activities are considered to be space-time extensions in which other individuals and events participate.\""
+   rdfs:comment "ISO 15926-2:2003, 4.7.17 states, \"... activities are considered to be space-time extensions in which other individuals and events participate.\""
  ] .
 
 
@@ -1899,23 +1902,9 @@ lis:Actual rdf:type owl:Class ;
            iof-av:primitiveRationale "The notion of concrete implementation, of providing an actual item to serve a design, is not defined. An explication should be given in terms of systems engineering practices." .
 
 
-###  http://rds.posccaesar.org/ontology/lis14/rdl/Artefact
-lis:Artefact rdf:type owl:Class ;
-             rdfs:subClassOf lis:PhysicalObject ;
-             rdfs:label "Artefact" ;
-             skos:example "a pressure transmitter, a process plant, a wrench, a computer." ;
-             iof-av:isPrimitive "true"^^xsd:boolean ;
-             iof-av:naturalLanguageDefinition "A 'physical object' that has been created as the result of deliberate activity." ;
-             iof-av:primitiveRationale "To give a precise account of \"making\" goes beyond the scope of IDO. An account would engage notions on which there is no clear consensus, including intentional notions of intended purpose, and of goal-directed action; of permanence and integrity; etc. There is an abundance of edge cases for \"artefact\"." ;
-             iof-av:usageNote "In IDO, the term 'artefact' is reserved for physical objects, on the consideration that any information object will be a made entity." ,
-                              "The superclass of 'artefact' is not 'inanimate physical object', in order to allow for artificially made organisms as 'artefact's." ,
-                              "This is an appropriate superclass \"hook\" for building a hierarchy of industrial item types, including types of equipment, devices, assemblies, buildings, and products." .
-
-
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Capability
 lis:Capability rdf:type owl:Class ;
                rdfs:subClassOf lis:Disposition ;
-               rdfs:comment "The term 'capability' appears as a class in 6 different OBO Foundry ontologies, with identifiers obo:SIO_000112, obo:MF_0000043, and obo:NCIT_C74979." ;
                rdfs:label "Capability" ;
                rdfs:seeAlso obo:MF_0000043 ,
                             obo:NCIT_C74979 ,
@@ -1958,32 +1947,30 @@ lis:Compound rdf:type owl:Class ;
              rdfs:label "MateriallyClassifiedObject" ;
              rdfs:seeAlso "ISO 15926-2:2003 'class_of_compound'" ;
              skos:altLabel "Compound" ;
-             skos:example "Individual objects that have composition such as 316 stainless steel, reinforced concrete, carbon monoxide" ;
+             skos:example "Types of material composition, such as 316 stainless steel, reinforced concrete, and carbon monoxide." ;
              skos:scopeNote "Natural kinds are expressly not to be classified as 'compound'. The class 'compound' is only to be used to classify amounts of matter, with non-semantic auxiliaries used to refer to chemical composition. The semantics of natural kinds such as \"helium\", \"steel\", or \"hydrocarbon\" is out of scope for IDO." ;
              iof-av:isPrimitive "true"^^xsd:boolean ;
              iof-av:naturalLanguageDefinition "A physical object with a defined material composition." ;
              iof-av:primitiveRationale "The semantics of materials, of which compounds would be a specialisation, is beyond the scope of IDO." ;
-             iof-av:usageNote "For explicit meaning of a 'compound' subclass, such as \"steel [object]\", employ an RDL 'quality' class representing \"material composition\", with restrictions to a modelling construct representing steel." ,
-                              "Renamed class. Checked materially in OED." ,
-                              "The class 'compound' serves as an ultimate \"book-keeping\" superclass for a taxonomy of material make-up. It has been found useful in managing classifications (of physical objects) according to material composition. It carries no distinguishing constraints, since any physical object will have material composition. The class 'compound' would perhaps better be named \"physical object classified according to material composition\"." ,
-                              "This is an abstract concept, or hook, to allow sub-classes to be added as needed." .
+             iof-av:usageNote "A typical RDL includes classes that categorise individuals according to material composition. This class is suitable as the top node of such a taxonomy." ,
+                              "Renamed class. Checked materially in Oxford English Dictionary." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Dependent
 lis:Dependent rdf:type owl:Class ;
-              rdfs:comment "The class Dependent is closely related to \"specifically dependent continuant\" in BFO (BFO_0000020)." ,
-                           "There is no direct analogue to 'dependent' entities in ISO 15926-2:2003. However, ISO 15926-2:2003 'property' and 'functional_physical_object' largely serve the same purpose as, respectively, 'quality' and 'potential'." ;
+              rdfs:comment "The class Dependent is closely related to \"specifically dependent continuant\" in BFO (BFO_0000020)." ;
               rdfs:label "Dependent" ;
               rdfs:seeAlso lis:ActivityProfile ,
+                           lis:hasParticipantQualityQuantifiedAs ,
                            "ISO 15926-2:2003 'property', 'functional_physical_object'" ;
               skos:altLabel "Dependent Entity" ;
-              skos:example "The colour of a surface, the temperature of a medium, a technical contact role." ,
-                           "The colour of a surface, the temperature of a medium, the storage-space role of a room." ;
-              skos:scopeNote "Any 'object' will be the bearer of various 'dependent' entities, but any 'temporal' entity has only an indirect relationship to 'dependent's. This is in line with BFO, but also a common source of confusion. A common need is to relate a measure based on a 'physical quantity' to an 'activity', like average speed to a transport activity; this may not be implemented as an \"average speed\" dependent entity of the transport. For a suitable representation pattern, see the class 'activity profile' and related resources." ;
+              skos:example "The colour of a surface, the temperature of a medium, a technical contact role, the storage-space role of a room." ;
+              skos:scopeNote "Any 'object' will be the bearer of various 'dependent' entities, but any 'temporal' entity has only an indirect relationship to 'dependent's. This is in line with BFO." ;
               iof-av:adaptedFrom obo:BFO_0000020 ;
               iof-av:isPrimitive "true"^^xsd:boolean ;
               iof-av:naturalLanguageDefinition "An entity that is an inherent quality or realizable potential of an object." ;
-              iof-av:primitiveRationale "To provide necessary and sufficient conditions is beyond scope of IDO. Note that the BFO analogue, 'specifically dependent continuant', is defined in terms of the primitive relation 'specifically depends on' (s-depends on), which is not included in IDO." .
+              iof-av:primitiveRationale "Providing necessary and sufficient conditions for dependence is beyond the scope of IDO. Note that the BFO analogue, 'specifically dependent continuant', is defined in terms of the primitive relation 'specifically depends on' (s-depends on), which is not included in IDO." ;
+              iof-av:usageNote "A common need is to relate a measure based on a 'physical quantity' to an 'activity', like average speed to a transport activity. This may not be implemented with an 'average speed' entity that is dependent on the transport. For a suitable representation pattern, see the class 'activity profile' and related resources. A \"shortcut\" approach may use the relation 'has participant quality quantified as'." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Dependent ;
@@ -1996,19 +1983,18 @@ lis:Dependent rdf:type owl:Class ;
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Disposition
 lis:Disposition rdf:type owl:Class ;
                 rdfs:subClassOf lis:Potential ;
-                rdfs:comment "An object may not lose a disposition without undergoing physical change." ,
-                             "Inspired by the BFO class 'disposition' (BFO_0000016)." ;
                 rdfs:label "Disposition" ;
-                rdfs:seeAlso obo:BFO_0000016 ,
-                             lis:hasDisposition ;
+                rdfs:seeAlso lis:hasDisposition ;
                 skos:example "The disposition of a steel bar to corrode, the disposition of a gasket to leak. The disposition to overflow a memory buffer." ;
+                skos:scopeNote "An object may not lose a disposition without undergoing physical change." ;
+                iof-av:adaptedFrom obo:BFO_0000016 ;
                 iof-av:isPrimitive "true"^^xsd:boolean ;
                 iof-av:naturalLanguageDefinition "A potential whose realization is dependent on an object's structure." ;
-                iof-av:primitiveRationale "Making the notion of \"appropriate physical environment\" fully precise is beyond the scope of IDO." .
+                iof-av:primitiveRationale "Making the notion of \"dependence on an object's structure\" fully precise is beyond the scope of IDO." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Disposition ;
-   owl:annotatedProperty rdfs:seeAlso ;
+   owl:annotatedProperty iof-av:adaptedFrom ;
    owl:annotatedTarget obo:BFO_0000016 ;
    rdfs:comment "BFO_0000016 is 'disposition'."
  ] .
@@ -2022,7 +2008,7 @@ lis:Event rdf:type owl:Class ;
                             owl:allValuesFrom lis:InstantRegion
                           ] ;
           rdfs:comment "An 'event' doesn't need to be temporally connected. For example, several instances of switching on a heater over a week may be represented by a single 'event' individual; it will occupy a non-singular 'instant region'. The details of a singular event part may be modelled by relating the event to 'instant' individuals." ,
-                       "Event is close in meaning to BFO's 'process boundary', and to DOLCE's 'achievement'. Note that BFO's 'process boundary' is a sibling class to 'process', even though the definition annotation states it to be a \"temporal part of a process\". It's not obvious why the event/process boundary shouldn't have the same participants as the parent activity/process." ;
+                       "Event is close in meaning to BFO's 'process boundary', and to DOLCE's 'achievement'. Note that BFO's 'process boundary' is a sibling class to 'process', even though the definition annotation states it to be a \"temporal part of a process\". It's not obvious why the event/process boundary should not have the same participants as the parent activity/process." ;
           rdfs:label "Event" ;
           rdfs:seeAlso obo:BFO_0000035 ,
                        dol:achievement ,
@@ -2062,20 +2048,19 @@ lis:Feature rdf:type owl:Class ;
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Function
 lis:Function rdf:type owl:Class ;
              rdfs:subClassOf lis:Capability ;
-             rdfs:comment "Inspired by the BFO class \"function\" (BFO_0000034)." ;
              rdfs:label "Function" ;
-             rdfs:seeAlso obo:BFO_0000034 ,
-                          lis:hasFunction ,
+             rdfs:seeAlso lis:hasFunction ,
                           "ISO 15926-2:2003 'functional_physical_object'" ;
              skos:example "The function of a motor to apply a specified torque to a shaft." ;
+             iof-av:adaptedFrom obo:BFO_0000034 ;
              iof-av:isPrimitive "true"^^xsd:boolean ;
              iof-av:naturalLanguageDefinition "A capability that meets a design requirement." ;
-             iof-av:primitiveRationale "Making the notion of purpose, or \"existence for being\", fully precise is beyond the scope of IDO." ;
+             iof-av:primitiveRationale "Making the notion of meeting a requirement fully precise is beyond the scope of IDO." ;
              iof-av:usageNote "The typical 'function' of a hammer is realized when the hammer participates as the tool in a successful nail-driving activity. If the hammer has multiple functions, such as extracting nails using a claw or shaping objects with a ball, each function should be represented with a distinct individual." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Function ;
-   owl:annotatedProperty rdfs:seeAlso ;
+   owl:annotatedProperty iof-av:adaptedFrom ;
    owl:annotatedTarget obo:BFO_0000034 ;
    rdfs:comment "BFO_0000034 is 'function'."
  ] .
@@ -2092,11 +2077,14 @@ lis:FunctionalObject rdf:type owl:Class ;
                      rdfs:seeAlso "ISO 15926-2:2003 'functional_physical_object'" ;
                      skos:example "A pump, a hammer, a password." ;
                      iof-av:isPrimitive "false"^^xsd:boolean ;
-                     iof-av:naturalLanguageDefinition "An 'object' that provides a required 'function'." ;
-                     iof-av:semiFormalNaturalLanguageAxiom "If x is a 'functional object', then x is an 'object' that 'has function' some 'function'." ;
-                     iof-av:usageNote "A \"tag\" (see [[term:tag]]), when included in an IDO asset model, should in general have a type that is subclass of both 'functional object' and 'artefact'." ,
+                     iof-av:naturalLanguageDefinition "An 'Object' that provides a required 'Function'." ;
+                     iof-av:semiFormalNaturalLanguageAxiom "If x is a 'functional object', then x is an 'object' that 'has function' some 'Function'." ;
+                     iof-av:usageNote "A \"tag\", when included in an IDO asset model, should in general have a type that is subclass of both 'functional object' and 'physical artefact'." ,
                                       "A password must be concretized, this is done when it is entered, the password performs the function of unlocking the computer. The password participates in the unlocking process through its concretization." ,
-                                      "Artefact types tend to be described primarily in terms of 'function'; for example, the \"minimal\" definition of a pump would be, \"a physical artefact, the function of which is to pump (to be the active participant in a pumping activity)\". This kind of definition places no restriction on physical make-up and is suitable for a subclass of 'functional object'. Note that the activity type of 'pumping' is here a precursor to the definition of the physical object type 'pump'. A taxonomy of pump classes should extend from a class 'pump' defined solely in terms of function, as above." .
+                                      "Artefact types tend to be described primarily in terms of 'function'; for example, the \"minimal\" definition of a pump would be, \"a physical artefact, the function of which is to pump (to be the active participant in a pumping activity)\". This kind of definition places no restriction on physical make-up and is suitable for a subclass of 'functional object'. Note that the activity type of 'pumping' is here a precursor to the definition of the physical object type 'pump'. A taxonomy of pump classes should extend from a class 'pump' defined solely in terms of function, as above." ,
+                                      "Most artefacts are both physical and functional objects as a functional object is any object that has a function." ,
+                                      "Note that it is possible to model without explicitly using this class, as any object that has a function can be inferred to be a functional object." ,
+                                      "This class can be used as a root class for functional classification of objects, including physical objects." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:FunctionalObject ;
@@ -2135,8 +2123,8 @@ lis:InformationObject rdf:type owl:Class ;
                       skos:scopeNote "The BFO class 'generically dependent continuant' represents the notion of a pattern that exists in at least one copy, e.g., \"the sequence of this protein molecule\". This is more general than 'information object', and not at present included in IDO.  'information object' is a subclass, with the added condition that the pattern 'is about' something." ;
                       iof-av:isPrimitive "true"^^xsd:boolean ;
                       iof-av:naturalLanguageDefinition "An object that captures information about something." ;
-                      iof-av:primitiveRationale "The definition implicitly calls on the BFO notion of generic dependence, as captured in BFO's 'generically dependent continuant', for which IDO doesn't have an analogue." ;
-                      iof-av:usageNote "A common application of 'information object' is in representing facts about the vocabulary of the ontology itself. The OWL facility of \"punning\" treats OWL classes and properties as OWL individuals, enabling OWL object properties to be applied to them. In use cases that involve punning, the SKOS vocabulary is recommended to be used: the SKOS notions of 'concept', 'concept scheme', and 'collection' should be represented as subclasses of 'information object'." .
+                      iof-av:primitiveRationale "The notion of aboutness is not defined." ;
+                      iof-av:usageNote "A common application of 'information object' is in representing facts about the vocabulary of the ontology itself. The OWL facility of \"punning\" treats OWL classes and properties as OWL individuals, enabling OWL object properties to be applied to them. In use cases that involve punning, the SKOS vocabulary is recommended to be used, with the SKOS classes 'concept', 'concept scheme', and 'collection'  as subclasses of 'information object'." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:InformationObject ;
@@ -2197,7 +2185,7 @@ lis:Interest rdf:type owl:Class ;
              skos:example "A plan to act, an approval of a survey." ;
              iof-av:isPrimitive "true"^^xsd:boolean ;
              iof-av:naturalLanguageDefinition "A potential, the realization of which is of value for the bearer." ;
-             iof-av:primitiveRationale "Accounting for the notion of (mental) attitude is beyond the scope of IDO." .
+             iof-av:primitiveRationale "Accounting for  (mental) attitudes of value is beyond the scope of IDO." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Interval
@@ -2276,7 +2264,7 @@ lis:MaterialCompositionQuality rdf:type owl:Class ;
                                skos:example "The steel grade of a cast-iron component, the plastic type of a wire sheathing." ;
                                iof-av:isPrimitive "true"^^xsd:boolean ;
                                iof-av:naturalLanguageDefinition "A quality that can be characterised in terms of chemical or material properties." ;
-                               iof-av:primitiveRationale "A precise account of of \"chemical properties\" is beyond the scope of IDO." .
+                               iof-av:primitiveRationale "A precise account of chemical properties is beyond the scope of IDO." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Object
@@ -2323,10 +2311,17 @@ lis:Organization rdf:type owl:Class ;
                  rdfs:label "Organization" ;
                  rdfs:seeAlso "ISO 15926-2:2003 'class_of_organization'" ;
                  skos:example "A standards body, a service team, a workgroup, a company" ;
+                 iof-av:adaptedFrom iof-core:Organization ;
                  iof-av:isPrimitive "true"^^xsd:boolean ;
                  iof-av:naturalLanguageDefinition "An object comprising one or more persons who identify by some name and pursue a common set of plans and objectives." ;
-                 iof-av:primitiveRationale "A comprehensive definition of the notion of organization is beyond the scope of IDO (it would determine which kinds of aggregations of people, and which kinds of roles, are appropriate for organizations)." ;
-                 iof-av:usageNote "Adapted from IOF." .
+                 iof-av:primitiveRationale "A comprehensive definition of the notion of organization is beyond the scope of IDO (it would determine which kinds of aggregations of people, and which kinds of roles, are appropriate for organizations)." .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource lis:Organization ;
+   owl:annotatedProperty iof-av:adaptedFrom ;
+   owl:annotatedTarget iof-core:Organization ;
+   rdfs:comment "Organization is a class in the IOF Core ontology."
+ ] .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Person
@@ -2335,11 +2330,10 @@ lis:Person rdf:type owl:Class ;
            rdfs:label "Person" ;
            rdfs:seeAlso "ISO 15926-2:2003 'class_of_person'" ;
            skos:example "A human being." ;
-           skos:scopeNote "In industry use cases, subclasses of 'person' will typically require role attributions to be considered fully explicit. For example, 'maintenance engineer' is an obvious subclass of 'person', as every engineer is a person; use a 'role' to say what a maintenance engineer does. I.e., such a class may be augmented with a restriction to say that any member is the bearer of an engineering role; what the role amounts to will then be captured by the kinds of activities that count as realizations of the role." ;
+           skos:scopeNote "In an RDL, subclasses of 'person' will typically require 'role' restrictions to be considered fully explicit. For example, 'maintenance engineer' will be a subclass of 'person', as every engineer is a person. To capture what a maintenance engineer does, a role restriction can say that any member is the bearer of an engineering role, and what the role amounts to will be represented by the kinds of activities that count as realizations of the role." ;
            iof-av:isPrimitive "true"^^xsd:boolean ;
            iof-av:naturalLanguageDefinition "An organism that is a human." ;
-           iof-av:primitiveRationale "Providing precise semantics of what \"human\" amounts to is beyond the scope of IDO." ;
-           iof-av:usageNote "Don't want to use engineer in the example as an engineer is a person with a human role" .
+           iof-av:primitiveRationale "Providing precise semantics of what \"human\" amounts to is beyond the scope of IDO." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Phase
@@ -2351,30 +2345,34 @@ lis:Phase rdf:type owl:Class ;
                           ] ;
           rdfs:label "Phase" ;
           rdfs:seeAlso "ISO 15926-2:2003 'phase'" ;
-          skos:example "A solid object, a liquid object, a gaseous object." ;
+          skos:example "Solid object, liquid object, gaseous object." ;
           iof-av:isPrimitive "true"^^xsd:boolean ;
           iof-av:naturalLanguageDefinition "A physical object with a distinct and homogeneous form." ;
           iof-av:primitiveRationale "The semantics of phases is beyond the scope of IDO." ;
-          iof-av:usageNote "Definition from Oxford English Dictionary." ,
-                           "The class 'phase' serves as an ultimate \"book-keeping\" superclass for a taxonomy of phases.  It carries no distinguishing constraints, since any physical object will have phase." .
+          iof-av:usageNote "An RDL can include classes that categorise individuals according to material phase. This class is suitable as the top node of such a taxonomy." ,
+                           "Definition from Oxford English Dictionary." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/PhaseQuality
 lis:PhaseQuality rdf:type owl:Class ;
                  rdfs:subClassOf lis:Quality ;
                  rdfs:label "PhaseQuality" ;
-                 owl:deprecated "true"^^xsd:boolean ;
                  skos:example "The liquid quality of an amount of molten steel, the solid quality of a steel gasket." ;
                  iof-av:isPrimitive "true"^^xsd:boolean ;
                  iof-av:naturalLanguageDefinition "A 'quality' that can be characterised in terms of material phase." ;
-                 iof-av:primitiveRationale "A precise account of of \"material phase\" is beyond the scope of IDO." .
+                 iof-av:primitiveRationale "A precise account of material phase is beyond the scope of IDO." .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource lis:PhaseQuality ;
-   owl:annotatedProperty owl:deprecated ;
-   owl:annotatedTarget "true"^^xsd:boolean ;
-   rdfs:comment "This class is included for coverage of ISO 15926-2:2003, which has 'phase', but many classes don't have a need for it."
- ] .
+
+###  http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalArtefact
+lis:PhysicalArtefact rdf:type owl:Class ;
+                     rdfs:subClassOf lis:PhysicalObject ;
+                     rdfs:label "PhysicalArtefact" ;
+                     skos:example "a pressure transmitter, a process plant, a wrench, a computer." ;
+                     iof-av:isPrimitive "true"^^xsd:boolean ;
+                     iof-av:naturalLanguageDefinition "A 'physical object' that has been created as the result of deliberate activity." ;
+                     iof-av:primitiveRationale "To give a precise account of \"making\" goes beyond the scope of IDO. An account would engage notions on which there is no clear consensus, including intentional notions of intended purpose, and of goal-directed action; of permanence and integrity; etc. There is an abundance of edge cases for \"physical artefact\"." ;
+                     iof-av:usageNote "A typical RDL includes classes that represent industrial item types, such as equipment, devices, assemblies, buildings, and products, among other elements. This class is suitable as the top node in a taxonomy of such classes." ,
+                                      "The superclass of 'physical artefact' is not 'inanimate physical object', in order to allow for artificially made organisms." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalObject
@@ -2383,7 +2381,6 @@ lis:PhysicalObject rdf:type owl:Class ;
                    rdfs:label "PhysicalObject" ;
                    rdfs:seeAlso obo:BFO_0000040 ,
                                 dol:physical-object ,
-                                "ISO 15926-2:2003 'materialized_physical_object'" ,
                                 "ISO 15926-2:2003 'physical_object'" ;
                    skos:example "A wall, a fluid stream, a welder, a printed manual, a seafloor." ;
                    iof-av:isPrimitive "true"^^xsd:boolean ;
@@ -2419,7 +2416,7 @@ lis:PhysicalQuantity rdf:type owl:Class ;
                      skos:example "The mass of a bar of steel, the temperature of a medium, the inner diameter of a pipe, the lift height of a crane, the head (lift height) of a pump." ;
                      iof-av:isPrimitive "true"^^xsd:boolean ;
                      iof-av:naturalLanguageDefinition "A quality that can be quantified by measurement." ;
-                     iof-av:primitiveRationale "The notion of \"unit of measure\" is employed in the definition of 'physical quantity'. It is beyond the scope of IDO to give an account of measurement." .
+                     iof-av:primitiveRationale "It is beyond the scope of IDO to give an account of measurement." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:PhysicalQuantity ;
@@ -2446,7 +2443,7 @@ lis:PhysicalQuantity rdf:type owl:Class ;
    owl:annotatedSource lis:PhysicalQuantity ;
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget ssn:ObservableProperty ;
-   rdfs:comment "The SSN offers the following as an example for ObservableProperty, a subclass of Property: \"The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.\""
+   rdfs:comment "SSN offers the following examples for ObservableProperty, a subclass of Property: \"The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.\""
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -2481,18 +2478,18 @@ lis:PointInSpace rdf:type owl:Class ;
 lis:Potential rdf:type owl:Class ;
               rdfs:subClassOf lis:Dependent ;
               owl:disjointWith lis:Quality ;
-              rdfs:comment "Use OWL property chains to enforce constraints on how the bearer needs to participate in order for an activity to count as a realization." ;
               rdfs:label "Potential" ;
-              rdfs:seeAlso obo:BFO_0000017 ;
               skos:altLabel "Realizable Entity" ;
               skos:example "The sealing function of a gasket, the disposition of a steel bar to corrode." ;
+              iof-av:adaptedFrom obo:BFO_0000017 ;
               iof-av:isPrimitive "true"^^xsd:boolean ;
               iof-av:naturalLanguageDefinition "A dependent entity that can potentially be realised through participation in an activity." ;
-              iof-av:primitiveRationale "The necessary condition for being a 'potential' is that activity type and participation type are provided. It is however not clear what sufficient conditions would consist in, as these would at least involve a notion of successful execution for the relevant activities, which goes beyond the scope of IDO." .
+              iof-av:primitiveRationale "The necessary condition for being a 'potential' is that activity type and participation type are provided. It is however not clear what sufficient conditions would consist in, as these would at least involve a notion of successful execution for the relevant activities, which goes beyond the scope of IDO." ;
+              iof-av:usageNote "Use OWL property chains to enforce constraints on how the bearer needs to participate in order for an activity to count as a realization." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Potential ;
-   owl:annotatedProperty rdfs:seeAlso ;
+   owl:annotatedProperty iof-av:adaptedFrom ;
    owl:annotatedTarget obo:BFO_0000017 ;
    rdfs:comment "BFO_0000017 is 'realizable entity'."
  ] .
@@ -2501,8 +2498,7 @@ lis:Potential rdf:type owl:Class ;
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Quality
 lis:Quality rdf:type owl:Class ;
             rdfs:subClassOf lis:Dependent ;
-            rdfs:comment "DOLCE describes qualities as follows: \"Qualities can be seen as the basic entities we can perceive or measure: shapes, colors, sizes, sounds, smells, as well as weights, lengths, electrical charges... 'Quality' is often used as a synonymous of 'property', but this is not the case in this upper ontology: qualities are particulars, properties are universals.  Qualities inhere to entities: every entity (including qualities themselves) comes with certain qualities, which exist as long as the entity exists.\"" ,
-                         "The class Quality and its subclass PhysicalQuantity are inspired by corresponding classes included in the DOLCE and BFO (BFO_0000019) upper ontologies." ;
+            rdfs:comment "The class Quality and its subclass PhysicalQuantity are inspired by corresponding classes included in the DOLCE and BFO upper ontologies." ;
             rdfs:label "Quality" ;
             rdfs:seeAlso obo:BFO_0000019 ,
                          obo:PATO_0000001 ,
@@ -2542,15 +2538,22 @@ lis:Quality rdf:type owl:Class ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Quality ;
    owl:annotatedProperty rdfs:seeAlso ;
+   owl:annotatedTarget dol:quality ;
+   rdfs:comment "DOLCE describes qualities as follows: \"Qualities can be seen as the basic entities we can perceive or measure: shapes, colors, sizes, sounds, smells, as well as weights, lengths, electrical charges... 'Quality' is often used as a synonymous of 'property', but this is not the case in this upper ontology: qualities are particulars, properties are universals.  Qualities inhere to entities: every entity (including qualities themselves) comes with certain qualities, which exist as long as the entity exists.\""
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource lis:Quality ;
+   owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget ssn:ActuatableProperty ;
-   rdfs:comment "The SSN offers the following as an example for ActuatableProperty, a subclass of Property: \"A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty.\" Note that IDO doesn't provide an analogue."
+   rdfs:comment "SSN offers the following as an example for ActuatableProperty, a subclass of Property: \"A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty.\""
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Quality ;
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget ssn:Property ;
-   rdfs:comment "The SSN definition of 'Property' (2017): \"A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.\""
+   rdfs:comment "SSN defines 'Property' as follows (2017): \"A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.\""
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -2575,7 +2578,7 @@ lis:QualityDatum rdf:type owl:Class ;
                  skos:scopeNote "Introduce subclasses of 'quality datum' in RDL to distinguish categories of data, such as nominal versus measured values." ;
                  iof-av:isPrimitive "true"^^xsd:boolean ;
                  iof-av:naturalLanguageDefinition "An information object that quantifies a quality." ;
-                 iof-av:primitiveRationale "A precise account of the notion of representation of magnitudes is beyond scope of IDO." ;
+                 iof-av:primitiveRationale "A precise account of the  representation of magnitudes is beyond the scope of IDO." ;
                  iof-av:usageNote "Quantification may be on nominal, ordinal, and other scales." ,
                                   "This class may be used for data that don't fit the restriction to \"single unit, single number\" of 'scalar quantity datum', including data employing vectors instead of numbers, and conventional categories like \"high\" and \"medium\"." .
 
@@ -2590,21 +2593,21 @@ lis:QualityDatum rdf:type owl:Class ;
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Role
 lis:Role rdf:type owl:Class ;
          rdfs:subClassOf lis:Potential ;
-         rdfs:comment "As with any 'potential', the existence of a role is dependent on its bearer. A particular meeting room's role may therefore not be transferred to a different room; a different role individual with similar classification would be needed." ,
-                      "This class is intended to serve the same purpose as the ISO 15926-2:2003 'role' entity type, as well as the same-named BFO class (BFO_0000023)." ;
          rdfs:label "Role" ;
-         rdfs:seeAlso obo:BFO_0000023 ,
-                      lis:hasRole ,
+         rdfs:seeAlso lis:hasRole ,
                       "ISO 15926-2:2003 'role', 'role_and_domain'" ;
          skos:example "The role an individual person takes in a work situation, such as a manager. A student role." ,
                       "The role of an interior space (a 'site') as a meeting room is realized when it serves as the space for conducting meetings. The site may be assigned a storage room role at a different time." ;
+         skos:scopeNote "This class is intended to serve the same purpose as the ISO 15926-2:2003 'role' entity type, as well as the same-named BFO class (BFO_0000023)." ;
+         iof-av:adaptedFrom obo:BFO_0000023 ;
          iof-av:isPrimitive "true"^^xsd:boolean ;
          iof-av:naturalLanguageDefinition "A potential that is assigned to an object." ;
-         iof-av:primitiveRationale "Making the notion of assignment (to a task) fully precise is beyond the scope of IDO. With complex intentions notions of obligation, which are often required in role assignments, this is particularly clear." .
+         iof-av:primitiveRationale "Making the notion of assignment (to a task) fully precise is beyond the scope of IDO. With complex intentions notions of obligation, which are often required in role assignments, this is particularly clear." ;
+         iof-av:usageNote "As with any 'potential', the existence of a role is dependent on its bearer. A particular meeting room's role may therefore not be transferred to a different room; a different role individual with similar classification would be needed." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Role ;
-   owl:annotatedProperty rdfs:seeAlso ;
+   owl:annotatedProperty iof-av:adaptedFrom ;
    owl:annotatedTarget obo:BFO_0000023 ;
    rdfs:comment "BFO_0000023 is 'role'."
  ] .
@@ -2618,6 +2621,10 @@ lis:ScalarQuantityDatum rdf:type owl:Class ;
                                           owl:someValuesFrom lis:UnitOfMeasure
                                         ] ,
                                         [ rdf:type owl:Restriction ;
+                                          owl:onProperty lis:quantifiesQuality ;
+                                          owl:someValuesFrom lis:PhysicalQuantity
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
                                           owl:onProperty lis:datumValue ;
                                           owl:someValuesFrom rdfs:Literal
                                         ] ;
@@ -2629,7 +2636,7 @@ lis:ScalarQuantityDatum rdf:type owl:Class ;
                         iof-av:isPrimitive "false"^^xsd:boolean ;
                         iof-av:naturalLanguageDefinition "A quality datum that quantifies a physical quantity with a numeric value and a scale." ;
                         iof-av:semiFormalNaturalLanguageAxiom "If x is a 'scalar quantity datum', then x is a 'quality datum' which 'quantifies quality' some 'physical quantity', and has a 'datum uom' relationship to a 'unit of measure' and a 'datum value' relationship to a literal value." ;
-                        iof-av:usageNote "A scalar quantity datum has a unique unit of measure and a unique numeric value. This class is inspired by the class \"scalar measurement datum\" of the Information Artefact Ontology." .
+                        iof-av:usageNote "A scalar quantity datum has a unique unit of measure and a unique numeric value. This class is inspired by the class \"scalar measurement datum\" of the Information Artifact Ontology." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:ScalarQuantityDatum ;
@@ -2666,7 +2673,7 @@ lis:Scale rdf:type owl:Class ;
           iof-av:naturalLanguageDefinition "A unit of measure that, when paired with a number, unambiguously describes the magnitude of a physical quantity." ;
           iof-av:primitiveRationale "A comprehensive definition of the notion of scale is beyond the scope of IDO." ;
           iof-av:usageNote "'scale' corresponds to the common sense notion of unit of measure which unambiguously defines the magnitude of the measure." ,
-                           "The permissible number range for a scale may be expressed in OWL. Semi-formal example: If 'Celsius' is the 'uom of datum' of x, then any 'datum value' of x is within the range of -273,1 to infinity." .
+                           "OWL data ranges can capture the acceptable numerical range for a scale. For instance, the 'datum value' of any 'quality datum' that has Celsius as 'datum uom' can be limited to the range from -273.15 upwards to infinity." .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource lis:Scale ;
@@ -2683,14 +2690,14 @@ lis:ShapeQuality rdf:type owl:Class ;
                  skos:example "The flat shape of a surface feature, the cylindrical shape of a piece of pipe." ;
                  iof-av:isPrimitive "true"^^xsd:boolean ;
                  iof-av:naturalLanguageDefinition "A quality that can be characterised in terms of geometry." ;
-                 iof-av:primitiveRationale "A precise account of of \"spatial properties\" is beyond the scope of IDO." .
+                 iof-av:primitiveRationale "A precise account of geometries is beyond the scope of IDO." .
 
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Site
 lis:Site rdf:type owl:Class ;
          rdfs:subClassOf lis:Location ;
          owl:disjointWith lis:SpatialLocation ;
-         rdfs:comment "This class is inspired by the BFO/Information Artefact Ontology class BFO_0000029 'site'." ;
+         rdfs:comment "This class is inspired by the BFO class 'site'." ;
          rdfs:label "Site" ;
          rdfs:seeAlso obo:BFO_0000029 ,
                       "ISO 15926-2:2003 'spatial_location', 'region_in_space'" ;
@@ -2722,7 +2729,6 @@ lis:SpatialLocation rdf:type owl:Class ;
                     iof-av:naturalLanguageDefinition "A location defined relative to a spatial reference system." ;
                     iof-av:primitiveRationale "To provide an account of space, or spatial reference system, is beyond the scope of IDO." ;
                     iof-av:usageNote "As with 'spatiotemporal region', a spatial location need not be connected; for example, a location may consist in several cube-shaped regions." ,
-                                     "The extent of a 'spatial location' may be given either in terms of a spatial frame of reference, for instance with coordinates, or by position relative to material entities at a point in time." ,
                                      "The subclasses 'point in space', 'line in space', 'plane in space', and 'volume in space' are all defined as singular: for example, a 'point in space' individual may not have multiple points as parts. This, in contrast to the analogous BFO classes 'one-dimensional spatial region', etc., which are all defined as plural, allowing for disconnected parts." .
 
 [ rdf:type owl:Axiom ;
@@ -2797,8 +2803,8 @@ lis:System rdf:type owl:Class ;
                         ssn:System ;
            skos:example "An electrical network, an HVAC system, a pumping system, a compressor." ;
            iof-av:isPrimitive "true"^^xsd:boolean ;
-           iof-av:naturalLanguageDefinition "A 'functional object' with one or more functional parts whose functions contribute to the function of the system." ;
-           iof-av:primitiveRationale "A precise account of the nature of dependency between the function of a system, as a whole, and the functions of its parts is (likely) beyond the scope of IDO." ;
+           iof-av:naturalLanguageDefinition "A 'functional object' with one or more functional parts whose functions contribute to its function." ;
+           iof-av:primitiveRationale "A precise account of the nature of dependency between the function of a system, as a whole, and the functions of its parts is beyond the scope of IDO." ;
            iof-av:usageNote "Most industrial assets are both 'system' and 'inanimate physical object'. When modelling, e.g., a pump system, that system will be an 'inanimate physical object', with the pump part related to the pump system by 'has functional part'. The domain and range restrictions on 'has functional part' then imply that the pump system has type 'system', and the pump has type 'functional object'." .
 
 [ rdf:type owl:Axiom ;
@@ -2811,7 +2817,6 @@ lis:System rdf:type owl:Class ;
 
 ###  http://rds.posccaesar.org/ontology/lis14/rdl/Temporal
 lis:Temporal rdf:type owl:Class ;
-             rdfs:comment "In ISO 15926-2:2003, Activity is not a supertype of Event; in BFO, 'process' is not a supertype of 'process boundary'. This may indicate that 'event' in IDO should in fact not be a subclass of 'activity'." ;
              rdfs:label "Temporal" ;
              rdfs:seeAlso obo:BFO_0000003 ,
                           dol:perdurant ;
@@ -2832,7 +2837,7 @@ lis:Temporal rdf:type owl:Class ;
    owl:annotatedSource lis:Temporal ;
    owl:annotatedProperty rdfs:seeAlso ;
    owl:annotatedTarget dol:perdurant ;
-   rdfs:comment "From the DOLCE description of 'perdurant': \"Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states. ...\""
+   rdfs:comment "From the DOLCE description of 'perdurant': \"Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states.\""
  ] .
 
 

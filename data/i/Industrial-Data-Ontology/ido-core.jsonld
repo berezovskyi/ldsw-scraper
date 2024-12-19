@@ -1,257 +1,265 @@
 {
   "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000057 is 'has participant at some time'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasParticipant",
+    "annotatedTarget" : "obo:BFO_0000057"
+  }, {
     "@id" : "_:b1",
     "@type" : "owl:Axiom",
-    "comment" : "SIO_000112 is 'capability'.",
+    "comment" : "BFO_0000222 is 'has first instant' in BFO-ISO, defined for 'temporal region' (differently from 'has beginning' in IDO, defined for 'activity').",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Capability",
-    "annotatedTarget" : "obo:SIO_000112"
+    "annotatedSource" : "lis:hasBeginning",
+    "annotatedTarget" : "obo:BFO_0000222"
+  }, {
+    "@id" : "_:b10",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:hasQuality",
+    "someValuesFrom" : "lis:PhaseQuality"
   }, {
     "@id" : "_:b100",
     "@type" : "owl:Axiom",
-    "comment" : "IAO_0000039 is 'has measurement unit label' in the Information Artifact Ontology.",
+    "comment" : "RO_0000085 is 'has function'",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:datumUOM",
-    "annotatedTarget" : "obo:IAO_0000039"
+    "annotatedSource" : "lis:hasFunction",
+    "annotatedTarget" : "obo:RO_0000085"
   }, {
     "@id" : "_:b101",
     "@type" : "owl:Axiom",
-    "comment" : "IAO_0000032 is 'scalar measurement datum', a class in the Information Artifact Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:ScalarQuantityDatum",
-    "annotatedTarget" : "obo:IAO_0000032"
-  }, {
-    "@id" : "_:b102",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasQuality",
-    "annotatedTarget" : "obo:BFO_0000196"
-  }, {
-    "@id" : "_:b103",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000197 is 'inheres in'",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasDisposition",
-    "annotatedTarget" : "obo:BFO_0000197"
-  }, {
-    "@id" : "_:b104",
-    "@type" : "owl:Axiom",
-    "comment" : "From the DOLCE description of 'perdurant': \"Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states. ...\"",
+    "comment" : "From the DOLCE description of 'perdurant': \"Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states.\"",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:Temporal",
     "annotatedTarget" : "dol:perdurant"
   }, {
-    "@id" : "_:b105",
-    "@type" : "owl:Axiom",
-    "comment" : "IAO_0000033 is 'directive information entity' in the Information Artifact Ontology. See, e.g., subtypes 'action specification', 'objective specification', 'plan specification'; and specifically, 'software' as a subtype of 'plan specification'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasInterest",
-    "annotatedTarget" : "obo:IAO_0000033"
-  }, {
-    "@id" : "_:b106",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000210 is 'occupies spatial region at some time' in BFO-ISO. This relation has domain restricted to 'independent continuant' and not 'spatial region', and range to 'spatial region', meaning it's a relation from entities that are material objects or determined by material objects, to spatial regions determined independently of material objects.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:locatedRelativeTo",
-    "annotatedTarget" : "obo:BFO_0000210"
-  }, {
-    "@id" : "_:b107",
-    "@type" : "owl:Restriction",
-    "allValuesFrom" : "lis:InstantRegion",
-    "onProperty" : "lis:hasTemporalExtent"
-  }, {
-    "@id" : "_:b108",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000124 is 'location of at some time' in BFO-ISO.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:contains",
-    "annotatedTarget" : "obo:BFO_0000124"
-  }, {
-    "@id" : "_:b109",
-    "@type" : "owl:Axiom",
-    "comment" : "Derived from the relation 'lifecycle_stage' of ISO 15926-2:2003, which has the attribute pair 'interest'/'interested'; 'class_of_lifecycle_stage' provides examples of specialisations as, \"EXAMPLE Planned, required, expected, and proposed can be represented by instances of [class_of_lifecycle_stage].\" Following this, 'interest of' is a superproperty suitable for various intentional relationships, such as planning, approving, or ordering. With IDO, we restrict interest to 'potential' entities, while in ISO 15926-2:2003 the domain and range are both unrestricted.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasInterest",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'lifecycle_stage'"
-  }, {
-    "@id" : "_:b11",
-    "@type" : "owl:Axiom",
-    "comment" : "IAO_0000109 is 'measurement datum', a class in the Information Artifact Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:QualityDatum",
-    "annotatedTarget" : "obo:IAO_0000109"
-  }, {
-    "@id" : "_:b110",
-    "@type" : "owl:Axiom",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Feature",
-    "annotatedTarget" : "obo:BFO_0000024",
-    "explanatoryNote" : "BFO_0000024 is 'fiat object part'. This is at least very close in meaning to 'feature' as defined in in ISO 15926."
-  }, {
-    "@id" : "_:b111",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000031 is 'generically dependent continuant'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:InformationObject",
-    "annotatedTarget" : "obo:BFO_0000031"
-  }, {
-    "@id" : "_:b112",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0000091 is 'has disposition'",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasDisposition",
-    "annotatedTarget" : "obo:RO_0000091"
-  }, {
-    "@id" : "_:b113",
-    "@type" : "owl:Axiom",
-    "comment" : "ISO 15926-2:2003, p. 122: \"A class_of_inanimate_physical_object is a class_of_arranged\\-_individual whose members are not living.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:InanimatePhysicalObject",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'class_of_inanimate_physical_object'"
-  }, {
-    "@id" : "_:b114",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000006 is 'spatial region'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:SpatialLocation",
-    "annotatedTarget" : "obo:BFO_0000006"
-  }, {
-    "@id" : "_:b115",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000199 is 'occupies temporal region'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasTemporalExtent",
-    "annotatedTarget" : "obo:BFO_0000199"
-  }, {
-    "@id" : "_:b116",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0001015 is 'location of' in the Relations Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:contains",
-    "annotatedTarget" : "obo:RO_0001015"
-  }, {
-    "@id" : "_:b117",
-    "@type" : "owl:Restriction",
-    "onProperty" : "lis:hasParticipant",
-    "someValuesFrom" : "lis:PhysicalObject"
-  }, {
-    "@id" : "_:b118",
-    "@type" : "owl:Axiom",
-    "comment" : "QUDT explains 'quantity kind' as, \"any observable property that can be measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:PhysicalQuantity",
-    "annotatedTarget" : "qudt:QuantityKind"
-  }, {
-    "@id" : "_:b119",
-    "@type" : "owl:Axiom",
-    "comment" : "From the DOLCE description of 'endurant': \"The main characteristic of endurants is that all of them are independent essential wholes. ...\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Object",
-    "annotatedTarget" : "dol:endurant"
-  }, {
-    "@id" : "_:b12",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000164 is 'concretizes at all times', from BFO-ISO",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:concretizes",
-    "annotatedTarget" : "obo:BFO_0000164"
-  }, {
-    "@id" : "_:b120",
-    "@type" : "owl:Axiom",
-    "comment" : "ISO 15926-2:2003, subclause 4.7.17 states, \"... activities are considered to be space-time extensions in which other individuals and events participate.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Activity",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'activity'"
-  }, {
-    "@id" : "_:b122",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000067 is 'contains process', from RO, where an annotation says the 'editor preferred term' is \"site of\". There are subtle differences in the range and domain restrictions between BFO's 'environs' and RO's 'contains process': where RO has domain as the broad 'independent continuant' only, BFO has ('site' or 'material entity'); where RO has range as 'occurrent', BFO has ('process' or 'process boundary').",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:siteOf",
-    "annotatedTarget" : "obo:BFO_0000067"
-  }, {
-    "@id" : "_:b123",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000051 is 'has part', in the Information Artefact Ontology and in the Relations Ontology (in the latter, BFO_0000051 appears as a subrelation of 'overlaps').",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasPart",
-    "annotatedTarget" : "obo:BFO_0000051"
-  }, {
-    "@id" : "_:b124",
-    "@type" : "owl:Axiom",
-    "comment" : "The SSN offers the following as an example for ActuatableProperty, a subclass of Property: \"A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty.\" Note that IDO doesn't provide an analogue.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Quality",
-    "annotatedTarget" : "ssn:ActuatableProperty"
-  }, {
-    "@id" : "_:b125",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000063 is 'precedes' in BFO-ISO.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:before",
-    "annotatedTarget" : "obo:BFO_0000063"
-  }, {
-    "@id" : "_:b126",
-    "@type" : "owl:Axiom",
-    "comment" : "ISO 15926-2:2003, p. 110, states, \"A functional_physical_object is a physical_object that has functional, rather than material, continuity as its basis for identity. Adjacent temporal parts of a functional_physical_object need not have common matter or energy, provided the matter or energy of each temporal part fulfils the same function.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:FunctionalObject",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'functional_physical_object'"
-  }, {
-    "@id" : "_:b127",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000117 is 'has occurrent part' in BFO-ISO.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasPart",
-    "annotatedTarget" : "obo:BFO_0000117"
-  }, {
-    "@id" : "_:b129",
+    "@id" : "_:b102",
     "@type" : "owl:Axiom",
     "comment" : "BFO_0000019 is 'quality'.",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:Quality",
     "annotatedTarget" : "obo:BFO_0000019"
   }, {
-    "@id" : "_:b13",
+    "@id" : "_:b103",
     "@type" : "owl:Axiom",
-    "comment" : "unitCode is a property in the Schema.org vocabulary.",
+    "comment" : "RO_0000091 is 'has disposition'",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasDisposition",
+    "annotatedTarget" : "obo:RO_0000091"
+  }, {
+    "@id" : "_:b104",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000055 is 'realizes' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:realizes",
+    "annotatedTarget" : "obo:BFO_0000055"
+  }, {
+    "@id" : "_:b105",
+    "@type" : "owl:Axiom",
+    "comment" : "SIO_000112 is 'capability'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Capability",
+    "annotatedTarget" : "obo:SIO_000112"
+  }, {
+    "@id" : "_:b106",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:quantifiesQuality",
+    "someValuesFrom" : "lis:Quality"
+  }, {
+    "@id" : "_:b107",
+    "@type" : "owl:Axiom",
+    "comment" : "RO_0002536 is 'measurement property has unit', an annotation property in the Relations Ontology.",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:datumUOM",
-    "owl:annotatedTarget" : "https://schema.org/unitCode"
+    "annotatedTarget" : "obo:RO_0002536"
   }, {
-    "@id" : "_:b130",
+    "@id" : "_:b108",
     "@type" : "owl:Axiom",
-    "comment" : "BFO_0000062 is 'preceded by' in BFO-ISO.",
+    "comment" : "NCIT_C74979 is 'capability'.",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:after",
-    "annotatedTarget" : "obo:BFO_0000062"
+    "annotatedSource" : "lis:Capability",
+    "annotatedTarget" : "obo:NCIT_C74979"
   }, {
-    "@id" : "_:b131",
+    "@id" : "_:b109",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000063 is 'precedes' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:before",
+    "annotatedTarget" : "obo:BFO_0000063"
+  }, {
+    "@id" : "_:b11",
+    "@type" : "owl:Axiom",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Quality",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'property'",
+    "explanatoryNote" : "In ISO 15926-2:2003, the term \"quality or characteristic\" is used to explain what the entity type 'property' represents (clause 5.2.26.5, notes 1 and 2). Note 2 reads, \"The types of characteristic or quality, such as temperature or density, are instances of class_of_property.\""
+  }, {
+    "@id" : "_:b110",
+    "@type" : "owl:Axiom",
+    "comment" : "PATO_0001241 is 'physical object quality', defined in the Information Artifact Ontology as \"A quality which inheres in a continuant\".",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Quality",
+    "annotatedTarget" : "obo:PATO_0001241"
+  }, {
+    "@id" : "_:b111",
+    "@type" : "owl:Axiom",
+    "comment" : "ISO 15926-2:2003, 4.7.17 states, \"... activities are considered to be space-time extensions in which other individuals and events participate.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Activity",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'activity'"
+  }, {
+    "@id" : "_:b112",
+    "@type" : "owl:AllDisjointClasses",
+    "members" : {
+      "@list" : [ "lis:Activity", "lis:SpatiotemporalRegion", "lis:TemporalRegion" ]
+    }
+  }, {
+    "@id" : "_:b113",
+    "@type" : "owl:Axiom",
+    "comment" : "obo:BFO_0000148 is 'zero-dimensional temporal region'",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:InstantRegion",
+    "annotatedTarget" : "obo:BFO_0000148"
+  }, {
+    "@id" : "_:b114",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000035 is 'process boundary'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Event",
+    "annotatedTarget" : "obo:BFO_0000035"
+  }, {
+    "@id" : "_:b116",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000006 is 'spatial region'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:SpatialLocation",
+    "annotatedTarget" : "obo:BFO_0000006"
+  }, {
+    "@id" : "_:b117",
+    "@type" : "owl:Axiom",
+    "comment" : "'instant' is defined in OWL Time as \"A temporal entity with zero extent or duration\".",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Instant",
+    "annotatedTarget" : "time:Instant"
+  }, {
+    "@id" : "_:b118",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000199 is 'occupies temporal region'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasTemporalExtent",
+    "annotatedTarget" : "obo:BFO_0000199"
+  }, {
+    "@id" : "_:b119",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000210 is 'occupies spatial region at some time' (from BFO-ISO)",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasSpatialExtent",
+    "annotatedTarget" : "obo:BFO_0000210"
+  }, {
+    "@id" : "_:b12",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "lis:Activity", "lis:PhysicalObject" ]
+    }
+  }, {
+    "@id" : "_:b120",
+    "@type" : "owl:Axiom",
+    "comment" : [ "IAO_0000004 is the data property 'has measurement value', in the Information Artifact Ontology.", "BFO-ISO declares no data properties." ],
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:datumValue",
+    "annotatedTarget" : "obo:IAO_0000004"
+  }, {
+    "@id" : "_:b121",
+    "@type" : "owl:Axiom",
+    "comment" : "IAO_0000032 is 'scalar measurement datum', a class in the Information Artifact Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:ScalarQuantityDatum",
+    "annotatedTarget" : "obo:IAO_0000032"
+  }, {
+    "@id" : "_:b122",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000124 is 'location of at some time' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:contains",
+    "annotatedTarget" : "obo:BFO_0000124"
+  }, {
+    "@id" : "_:b124",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000217 is 'spatially projects onto at all times'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:siteOf",
+    "annotatedTarget" : "obo:BFO_0000217"
+  }, {
+    "@id" : "_:b125",
     "@type" : "owl:Restriction",
     "onProperty" : "lis:hasFunction",
     "someValuesFrom" : "lis:Function"
   }, {
-    "@id" : "_:b132",
+    "@id" : "_:b126",
     "@type" : "owl:Axiom",
-    "comment" : "'unit' is a class in the Ontology of units of Measure (OM 2).",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:UnitOfMeasure",
-    "annotatedTarget" : "om:Unit"
-  }, {
-    "@id" : "_:b133",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000178 is 'has continuant part of at some time' in BFO-ISO.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasPart",
-    "annotatedTarget" : "obo:BFO_0000178"
-  }, {
-    "@id" : "_:b134",
-    "@type" : "owl:Axiom",
-    "comment" : "IAO_0000417 is 'is quality measured as' of the Information Artefact Ontology. In IDO, the term \"quantified\" replaces \"measured\" to support cases where measurement is not involved, as in, e.g., estimates.",
+    "comment" : "IAO_0000417 is 'is quality measured as' of the Information Artifact Ontology. In IDO, the term \"quantified\" replaces \"measured\" to support cases where measurement is not involved, as in, e.g., estimates.",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:qualityQuantifiedAs",
     "annotatedTarget" : "obo:IAO_0000417"
+  }, {
+    "@id" : "_:b127",
+    "@type" : "owl:Restriction",
+    "allValuesFrom" : "lis:InstantRegion",
+    "onProperty" : "lis:hasTemporalExtent"
+  }, {
+    "@id" : "_:b128",
+    "@type" : "owl:Axiom",
+    "comment" : "hasSimpleResult is a data property in the Semantic Sensor Networks ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:datumValue",
+    "annotatedTarget" : "ssn:hasSimpleResult"
+  }, {
+    "@id" : "_:b129",
+    "@type" : "owl:Axiom",
+    "comment" : "QUDT describes 'quantity value' as follows. \"A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:ScalarQuantityDatum",
+    "annotatedTarget" : "qudt:QuantityValue"
+  }, {
+    "@id" : "_:b13",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:quantifiesQuality",
+    "someValuesFrom" : "lis:PhysicalQuantity"
+  }, {
+    "@id" : "_:b130",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000059 is 'concretizes at some time', from BFO-ISO",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:concretizes",
+    "annotatedTarget" : "obo:BFO_0000059"
+  }, {
+    "@id" : "_:b131",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000029 is 'site'",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Site",
+    "annotatedTarget" : "obo:BFO_0000029"
+  }, {
+    "@id" : "_:b132",
+    "@type" : "owl:Axiom",
+    "comment" : "From the DOLCE description of 'endurant': \"The main characteristic of endurants is that all of them are independent essential wholes. ...\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Object",
+    "annotatedTarget" : "dol:endurant"
+  }, {
+    "@id" : "_:b133",
+    "@type" : "owl:Axiom",
+    "comment" : "PATO_0001018 is 'physical quality', defined in the Information Artifact Ontology as \"A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.\" Note that this is distinct from 'physical object quality'; see annotation to lis:Quality.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:PhysicalQuantity",
+    "annotatedTarget" : "obo:PATO_0001018"
+  }, {
+    "@id" : "_:b134",
+    "@type" : "owl:Axiom",
+    "comment" : "DOLCE describes qualities as follows: \"Qualities can be seen as the basic entities we can perceive or measure: shapes, colors, sizes, sounds, smells, as well as weights, lengths, electrical charges... 'Quality' is often used as a synonymous of 'property', but this is not the case in this upper ontology: qualities are particulars, properties are universals.  Qualities inhere to entities: every entity (including qualities themselves) comes with certain qualities, which exist as long as the entity exists.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Quality",
+    "annotatedTarget" : "dol:quality"
   }, {
     "@id" : "_:b135",
     "@type" : "owl:Axiom",
@@ -262,228 +270,423 @@
   }, {
     "@id" : "_:b136",
     "@type" : "owl:Axiom",
-    "comment" : "The SSN definition of 'Property' (2017): \"A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.\"",
+    "comment" : "BFO_0000224 is 'has last instant' in BFO-ISO, defined for 'temporal region' (differently from 'has ending' in IDO, defined for 'activity').",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Quality",
-    "annotatedTarget" : "ssn:Property"
+    "annotatedSource" : "lis:hasEnding",
+    "annotatedTarget" : "obo:BFO_0000224"
   }, {
     "@id" : "_:b137",
     "@type" : "owl:Axiom",
-    "comment" : "RO_0000059 is 'concretizes', from the Relations Ontology; also used in the Information Artifact Ontology.",
+    "comment" : "IDO asserts that 'physical object' and 'activity' are disjunct classes. In contrast to this, and according to a 4D approach, ISO 15926-2:2003, p. 26, states that \"physical_object and activity are not mutually exclusive. A possible_individual can be both\".",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:concretizes",
-    "annotatedTarget" : "obo:RO_0000059"
+    "annotatedSource" : "lis:PhysicalObject",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'physical_object'"
   }, {
     "@id" : "_:b138",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000059 is 'concretizes at some time', from BFO-ISO",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:concretizes",
-    "annotatedTarget" : "obo:BFO_0000059"
-  }, {
-    "@id" : "_:b139",
-    "@type" : "owl:Axiom",
-    "comment" : "numericValue is a data property in QUDT.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:datumValue",
-    "annotatedTarget" : "qudt:numericValue"
-  }, {
-    "@id" : "_:b14",
-    "@type" : "owl:Restriction",
-    "onProperty" : "lis:hasQuality",
-    "someValuesFrom" : "lis:PhaseQuality"
-  }, {
-    "@id" : "_:b140",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000003 is 'occurrent'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Temporal",
-    "annotatedTarget" : "obo:BFO_0000003"
-  }, {
-    "@id" : "_:b141",
-    "@type" : "owl:Axiom",
-    "comment" : "PATO_0001018 is 'physical quality', defined in the Information Artifact Ontology as \"A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.\" Note that this is distinct from 'physical object quality'; see annotation to lis:Quality.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:PhysicalQuantity",
-    "annotatedTarget" : "obo:PATO_0001018"
-  }, {
-    "@id" : "_:b142",
-    "@type" : "owl:Axiom",
-    "comment" : "UO_0000000 is 'unit', a class in the OBO Units of measure ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:UnitOfMeasure",
-    "annotatedTarget" : "obo:UO_0000000"
-  }, {
-    "@id" : "_:b15",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "lis:Activity", "lis:PhysicalObject" ]
-    }
-  }, {
-    "@id" : "_:b16",
-    "@type" : "owl:Axiom",
-    "comment" : "obo:BFO_0000148 is 'zero-dimensional temporal region'",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:InstantRegion",
-    "annotatedTarget" : "obo:BFO_0000148"
-  }, {
-    "@id" : "_:b17",
-    "@type" : "owl:Restriction",
-    "onProperty" : "lis:datumUOM",
-    "someValuesFrom" : "lis:UnitOfMeasure"
-  }, {
-    "@id" : "_:b18",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000200 is 'occupies spatiotemporal region'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasSpatiotemporalExtent",
-    "annotatedTarget" : "obo:BFO_0000200"
-  }, {
-    "@id" : "_:b19",
-    "@type" : "owl:Axiom",
-    "comment" : "IAO_0000030 is 'information content entity', a subclass of BFO_0000031 'generically dependent continuant' defined in the Information Artifact Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:InformationObject",
-    "annotatedTarget" : "obo:IAO_0000030"
-  }, {
-    "@id" : "_:b2",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0000086 is 'has quality' in the Relations Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasQuality",
-    "annotatedTarget" : "obo:RO_0000086"
-  }, {
-    "@id" : "_:b20",
     "@type" : "owl:Axiom",
     "comment" : "BFO_0000171 is 'located in at some time' in BFO-ISO. This relation has domain and range restricted to 'independent continuant' and not 'spatial region', meaning it's a relation between entities that are material objects or determined by material objects, only.",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:locatedRelativeTo",
     "annotatedTarget" : "obo:BFO_0000171"
   }, {
-    "@id" : "_:b23",
+    "@id" : "_:b139",
     "@type" : "owl:Axiom",
-    "comment" : "PATO_0000001 is 'quality'.",
+    "comment" : "RO_0000053 is 'has characteristic', which in the Relation Ontology also has 'quality of' as a subrelation.",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Quality",
-    "annotatedTarget" : "obo:PATO_0000001"
+    "annotatedSource" : "lis:hasPotential",
+    "annotatedTarget" : "obo:RO_0000053"
   }, {
-    "@id" : "_:b3",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000222 is 'has first instant' in BFO-ISO, defined for 'temporal region' (differently from 'has beginning' in IDO, defined for 'activity').",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasBeginning",
-    "annotatedTarget" : "obo:BFO_0000222"
-  }, {
-    "@id" : "_:b31",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000066 is 'occurs in'",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:occursIn",
-    "annotatedTarget" : "obo:BFO_0000066"
-  }, {
-    "@id" : "_:b32",
+    "@id" : "_:b14",
     "@type" : "owl:Restriction",
-    "onProperty" : "lis:hasFunctionalPart",
-    "someValuesFrom" : "lis:FunctionalObject"
+    "onProperty" : "lis:datumUOM",
+    "someValuesFrom" : "lis:UnitOfMeasure"
   }, {
-    "@id" : "_:b33",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "lis:Organism", "lis:Organization" ]
-    }
-  }, {
-    "@id" : "_:b34",
+    "@id" : "_:b140",
     "@type" : "owl:Axiom",
-    "comment" : "QUDT describes 'quantity value' as follows. \"A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit.\"",
+    "comment" : "ISO 15926-2:2003, p. 112, states, \"A stream is a physical_object that is material or energy moving along a path, where the path is the basis of identity and may be constrained. The stream consists of the temporal parts of those things that are in the stream whilst they are in it.\"",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:ScalarQuantityDatum",
-    "annotatedTarget" : "qudt:QuantityValue"
+    "annotatedSource" : "lis:Stream",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'stream'"
   }, {
-    "@id" : "_:b35",
+    "@id" : "_:b141",
     "@type" : "owl:Axiom",
-    "comment" : "BFO_0000024 is 'fiat object part' in BFO-ISO.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasArrangedPart",
-    "annotatedTarget" : "obo:BFO_0000024"
-  }, {
-    "@id" : "_:b38",
-    "@type" : "owl:Axiom",
-    "comment" : "IAO_0000136 is 'is about', in the Information Artifact Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:isAbout",
-    "annotatedTarget" : "obo:IAO_0000136"
-  }, {
-    "@id" : "_:b4",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0000057 is 'has participant'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasParticipant",
-    "annotatedTarget" : "obo:RO_0000057"
-  }, {
-    "@id" : "_:b40",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000117 is 'has occurrent part' in BFO-ISO. This relation has 'occurrent' as domain and range, where the IDO 'has activity part' is restricted to just 'activity'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasActivityPart",
-    "annotatedTarget" : "obo:BFO_0000117"
-  }, {
-    "@id" : "_:b41",
-    "@type" : "owl:Axiom",
-    "comment" : "This class is included for coverage of ISO 15926-2:2003, which has 'phase', but many classes don't have a need for it.",
-    "annotatedProperty" : "owl:deprecated",
-    "annotatedSource" : "lis:PhaseQuality",
-    "owl:annotatedTarget" : true
-  }, {
-    "@id" : "_:b42",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000055 is 'realizes' in BFO-ISO.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:realizes",
-    "annotatedTarget" : "obo:BFO_0000055"
-  }, {
-    "@id" : "_:b43",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000057 is 'has participant at some time'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasParticipant",
-    "annotatedTarget" : "obo:BFO_0000057"
-  }, {
-    "@id" : "_:b44",
-    "@type" : "owl:Axiom",
-    "comment" : "OM2 explains 'quantity' as, \"A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length.\"",
+    "comment" : "DOLCE defines 'physical-quality' as, \"A quality inherent in a physical endurant.\"",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:PhysicalQuantity",
-    "annotatedTarget" : "om:Quantity"
+    "annotatedTarget" : "dol:physical-quality"
   }, {
-    "@id" : "_:b45",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000029 is 'site'",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Site",
-    "annotatedTarget" : "obo:BFO_0000029"
-  }, {
-    "@id" : "_:b46",
+    "@id" : "_:b142",
     "@type" : "owl:Axiom",
     "comment" : "QUDT provides the following subclasses of 'scale': 'Enumeration scale', 'Interval scale', 'Nominal scale', 'Ordinal scale', 'Ratio scale'. Note that the notion of nominal scales diverges in being a coding scheme, with numbers not implying relative magnitude.",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:Scale",
     "annotatedTarget" : "qudt:Scale"
   }, {
-    "@id" : "_:b47",
+    "@id" : "_:b143",
     "@type" : "owl:Axiom",
-    "comment" : "OM 2 describes 'measure' as follows. \"A measure combines a number to a unit of measure. For example, '3 m' is a measure.\"",
+    "comment" : "BFO_0000117 is 'has occurrent part' in BFO-ISO. This relation has 'occurrent' as domain and range, where the IDO 'has activity part' is restricted to just 'activity'.",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:ScalarQuantityDatum",
-    "annotatedTarget" : "om:Measure"
+    "annotatedSource" : "lis:hasActivityPart",
+    "annotatedTarget" : "obo:BFO_0000117"
+  }, {
+    "@id" : "_:b144",
+    "@type" : "owl:Axiom",
+    "comment" : "Derived from the relation 'lifecycle_stage' of ISO 15926-2:2003, which has the attribute pair 'interest'/'interested'; 'class_of_lifecycle_stage' provides examples of specialisations as, \"EXAMPLE Planned, required, expected, and proposed can be represented by instances of [class_of_lifecycle_stage].\" Following this, 'interest of' is a superproperty suitable for various intentional relationships, such as planning, approving, or ordering. With IDO, we restrict interest to 'potential' entities, while in ISO 15926-2:2003 the domain and range are both unrestricted.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasInterest",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'lifecycle_stage'"
+  }, {
+    "@id" : "_:b15",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:datumValue",
+    "someValuesFrom" : "rdfs:Literal"
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Axiom",
+    "comment" : "IAO_0000039 is 'has measurement unit label' in the Information Artifact Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:datumUOM",
+    "annotatedTarget" : "obo:IAO_0000039"
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000197 is 'inheres in'",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasDisposition",
+    "annotatedTarget" : "obo:BFO_0000197"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Axiom",
+    "comment" : "QUDT explains 'quantity kind' as, \"any observable property that can be measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:PhysicalQuantity",
+    "annotatedTarget" : "qudt:QuantityKind"
+  }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:hasParticipant",
+    "someValuesFrom" : "lis:PhysicalObject"
+  }, {
+    "@id" : "_:b21",
+    "@type" : "owl:Axiom",
+    "comment" : "The SSN definition of 'System' (2017): \"System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other Systems.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:System",
+    "annotatedTarget" : "ssn:System"
+  }, {
+    "@id" : "_:b22",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000016 is 'disposition'.",
+    "annotatedProperty" : "iof-av:adaptedFrom",
+    "annotatedSource" : "lis:Disposition",
+    "annotatedTarget" : "obo:BFO_0000016"
+  }, {
+    "@id" : "_:b23",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000024 is 'fiat object part' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasArrangedPart",
+    "annotatedTarget" : "obo:BFO_0000024"
+  }, {
+    "@id" : "_:b24",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "lis:PhysicalObject", "lis:Site" ]
+    }
+  }, {
+    "@id" : "_:b28",
+    "@type" : "owl:Axiom",
+    "comment" : "Organization is a class in the IOF Core ontology.",
+    "annotatedProperty" : "iof-av:adaptedFrom",
+    "annotatedSource" : "lis:Organization",
+    "annotatedTarget" : "iof-core:Organization"
+  }, {
+    "@id" : "_:b29",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000023 is 'role'.",
+    "annotatedProperty" : "iof-av:adaptedFrom",
+    "annotatedSource" : "lis:Role",
+    "annotatedTarget" : "obo:BFO_0000023"
+  }, {
+    "@id" : "_:b30",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000210 is 'occupies spatial region at some time' in BFO-ISO. This relation has domain restricted to 'independent continuant' and not 'spatial region', and range to 'spatial region', meaning it's a relation from entities that are material objects or determined by material objects, to spatial regions determined independently of material objects.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:locatedRelativeTo",
+    "annotatedTarget" : "obo:BFO_0000210"
+  }, {
+    "@id" : "_:b31",
+    "@type" : "owl:Axiom",
+    "comment" : "PATO_0000001 is 'quality'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Quality",
+    "annotatedTarget" : "obo:PATO_0000001"
+  }, {
+    "@id" : "_:b32",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000117 is 'has occurrent part' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasPart",
+    "annotatedTarget" : "obo:BFO_0000117"
+  }, {
+    "@id" : "_:b33",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000011 is 'spatiotemporal region'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:SpatiotemporalRegion",
+    "annotatedTarget" : "obo:BFO_0000011"
+  }, {
+    "@id" : "_:b34",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:hasFunctionalPart",
+    "someValuesFrom" : "lis:FunctionalObject"
+  }, {
+    "@id" : "_:b37",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000164 is 'concretizes at all times', from BFO-ISO",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:concretizes",
+    "annotatedTarget" : "obo:BFO_0000164"
+  }, {
+    "@id" : "_:b38",
+    "@type" : "owl:Axiom",
+    "comment" : "numericValue is a data property in QUDT.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:datumValue",
+    "annotatedTarget" : "qudt:numericValue"
+  }, {
+    "@id" : "_:b39",
+    "@type" : "owl:Axiom",
+    "comment" : "IAO_0000033 is 'directive information entity' in the Information Artifact Ontology. See, e.g., subtypes 'action specification', 'objective specification', 'plan specification'; and specifically, 'software' as a subtype of 'plan specification'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasInterest",
+    "annotatedTarget" : "obo:IAO_0000033"
+  }, {
+    "@id" : "_:b40",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000054 is 'has realization' in BFO-ISO, and 'realized in' in the Relations Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:realizedIn",
+    "annotatedTarget" : "obo:BFO_0000054"
+  }, {
+    "@id" : "_:b41",
+    "@type" : "owl:Axiom",
+    "comment" : "ISO 15926-2:2003, p. 110, states, \"A functional_physical_object is a physical_object that has functional, rather than material, continuity as its basis for identity. Adjacent temporal parts of a functional_physical_object need not have common matter or energy, provided the matter or energy of each temporal part fulfils the same function.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:FunctionalObject",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'functional_physical_object'"
+  }, {
+    "@id" : "_:b43",
+    "@type" : "owl:Axiom",
+    "comment" : "RO_0000059 is 'concretizes', from the Relations Ontology; also used in the Information Artifact Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:concretizes",
+    "annotatedTarget" : "obo:RO_0000059"
+  }, {
+    "@id" : "_:b44",
+    "@type" : "owl:Axiom",
+    "comment" : "SSN offers the following as an example for ActuatableProperty, a subclass of Property: \"A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Quality",
+    "annotatedTarget" : "ssn:ActuatableProperty"
+  }, {
+    "@id" : "_:b45",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000017 is 'realizable entity'.",
+    "annotatedProperty" : "iof-av:adaptedFrom",
+    "annotatedSource" : "lis:Potential",
+    "annotatedTarget" : "obo:BFO_0000017"
+  }, {
+    "@id" : "_:b46",
+    "@type" : "owl:Axiom",
+    "comment" : "ISO 15926-2:2003, p. 122: \"A class_of_inanimate_physical_object is a class_of_arranged\\-_individual whose members are not living.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:InanimatePhysicalObject",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'class_of_inanimate_physical_object'"
   }, {
     "@id" : "_:b49",
     "@type" : "owl:Axiom",
-    "comment" : "BFO_0000210 is 'occupies spatial region at some time' (from BFO-ISO)",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasSpatialExtent",
-    "annotatedTarget" : "obo:BFO_0000210"
+    "comment" : "BFO_0000034 is 'function'.",
+    "annotatedProperty" : "iof-av:adaptedFrom",
+    "annotatedSource" : "lis:Function",
+    "annotatedTarget" : "obo:BFO_0000034"
   }, {
     "@id" : "_:b5",
+    "@type" : "owl:Axiom",
+    "comment" : "IAO_0000030 is 'information content entity', a subclass of BFO_0000031 'generically dependent continuant' defined in the Information Artifact Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:InformationObject",
+    "annotatedTarget" : "obo:IAO_0000030"
+  }, {
+    "@id" : "_:b50",
+    "@type" : "owl:Axiom",
+    "comment" : "RO_0002170 is 'connected to', in the Relations Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:connectedTo",
+    "annotatedTarget" : "obo:RO_0002170"
+  }, {
+    "@id" : "_:b51",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000200 is 'occupies spatiotemporal region'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasSpatiotemporalExtent",
+    "annotatedTarget" : "obo:BFO_0000200"
+  }, {
+    "@id" : "_:b52",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000038 is 'one-dimensional temporal region' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:IntervalRegion",
+    "annotatedTarget" : "obo:BFO_0000038"
+  }, {
+    "@id" : "_:b53",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000183 is 'environs' from BFO",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:siteOf",
+    "annotatedTarget" : "obo:BFO_0000183"
+  }, {
+    "@id" : "_:b54",
+    "@type" : "owl:AllDisjointClasses",
+    "members" : {
+      "@list" : [ "lis:Dependent", "lis:Object", "lis:Temporal" ]
+    }
+  }, {
+    "@id" : "_:b56",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "lis:Organism", "lis:Organization" ]
+    }
+  }, {
+    "@id" : "_:b57",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000003 is 'occurrent'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Temporal",
+    "annotatedTarget" : "obo:BFO_0000003"
+  }, {
+    "@id" : "_:b58",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:hasQuality",
+    "someValuesFrom" : "lis:MaterialCompositionQuality"
+  }, {
+    "@id" : "_:b59",
+    "@type" : "owl:Axiom",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:PhysicalObject",
+    "annotatedTarget" : "obo:BFO_0000040",
+    "explanatoryNote" : "BFO_0000040 is 'material entity'."
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Axiom",
+    "comment" : "RO_0000086 is 'has quality' in the Relations Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasQuality",
+    "annotatedTarget" : "obo:RO_0000086"
+  }, {
+    "@id" : "_:b60",
+    "@type" : "owl:Axiom",
+    "comment" : "IAO_0000136 is 'is about', in the Information Artifact Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:isAbout",
+    "annotatedTarget" : "obo:IAO_0000136"
+  }, {
+    "@id" : "_:b61",
+    "@type" : "owl:AllDisjointClasses",
+    "members" : {
+      "@list" : [ "lis:InformationObject", "lis:Location", "lis:Organization", "lis:PhysicalObject" ]
+    }
+  }, {
+    "@id" : "_:b63",
+    "@type" : "owl:Axiom",
+    "comment" : "RO_0001015 is 'location of' in the Relations Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:contains",
+    "annotatedTarget" : "obo:RO_0001015"
+  }, {
+    "@id" : "_:b64",
+    "@type" : "owl:Restriction",
+    "onProperty" : "lis:profileOfQuality",
+    "someValuesFrom" : "lis:Quality"
+  }, {
+    "@id" : "_:b65",
+    "@type" : "owl:Axiom",
+    "comment" : "The definition is lifted directly from 'feature whole part' of ISO 15926-2:2003.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasFeature",
+    "owl:annotatedTarget" : "ISO 15926-2:2003 'feature_whole_part'"
+  }, {
+    "@id" : "_:b66",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000067 is 'contains process', from RO, where an annotation says the 'editor preferred term' is \"site of\". There are subtle differences in the range and domain restrictions between BFO's 'environs' and RO's 'contains process': where RO has domain as the broad 'independent continuant' only, BFO has ('site' or 'material entity'); where RO has range as 'occurrent', BFO has ('process' or 'process boundary').",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:siteOf",
+    "annotatedTarget" : "obo:BFO_0000067"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000062 is 'preceded by' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:after",
+    "annotatedTarget" : "obo:BFO_0000062"
+  }, {
+    "@id" : "_:b72",
+    "@type" : "owl:Axiom",
+    "comment" : "IAO_0000109 is 'measurement datum', a class in the Information Artifact Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:QualityDatum",
+    "annotatedTarget" : "obo:IAO_0000109"
+  }, {
+    "@id" : "_:b73",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000178 is 'has continuant part of at some time' in BFO-ISO.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasPart",
+    "annotatedTarget" : "obo:BFO_0000178"
+  }, {
+    "@id" : "_:b74",
+    "@type" : "owl:Axiom",
+    "comment" : "unitCode is a property in the Schema.org vocabulary.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:datumUOM",
+    "owl:annotatedTarget" : "https://schema.org/unitCode"
+  }, {
+    "@id" : "_:b76",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000020 is 'specifically dependent continuant'.",
+    "annotatedProperty" : "iof-av:adaptedFrom",
+    "annotatedSource" : "lis:Dependent",
+    "annotatedTarget" : "obo:BFO_0000020"
+  }, {
+    "@id" : "_:b77",
+    "@type" : "owl:Axiom",
+    "comment" : "'unit' is a class in the Ontology of units of Measure (OM 2).",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:UnitOfMeasure",
+    "annotatedTarget" : "om:Unit"
+  }, {
+    "@id" : "_:b79",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasQuality",
+    "annotatedTarget" : "obo:BFO_0000196"
+  }, {
+    "@id" : "_:b8",
+    "@type" : "owl:Axiom",
+    "comment" : "SSN offers the following examples for ObservableProperty, a subclass of Property: \"The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:PhysicalQuantity",
+    "annotatedTarget" : "ssn:ObservableProperty"
+  }, {
+    "@id" : "_:b80",
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000051 is 'has part', in the Information Artifact Ontology and in the Relations Ontology (in the latter, BFO_0000051 appears as a subrelation of 'overlaps').",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasPart",
+    "annotatedTarget" : "obo:BFO_0000051"
+  }, {
+    "@id" : "_:b81",
     "@type" : "owl:Axiom",
     "comment" : "BFO_0000004 is 'independent continuant'.",
     "annotatedProperty" : "rdfs:seeAlso",
@@ -491,308 +694,117 @@
     "annotatedTarget" : "obo:BFO_0000004",
     "scopeNote" : "In IDO, ’information object’ is represented as a subclass of ’object’. According to the BFO literature, and applied in the Information Artifact Ontology and other BFO compliant ontologies, information artifacts are (multiply) dependent objects. a /sibling/ class to ’independent continuant’ rather than a subclass, as used in IDO."
   }, {
-    "@id" : "_:b50",
-    "@type" : "owl:Axiom",
-    "comment" : "The SSN definition of 'System' (2017): \"System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other Systems.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:System",
-    "annotatedTarget" : "ssn:System"
-  }, {
-    "@id" : "_:b51",
-    "@type" : "owl:Axiom",
-    "comment" : "The SSN offers the following as an example for ObservableProperty, a subclass of Property: \"The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:PhysicalQuantity",
-    "annotatedTarget" : "ssn:ObservableProperty"
-  }, {
-    "@id" : "_:b52",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0002170 is 'connected to', in the Relations Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:connectedTo",
-    "annotatedTarget" : "obo:RO_0002170"
-  }, {
-    "@id" : "_:b55",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000202 is 'temporal interval'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Interval",
-    "annotatedTarget" : "obo:BFO_0000202"
-  }, {
-    "@id" : "_:b56",
-    "@type" : "owl:Axiom",
-    "comment" : "NCIT_C74979 is 'capability'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Capability",
-    "annotatedTarget" : "obo:NCIT_C74979"
-  }, {
-    "@id" : "_:b58",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000183 is 'environs' from BFO",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:siteOf",
-    "annotatedTarget" : "obo:BFO_0000183"
-  }, {
-    "@id" : "_:b59",
-    "@type" : "owl:Axiom",
-    "comment" : "IDO asserts that 'physical object' and 'activity' are disjunct classes. In contrast to this, and according to a 4D approach, ISO 15926-2:2003, p. 26, states that \"physical_object and activity are not mutually exclusive. A possible_individual can be both\".",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:PhysicalObject",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'physical_object'"
-  }, {
-    "@id" : "_:b6",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000017 is 'realizable entity'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Potential",
-    "annotatedTarget" : "obo:BFO_0000017"
-  }, {
-    "@id" : "_:b60",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000196 is 'bearer of', a more generic relation than 'has potential' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasPotential",
-    "annotatedTarget" : "obo:BFO_0000196"
-  }, {
-    "@id" : "_:b62",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000016 is 'disposition'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Disposition",
-    "annotatedTarget" : "obo:BFO_0000016"
-  }, {
-    "@id" : "_:b63",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0000081 is 'role of' in the Relations Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:roleOf",
-    "annotatedTarget" : "obo:RO_0000081"
-  }, {
-    "@id" : "_:b64",
-    "@type" : "owl:Axiom",
-    "comment" : "MF_0000043 is 'capability'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Capability",
-    "annotatedTarget" : "obo:MF_0000043"
-  }, {
-    "@id" : "_:b65",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0002536 is 'measurement property has unit', an annotation property in the Relations Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:datumUOM",
-    "annotatedTarget" : "obo:RO_0002536"
-  }, {
-    "@id" : "_:b66",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000035 is 'process boundary'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Event",
-    "annotatedTarget" : "obo:BFO_0000035"
-  }, {
-    "@id" : "_:b67",
-    "@type" : "owl:Restriction",
-    "onProperty" : "lis:hasQuality",
-    "someValuesFrom" : "lis:MaterialCompositionQuality"
-  }, {
-    "@id" : "_:b68",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000144 is 'process profile'.",
-    "annotatedProperty" : "iof-av:adaptedFrom",
-    "annotatedSource" : "lis:ActivityProfile",
-    "annotatedTarget" : "obo:BFO_0000144"
-  }, {
-    "@id" : "_:b69",
-    "@type" : "owl:Axiom",
-    "comment" : "ISO 15926-2:2003, p. 112, states, \"A stream is a physical_object that is material or energy moving along a path, where the path is the basis of identity and may be constrained. The stream consists of the temporal parts of those things that are in the stream whilst they are in it.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Stream",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'stream'"
-  }, {
-    "@id" : "_:b70",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000217 is 'spatially projects onto at all times'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:siteOf",
-    "annotatedTarget" : "obo:BFO_0000217"
-  }, {
-    "@id" : "_:b71",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0000053 is 'has characteristic', which in the Relation Ontology also has 'quality of' as a subrelation.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasPotential",
-    "annotatedTarget" : "obo:RO_0000053"
-  }, {
-    "@id" : "_:b72",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000038 is 'one-dimensional temporal region' in BFO-ISO.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:IntervalRegion",
-    "annotatedTarget" : "obo:BFO_0000038"
-  }, {
-    "@id" : "_:b73",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000224 is 'has last instant' in BFO-ISO, defined for 'temporal region' (differently from 'has ending' in IDO, defined for 'activity').",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasEnding",
-    "annotatedTarget" : "obo:BFO_0000224"
-  }, {
-    "@id" : "_:b74",
-    "@type" : "owl:Axiom",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:PhysicalObject",
-    "annotatedTarget" : "obo:BFO_0000040",
-    "explanatoryNote" : "BFO_0000040 is 'material entity'."
-  }, {
-    "@id" : "_:b75",
-    "@type" : "owl:Axiom",
-    "comment" : "PATO_0001241 is 'physical object quality', defined in the Information Artifact Ontology as \"A quality which inheres in a continuant\".",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Quality",
-    "annotatedTarget" : "obo:PATO_0001241"
-  }, {
-    "@id" : "_:b76",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000034 is 'function'.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Function",
-    "annotatedTarget" : "obo:BFO_0000034"
-  }, {
-    "@id" : "_:b77",
-    "@type" : "owl:Restriction",
-    "onProperty" : "lis:profileOfQuality",
-    "someValuesFrom" : "lis:Quality"
-  }, {
-    "@id" : "_:b78",
-    "@type" : "owl:Axiom",
-    "comment" : "DOLCE defines 'physical-quality' as, \"A quality inherent in a physical endurant.\"",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:PhysicalQuantity",
-    "annotatedTarget" : "dol:physical-quality"
-  }, {
-    "@id" : "_:b8",
-    "@type" : "owl:Restriction",
-    "onProperty" : "lis:datumValue",
-    "someValuesFrom" : "rdfs:Literal"
-  }, {
-    "@id" : "_:b80",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "lis:PhysicalObject", "lis:Site" ]
-    }
-  }, {
-    "@id" : "_:b81",
-    "@type" : "owl:Axiom",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Quality",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'property'",
-    "explanatoryNote" : "In ISO 15926-2:2003, the term \"quality or characteristic\" is used to explain what the entity type 'property' represents (clause 5.2.26.5, notes 1 and 2). Note 2 reads, \"The types of characteristic or quality, such as temperature or density, are instances of class_of_property.\""
-  }, {
     "@id" : "_:b82",
-    "@type" : "owl:AllDisjointClasses",
-    "members" : {
-      "@list" : [ "lis:InformationObject", "lis:Location", "lis:Organization", "lis:PhysicalObject" ]
-    }
-  }, {
-    "@id" : "_:b83",
     "@type" : "owl:Axiom",
     "comment" : "hasNumericalValue is a data property in the Ontology of Units of Measure.",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:datumValue",
     "annotatedTarget" : "om:hasNumericalValue"
   }, {
+    "@id" : "_:b83",
+    "@type" : "owl:Axiom",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Feature",
+    "annotatedTarget" : "obo:BFO_0000024",
+    "explanatoryNote" : "BFO_0000024 is 'fiat object part'. This is at least very close in meaning to 'feature' as defined in in ISO 15926."
+  }, {
     "@id" : "_:b84",
+    "@type" : "owl:Axiom",
+    "comment" : "SSN defines 'Property' as follows (2017): \"A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.\"",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Quality",
+    "annotatedTarget" : "ssn:Property"
+  }, {
+    "@id" : "_:b85",
     "@type" : "owl:Axiom",
     "comment" : "BFO_0000008 is 'temporal region'",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:TemporalRegion",
     "annotatedTarget" : "obo:BFO_0000008"
   }, {
-    "@id" : "_:b85",
-    "@type" : "owl:AllDisjointClasses",
-    "members" : {
-      "@list" : [ "lis:Activity", "lis:SpatiotemporalRegion", "lis:TemporalRegion" ]
-    }
-  }, {
     "@id" : "_:b86",
     "@type" : "owl:Axiom",
-    "comment" : "hasSimpleResult is a data property in the Semantic Sensor Networks ontology.",
+    "comment" : "OM 2 describes 'measure' as follows. \"A measure combines a number to a unit of measure. For example, '3 m' is a measure.\"",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:datumValue",
-    "annotatedTarget" : "ssn:hasSimpleResult"
+    "annotatedSource" : "lis:ScalarQuantityDatum",
+    "annotatedTarget" : "om:Measure"
   }, {
     "@id" : "_:b87",
     "@type" : "owl:Axiom",
-    "comment" : "BFO_0000011 is 'spatiotemporal region'.",
+    "comment" : "BFO_0000031 is 'generically dependent continuant'.",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:SpatiotemporalRegion",
-    "annotatedTarget" : "obo:BFO_0000011"
+    "annotatedSource" : "lis:InformationObject",
+    "annotatedTarget" : "obo:BFO_0000031"
   }, {
     "@id" : "_:b88",
     "@type" : "owl:Axiom",
-    "comment" : "The definition is lifted directly from 'feature whole part' of ISO 15926-2:2003.",
+    "comment" : "BFO_0000202 is 'temporal interval'.",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasFeature",
-    "owl:annotatedTarget" : "ISO 15926-2:2003 'feature_whole_part'"
+    "annotatedSource" : "lis:Interval",
+    "annotatedTarget" : "obo:BFO_0000202"
   }, {
     "@id" : "_:b89",
     "@type" : "owl:Axiom",
-    "comment" : "BFO_0000023 is 'role'.",
+    "comment" : "UO_0000000 is 'unit', a class in the OBO Units of measure ontology.",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Role",
-    "annotatedTarget" : "obo:BFO_0000023"
+    "annotatedSource" : "lis:UnitOfMeasure",
+    "annotatedTarget" : "obo:UO_0000000"
+  }, {
+    "@id" : "_:b9",
+    "@type" : "owl:Axiom",
+    "comment" : "MF_0000043 is 'capability'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:Capability",
+    "annotatedTarget" : "obo:MF_0000043"
   }, {
     "@id" : "_:b90",
     "@type" : "owl:Axiom",
-    "comment" : "BFO_0000020 is 'specifically dependent continuant'.",
-    "annotatedProperty" : "iof-av:adaptedFrom",
-    "annotatedSource" : "lis:Dependent",
-    "annotatedTarget" : "obo:BFO_0000020"
+    "comment" : "BFO_0000196 is 'bearer of', a more generic relation than 'has potential' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:hasPotential",
+    "annotatedTarget" : "obo:BFO_0000196"
   }, {
-    "@id" : "_:b91",
+    "@id" : "_:b93",
     "@type" : "owl:Axiom",
-    "comment" : "ISO 15926-2:2003, p. 132 provides an example as, \"A car manufacturing activity causes the beginning of a car\".",
+    "comment" : "ISO 15926-2:2003, 5.2.10.2 provides an example as, \"A car manufacturing activity causes the beginning of a car\".",
     "annotatedProperty" : "rdfs:seeAlso",
     "annotatedSource" : "lis:creates",
     "owl:annotatedTarget" : "ISO 15926-2:2003 'class_of_cause_of_beginning_of_class_of_individual'"
   }, {
-    "@id" : "_:b92",
-    "@type" : "owl:Axiom",
-    "comment" : "RO_0000085 is 'has function'",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:hasFunction",
-    "annotatedTarget" : "obo:RO_0000085"
-  }, {
-    "@id" : "_:b93",
-    "@type" : "owl:Axiom",
-    "comment" : "BFO_0000054 is 'has realization' in BFO-ISO, and 'realized in' in the Relations Ontology.",
-    "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:realizedIn",
-    "annotatedTarget" : "obo:BFO_0000054"
-  }, {
     "@id" : "_:b94",
     "@type" : "owl:Axiom",
-    "comment" : [ "IAO_0000004 is the data property 'has measurement value', in the Information Artefact Ontology.", "BFO-ISO declares no data properties." ],
+    "comment" : "RO_0000057 is 'has participant'.",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:datumValue",
-    "annotatedTarget" : "obo:IAO_0000004"
+    "annotatedSource" : "lis:hasParticipant",
+    "annotatedTarget" : "obo:RO_0000057"
   }, {
     "@id" : "_:b95",
-    "@type" : "owl:Restriction",
-    "onProperty" : "lis:quantifiesQuality",
-    "someValuesFrom" : "lis:Quality"
+    "@type" : "owl:Axiom",
+    "comment" : "BFO_0000066 is 'occurs in'",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:occursIn",
+    "annotatedTarget" : "obo:BFO_0000066"
   }, {
     "@id" : "_:b96",
-    "@type" : "owl:AllDisjointClasses",
-    "members" : {
-      "@list" : [ "lis:Dependent", "lis:Object", "lis:Temporal" ]
-    }
-  }, {
-    "@id" : "_:b97",
     "@type" : "owl:Axiom",
-    "comment" : "'instant' is defined in OWL Time as \"A temporal entity with zero extent or duration\".",
+    "comment" : "BFO_0000144 is 'process profile'.",
+    "annotatedProperty" : "iof-av:adaptedFrom",
+    "annotatedSource" : "lis:ActivityProfile",
+    "annotatedTarget" : "obo:BFO_0000144"
+  }, {
+    "@id" : "_:b98",
+    "@type" : "owl:Axiom",
+    "comment" : "OM2 explains 'quantity' as, \"A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length.\"",
     "annotatedProperty" : "rdfs:seeAlso",
-    "annotatedSource" : "lis:Instant",
-    "annotatedTarget" : "time:Instant"
+    "annotatedSource" : "lis:PhysicalQuantity",
+    "annotatedTarget" : "om:Quantity"
+  }, {
+    "@id" : "_:b99",
+    "@type" : "owl:Axiom",
+    "comment" : "RO_0000081 is 'role of' in the Relations Ontology.",
+    "annotatedProperty" : "rdfs:seeAlso",
+    "annotatedSource" : "lis:roleOf",
+    "annotatedTarget" : "obo:RO_0000081"
   }, {
     "@id" : "dc:rights",
     "@type" : "owl:AnnotationProperty",
@@ -896,24 +908,23 @@
     "creator" : "https://orcid.org/0000-0002-7167-7321",
     "description" : "The Industrial Data Ontology is an upper ontology for industrial data, inspired by the ISO 15926-2 data model and Basic Formal Ontology.",
     "license" : "https://creativecommons.org/licenses/by-sa/4.0/",
-    "modified" : "2024-03-11",
+    "modified" : "2024-11-28",
     "publisher" : "https://www.posccaesar.org",
     "title" : "Industrial Data Ontology",
-    "hasEarlierVersion" : "http://rds.posccaesar.org/ontology/lis14/ont/core/1.0",
-    "lastUpdateOn" : "2024-03-11T17:13:33Z",
-    "previousVersion" : "http://rds.posccaesar.org/ontology/lis14/ont/core/2.0",
+    "hasEarlierVersion" : [ "http://rds.posccaesar.org/ontology/lis14/ont/core/1.0", "http://rds.posccaesar.org/ontology/lis14/ont/core/2.0" ],
+    "lastUpdateOn" : "2024-11-28T14:33:46Z",
+    "previousVersion" : "http://rds.posccaesar.org/ontology/lis14/ont/core/3.0",
     "comment" : "The Industrial Data Ontology is an upper ontology for industrial data, inspired by the ISO 15926-2 data model and Basic Formal Ontology.",
     "label" : "Industrial Data Ontology",
-    "imports" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
-    "versionIRI" : "http://rds.posccaesar.org/ontology/lis14/ont/core/3.0",
-    "versionInfo" : "3.0 ISO Committee Draft March 2024"
+    "versionIRI" : "http://rds.posccaesar.org/ontology/lis14/ont/core/4.0",
+    "versionInfo" : "4.0 Proposed DIS November 2024"
   }, {
     "@id" : "lis:Activity",
     "@type" : "owl:Class",
     "label" : "Activity",
     "seeAlso" : [ "dol:accomplishment", "prov:Activity", "dol:process", "obo:BFO_0000015" ],
     "rdfs:seeAlso" : "ISO 15926-2:2003 'activity'",
-    "subClassOf" : [ "lis:Temporal", "_:b117" ],
+    "subClassOf" : [ "lis:Temporal", "_:b20" ],
     "example" : "A pumping, an inspection, a report writing, a fastening (the activity of a bolt in holding two pieces together).",
     "scopeNote" : "An 'activity' doesn't need to be temporally connected. For example, intermittent operation of a heater over a week can be represented by a single 'activity' individual; it will occupy a non-connected 'interval region'. The details of each connected activity part (\"singular activities\") may be modelled by relating the activity to 'interval' individuals.",
     "iof-av:isPrimitive" : true,
@@ -924,7 +935,7 @@
     "@type" : "owl:Class",
     "comment" : [ "The name \"ActivityProfile\"  has been chosen because lis:Activity corresponds to BFO's 'process'.", "An 'activity profile' is a part of an 'activity', a \"selective abstraction\" (using a term from the BFO reference guide) made according to a quality of interest to the process. Typically, we will select a physical quantity such as pressure or temperature, and refer to the \"pressure profile\" of the activity. By means of the relation 'profile quantity datum', the activity profile can be related to a set of 'quantity datum' individuals, to which aggregation can be applied, giving a basis for classification." ],
     "label" : "ActivityProfile",
-    "subClassOf" : [ "_:b77", "lis:Activity" ],
+    "subClassOf" : [ "_:b64", "lis:Activity" ],
     "example" : [ "The BFO 2.0 reference guide provides good examples, like \"constant speed profile\", \"acceleration profile\", and \"irregular beat profile\".", "An 'activity profile' of an 'activity' involving rotating equipment, instantiating a class \"100 revolutions per minute\"." ],
     "adaptedFrom" : "obo:BFO_0000144",
     "iof-av:isPrimitive" : true,
@@ -941,19 +952,8 @@
     "naturalLanguageDefinition" : "An entity that is a concrete implementation of a 'specified' entity.",
     "primitiveRationale" : "The notion of concrete implementation, of providing an actual item to serve a design, is not defined. An explication should be given in terms of systems engineering practices."
   }, {
-    "@id" : "lis:Artefact",
-    "@type" : "owl:Class",
-    "label" : "Artefact",
-    "subClassOf" : "lis:PhysicalObject",
-    "example" : "a pressure transmitter, a process plant, a wrench, a computer.",
-    "iof-av:isPrimitive" : true,
-    "naturalLanguageDefinition" : "A 'physical object' that has been created as the result of deliberate activity.",
-    "primitiveRationale" : "To give a precise account of \"making\" goes beyond the scope of IDO. An account would engage notions on which there is no clear consensus, including intentional notions of intended purpose, and of goal-directed action; of permanence and integrity; etc. There is an abundance of edge cases for \"artefact\".",
-    "usageNote" : [ "The superclass of 'artefact' is not 'inanimate physical object', in order to allow for artificially made organisms as 'artefact's.", "In IDO, the term 'artefact' is reserved for physical objects, on the consideration that any information object will be a made entity.", "This is an appropriate superclass \"hook\" for building a hierarchy of industrial item types, including types of equipment, devices, assemblies, buildings, and products." ]
-  }, {
     "@id" : "lis:Capability",
     "@type" : "owl:Class",
-    "comment" : "The term 'capability' appears as a class in 6 different OBO Foundry ontologies, with identifiers obo:SIO_000112, obo:MF_0000043, and obo:NCIT_C74979.",
     "label" : "Capability",
     "seeAlso" : [ "obo:NCIT_C74979", "obo:SIO_000112", "lis:hasCapability", "obo:MF_0000043" ],
     "subClassOf" : "lis:Disposition",
@@ -966,47 +966,49 @@
     "@type" : "owl:Class",
     "label" : "MateriallyClassifiedObject",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'class_of_compound'",
-    "subClassOf" : [ "_:b67", "lis:PhysicalObject" ],
+    "subClassOf" : [ "_:b58", "lis:PhysicalObject" ],
     "altLabel" : "Compound",
-    "example" : "Individual objects that have composition such as 316 stainless steel, reinforced concrete, carbon monoxide",
+    "example" : "Types of material composition, such as 316 stainless steel, reinforced concrete, and carbon monoxide.",
     "scopeNote" : "Natural kinds are expressly not to be classified as 'compound'. The class 'compound' is only to be used to classify amounts of matter, with non-semantic auxiliaries used to refer to chemical composition. The semantics of natural kinds such as \"helium\", \"steel\", or \"hydrocarbon\" is out of scope for IDO.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A physical object with a defined material composition.",
     "primitiveRationale" : "The semantics of materials, of which compounds would be a specialisation, is beyond the scope of IDO.",
-    "usageNote" : [ "For explicit meaning of a 'compound' subclass, such as \"steel [object]\", employ an RDL 'quality' class representing \"material composition\", with restrictions to a modelling construct representing steel.", "The class 'compound' serves as an ultimate \"book-keeping\" superclass for a taxonomy of material make-up. It has been found useful in managing classifications (of physical objects) according to material composition. It carries no distinguishing constraints, since any physical object will have material composition. The class 'compound' would perhaps better be named \"physical object classified according to material composition\".", "This is an abstract concept, or hook, to allow sub-classes to be added as needed.", "Renamed class. Checked materially in OED." ]
+    "usageNote" : [ "Renamed class. Checked materially in Oxford English Dictionary.", "A typical RDL includes classes that categorise individuals according to material composition. This class is suitable as the top node of such a taxonomy." ]
   }, {
     "@id" : "lis:Dependent",
     "@type" : "owl:Class",
-    "comment" : [ "The class Dependent is closely related to \"specifically dependent continuant\" in BFO (BFO_0000020).", "There is no direct analogue to 'dependent' entities in ISO 15926-2:2003. However, ISO 15926-2:2003 'property' and 'functional_physical_object' largely serve the same purpose as, respectively, 'quality' and 'potential'." ],
+    "comment" : "The class Dependent is closely related to \"specifically dependent continuant\" in BFO (BFO_0000020).",
     "label" : "Dependent",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'property', 'functional_physical_object'",
-    "seeAlso" : "lis:ActivityProfile",
+    "seeAlso" : [ "lis:hasParticipantQualityQuantifiedAs", "lis:ActivityProfile" ],
     "altLabel" : "Dependent Entity",
-    "example" : [ "The colour of a surface, the temperature of a medium, a technical contact role.", "The colour of a surface, the temperature of a medium, the storage-space role of a room." ],
-    "scopeNote" : "Any 'object' will be the bearer of various 'dependent' entities, but any 'temporal' entity has only an indirect relationship to 'dependent's. This is in line with BFO, but also a common source of confusion. A common need is to relate a measure based on a 'physical quantity' to an 'activity', like average speed to a transport activity; this may not be implemented as an \"average speed\" dependent entity of the transport. For a suitable representation pattern, see the class 'activity profile' and related resources.",
+    "example" : "The colour of a surface, the temperature of a medium, a technical contact role, the storage-space role of a room.",
+    "scopeNote" : "Any 'object' will be the bearer of various 'dependent' entities, but any 'temporal' entity has only an indirect relationship to 'dependent's. This is in line with BFO.",
     "adaptedFrom" : "obo:BFO_0000020",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "An entity that is an inherent quality or realizable potential of an object.",
-    "primitiveRationale" : "To provide necessary and sufficient conditions is beyond scope of IDO. Note that the BFO analogue, 'specifically dependent continuant', is defined in terms of the primitive relation 'specifically depends on' (s-depends on), which is not included in IDO."
+    "primitiveRationale" : "Providing necessary and sufficient conditions for dependence is beyond the scope of IDO. Note that the BFO analogue, 'specifically dependent continuant', is defined in terms of the primitive relation 'specifically depends on' (s-depends on), which is not included in IDO.",
+    "usageNote" : "A common need is to relate a measure based on a 'physical quantity' to an 'activity', like average speed to a transport activity. This may not be implemented with an 'average speed' entity that is dependent on the transport. For a suitable representation pattern, see the class 'activity profile' and related resources. A \"shortcut\" approach may use the relation 'has participant quality quantified as'."
   }, {
     "@id" : "lis:Disposition",
     "@type" : "owl:Class",
-    "comment" : [ "An object may not lose a disposition without undergoing physical change.", "Inspired by the BFO class 'disposition' (BFO_0000016)." ],
     "label" : "Disposition",
-    "seeAlso" : [ "obo:BFO_0000016", "lis:hasDisposition" ],
+    "seeAlso" : "lis:hasDisposition",
     "subClassOf" : "lis:Potential",
     "example" : "The disposition of a steel bar to corrode, the disposition of a gasket to leak. The disposition to overflow a memory buffer.",
+    "scopeNote" : "An object may not lose a disposition without undergoing physical change.",
+    "adaptedFrom" : "obo:BFO_0000016",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A potential whose realization is dependent on an object's structure.",
-    "primitiveRationale" : "Making the notion of \"appropriate physical environment\" fully precise is beyond the scope of IDO."
+    "primitiveRationale" : "Making the notion of \"dependence on an object's structure\" fully precise is beyond the scope of IDO."
   }, {
     "@id" : "lis:Event",
     "@type" : "owl:Class",
-    "comment" : [ "An 'event' doesn't need to be temporally connected. For example, several instances of switching on a heater over a week may be represented by a single 'event' individual; it will occupy a non-singular 'instant region'. The details of a singular event part may be modelled by relating the event to 'instant' individuals.", "Event is close in meaning to BFO's 'process boundary', and to DOLCE's 'achievement'. Note that BFO's 'process boundary' is a sibling class to 'process', even though the definition annotation states it to be a \"temporal part of a process\". It's not obvious why the event/process boundary shouldn't have the same participants as the parent activity/process." ],
+    "comment" : [ "An 'event' doesn't need to be temporally connected. For example, several instances of switching on a heater over a week may be represented by a single 'event' individual; it will occupy a non-singular 'instant region'. The details of a singular event part may be modelled by relating the event to 'instant' individuals.", "Event is close in meaning to BFO's 'process boundary', and to DOLCE's 'achievement'. Note that BFO's 'process boundary' is a sibling class to 'process', even though the definition annotation states it to be a \"temporal part of a process\". It's not obvious why the event/process boundary should not have the same participants as the parent activity/process." ],
     "label" : "Event",
     "seeAlso" : [ "dol:achievement", "obo:BFO_0000035" ],
     "rdfs:seeAlso" : "ISO 15926-2:2003 'event'",
-    "subClassOf" : [ "lis:Activity", "_:b107" ],
+    "subClassOf" : [ "lis:Activity", "_:b127" ],
     "example" : "The beginning of a lifting operation, the end of a measurement activity, the midpoint between beginning and end of an activity.",
     "iof-av:isPrimitive" : false,
     "naturalLanguageDefinition" : "An activity  that occurs at one or more specific points in time."
@@ -1024,27 +1026,27 @@
   }, {
     "@id" : "lis:Function",
     "@type" : "owl:Class",
-    "comment" : "Inspired by the BFO class \"function\" (BFO_0000034).",
     "label" : "Function",
-    "seeAlso" : [ "obo:BFO_0000034", "lis:hasFunction" ],
+    "seeAlso" : "lis:hasFunction",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'functional_physical_object'",
     "subClassOf" : "lis:Capability",
     "example" : "The function of a motor to apply a specified torque to a shaft.",
+    "adaptedFrom" : "obo:BFO_0000034",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A capability that meets a design requirement.",
-    "primitiveRationale" : "Making the notion of purpose, or \"existence for being\", fully precise is beyond the scope of IDO.",
+    "primitiveRationale" : "Making the notion of meeting a requirement fully precise is beyond the scope of IDO.",
     "usageNote" : "The typical 'function' of a hammer is realized when the hammer participates as the tool in a successful nail-driving activity. If the hammer has multiple functions, such as extracting nails using a claw or shaping objects with a ball, each function should be represented with a distinct individual."
   }, {
     "@id" : "lis:FunctionalObject",
     "@type" : "owl:Class",
     "label" : "FunctionalObject",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'functional_physical_object'",
-    "subClassOf" : [ "_:b131", "lis:Object" ],
+    "subClassOf" : [ "lis:Object", "_:b125" ],
     "example" : "A pump, a hammer, a password.",
     "iof-av:isPrimitive" : false,
-    "naturalLanguageDefinition" : "An 'object' that provides a required 'function'.",
-    "semiFormalNaturalLanguageAxiom" : "If x is a 'functional object', then x is an 'object' that 'has function' some 'function'.",
-    "usageNote" : [ "Artefact types tend to be described primarily in terms of 'function'; for example, the \"minimal\" definition of a pump would be, \"a physical artefact, the function of which is to pump (to be the active participant in a pumping activity)\". This kind of definition places no restriction on physical make-up and is suitable for a subclass of 'functional object'. Note that the activity type of 'pumping' is here a precursor to the definition of the physical object type 'pump'. A taxonomy of pump classes should extend from a class 'pump' defined solely in terms of function, as above.", "A \"tag\" (see [[term:tag]]), when included in an IDO asset model, should in general have a type that is subclass of both 'functional object' and 'artefact'.", "A password must be concretized, this is done when it is entered, the password performs the function of unlocking the computer. The password participates in the unlocking process through its concretization." ]
+    "naturalLanguageDefinition" : "An 'Object' that provides a required 'Function'.",
+    "semiFormalNaturalLanguageAxiom" : "If x is a 'functional object', then x is an 'object' that 'has function' some 'Function'.",
+    "usageNote" : [ "Artefact types tend to be described primarily in terms of 'function'; for example, the \"minimal\" definition of a pump would be, \"a physical artefact, the function of which is to pump (to be the active participant in a pumping activity)\". This kind of definition places no restriction on physical make-up and is suitable for a subclass of 'functional object'. Note that the activity type of 'pumping' is here a precursor to the definition of the physical object type 'pump'. A taxonomy of pump classes should extend from a class 'pump' defined solely in terms of function, as above.", "Most artefacts are both physical and functional objects as a functional object is any object that has a function.", "This class can be used as a root class for functional classification of objects, including physical objects.", "Note that it is possible to model without explicitly using this class, as any object that has a function can be inferred to be a functional object.", "A \"tag\", when included in an IDO asset model, should in general have a type that is subclass of both 'functional object' and 'physical artefact'.", "A password must be concretized, this is done when it is entered, the password performs the function of unlocking the computer. The password participates in the unlocking process through its concretization." ]
   }, {
     "@id" : "lis:InanimatePhysicalObject",
     "@type" : "owl:Class",
@@ -1066,8 +1068,8 @@
     "scopeNote" : "The BFO class 'generically dependent continuant' represents the notion of a pattern that exists in at least one copy, e.g., \"the sequence of this protein molecule\". This is more general than 'information object', and not at present included in IDO.  'information object' is a subclass, with the added condition that the pattern 'is about' something.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "An object that captures information about something.",
-    "primitiveRationale" : "The definition implicitly calls on the BFO notion of generic dependence, as captured in BFO's 'generically dependent continuant', for which IDO doesn't have an analogue.",
-    "usageNote" : "A common application of 'information object' is in representing facts about the vocabulary of the ontology itself. The OWL facility of \"punning\" treats OWL classes and properties as OWL individuals, enabling OWL object properties to be applied to them. In use cases that involve punning, the SKOS vocabulary is recommended to be used: the SKOS notions of 'concept', 'concept scheme', and 'collection' should be represented as subclasses of 'information object'."
+    "primitiveRationale" : "The notion of aboutness is not defined.",
+    "usageNote" : "A common application of 'information object' is in representing facts about the vocabulary of the ontology itself. The OWL facility of \"punning\" treats OWL classes and properties as OWL individuals, enabling OWL object properties to be applied to them. In use cases that involve punning, the SKOS vocabulary is recommended to be used, with the SKOS classes 'concept', 'concept scheme', and 'collection'  as subclasses of 'information object'."
   }, {
     "@id" : "lis:Instant",
     "@type" : "owl:Class",
@@ -1097,7 +1099,7 @@
     "example" : "A plan to act, an approval of a survey.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A potential, the realization of which is of value for the bearer.",
-    "primitiveRationale" : "Accounting for the notion of (mental) attitude is beyond the scope of IDO."
+    "primitiveRationale" : "Accounting for  (mental) attitudes of value is beyond the scope of IDO."
   }, {
     "@id" : "lis:Interval",
     "@type" : "owl:Class",
@@ -1148,7 +1150,7 @@
     "example" : "The steel grade of a cast-iron component, the plastic type of a wire sheathing.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A quality that can be characterised in terms of chemical or material properties.",
-    "primitiveRationale" : "A precise account of of \"chemical properties\" is beyond the scope of IDO."
+    "primitiveRationale" : "A precise account of chemical properties is beyond the scope of IDO."
   }, {
     "@id" : "lis:Object",
     "@type" : "owl:Class",
@@ -1176,10 +1178,10 @@
     "rdfs:seeAlso" : "ISO 15926-2:2003 'class_of_organization'",
     "subClassOf" : "lis:Object",
     "example" : "A standards body, a service team, a workgroup, a company",
+    "adaptedFrom" : "iof-core:Organization",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "An object comprising one or more persons who identify by some name and pursue a common set of plans and objectives.",
-    "primitiveRationale" : "A comprehensive definition of the notion of organization is beyond the scope of IDO (it would determine which kinds of aggregations of people, and which kinds of roles, are appropriate for organizations).",
-    "usageNote" : "Adapted from IOF."
+    "primitiveRationale" : "A comprehensive definition of the notion of organization is beyond the scope of IDO (it would determine which kinds of aggregations of people, and which kinds of roles, are appropriate for organizations)."
   }, {
     "@id" : "lis:Person",
     "@type" : "owl:Class",
@@ -1187,37 +1189,45 @@
     "rdfs:seeAlso" : "ISO 15926-2:2003 'class_of_person'",
     "subClassOf" : "lis:Organism",
     "example" : "A human being.",
-    "scopeNote" : "In industry use cases, subclasses of 'person' will typically require role attributions to be considered fully explicit. For example, 'maintenance engineer' is an obvious subclass of 'person', as every engineer is a person; use a 'role' to say what a maintenance engineer does. I.e., such a class may be augmented with a restriction to say that any member is the bearer of an engineering role; what the role amounts to will then be captured by the kinds of activities that count as realizations of the role.",
+    "scopeNote" : "In an RDL, subclasses of 'person' will typically require 'role' restrictions to be considered fully explicit. For example, 'maintenance engineer' will be a subclass of 'person', as every engineer is a person. To capture what a maintenance engineer does, a role restriction can say that any member is the bearer of an engineering role, and what the role amounts to will be represented by the kinds of activities that count as realizations of the role.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "An organism that is a human.",
-    "primitiveRationale" : "Providing precise semantics of what \"human\" amounts to is beyond the scope of IDO.",
-    "usageNote" : "Don't want to use engineer in the example as an engineer is a person with a human role"
+    "primitiveRationale" : "Providing precise semantics of what \"human\" amounts to is beyond the scope of IDO."
   }, {
     "@id" : "lis:Phase",
     "@type" : "owl:Class",
     "label" : "Phase",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'phase'",
-    "subClassOf" : [ "_:b14", "lis:PhysicalObject" ],
-    "example" : "A solid object, a liquid object, a gaseous object.",
+    "subClassOf" : [ "_:b10", "lis:PhysicalObject" ],
+    "example" : "Solid object, liquid object, gaseous object.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A physical object with a distinct and homogeneous form.",
     "primitiveRationale" : "The semantics of phases is beyond the scope of IDO.",
-    "usageNote" : [ "The class 'phase' serves as an ultimate \"book-keeping\" superclass for a taxonomy of phases.  It carries no distinguishing constraints, since any physical object will have phase.", "Definition from Oxford English Dictionary." ]
+    "usageNote" : [ "An RDL can include classes that categorise individuals according to material phase. This class is suitable as the top node of such a taxonomy.", "Definition from Oxford English Dictionary." ]
   }, {
     "@id" : "lis:PhaseQuality",
     "@type" : "owl:Class",
     "label" : "PhaseQuality",
     "subClassOf" : "lis:Quality",
-    "owl:deprecated" : true,
     "example" : "The liquid quality of an amount of molten steel, the solid quality of a steel gasket.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A 'quality' that can be characterised in terms of material phase.",
-    "primitiveRationale" : "A precise account of of \"material phase\" is beyond the scope of IDO."
+    "primitiveRationale" : "A precise account of material phase is beyond the scope of IDO."
+  }, {
+    "@id" : "lis:PhysicalArtefact",
+    "@type" : "owl:Class",
+    "label" : "PhysicalArtefact",
+    "subClassOf" : "lis:PhysicalObject",
+    "example" : "a pressure transmitter, a process plant, a wrench, a computer.",
+    "iof-av:isPrimitive" : true,
+    "naturalLanguageDefinition" : "A 'physical object' that has been created as the result of deliberate activity.",
+    "primitiveRationale" : "To give a precise account of \"making\" goes beyond the scope of IDO. An account would engage notions on which there is no clear consensus, including intentional notions of intended purpose, and of goal-directed action; of permanence and integrity; etc. There is an abundance of edge cases for \"physical artefact\".",
+    "usageNote" : [ "The superclass of 'physical artefact' is not 'inanimate physical object', in order to allow for artificially made organisms.", "A typical RDL includes classes that represent industrial item types, such as equipment, devices, assemblies, buildings, and products, among other elements. This class is suitable as the top node in a taxonomy of such classes." ]
   }, {
     "@id" : "lis:PhysicalObject",
     "@type" : "owl:Class",
     "label" : "PhysicalObject",
-    "rdfs:seeAlso" : [ "ISO 15926-2:2003 'materialized_physical_object'", "ISO 15926-2:2003 'physical_object'" ],
+    "rdfs:seeAlso" : "ISO 15926-2:2003 'physical_object'",
     "seeAlso" : [ "obo:BFO_0000040", "dol:physical-object" ],
     "subClassOf" : "lis:Object",
     "example" : "A wall, a fluid stream, a welder, a printed manual, a seafloor.",
@@ -1235,7 +1245,7 @@
     "example" : "The mass of a bar of steel, the temperature of a medium, the inner diameter of a pipe, the lift height of a crane, the head (lift height) of a pump.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A quality that can be quantified by measurement.",
-    "primitiveRationale" : "The notion of \"unit of measure\" is employed in the definition of 'physical quantity'. It is beyond the scope of IDO to give an account of measurement."
+    "primitiveRationale" : "It is beyond the scope of IDO to give an account of measurement."
   }, {
     "@id" : "lis:PlaneInSpace",
     "@type" : "owl:Class",
@@ -1257,20 +1267,20 @@
   }, {
     "@id" : "lis:Potential",
     "@type" : "owl:Class",
-    "comment" : "Use OWL property chains to enforce constraints on how the bearer needs to participate in order for an activity to count as a realization.",
     "label" : "Potential",
-    "seeAlso" : "obo:BFO_0000017",
     "subClassOf" : "lis:Dependent",
     "disjointWith" : "lis:Quality",
     "altLabel" : "Realizable Entity",
     "example" : "The sealing function of a gasket, the disposition of a steel bar to corrode.",
+    "adaptedFrom" : "obo:BFO_0000017",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A dependent entity that can potentially be realised through participation in an activity.",
-    "primitiveRationale" : "The necessary condition for being a 'potential' is that activity type and participation type are provided. It is however not clear what sufficient conditions would consist in, as these would at least involve a notion of successful execution for the relevant activities, which goes beyond the scope of IDO."
+    "primitiveRationale" : "The necessary condition for being a 'potential' is that activity type and participation type are provided. It is however not clear what sufficient conditions would consist in, as these would at least involve a notion of successful execution for the relevant activities, which goes beyond the scope of IDO.",
+    "usageNote" : "Use OWL property chains to enforce constraints on how the bearer needs to participate in order for an activity to count as a realization."
   }, {
     "@id" : "lis:Quality",
     "@type" : "owl:Class",
-    "comment" : [ "The class Quality and its subclass PhysicalQuantity are inspired by corresponding classes included in the DOLCE and BFO (BFO_0000019) upper ontologies.", "DOLCE describes qualities as follows: \"Qualities can be seen as the basic entities we can perceive or measure: shapes, colors, sizes, sounds, smells, as well as weights, lengths, electrical charges... 'Quality' is often used as a synonymous of 'property', but this is not the case in this upper ontology: qualities are particulars, properties are universals.  Qualities inhere to entities: every entity (including qualities themselves) comes with certain qualities, which exist as long as the entity exists.\"" ],
+    "comment" : "The class Quality and its subclass PhysicalQuantity are inspired by corresponding classes included in the DOLCE and BFO upper ontologies.",
     "label" : "Quality",
     "seeAlso" : [ "ssn:ActuatableProperty", "obo:BFO_0000019", "ssn:Property", "dol:quality", "obo:PATO_0001241", "obo:PATO_0000001" ],
     "rdfs:seeAlso" : "ISO 15926-2:2003 'property'",
@@ -1286,36 +1296,38 @@
     "comment" : "This class is inspired by the class \"measurement datum\" of the Information Artifact Ontology (IAO). The change of wording from \"measurement\" to \"quality\" is intended to support cases where measurement is not involved, such as with nominal values.",
     "label" : "QualityDatum",
     "seeAlso" : "obo:IAO_0000109",
-    "subClassOf" : [ "lis:InformationObject", "_:b95" ],
+    "subClassOf" : [ "lis:InformationObject", "_:b106" ],
     "example" : "10 volts, high (of pressure), low (of temperature), category 3 (as used to rate the strength 'quality' of a storm), 3 MB (a file size), qualifications, grades.",
     "scopeNote" : "Introduce subclasses of 'quality datum' in RDL to distinguish categories of data, such as nominal versus measured values.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "An information object that quantifies a quality.",
-    "primitiveRationale" : "A precise account of the notion of representation of magnitudes is beyond scope of IDO.",
+    "primitiveRationale" : "A precise account of the  representation of magnitudes is beyond the scope of IDO.",
     "usageNote" : [ "This class may be used for data that don't fit the restriction to \"single unit, single number\" of 'scalar quantity datum', including data employing vectors instead of numbers, and conventional categories like \"high\" and \"medium\".", "Quantification may be on nominal, ordinal, and other scales." ]
   }, {
     "@id" : "lis:Role",
     "@type" : "owl:Class",
-    "comment" : [ "This class is intended to serve the same purpose as the ISO 15926-2:2003 'role' entity type, as well as the same-named BFO class (BFO_0000023).", "As with any 'potential', the existence of a role is dependent on its bearer. A particular meeting room's role may therefore not be transferred to a different room; a different role individual with similar classification would be needed." ],
     "label" : "Role",
-    "seeAlso" : [ "lis:hasRole", "obo:BFO_0000023" ],
+    "seeAlso" : "lis:hasRole",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'role', 'role_and_domain'",
     "subClassOf" : "lis:Potential",
     "example" : [ "The role of an interior space (a 'site') as a meeting room is realized when it serves as the space for conducting meetings. The site may be assigned a storage room role at a different time.", "The role an individual person takes in a work situation, such as a manager. A student role." ],
+    "scopeNote" : "This class is intended to serve the same purpose as the ISO 15926-2:2003 'role' entity type, as well as the same-named BFO class (BFO_0000023).",
+    "adaptedFrom" : "obo:BFO_0000023",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A potential that is assigned to an object.",
-    "primitiveRationale" : "Making the notion of assignment (to a task) fully precise is beyond the scope of IDO. With complex intentions notions of obligation, which are often required in role assignments, this is particularly clear."
+    "primitiveRationale" : "Making the notion of assignment (to a task) fully precise is beyond the scope of IDO. With complex intentions notions of obligation, which are often required in role assignments, this is particularly clear.",
+    "usageNote" : "As with any 'potential', the existence of a role is dependent on its bearer. A particular meeting room's role may therefore not be transferred to a different room; a different role individual with similar classification would be needed."
   }, {
     "@id" : "lis:ScalarQuantityDatum",
     "@type" : "owl:Class",
     "label" : "ScalarQuantityDatum",
     "seeAlso" : [ "om:Measure", "obo:IAO_0000032", "qudt:QuantityValue" ],
-    "subClassOf" : [ "_:b8", "lis:QualityDatum", "_:b17" ],
+    "subClassOf" : [ "_:b13", "_:b14", "lis:QualityDatum", "_:b15" ],
     "example" : "10 kilograms, 220 volt.",
     "iof-av:isPrimitive" : false,
     "naturalLanguageDefinition" : "A quality datum that quantifies a physical quantity with a numeric value and a scale.",
     "semiFormalNaturalLanguageAxiom" : "If x is a 'scalar quantity datum', then x is a 'quality datum' which 'quantifies quality' some 'physical quantity', and has a 'datum uom' relationship to a 'unit of measure' and a 'datum value' relationship to a literal value.",
-    "usageNote" : "A scalar quantity datum has a unique unit of measure and a unique numeric value. This class is inspired by the class \"scalar measurement datum\" of the Information Artefact Ontology."
+    "usageNote" : "A scalar quantity datum has a unique unit of measure and a unique numeric value. This class is inspired by the class \"scalar measurement datum\" of the Information Artifact Ontology."
   }, {
     "@id" : "lis:Scale",
     "@type" : "owl:Class",
@@ -1328,7 +1340,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A unit of measure that, when paired with a number, unambiguously describes the magnitude of a physical quantity.",
     "primitiveRationale" : "A comprehensive definition of the notion of scale is beyond the scope of IDO.",
-    "usageNote" : [ "'scale' corresponds to the common sense notion of unit of measure which unambiguously defines the magnitude of the measure.", "The permissible number range for a scale may be expressed in OWL. Semi-formal example: If 'Celsius' is the 'uom of datum' of x, then any 'datum value' of x is within the range of -273,1 to infinity." ]
+    "usageNote" : [ "'scale' corresponds to the common sense notion of unit of measure which unambiguously defines the magnitude of the measure.", "OWL data ranges can capture the acceptable numerical range for a scale. For instance, the 'datum value' of any 'quality datum' that has Celsius as 'datum uom' can be limited to the range from -273.15 upwards to infinity." ]
   }, {
     "@id" : "lis:ShapeQuality",
     "@type" : "owl:Class",
@@ -1337,11 +1349,11 @@
     "example" : "The flat shape of a surface feature, the cylindrical shape of a piece of pipe.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A quality that can be characterised in terms of geometry.",
-    "primitiveRationale" : "A precise account of of \"spatial properties\" is beyond the scope of IDO."
+    "primitiveRationale" : "A precise account of geometries is beyond the scope of IDO."
   }, {
     "@id" : "lis:Site",
     "@type" : "owl:Class",
-    "comment" : "This class is inspired by the BFO/Information Artefact Ontology class BFO_0000029 'site'.",
+    "comment" : "This class is inspired by the BFO class 'site'.",
     "label" : "Site",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'spatial_location', 'region_in_space'",
     "seeAlso" : "obo:BFO_0000029",
@@ -1365,7 +1377,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "A location defined relative to a spatial reference system.",
     "primitiveRationale" : "To provide an account of space, or spatial reference system, is beyond the scope of IDO.",
-    "usageNote" : [ "The subclasses 'point in space', 'line in space', 'plane in space', and 'volume in space' are all defined as singular: for example, a 'point in space' individual may not have multiple points as parts. This, in contrast to the analogous BFO classes 'one-dimensional spatial region', etc., which are all defined as plural, allowing for disconnected parts.", "As with 'spatiotemporal region', a spatial location need not be connected; for example, a location may consist in several cube-shaped regions.", "The extent of a 'spatial location' may be given either in terms of a spatial frame of reference, for instance with coordinates, or by position relative to material entities at a point in time." ]
+    "usageNote" : [ "The subclasses 'point in space', 'line in space', 'plane in space', and 'volume in space' are all defined as singular: for example, a 'point in space' individual may not have multiple points as parts. This, in contrast to the analogous BFO classes 'one-dimensional spatial region', etc., which are all defined as plural, allowing for disconnected parts.", "As with 'spatiotemporal region', a spatial location need not be connected; for example, a location may consist in several cube-shaped regions." ]
   }, {
     "@id" : "lis:SpatiotemporalRegion",
     "@type" : "owl:Class",
@@ -1404,16 +1416,15 @@
     "@type" : "owl:Class",
     "label" : "System",
     "seeAlso" : [ "lis:functionalPartOf", "ssn:System" ],
-    "subClassOf" : [ "lis:FunctionalObject", "_:b32" ],
+    "subClassOf" : [ "lis:FunctionalObject", "_:b34" ],
     "example" : "An electrical network, an HVAC system, a pumping system, a compressor.",
     "iof-av:isPrimitive" : true,
-    "naturalLanguageDefinition" : "A 'functional object' with one or more functional parts whose functions contribute to the function of the system.",
-    "primitiveRationale" : "A precise account of the nature of dependency between the function of a system, as a whole, and the functions of its parts is (likely) beyond the scope of IDO.",
+    "naturalLanguageDefinition" : "A 'functional object' with one or more functional parts whose functions contribute to its function.",
+    "primitiveRationale" : "A precise account of the nature of dependency between the function of a system, as a whole, and the functions of its parts is beyond the scope of IDO.",
     "usageNote" : "Most industrial assets are both 'system' and 'inanimate physical object'. When modelling, e.g., a pump system, that system will be an 'inanimate physical object', with the pump part related to the pump system by 'has functional part'. The domain and range restrictions on 'has functional part' then imply that the pump system has type 'system', and the pump has type 'functional object'."
   }, {
     "@id" : "lis:Temporal",
     "@type" : "owl:Class",
-    "comment" : "In ISO 15926-2:2003, Activity is not a supertype of Event; in BFO, 'process' is not a supertype of 'process boundary'. This may indicate that 'event' in IDO should in fact not be a subclass of 'activity'.",
     "label" : "Temporal",
     "seeAlso" : [ "dol:perdurant", "obo:BFO_0000003" ],
     "altLabel" : "Temporal Entity",
@@ -1556,7 +1567,7 @@
   }, {
     "@id" : "lis:concretizes",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b15",
+    "domain" : "_:b12",
     "label" : "concretizes",
     "range" : "lis:InformationObject",
     "seeAlso" : [ "lis:concretizedBy", "obo:BFO_0000164", "obo:BFO_0000059", "obo:RO_0000059" ],
@@ -1565,7 +1576,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'concretizes' y, then y is an 'information object', and x is a 'physical object' copy of y, or an 'activity' performance of y.",
     "primitiveRationale" : "A comprehensive definition of what it means to be a copy, or manifest a pattern, is beyond the scope of IDO. The definition given here is clearly incomplete.",
-    "usageNote" : [ "There are two main, and very different, uses of 'concretizes' for an information object y.  (1) The information object is made concrete in printed or electronic copies. Each copy will have patterns of ink or configurations of electrons that map to y: a quality of appropriate similarity.  (2) The information object is made concrete by a performance according to the specification given by y. A 'process profile' of the performance will map to the pattern of y in an appropriate way.", "The relation of concretization is under-documented, especially when it comes to concretization as entities to be realized in activities, or activities themselves; we follow the latter, as is done in BFO-ISO, where the performance of a musical piece is the concretization. Other BFO documentation says the intention to perform is the concretization.  The current annotations and axioms in IDO represent a best effort, but may need to be changed." ]
+    "usageNote" : "There are two main, and very different, uses of 'concretizes' for an information object y.  (1) The information object is made concrete in printed or electronic copies. Each copy will have patterns of ink or configurations of electrons that map to y: a quality of appropriate similarity.  (2) The information object is made concrete by a performance according to the specification given by y."
   }, {
     "@id" : "lis:connectedTo",
     "@type" : [ "owl:ObjectProperty", "owl:SymmetricProperty" ],
@@ -1720,7 +1731,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'has active participant' y, then x is an active participant in y.",
     "primitiveRationale" : "The distinction between active and participation participation is primitive.",
-    "usageNote" : [ "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a pump's primary function is realized in pumping activities, but only provided the pump is actually doing the pumping, acting as an \"agent\" or \"subject\".", "This is a covering relation for participation that involves acting on other participants." ]
+    "usageNote" : "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a pump's primary function is realized in pumping activities, but only provided the pump is actually doing the pumping, acting as an \"agent\" or \"subject\"."
   }, {
     "@id" : "lis:hasActivityBound",
     "@type" : "owl:ObjectProperty",
@@ -1796,7 +1807,6 @@
   }, {
     "@id" : "lis:hasCapability",
     "@type" : "owl:ObjectProperty",
-    "comment" : "Inspired by the introduction of the class 'capability' in recent works by Barry Smith, this relation complements 'has disposition' and 'has function'.",
     "label" : "hasCapability",
     "range" : "lis:Capability",
     "seeAlso" : "lis:capabilityOf",
@@ -1872,18 +1882,17 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'has functional part' y, then x is a 'system' of which y is a part, and y has one or more functions that contribute to the function of x.",
     "primitiveRationale" : "The notion of \"contributing function\" is not fully accounted for in IDO.",
-    "usageNote" : "'has functional part' is used to represent the functional break-down of a system. Where x is a functional part of a system y, the realisation of one or more functions of x contributes to the performance of y."
+    "usageNote" : [ "Note that, for physical objects, 'has functional part' is a specialization of 'has arranged part'.", "'has functional part' provides a compact way of modeling that is not expressive enough to model multiple functional breakdowns. Note that modeling 'has part' directly between Function/Disposition instances gives a higher flexibility and precision, in particular when objects have multiple functions or dispositions.", "If 'has part' relationship is modeled between Function/Disposition instances, 'has functional part' can be inferred between the objects that are bearers of the respective functions/dispositions if the corresponding rules are implemented.", "'has functional part' is used to represent the functional break-down of a system. Where x is a functional part of a system y, the realisation of one or more functions of x contributes to the performance of y." ]
   }, {
     "@id" : "lis:hasInterest",
     "@type" : "owl:ObjectProperty",
     "comment" : "Note, the use of \"potential\" in the definition does not imply \"not actual\", only \"not necessarily actual\".",
-    "domain" : "_:b33",
+    "domain" : "_:b56",
     "label" : "hasInterest",
     "rdfs:seeAlso" : "ISO 15926-2:2003 'lifecycle_stage'",
     "seeAlso" : [ "lis:interestOf", "obo:IAO_0000033" ],
     "subPropertyOf" : "lis:hasPotential",
     "example" : "An intention to start a process, a plan to modify a plant, an approval of a certification.",
-    "explanatoryNote" : "The relation of interest receives a related, but different treatment in Merrell, et al., \"Capabilities\" (cf. annotations on 'capability'), p. 14: \"We take the 'has an interest in' relation to be primitive, ... [T]he domain of this relation is: all organisms and groups of organisms, ... [T]he range is process in BFO terms, specifically all processes that are the realizations of dispositions.\" With IDO, the range is instead a 'potential'; this allows for interests that are not realized.",
     "iof-av:isPrimitive" : false,
     "naturalLanguageDefinition" : "x 'has interest' y if and only if x is an 'organization' or 'organism', x 'has potential' y, and y is an 'interest'."
   }, {
@@ -1898,7 +1907,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'has material part' y, then x is a 'physical object', and y is a maximal part of x that has a certain 'material composition quality'.",
     "primitiveRationale" : "The reference in the definition to some 'material composition quality' possessed by the part can not be captured in OWL.",
-    "usageNote" : "This is a hook for sub-properties to assist with representation of concepts associated with, e.g., recyclability."
+    "usageNote" : "An RDL can include parthood relations that identify parts by their materials, supporting recyclability efforts and similar use cases.  This relation is suitable as the top node of a taxonomy of such relations. These include \"reinforced with material\"  or \"has a matrix with material\" which cannot be aligned with  lis:hasAssembledPart or lis:hasArrangedPart."
   }, {
     "@id" : "lis:hasPart",
     "@type" : "owl:ObjectProperty",
@@ -1920,9 +1929,9 @@
     "seeAlso" : [ "obo:BFO_0000057", "lis:participatesIn", "obo:RO_0000057" ],
     "rdfs:seeAlso" : "ISO 15926-2:2003 'participation'",
     "propertyChainAxiom" : [ {
-      "@list" : [ "lis:realizes", "lis:potentialOf" ]
-    }, {
       "@list" : [ "lis:hasActivityPart", "lis:hasParticipant" ]
+    }, {
+      "@list" : [ "lis:realizes", "lis:potentialOf" ]
     }, {
       "@list" : [ "lis:profileOfQuality", "lis:qualityOf" ]
     } ],
@@ -1943,7 +1952,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'has participant quality quantified as' y, then x is an 'activity', y is a 'quality datum', and at a time within (inclusive) the duration of x, y 'quantifies quality' a 'quality' of a participant in x.",
     "primitiveRationale" : "The notion of \"during\" used here goes beyond OWL expressivity.",
-    "usageNote" : "Suitable as a superproperty for properties that assign aggregate datums to activities, to assign average, maximum, or minimum quantification datums."
+    "usageNote" : "This relation is suitable as the top node in a taxonomy of relations that assign aggregate datums to activities."
   }, {
     "@id" : "lis:hasPassiveParticipant",
     "@type" : "owl:ObjectProperty",
@@ -1954,7 +1963,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "if x 'has passive participant' y, then x is a passive participant in y.",
     "primitiveRationale" : "The distinction between active and participation participation is primitive.",
-    "usageNote" : [ "This is a covering relation for passive participation, i.e., being acted on by other participants in an activity, or playing a supporting role.", "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a bolt is a passive participant in a bolt-driving activity, where its disposition to enter a threaded hole is realized (distinct from the bolt's function, which is realized in a subsequent activity of holding pieces together)." ]
+    "usageNote" : "With OWL property chains, the right kind of participation can be secured for activities that count as realizations of 'potential' individuals. As in, a bolt is a passive participant in a bolt-driving activity, where its disposition to enter a threaded hole is realized (distinct from the bolt's function, which is realized in a subsequent activity of holding pieces together)."
   }, {
     "@id" : "lis:hasPhysicalQuantity",
     "@type" : "owl:ObjectProperty",
@@ -1969,7 +1978,6 @@
   }, {
     "@id" : "lis:hasPotential",
     "@type" : "owl:ObjectProperty",
-    "comment" : "Generic relation for assigning  'potential' entities (typically, dispositions or roles) to bearers.",
     "domain" : "lis:Object",
     "label" : "hasPotential",
     "range" : "lis:Potential",
@@ -2015,7 +2023,7 @@
     "example" : "The GeoSPARQL object property geo:hasLength relates (spatial) objects to datums that provide length with number and unit of measure. lis:hasQualityQuantifiedAs is suitable as a superproperty in an alignment with GeoSPARQL data that includes geo:hasLength relationships.",
     "iof-av:isPrimitive" : false,
     "naturalLanguageDefinition" : "If x 'has quality quantified as' y, then x is an 'object', and y is a 'quality datum' that 'quantifies quality' a 'quality' of x.",
-    "usageNote" : "This is an informally \"abstract\" superproperty of \"shortcut\" relations that relate objects directly to quality datums, leaving the quality implicit."
+    "usageNote" : "This relation is suitable as the top node in a taxonomy of \"shortcut\" relations that relate objects directly to quality datums, leaving the quality implicit."
   }, {
     "@id" : "lis:hasResident",
     "@type" : "owl:ObjectProperty",
@@ -2041,7 +2049,7 @@
   }, {
     "@id" : "lis:hasSpatialExtent",
     "@type" : [ "owl:FunctionalProperty", "owl:ObjectProperty" ],
-    "domain" : "_:b80",
+    "domain" : "_:b24",
     "label" : "hasSpatialExtent",
     "range" : "lis:SpatialLocation",
     "seeAlso" : [ "obo:BFO_0000210", "dol:exact-location", "lis:spatialExtentOf" ],
@@ -2083,7 +2091,7 @@
     "range" : "lis:TemporalRegion",
     "seeAlso" : [ "lis:temporalExtentOf", "obo:BFO_0000199" ],
     "subPropertyOf" : "lis:occursRelativeTo",
-    "example" : "A well drilling activity takes place in a 20-hour interval, a control system is switched on at 10:00.",
+    "example" : "A well drilling activity takes place in a 20-hour interval, a control system is switched on at 10:00 AM.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'has temporal extent' y, then x is a 'temporal' entity, and y is a temporal region which is the temporal extent of x.",
     "primitiveRationale" : "The notion of temporal extension is primitive."
@@ -2114,7 +2122,7 @@
     "range" : "lis:Specified",
     "seeAlso" : "lis:implementedBy",
     "example" : "Pump P-101 is a tag, and ACME pumps with serial numbers 457636 and 457711 implement (have been installed as) this pump.",
-    "scopeNote" : "The 'implements' relation is central to the intended use of IDO. It allows for a record of different individuals being installed or otherwise serving as a specified object over time. Typically, a serial-numbered artefact is installed as a \"specification\" individual (a \"tag\") at one time, and later replaced with another serial-numbered artefact. The 'implements' relation carries semantic restrictions only to ensure no object is both Actual and Specified. No further constraints are given, to allow 'implements' relationships even where restrictions on the specification object are inconsistent with those on the implementing (installed) object.",
+    "scopeNote" : "The 'implements' relation is central to the intended use of IDO. It allows for a record of different individuals being installed or otherwise serving as a specified object over time. Typically, a serial-numbered physical artefact is installed as a \"specification\" individual (a \"tag\") at one time, and later replaced with another serial-numbered physical artefact. The 'implements' relation carries semantic restrictions only to ensure no object is both Actual and Specified. No further constraints are given, to allow 'implements' relationships even where restrictions on the specification object are inconsistent with those on the implementing (installed) object.",
     "explanatoryNote" : "The domain and range restrictions to disjunct classes 'actual' and 'specified' prevent chains of 'implements' relationships.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'implements' y, then x is a 'specified' entity, y is an 'actual' entity, and at some time, x is the same individual as y.",
@@ -2137,7 +2145,7 @@
     "seeAlso" : [ "lis:representedIn", "obo:IAO_0000136" ],
     "rdfs:seeAlso" : "ISO 15926-2:2003 'representation_of_thing'",
     "example" : "A regulation describes a procedure, a datum quantifies a quality, a nameplate provides basic information about a pressure vessel, a log file traces quantity values during an activity.",
-    "scopeNote" : "The 'is about' relation is intended as a superrelation for the broad range of relations between information objects and entities, including describing, naming, characterisation, and evaluation.",
+    "scopeNote" : "This relation is suitable as the top node in a taxonomy of relations between information objects and entities, including describing, naming, characterisation, and evaluation.",
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'is about' y, then x is an 'information object' of relevance to y.",
     "primitiveRationale" : "A comprehensive account of aboutness is beyond the scope of IDO."
@@ -2180,7 +2188,6 @@
   }, {
     "@id" : "lis:occursRelativeTo",
     "@type" : [ "owl:SymmetricProperty", "owl:ObjectProperty" ],
-    "comment" : "This relation is introduced for the DL profile as a top relation for various temporal relations between activities (only).",
     "domain" : "lis:Temporal",
     "label" : "occursRelativeTo",
     "range" : "lis:Temporal",
@@ -2189,7 +2196,7 @@
     "iof-av:isPrimitive" : true,
     "naturalLanguageDefinition" : "If x 'occurs relative to' y, then x and y are 'temporal' entities, with temporal location.",
     "primitiveRationale" : "The notion of relative location in time is introduced with this relation.",
-    "usageNote" : "This relation is \"abstract\" (in the object-orientation sense of the word) in that it serves only as a parent relation to specialised relations of relative temporal location."
+    "usageNote" : "This relation is suitable as the top node in a taxonomy of relations of relative temporal location."
   }, {
     "@id" : "lis:originatesFrom",
     "@type" : "owl:AnnotationProperty",
@@ -2232,7 +2239,7 @@
   }, {
     "@id" : "lis:potentialOf",
     "@type" : "owl:ObjectProperty",
-    "comment" : [ "This relation is used in the property chain for 'has participant', for inferring participation in a temporal entity (typically, an activity).", "Generic relation from a 'potential' to the bearer (or, for the less common cases of multiply dependent realizable entities, to the bearers)." ],
+    "comment" : "This relation is used in the property chain for 'has participant', for inferring participation in a temporal entity (typically, an activity).",
     "label" : "potentialOf",
     "seeAlso" : "lis:hasPotential",
     "inverseOf" : "lis:hasPotential",
@@ -2302,7 +2309,7 @@
     "example" : "The nominal outer diameter of a pipe is 324 mm, the measured temperature of a boiler is 150 degrees Celsius, the colour of a surface is 'red'.",
     "iof-av:isPrimitive" : false,
     "naturalLanguageDefinition" : "If x is a 'quality quantified as' y, then x is an 'quality' that is 'represented in' the 'quality datum' y.",
-    "usageNote" : "The range of 'quality quantified as' is 'quality datum', which includes data that don't follow the \"unit of measure with value\" pattern. Examples are colours and chemical composition categories."
+    "usageNote" : "The range of 'quality quantified as' is 'quality datum', which includes data that do not follow the \"unit of measure with value\" pattern. Examples are colours and chemical composition categories."
   }, {
     "@id" : "lis:qualityQuantityValue",
     "@type" : "owl:DatatypeProperty",
@@ -2311,7 +2318,7 @@
     "example" : "Mass in kilograms, pressure in barg.",
     "iof-av:isPrimitive" : false,
     "naturalLanguageDefinition" : "If x has 'quality quantity value' y, then x is an 'object', and y is a literal value that quantifies a quality of x.",
-    "usageNote" : [ "When introducing shortcut properties as subproperties, annotations should be provided to explain the intended quantity type, any quantification type (e.g., measured, nominal, etc.), and unit of measure.", "This relation is \"abstract\" (in the object-orientation sense of the word), a \"hook\": it serves only as a parent for specialised data properties. It serves as a super-property for \"shortcut\" relations that combine a quality, and a unit of measure into a simple data property." ]
+    "usageNote" : [ "When introducing shortcut properties as subproperties, annotations should be provided to explain the intended quantity type, any quantification type (e.g., measured, nominal, etc.), and unit of measure.", "This relation is suitable as the top node in a taxonomy of \"shortcut\" relations that combine quality and unit of measure into a single, simple data property." ]
   }, {
     "@id" : "lis:quantifiesQuality",
     "@type" : "owl:ObjectProperty",
@@ -2541,6 +2548,12 @@
     "label" : "prefLabel",
     "subPropertyOf" : "rdfs:label"
   }, {
+    "@id" : "skos:scopeNote",
+    "@type" : "owl:AnnotationProperty",
+    "comment" : "Note to clarify meaning or use of an ontology resource.",
+    "isDefinedBy" : "http://www.w3.org/2004/02/skos/core",
+    "label" : "scopeNote"
+  }, {
     "@id" : "iof-av:adaptedFrom",
     "@type" : "owl:AnnotationProperty",
     "isDefinedBy" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
@@ -2566,7 +2579,7 @@
   }, {
     "@id" : "iof-av:isPrimitive",
     "@type" : "owl:AnnotationProperty",
-    "isDefinedBy" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/>",
+    "isDefinedBy" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/",
     "label" : "isPrimitive"
   }, {
     "@id" : "iof-av:naturalLanguageDefinition",
@@ -2605,12 +2618,19 @@
     "label" : "usageNote"
   } ],
   "@context" : {
-    "rest" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "annotatedTarget" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedTarget",
       "@type" : "@id"
     },
-    "first" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+    "annotatedProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedProperty",
+      "@type" : "@id"
+    },
+    "annotatedSource" : {
+      "@id" : "http://www.w3.org/2002/07/owl#annotatedSource",
       "@type" : "@id"
     },
     "naturalLanguageDefinition" : {
@@ -2652,34 +2672,32 @@
       "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
       "@type" : "@id"
     },
-    "comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-    },
-    "annotatedTarget" : {
-      "@id" : "http://www.w3.org/2002/07/owl#annotatedTarget",
-      "@type" : "@id"
-    },
-    "annotatedProperty" : {
-      "@id" : "http://www.w3.org/2002/07/owl#annotatedProperty",
-      "@type" : "@id"
-    },
-    "annotatedSource" : {
-      "@id" : "http://www.w3.org/2002/07/owl#annotatedSource",
-      "@type" : "@id"
-    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
-    "deprecated" : {
-      "@id" : "http://www.w3.org/2002/07/owl#deprecated",
-      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
     },
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type" : "@id"
     },
+    "explanatoryNote" : {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"
+    },
     "scopeNote" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "synonym" : {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/synonym"
+    },
+    "semiFormalNaturalLanguageAxiom" : {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom"
     },
     "someValuesFrom" : {
       "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
@@ -2688,12 +2706,6 @@
     "onProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#onProperty",
       "@type" : "@id"
-    },
-    "synonym" : {
-      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/synonym"
-    },
-    "semiFormalNaturalLanguageAxiom" : {
-      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom"
     },
     "unionOf" : {
       "@id" : "http://www.w3.org/2002/07/owl#unionOf",
@@ -2706,13 +2718,6 @@
     "altLabel" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
     },
-    "explanatoryNote" : {
-      "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"
-    },
-    "propertyChainAxiom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#propertyChainAxiom",
-      "@type" : "@id"
-    },
     "members" : {
       "@id" : "http://www.w3.org/2002/07/owl#members",
       "@type" : "@id"
@@ -2721,13 +2726,12 @@
       "@id" : "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom",
       "@type" : "@id"
     },
-    "previousVersion" : {
-      "@id" : "http://purl.org/pav/previousVersion",
+    "propertyChainAxiom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#propertyChainAxiom",
       "@type" : "@id"
     },
-    "versionIRI" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
-      "@type" : "@id"
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "rights" : {
       "@id" : "http://purl.org/dc/elements/1.1/rights"
@@ -2736,10 +2740,6 @@
       "@id" : "http://purl.org/dc/terms/contributor",
       "@type" : "@id"
     },
-    "lastUpdateOn" : {
-      "@id" : "http://purl.org/pav/lastUpdateOn",
-      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
     "hasEarlierVersion" : {
       "@id" : "http://purl.org/pav/hasEarlierVersion",
       "@type" : "@id"
@@ -2747,27 +2747,32 @@
     "description" : {
       "@id" : "http://purl.org/dc/terms/description"
     },
-    "imports" : {
-      "@id" : "http://www.w3.org/2002/07/owl#imports",
-      "@type" : "@id"
-    },
-    "title" : {
-      "@id" : "http://purl.org/dc/terms/title"
-    },
     "modified" : {
       "@id" : "http://purl.org/dc/terms/modified",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
     },
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
     },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "previousVersion" : {
+      "@id" : "http://purl.org/pav/previousVersion",
+      "@type" : "@id"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license",
       "@type" : "@id"
+    },
+    "lastUpdateOn" : {
+      "@id" : "http://purl.org/pav/lastUpdateOn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator",
@@ -2786,6 +2791,7 @@
     "skos" : "http://www.w3.org/2004/02/skos/core#",
     "dcmitype" : "http://purl.org/dc/dcmitype/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "iof-core" : "https://spec.industrialontologies.org/ontology/core/Core/",
     "ssn" : "http://www.w3.org/ns/ssn/",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xml" : "http://www.w3.org/XML/1998/namespace",
