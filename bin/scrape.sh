@@ -5,7 +5,7 @@ set -uo pipefail
 
 # "Accept: text/turtle, application/trig, application/rdf+xml;q=0.9, application/ld+json;q=0.9, application/n-triples;q=0.5, application/n-quads;q=0.5"
 # CURLOPT="-L --fail --silent --show-error"
-CURLOPT="-L --connect-timeout 30 --fail --silent -w %{stderr}%{http_code}"
+CURLOPT="-L --connect-timeout 7 --fail --silent -w %{stderr}%{http_code}"
 
 main() {
 
