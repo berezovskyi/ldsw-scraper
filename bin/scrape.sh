@@ -92,9 +92,11 @@ main() {
    curl_get_exact "http://vocab.org/waiver/vocab.rdf" "WAIVER/waiver.rdf" "application/rdf+xml"
 
    curl_conneg_all "https://www.w3.org/ns/sparql-service-description" "w3c/SPARQL-SD/sd"
+   
    curl_conneg_all "http://rdfs.org/ns/void" "w3c/VoID/void"
    curl_conneg_all "http://www.w3.org/ns/prov-o" "w3c/PROV/prov-o"
    curl_conneg_all "http://www.w3.org/ns/prov" "w3c/PROV/prov"
+   curl_conneg_all "http://www.w3.org/ns/adms" "w3c/ADMS/adms"
 
    curl_conneg_all "http://rds.posccaesar.org/ontology/lis14/ont/core" "Industrial-Data-Ontology/ido-core"
    curl_conneg_all "http://rds.posccaesar.org/ontology/plm/ont/core" "Industrial-Data-Ontology/plm-core"
