@@ -173,6 +173,7 @@ main() {
 
    curl_conneg_all "http://www.w3.org/1999/02/22-rdf-syntax-ns" "w3c/rdf/rdf"
    curl_conneg_all "http://www.w3.org/2000/01/rdf-schema" "w3c/rdf/rdfs"
+   curl_conneg_all "http://www.w3.org/2002/07/owl#" "w3c/owl"
 
 }
 
