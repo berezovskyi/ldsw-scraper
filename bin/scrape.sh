@@ -16,6 +16,14 @@ main() {
    curl_conneg_all 'http://w3id.org/express#' 'ifcOWL/express'
    curl_conneg_all 'http://w3id.org/list#' 'ifcOWL/list'
 
+   curl_conneg_all 'http://qudt.org/schema/qudt' 'qudt/qudt'
+   curl_conneg_all 'http://qudt.org/2.1/schema/shacl/qudt' 'qudt/shacl/qudt'
+   curl_conneg_all 'http://qudt.org/2.1/schema/shacl/datatype' 'qudt/shacl/qudt_datatype'
+   curl_conneg_all 'http://qudt.org/2.1/schema/shacl/overlay/qudt' 'qudt/shacl/qudt_overlay'
+   curl_conneg_all 'http://qudt.org/2.1/schema/shacl/overlay/qudt' 'qudt/shacl/qudt_overlay'
+   curl_conneg_all 'http://www.linkedmodel.org/schema/dtype' 'qudt/linkedmodels_dtype/dtype'
+   curl_conneg_all 'http://www.linkedmodel.org/schema/vaem' 'qudt/linkedmodels_vaem/vaem'
+
    curl_conneg_all 'http://jazz.net/ns/dcs#' 'oslc/jazz/dcs'
    curl_conneg_all 'http://jazz.net/ns/mec#' 'oslc/jazz/mec'
    curl_conneg_all 'http://jazz.net/ns/enterprise_agile#' 'oslc/jazz/enterprise_agile'
