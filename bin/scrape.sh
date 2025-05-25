@@ -144,8 +144,8 @@ export CURLOPT
 function sleep_ci() {
    # we are not in a rush
    # but 3s increases CI runs 10x
-    :
-#    if [ ! -z ${CI+x} ]; then sleep 0.1; fi
+   # :
+   if [ ! -z ${CI+x} ]; then sleep 0.05; fi
 }
 
 # Function to process tasks for a single host
