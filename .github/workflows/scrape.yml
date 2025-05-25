@@ -16,6 +16,9 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+    - name: Setup
+      run: |-
+        sudo apt-get update -q && sudo apt-get install -y parallel     
     - name: Fetch latest data
       run: |-
         ./bin/scrape.sh      
