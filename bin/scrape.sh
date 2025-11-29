@@ -259,22 +259,60 @@ main() {
 
 }
 
-function delete_if_html() {
-    file_path="$1"
+    function delete_if_html() {
+        local file_path="$1"            # path to the temporary fetched file
+        local accept_header="${2:-}"    # original Accept header (optional)
+        local final_out="${3:-}"        # final target path (optional)
 
-    mime_type=$(file --mime-type "$file_path" | awk '{print $2}')
+        local mime_type=$(file --mime-type "$file_path" | awk '{print $2}')
 
-    # Check if the MIME type is text/html
-    if head -n 5 "$file_path" | grep -qiE '<html|<!DOCTYPE html' || [ "$mime_type" = "text/html" ]; then
-        # Delete the file
-        rm "$file_path"
-        echo -n " (deleted - HTML detected)"
-        # echo "File $file_path has been deleted because its MIME type is text/html or text/xml and it contains HTML tags in the first 5 lines."
-        # else
-        # echo
-        # echo "File $file_path has a MIME type of text/html or text/xml but does not contain common HTML tags in the first 5 lines. It will not be deleted."
-    fi
-}
+        # Helper to quickly test if a file looks like HTML
+        local is_html=0
+        if head -n 20 "$file_path" | grep -qiE '<html|<!DOCTYPE html'; then
+            is_html=1
+        elif [ "$mime_type" = "text/html" ] || [ "$mime_type" = "text/xml" ]; then
+            # Some servers mislabel RDF as text/xml; only treat as HTML if it actually contains angle-tag heavy markup
+            if grep -qiE '<(html|head|body|script|meta)' "$file_path"; then
+                is_html=1
+            fi
+        fi
+
+        if [ $is_html -eq 1 ]; then
+            # Attempt to detect a meta refresh redirect before deleting.
+            # Typical patterns:
+            # <meta http-equiv="refresh" content="0; URL=http://example.com/target" />
+            # <meta http-equiv='refresh' content='0;url=https://example.com/target'>
+            local redirect_url=""
+            # Grep meta refresh lines and extract URL= or url=
+            redirect_url=$(grep -i '<meta' "$file_path" | grep -i 'refresh' | grep -i 'content=' | sed -n -E 's/.*[Uu][Rr][Ll]=([^" >;]+).*/\1/p' | head -n1)
+
+            if [ -n "$redirect_url" ]; then
+                echo -n " (meta refresh -> $redirect_url)"
+                # Follow the redirect attempting to retrieve RDF at the target.
+                # Use same Accept header if supplied; else a broad RDF-focused preference.
+                local follow_accept="$accept_header"
+                if [ -z "$follow_accept" ]; then
+                    follow_accept="text/turtle, application/rdf+xml;q=0.9, application/ld+json;q=0.8, application/n-triples;q=0.5"
+                fi
+                { curl "$redirect_url" --header "Accept: ${follow_accept}" $CURLOPT >"${file_path}.redir"; } || rm -f "${file_path}.redir"
+                if [ -s "${file_path}.redir" ]; then
+                    # Replace original tmp file with the redirect result
+                    mv "${file_path}.redir" "$file_path"
+                    # Re-check quickly if still HTML; if not, salvage
+                    if ! head -n 20 "$file_path" | grep -qiE '<html|<!DOCTYPE html'; then
+                        echo -n " (salvaged)"
+                        return 0
+                    fi
+                else
+                    rm -f "${file_path}.redir"
+                fi
+            fi
+
+            # If still HTML (or no salvage), delete.
+            rm -f "$file_path"
+            echo -n " (deleted - HTML detected)"
+        fi
+    }
 
 function curl_safe() {
     # The 'uri' variable is implicitly used by curl here.
@@ -291,7 +329,7 @@ function curl_safe() {
     # TODO: consider clobbering on 404 to make it visible in the history - bad UX
     # The { } around curl and rm ensures that rm only happens if curl fails.
     { curl "$uri" --header "Accept: ${accept}" $CURLOPT >"${outpath}${ext}.tmp"; } || { rm -f "${outpath}${ext}.tmp"; }
-    delete_if_html "${outpath}${ext}.tmp"
+        delete_if_html "${outpath}${ext}.tmp" "${accept}" "${outpath}${ext}"
     if [ -s "${outpath}${ext}.tmp" ]; then # Check if file exists and is not empty
         mv "${outpath}${ext}.tmp" "${outpath}${ext}"
         echo -n " ✅"
