@@ -1,0 +1,2865 @@
+<?xml version="1.0" encoding="utf-16"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY dcterms 'http://purl.org/dc/terms/'>
+	<!ENTITY dtype 'http://www.linkedmodel.org/schema/dtype#'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY prov 'http://www.w3.org/ns/prov#'>
+	<!ENTITY qudt 'http://qudt.org/schema/qudt/'>
+	<!ENTITY sh 'http://www.w3.org/ns/shacl#'>
+	<!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+	<!ENTITY vaem 'http://www.linkedmodel.org/schema/vaem#'>
+	<!ENTITY voag 'http://voag.linkedmodel.org/schema/voag#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dtype="http://www.linkedmodel.org/schema/dtype#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:qudt="http://qudt.org/schema/qudt/" xmlns:sh="http://www.w3.org/ns/shacl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vaem="http://www.linkedmodel.org/schema/vaem#" xmlns:voag="http://voag.linkedmodel.org/schema/voag#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Property rdf:about="&dcterms;abstract">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">abstract</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;contributor">
+    <rdfs:label rdf:datatype="&xsd;string">contributor</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;created">
+    <rdfs:label rdf:datatype="&xsd;string">created</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;creator">
+    <rdfs:label rdf:datatype="&xsd;string">creator</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;description">
+    <rdfs:label rdf:datatype="&xsd;string">description</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;isReplacedBy">
+    <rdfs:label rdf:datatype="&xsd;string">is replaced by</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;modified">
+    <rdfs:label rdf:datatype="&xsd;string">modified</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;rights">
+    <rdfs:label rdf:datatype="&xsd;string">rights</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;source">
+    <rdfs:label rdf:datatype="&xsd;string">source</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;subject">
+    <rdfs:label rdf:datatype="&xsd;string">subject</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&dcterms;title">
+    <rdfs:label rdf:datatype="&xsd;string">title</rdfs:label>
+  </rdf:Property>
+  <owl:Ontology rdf:about="http://qudt.org/2.1/schema/shacl/qudt">
+    <vaem:hasGraphMetadata rdf:resource="&vaem;GMD_SHACLQUDT-SCHEMA" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT SHACL Schema Version 2.1.47</rdfs:label>
+    <owl:imports rdf:resource="http://qudt.org/2.1/schema/shacl/datatype" />
+    <owl:imports rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <owl:imports rdf:resource="http://www.linkedmodel.org/schema/dtype" />
+    <owl:imports rdf:resource="http://www.linkedmodel.org/schema/vaem" />
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core" />
+    <owl:imports rdf:resource="&sh;" />
+    <owl:versionIRI rdf:resource="http://qudt.org/2.1/schema/qudt" />
+  </owl:Ontology>
+  <rdfs:Class rdf:about="&qudt;AbstractQuantityKind">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity Kind (abstract)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;AbstractQuantityKind-altSymbol" />
+    <sh:property rdf:resource="&qudt;AbstractQuantityKind-broader" />
+    <sh:property rdf:resource="&qudt;AbstractQuantityKind-latexSymbol" />
+    <sh:property rdf:resource="&qudt;AbstractQuantityKind-symbol" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;AbstractQuantityKind-altSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&qudt;altSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;AbstractQuantityKind-broader">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:path rdf:resource="&skos;broader" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;AbstractQuantityKind-latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;latexSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;AbstractQuantityKind-symbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;symbol" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;AngleUnit">
+    <dcterms:description rdf:datatype="&xsd;string">All units relating to specificaiton of angles. </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Angle unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;DimensionlessUnit" />
+    <skos:exactMatch rdf:resource="http://dbpedia.org/resource/Category:Units_of_angle" />
+  </rdfs:Class>
+  <qudt:AspectClass rdf:about="&qudt;Aspect">
+    <dcterms:description rdf:datatype="&rdf;HTML">An aspect is an abstract type class that defines properties that can be reused.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT Aspect</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Resource" />
+  </qudt:AspectClass>
+  <rdfs:Class rdf:about="&qudt;AspectClass">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Aspect Class</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Class" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;BaseDimensionMagnitude">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Dimension&lt;/em&gt; expresses a magnitude for a base quantity kind such as mass, length and time.
+  &lt;/p&gt;
+  &lt;p&gt;DEPRECATED - each exponent is expressed as a property. 
+  Keep until a validation of this has been done.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Dimensional_analysis</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://web.mit.edu/2.25/www/pdf/DA_unified.pdf</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Base Dimension Magnitude</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;BaseDimensionMagnitude-hasBaseQuantityKind" />
+    <sh:property rdf:resource="&qudt;BaseDimensionMagnitude-vectorMagnitude" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;BaseDimensionMagnitude-hasBaseQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasBaseQuantityKind" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;BaseDimensionMagnitude-vectorMagnitude">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;float" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;vectorMagnitude" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;BinaryPrefix">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Binary Prefix&lt;/em&gt; is a prefix for multiples of units in data processing, data transmission, and digital information,
+   notably the bit and the byte, to indicate multiplication by a power of 2.
+   &lt;/p&gt;
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Binary Prefix</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Prefix" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Citation">
+    <dcterms:description rdf:datatype="&rdf;HTML">Provides a simple way of making citations.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Citation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;Citation-description" />
+    <sh:property rdf:resource="&qudt;Citation-url" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Citation-description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&dcterms;description" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Citation-url">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;url" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;Comment">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Comment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;Comment-description" />
+    <sh:property rdf:resource="&qudt;Comment-rationale" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Comment-description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&dcterms;description" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Comment-rationale">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&rdf;HTML" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;rationale" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;Concept">
+    <dcterms:description rdf:datatype="&rdf;HTML">The root class for all QUDT concepts.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT Concept</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdfs;Resource" />
+    <sh:property rdf:resource="&qudt;Concept-abbreviation" />
+    <sh:property rdf:resource="&qudt;Concept-code" />
+    <sh:property rdf:resource="&qudt;Concept-deprecated" />
+    <sh:property rdf:resource="&qudt;Concept-description" />
+    <sh:property rdf:resource="&qudt;Concept-exactMatch" />
+    <sh:property rdf:resource="&qudt;Concept-guidance" />
+    <sh:property rdf:resource="&qudt;Concept-hasRule" />
+    <sh:property rdf:resource="&qudt;Concept-id" />
+    <sh:property rdf:resource="&qudt;Concept-isReplacedBy" />
+    <sh:property rdf:resource="&qudt;Concept-plainTextDescription" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Concept-abbreviation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;abbreviation" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-code">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&dtype;code" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-deprecated">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;boolean" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;deprecated" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&dcterms;description" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-exactMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Concept" />
+    <sh:path rdf:resource="&qudt;exactMatch" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-guidance">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&rdf;HTML" />
+    <sh:path rdf:resource="&qudt;guidance" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-hasRule">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Rule" />
+    <sh:path rdf:resource="&qudt;hasRule" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-id">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;id" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-isReplacedBy">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&dcterms;isReplacedBy" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-plainTextDescription">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&qudt;plainTextDescription" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;ConstantValue">
+    <dcterms:description rdf:datatype="&rdf;HTML">Used to specify the values of a constant.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Constant value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityValue" />
+    <sh:property rdf:resource="&qudt;ConstantValue-exactConstant" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;ConstantValue-exactConstant">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;boolean" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;exactConstant" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;CountingUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Counting Unit&lt;/em&gt; is used for all units that express counts. 
+  Examples are Atomic Number, Number, Number per Year, Percent and Sample per Second.
+  &lt;/p&gt;
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Counting Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;DimensionlessUnit" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;CurrencyUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  Currency Units have their own subclass of unit because:
+   (a) they have additional properties such as 'country' and
+   (b) their URIs do not conform to the same rules as other units.
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Currency Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;DimensionlessUnit" />
+    <sh:property rdf:resource="&qudt;CurrencyUnit-currencyCode" />
+    <sh:property rdf:resource="&qudt;CurrencyUnit-currencyExponent" />
+    <sh:property rdf:resource="&qudt;CurrencyUnit-currencyNumber" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;CurrencyUnit-currencyCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:path rdf:resource="&qudt;currencyCode" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;CurrencyUnit-currencyExponent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;integer" />
+    <sh:path rdf:resource="&qudt;currencyExponent" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;CurrencyUnit-currencyNumber">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:path rdf:resource="&qudt;currencyNumber" />
+    <sh:pattern rdf:datatype="&xsd;string">^\d{3}$</sh:pattern>
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;DataItem">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Data Item&lt;/em&gt; holds a value that maybe a scalar or structured datatype.
+  &lt;em&gt;Quantity Value&lt;/em&gt; specifies which case applies.
+  &lt;/p&gt;</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Data Item</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;ValuePropertyShape" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Datatype">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Datatype&lt;/em&gt; is a definition of the type of the "value" of a data item (for example, "all integers between 0 and 10"),
+   and the allowable operations on those values; the meaning of the data; and the way values of that type can be stored. 
+  Some types are primitive - built-in to the language, with no visible internal structure.
+  For example "Boolean"; others are composite - constructed from one or more other types (of either kind).
+  For example lists, arrays, structures, unions. 
+  Some languages provide strong typing, others allow implicit type conversion and/or explicit type conversion.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Data_type</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://foldoc.org/data+type</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Data_type.html</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Datatype</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;DecimalPrefix">
+    <dcterms:description rdf:datatype="&xsd;string">
+  A &lt;em&gt;Decimal Prefix&lt;/em&gt; is a prefix for multiples of units that are powers of 10.
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Decimal Prefix</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Prefix" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;DerivedUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Derived Unit&lt;/em&gt; is a type specification for units that are derived from other units.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:dbpediaMatch rdf:datatype="&xsd;anyURI">http://dbpedia.org/resource/Category:SI_derived_units</qudt:dbpediaMatch>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Derived Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Unit" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;DimensionlessUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Dimensionless Unit&lt;/em&gt; is a quantity for which all the exponents of the factors corresponding to the base quantities in its quantity dimension are zero.
+  &lt;/p&gt;</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Dimensionless Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Unit" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Discipline">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Discipline</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;EnumeratedQuantity">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Enumerated Quantity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;EnumeratedQuantity-enumeratedValue" />
+    <sh:property rdf:resource="&qudt;EnumeratedQuantity-enumeration" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;EnumeratedQuantity-enumeratedValue">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;EnumeratedValue" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;enumeratedValue" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;EnumeratedQuantity-enumeration">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Enumeration" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;enumeration" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;EnumeratedValue">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;An &lt;em&gt;Enumerated Value&lt;/em&gt; class defines the members of an enumeration. 
+  An enumeration is a set of literals from which a single value is selected. 
+  Each literal can have a tag as an integer within a standard encoding appropriate to the range of integer values. 
+  Consistency of enumeration types will allow them, and the enumerated values, to be referred to unambiguously either through symbolic name or encoding. 
+  &lt;/p&gt;
+  &lt;p&gt;Enumerated values are also controlled vocabularies and as such need to be standardized. 
+  Without this consistency enumeration literals can be stated differently and result in  data conflicts and misinterpretations.
+  &lt;/p&gt;
+  &lt;p&gt;The tags are a set of positive whole numbers, not necessarily contiguous and having no numerical significance, each corresponding to the associated literal identifier. 
+  An order attribute can also be given on the enumeration elements. 
+  An enumeration can itself be a member of an enumeration. 
+  This allows enumerations to be enumerated in a selection. 
+  &lt;/p&gt;
+  &lt;p&gt;Enumerations are also subclasses of Scalar Datatype. 
+  This allows them to be used as the reference of a datatype specification.
+  &lt;/p&gt;
+  </dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Enumeration</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Enumerated Value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <rdfs:subClassOf rdf:resource="&dtype;EnumeratedValue" />
+    <sh:property rdf:resource="&qudt;EnumeratedValue-abbreviation" />
+    <sh:property rdf:resource="&qudt;EnumeratedValue-altSymbol" />
+    <sh:property rdf:resource="&qudt;EnumeratedValue-description" />
+    <sh:property rdf:resource="&qudt;EnumeratedValue-symbol" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;EnumeratedValue-abbreviation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;abbreviation" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;EnumeratedValue-altSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&qudt;altSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;EnumeratedValue-description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&dcterms;description" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;EnumeratedValue-symbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;symbol" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;Enumeration">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;An &lt;em&gt;Enumeration&lt;/em&gt; is a set of literals from which a single value is selected. 
+  Each literal can have a tag as an integer within a standard encoding appropriate to the range of integer values. 
+  Consistency of enumeration types will allow them, and the enumerated values, to be referred to unambiguously either through symbolic name or encoding. 
+  Enumerated values are also controlled vocabularies and as such need to be standardized. 
+  Without this consistency enumeration literals can be stated differently and result in  data conflicts and misinterpretations.
+  &lt;/p&gt;
+  &lt;p&gt;The tags are a set of positive whole numbers, not necessarily contiguous and having no numerical significance, each corresponding to the associated literal identifier. 
+  An order attribute can also be given on the enumeration elements. An enumeration can itself be a member of an enumeration. This allows enumerations to be enumerated in a selection. 
+  Enumerations are also subclasses of &lt;em&gt;Scalar Datatype&lt;/em&gt;. 
+  This allows them to be used as the reference of a datatype specification.
+  &lt;/p&gt;
+  </dcterms:description>
+    <qudt:dbpediaMatch rdf:datatype="&xsd;anyURI">http://dbpedia.org/resource/Enumeration</qudt:dbpediaMatch>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Enumerated_type</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Enumeration</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Enumeration</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;Enumeration-abbreviation" />
+    <sh:property rdf:resource="&qudt;Enumeration-default" />
+    <sh:property rdf:resource="&qudt;Enumeration-element" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Enumeration-abbreviation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;abbreviation" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Enumeration-default">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;EnumeratedValue" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;default" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Enumeration-element">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;EnumeratedValue" />
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;element" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;Figure">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Figure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;Figure-figureCaption" />
+    <sh:property rdf:resource="&qudt;Figure-figureLabel" />
+    <sh:property rdf:resource="&qudt;Figure-height" />
+    <sh:property rdf:resource="&qudt;Figure-image" />
+    <sh:property rdf:resource="&qudt;Figure-imageLocation" />
+    <sh:property rdf:resource="&qudt;Figure-landscape" />
+    <sh:property rdf:resource="&qudt;Figure-width" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Figure-figureCaption">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;figureCaption" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Figure-figureLabel">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;figureLabel" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Figure-height">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;height" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Figure-image">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;image" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Figure-imageLocation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;imageLocation" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Figure-landscape">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;boolean" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;landscape" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Figure-width">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;width" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;InformativeReferencePropertyShape">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:or rdf:parseType="Resource">
+      <rdf:first rdf:nodeID="autos10128" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:nodeID="autos10130" />
+        <rdf:rest rdf:resource="&rdf;nil" />
+      </rdf:rest>
+    </sh:or>
+    <sh:path rdf:resource="&qudt;informativeReference" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;IntervalScale">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;The interval type allows for the degree of difference between items, but not the ratio between them. 
+  Examples include temperature with the Celsius scale, which has two defined points
+   (the freezing and boiling point of water at specific conditions) and then separated into 100 intervals,
+   date when measured from an arbitrary epoch (such as AD), percentage such as a percentage return on a stock,
+   location in Cartesian coordinates, and direction measured in degrees from true or magnetic north. 
+  &lt;/p&gt;
+  &lt;p&gt;Ratios are not meaningful since 20 °C cannot be said to be "twice as hot" as 10 °C, nor can multiplication/division be carried out between any two dates directly. 
+  However, ratios of differences can be expressed; for example, one difference can be twice another. 
+  Interval type variables are sometimes also called "scaled variables", but the formal mathematical term is an affine space (in this case an affine line).
+  &lt;/p&gt;
+  &lt;p&gt;Characteristics: median, percentile &amp;amp; Monotonic increasing (order (&amp;lt;) &amp;amp; totally ordered set.&lt;/p&gt;
+  </dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://en.wikipedia.org/wiki/Level_of_measurement</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Interval scale</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&qudt;NominalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;OrdinalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;RatioScale" />
+    <rdfs:subClassOf rdf:resource="&qudt;Scale" />
+  </rdfs:Class>
+  <rdfs:Datatype rdf:about="&qudt;LatexString">
+    <dcterms:description rdf:datatype="&xsd;string">A type of string in which some characters may be wrapped with '$' and '$ characters for LaTeX rendering.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Latex String</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&xsd;string" />
+  </rdfs:Datatype>
+  <rdfs:Class rdf:about="&qudt;LogarithmicUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  Logarithmic units are abstract mathematical units that can be used to express any quantities
+   (physical or mathematical) that are defined on a logarithmic scale, that is, as being proportional
+   to the value of a logarithm function.
+  Examples of logarithmic units include common units of information and entropy, such as the bit,
+   and the byte, as well as units of relative signal strength magnitude such as the decibel.
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Logarithmic Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;DimensionlessUnit" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;NIST_SP811_Comment">
+    <dcterms:description rdf:datatype="&xsd;string">National Institute of Standards and Technology (NIST) Special Publication 811 Comments on some quantities and their units</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">NIST SP~811 Comment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Comment" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;NominalScale">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  A nominal scale differentiates between items or subjects based only on their names or (meta-)categories and other qualitative classifications they belong to;
+   thus dichotomous data involves the construction of classifications as well as the classification of items. 
+  Discovery of an exception to a classification can be viewed as progress. 
+  Numbers may be used to represent the variables but the numbers do not have numerical value or relationship:
+   for example, a Globally unique identifier. 
+  Examples of these classifications include gender, nationality, ethnicity, language, genre, style, biological species, and form. 
+  In a university one could also use hall of affiliation as an example.
+  </dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://en.wikipedia.org/wiki/Level_of_measurement</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Nominal scale</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&qudt;IntervalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;OrdinalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;RatioScale" />
+    <rdfs:subClassOf rdf:resource="&qudt;Scale" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;NumericListShape">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:subClassOf rdf:resource="&rdf;List" />
+    <sh:property rdf:nodeID="autos10131" />
+    <sh:property rdf:nodeID="autos10132" />
+  </rdfs:Class>
+  <rdf:List rdf:about="&qudt;NumericTypeUnion">
+    <dcterms:description rdf:datatype="&xsd;string">
+  An rdf:List that can be used in property constraints as value for sh:or to indicate that all values
+   of a property must be a string, an integer, a float, a double or a decimal.
+  </dcterms:description>
+    <rdf:first rdf:nodeID="autos10137" />
+    <rdf:rest rdf:nodeID="autos10138" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Numeric Type Union</rdfs:label>
+  </rdf:List>
+  <sh:PropertyShape rdf:about="&qudt;OrderedType-literal">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&dtype;literal" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;OrdinalScale">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;The ordinal type allows for rank order (1st, 2nd, 3rd, etc.) by which data can be sorted,
+   but still does not allow for relative degree of difference between them. 
+  Examples include, on one hand, dichotomous data with dichotomous (or dichotomized) values such as:
+   'sick' vs. 'healthy' when measuring health, 'guilty' vs. 'innocent' when making judgments in courts,
+   'wrong/false' vs. 'right/true' when measuring truth value, and, on the other hand, non-dichotomous data consisting of a spectrum of values, such as:
+   'completely agree', 'mostly agree', 'mostly disagree', 'completely disagree' when measuring opinion.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://en.wikipedia.org/wiki/Level_of_measurement</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Ordinal scale</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&qudt;IntervalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;NominalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;RatioScale" />
+    <rdfs:subClassOf rdf:resource="&qudt;Scale" />
+    <sh:property rdf:resource="&qudt;OrdinalScale-order" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;OrdinalScale-order">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;nonNegativeInteger" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;order" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;Organization">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;Organization-url" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Organization-url">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;url" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;PhysicalConstant">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Physical constant&lt;/em&gt; is a physical quantity that is generally believed to be both universal in nature and constant in time. 
+  It can be contrasted with a mathematical constant, which is a fixed numerical value but does not directly involve any physical measurement. 
+  &lt;/p&gt;
+  &lt;p&gt;There are many physical constants in science, some of the most widely recognized being:
+   the speed of light in vacuum c, Newton's gravitational constant G, Planck's constant h,
+   the electric permittivity of free space ε0, and the elementary charge e.
+  &lt;/p&gt;
+  &lt;/p&gt;Physical constants can take many dimensional forms, or may be dimensionless depending on the system of quantities and units used.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:dbpediaMatch rdf:datatype="&xsd;anyURI">http://dbpedia.org/resource/Physical_constant</qudt:dbpediaMatch>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Physical Constant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Quantity" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-altSymbol" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-applicableSystem" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-applicableUnit" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-dbpediaMatch" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-exactConstant" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-hasDimensionVector" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-iec61360Code" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-isoNormativeReference" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-latexDefinition" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-latexSymbol" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-mathMLdefinition" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-normativeReference" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-siExactMatch" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-symbol" />
+    <sh:property rdf:resource="&qudt;PhysicalConstant-ucumCode" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-altSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&qudt;altSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-applicableSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfUnits" />
+    <sh:path rdf:resource="&qudt;applicableSystem" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-applicableUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;applicableUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-dbpediaMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;dbpediaMatch" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-exactConstant">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;boolean" />
+    <sh:path rdf:resource="&qudt;exactConstant" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-hasDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <sh:path rdf:resource="&qudt;hasDimensionVector" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-iec61360Code">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;iec61360Code" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-isoNormativeReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:path rdf:resource="&qudt;isoNormativeReference" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-latexDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;latexDefinition" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;latexSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-mathMLdefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;mathMLdefinition" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-normativeReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:path rdf:resource="&qudt;normativeReference" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-siExactMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;siExactMatch" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-symbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;symbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-ucumCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;UCUMcs" />
+    <sh:path rdf:resource="&qudt;ucumCode" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;PlaneAngleUnit">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Plane Angle Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;AngleUnit" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Prefix">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Prefix</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;Prefix-altSymbol" />
+    <sh:property rdf:resource="&qudt;Prefix-latexSymbol" />
+    <sh:property rdf:resource="&qudt;Prefix-prefixMultiplier" />
+    <sh:property rdf:resource="&qudt;Prefix-siExactMatch" />
+    <sh:property rdf:resource="&qudt;Prefix-symbol" />
+    <sh:property rdf:resource="&qudt;Prefix-ucumCode" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Prefix-altSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&qudt;altSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Prefix-latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;latexSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Prefix-prefixMultiplier">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;double" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;prefixMultiplier" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Prefix-siExactMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;siExactMatch" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Prefix-symbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;symbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Prefix-ucumCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:path rdf:resource="&qudt;ucumCode" />
+    <sh:pattern rdf:datatype="&xsd;string">[\x21,\x23-\x27,\x2a,\x2c,\x30-\x3c,\x3e-\x5a,\x5c,\x5e-\x7a,\x7c,\x7e]+</sh:pattern>
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;Quantifiable">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;&lt;em&gt;Quantifiable&lt;/em&gt; is an aspect class that affords to an entity properties for being measurable,
+   observable, or countable.
+  &lt;/p&gt;</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantifiable</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Aspect" />
+    <sh:property rdf:resource="&qudt;Quantifiable-datatype" />
+    <sh:property rdf:resource="&qudt;Quantifiable-hasUnit" />
+    <sh:property rdf:resource="&qudt;Quantifiable-relativeStandardUncertainty" />
+    <sh:property rdf:resource="&qudt;Quantifiable-standardUncertainty" />
+    <sh:property rdf:resource="&qudt;Quantifiable-standardUncertaintySN" />
+    <sh:property rdf:resource="&qudt;Quantifiable-unit" />
+    <sh:property rdf:resource="&qudt;Quantifiable-value" />
+    <sh:property rdf:resource="&qudt;Quantifiable-valueSN" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-datatype">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:or rdf:parseType="Resource">
+      <rdf:first rdf:nodeID="autos10153" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:nodeID="autos10155" />
+        <rdf:rest rdf:resource="&rdf;nil" />
+      </rdf:rest>
+    </sh:or>
+    <sh:path rdf:resource="&qudt;datatype" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-hasUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;hasUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-relativeStandardUncertainty">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;double" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;relativeStandardUncertainty" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-standardUncertainty">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;decimal" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;standardUncertainty" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-standardUncertaintySN">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;double" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;standardUncertaintySN" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-unit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;unit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-value">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:node rdf:parseType="Resource">
+      <rdf:first rdf:nodeID="autos10157" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:nodeID="autos10159" />
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:nodeID="autos10162" />
+          <rdf:rest rdf:resource="&rdf;nil" />
+        </rdf:rest>
+      </rdf:rest>
+    </sh:node>
+    <sh:path rdf:resource="&qudt;value" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-valueSN">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;valueSN" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;Quantity">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;b&gt;Quantity&lt;/b&gt; is the measurement of an observable property of a particular object, event, or physical system. 
+  A quantity is always associated with the context of measurement (i.e. the thing measured, the measured value, the accuracy of measurement, etc.) whereas the 
+  underlying &lt;b&gt;quantity kind&lt;/b&gt; is independent of any particular measurement. Thus, length is a quantity kind while the height of a rocket is a specific 
+  quantity of length; its magnitude that may be expressed in meters, feet, inches, etc. Examples of physical quantities include physical constants, such as 
+  the speed of light in a vacuum, Planck's constant, the electric permittivity of free space, and the fine structure constant. &lt;/p&gt;
+&lt;p&gt;In other words, quantities are quantifiable aspects of the world, such as the duration of a movie, the distance between two points, 
+velocity of a car, the pressure of the atmosphere, and a person's weight; and units are used to describe their numerical measure.&lt;/p&gt; 
+&lt;p&gt;Many &lt;b&gt;quantity kinds&lt;/b&gt; are related to each other by various physical laws, and as a result, the associated units of some quantity 
+kinds can be expressed as products (or ratios) of powers of other quantity kinds (e.g., momentum is mass times velocity and velocity is defined as distance 
+divided by time). In this way, some quantities can be calculated from other measured quantities using their associations to the quantity kinds in these 
+expressions. These quantity kind relationships are also discussed in dimensional analysis. Those that cannot be so expressed can be regarded 
+as "fundamental" in this sense.&lt;/p&gt;
+&lt;p&gt;A quantity is distinguished from a "quantity kind" in that the former carries a value and the latter is a type specifier.
+&lt;/p&gt;</dcterms:description>
+    <qudt:dbpediaMatch rdf:datatype="&xsd;anyURI">http://dbpedia.org/resource/Quantity</qudt:dbpediaMatch>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Quantifiable" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;Quantity-hasQuantityKind" />
+    <sh:property rdf:resource="&qudt;Quantity-isDeltaQuantity" />
+    <sh:property rdf:resource="&qudt;Quantity-quantityValue" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Quantity-hasQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasQuantityKind" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantity-isDeltaQuantity">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;boolean" />
+    <sh:path rdf:resource="&qudt;isDeltaQuantity" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantity-quantityValue">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityValue" />
+    <sh:path rdf:resource="&qudt;quantityValue" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;QuantityKind">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Quantity Kind&lt;/em&gt; is any observable property that can be  measured and quantified numerically. 
+  Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. 
+  Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.electropedia.org/iev/iev.nsf/display?openform&amp;ievref=112-01-04</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity Kind</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;AbstractQuantityKind" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;QuantityKind-applicableCGSUnit" />
+    <sh:property rdf:resource="&qudt;QuantityKind-applicableISOUnit" />
+    <sh:property rdf:resource="&qudt;QuantityKind-applicableImperialUnit" />
+    <sh:property rdf:resource="&qudt;QuantityKind-applicableSIUnit" />
+    <sh:property rdf:resource="&qudt;QuantityKind-applicableUSCustomaryUnit" />
+    <sh:property rdf:resource="&qudt;QuantityKind-applicableUnit" />
+    <sh:property rdf:resource="&qudt;QuantityKind-baseCGSUnitDimensions" />
+    <sh:property rdf:resource="&qudt;QuantityKind-baseISOUnitDimensions" />
+    <sh:property rdf:resource="&qudt;QuantityKind-baseImperialUnitDimensions" />
+    <sh:property rdf:resource="&qudt;QuantityKind-baseSIUnitDimensions" />
+    <sh:property rdf:resource="&qudt;QuantityKind-baseUSCustomaryUnitDimensions" />
+    <sh:property rdf:resource="&qudt;QuantityKind-belongsToSystemOfQuantities" />
+    <sh:property rdf:resource="&qudt;QuantityKind-dimensionVectorForSI" />
+    <sh:property rdf:resource="&qudt;QuantityKind-expression" />
+    <sh:property rdf:resource="&qudt;QuantityKind-generalization" />
+    <sh:property rdf:resource="&qudt;QuantityKind-hasDimensionVector" />
+    <sh:property rdf:resource="&qudt;QuantityKind-iec61360Code" />
+    <sh:property rdf:resource="&qudt;QuantityKind-latexDefinition" />
+    <sh:property rdf:resource="&qudt;QuantityKind-mathMLdefinition" />
+    <sh:property rdf:resource="&qudt;QuantityKind-qkdvDenominator" />
+    <sh:property rdf:resource="&qudt;QuantityKind-qkdvNumerator" />
+    <sh:property rdf:resource="&qudt;QuantityKind-siExactMatch" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-applicableCGSUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;applicableCGSUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-applicableISOUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;applicableISOUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-applicableImperialUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;applicableImperialUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-applicableSIUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;applicableSIUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-applicableUSCustomaryUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;applicableUSCustomaryUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-applicableUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;applicableUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-baseCGSUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;baseCGSUnitDimensions" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-baseISOUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;baseISOUnitDimensions" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-baseImperialUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;baseImperialUnitDimensions" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-baseSIUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;baseSIUnitDimensions" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-baseUSCustomaryUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;baseUSCustomaryUnitDimensions" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-belongsToSystemOfQuantities">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfQuantityKinds" />
+    <sh:path rdf:resource="&qudt;belongsToSystemOfQuantities" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-dimensionVectorForSI">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector_SI" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;dimensionVectorForSI" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-expression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;expression" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-generalization">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;generalization" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-hasDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasDimensionVector" />
+    <sh:severity rdf:resource="&sh;Info" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-iec61360Code">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:path rdf:resource="&qudt;iec61360Code" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-latexDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;latexDefinition" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-mathMLdefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;mathMLdefinition" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qkdvDenominator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;qkdvDenominator" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qkdvNumerator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;qkdvNumerator" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-siExactMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;siExactMatch" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector">
+    <dcterms:description rdf:datatype="&qudt;LatexString">
+ $\text{Quantity Kind Dimension Vector}$ describes the dimensionality of a quantity kind in the context of a system of units. 
+ In the SI system of units, the dimensions of a quantity kind are expressed as a product of the basic
+  physical dimensions mass ($M$), length ($L$), time ($T$) current ($I$), amount of substance ($N$),
+   luminous intensity ($J$) and absolute temperature 
+   ($\theta$) as $dim \, Q = L^{\alpha} \, M^{\beta} \, T^{\gamma} \, I ^{\delta} \, \theta ^{\epsilon} \, N^{\eta} \, J ^{\nu}$.
+
+
+  The rational powers of the dimensional exponents, $\alpha, \, \beta, \, \gamma, \, \delta, \, \epsilon, \, \eta, \, \nu$, are positive, negative, or zero.
+
+  For example, the dimension of the physical quantity kind $\it{speed}$ is $\boxed{length/time}$, $L/T$ or $LT^{-1}$,
+   and the dimension of the physical quantity kind force is $\boxed{mass \times acceleration}$ or $\boxed{mass \times (length/time)/time}$, $ML/T^2$ or $MLT^{-2}$ respectively.
+ </dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Dimensional_analysis</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://web.mit.edu/2.25/www/pdf/DA_unified.pdf</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity Kind Dimension Vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionExponentForAmountOfSubstance" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionExponentForElectricCurrent" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionExponentForLength" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionExponentForLuminousIntensity" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionExponentForMass" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionExponentForThermodynamicTemperature" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionExponentForTime" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-dimensionlessExponent" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-hasReferenceQuantityKind" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-latexDefinition" />
+    <sh:property rdf:resource="&qudt;QuantityKindDimensionVector-latexSymbol" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForAmountOfSubstance">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionExponentForAmountOfSubstance" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForElectricCurrent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;integer" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForLength">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionExponentForLength" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForLuminousIntensity">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionExponentForLuminousIntensity" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForMass">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionExponentForMass" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForThermodynamicTemperature">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionExponentForThermodynamicTemperature" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForTime">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionExponentForTime" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionlessExponent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;dimensionlessExponent" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-hasReferenceQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:path rdf:resource="&qudt;hasReferenceQuantityKind" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-latexDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;latexDefinition" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;latexSymbol" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_CGS">
+    <dcterms:description rdf:datatype="&rdf;HTML">A &lt;em&gt;CGS Dimension Vector&lt;/em&gt; is used to specify the dimensions for a C.G.S. quantity kind.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">CGS Dimension vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_CGS-EMU">
+    <dcterms:description rdf:datatype="&rdf;HTML">A &lt;em&gt;CGS EMU Dimension Vector&lt;/em&gt; is used to specify the dimensions for EMU C.G.S. quantity kind.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">CGS EMU Dimension vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector_CGS" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_CGS-ESU">
+    <dcterms:description rdf:datatype="&rdf;HTML">A &lt;em&gt;CGS ESU Dimension Vector&lt;/em&gt; is used to specify the dimensions for ESU C.G.S. quantity kind.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">CGS ESU Dimension vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector_CGS" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_CGS-GAUSS">
+    <dcterms:description rdf:datatype="&rdf;HTML">A &lt;em&gt;CGS GAUSS Dimension Vector&lt;/em&gt; is used to specify the dimensions for Gaussioan C.G.S. quantity kind.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">CGS GAUSS Dimension vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector_CGS" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_CGS-LH">
+    <dcterms:description rdf:datatype="&rdf;HTML">A &lt;em&gt;CGS LH Dimension Vector&lt;/em&gt; is used to specify the dimensions for Lorentz-Heaviside C.G.S. quantity kind.</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">CGS LH Dimension vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector_CGS" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_ISO">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">ISO Dimension vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_Imperial">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Imperial dimension vector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityKindDimensionVector_SI">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity Kind Dimension vector (SI)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;QuantityKindDimensionVector" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;QuantityType">
+    <dcterms:description rdf:datatype="&qudt;LatexString">
+  A $\textit{Quantity Type}$ is an enumeration of quantity kinds. 
+  It specializes $\boxed{dtype:EnumeratedValue}$ by constrinaing $\boxed{dtype:value}$ to instances of $\boxed{qudt:QuantityKind}$.
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;EnumeratedValue" />
+    <sh:property rdf:resource="&qudt;QuantityType-value" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;QuantityType-value">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:path rdf:resource="&dtype;value" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;QuantityValue">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Quantity Value&lt;/em&gt; 
+  &lt;/p&gt;</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Quantifiable" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;RatioScale">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Ratio Scale&lt;/em&gt; possesses a meaningful (unique and non-arbitrary) zero value. 
+  Most measurement in the physical sciences and engineering is done on ratio scales. 
+  Examples include mass, length, duration, plane angle, energy and electric charge.
+  &lt;/p&gt;
+  &lt;p&gt;In contrast to interval scales, ratios are now meaningful because having a non-arbitrary zero point makes it meaningful to say,
+   for example, that one object has "twice the length" of another (= is "twice as long"). 
+  Very informally, many ratio scales can be described as specifying "how much" of something (i.e. an amount or magnitude) or "how many" (a count). 
+  The Kelvin temperature scale is a ratio scale because it has a unique, non-arbitrary zero point called absolute zero.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://en.wikipedia.org/wiki/Level_of_measurement</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Ratio scale</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&qudt;IntervalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;NominalScale" />
+    <rdfs:seeAlso rdf:resource="&qudt;OrdinalScale" />
+    <rdfs:subClassOf rdf:resource="&qudt;Scale" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Rule">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Rule</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;Rule-example" />
+    <sh:property rdf:resource="&qudt;Rule-rationale" />
+    <sh:property rdf:resource="&qudt;Rule-ruleType" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Rule-example">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;example" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Rule-rationale">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&rdf;HTML" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;rationale" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Rule-ruleType">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;RuleType" />
+    <sh:path rdf:resource="&qudt;ruleType" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;RuleType">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Rule Type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;EnumeratedValue" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;ScalarDataItem">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;Data Item&lt;/em&gt; holds a value that is compliant with a specified &lt;em&gt;Datatype&lt;/em&gt;.
+  &lt;/p&gt;</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Scalar Data Item</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <sh:property rdf:resource="&qudt;ScalarDataItem-datatype" />
+    <sh:property rdf:resource="&qudt;ScalarDataItem-value" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;ScalarDataItem-datatype">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;ScalarDatatype" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;datatype" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;ScalarDataItem-value">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qydt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:or rdf:parseType="Resource">
+      <rdf:first rdf:nodeID="autos10165" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:nodeID="autos10167" />
+        <rdf:rest rdf:resource="&rdf;nil" />
+      </rdf:rest>
+    </sh:or>
+    <sh:path rdf:resource="&qudt;value" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;ScalarDatatype">
+    <dcterms:description rdf:datatype="&xsd;string">
+  Scalar data types are those that have a single value. 
+  The permissible values are defined over a domain that may be integers, float, character or boolean. 
+  Often a scalar data type is referred to as a primitive data type.
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Scalar Datatype</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Datatype" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Scale">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;Scales (also called "scales of measurement" or "levels of measurement") are expressions that typically are based on scale types.
+  &lt;/p&gt;</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Scale</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;Scale-dataStructure" />
+    <sh:property rdf:resource="&qudt;Scale-permissibleMaths" />
+    <sh:property rdf:resource="&qudt;Scale-permissibleTransformation" />
+    <sh:property rdf:resource="&qudt;Scale-scaleType" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Scale-dataStructure">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;dataStructure" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Scale-permissibleMaths">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;MathsFunctionType" />
+    <sh:path rdf:resource="&qudt;permissibleMaths" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Scale-permissibleTransformation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;TransformType" />
+    <sh:path rdf:resource="&qudt;permissibleTransformation" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Scale-scaleType">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;ScaleType" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;scaleType" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;ScaleType">
+    <qudt:plainTextDescription rdf:datatype="&xsd;string">
+  Scales, or scales of measurement (or categorization) provide ways of quantifying measurements, values and other enumerated values according to a normative frame of reference. 
+  Four different types of scales are typically used. 
+  These are interval, nominal, ordinal and ratio scales.
+  </qudt:plainTextDescription>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Scale type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;EnumeratedValue" />
+    <sh:property rdf:resource="&qudt;ScaleType-dataStructure" />
+    <sh:property rdf:resource="&qudt;ScaleType-permissibleMaths" />
+    <sh:property rdf:resource="&qudt;ScaleType-permissibleTransformation" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;ScaleType-dataStructure">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;dataStructure" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;ScaleType-permissibleMaths">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;MathsFunctionType" />
+    <sh:path rdf:resource="&qudt;permissibleMaths" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;ScaleType-permissibleTransformation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;TransformType" />
+    <sh:path rdf:resource="&qudt;permissibleTransformation" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;SolidAngleUnit">
+    <dcterms:description rdf:datatype="&xsd;string">
+  The solid angle subtended by a surface S is defined as the surface area of a unit sphere covered by the surface S's projection onto the sphere. 
+  A solid angle is related to the surface of a sphere in the same way an ordinary angle is related to the circumference of a circle. 
+  Since the total surface area of the unit sphere is 4*pi, the measure of solid angle will always be between 0 and 4*pi.
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Solid Angle Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;AngleUnit" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Statement">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Statement</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdf;Statement" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;Symbol">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Symbol</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;SymmetricRelation">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:comment rdf:datatype="&xsd;string">A `SymmetricRelation` is modeling construct used to define symmetric behavior for appropriate relations.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">Symmetric relation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&rdf;Property" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&qudt;SystemOfQuantityKinds">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;System of Quantity Kinds&lt;/em&gt; is a set of one or more quantity kinds together with a set of zero or more algebraic equations that define relationships between quantity kinds in the set. 
+  In the physical sciences, the equations relating quantity kinds are typically physical laws and definitional relations, and constants of proportionality. 
+  Examples include Newton's First Law of Motion, Coulomb's Law, and the definition of velocity as the instantaneous change in position.  
+  In almost all cases, the system identifies a subset of base quantity kinds. 
+  &lt;/p&gt;
+  &lt;p&gt;The base set is chosen so that all other quantity kinds of interest can be derived from the base quantity kinds and the algebraic equations. 
+  If the unit system is explicitly associated with a quantity kind system, then the unit system must define at least one unit for each quantity kind.  
+  From a scientific point of view, the division of quantities into base quantities and derived quantities is a matter of convention.
+  &lt;/p&gt;</dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">System of Quantity Kinds</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;SystemOfQuantityKinds-baseDimensionEnumeration" />
+    <sh:property rdf:resource="&qudt;SystemOfQuantityKinds-hasBaseQuantityKind" />
+    <sh:property rdf:resource="&qudt;SystemOfQuantityKinds-hasQuantityKind" />
+    <sh:property rdf:resource="&qudt;SystemOfQuantityKinds-hasUnitSystem" />
+    <sh:property rdf:resource="&qudt;SystemOfQuantityKinds-systemDerivedQuantityKind" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfQuantityKinds-baseDimensionEnumeration">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Enumeration" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;baseDimensionEnumeration" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfQuantityKinds-hasBaseQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasBaseQuantityKind" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfQuantityKinds-hasQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasQuantityKind" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfQuantityKinds-hasUnitSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfUnits" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;hasUnitSystem" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfQuantityKinds-systemDerivedQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;systemDerivedQuantityKind" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;SystemOfUnits">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;A &lt;em&gt;System of Units&lt;/em&gt; is a set of units which are chosen as the reference scales for some set of quantity kinds together with the definitions of each unit. 
+  Units may be defined by experimental observation or by proportion to another unit not included in the system. 
+  If the unit system is explicitly associated with a quantity kind system, then the unit system must define at least one unit for each quantity kind.
+  &lt;/p&gt;</dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://dbpedia.org/resource/Category:Systems_of_units</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.ieeeghn.org/wiki/index.php/System_of_Measurement_Units</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">System of Units</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-applicablePhysicalConstant" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-hasAllowedUnit" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-hasBaseUnit" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-hasCoherentUnit" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-hasDefinedUnit" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-hasDerivedCoherentUnit" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-hasDerivedUnit" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-hasUnit" />
+    <sh:property rdf:resource="&qudt;SystemOfUnits-prefix" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-applicablePhysicalConstant">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;PhysicalConstant" />
+    <sh:path rdf:resource="&qudt;applicablePhysicalConstant" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-hasAllowedUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;hasAllowedUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-hasBaseUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;hasBaseUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-hasCoherentUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;hasCoherentUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-hasDefinedUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;hasDefinedUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-hasDerivedCoherentUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;hasDerivedCoherentUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-hasDerivedUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;hasDerivedUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-hasUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Unit" />
+    <sh:path rdf:resource="&qudt;hasUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;SystemOfUnits-prefix">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Prefix" />
+    <sh:path rdf:resource="&qudt;prefix" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;TransformType">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Transform type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;EnumeratedValue" />
+    <skos:prefLabel rdf:datatype="&xsd;string">Transform type</skos:prefLabel>
+  </rdfs:Class>
+  <rdfs:Datatype rdf:about="&qudt;UCUMcs">
+    <dcterms:description rdf:datatype="&xsd;string">Lexical pattern for the case-sensitive version of UCUM code</dcterms:description>
+    <dcterms:source rdf:resource="https://ucum.org/ucum.html" />
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">case-sensitive UCUM code</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://ucum.org/ucum.html" />
+    <rdfs:subClassOf rdf:resource="&xsd;string" />
+  </rdfs:Datatype>
+  <rdfs:Class rdf:about="&qudt;Unit">
+    <dcterms:description rdf:datatype="&qudt;LatexString">
+  A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). 
+  For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). 
+  Any measurement of the length can be expressed as a number multiplied by the unit meter. 
+  More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  $Q = nU$.
+  </dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://dbpedia.org/resource/Category:Units_of_measure</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.allmeasures.com/Fullconversion.asp</qudt:informativeReference>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Concept" />
+    <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
+    <sh:property rdf:resource="&qudt;Unit-altSymbol" />
+    <sh:property rdf:resource="&qudt;Unit-applicableSystem" />
+    <sh:property rdf:resource="&qudt;Unit-conversionMultiplier" />
+    <sh:property rdf:resource="&qudt;Unit-conversionMultiplierSN" />
+    <sh:property rdf:resource="&qudt;Unit-conversionOffset" />
+    <sh:property rdf:resource="&qudt;Unit-conversionOffsetSN" />
+    <sh:property rdf:resource="&qudt;Unit-definedUnitOfSystem" />
+    <sh:property rdf:resource="&qudt;Unit-derivedCoherentUnitOfSystem" />
+    <sh:property rdf:resource="&qudt;Unit-derivedUnitOfSystem" />
+    <sh:property rdf:resource="&qudt;Unit-expression" />
+    <sh:property rdf:resource="&qudt;Unit-hasDimensionVector" />
+    <sh:property rdf:resource="&qudt;Unit-hasQuantityKind" />
+    <sh:property rdf:resource="&qudt;Unit-iec61360Code" />
+    <sh:property rdf:resource="&qudt;Unit-latexDefinition" />
+    <sh:property rdf:resource="&qudt;Unit-latexSymbol" />
+    <sh:property rdf:resource="&qudt;Unit-mathMLdefinition" />
+    <sh:property rdf:resource="&qudt;Unit-omUnit" />
+    <sh:property rdf:resource="&qudt;Unit-prefix" />
+    <sh:property rdf:resource="&qudt;Unit-qkdvDenominator" />
+    <sh:property rdf:resource="&qudt;Unit-qkdvNumerator" />
+    <sh:property rdf:resource="&qudt;Unit-siExactMatch" />
+    <sh:property rdf:resource="&qudt;Unit-siUnitsExpression" />
+    <sh:property rdf:resource="&qudt;Unit-symbol" />
+    <sh:property rdf:resource="&qudt;Unit-ucumCode" />
+    <sh:property rdf:resource="&qudt;Unit-udunitsCode" />
+    <sh:property rdf:resource="&qudt;Unit-uneceCommonCode" />
+    <sh:property rdf:resource="&qudt;Unit-unitOfSystem" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;Unit-altSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&qudt;altSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-applicableSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfUnits" />
+    <sh:path rdf:resource="&qudt;applicableSystem" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-conversionMultiplier">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;decimal" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;conversionMultiplier" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-conversionMultiplierSN">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;double" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;conversionMultiplierSN" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-conversionOffset">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;decimal" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;conversionOffset" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-conversionOffsetSN">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;double" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;conversionOffsetSN" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-definedUnitOfSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfUnits" />
+    <sh:path rdf:resource="&qudt;definedUnitOfSystem" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-derivedCoherentUnitOfSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfUnits" />
+    <sh:path rdf:resource="&qudt;derivedCoherentUnitOfSystem" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-derivedUnitOfSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfUnits" />
+    <sh:path rdf:resource="&qudt;derivedUnitOfSystem" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-expression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;expression" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-hasDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasDimensionVector" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-hasQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasQuantityKind" />
+    <sh:severity rdf:resource="&sh;Info" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-iec61360Code">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:path rdf:resource="&qudt;iec61360Code" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-latexDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;latexDefinition" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;LatexString" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;latexSymbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-mathMLdefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;mathMLdefinition" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-omUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:path rdf:resource="&qudt;omUnit" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-prefix">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;Prefix" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;prefix" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qkdvDenominator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;qkdvDenominator" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qkdvNumerator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;qkdvNumerator" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-siExactMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:path rdf:resource="&qudt;siExactMatch" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-siUnitsExpression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;siUnitsExpression" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-symbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;symbol" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-ucumCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&qudt;UCUMcs" />
+    <sh:path rdf:resource="&qudt;ucumCode" />
+    <sh:pattern rdf:datatype="&xsd;string">[\x21-\x7e]+</sh:pattern>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-udunitsCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:path rdf:resource="&qudt;udunitsCode" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-uneceCommonCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;string" />
+    <sh:path rdf:resource="&qudt;uneceCommonCode" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-unitOfSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;SystemOfUnits" />
+    <sh:path rdf:resource="&qudt;isUnitOfSystem" />
+  </sh:PropertyShape>
+  <rdfs:Class rdf:about="&qudt;UserQuantityKind">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">User Quantity Kind</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;AbstractQuantityKind" />
+    <sh:property rdf:resource="&qudt;UserQuantityKind-hasQuantityKind" />
+  </rdfs:Class>
+  <sh:PropertyShape rdf:about="&qudt;UserQuantityKind-hasQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:class rdf:resource="&qudt;QuantityKind" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:path rdf:resource="&qudt;hasQuantityKind" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;ValuePropertyShape">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:node rdf:resource="&qudt;NumericListShape" />
+    <sh:path rdf:resource="&qudt;value" />
+  </sh:PropertyShape>
+  <qudt:AspectClass rdf:about="&qudt;Verifiable">
+    <dcterms:description rdf:datatype="&xsd;string">
+  An aspect class that holds properties that provide external knowledge and specifications of a given resource.
+  </dcterms:description>
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Verifiable</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Aspect" />
+    <sh:property rdf:resource="&qudt;InformativeReferencePropertyShape" />
+    <sh:property rdf:resource="&qudt;Verifiable-dbpediaMatch" />
+    <sh:property rdf:resource="&qudt;Verifiable-isoNormativeReference" />
+    <sh:property rdf:resource="&qudt;Verifiable-normativeReference" />
+  </qudt:AspectClass>
+  <sh:PropertyShape rdf:about="&qudt;Verifiable-dbpediaMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;dbpediaMatch" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Verifiable-isoNormativeReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;isoNormativeReference" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Verifiable-normativeReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+    <sh:minCount rdf:datatype="&xsd;integer">0</sh:minCount>
+    <sh:path rdf:resource="&qudt;normativeReference" />
+  </sh:PropertyShape>
+  <rdf:Property rdf:about="&qudt;abbreviation">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;An abbreviation for a unit is a short ASCII string that is used in place of the full name for the unit in contexts where non-ASCII characters would be problematic,
+   or where using the abbreviation will enhance readability. 
+  When a power of abase unit needs to be expressed, such as squares this can be done using abbreviations rather than symbols. 
+  For example, &lt;em&gt;sq ft&lt;/em&gt; means &lt;em&gt;square foot&lt;/em&gt;, and &lt;em&gt;cu ft&lt;/em&gt; means &lt;em&gt;cubic foot&lt;/em&gt;.
+  &lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">abbreviation</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;acronym">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">acronym</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;allowedUnitOfSystem">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a unit of measure with a unit system that does not define the unit, but allows its use within the system. 
+  An allowed unit must be convertible to some dimensionally equivalent unit that is defined by the system.
+  </dcterms:description>
+    <dcterms:isReplacedBy rdf:resource="&qudt;applicableSystem" />
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">allowed unit of system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;isUnitOfSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;altSymbol">
+    <dcterms:description rdf:datatype="&qudt;LatexString">An alternative symbol</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">alt symbol</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&dtype;literal" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicableCGSUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable CGS unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;applicableUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicableISOUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable ISO unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;applicableUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicableImperialUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable Imperial unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;applicableUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicablePhysicalConstant">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable physical constant</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicablePlanckUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable Planck unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;applicableUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicableSIUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable SI unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;applicableUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicableSystem">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a unit of measure with a unit system that may or may not define the unit,
+   but within which the unit is compatible.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable system</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicableUSCustomaryUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable US Customary unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;applicableUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;applicableUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;See this page on the QUDT GitHub&lt;a href="https://github.com/qudt/qudt-public-repo/wiki/Advanced-User-Guide#4-computing-applicable-units-for-a-quantitykind"&gt;Wiki&lt;/a&gt;
+   on how "qudt:applicableUnit" is computed from "qudt:hasQuantityKind" and then materialized.
+  &lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;baseDimensionEnumeration">
+    <dcterms:description rdf:datatype="&rdf;HTML">This property associates a system of quantities with an enumeration that enumerates the base dimensions of the system in canonical order.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">base dimension enumeration</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;baseUnitOfSystem">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a unit of measure to the system of units in which it is defined as a base unit for the system. 
+  The base units of a system are used to define the derived units of the system by expressing the derived units as products of the base units raised to a rational power.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is base unit of system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;coherentUnitOfSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;belongsToSystemOfQuantities">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">belongs to system of quantities</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;categorizedAs">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">categorized as</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;code">
+    <dcterms:description rdf:datatype="&xsd;string">
+  A code is a string that uniquely identifies a QUDT concept.
+  The use of this property has been deprecated.
+  </dcterms:description>
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">code</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;coherentUnitOfSystem">
+    <dcterms:description rdf:datatype="&qudt;LatexString">
+  A coherent unit of measurement for a unit system is a defined unit that may be expressed as a product of powers of the system's base units with the proportionality factor of one. 
+  A system of units is coherent with respect to a system of quantities and equations if the system of units is chosen in such a way
+   that the equations between numerical values have exactly the same form (including the numerical factors) as the corresponding equations between the quantities. 
+  For example, the 'newton' and the 'joule'. 
+  These two are, respectively, the force that causes one kilogram to be accelerated at 1 metre per second per second,
+   and the work done by 1 newton acting over 1 metre. 
+  Being coherent refers to this consistent use of 1. 
+  In the old c.g.s. system , with its base units the centimetre and the gram, the corresponding coherent units were the dyne and the erg,
+   respectively the force that causes 1 gram to be accelerated at 1 centimetre per second per second, and the work done by 1 dyne acting over 1 centimetre. 
+  So $1 newton = 10^5\,dyne$, $1 joule = 10^7\,erg$, making each of the four compatible in a decimal sense within its respective other system, but not coherent therein.
+  </dcterms:description>
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is coherent unit of system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;definedUnitOfSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;coherentUnitSystem">
+    <dcterms:description rdf:datatype="&qudt;LatexString">
+  A system of units is coherent with respect to a system of quantities and equations if the system of units is chosen in such a way that the equations between numerical values have exactly the same form (including the numerical factors) as the corresponding equations between the quantities. 
+  In such a coherent system, no numerical factor other than the number 1 ever occurs in the expressions for the derived units in terms of the base units. 
+  For example, the $newton$ and the $joule$. 
+  These two are, respectively, the force that causes one kilogram to be accelerated at 1 metre per (1) second per (1) second, and the work done by 1 newton acting over 1 metre. 
+  Being coherent refers to this consistent use of 1. 
+  In the old c.g.s. system , with its base units the centimetre and the gram, the corresponding coherent units were the dyne and the erg,
+   respectively the force that causes 1 gram to be accelerated at 1 centimetre per (1) second per (1) second, and the work done by 1 dyne acting over 1 centimetre. 
+  So $1\,newton = 10^5 dyne$, $1 joule = 10^7 erg$, making each of the four compatible in a decimal sense within its respective other system, but not coherent therein.&lt;/p&gt;
+  </dcterms:description>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://en.wikipedia.org/wiki/Coherence_(units_of_measurement)</qudt:informativeReference>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">coherent unit system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasUnitSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;conversionMultiplier">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">conversion multiplier</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;conversionMultiplierSN">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">conversion multiplier scientific</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;conversionOffset">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">conversion offset</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;conversionOffsetSN">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">conversion offset scientific</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;currencyCode">
+    <dcterms:description rdf:datatype="&rdf;HTML">Alphabetic Currency Code as defined by ISO 4217. For example, the currency code for the US dollar is USD.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">currency code</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;currencyExponent">
+    <dcterms:description rdf:datatype="&xsd;string">
+  The currency exponent indicates the number of decimal places between a major currency unit and its minor currency unit. 
+  For example, the US dollar is the major currency unit of the United States, and the US cent is the minor currency unit. Since one cent is 1/100 of a dollar, the US dollar has a currency exponent of 2. 
+  However, the Japanese Yen has no minor currency units, so the yen has a currency exponent of 0.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">currency exponent</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;currencyNumber">
+    <dcterms:description rdf:datatype="&rdf;HTML">Three-digit Currency Code as defined by ISO 4217. For example, the currency number for the US dollar is "840".</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">currency number</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dataStructure">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">data structure</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dbpediaMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dbpedia match</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;default">
+    <dcterms:description rdf:datatype="&rdf;HTML">The default element in an enumeration</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">default</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;definedUnitOfSystem">
+    <dcterms:description rdf:datatype="&rdf;HTML">This property relates a unit of measure with the unit system that defines the unit.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">defined unit of system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;isUnitOfSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;denominatorDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">denominator dimension vector</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;deprecated">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">deprecated</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;derivedCoherentUnitOfSystem">
+    <dcterms:description rdf:datatype="&rdf;HTML">This property relates a unit of measure to the unit system in which the unit is derived from the system's base units with a proportionality constant of one.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is coherent derived unit of system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;coherentUnitOfSystem" />
+    <rdfs:subPropertyOf rdf:resource="&qudt;derivedUnitOfSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;derivedNonCoherentUnitOfSystem">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a unit of measure to the unit system in which the unit is derived from the system's
+   base units without proportionality constant of one.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is non-coherent derived unit of system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;derivedUnitOfSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;derivedQuantityKindOfSystem">
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">derived quantity kind of system</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;derivedUnitOfSystem">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a unit of measure to the system of units in which it is defined as a derived unit. 
+  That is, the derived unit is defined as a product of the base units for the system raised to some rational power.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is derived unit of system</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;isUnitOfSystem" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponentForAmountOfSubstance">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent for amount of substance</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponentForElectricCurrent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent for electric current</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponentForLength">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent for length</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponentForLuminousIntensity">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent for luminous intensity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponentForMass">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent for mass</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponentForThermodynamicTemperature">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent for thermodynamic temperature</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionExponentForTime">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension exponent for time</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionInverse">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension inverse</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionVectorForSI">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension vector for SI</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;dimensionlessExponent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimensionless exponent</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;element">
+    <dcterms:description rdf:datatype="&rdf;HTML">An element of an enumeration</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">element</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;exactConstant">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">exact constant</rdfs:label>
+  </rdf:Property>
+  <qudt:SymmetricRelation rdf:about="&qudt;exactMatch">
+    <rdf:type rdf:resource="&rdf;Property" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">exact match</rdfs:label>
+  </qudt:SymmetricRelation>
+  <rdf:Property rdf:about="&qudt;example">
+    <dcterms:description rdf:datatype="&xsd;string">
+  The 'qudt:example' property is used to annotate an instance of a class with a reference to a concept that is an example. 
+  The type of this property is 'rdf:Property'. 
+  This allows both scalar and object ranges.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">example</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;expression">
+    <dcterms:description rdf:datatype="&xsd;string">
+  An 'expression' is a finite combination of symbols that are well-formed according to rules that apply to units of measure, quantity kinds and their dimensions.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">expression</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;fieldCode">
+    <qudt:plainTextDescription rdf:datatype="&xsd;string">
+  A field code is a generic property for representing unique codes that make up other identifers. 
+  For example each QuantityKind class caries a domain code as its field code.
+  </qudt:plainTextDescription>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">field code</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;figure">
+    <dcterms:description rdf:datatype="&rdf;HTML">Provides a link to an image.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">figure</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;figureCaption">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">figure caption</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;figureLabel">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">figure label</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;generalization">
+    <dcterms:description rdf:datatype="&rdf;HTML">This deprecated property was intended to relate a quantity kind to its generalization.</dcterms:description>
+    <dcterms:isReplacedBy rdf:resource="&skos;broader" />
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">generalization</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;guidance">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">guidance</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasAllowedUnit">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a unit system with a unit of measure that is not defined by or part of the system,
+   but is allowed for use within the system.
+   An allowed unit must be convertible to some dimensionally eqiuvalent unit that is defined by the system.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">allowed unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasBaseQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has base quantity kind</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasQuantityKind" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasBaseUnit">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a system of units to a base unit defined within the system.
+  The base units of a system are used to define the derived units of the system by expressing
+   the derived units as products of the base units raised to a rational power.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">base unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasCoherentUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasCoherentUnit">
+    <dcterms:description rdf:datatype="&xsd;string">
+  A coherent unit of measurement for a unit system is a defined unit that may be expressed as a product of powers
+   of the system's base units with the proportionality factor of one.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">coherent unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasDefinedUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDefinedUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">This property relates a unit system with a unit of measure that is defined by the system.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">defined unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDenominatorPart">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has quantity kind dimension vector denominator part</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDerivedCoherentUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">derived coherent unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasCoherentUnit" />
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasDerivedUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDerivedNonCoherentUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has coherent derived unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasDerivedUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDerivedUnit">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a system of units to a unit of measure that is defined within the system in terms
+   of the base units for the system. 
+  That is, the derived unit is defined as a product of the base units for the system raised to some rational power.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">derived unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDimension">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has dimension</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDimensionExpression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension expression</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has dimension vector</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasNonCoherentUnit">
+    <dcterms:description rdf:datatype="&xsd;string">
+  A coherent unit of measurement for a unit system is a defined unit that may be expressed as a product of powers of the system's base units with the proportionality factor of one.
+  </dcterms:description>
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has non-coherent unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasDefinedUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasNumeratorPart">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has numerator part</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasPrefixUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">prefix unit</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasDefinedUnit" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasQuantity">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has quantity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has quantity kind</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasReferenceQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has reference quantity kind</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasRule">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has rule</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasUnit">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;This property relates a system of units with a unit of measure that is either:
+  &lt;/p&gt;
+  &lt;dd&gt;a) defined by the system,&lt;/dd&gt;
+  &lt;dd&gt;b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system,&lt;/dd&gt;
+  &lt;dd&gt;c) a reference to the unit of measure of a quantity (variable or constant) of interest.
+  &lt;p&gt;Systems of units may distinguish between base and derived units.
+  Base units are the units which measure the base quantities for the corresponding system of quantities. 
+  The base units are used to define units for all other quantities as products of powers of the base units. 
+  Such units are called derived units for the system. 
+  &lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasUnitSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has unit system</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;hasVocabulary">
+    <qudt:plainTextDescription rdf:datatype="&xsd;string">Used to relate a class to one or more graphs where vocabularies for the class are defined.</qudt:plainTextDescription>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">has vocabulary</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;height">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">height</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;id">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;The "qudt:id" is an identifier string that uniquely identifies a QUDT concept. 
+  The identifier is constructed using a prefix. 
+  For example, units are coded using the pattern: "UCCCENNNN", where "CCC" is a numeric code or a category
+   and "NNNN" is a digit string for a member element of that category. 
+  &lt;/p&gt;
+  &lt;p&gt;For scaled units there may be an addition field that has the format "QNN" where "NN" is a digit string representing
+   an exponent power, and "Q" is a qualifier that indicates with the code "P" that the power is a positive decimal exponent,
+   or the code "N" for a negative decimal exponent, or the code "B" for binary positive exponents.
+  &lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">qudt id</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;iec61360Code">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">iec-61360 code</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;image">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">image</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;imageLocation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">image location</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;informativeReference">
+    <dcterms:description rdf:datatype="&xsd;string">Provides a way to reference a source that provided useful but non-normative information.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">informative reference</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;isBaseQuantityKindOfSystem">
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is base quantity kind of system</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;isDeltaQuantity">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property is used to identify a Quantity instance that is a measure of a change, or interval, of some property,
+   rather than a measure of its absolute value. 
+  This is important for measurements such as temperature differences where the conversion among units would be calculated differently because of offsets.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is Delta Quantity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;isDimensionInSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is dimension in system</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;isMetricUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is metric unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;isQuantityKindOf">
+    <dcterms:description rdf:datatype="&xsd;string">`qudt:isQuantityKindOf` was a strict inverse of `qudt:hasQuantityKind` but is now deprecated.</dcterms:description>
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is quantity kind of</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;isUnitOfSystem">
+    <dcterms:description rdf:datatype="&xsd;string">
+  This property relates a unit of measure with a system of units that either a) defines the unit
+   or b) allows the unit to be used within the system.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">is unit of system</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;isoNormativeReference">
+    <dcterms:description rdf:datatype="&xsd;string">Provides a way to reference the ISO unit definition.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">normative reference (ISO)</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;normativeReference" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;landscape">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">landscape</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;latexDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">latex definition</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;latexSymbol">
+    <dcterms:description rdf:datatype="&qudt;LatexString">
+  The symbol is a glyph that is used to represent some concept, typically a unit or a quantity, in a compact form. 
+  For example, the symbol for an Ohm is $ohm$. 
+  This contrasts with 'unit:abbreviation', which gives a short alphanumeric abbreviation for the unit, 'ohm' for Ohm.
+  </dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">latex symbol</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;mathDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">math definition</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;mathMLdefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">mathML definition</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;mathDefinition" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;normativeReference">
+    <dcterms:description rdf:datatype="&xsd;string">Provides a way to reference information that is an authorative source providing a standard definition</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">normative reference</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;numeratorDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">numerator dimension vector</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;numericValue">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">numeric value</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;omUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">om unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;onlineReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">online reference</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;order">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">order</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;outOfScope">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">out of scope</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;permissibleMaths">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">permissible maths</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;permissibleTransformation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">permissible transformation</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;plainTextDescription">
+    <dcterms:description rdf:datatype="&xsd;string">A plain text description is used to provide a description with only simple ASCII characters for cases where LaTeX , HTML or other markup would not be appropriate.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">description (plain text)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;prefix">
+    <dcterms:description rdf:datatype="&xsd;string">Associates a unit with the appropriate prefix, if any.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">prefix</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;prefixMultiplier">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">prefix multiplier</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;qkdvDenominator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">denominator dimension vector</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;qkdvNumerator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">numerator dimension vector</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;quantity">
+    <dcterms:description rdf:datatype="&xsd;string">a property to relate an observable thing with a quantity (qud:Quantity)</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">quantity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;quantityValue">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">quantity value</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;rationale">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">rationale</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;reference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">reference</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;referenceUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">reference unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;relativeStandardUncertainty">
+    <dcterms:description rdf:datatype="&xsd;string">The relative standard uncertainty of a measurement is the (absolute) standard uncertainty divided by the magnitude of the exact value.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">relative standard uncertainty</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;relevantQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">relevant quantity kind</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;relevantUnit">
+    <dcterms:description rdf:datatype="&xsd;string">This property is used for qudt:Discipline instances to identify the Unit instances that are used within a given discipline.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Relevant Unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;ruleType">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">rule type</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;scaleType">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">scale type</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;siExactMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Individual from SI Reference Point</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;siUnitsExpression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">si units expression</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;specialization">
+    <dcterms:description rdf:datatype="&xsd;string">This deprecated property originally related a quantity kind to its specialization(s). For example, linear velocity and angular velocity are both specializations of velocity.</dcterms:description>
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">specialization</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;standardUncertainty">
+    <dcterms:description rdf:datatype="&xsd;string">The standard uncertainty of a quantity is the estimated standard deviation of the mean taken from a series of measurements.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">standard uncertainty</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;standardUncertaintySN">
+    <dcterms:description rdf:datatype="&xsd;string">The standard uncertainty of a quantity is the estimated standard deviation of the mean taken from a series of measurements.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">standard uncertainty scientific</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;symbol">
+    <dcterms:description rdf:datatype="&qudt;LatexString">The symbol is a glyph that is used to represent some concept, typically a unit or a quantity, in a compact form. For example, the symbol for an Ohm is $ohm$. This contrasts with 'unit:abbreviation', which gives a short alphanumeric abbreviation for the unit, 'ohm' for Ohm.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">symbol</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&dtype;literal" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;systemDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">system definition</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;systemDerivedQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">system derived quantity kind</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasQuantityKind" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;systemDimension">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">system dimension</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;ucumCaseInsensitiveCode">
+    <dcterms:description rdf:datatype="&rdf;HTML">&lt;em&gt;ucumCode&lt;/em&gt; associates a QUDT unit with a UCUM case-insensitive code.</dcterms:description>
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">ucum case-insensitive code</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;ucumCode" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;ucumCaseSensitiveCode">
+    <dcterms:description rdf:datatype="&rdf;HTML">&lt;em&gt;ucumCode&lt;/em&gt; associates a QUDT unit with with a UCUM case-sensitive code.</dcterms:description>
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">ucum case-sensitive code</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="&qudt;ucumCode" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;ucumCode">
+    <dcterms:description rdf:datatype="&rdf;HTML">&lt;p&gt;&lt;em&gt;ucumCode&lt;/em&gt; associates a QUDT unit with its UCUM code (case-sensitive). &lt;/p&gt;&lt;p&gt;In SHACL the values are derived from specific ucum properties using 'sh:values'.&lt;/p&gt;</dcterms:description>
+    <dcterms:source rdf:datatype="&xsd;anyURI">https://ucum.org/ucum.html</dcterms:source>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">ucum code</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://ucum.org/ucum.html" />
+    <rdfs:subPropertyOf rdf:resource="&skos;notation" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;udunitsCode">
+    <dcterms:description rdf:datatype="&rdf;HTML">The UDUNITS package supports units of physical quantities. Its C library provides for arithmetic manipulation of units and for conversion of numeric values between compatible units. The package contains an extensive unit database, which is in XML format and user-extendable. The package also contains a command-line utility for investigating units and converting values.</dcterms:description>
+    <dcterms:source rdf:datatype="&xsd;anyURI">https://www.unidata.ucar.edu/software/udunits/</dcterms:source>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">udunits code</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;uneceCommonCode">
+    <dcterms:description rdf:datatype="&rdf;HTML">The UN/CEFACT Recommendation 20 provides three character alphabetic and alphanumeric codes for representing units of measurement for length, area, volume/capacity, mass (weight), time, and other quantities used in international trade. The codes are intended for use in manual and/or automated systems for the exchange of information between participants in international trade.</dcterms:description>
+    <dcterms:source rdf:datatype="&xsd;anyURI">https://service.unece.org/trade/uncefact/vocabulary/rec20/</dcterms:source>
+    <dcterms:source rdf:datatype="&xsd;anyURI">https://unece.org/trade/documents/2021/06/uncefact-rec20-0</dcterms:source>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">unece common code</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;unit">
+    <dcterms:description rdf:datatype="&rdf;HTML">A reference to the unit of measure of a quantity (variable or constant) of interest.</dcterms:description>
+    <dcterms:isReplacedBy rdf:resource="&qudt;hasUnit" />
+    <qudt:deprecated rdf:datatype="&xsd;boolean">true</qudt:deprecated>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;unitFor">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">unit for</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;url">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">url</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;value">
+    <dcterms:description rdf:datatype="&rdf;HTML">A property to relate an observable thing with a value expressed as a decimal</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">value</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;valueQuantity">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">value for quantity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;valueSN">
+    <dcterms:description rdf:datatype="&rdf;HTML">A property to relate an observable thing with a value expressed in scientific notation</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">value scientific</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;vectorMagnitude">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">vector magnitude</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&qudt;width">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">width</rdfs:label>
+  </rdf:Property>
+  <vaem:CatalogEntry rdf:about="&voag;QUDT-SchemaCatalogEntry">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT Schema Catalog Entry</rdfs:label>
+  </vaem:CatalogEntry>
+  <rdf:Property rdf:about="&voag;supersededBy">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">superseded by</rdfs:label>
+  </rdf:Property>
+  <rdf:Description rdf:about="http://www.linkedmodel.org/schema/dtype">
+    <vaem:namespace rdf:datatype="&xsd;anyURI">http://www.linkedmodel.org/schema/dtype#</vaem:namespace>
+    <vaem:namespacePrefix rdf:datatype="&xsd;string">dtype</vaem:namespacePrefix>
+  </rdf:Description>
+  <vaem:GraphMetaData rdf:about="&vaem;GMD_SHACLQUDT-SCHEMA">
+    <dcterms:contributor rdf:datatype="&xsd;string">Daniel Mekonnen</dcterms:contributor>
+    <dcterms:contributor rdf:datatype="&xsd;string">David Price</dcterms:contributor>
+    <dcterms:contributor rdf:datatype="&xsd;string">Jack Hodges</dcterms:contributor>
+    <dcterms:contributor rdf:datatype="&xsd;string">James E. Masters</dcterms:contributor>
+    <dcterms:contributor rdf:datatype="&xsd;string">Simon J D Cox</dcterms:contributor>
+    <dcterms:contributor rdf:datatype="&xsd;string">Steve Ray</dcterms:contributor>
+    <dcterms:created rdf:datatype="&xsd;date">2011-04-20</dcterms:created>
+    <dcterms:creator rdf:datatype="&xsd;string">Ralph Hodgson</dcterms:creator>
+    <dcterms:description rdf:datatype="&rdf;HTML">&lt;p&gt;The QUDT, or "Quantity, Unit, Dimension and Type" schema defines the base classes properties, and restrictions used for modeling physical quantities, units of measure, and their dimensions in various measurement systems. The goal of the QUDT ontology is to provide a unified model of, measurable quantities, units for measuring different kinds of quantities, the numerical values of quantities in different units of measure and the data structures and data types used to store and manipulate these objects in software.&lt;/p&gt;
+
+&lt;p&gt;Except for unit prefixes, all units are specified in separate vocabularies. Descriptions are provided in both HTML and LaTeX formats. A quantity is a measure of an observable phenomenon, that, when associated with something, becomes a property of that thing; a particular object, event, or physical system. &lt;/p&gt;
+
+&lt;p&gt;A quantity has meaning in the context of a measurement (i.e. the thing measured, the measured value, the accuracy of measurement, etc.) whereas the underlying quantity kind is independent of any particular measurement. Thus, length is a quantity kind while the height of a rocket is a specific quantity of length; its magnitude that may be expressed in meters, feet, inches, etc.  Or, as stated at Wikipedia, in the language of measurement, quantities are quantifiable aspects of the world, such as time, distance, velocity, mass, momentum, energy, and weight, and units are used to describe their measure. Many of these quantities are related to each other by various physical laws, and as a result the units of some of the quantities can be expressed as products (or ratios) of powers of other units (e.g., momentum is mass times velocity and velocity is measured in distance divided by time).&lt;/p&gt;</dcterms:description>
+    <dcterms:modified rdf:datatype="&xsd;dateTime">2025-01-28T14:03:21.513-05:00</dcterms:modified>
+    <dcterms:rights rdf:datatype="&xsd;string">
+  This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.
+
+THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  </dcterms:rights>
+    <dcterms:rights rdf:datatype="&xsd;string">The QUDT Ontologies are issued under a Creative Commons Attribution 4.0 International License (CC BY 4.0), available at https://creativecommons.org/licenses/by/4.0/. Attribution should be made to QUDT.org</dcterms:rights>
+    <dcterms:subject rdf:datatype="&xsd;string">QUDT</dcterms:subject>
+    <dcterms:title rdf:datatype="&xsd;string">QUDT SHACL Schema - Version 2.1.47</dcterms:title>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://unitsofmeasure.org/trac</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.bipm.org/en/publications/si-brochure</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://books.google.com/books?id=pIlCAAAAIAAJ&amp;dq=dimensional+analysis&amp;hl=en</qudt:informativeReference>
+    <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://www.nist.gov/physical-measurement-laboratory/special-publication-811</qudt:informativeReference>
+    <vaem:graphName rdf:datatype="&xsd;string">qudt</vaem:graphName>
+    <vaem:graphTitle rdf:datatype="&xsd;string">Quantities, Units, Dimensions and Types (QUDT) SHACL Schema - Version 2.1.47</vaem:graphTitle>
+    <vaem:hasGraphRole rdf:resource="&vaem;SHACLSchemaGraph" />
+    <vaem:hasOwner rdf:resource="&vaem;QUDT" />
+    <vaem:hasSteward rdf:resource="&vaem;QUDT" />
+    <vaem:intent rdf:datatype="&xsd;string">Specifies the schema for quantities, units and dimensions. Types are defined in other schemas.</vaem:intent>
+    <vaem:isMetadataFor rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <vaem:latestPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2025/01/DOC_SCHEMA-SHACL-QUDT.html</vaem:latestPublishedVersion>
+    <vaem:logo rdf:datatype="&xsd;anyURI">https://qudt.org/linkedmodels.org/assets/lib/lm/images/logos/qudt_logo-300x110.png</vaem:logo>
+    <vaem:namespace rdf:datatype="&xsd;string">http://qudt.org/schema/qudt/</vaem:namespace>
+    <vaem:namespacePrefix rdf:datatype="&xsd;string">qudt</vaem:namespacePrefix>
+    <vaem:owner rdf:datatype="&xsd;string">qudt.org</vaem:owner>
+    <vaem:previousPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2024/12/DOC_SCHEMA-SHACL-QUDT.html</vaem:previousPublishedVersion>
+    <vaem:turtleFileURL rdf:datatype="&xsd;anyURI">http://qudt.org/2.1/schema/shacl/qudt</vaem:turtleFileURL>
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;abstract" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;contributor" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;created" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;description" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;modified" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;rights" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;source" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;subject" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;title" />
+    <vaem:usesNonImportedResource rdf:resource="&voag;QUDT-Attribution" />
+    <vaem:withAttributionTo rdf:resource="&voag;QUDT-Attribution" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT SHACL Schema Metadata Version 2.1.47</rdfs:label>
+    <owl:versionIRI rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+  </vaem:GraphMetaData>
+  <vaem:Party rdf:about="&vaem;QUDT">
+    <dcterms:description rdf:datatype="&rdf;HTML">QUDT is a non-profit organization that governs the QUDT ontologies.</dcterms:description>
+    <vaem:graphName rdf:datatype="&xsd;string">qudt.org</vaem:graphName>
+    <vaem:website rdf:datatype="&xsd;anyURI">http://www.qudt.org</vaem:website>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT</rdfs:label>
+  </vaem:Party>
+  <rdf:Property rdf:about="&prov;wasDerivedFrom">
+    <rdfs:label rdf:datatype="&xsd;string">was derived from</rdfs:label>
+  </rdf:Property>
+  <rdf:Description rdf:nodeID="autos10128">
+    <sh:datatype rdf:resource="&xsd;anyURI" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10130">
+    <sh:class rdf:resource="&qudt;Citation" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10131">
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+    <sh:path rdf:resource="&rdf;first" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10132">
+    <sh:or rdf:parseType="Resource">
+      <rdf:first rdf:nodeID="autos10134" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:nodeID="autos10136" />
+        <rdf:rest rdf:resource="&rdf;nil" />
+      </rdf:rest>
+    </sh:or>
+    <sh:path rdf:resource="&rdf;rest" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10134">
+    <sh:node rdf:resource="&rdf;nil" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10136">
+    <sh:node rdf:resource="&qudt;NumericListShape" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10137">
+    <sh:datatype rdf:resource="&xsd;string" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10138">
+    <rdf:first rdf:nodeID="autos10139" />
+    <rdf:rest rdf:nodeID="autos10140" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10139">
+    <sh:datatype rdf:resource="&xsd;nonNegativeInteger" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10140">
+    <rdf:first rdf:nodeID="autos10141" />
+    <rdf:rest rdf:nodeID="autos10142" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10141">
+    <sh:datatype rdf:resource="&xsd;positiveInteger" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10142">
+    <rdf:first rdf:nodeID="autos10143" />
+    <rdf:rest rdf:nodeID="autos10144" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10143">
+    <sh:datatype rdf:resource="&xsd;integer" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10144">
+    <rdf:first rdf:nodeID="autos10145" />
+    <rdf:rest rdf:nodeID="autos10146" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10145">
+    <sh:datatype rdf:resource="&xsd;int" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10146">
+    <rdf:first rdf:nodeID="autos10147" />
+    <rdf:rest rdf:nodeID="autos10148" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10147">
+    <sh:datatype rdf:resource="&xsd;float" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10148">
+    <rdf:first rdf:nodeID="autos10149" />
+    <rdf:rest rdf:nodeID="autos10150" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10149">
+    <sh:datatype rdf:resource="&xsd;double" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10150">
+    <rdf:first rdf:nodeID="autos10151" />
+    <rdf:rest rdf:resource="&rdf;nil" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10151">
+    <sh:datatype rdf:resource="&xsd;decimal" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10153">
+    <sh:class rdf:resource="&qudt;Datatype" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10155">
+    <sh:class rdf:resource="&qudt;EnumeratedValue" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10157">
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10159">
+    <sh:property rdf:nodeID="autos10160" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10160">
+    <sh:class rdf:resource="&qudt;DataItem" />
+    <sh:path rdf:resource="&qudt;value" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10162">
+    <sh:property rdf:nodeID="autos10163" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10163">
+    <sh:class rdf:resource="&qudt;EnumeratedValue" />
+    <sh:path rdf:resource="&qudt;value" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10165">
+    <sh:class rdf:resource="&qudt;QuantityValue" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos10167">
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </rdf:Description>
+</rdf:RDF>

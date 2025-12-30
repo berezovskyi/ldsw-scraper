@@ -1,0 +1,516 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix fpdt: <http://jazz.net/ns/psm/focalpoint/datatypes#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+{
+    fpdt: dcterms:dateCopyrighted "2012";
+          dcterms:description "The Focal Point datatypes vocabulary defines datatypes supported as attribute values.";
+          dcterms:license <https://jazz.net/ns/license.html>;
+          dcterms:source <https://jazz.net/wiki/pub/Main/FocalPointDatatypesVocabulary/fpdt-vocabulary.ttl>;
+          dcterms:title "Focal Point Datatypes Vocabulary";
+          a owl:Ontology;
+          rdfs:label "Focal Point Datatypes";
+          rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes>.
+    fpdt:Actual a fpdt:ScenarioType;
+                rdfs:comment "The actual value.";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "Actual";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:Attachment a rdfs:Class;
+                    rdfs:comment "A file attachment.";
+                    rdfs:isDefinedBy fpdt:;
+                    rdfs:label "Attachment";
+                    rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File>.
+    fpdt:Bar a fpdt:DisplayType;
+             rdfs:comment "Bar chart.";
+             rdfs:isDefinedBy fpdt:;
+             rdfs:label "Bar";
+             rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:Cell a rdfs:Class;
+              rdfs:comment "A cell in a table.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Cell";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:ChangeEvent a rdfs:Class;
+                     rdfs:comment "A record of a change to an attribute of an element.";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "ChangeEvent";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ChangeEvent>.
+    fpdt:CheckBox a rdfs:Class;
+                  rdfs:comment "A box that a member can select or clear to turn an option on or off.";
+                  rdfs:isDefinedBy fpdt:;
+                  rdfs:label "CheckBox";
+                  rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_CheckBox>;
+                  rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Choice a rdfs:Class;
+                rdfs:comment "A list of predefined items that a member may select a single item from (e.g. status).";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "Choice";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Choice>;
+                rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Column a rdfs:Class;
+                rdfs:comment "A column in a table.";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "Column";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:ComplexDatatype a rdfs:Class;
+                         rdfs:comment "A Focal Point complex datatype. This is an abstract class.";
+                         rdfs:isDefinedBy fpdt:;
+                         rdfs:label "ComplexDatatype";
+                         rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ComplexDatatype>;
+                         rdfs:subClassOf fpdt:Datatype.
+    fpdt:Datatype a rdfs:Class;
+                  rdfs:comment "A Focal Point datatype. This is abstract superclass of all Focal Point datatypes.";
+                  rdfs:isDefinedBy fpdt:;
+                  rdfs:label "Datatype";
+                  rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Datatype>.
+    fpdt:Date a rdfs:Class;
+              rdfs:comment "A date value (for example 3/31/2010).";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Date";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Date>;
+              rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Day a fpdt:TimeInterval;
+             rdfs:comment "A time interval of one day.";
+             rdfs:isDefinedBy fpdt:;
+             rdfs:label "Day";
+             rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:DisplayType a rdfs:Class;
+                     rdfs:comment "A graph display type (e.g. bar or line).";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "DisplayType";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:File a rdfs:Class;
+              rdfs:comment "A document, image or other file in the database, or a list of such files. Maximum total size is 50 MB.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "File";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File>;
+              rdfs:subClassOf fpdt:ComplexDatatype.
+    fpdt:Float a rdfs:Class;
+               rdfs:comment "A real number that contains a fractional part (e.g. 3.14).";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "Float";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Float>;
+               rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:GraphTimeSeries a rdfs:Class;
+                         rdfs:comment "A graph time series.";
+                         rdfs:isDefinedBy fpdt:;
+                         rdfs:label "GraphTimeSeries";
+                         rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:Heading a rdfs:Class;
+                 rdfs:comment "An attribute consisting only of a title, used primarily for layout purposes.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "Heading";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Heading>;
+                 rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:High a fpdt:ScenarioType;
+              rdfs:comment "The estimated high value.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "High";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:History a rdfs:Class;
+                 rdfs:comment "History can display attribute or element history for an element.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "History";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_History>;
+                 rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:HistoryAttributeTable a rdfs:Class;
+                               rdfs:comment "A series of change events of one attribute of an element.",
+                                            "History of one attribute is provided as a table.";
+                               rdfs:isDefinedBy fpdt:;
+                               rdfs:label "HistoryAttributeTable";
+                               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryAttributeTable>;
+                               rdfs:subClassOf fpdt:History.
+    fpdt:HistoryElementTable a rdfs:Class;
+                             rdfs:comment "A series of change events of all attributes of an element.",
+                                          "History of all attributes in an element is provided as a table.";
+                             rdfs:isDefinedBy fpdt:;
+                             rdfs:label "HistoryElementTable";
+                             rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryElementTable>;
+                             rdfs:subClassOf fpdt:History.
+    fpdt:HistoryGraph a rdfs:Class;
+                      rdfs:comment "History of one or more numeric attributes is provided as a graph.";
+                      rdfs:isDefinedBy fpdt:;
+                      rdfs:label "HistoryGraph";
+                      rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>;
+                      rdfs:subClassOf fpdt:History.
+    fpdt:HistoryNone a rdfs:Class;
+                     rdfs:comment "No history is provided.";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "HistoryNone";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryNone>;
+                     rdfs:subClassOf fpdt:History.
+    fpdt:IncomingLinks a rdfs:Class;
+                       rdfs:comment "A list of elements that link to this element.";
+                       rdfs:isDefinedBy fpdt:;
+                       rdfs:label "IncomingLinks";
+                       rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_IncomingLinks>;
+                       rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Integer a rdfs:Class;
+                 rdfs:comment "A real number that contains no fractional part (e.g. 42).";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "Integer";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Integer>;
+                 rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:IntegrationLink a rdfs:Class;
+                         rdfs:comment "A list of linked OSLC resources residing in a different repository.";
+                         rdfs:isDefinedBy fpdt:;
+                         rdfs:label "IntegrationLink";
+                         rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_IntegrationLink>;
+                         rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Large a fpdt:Size;
+               rdfs:comment "Size large.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "Large";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size>.
+    fpdt:Likely a fpdt:ScenarioType;
+                rdfs:comment "The estimated most likely value.";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "Likely";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:Line a fpdt:DisplayType;
+              rdfs:comment "Line chart.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Line";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:Link a rdfs:Class;
+              rdfs:comment "A link from one element to another. The target can be either in this workspace, or in another workspace.",
+                           "A list is a collection of either text attributes or link attributes.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Link";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Link>;
+              rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Lock a rdfs:Class;
+              rdfs:comment "A selection of attributes that can be locked from editing. When the lock attribute is activated for an element the attributes selected in the lock attribute cannot be edited and the element cannot be deleted.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Lock";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Lock>;
+              rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Low a fpdt:ScenarioType;
+             rdfs:comment "The estimated low value.";
+             rdfs:isDefinedBy fpdt:;
+             rdfs:label "Low";
+             rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:Matrix a rdfs:Class;
+                rdfs:comment "A matrix attribute consists of several text, float or integer attributes in a grid.";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "Matrix";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Matrix>;
+                rdfs:subClassOf fpdt:Table.
+    fpdt:Medium a fpdt:Size;
+                rdfs:comment "Size medium.";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "Medium";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size>.
+    fpdt:Mirror a rdfs:Class;
+                rdfs:comment "A mirrored value of another attribute in another element.";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "Mirror";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Mirror>;
+                rdfs:subClassOf fpdt:Datatype.
+    fpdt:Month a fpdt:TimeInterval;
+               rdfs:comment "A time interval of one month.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "Month";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:MultiChoice a rdfs:Class;
+                     rdfs:comment "A list of predefined items that a member may select multiple items from.";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "MultiChoice";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_MultiChoice>;
+                     rdfs:subClassOf fpdt:Datatype.
+    fpdt:Quarter a fpdt:TimeInterval;
+                 rdfs:comment "A time interval of one quarter year.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "Quarter";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:Row a rdfs:Class;
+             rdfs:comment "A row in a table.";
+             rdfs:isDefinedBy fpdt:;
+             rdfs:label "Row";
+             rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:ScenarioType a rdfs:Class;
+                      rdfs:comment "A rectangular table of values in a time grid.";
+                      rdfs:isDefinedBy fpdt:;
+                      rdfs:label "ScenarioType";
+                      rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:Sheet a rdfs:Class;
+               rdfs:comment "A rectangular table of values in a time grid.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "Sheet";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:SimpleDatatype a rdfs:Class;
+                        rdfs:comment "A Focal Point simple datatype. This is an abstract class.";
+                        rdfs:isDefinedBy fpdt:;
+                        rdfs:label "SimpleDatatype";
+                        rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_SimpleDatatype>;
+                        rdfs:subClassOf fpdt:Datatype.
+    fpdt:Size a rdfs:Class;
+              rdfs:comment "A graph size (e.g. small, medium, or large).";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Size";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size>.
+    fpdt:Small a fpdt:Size;
+               rdfs:comment "Size small.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "Small";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size>.
+    fpdt:Table a rdfs:Class;
+               rdfs:comment "A Focal Point table datatype. A table is a rectangular array of cells. This is an abstract class.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "Table";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>;
+               rdfs:subClassOf fpdt:ComplexDatatype.
+    fpdt:Text a rdfs:Class;
+              rdfs:comment "A text field where a member enters and edits text.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Text";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Text>;
+              rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:TextEntry a rdfs:Class;
+                   rdfs:comment "An entry in a list of text items.";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "TextEntry";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TextEntry>.
+    fpdt:TimeGrid a rdfs:Class;
+                  rdfs:comment "Use this for calculations based on a time line.";
+                  rdfs:isDefinedBy fpdt:;
+                  rdfs:label "TimeGrid";
+                  rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>;
+                  rdfs:subClassOf fpdt:ComplexDatatype.
+    fpdt:TimeInterval a rdfs:Class;
+                      rdfs:comment "A time interval (e.g. year, quarter, month).";
+                      rdfs:isDefinedBy fpdt:;
+                      rdfs:label "TimeInterval";
+                      rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:TrendLine a rdfs:Class;
+                   rdfs:comment "A straight line that is fitted to the time series of historical values of an attribute.";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "TrendLine";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine>.
+    fpdt:UniqueId a rdfs:Class;
+                  rdfs:comment "A text field where the value must be unique. When new elements are created, the unique id attribute is automatically assigned a unique value.";
+                  rdfs:isDefinedBy fpdt:;
+                  rdfs:label "UniqueId";
+                  rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_UniqueId>;
+                  rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Url a rdfs:Class;
+             rdfs:comment "A link to a specific resource on the Internet (e.g. http://www.ibm.com).";
+             rdfs:isDefinedBy fpdt:;
+             rdfs:label "Url";
+             rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Url>;
+             rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Version a rdfs:Class;
+                 rdfs:comment "A number or character that automatically increases based on changes in other attributes.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "Version";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Version>;
+                 rdfs:subClassOf fpdt:SimpleDatatype.
+    fpdt:Week a fpdt:TimeInterval;
+              rdfs:comment "A time interval of one week.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Week";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:Year a fpdt:TimeInterval;
+              rdfs:comment "A time interval of one year.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "Year";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:attachment a rdf:Property;
+                    rdfs:comment "Multivalued. A file attachment contained in the list of attachments.";
+                    rdfs:isDefinedBy fpdt:;
+                    rdfs:label "attachment";
+                    rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File>.
+    fpdt:cell a rdf:Property;
+              rdfs:comment "A cell that is contained in a row.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "cell";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:changeEvent a rdf:Property;
+                     rdfs:comment "Multivalued. A change event in the history set determined by the date range and the sample interval.";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "changeEvent";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:column a rdf:Property;
+                rdfs:comment "Multivalued. A column that is contained in a table.";
+                rdfs:isDefinedBy fpdt:;
+                rdfs:label "column";
+                rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:columnNo a rdf:Property;
+                  rdfs:comment "An integer. The column number, starting from 1, of a column or cell within a table.";
+                  rdfs:isDefinedBy fpdt:;
+                  rdfs:label "columnNo";
+                  rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:content a rdf:Property;
+                 rdfs:comment "The content of the attached file. An octet stream.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "content";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File>.
+    fpdt:contentLength a rdf:Property;
+                       rdfs:comment "The length in bytes of the attached file (e.g. 4200).";
+                       rdfs:isDefinedBy fpdt:;
+                       rdfs:label "contentLength";
+                       rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File>.
+    fpdt:contentType a rdf:Property;
+                     rdfs:comment "The content type of the attached file (e.g. 'text/plain').";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "contentType";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File>.
+    fpdt:displayType a rdf:Property;
+                     rdfs:comment "The display type of the graph (e.g. line or bar).";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "displayType";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:endDate a rdf:Property;
+                 rdfs:comment "The end date of this sheet.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "endDate";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:fitToRange a rdf:Property;
+                    rdfs:comment "True if the trend line is computed for historical values within the range of the graph. Otherwise, the trend line is fitted to all historical values.";
+                    rdfs:isDefinedBy fpdt:;
+                    rdfs:label "fitToRange";
+                    rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine>.
+    fpdt:forAttribute a rdf:Property;
+                      rdfs:comment "The name of the attribute whose history is being graphed.";
+                      rdfs:isDefinedBy fpdt:;
+                      rdfs:label "forAttribute";
+                      rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:i a rdf:Property;
+           rdfs:comment "The position of the resource in an ordered list, starting from 1.";
+           rdfs:isDefinedBy fpdt:;
+           rdfs:label "i";
+           rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ComplexDatatype>.
+    fpdt:image a rdf:Property;
+               rdfs:comment "The link to the image of the graph.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "image";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>.
+    fpdt:includeLast a rdf:Property;
+                     rdfs:comment "Optional. If absent include all change events. If present include last 10 or 20 change events.";
+                     rdfs:isDefinedBy fpdt:;
+                     rdfs:label "includeLast";
+                     rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryAttributeTable>,
+                                  <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryElementTable>.
+    fpdt:isBenefit a rdf:Property;
+                   rdfs:comment """	true if the row is a benefit. false if the row is a cost.""";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "isBenefit";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:isHeading a rdf:Property;
+                   rdfs:comment "true if the row is a heading.";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "isHeading";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:isLocked a rdf:Property;
+                  rdfs:comment """	true if the row is locked.""";
+                  rdfs:isDefinedBy fpdt:;
+                  rdfs:label "isLocked";
+                  rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:isSummary a rdf:Property;
+                   rdfs:comment "true if the row is a summary. ";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "isSummary";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:rangeFrom a rdf:Property;
+                   rdfs:comment "The start of the time range. This is either a fixed date of the value of some date attribute.";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "rangeFrom";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>.
+    fpdt:rangeFromAttribute a rdf:Property;
+                            rdfs:comment "Optional. If a date attribute is used to define the start of the range, this is its name.";
+                            rdfs:isDefinedBy fpdt:;
+                            rdfs:label "rangeFromAttribute";
+                            rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>.
+    fpdt:rangeTo a rdf:Property;
+                 rdfs:comment "The end of the time range. This is either a fixed date of the value of some date attribute.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "rangeTo";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>.
+    fpdt:rangeToAttribute a rdf:Property;
+                          rdfs:comment "Optional. If a date attribute is used to define the end of the range, this is its name.";
+                          rdfs:isDefinedBy fpdt:;
+                          rdfs:label "rangeToAttribute";
+                          rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>.
+    fpdt:row a rdf:Property;
+             rdfs:comment "Multivalued. A row that is contained in a table.";
+             rdfs:isDefinedBy fpdt:;
+             rdfs:label "row";
+             rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:rowNo a rdf:Property;
+               rdfs:comment "An integer. The row number, starting from 1, of a row or cell within a table.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "rowNo";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table>.
+    fpdt:sampleInterval a rdf:Property;
+                        rdfs:comment "Optional. If absent then all of the history values within the range are graphed. If present, then only the most recent value within the specified time interval (e.g. daily, weekly) is graphed.";
+                        rdfs:isDefinedBy fpdt:;
+                        rdfs:label "sampleInterval";
+                        rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:scenarioType a rdf:Property;
+                      rdfs:comment "Optional. The scenario type of this scheet. If absent then the scenario type is unset.";
+                      rdfs:isDefinedBy fpdt:;
+                      rdfs:label "scenarioType";
+                      rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:sheet a rdf:Property;
+               rdfs:comment "A sheet in a time grid.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "sheet";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:size a rdf:Property;
+              rdfs:comment "The size of the graph.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "size";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>.
+    fpdt:startDate a rdf:Property;
+                   rdfs:comment "The start date of this sheet.";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "startDate";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:text a rdf:Property;
+              rdfs:comment "One or more lines of plain text.",
+                           "Textual value for display purposes.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "text";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_CheckBox>,
+                           <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Text>.
+    fpdt:timeInterval a rdf:Property;
+                      rdfs:comment "The time interval used for this sheet.";
+                      rdfs:isDefinedBy fpdt:;
+                      rdfs:label "timeInterval";
+                      rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:timeSeries a rdf:Property;
+                    rdfs:comment "A time series of numeric attribute history values. This is a multivalued property. The graph may contain zero or more time series.";
+                    rdfs:isDefinedBy fpdt:;
+                    rdfs:label "timeSeries";
+                    rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph>.
+    fpdt:trendLine a rdf:Property;
+                   rdfs:comment "Optional. If present, a trend line is included in the graph.";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "trendLine";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries>.
+    fpdt:unit a rdf:Property;
+              rdfs:comment "The unit of measure for this row.";
+              rdfs:isDefinedBy fpdt:;
+              rdfs:label "unit";
+              rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid>.
+    fpdt:value a rdf:Property;
+               rdfs:comment "A primary or natural value of a simple datatype.";
+               rdfs:isDefinedBy fpdt:;
+               rdfs:label "value";
+               rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_SimpleDatatype>.
+    fpdt:valueFrom a rdf:Property;
+                   rdfs:comment "The value of the trend line at the start date of the range.";
+                   rdfs:isDefinedBy fpdt:;
+                   rdfs:label "valueFrom";
+                   rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine>.
+    fpdt:valueTo a rdf:Property;
+                 rdfs:comment "The value of the trend line at the end date of the range.";
+                 rdfs:isDefinedBy fpdt:;
+                 rdfs:label "valueTo";
+                 rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine>.
+}
+

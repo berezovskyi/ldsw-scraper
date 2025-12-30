@@ -1,0 +1,2265 @@
+[
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#ownerUID",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The URI reference to the event service provider user that currently owns the resource or was created by."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ownerUID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/#term_Person"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#foaf_Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Netcool/OMNIbus Event Management Core"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2013"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The IBM Tivoli Netcool/OMNIbus Event Management Core Vocabulary defines events, journals, details and event collection identifier pattern resources and related concepts. To Support the concept of event and journal ownership there are also a set of \"read-only\" utility resources, user and group that are provided."
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "http://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "IBM Tivoli Netcool/OMNIbus Event Management Core Vocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Journal",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The representation of a journal entry that documents some action or update to an associated event resource that has been performed by either an automatic or operator action."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Journal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Journal"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#SuppressEscl",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set of suppression or escalation settings for an event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SuppressEscl"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Used to suppress or escalate the event. This property is an integer representation of the supression or escalation setting defined by oslcem:hasSuppressEscl. Default suppression and escalation values of the vocabulary include 0: Normal, 2: Escalated, 3: Escalated-Level 2, 3: Escalated-Level 3, 4: Suppressed, 5: Hidden, 6: Maintenance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "suppressEscl"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#SuppressEscl"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasSuppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#serverSerial",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The IBM Tivoli Netcool/OMNIbus originating server serial number of the event resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "serverSerial"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#summary",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Human readable text summary of of the resource. For an event resource this describes the event condition and the affected managed object instance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "summary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Indeterminate",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Severity"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a severity of indeterminate. Indicated by the value 1 for oslcem:severity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Indeterminate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#severity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Severity",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set of severities for an event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Severity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#severity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#severity",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates the severity level of a resource. It indicates how the perceived capability of the managed object has been affected. This property is an integer representation of the severity defined by oslcem:hasSeverity. Default severity values for the vocabulary include 0: (Clear) Event is resolved. 1: (Indeterminate) Severity level cannot be determined. 2: (Warning: Potential or impending service affecting fault. 3: (Minor) Non-service affecting fault condition. 4: (Major) Service affecting condition. 5: (Critical) Service affecting condition requiring urgent action."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "severity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Severity"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasSeverity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Minor",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Severity"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "3"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a severity of minor. Indicated by the value 3 for oslcem:severity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Minor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#severity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Detail",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The representation of an entry that provides details on a raw data element from the event source for an associated event. Data elements can become a detail entry when the data element has not been mapped to the event resource due to mapping problems or is considered to be extended event data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Detail"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Detail"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#userId",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Numeric IBM Tivoli Netcool/OMNIbus user identifier."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "userId"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Clear",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Severity"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a severity of clear. Indicated by the value 0 for oslcem:severity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Clear"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#severity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#userName",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Human-readable Netcool/OMNIbus user name identifier."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "userName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#detailValue",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The detail resource attribute value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "detailValue"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#expireTime",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The number of seconds from the time this event was last received until it is cleared automatically."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "expireTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Grade",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set of grades for an event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Grade"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#grade"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#grade",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates the state of escalation for the event. This property is an integer representation of the grade defined by oslcem:hasGrade. Default type values of the vocabulary include 0: Not Escalated, 1: Escalated."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "grade"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasGrade"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Grade"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#customer",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The name of the customer affected by this event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#taskList",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates whether a user has added the event to the Task List."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "taskList"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Resolution",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of resolution. Indicated by the value 2 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Resolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Type",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The set of types for an event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#type",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The type of alarm, where type refers to the problem or resolution state of the event. This property is an integer representation of the type defined by oslcem:hasType. Default type values of the vocabulary include 0: Type not set, 1: Problem, 2: Resolution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Type"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasType"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#class",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event class used to identify the event collector or vendor from which the event was generated."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "class"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#groupId",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Numeric IBM Tivoli Netcool/OMNIbus group identifier."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "groupId"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#acknowledged",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates whether the event has been acknowledged."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "acknowledged"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#detailName",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The name of the detail resource value stored in the detail value (oslcem:detailValue) property."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "detailName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#service",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The name of the service affected by this event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "service"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Escalated-Level3",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "3"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a suppression or escalation setting of escalated-level 3. Indicated by the value 3 for oslcem:suppressEscl."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Escalated-Level3"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#internalLast",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The time when this resource was last updated by the event service provider."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "internalLast"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Hidden",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "5"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a suppression or escalation setting of hidden. Indicated by the value 5 for oslcem:suppressEscl."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hidden"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Information",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "13"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of information. Indicated by the value 13 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#flash",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Tivoli Netcool/OMNIbus flashing indicator for the resource used by the user interface."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "flash"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#ownerGID",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The URI reference to the event service provider group that currently owns the resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ownerGID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/#term_Group"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#foaf_Group"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Suppressed",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a suppression or escalation setting of suppressed. Indicated by the value 4 for oslcem:suppressEscl."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Suppressed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#name",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The name of the detail resource value stored in the detail value (oslcem:detail) property."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#hasSeverity",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has this oslcem:Severity resource. This is the object property associated with oslcem:severity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#Severity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSeverity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Critical"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Minor"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Major"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Indeterminate"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#severity"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Clear"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Severity"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Warning"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#hasType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has this oslcem:Type resource. This is the object property associated with oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#MoreSevere"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Type"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#VisionaryProblem"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Problem"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#LessSevere"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#type"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#ISMNewAlarm"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#VisionaryResolution"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#ISMOldAlarm"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Information"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Resolution"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#TypeNotSet"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#alertKey",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The descriptive key that indicates the managed object instance referenced by the event. For example, the disk partition indicated by a file system full alert or the switch port indicated by a utilization alert."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "alertKey"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#sequence",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The sequence number of the detail resource. This is used to order detail resources related to the same event resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "sequence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#agent",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The descriptive name of a sub-manager that generated the event. For example, vendor or standard MIB name from which the trap event was generated from."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#journal",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The URI reference that will fetch all journal resources that have been made against this event resource in the event service provider."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#Journal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "journal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://open-services.net/ns/core#ResponseInfo"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Journal"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#VisionaryProblem",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "3"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of visionary problem. Indicated by the value 3 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "VisionaryProblem"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#ISMNewAlarm",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "7"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of ism new alarm. Indicated by the value 7 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ISMNewAlarm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#VisionaryResolution",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of visionary resolution. Indicated by the value 4 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "VisionaryResolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#TypeNotSet",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of type not set. Indicated by the value 0 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TypeNotSet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Critical",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Severity"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "5"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a severity of critical. Indicated by the value 5 for oslcem:severity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Critical"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#severity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Problem",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of problem. Indicated by the value 1 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Problem"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Escalated-Level2",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a suppression or escalation setting of escalated-level 2. Indicated by the value 2 for oslcem:suppressEscl."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Escalated-Level2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#serial",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The IBM Tivoli Netcool/OMNIbus serial number of the event resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "serial"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#nodeAlias",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The alias for the managed entity. For network devices or hosts, this should be the logical (layer-3) address of the entity. For IP devices or hosts, this must be the IP address."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "nodeAlias"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#LessSevere",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "12"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of less severe. Indicated by the value 12 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "LessSevere"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#ISMOldAlarm",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "8"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of ism old alarm. Indicated by the value 8 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ISMOldAlarm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#lastOccurrence",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The time when this resource was last updated by the service provider. For an event resource, this represents the time at which this event was last updated by the event collector."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "lastOccurrence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#tally",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Automatically maintained count of the the number of inserts and updates of the event from the event source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "tally"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Escalated",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a suppression or escalation setting of escalated. Indicated by the value 1 for oslcem:suppressEscl."
+      },
+      {
+        "@value": "The event has a grade of escalated. Indicated by the value 1 for oslcem:grade."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Escalated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      },
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#grade"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#hasGrade",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has this oslcem:Grade resource. This is the object property associated with oslcem:grade."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#Grade"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasGrade"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#grade"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Grade"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#NotEscalated"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Warning",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Severity"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "2"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a severity of warning. Indicated by the value 2 for oslcem:severity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Warning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#severity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#serverName",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The IBM Tivoli Netcool/OMNIbus originating server name of the event resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "serverName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#detail",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The URI reference that will fetch all detail entries that have been made against the event in the event service provider."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#Detail"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "detail"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://open-services.net/ns/core#ResponseInfo"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Detail"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#probeSubSecondId",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "For events that an event collector sends within the same one-second interval, and which therefore have the same oslcem:lastOccurence value, is added to this property field to differentiate the oslcem:lastOccurrence times."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "probeSubSecondId"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#event",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The URI reference to an event resource that is associated to the current resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Event",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Representation of an event that has been collected from an arbitrary event source, such as a computer system, network device, application, log file, etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#hasSuppressEscl",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has this oslcem:SuppressEscl resource. This is the object property associated with oslcem:suppressEscl."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSuppressEscl"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#suppressEscl"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#SuppressEscl"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Maintenance"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Normal"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated-Level3"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Hidden"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated-Level2"
+      },
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Suppressed"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#description",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Human-readable IBM Tivoli Netcool/OMNIbus group name description."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#NotEscalated",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Grade"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a grade of not escalated. Indicated by the value 0 for oslcem:grade."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "NotEscalated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#grade"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Normal",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a suppression or escalation setting of normal. Indicated by the value 0 for oslcem:suppressEscl."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Normal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#node",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies the managed entity that the resource is related to. For an event resource this identifies the managed entity from which the alarm originated in the form of a hostname."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "node"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#stateChange",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An automatically maintained time stamp of the last insert or update of the event from any source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "stateChange"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#attrValue",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies whether the attribute value of the detail resource (oslcem:detailValue) is valid, or just the name (oslcem:detailName) is valid."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "attrValue"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Maintenance",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#SuppressEscl"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "6"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a suppression or escalation setting of maintenance. Indicated by the value 6 for oslcem:suppressEscl."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Maintenance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#suppressEscl"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#Major",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Severity"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a severity of major. Indicated by the value 4 for oslcem:severity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Major"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#severity"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#manager",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The descriptive name of the event collector that collected and forwarded the event to the event service provider."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "manager"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#MoreSevere",
+    "@type": [
+      "http://jazz.net/ns/ism/event/omnibus#Type"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@value": "11"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The event has a type of more severe. Indicated by the value 11 for oslcem:type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MoreSevere"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/event/omnibus#alertGroup",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The descriptive name of the failure type indicated by the event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/event/omnibus#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "alertGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification"
+      }
+    ]
+  }
+]

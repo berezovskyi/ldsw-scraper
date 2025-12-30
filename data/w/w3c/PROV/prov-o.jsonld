@@ -1,0 +1,5619 @@
+[
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov-o#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page). \n\nIf you wish to make comments regarding this document, please send them to public-prov-comments@w3.org (subscribe public-prov-comments-request@w3.org, archives http://lists.w3.org/Archives/Public/public-prov-comments/). All feedback is welcome."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "W3C PROVenance Interchange Ontology (PROV-O)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/TR/prov-o/"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o-20130430"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@language": "en",
+        "@value": "Recommendation version 2013-04-30"
+      }
+    ],
+    "http://www.w3.org/ns/prov#specializationOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasRevisionOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o-20130312"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": ""
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Thing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Activity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Entity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. "
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#ActivityInfluence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "ActivityInfluence provides additional descriptions of an Activity's binary influence upon any other kind of resource. Instances of ActivityInfluence use the prov:activity property to cite the influencing Activity."
+      },
+      {
+        "@language": "en",
+        "@value": "It is not recommended that the type ActivityInfluence be asserted without also asserting one of its more specific subclasses."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ActivityInfluence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      },
+      {
+        "@id": "_:autos1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#EntityInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@language": "en",
+        "@value": "ActivitiyInfluence is the capacity of an activity to have an effect on the character, development, or behavior of another by means of generation, invalidation, communication, or other."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#ActivityInfluence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#influencer"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple."
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@value": "The prov:activity property references an prov:Activity which influenced a resource. This property applies to an prov:ActivityInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "activityOfInfluence"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Influence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Influence provides additional descriptions about the binary prov:wasInfluencedBy relation from some influenced Activity, Entity, or Agent to the influencing Activity, Entity, or Agent. For example, :stomach_ache prov:wasInfluencedBy :spoon; prov:qualifiedInfluence [ a prov:Influence; prov:entity :spoon; :foo :bar ] . Because prov:Influence is a broad relation, the more specific relations (Communication, Delegation, End, etc.) should be used when applicable."
+      },
+      {
+        "@language": "en",
+        "@value": "Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Influence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-influence",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/prov#hadActivity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#hadActivity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead)."
+      },
+      {
+        "@value": "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      },
+      {
+        "@id": "_:autos33"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadActivity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "The multiple rdfs:domain assertions are intended. One is simpler and works for OWL-RL, the union is more specific but is not recognized by OWL-RL."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasActivityOfInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#EntityInfluence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "EntityInfluence provides additional descriptions of an Entity's binary influence upon any other kind of resource. Instances of EntityInfluence use the prov:entity property to cite the influencing Entity."
+      },
+      {
+        "@language": "en",
+        "@value": "It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "EntityInfluence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@language": "en",
+        "@value": "EntityInfluence is the capacity of an entity to have an effect on the character, development, or behavior of another by means of usage, start, end, derivation, or other. "
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Agent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#InstantaneousEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instantaneous event, or event for short, happens in the world and marks a change in the world, in its activities and in its entities. The term 'event' is commonly used in process algebra with a similar meaning. Events represent communications or interactions; they are assumed to be atomic and instantaneous."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#dfn-event",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "The PROV data model is implicitly based on a notion of instantaneous events (or just events), that mark transitions in the world. Events include generation, usage, or invalidation of entities, as well as starting or ending of activities. This notion of event is not first-class in the data model, but it is useful for explaining its other concepts and its semantics."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#AgentInfluence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent."
+      },
+      {
+        "@language": "en",
+        "@value": "It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AgentInfluence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@language": "en",
+        "@value": "AgentInfluence is the capacity of an agent to have an effect on the character, development, or behavior of another by means of attribution, association, delegation, or other."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#AgentInfluence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#influencer"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple."
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@language": "en",
+        "@value": "The prov:agent property references an prov:Agent which influenced a resource. This property applies to an prov:AgentInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "agentOfInfluence"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Association",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedAssociation [ a prov:Association; prov:agent :baker; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Association"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#AgentInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Association",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Association",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasAssociatedWith"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasAssociatedWith"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedAssociation"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#agent"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasAssociateFor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Association"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedAssociation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Attribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Attribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#AgentInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Attribution is the ascribing of an entity to an agent.\n\nWhen an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribution",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribution",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasAttributedTo"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasAttributedTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Attribution is the ascribing of an entity to an agent."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasAttributedTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedAttribution"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#agent"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Attribution is the ascribing of an entity to an agent."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "contributed"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Attribution"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedAttribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Bundle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Note that there are kinds of bundles (e.g. handwritten letters, audio recordings, etc.) that are not expressed in PROV-O, but can be still be described by PROV-O."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Bundle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-bundle-entity",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-bundle-declaration",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Collection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Collection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "collections"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Communication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Communication provides additional descriptions about the binary prov:wasInformedBy relation from an informed prov:Activity to the prov:Activity that informed it. For example, :you_jumping_off_bridge prov:wasInformedBy :everyone_else_jumping_off_bridge; prov:qualifiedCommunication [ a prov:Communication; prov:activity :everyone_else_jumping_off_bridge; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Communication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#ActivityInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "Communication is the exchange of an entity by two activities, one activity using the entity generated by the other."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Communication",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-wasInformedBy",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInformedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasInformedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasInformedBy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedCommunication"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#activity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "informed"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Communication"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedCommunication"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Delegation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Delegation provides additional descriptions about the binary prov:actedOnBehalfOf relation from a performing prov:Agent to some prov:Agent for whom it was performed. For example, :mixing prov:wasAssociatedWith :toddler . :toddler prov:actedOnBehalfOf :mother; prov:qualifiedDelegation [ a prov:Delegation; prov:entity :mother; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Delegation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#AgentInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work.\n\nFor example, a student acted on behalf of his supervisor, who acted on behalf of the department chair, who acted on behalf of the university; all those agents are responsible in some way for the activity that took place but we do not say explicitly who bears responsibility and to what degree."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-delegation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-delegation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#actedOnBehalfOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#actedOnBehalfOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "actedOnBehalfOf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedDelegation"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#agent"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "hadDelegate"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Delegation"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedDelegation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Derivation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Derivation provides additional descriptions about the binary prov:wasDerivedFrom relation from some derived prov:Entity to another prov:Entity from which it was derived. For example, :chewed_bubble_gum prov:wasDerivedFrom :unwrapped_bubble_gum; prov:qualifiedDerivation [ a prov:Derivation; prov:entity :unwrapped_bubble_gum; :foo :bar ]."
+      },
+      {
+        "@language": "en",
+        "@value": "The more specific forms of prov:Derivation (i.e., prov:Revision, prov:Quotation, prov:PrimarySource) should be asserted if they apply."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Derivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#EntityInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Derivation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#Derivation-Relation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasDerivedFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedDerivation"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#entity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "hadDerivation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedDerivation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#EmptyCollection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "EmptyCollection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Collection"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "collections"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "An empty collection is a collection without members."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#End",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:End provides additional descriptions about the binary prov:wasEndedBy relation from some ended prov:Activity to an prov:Entity that ended it. For example, :ball_game prov:wasEndedBy :buzzer; prov:qualifiedEnd [ a prov:End; prov:entity :buzzer; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "End"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#EntityInfluence"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-End",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-End",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasEndedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasEndedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasEndedBy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedEnd"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#entity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "ended"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#End"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedEnd"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#EntityInfluence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#influencer"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "This property behaves in spirit like rdf:object; it references the object of a prov:wasInfluencedBy triple."
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@value": "The prov:entity property references an prov:Entity which influenced a resource. This property applies to an prov:EntityInfluence, which is given by a subproperty of prov:qualifiedInfluence from the influenced prov:Entity, prov:Activity or prov:Agent."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "entityOfInfluence"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Generation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Generation provides additional descriptions about the binary prov:wasGeneratedBy relation from a generated prov:Entity to the prov:Activity that generated it. For example, :cake prov:wasGeneratedBy :baking; prov:qualifiedGeneration [ a prov:Generation; prov:activity :baking; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Generation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#ActivityInfluence"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Generation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Generation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasGeneratedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasGeneratedBy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedGeneration"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#activity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "generated"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Generation"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedGeneration"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasInfluencedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."
+      },
+      {
+        "@value": "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:autos89"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:autos93"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .\n\nSubproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.\n\nprov:wasInfluencedBy should not be used without also using one of its subproperties. \n"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "influenced"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Invalidation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Invalidation provides additional descriptions about the binary prov:wasInvalidatedBy relation from an invalidated prov:Entity to the prov:Activity that invalidated it. For example, :uncracked_egg prov:wasInvalidatedBy :baking; prov:qualifiedInvalidation [ a prov:Invalidation; prov:activity :baking; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Invalidation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#ActivityInfluence"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "Invalidation is the start of the destruction, cessation, or expiry of an existing entity by an activity. The entity is no longer available for use (or further invalidation) after invalidation. Any generation or usage of an entity precedes its invalidation."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Invalidation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Invalidation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInvalidatedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasInvalidatedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasInvalidatedBy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedInvalidation"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#activity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "invalidated"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Invalidation"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInvalidation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Location",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#atLocation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-location",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#atLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Location of any resource."
+      },
+      {
+        "@value": "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:autos20"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "atLocation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Location"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "The naming of prov:atLocation parallels prov:atTime, and is not named prov:hadLocation to avoid conflicting with the convention that prov:had* properties are used on prov:Influence classes."
+      },
+      {
+        "@language": "en",
+        "@value": "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair)."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "locationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Location"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Organization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "An organization is a social or legal institution such as a company, society, etc."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Person agents are people."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Plan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "There exist no prescriptive requirement on the nature of plans, their representation, the actions or steps they consist of, or their intended goals. Since plans may evolve over time, it may become necessary to track their provenance, so plans themselves are entities. Representing the plan explicitly in the provenance can be useful for various tasks: for example, to validate the execution as represented in the provenance record, to manage expectation failures, or to provide explanations."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Plan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      },
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "A plan is an entity that represents a set of actions or steps intended by one or more agents to achieve some goals."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Association",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Association",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#PrimarySource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:PrimarySource provides additional descriptions about the binary prov:hadPrimarySource relation from some secondary prov:Entity to an earlier, primary prov:Entity. For example, :blog prov:hadPrimarySource :newsArticle; prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :newsArticle; :foo :bar ] ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "PrimarySource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic's study, without benefit from hindsight.\n\nBecause of the directness of primary sources, they 'speak for themselves' in ways that cannot be captured through the filter of secondary sources. As such, it is important for secondary sources to reference those primary sources from which they were derived, so that their reliability can be investigated.\n\nA primary source relation is a particular case of derivation of secondary materials from their primary sources. It is recognized that the determination of primary sources can be up to interpretation, and should be done according to conventions accepted within the application's domain."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-primary-source",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-original-source",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#hadPrimarySource"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#hadPrimarySource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadPrimarySource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedPrimarySource"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#entity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasPrimarySourceOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#PrimarySource"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedPrimarySource"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Quotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Quotation provides additional descriptions about the binary prov:wasQuotedFrom relation from some taken prov:Entity from an earlier, larger prov:Entity. For example, :here_is_looking_at_you_kid prov:wasQuotedFrom :casablanca_script; prov:qualifiedQuotation [ a prov:Quotation; prov:entity :casablanca_script; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Quotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-quotation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-quotation",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasQuotedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasQuotedFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An entity is derived from an original entity by copying, or 'quoting', some or all of it."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasQuotedFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedQuotation"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#entity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "quotedAs"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Quotation"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedQuotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Revision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Revision provides additional descriptions about the binary prov:wasRevisionOf relation from some newer prov:Entity to an earlier prov:Entity. For example, :draft_2 prov:wasRevisionOf :draft_1; prov:qualifiedRevision [ a prov:Revision; prov:entity :draft_1; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Revision"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-revision",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Revision",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasRevisionOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasRevisionOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A revision is a derivation that revises an entity into a revised version."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasRevisionOf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedRevision"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#entity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "hadRevision"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Revision"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedRevision"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Role",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#hadRole"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#hadRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."
+      },
+      {
+        "@value": "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      },
+      {
+        "@id": "_:autos43"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadRole"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Role"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@language": "en",
+        "@value": "prov:hadRole references the Role (i.e. the function of an entity with respect to an activity), in the context of an instantaneous usage, generation, association, start, and end."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasRoleIn"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#SoftwareAgent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SoftwareAgent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "A software agent is running software."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Start",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Start provides additional descriptions about the binary prov:wasStartedBy relation from some started prov:Activity to an prov:Entity that started it. For example, :foot_race prov:wasStartedBy :bang; prov:qualifiedStart [ a prov:Start; prov:entity :bang; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ] ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Start"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#EntityInfluence"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Start",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Start",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasStartedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasStartedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wasStartedBy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedStart"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#entity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "started"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Start"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedStart"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Usage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An instance of prov:Usage provides additional descriptions about the binary prov:used relation from some prov:Activity to an prov:Entity that it used. For example, :keynote prov:used :podium; prov:qualifiedUsage [ a prov:Usage; prov:entity :podium; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Usage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#EntityInfluence"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Usage",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Usage",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#used"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#used",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "used"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#qualifiedUsage"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#entity"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasUsedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Usage"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedUsage"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedDelegation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedDelegation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Delegation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedDelegationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Delegation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#actedOnBehalfOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#influencer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "influencer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "This property and its subproperties are used in the same way as the rdf:object property, i.e. to reference the object of an unqualified prov:wasInfluencedBy or prov:influenced triple."
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorsDefinition": [
+      {
+        "@language": "en",
+        "@value": "This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "hadInfluence"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#alternateOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "alternateOf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#specializationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "alternate"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-alternate",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "alternateOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-alternate",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#specializationOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "specializationOf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/ns/prov#alternateOf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#alternateOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "alternate"
+      }
+    ],
+    "http://www.w3.org/ns/prov#constraints": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "generalizationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#n": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-specialization",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#aq",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Activity"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Agent"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Entity"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#atTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The time at which an InstantaneousEvent occurred, in the form of xsd:dateTime."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "atTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#endedAtTime"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#generatedAtTime"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#invalidatedAtTime"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#startedAtTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#endedAtTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The time at which an activity ended. See also prov:startedAtTime."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "endedAtTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "It is the intent that the property chain holds: (prov:qualifiedEnd o prov:atTime) rdfs:subPropertyOf prov:endedAtTime."
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#End"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#atTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The time at which an entity was completely created and is available for use."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "generatedAtTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "It is the intent that the property chain holds: (prov:qualifiedGeneration o prov:atTime) rdfs:subPropertyOf prov:generatedAtTime."
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Generation"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#atTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#invalidatedAtTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The time at which an entity was invalidated (i.e., no longer usable)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "invalidatedAtTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "It is the intent that the property chain holds: (prov:qualifiedInvalidation o prov:atTime) rdfs:subPropertyOf prov:invalidatedAtTime."
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Invalidation"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#atTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#startedAtTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The time at which an activity started. See also prov:endedAtTime."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "startedAtTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "starting-point"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "It is the intent that the property chain holds: (prov:qualifiedStart o prov:atTime) rdfs:subPropertyOf prov:startedAtTime."
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Start"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#atTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#category",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Classify prov-o terms into three categories, including 'starting-point', 'qualifed', and 'extended'. This classification is used by the prov-o html document to gently introduce prov-o terms to its users. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#component",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Classify prov-o terms into six components according to prov-dm, including 'agents-responsibility', 'alternate', 'annotations', 'collections', 'derivations', and 'entities-activities'. This classification is used so that readers of prov-o specification can find its correspondence with the prov-dm specification."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#constraints",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A reference to the principal section of the PROV-CONSTRAINTS document that describes this concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#definition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes the concept expressed with this OWL term."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#dm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A reference to the principal section of the PROV-DM document that describes this concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#editorialNote",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A note by the OWL development team about how this term expresses the PROV-DM concept, or how it should be used in context of semantic web or linked data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#editorsDefinition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "When the prov-o term does not have a definition drawn from prov-dm, and the prov-o editor provides one."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#definition"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#generated",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "generated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#influenced"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasGeneratedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasGeneratedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Generation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#influenced",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "influenced"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos33",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Delegation"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Derivation"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#End"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Start"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#hadGeneration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The _optional_ Generation involved in an Entity's Derivation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadGeneration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Generation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "generatedAsDerivation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Generation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#hadMember",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Collection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadMember"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasMemberOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Collection"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#hadPlan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The _optional_ Plan adopted by an Agent in Association with some Activity. Plan specifications are out of the scope of this specification."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Association"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadPlan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Plan"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasPlanOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Plan"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedPrimarySource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Entity prov:hadPrimarySource Entity :e, then it can qualify how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedPrimarySource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#PrimarySource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedSourceOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#PrimarySource"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#hadPrimarySource"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos43",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Association"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#InstantaneousEvent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#hadUsage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The _optional_ Usage involved in an Entity's Derivation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hadUsage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Usage"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasUsedInDerivation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Usage"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#invalidated",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "invalidated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#influenced"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInvalidatedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@language": "en",
+        "@value": "prov:invalidated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions."
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "wasInvalidatedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Invalidation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#inverse",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "PROV-O does not define all property inverses. The directionalities defined in PROV-O should be given preference over those not defined. However, if users wish to name the inverse of a PROV-O property, the local name given by prov:inverse should be used."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.w3.org/TR/prov-o/#names-of-inverse-properties"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#n",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A reference to the principal section of the PROV-DM document that describes this concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#order",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The position that this OWL term should be listed within documentation. The scope of the documentation (e.g., among all terms, among terms within a prov:category, among properties applying to a particular class, etc.) is unspecified."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedAssociation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent :ag; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedAssociation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Association"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedAssociationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Association"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasAssociatedWith"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedInfluence",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:autos57"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedInfluenceOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Influence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedAttribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedAttribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Attribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "agents-responsibility"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedAttributionOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Attribution"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasAttributedTo"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedCommunication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Activity prov:wasInformedBy Activity :a, then it can qualify how it was influenced using prov:qualifiedCommunication [ a prov:Communication;  prov:activity :a; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedCommunication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Communication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedCommunicationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#qualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Communication"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Communication"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedDerivation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedDerivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedDerivationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Derivation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedEnd",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Activity prov:wasEndedBy Entity :e1, then it can qualify how it was ended using prov:qualifiedEnd [ a prov:End;  prov:entity :e1; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedEnd"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#End"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedEndOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#End"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasEndedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedForm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This annotation property links a subproperty of prov:wasInfluencedBy with the subclass of prov:Influence and the qualifying property that are used to qualify it. \n\nExample annotation:\n\n    prov:wasGeneratedBy prov:qualifiedForm prov:qualifiedGeneration, prov:Generation .\n\nThen this unqualified assertion:\n\n    :entity1 prov:wasGeneratedBy :activity1 .\n\ncan be qualified by adding:\n\n   :entity1 prov:qualifiedGeneration :entity1Gen .\n   :entity1Gen \n       a prov:Generation, prov:Influence;\n       prov:activity :activity1;\n       :customValue 1337 .\n\nNote how the value of the unqualified influence (prov:wasGeneratedBy :activity1) is mirrored as the value of the prov:activity (or prov:entity, or prov:agent) property on the influence class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedGeneration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Activity prov:generated Entity :e, then it can qualify how it performed the Generation using prov:qualifiedGeneration [ a prov:Generation;  prov:entity :e; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedGeneration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Generation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedGenerationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Generation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasGeneratedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos57",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Activity"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Agent"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Entity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedInvalidation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Entity prov:wasInvalidatedBy Activity :a, then it can qualify how it was invalidated using prov:qualifiedInvalidation [ a prov:Invalidation;  prov:activity :a; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedInvalidation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Invalidation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedInvalidationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Invalidation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInvalidatedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedQuotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Entity prov:wasQuotedFrom Entity :e, then it can qualify how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedQuotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Quotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedQuotationOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Quotation"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasQuotedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedRevision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Entity prov:wasRevisionOf Entity :e, then it can qualify how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity :e; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedRevision"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Revision"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "derivations"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "revisedEntity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Revision"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasRevisionOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedStart",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Activity prov:wasStartedBy Entity :e1, then it can qualify how it was started using prov:qualifiedStart [ a prov:Start;  prov:entity :e1; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedStart"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Start"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedStartOf"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Start"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasStartedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#qualifiedUsage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "If this Activity prov:used Entity :e, then it can qualify how it used it using prov:qualifiedUsage [ a prov:Usage; prov:entity :e; :foo :bar ]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "qualifiedUsage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Usage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#qualifiedInfluence"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "qualified"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#inverse": [
+      {
+        "@value": "qualifiedUsingActivity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#sharesDefinitionWith": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Usage"
+      }
+    ],
+    "http://www.w3.org/ns/prov#unqualifiedForm": [
+      {
+        "@id": "http://www.w3.org/ns/prov#used"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#sharesDefinitionWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#todo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#unqualifiedForm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Classes and properties used to qualify relationships are annotated with prov:unqualifiedForm to indicate the property used to assert an unqualified provenance relation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov-o#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "value"
+      }
+    ],
+    "http://www.w3.org/ns/prov#category": [
+      {
+        "@value": "expanded"
+      }
+    ],
+    "http://www.w3.org/ns/prov#component": [
+      {
+        "@value": "entities-activities"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@language": "en",
+        "@value": "Provides a value that is a direct representation of an entity."
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-value",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/ns/prov#editorialNote": [
+      {
+        "@value": "The editor's definition comes from http://www.w3.org/TR/rdf-primer/#rdfvalue"
+      },
+      {
+        "@language": "en",
+        "@value": "This property serves the same purpose as rdf:value, but has been reintroduced to avoid some of the definitional ambiguity in the RDF specification (specifically, 'may be used in describing structured values')."
+      }
+    ]
+  },
+  {
+    "@id": "_:autos89",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Activity"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Agent"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Entity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos93",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Activity"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Agent"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Entity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos113",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#range"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#hadMember"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos118",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "hadPrimarySource property is a particular case of wasDerivedFrom (see http://www.w3.org/TR/prov-dm/#term-original-source) that aims to give credit to the source that originated some information."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#hadPrimarySource"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos119",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasAttributedTo"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds. "
+      }
+    ]
+  },
+  {
+    "@id": "_:autos120",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos122",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#range"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "_:autos123"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;"
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos123",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Activity"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Agent"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Entity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos128",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#domain"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasInfluencedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "_:autos129"
+      }
+    ],
+    "http://www.w3.org/ns/prov#definition": [
+      {
+        "@value": "influencee: an identifier (o2) for an entity, activity, or agent; "
+      }
+    ],
+    "http://www.w3.org/ns/prov#dm": [
+      {
+        "@value": "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos129",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/prov#Activity"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Agent"
+          },
+          {
+            "@id": "http://www.w3.org/ns/prov#Entity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos134",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Quotation is a particular case of derivation (see http://www.w3.org/TR/prov-dm/#term-quotation) in which an entity is derived from an original entity by copying, or \"quoting\", some or all of it. "
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasQuotedFrom"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos135",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Axiom"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Revision is a derivation (see http://www.w3.org/TR/prov-dm/#term-Revision). Moreover, according to \nhttp://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 2012 'wasRevisionOf is a strict sub-relation of wasDerivedFrom since two entities e2 and e1 may satisfy wasDerivedFrom(e2,e1) without being a variant of each other.'"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedProperty": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedSource": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasRevisionOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#annotatedTarget": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ]
+  }
+]

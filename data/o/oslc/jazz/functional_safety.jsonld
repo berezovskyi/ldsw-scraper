@@ -1,0 +1,2148 @@
+[
+  {
+    "@id": "http://jazz.net/ns/functional_safety#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "IBM Functional Safety Vocabulary"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Vocabulary terms describing resources related to functional safety regulations such as those defined in ISO standards."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Functional safety core"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "https://jazz.net/wiki/pub/LinkedData/FuncSafetyVocabulary/func-safety-vocabulary.ttl"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2020"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#HazardousEvent",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A combination of a hazard and an operational situation that could lead to accident or injury if not controlled by timely action."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hazardous Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#HazardousEventsModule",
+    "@type": [
+      "http://jazz.net/ns/rm#Module"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A module for hazardous event artifacts."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hazardous Events Module"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ItemDefinition",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An item is a system or array of systems to implement a function at the vehicle level. The item definition should include its purpose, functionality, and an implementation-independent boundary diagram for the item."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Item Definition"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ItemDefinitionModule",
+    "@type": [
+      "http://jazz.net/ns/rm#Module"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A module containing Item Definitions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Item Definition Module"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SafetyGoal",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A top-level safety requirement assigned to a system to reduce risk of one or more hazardous events to a tolerable level. Determined for each hazardous event evaluated in the hazard analysis."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Safety Goal"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SafetyGoalsModule",
+    "@type": [
+      "http://jazz.net/ns/rm#Module"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A module that contains safety goals."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Safety Goals Module"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Defines the type of ASIL requirement."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ASIL Types"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_QM",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type QM."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QM"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_A",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type A."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_B",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type B."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "B"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_C",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type C."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_D",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type D."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_AA",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type AA."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A(A)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_AB",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type AB."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A(B)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_AC",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type AC."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A(C)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_AD",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type AD."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A(D)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_BB",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type BB."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "B(B)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_BC",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type BC."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "B(C)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_BD",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type BD."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "B(D)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_CC",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type CC."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C(C)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_CD",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type CD."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C(D)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_DD",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type DD."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "D(D)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_QMA",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type QMA."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QM(A)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_QMB",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type QMB."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QM(B)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_QMC",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type QMC."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QM(C)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#TypeASIL_QMD",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#TypeASIL"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "ASIL type QMD."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QM(D)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControlClassTypes",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Values for the control class for safety goals, to determine the ASIL level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Control Class Types."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControlC1",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControlClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Control class C1."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C1"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControlC2",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControlClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Control class C2."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C2"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControlC3",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControlClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Control class C3."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C3"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControlNotSet",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControlClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Control Class is not set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Not Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ProbabilityClassTypes",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Values for the probability class for safety goals, to determine the ASIL level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Probability Class Types"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ProbabilityE1",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ProbabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Probability Class E1."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E1"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ProbabilityE2",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ProbabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Probability Class E2."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E2"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ProbabilityE3",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ProbabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Probability Class E3."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E3"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ProbabilityE4",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ProbabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Probability Class E4."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E4"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ProbabilityNotSet",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ProbabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Probability Class is not set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Not Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControllabilityClassTypes",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Values for the controllability class for safety goals, to determine the ASIL level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Controllability Class Types."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControllabilityNotSet",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControllabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Controllability Class is not set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Not Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControllabilityC0",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControllabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Controllability class C0 - Controllable in general."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C0 - Controllable in general"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControllabilityC1",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControllabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Controllability class C1 - Simply controllable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C1 - Simply controllable"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControllabilityC2",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControllabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Controllability class C2 - Normally controllable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C2 - Normally controllable"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ControllabilityC3",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ControllabilityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Controllability class C3 - Difficult to control or uncontrollable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "C3 - Difficult to control or uncontrollable"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ExposureClassTypes",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Values for the exposure class for safety goals, to determine the ASIL level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Exposure Class Types"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ExposureNotSet",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ExposureClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Exposure Class is not set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Not Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ExposureE0",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ExposureClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Exposure Class E0 Incredible."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E0 - Incredible"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ExposureE1",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ExposureClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Exposure Class E1 - Very low probability."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E1 - Very low probability"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ExposureE2",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ExposureClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Exposure Class E2 - Low probability."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E2 - Low probability"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ExposureE3",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ExposureClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Exposure Class E3 - Medium probability."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E3 - Medium probability"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ExposureE4",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ExposureClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Exposure Class E4 - High probability."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "E4 - High probability"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SeverityClassTypes",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Values for the severity class for safety goals, used to determine the ASIL level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Severity Class Types"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SeverityNotSet",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#SeverityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Severity class is not set."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Not Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SeverityS0",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#SeverityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Severity class S0 no injuries."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S0 - No injuries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SeverityS1",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#SeverityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Severity class S1 light and moderate injuries."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S1 - Light and moderate injuries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SeverityS2",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#SeverityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Severity class S2 Severe and life threatening injuries, survival probable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S2 - Severe and life threatening injuries (survival probable)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#SeverityS3",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#SeverityClassTypes"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Severity class S3 Life threatening injuries, surivival uncertain, fatal injuries."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "S3 - Life threatening injuries (surivival uncertain), fatal injuries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#risk",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The level of risk."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/sse#HMLScale"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Risk"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#asil",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Calculated ASIL level based on severity, exposure, and controllability. Typically expressed as a value of type jazz_fusa:TypeASIL."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#TypeASIL"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ASIL"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#asilCalculation",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "For use with custom ASIL calculator.Typically expressed as a value of type jazz_fusa:TypeASIL."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#TypeASIL"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ASIL Calculation"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#asilManual",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "For use with custom ASIL calculator-To set ASIL value manually. Typically expressed as a value of type jazz_fusa:TypeASIL."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#TypeASIL"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ASIL (Manual)"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#asilRationale",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Rationale if ASIL level was set manually."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ASIL Rationale"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#asilSetManually",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "For use with custom ASIL calculator- Boolean to test if ASIL value is set manually."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ASIL Set Manually"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#controllabilityClass",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This attribute sets the controllability class that is used to determine the ASIL level of the Hazardous Event. Typically expressed as a value of type jazz_fusa:ControllabilityClass."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#ControllabilityClass"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Controllability Class"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#severityClass",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This attribute sets the severity class that is used to determine the ASIL level of the Hazardous Event. ONLY APPLIES TO SAFTEY GOALS. Typically expressed as a value of type jazz_fusa:SeverityClass."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#SeverityClass"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Severity Class"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#probabilityClass",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This attribute sets the probability class used to determine the ASIL level for Safety Goals. Typically expressed as a value of type jazz_fusa:ProbabilityClass."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#ProbabilityClass"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@value": "archaic"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Probability Class"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#requiredAsil",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The required ASIL level to apply. Typically expressed as a value of type jazz_fusa:TypeASIL."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#TypeASIL"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ASIL"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#operationalSituation",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Description of the operational situation as defined in ISO26262."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Operational Situation"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#operatingMode",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Description of the operating mode as defined in ISO26262."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Operating Mode"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#hazard",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Description of the hazard as defined in ISO26262."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hazard"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#fault",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Description of the fault as defined in ISO26262."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Fault"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#isAsilDecomposed",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Set to true when this is a safety requirement that has been decomposed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Is ASIL Decomposed"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#exposureClass",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This attribute sets the probability of exposure class that is used to determine the ASIL level of the Hazardous Event. Typically expressed as a value of type jazz_fusa:ExposureClass."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#ExposureClass"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Exposure Class"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureType",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Values for the kinds of confirmation measures defined by ISO26262."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation Measure Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureUnassigned",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type has not been assigned."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Unassigned"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewImpactAnalysisAtItemLevel",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – impact analysis at item level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – impact analysis at item level"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewHARA",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – HARA."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – HARA"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyPlan",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – Safety Plan."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – Safety Plan"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewFunctionalSafetyConcept",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – Functional Safety Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – Functional Safety Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewTechnicalSafetyConcept",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – TechnicalSafetyConcept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – Technical Safety Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewIntegrationAndTestStrategy",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – Integration and Test Strategy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – Integration and Test Strategy"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyValidationSpecification",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – Safety Validation Specification."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – Safety Validation Specification"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyAnalysesAndDFA",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – Safety Analyses and Dependent Failure Analyses."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – Safety Analyses and DFA"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyCase",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Confirmation review – Safety Case."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation review – Safety Case"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAudit",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Functional Safety Audit."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Functional Safety Audit"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAssessment",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Confirmation Measure Type is a Functional Safety Assessment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Functional Safety Assessment"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#NecessaryIndependence",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Values for the kinds of Independence defined by ISO26262."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Necessary Independence"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#NecessaryIndependenceNone",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#NecessaryIndependence"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Necessary Independence attribute has not been assigned."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "None"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#NecessaryIndependenceI0",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#NecessaryIndependence"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "I0: Optional, Independent of creator."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "I0: Optional, Independent of creator"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#NecessaryIndependenceI1",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#NecessaryIndependence"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "I1: Independent of creator."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "I1: Independent of creator"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#NecessaryIndependenceI2",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#NecessaryIndependence"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "I2: Independent of team."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "I2: Independent of team"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#NecessaryIndependenceI3",
+    "@type": [
+      "http://jazz.net/ns/functional_safety#NecessaryIndependence"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "I3: Independent of management."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "I3: Independent of management"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#safetyImpactAnalysis",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Describes the analysis of safety-related impact as a result of the change request."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Safety Impact Analysis"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#isSafetyRelated",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Set to true when this item is safety related and should be part of the safety plan."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Is Safety Related"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#confirmationMeasureType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The type of confirmation measure that is applicable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#ConfirmationMeasureType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Confirmation Measure Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/functional_safety#necessaryIndependence",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The category of independence (as defined in ISO 26262) that is necessary ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://jazz.net/ns/functional_safety#NecessaryIndependence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Necessary Independence"
+      }
+    ]
+  }
+]

@@ -1,0 +1,383 @@
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_transitivityofdependencies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_transitivityofdependencies included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_transitivityofdependencies in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_transitivityofdependencies> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_requirementscope included in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_requirementscope in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementscope> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/dm/rhapsody/testing#> <http://www.w3.org/2000/01/rdf-schema#label> "TestingProfile"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#> <http://purl.org/dc/terms/dateCopyrighted> "2016"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#> <http://purl.org/dc/terms/description> "\n\t\t\tAll vocabulary URIs defined in the TestingProfile namespace.\n\t\t"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/dm/rhapsody/testing#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
+<http://jazz.net/ns/dm/rhapsody/testing#> <http://purl.org/dc/terms/title> "The TestingProfile Metamodel.\n\t\t"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_modelelementscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_modelelementscope included in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_modelelementscope in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_modelelementscope> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_stereotypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_stereotypes included in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_stereotypes in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_stereotypes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedTestComponentObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedTestComponentObject> <http://www.w3.org/2000/01/rdf-schema#comment> "UsedTestComponentObject"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedTestComponentObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedTestComponentObject> <http://www.w3.org/2000/01/rdf-schema#label> "UsedTestComponentObject"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedTestComponentObject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#RelayOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#RelayOperation> <http://www.w3.org/2000/01/rdf-schema#comment> "RelayOperation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#RelayOperation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#RelayOperation> <http://www.w3.org/2000/01/rdf-schema#label> "RelayOperation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#RelayOperation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT-decomplevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT-decomplevel> <http://www.w3.org/2000/01/rdf-schema#comment> "decomplevel included in TestSUT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT-decomplevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT-decomplevel> <http://www.w3.org/2000/01/rdf-schema#label> "decomplevel in TestSUT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT-decomplevel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#TestSUT> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT-decomplevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestObjective> <http://www.w3.org/2000/01/rdf-schema#comment> "TestObjective is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestObjective> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestObjective> <http://www.w3.org/2000/01/rdf-schema#label> "TestObjective"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestObjective> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_instancereplacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_instancereplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Use_instancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_instancereplacement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_instancereplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Use_instancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_instancereplacement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#greyboxinstancereplacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#greyboxinstancereplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Greyboxinstancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#greyboxinstancereplacement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#greyboxinstancereplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Greyboxinstancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#greyboxinstancereplacement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUTObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUTObject> <http://www.w3.org/2000/01/rdf-schema#comment> "TestSUTObject is a sub-class of Object which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUTObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUTObject> <http://www.w3.org/2000/01/rdf-schema#label> "TestSUTObject"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUTObject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext is a sub-class of Class which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully-involved> <http://www.w3.org/2000/01/rdf-schema#comment> "involved included in Fully"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully-involved> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully-involved> <http://www.w3.org/2000/01/rdf-schema#label> "involved in Fully"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully-involved> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#fully> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully-involved> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-date> <http://www.w3.org/2000/01/rdf-schema#comment> "date included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-date> <http://www.w3.org/2000/01/rdf-schema#label> "date in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-date> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-date> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially-involved> <http://www.w3.org/2000/01/rdf-schema#comment> "involved included in Partially"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially-involved> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially-involved> <http://www.w3.org/2000/01/rdf-schema#label> "involved in Partially"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially-involved> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#partially> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially-involved> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestObjectives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestObjectives> <http://www.w3.org/2000/01/rdf-schema#comment> "TestCase TestObjectives is a container of TestObjective types owned by TestCase"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestObjectives> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestObjectives> <http://www.w3.org/2000/01/rdf-schema#label> "TestCase TestObjectives in TestCase"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestObjectives> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponentInstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponentInstances> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext TestComponentInstances is a container of TestComponentInstance types owned by TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponentInstances> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponentInstances> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext TestComponentInstances in TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponentInstances> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponentObjects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponentObjects> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage TestComponentObjects is a container of TestComponentObject types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponentObjects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponentObjects> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage TestComponentObjects in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponentObjects> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> <http://www.w3.org/2000/01/rdf-schema#label> "ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUT> <http://www.w3.org/2000/01/rdf-schema#comment> "SUT is a sub-class of Object which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUT> <http://www.w3.org/2000/01/rdf-schema#label> "SUT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUT> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_transitivityofdependencies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_transitivityofdependencies included in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_transitivityofdependencies in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_transitivityofdependencies> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_transitivityofdependencies> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext_Diagram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext_Diagram> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext Diagram is a sub-class of StructureDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext_Diagram> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext_Diagram> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext Diagram"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext_Diagram> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestContextDiagrams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestContextDiagrams> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext TestContextDiagrams is a container of TestContext Diagram types owned by TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestContextDiagrams> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestContextDiagrams> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext TestContextDiagrams in TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestContextDiagrams> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_modelelementscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_modelelementscope included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_modelelementscope in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_modelelementscope> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_modelelementscope> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_stereotypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_stereotypes included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_stereotypes in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_stereotypes> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_stereotypes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponents> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext TestComponents is a container of TestComponent types owned by TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponents> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponents> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext TestComponents in TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestComponents> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "TestComponentInstance is a sub-class of Object which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentInstance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentInstance> <http://www.w3.org/2000/01/rdf-schema#label> "TestComponentInstance"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentInstance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestLink> <http://www.w3.org/2000/01/rdf-schema#comment> "TestLink"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestLink> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestLink> <http://www.w3.org/2000/01/rdf-schema#label> "TestLink"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestLink> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-covered_modelelements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#comment> "covered_modelelements included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#label> "covered_modelelements in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-covered_modelelements> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementtaglist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_requirementtaglist included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_requirementtaglist in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementtaglist> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#consideredSD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#consideredSD> <http://www.w3.org/2000/01/rdf-schema#comment> "ConsideredSD"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#consideredSD> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#consideredSD> <http://www.w3.org/2000/01/rdf-schema#label> "ConsideredSD"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#consideredSD> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestScenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#comment> "TestCase TestScenarios is a container of TestScenario types owned by TestCase"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#label> "TestCase TestScenarios in TestCase"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase-TestScenarios> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase> <http://www.w3.org/2000/01/rdf-schema#comment> "TestCase is a sub-class of Operation which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase> <http://www.w3.org/2000/01/rdf-schema#label> "TestCase"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestCase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#incompleteSUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#incompleteSUT> <http://www.w3.org/2000/01/rdf-schema#comment> "IncompleteSUT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#incompleteSUT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#incompleteSUT> <http://www.w3.org/2000/01/rdf-schema#label> "IncompleteSUT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#incompleteSUT> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponents> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage TestComponents is a container of TestComponent types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponents> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponents> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage TestComponents in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestComponents> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> <http://www.w3.org/2000/01/rdf-schema#comment> "ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> <http://www.w3.org/2000/01/rdf-schema#label> "ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially> <http://www.w3.org/2000/01/rdf-schema#comment> "Partially is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially> <http://www.w3.org/2000/01/rdf-schema#label> "Partially"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#partially> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestFiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestFiles> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage TestFiles is a container of TestFile types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestFiles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestFiles> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage TestFiles in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestFiles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "TestComponent is a sub-class of Class which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponent> <http://www.w3.org/2000/01/rdf-schema#label> "TestComponent"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentObject> <http://www.w3.org/2000/01/rdf-schema#comment> "TestComponentObject is a sub-class of Object which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentObject> <http://www.w3.org/2000/01/rdf-schema#label> "TestComponentObject"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestComponentObject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestPackages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestPackages> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage TestPackages is a container of TestPackage types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestPackages> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestPackages> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage TestPackages in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestPackages> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully> <http://www.w3.org/2000/01/rdf-schema#comment> "Fully is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully> <http://www.w3.org/2000/01/rdf-schema#label> "Fully"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#fully> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_excludedmetaclasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_excludedmetaclasses included in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_excludedmetaclasses in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_excludedmetaclasses> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SelfMessageRealizationsInParts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#SelfMessageRealizationsInParts> <http://www.w3.org/2000/01/rdf-schema#comment> "SelfMessageRealizationsInParts"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SelfMessageRealizationsInParts> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#SelfMessageRealizationsInParts> <http://www.w3.org/2000/01/rdf-schema#label> "SelfMessageRealizationsInParts"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SelfMessageRealizationsInParts> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestScenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext TestScenarios is a container of TestScenario types owned by TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext TestScenarios in TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestScenarios> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT> <http://www.w3.org/2000/01/rdf-schema#comment> "TestSUT is a sub-class of TestComponent"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT> <http://www.w3.org/2000/01/rdf-schema#label> "TestSUT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestSUT> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult-ExecutionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult-ExecutionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "ExecutionDate included in GeneralResult"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult-ExecutionDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult-ExecutionDate> <http://www.w3.org/2000/01/rdf-schema#label> "ExecutionDate in GeneralResult"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult-ExecutionDate> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#GeneralResult> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult-ExecutionDate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#instancereplacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#instancereplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#instancereplacement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#instancereplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Instancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#instancereplacement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_greyboxinstancereplacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_greyboxinstancereplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Use_greyboxinstancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_greyboxinstancereplacement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_greyboxinstancereplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Use_greyboxinstancereplacement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#use_greyboxinstancereplacement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-covered_modelelements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#comment> "covered_modelelements included in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#label> "covered_modelelements in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-covered_modelelements> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-covered_modelelements> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementtaglist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_requirementtaglist included in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_requirementtaglist in ATGRequirementCoverageSummary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementtaglist> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGRequirementCoverageSummary-regarded_requirementtaglist> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestScenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage TestScenarios is a container of TestScenario types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestScenarios> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage TestScenarios in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestScenarios> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_requirementscope included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_requirementscope in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementscope> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_requirementscope> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedSUTObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedSUTObject> <http://www.w3.org/2000/01/rdf-schema#comment> "UsedSUTObject"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedSUTObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedSUTObject> <http://www.w3.org/2000/01/rdf-schema#label> "UsedSUTObject"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#usedSUTObject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario> <http://www.w3.org/2000/01/rdf-schema#comment> "TestScenario is a sub-class of SequenceDiagram which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario> <http://www.w3.org/2000/01/rdf-schema#label> "TestScenario"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage is a sub-class of Package which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUTObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUTObject> <http://www.w3.org/2000/01/rdf-schema#comment> "SUTObject is a sub-class of Object which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUTObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUTObject> <http://www.w3.org/2000/01/rdf-schema#label> "SUTObject"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#SUTObject> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-ATGConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-ATGConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "ATGConfiguration included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-ATGConfiguration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-ATGConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "ATGConfiguration in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-ATGConfiguration> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-ATGConfiguration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_ActivationCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_ActivationCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "RTC_ActivationCondition included in TestScenario"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_ActivationCondition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_ActivationCondition> <http://www.w3.org/2000/01/rdf-schema#label> "RTC_ActivationCondition in TestScenario"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_ActivationCondition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#TestScenario> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_ActivationCondition> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-SUTObjects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-SUTObjects> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage SUTObjects is a container of SUTObject types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-SUTObjects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-SUTObjects> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage SUTObjects in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-SUTObjects> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ExecutedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#ExecutedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "ExecutedElement is a sub-class of Dependency which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ExecutedElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ExecutedElement> <http://www.w3.org/2000/01/rdf-schema#label> "ExecutedElement"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ExecutedElement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#WitnessScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#WitnessScenario> <http://www.w3.org/2000/01/rdf-schema#comment> "WitnessScenario"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#WitnessScenario> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#WitnessScenario> <http://www.w3.org/2000/01/rdf-schema#label> "WitnessScenario"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#WitnessScenario> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult> <http://www.w3.org/2000/01/rdf-schema#comment> "GeneralResult"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralResult"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResult> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_SDParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_SDParameters> <http://www.w3.org/2000/01/rdf-schema#comment> "RTC_SDParameters included in TestScenario"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_SDParameters> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_SDParameters> <http://www.w3.org/2000/01/rdf-schema#label> "RTC_SDParameters in TestScenario"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_SDParameters> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#TestScenario> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestScenario-RTC_SDParameters> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-SUTs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-SUTs> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext SUTs is a container of SUT types owned by TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-SUTs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-SUTs> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext SUTs in TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-SUTs> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_excludedmetaclasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#comment> "regarded_excludedmetaclasses included in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#label> "regarded_excludedmetaclasses in ATGSDInfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_excludedmetaclasses> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo> .
+<http://jazz.net/ns/dm/rhapsody/testing#ATGSDInfo-regarded_excludedmetaclasses> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestCases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestCases> <http://www.w3.org/2000/01/rdf-schema#comment> "TestContext TestCases is a container of TestCase types owned by TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestCases> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestCases> <http://www.w3.org/2000/01/rdf-schema#label> "TestContext TestCases in TestContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestContext-TestCases> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestContexts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestContexts> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage TestContexts is a container of TestContexts types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestContexts> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestContexts> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage TestContexts in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestContexts> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResultRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResultRef> <http://www.w3.org/2000/01/rdf-schema#comment> "GeneralResultRef"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResultRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResultRef> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralResultRef"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#GeneralResultRef> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestFile> <http://www.w3.org/2000/01/rdf-schema#comment> "TestFile is a sub-class of Module which is defined in http://jazz.net/ns/dm/rhapsody/uml#"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestFile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestFile> <http://www.w3.org/2000/01/rdf-schema#label> "TestFile"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestFile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestSUTObjects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestSUTObjects> <http://www.w3.org/2000/01/rdf-schema#comment> "TestPackage TestSUTObjects is a container of TestSUTObject types owned by TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestSUTObjects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rhapsody/testing#> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestSUTObjects> <http://www.w3.org/2000/01/rdf-schema#label> "TestPackage TestSUTObjects in TestPackage"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rhapsody/testing#TestPackage-TestSUTObjects> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^<http://www.w3.org/2001/XMLSchema#string> .

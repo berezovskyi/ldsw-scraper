@@ -1,0 +1,1713 @@
+@base <http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix ex: <http://example.org/>.
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>.
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix pav: <http://purl.org/pav/>.
+@prefix pca: <http://data.posccaesar.org/rdl/>.
+@prefix rdl: <http://rds.posccaesar.org/ontology/plm/rdl/>.
+@prefix req: <https://w3id.org/requirement-ontology/rdl/>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ntpl: <http://norsok.org/templates/>.
+@prefix ottr: <http://ns.ottr.xyz/0.4/>.
+@prefix rrdl: <http://w3id.org/readi/rdl/>.
+@prefix rstr: <http://tpl.ottr.xyz/owl/restriction/0.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/>.
+@prefix orcid: <https://orcid.org/>.
+@prefix listpl: <http://rds.posccaesar.org/ontology/lis14/tpl/0.1/>.
+@prefix o-rdfs: <http://tpl.ottr.xyz/rdfs/0.1/>.
+@prefix plmtpl: <http://rds.posccaesar.org/ontology/plm/tpl/0.1/>.
+@prefix reqtpl: <http://w3id.org/requirement-ontology/tpl/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix o-docttr: <http://tpl.ottr.xyz/p/docttr/0.1/>.
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/>.
+@prefix o-owl-ma: <http://tpl.ottr.xyz/owl/macro/0.1/>.
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/>.
+@prefix o-owl-ut: <http://tpl.ottr.xyz/owl/util/0.1/>.
+@prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/>.
+
+<http://purl.obolibrary.org/obo/CHEBI_15377> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_15377>;
+                                             rdl:PCA_100004929 "2"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004931 "1"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "water (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_155827> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_155827>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "argon-39 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_16136> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_16136>;
+                                             rdl:PCA_100004929 "2"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004933 "1"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "hydrogen sulfide (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_16183> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_16183>;
+                                             rdl:PCA_100004929 "4"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "1"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "methane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_16236> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_16236>;
+                                             rdl:PCA_100004929 "6"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004931 "1"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "2"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "ethanol (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_16526> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_16526>;
+                                             rdl:PCA_100004931 "2"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "1"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "carbon dioxide (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_17590> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_17590>;
+                                             rdl:PCA_100004929 "18"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "8"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "octane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176566> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176566>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "calcium-43 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176570> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176570>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "molybdenum-98 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176571> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176571>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "strontium-88 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176572> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176572>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "rubidium-85 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176573> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176573>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "selenium-82 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176574> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176574>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "zinc-66 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176575> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176575>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "nickel-60 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176578> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176578>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "cobalt-59 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176583> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176583>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "manganese-55 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_176584> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_176584>;
+                                              a rdl:PCA_100004935,
+                                                owl:NamedIndividual;
+                                              rdfs:isDefinedBy rdl:PCA_100004914;
+                                              rdfs:label "arsenic-75 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_17790> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_17790>;
+                                             rdl:PCA_100004929 "4"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004931 "1"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "1"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "methanol (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_17997> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_17997>;
+                                             rdl:PCA_100004930 "2"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "dinitrogen (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_18248> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_18248>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "iron (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_18276> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_18276>;
+                                             rdl:PCA_100004929 "2"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "dihydrogen (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_18291> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_18291>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "manganese (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_22927> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_22927>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "bromine (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_22977> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_22977>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "cadmium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_22984> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_22984>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "calcium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_23116> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_23116>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "chlorine (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_24061> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_24061>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "fluorine (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_24632> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_24632>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "hydrocarbon (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_24859> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_24859>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "iodine (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_25016> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_25016>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lead (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_25195> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_25195>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "mercury (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_25555> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_25555>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nitrogen (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_25805> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_25805>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "oxygen (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_26216> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_26216>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "potassium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_26708> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_26708>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sodium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_26833> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_26833>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27007> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27007>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tin (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27214> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27214>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "uranium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27363> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27363>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "zinc (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27560> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27560>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "boron (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27563> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27563>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "arsenic (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27568> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27568>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "selenium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27573> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27573>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "silicon (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27594> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27594>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "carbon (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27638> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27638>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "cobalt (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27698> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27698>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "vanadium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_27998> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_27998>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tungsten (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_28073> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_28073>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "chromium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_28112> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_28112>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nickel (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_28659> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_28659>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "phosphorus (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_28685> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_28685>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "molybdenum (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_28694> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_28694>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "copper (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_28984> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_28984>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "aluminium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_29021> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_29021>;
+                                             rdl:PCA_100004929 "14"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "6"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "hexane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_29236> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_29236>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "protium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_29237> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_29237>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "deuterium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_29238> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_29238>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tritium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_29287> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_29287>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "gold (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30145> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30145>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lithium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30217> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30217>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "helium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30218> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30218>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "helium-3 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30219> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30219>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "helium-4 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30362> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30362>;
+                                             rdl:PCA_100004929 "12"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "5"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "isopentane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30363> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30363>;
+                                             rdl:PCA_100004929 "10"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "4"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "isobutane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30415> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30415>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "astatine (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30430> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30430>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "indium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30440> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30440>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "thallium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30441> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30441>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "germanium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30452> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30452>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tellurium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30501> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30501>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "beryllium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30512> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30512>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "silver (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30513> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30513>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "antimony (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30514> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30514>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "caesium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30682> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30682>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "ruthenium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30687> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30687>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "osmium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_30742> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_30742>;
+                                             rdl:PCA_100004929 "6"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004931 "2"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "2"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "ethylene glycol (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_32594> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_32594>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "barium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_32879> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_32879>;
+                                             rdl:PCA_100004929 "8"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "3"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "propane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_32892> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_32892>;
+                                             rdl:PCA_100004929 "20"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "9"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nonane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_32999> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_32999>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "europium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33301> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33301>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "bismuth (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33310> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33310>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "neon (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33313> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33313>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33314> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33314>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "radon (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33322> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33322>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "rubidium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33323> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33323>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "francium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33324> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33324>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "strontium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33325> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33325>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "radium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33330> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33330>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "scandium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33331> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33331>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "yttrium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33336> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33336>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lanthanum (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33337> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33337>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "actinium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33341> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33341>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "titanium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33342> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33342>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "zirconium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33343> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33343>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "hafnium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33344> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33344>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "niobium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33346> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33346>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "rutherfordium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33348> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33348>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tantalum (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33349> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33349>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "dubnium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33351> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33351>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "seaborgium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33353> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33353>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "technetium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33355> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33355>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "bohrium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33357> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33357>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "hassium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33359> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33359>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "rhodium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33361> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33361>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "meitnerium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33363> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33363>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "palladium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33364> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33364>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "platinum (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33367> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33367>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "darmstadtium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33368> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33368>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "roentgenium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33369> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33369>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "cerium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33371> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33371>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "technetium-99 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33372> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33372>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "neodymium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33373> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33373>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "promethium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33374> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33374>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "samarium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33375> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33375>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "gadolinium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33376> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33376>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "terbium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33377> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33377>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "dysprosium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33379> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33379>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "erbium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33380> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33380>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "thulium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33381> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33381>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "ytterbium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33382> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33382>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lutetium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33385> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33385>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "thorium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33386> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33386>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "protactinium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33387> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33387>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "neptunium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33388> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33388>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "plutonium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33389> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33389>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "americium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33390> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33390>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "curium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33391> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33391>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "berkelium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33392> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33392>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "californium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33393> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33393>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "einsteinium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33394> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33394>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "fermium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33395> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33395>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "mendelevium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33396> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33396>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nobelium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33397> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33397>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lawrencium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33491> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33491>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "radon-220 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33492> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33492>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "radon-222 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33493> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33493>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "radon-219 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33517> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33517>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "copernicium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33815> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33815>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "oxygen-18 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33818> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33818>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "oxygen-16 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_33819> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_33819>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "oxygen-17 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36927> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36927>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "carbon-14 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36928> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36928>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "carbon-13 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36929> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36929>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "carbon-11 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36930> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36930>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "carbon-10 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36931> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36931>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "carbon-12 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36932> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36932>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "oxygen-15 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36933> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36933>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "oxygen-19 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36934> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36934>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nitrogen-15 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36935> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36935>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nitrogen-13 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36936> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36936>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nitrogen-16 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36937> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36937>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nitrogen-17 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36938> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36938>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "nitrogen-14 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36939> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36939>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "fluorine-18 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_36940> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_36940>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "fluorine-19 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37003> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37003>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "helium-6 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37004> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37004>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "helium-8 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37340> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37340>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-210 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37341> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37341>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-211 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37342> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37342>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-212 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37343> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37343>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-213 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37344> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37344>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-214 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37345> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37345>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-215 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37346> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37346>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-216 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37347> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37347>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-217 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37348> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37348>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-218 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37350> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37350>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-190 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37351> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37351>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-191 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37352> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37352>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-192 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37353> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37353>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-193 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37354> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37354>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-194 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37355> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37355>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-195 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37356> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37356>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-196 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37357> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37357>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-197 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37358> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37358>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-198 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37359> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37359>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-199 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37360> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37360>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-200 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37361> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37361>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-201 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37362> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37362>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-202 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37363> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37363>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-203 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37364> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37364>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-204 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37365> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37365>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-205 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37366> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37366>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-206 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37367> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37367>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-207 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37368> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37368>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-208 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37369> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37369>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "polonium-209 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37802> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37802>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "thallium-203 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37803> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37803>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "thallium-205 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37804> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37804>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "thallium-201 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37805> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37805>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "thallium-199 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37808> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37808>;
+                                             rdl:PCA_100004929 "10"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "4"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "butane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37830> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37830>;
+                                             rdl:PCA_100004929 "12"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "5"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "pentane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37968> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37968>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "aluminium-27 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37969> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37969>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "aluminium-26 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37970> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37970>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "aluminium-28 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37971> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37971>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "phosphorus-31 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37972> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37972>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "phosphorus-32 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37973> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37973>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "phosphorus-33 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37974> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37974>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "silicon-29 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37975> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37975>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "silicon-28 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37976> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37976>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "silicon-30 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37977> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37977>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "silicon-31 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37978> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37978>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "silicon-32 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37979> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37979>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur-32 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37980> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37980>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur-33 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37981> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37981>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur-34 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37982> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37982>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur-36 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37983> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37983>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur-35 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37984> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37984>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur-37 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_37985> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_37985>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sulfur-38 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_42266> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_42266>;
+                                             rdl:PCA_100004929 "6"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "2"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "ethane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_43098> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_43098>;
+                                             rdl:PCA_100004929 "16"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "7"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "heptane (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_44926> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_44926>;
+                                             rdl:PCA_100004929 "14"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004931 "4"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "6"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "triethylene glycol (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_46807> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_46807>;
+                                             rdl:PCA_100004929 "10"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004931 "3"^^xsd:nonNegativeInteger;
+                                             rdl:PCA_100004932 "4"^^xsd:nonNegativeInteger;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "diethylene glycol (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49475> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49475>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "argon (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49631> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49631>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "gallium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49648> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49648>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "holmium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49666> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49666>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "iridium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49696> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49696>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "krypton (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49828> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49828>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "praseodymium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49882> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49882>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "rhenium (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_49957> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_49957>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "xenon (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_50076> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_50076>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "chromium-51 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52230> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52230>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tin-119 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52231> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52231>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tin-120 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52232> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52232>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tin-118 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52233> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52233>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tin-116 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52234> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52234>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tin-117 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52235> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52235>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tin-115 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52451> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52451>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "boron-11 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52452> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52452>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tellurium-125 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52453> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52453>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "xenon-129 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52457> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52457>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "selenium-77 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52458> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52458>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lithium-7 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52459> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52459>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "rubidium-87 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52460> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52460>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "niobium-93 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52462> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52462>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "tungsten-183 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52619> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52619>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "cadmium-111 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52620> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52620>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "cadmium-113 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52621> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52621>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lithium-6 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52622> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52622>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "yttrium-89 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52623> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52623>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "iron-57 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52624> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52624>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "antimony-121 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52626> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52626>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "antimony-123 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52627> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52627>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "lanthanum-139 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52631> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52631>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "iodine-127 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52632> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52632>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "potassium-39 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52633> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52633>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "molybdenum-95 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52634> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52634>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "sodium-23 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52635> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52635>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "scandium-45 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52636> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52636>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "iodine-129 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52637> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52637>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "europium-151 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52743> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52743>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "bromine-79 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52758> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52758>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "germanium-73 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_52763> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_52763>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "magnesium-25 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_5631> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_5631>;
+                                            a rdl:PCA_100004935,
+                                              owl:NamedIndividual;
+                                            rdfs:isDefinedBy rdl:PCA_100004914;
+                                            rdfs:label "heavy metal (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_77014> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_77014>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "boron-10 (ChEBI concept)".
+<http://purl.obolibrary.org/obo/CHEBI_82623> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_82623>;
+                                             a rdl:PCA_100004935,
+                                               owl:NamedIndividual;
+                                             rdfs:isDefinedBy rdl:PCA_100004914;
+                                             rdfs:label "zinc-65 (ChEBI concept)".
+dc:identifier a owl:AnnotationProperty.
+lis:Stream a owl:Class.
+lis:partOf a owl:ObjectProperty.
+<http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt> ottr:status ottr:incomplete;
+                                                         dc:creator orcid:0000-0001-8076-7460;
+                                                         dc:description "ChEBI entities ontology for PLM RDL";
+                                                         dc:title "chebi";
+                                                         dcterms:issued "2022-02-25"^^xsd:date;
+                                                         dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+                                                         dcterms:modified "2022-09-26"^^xsd:date;
+                                                         dcterms:publisher <http://www.posccaesar.org/>;
+                                                         pav:createdBy orcid:0000-0001-8076-7460;
+                                                         pav:hasPreviousVersion <http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt/0.9.1>;
+                                                         pav:lastUpdateOn "2022-09-26T23:40:00Z"^^xsd:dateTime;
+                                                         vann:preferredNamespacePrefix "rdl";
+                                                         vann:preferredNamespaceUri rdl:;
+                                                         void:feature <http://www.w3.org/ns/formats/JSON-LD>,
+                                                                      <http://www.w3.org/ns/formats/N-Triples>,
+                                                                      <http://www.w3.org/ns/formats/OWL_Manchester>,
+                                                                      <http://www.w3.org/ns/formats/RDF_XML>,
+                                                                      <http://www.w3.org/ns/formats/Turtle>;
+                                                         void:sparqlEndpoint <https://rds.posccaesar.org/ontology/sparql>;
+                                                         a owl:Ontology;
+                                                         rdfs:comment "ChEBI entities ontology for PLM RDL";
+                                                         rdfs:label "chebi";
+                                                         owl:imports <http://rds.posccaesar.org/ontology/plm/ont/core>;
+                                                         owl:versionIRI <http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt/0.9.2>;
+                                                         owl:versionInfo "0.9.2";
+                                                         skos:changeNote "Added chebi entities";
+                                                         foaf:homepage <http://rds.posccaesar.org/ontology/plm/doc/chebi-adapt>.
+rdl:PCA_100004912 a owl:ObjectProperty;
+                  rdfs:comment "The ChEBI entity defining the substance this chemical component consist of";
+                  rdfs:domain rdl:PCA_100004939;
+                  rdfs:label "chemical substance";
+                  rdfs:range rdl:PCA_100004935.
+rdl:PCA_100004914 skos:member <http://purl.obolibrary.org/obo/CHEBI_15377>,
+                              <http://purl.obolibrary.org/obo/CHEBI_155827>,
+                              <http://purl.obolibrary.org/obo/CHEBI_16136>,
+                              <http://purl.obolibrary.org/obo/CHEBI_16183>,
+                              <http://purl.obolibrary.org/obo/CHEBI_16236>,
+                              <http://purl.obolibrary.org/obo/CHEBI_16526>,
+                              <http://purl.obolibrary.org/obo/CHEBI_17590>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176566>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176570>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176571>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176572>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176573>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176574>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176575>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176578>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176583>,
+                              <http://purl.obolibrary.org/obo/CHEBI_176584>,
+                              <http://purl.obolibrary.org/obo/CHEBI_17790>,
+                              <http://purl.obolibrary.org/obo/CHEBI_17997>,
+                              <http://purl.obolibrary.org/obo/CHEBI_18248>,
+                              <http://purl.obolibrary.org/obo/CHEBI_18276>,
+                              <http://purl.obolibrary.org/obo/CHEBI_18291>,
+                              <http://purl.obolibrary.org/obo/CHEBI_22927>,
+                              <http://purl.obolibrary.org/obo/CHEBI_22977>,
+                              <http://purl.obolibrary.org/obo/CHEBI_22984>,
+                              <http://purl.obolibrary.org/obo/CHEBI_23116>,
+                              <http://purl.obolibrary.org/obo/CHEBI_24061>,
+                              <http://purl.obolibrary.org/obo/CHEBI_24632>,
+                              <http://purl.obolibrary.org/obo/CHEBI_24859>,
+                              <http://purl.obolibrary.org/obo/CHEBI_25016>,
+                              <http://purl.obolibrary.org/obo/CHEBI_25195>,
+                              <http://purl.obolibrary.org/obo/CHEBI_25555>,
+                              <http://purl.obolibrary.org/obo/CHEBI_25805>,
+                              <http://purl.obolibrary.org/obo/CHEBI_26216>,
+                              <http://purl.obolibrary.org/obo/CHEBI_26708>,
+                              <http://purl.obolibrary.org/obo/CHEBI_26833>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27007>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27214>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27363>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27560>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27563>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27568>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27573>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27594>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27638>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27698>,
+                              <http://purl.obolibrary.org/obo/CHEBI_27998>,
+                              <http://purl.obolibrary.org/obo/CHEBI_28073>,
+                              <http://purl.obolibrary.org/obo/CHEBI_28112>,
+                              <http://purl.obolibrary.org/obo/CHEBI_28659>,
+                              <http://purl.obolibrary.org/obo/CHEBI_28685>,
+                              <http://purl.obolibrary.org/obo/CHEBI_28694>,
+                              <http://purl.obolibrary.org/obo/CHEBI_28984>,
+                              <http://purl.obolibrary.org/obo/CHEBI_29021>,
+                              <http://purl.obolibrary.org/obo/CHEBI_29236>,
+                              <http://purl.obolibrary.org/obo/CHEBI_29237>,
+                              <http://purl.obolibrary.org/obo/CHEBI_29238>,
+                              <http://purl.obolibrary.org/obo/CHEBI_29287>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30145>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30217>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30218>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30219>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30362>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30363>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30415>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30430>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30440>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30441>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30452>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30501>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30512>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30513>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30514>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30682>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30687>,
+                              <http://purl.obolibrary.org/obo/CHEBI_30742>,
+                              <http://purl.obolibrary.org/obo/CHEBI_32594>,
+                              <http://purl.obolibrary.org/obo/CHEBI_32879>,
+                              <http://purl.obolibrary.org/obo/CHEBI_32892>,
+                              <http://purl.obolibrary.org/obo/CHEBI_32999>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33301>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33310>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33313>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33314>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33322>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33323>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33324>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33325>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33330>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33331>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33336>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33337>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33341>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33342>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33343>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33344>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33346>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33348>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33349>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33351>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33353>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33355>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33357>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33359>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33361>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33363>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33364>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33367>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33368>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33369>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33371>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33372>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33373>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33374>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33375>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33376>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33377>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33379>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33380>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33381>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33382>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33385>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33386>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33387>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33388>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33389>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33390>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33391>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33392>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33393>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33394>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33395>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33396>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33397>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33491>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33492>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33493>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33517>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33815>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33818>,
+                              <http://purl.obolibrary.org/obo/CHEBI_33819>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36927>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36928>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36929>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36930>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36931>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36932>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36933>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36934>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36935>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36936>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36937>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36938>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36939>,
+                              <http://purl.obolibrary.org/obo/CHEBI_36940>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37003>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37004>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37340>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37341>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37342>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37343>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37344>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37345>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37346>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37347>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37348>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37350>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37351>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37352>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37353>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37354>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37355>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37356>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37357>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37358>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37359>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37360>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37361>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37362>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37363>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37364>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37365>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37366>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37367>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37368>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37369>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37802>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37803>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37804>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37805>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37808>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37830>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37968>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37969>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37970>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37971>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37972>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37973>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37974>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37975>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37976>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37977>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37978>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37979>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37980>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37981>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37982>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37983>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37984>,
+                              <http://purl.obolibrary.org/obo/CHEBI_37985>,
+                              <http://purl.obolibrary.org/obo/CHEBI_42266>,
+                              <http://purl.obolibrary.org/obo/CHEBI_43098>,
+                              <http://purl.obolibrary.org/obo/CHEBI_44926>,
+                              <http://purl.obolibrary.org/obo/CHEBI_46807>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49475>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49631>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49648>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49666>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49696>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49828>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49882>,
+                              <http://purl.obolibrary.org/obo/CHEBI_49957>,
+                              <http://purl.obolibrary.org/obo/CHEBI_50076>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52230>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52231>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52232>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52233>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52234>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52235>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52451>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52452>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52453>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52457>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52458>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52459>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52460>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52462>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52619>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52620>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52621>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52622>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52623>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52624>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52626>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52627>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52631>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52632>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52633>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52634>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52635>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52636>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52637>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52743>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52758>,
+                              <http://purl.obolibrary.org/obo/CHEBI_52763>,
+                              <http://purl.obolibrary.org/obo/CHEBI_5631>,
+                              <http://purl.obolibrary.org/obo/CHEBI_77014>,
+                              <http://purl.obolibrary.org/obo/CHEBI_82623>.
+rdl:PCA_100004929 a owl:DatatypeProperty;
+                  rdfs:comment "Number of hydrogen atoms in the referenced ChEBI entity";
+                  rdfs:domain rdl:PCA_100001503;
+                  rdfs:label "hasHydrogenAtoms";
+                  rdfs:range xsd:nonNegativeInteger.
+rdl:PCA_100004930 a owl:DatatypeProperty;
+                  rdfs:comment "Number of nitrogen atoms in the referenced ChEBI entity";
+                  rdfs:domain rdl:PCA_100001503;
+                  rdfs:label "hasNitrogenAtoms";
+                  rdfs:range xsd:nonNegativeInteger.
+rdl:PCA_100004931 a owl:DatatypeProperty;
+                  rdfs:comment "Number of oxygen atoms in the referenced ChEBI entity";
+                  rdfs:domain rdl:PCA_100001503;
+                  rdfs:label "hasOxygenAtoms";
+                  rdfs:range xsd:nonNegativeInteger.
+rdl:PCA_100004932 a owl:DatatypeProperty;
+                  rdfs:comment "Number of carbon atoms in the referenced ChEBI entity";
+                  rdfs:domain rdl:PCA_100001503;
+                  rdfs:label "hasCarbonAtoms";
+                  rdfs:range xsd:nonNegativeInteger.
+rdl:PCA_100004933 a owl:DatatypeProperty;
+                  rdfs:comment "Number of sulfur atoms in the referenced ChEBI entity";
+                  rdfs:domain rdl:PCA_100001503;
+                  rdfs:label "hasSulfurAtoms";
+                  rdfs:range xsd:nonNegativeInteger.
+rdl:PCA_100004939 a owl:Class;
+                  rdfs:label "Chemical";
+                  rdfs:subClassOf lis:Compound.
+rdl:PCA_100005000 a owl:Class;
+                  rdfs:comment "A chemical component of a stream";
+                  rdfs:label "Chemical component of stream";
+                  rdfs:subClassOf [a owl:Restriction ; 
+                                   owl:onProperty lis:partOf ; 
+                                   owl:someValuesFrom lis:Stream],
+                                  rdl:PCA_100004939.
+rdl:PCA_100005605 a owl:ObjectProperty;
+                  rdfs:comment "The datum determining this material composition quality";
+                  rdfs:domain rdl:PCA_100005604;
+                  rdfs:label "chemically determined as";
+                  rdfs:range rdl:PCA_100005606.
+rdl:PCA_100005607 a owl:ObjectProperty;
+                  rdfs:comment "The ChEBI concept describing the chemical referred to by a chemical composition datum";
+                  rdfs:domain rdl:PCA_100005606;
+                  rdfs:label "chemical";
+                  rdfs:range rdl:PCA_100004935.
+skos:member a owl:AnnotationProperty.

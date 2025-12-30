@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix jazz_disc: <http://jazz.net/ns/discovery#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+
+{
+    jazz_disc: dcterms:dateCopyrighted "2020";
+               dcterms:description "Vocabulary terms for IBM Jazz Service Discovery."^^rdf:XMLLiteral;
+               dcterms:license <http://jazz.net/ns/license.html>;
+               dcterms:source <https://jazz.net/wiki/pub/LinkedData/DiscoveryVocabulary/discovery-vocabulary.ttl>;
+               dcterms:title "The IBM Jazz Service Discovery Vocabulary";
+               vann:preferredNamespacePrefix "jazz_disc";
+               a owl:Ontology;
+               rdfs:label "IBM Jazz Discovery".
+    jazz_disc:messageReceiver a rdf:Property;
+                              rdfs:comment "URL of HTML page which can receive messages via postMessage.  Applications can host this page in an iframe in order to participate in inter-window message passing protocols.";
+                              rdfs:isDefinedBy jazz_disc:;
+                              rdfs:label "messageReceiver".
+}
+

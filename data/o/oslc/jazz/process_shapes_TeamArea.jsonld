@@ -1,0 +1,882 @@
+[
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea",
+    "@type": [
+      "http://open-services.net/ns/core#ResourceShape"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Jazz Foundation Team Area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This shape describes team area resources hosted by the Jazz Foundation Process component.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#describes": [
+      {
+        "@id": "http://jazz.net/ns/process#TeamArea"
+      }
+    ],
+    "http://open-services.net/ns/core#property": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#accessContext"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#accessControl"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#admins"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#archived"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#childTeamArea"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#description"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#history"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#instanceShape"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#iterations"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#members"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#modified"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#parentTeamArea"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#projectArea"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#roles"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#summary"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#title"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#accessContext",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core/acc#accessContext"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the access context of this team area resource.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "accessContext"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-many"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://open-services.net/ns/core/acc#AccessContext"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#accessControl",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/acp#accessControl"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the access control record of this team area resource.\r\nThis property is deprecated.\r\nUse <a href=\"http://open-services.net/ns/core/acc#accessContent\"><code>acc:accessContext</code></a> instead.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "accessControl"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#admins",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#admins"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the collection of administrators of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "admins"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Admins"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#archived",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core#archive"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This boolean property is true when the team area is archived.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "archived"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#childTeamArea",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#inversePropertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#parentTeamArea"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "A link to a child team area of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "childTeamArea"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-many"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Inline"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#valueShape": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#ChildTeamAreaShape"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#TeamArea"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#description",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/description"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The description of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "description"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#history",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#history"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the history of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "history"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#History"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#instanceShape",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core#instanceShape"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the shape of this team area resource.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "instanceShape"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://open-services.net/ns/core#ResourceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#iterations",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#iterations"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the iterations of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "iterations"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Iterations"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#members",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#members"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the collection of members of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "members"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Members"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#modified",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/modified"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property is modification date of the team area definition.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "modified"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#parentTeamArea",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#parentTeamArea"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the parent team area of this team area."
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "parentTeamArea"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#valueShape": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#TeamArea"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#projectArea",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#projectArea"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the project area of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "projectArea"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#valueShape": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/ProjectArea"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#ProjectArea"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#roles",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#roles"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the collection of roles of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "roles"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Roles"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#summary",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#summary"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The summary of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "summary"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#title",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/title"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The title of the team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "title"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#ChildTeamAreaShape",
+    "@type": [
+      "http://open-services.net/ns/core#ResourceShape"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Jazz Foundation Child Team Area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This shape describes properties of child team areas that are included in the representation of the parent team area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#describes": [
+      {
+        "@id": "http://jazz.net/ns/process#TeamArea"
+      }
+    ],
+    "http://open-services.net/ns/core#property": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#archived"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#parentOfChildTeamArea"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea#title"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/TeamArea#parentOfChildTeamArea",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#parentTeamArea"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the parent team area of this child team area."
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "parentTeamArea"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Inline"
+      }
+    ],
+    "http://open-services.net/ns/core#valueShape": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/TeamArea"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#TeamArea"
+      }
+    ]
+  }
+]

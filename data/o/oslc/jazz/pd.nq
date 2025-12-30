@@ -1,0 +1,41 @@
+<http://jazz.net/ns/pd#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/pd#> <http://purl.org/dc/terms/title> "Rational Product and Part vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#> <http://purl.org/dc/terms/description> "<h3>Rational Product and Part vocabulary.</h3>\n\tThe Rational Product and Part vocabulary defines items, views, and parts, using concepts similar to those in <a href=\"http://en.wikipedia.org/wiki/ISO_10303\">ISO 10303</a>.\n\tThis vocabulary describes <em>Information Resources</em>, not real-world objects."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#> <http://www.w3.org/2000/01/rdf-schema#label> "Products and Parts"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://en.wikipedia.org/wiki/ISO_10303> .
+<http://jazz.net/ns/pd#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/TR/cooluris> .
+<http://jazz.net/ns/pd#> <http://purl.org/dc/terms/source> <https://jazz.net/wiki/pub/Main/ProductAndPartDefinitionVocabulary/pd-vocabulary.ttl> .
+<http://jazz.net/ns/pd#> <http://purl.org/dc/terms/license> <http://jazz.net/ns/license.html> .
+<http://jazz.net/ns/pd#> <http://purl.org/dc/terms/dateCopyrighted> "2012,2013"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/pd#Item> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/pd#> .
+<http://jazz.net/ns/pd#Item> <http://www.w3.org/2000/01/rdf-schema#label> "Item"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#Item> <http://www.w3.org/2000/01/rdf-schema#comment> "An Item describes properties of a class of product, system, component, or part.\n\tFor example, the <code>:CarX12</code> instance of the <code>pd:Item</code> class describes properties of the X12 model of a car product line, and is not itself a car."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#ItemVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/pd#ItemVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/pd#> .
+<http://jazz.net/ns/pd#ItemVersion> <http://www.w3.org/2000/01/rdf-schema#label> "ItemVersion"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#ItemVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "An ItemVersion is a version of an Item (<em>note</em>, not an instance of the class)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/pd#View> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ldp#Container> .
+<http://jazz.net/ns/pd#View> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/pd#> .
+<http://jazz.net/ns/pd#View> <http://www.w3.org/2000/01/rdf-schema#label> "View"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#View> <http://www.w3.org/2000/01/rdf-schema#comment> "A view of the parts of an Item."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#ViewVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/pd#ViewVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/pd#> .
+<http://jazz.net/ns/pd#ViewVersion> <http://www.w3.org/2000/01/rdf-schema#label> "ViewVersion"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#ViewVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "A ViewVersion is a version of a View."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/pd#Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ldp#Container> .
+<http://jazz.net/ns/pd#Part> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/pd#> .
+<http://jazz.net/ns/pd#Part> <http://www.w3.org/2000/01/rdf-schema#label> "Part"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#Part> <http://www.w3.org/2000/01/rdf-schema#comment> "A Part represents the usage of some child Item within a View of a parent Item."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#view> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/pd#view> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/pd#> .
+<http://jazz.net/ns/pd#view> <http://www.w3.org/2000/01/rdf-schema#label> "view"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#view> <http://www.w3.org/2000/01/rdf-schema#comment> "The object is a view of the subject resource, which is typically but not necessarily an Item."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#view> <http://www.w3.org/2000/01/rdf-schema#range> <http://jazz.net/ns/pd#View> .
+<http://jazz.net/ns/pd#viewType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/pd#viewType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/pd#> .
+<http://jazz.net/ns/pd#viewType> <http://www.w3.org/2000/01/rdf-schema#label> "viewType"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#viewType> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the type of a view."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/pd#viewType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://jazz.net/ns/pd#View> .

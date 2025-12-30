@@ -1,0 +1,384 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://rds.posccaesar.org/ontology/plm/ont/datasheet#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/>.
+@prefix dol: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#>.
+@prefix lis: <http://rds.posccaesar.org/ontology/lis14/rdl/>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix pav: <http://purl.org/pav/>.
+@prefix rdl: <http://rds.posccaesar.org/ontology/plm/rdl/>.
+@prefix ssn: <http://www.w3.org/ns/ssn/>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix iof-av: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+
+{
+    _:autos15175 a owl:Axiom;
+                 owl:annotatedProperty owl:deprecated;
+                 owl:annotatedSource rdfs:comment;
+                 owl:annotatedTarget "true";
+                 iof-av:explanatoryNote """The IOF Annotation Property Guide V2.2 states, \"comment MUST NOT be used\".""".
+    dc:rights a owl:AnnotationProperty;
+              rdfs:isDefinedBy "http://purl.org/dc/elements/1.1/";
+              rdfs:label "rights".
+    dcterms:contributor a owl:AnnotationProperty;
+                        rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                        rdfs:label "contributor".
+    dcterms:creator a owl:AnnotationProperty;
+                    rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                    rdfs:label "creator";
+                    rdfs:subPropertyOf dcterms:contributor.
+    dcterms:description a owl:AnnotationProperty;
+                        rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                        rdfs:label "description".
+    dcterms:issued a owl:AnnotationProperty;
+                   rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                   rdfs:label "issued".
+    dcterms:license a owl:AnnotationProperty;
+                    rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                    rdfs:label "license".
+    dcterms:modified a owl:AnnotationProperty;
+                     rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                     rdfs:label "modified".
+    dcterms:publisher a owl:AnnotationProperty;
+                      rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                      rdfs:label "publisher".
+    dcterms:source a owl:AnnotationProperty;
+                   rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                   rdfs:label "source".
+    dcterms:title a owl:AnnotationProperty;
+                  rdfs:isDefinedBy "http://purl.org/dc/terms/";
+                  rdfs:label "title".
+    pav:contributedBy a owl:AnnotationProperty;
+                      rdfs:isDefinedBy pav:;
+                      rdfs:label "contributedBy";
+                      rdfs:subPropertyOf dcterms:contributor.
+    pav:createdBy a owl:AnnotationProperty;
+                  rdfs:isDefinedBy pav:;
+                  rdfs:label "createdBy";
+                  rdfs:subPropertyOf dcterms:creator.
+    pav:derivedFrom a owl:AnnotationProperty;
+                    rdfs:isDefinedBy pav:;
+                    rdfs:label "derivedFrom".
+    pav:lastUpdateOn a owl:AnnotationProperty;
+                     rdfs:isDefinedBy pav:;
+                     rdfs:label "lastUpdateOn".
+    pav:previousVersion a owl:AnnotationProperty;
+                        rdfs:isDefinedBy pav:;
+                        rdfs:label "previousVersion".
+    lis:InformationObject a owl:Class;
+                          rdfs:label "InformationObject".
+    lis:QualityDatum a owl:Class;
+                     rdfs:label "QualityDatum".
+    lis:datumUOM a owl:ObjectProperty;
+                 rdfs:label "datumUOM".
+    lis:datumValue a owl:DatatypeProperty;
+                   rdfs:label "datumValue".
+    lis:hasPart a owl:ObjectProperty;
+                rdfs:label "hasPart".
+    lis:isAbout a owl:ObjectProperty;
+                rdfs:label "isAbout".
+    lis:partOf a owl:ObjectProperty;
+               rdfs:label "partOf".
+    <http://rds.posccaesar.org/ontology/plm/ont/datasheet> dc:rights "Copyright POSC Caesar Association";
+                                                           dcterms:creator <https://orcid.org/0000-0002-7167-7321>;
+                                                           dcterms:description """The Datasheet Ontology is a vocabulary for a \"proto-semantic\" representation of datasheet contents, intended as a part of the POSC Caesar RDL. The ontology was developed by the DISC collaboration on digitalisation, Q3 2023.""";
+                                                           dcterms:issued "2023-09-15"^^xsd:date;
+                                                           dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+                                                           dcterms:modified "2023-09-15"^^xsd:date;
+                                                           dcterms:publisher <http://www.posccaesar.org/>;
+                                                           dcterms:title "Datasheet Ontology";
+                                                           pav:lastUpdateOn "2023-09-15T10:49:05Z"^^xsd:dateTime;
+                                                           a owl:Ontology;
+                                                           rdfs:comment """The Datasheet Ontology is a vocabulary for a \"proto-semantic\" representation of datasheet contents""";
+                                                           rdfs:label "Datasheet Ontology";
+                                                           owl:imports <http://rds.posccaesar.org/ontology/plm/ont/document>;
+                                                           owl:versionIRI <http://rds.posccaesar.org/ontology/plm/ont/datasheet/0.1>;
+                                                           owl:versionInfo "0.1 2023-09-15".
+    rdl: a owl:ObjectProperty;
+         rdfs:domain rdl:PCA_100004908;
+         rdfs:range rdl:PCA_100029505.
+    rdl:PCA_100004908 a owl:Class;
+                      rdfs:label "Document";
+                      rdfs:subClassOf lis:InformationObject.
+    rdl:PCA_100029504 a owl:Class;
+                      rdfs:label "Datasheet";
+                      rdfs:seeAlso "https://en.wikipedia.org/wiki/Datasheet";
+                      rdfs:subClassOf rdl:PCA_100004908;
+                      skos:example "A process datasheet, an instrument datasheet.";
+                      iof-av:naturalLanguageDefinition "A datasheet is a document with labelled entries for describing the characteristics of an entity.".
+    rdl:PCA_100029505 a owl:Class;
+                      rdfs:comment """A datasheet datum will often be used to represent a semantic relationship in reified form. We use the term \"proto-semantic\" to informally describe the purpose of this kind of representation: a typical datasheet datum of interest contains information that motivates the introduction of semantic axioms.""",
+                                   """The use of \"elementary\" in the definition of 'datasheet datum' means that any part of a datasheet datum fails to express a full a assertion. Thus, if a datum reads \"Linesize out 0.5 inch\", neither of \"Linesize out\", \"0.5\", and \"inch\" expresses a statement on its own.""";
+                      rdfs:label "Datasheet Datum";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf lis:InformationObject;
+                      skos:example """A composite field with label \"weight\", a subfield for unit of measure, and a subfield for a numeric value for recording the mass of the datasheet subject; a field labelled \"coating\" with a subfield for recording the coating type of the datasheet subject; an unlabelled field that provides the title of the datasheet; a field labelled \"operating conditions\" to indicate the start of a topical datasheet section.""";
+                      iof-av:naturalLanguageDefinition "A 'datasheet datum' is an entry on a 'datasheet' that is suitable for making an elementary assertion.".
+    rdl:PCA_100029506 a owl:ObjectProperty;
+                      rdfs:label "contains datum";
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf lis:hasPart;
+                      skos:example """Spreadsheet C143-1 contains the 'relationship datum' \"Location code: AP100\"; the 'section datum' \"Equipment Conditions\"; the 'quantity datum' \"Line wall thickness 2.77 mm\".""";
+                      iof-av:naturalLanguageDefinition "If x 'contains datum' y, then x is a 'document', y is a 'datasheet datum', and y appears as an entry on x.".
+    rdl:PCA_100029507 a owl:ObjectProperty;
+                      rdfs:label "datum on document";
+                      rdfs:seeAlso <http://example.org/rdl/PCA_100029506>;
+                      rdfs:subPropertyOf lis:partOf,
+                                         rdl:PCA_100029514;
+                      owl:inverseOf rdl:PCA_100029506;
+                      iof-av:isPrimitive "false";
+                      iof-av:usageNote "For annotations, see the inverse relation 'contains datum'.".
+    rdl:PCA_100029508 a owl:Class;
+                      rdfs:comment "The class 'attribute datum' is intended as an abstract class, with subclasses 'relationship datum' and 'quantity datum'.";
+                      rdfs:label "Attribute Datum";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf rdl:PCA_100029505;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "An 'attribute datum' is a reified relationship with subject and attribute. To obtain a full relationship, use subclasses 'relationship datum' or 'quantity datum'.".
+    rdl:PCA_100029509 a owl:Class;
+                      rdfs:comment "For the special case of relata that are classes, use 'classification datum'.";
+                      rdfs:label "Relationship Datum";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf rdl:PCA_100029508;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "A 'relationship datum' is a reified relationship, with a subject related by an attribute to an individual.".
+    rdl:PCA_100029510 a owl:Class;
+                      rdfs:comment "The 'datum attribute' relationship on a 'classification datum' serves as an informal record of the significance of the (reified) classification. I.e., while any individual will be a member of several classes, the 'datum attribute' should point to a (shortcut) property that indicates the significance of the classification in question; this metadata is in general significant. For example, the 'datum attribute' can indicate that the classification establishes EX class, or the line size, of the subject.";
+                      rdfs:label "Classification Datum";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf rdl:PCA_100029509;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "A 'classification datum' is a reified classification, with a subject classified by a punned class.".
+    rdl:PCA_100029511 a owl:Class;
+                      rdfs:label "Datasheet Quantity Datum";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf lis:QualityDatum,
+                                      rdl:PCA_100029508;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "".
+    rdl:PCA_100029512 a owl:Class;
+                      rdfs:comment "Datasheet datums that belong to a case need to be related to the relevant case. Point to the 'case' using the relation 'datum of case'.";
+                      rdfs:label "Case Datum";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf rdl:PCA_100029505;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "A 'case datum' represents a simulated or hypothetical case.".
+    rdl:PCA_100029513 a owl:Class;
+                      rdfs:label "Section Datum";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf rdl:PCA_100029505;
+                      skos:example """\"General\", \"Equipment Conditions\", \"Special Conditions\"""";
+                      iof-av:naturalLanguageDefinition "A 'section datum' represents a section of a datasheet, and generally provides a title for the section.".
+    rdl:PCA_100029514 a owl:ObjectProperty;
+                      rdfs:domain rdl:PCA_100029505;
+                      rdfs:label "datum related to";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition """This is an \"abstract\" superproperty for the object properties that characterize datasheet datums.""".
+    rdl:PCA_100029515 a owl:ObjectProperty;
+                      rdfs:comment """A simpler version of the definition: This property points to the last datasheet revision that changed the value of the datum. (This is informal, a datum is identified relatively to the datasheet it appears on; it doesn't actually \"change value\", but is related to earlier iterations that appear in the same place, as part a series.)""";
+                      rdfs:label "datum last revised in";
+                      rdfs:range rdl:PCA_100029504;
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf rdl:PCA_100029514;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x is a 'datum last revised in' y, then x is a 'datasheet datum' on a datasheet z, y is the current or an earlier version of z, and y is the earliest version since which the value that x has on z has remained the same.".
+    rdl:PCA_100029516 a owl:ObjectProperty;
+                      rdfs:comment "In line with the reified approach of the datasheet datum approach, the subject of a datum will generally appear on the left side of the datum attribute, after lifting to an OWL axiom.";
+                      rdfs:domain rdl:PCA_100029508;
+                      rdfs:label "datum subject";
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf lis:isAbout,
+                                         rdl:PCA_100029514;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum subject' y, then x is an 'attribute datum' that characterises y.".
+    rdl:PCA_100029517 a owl:ObjectProperty;
+                      rdfs:domain rdl:PCA_100029509;
+                      rdfs:label "datum object";
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf rdl:PCA_100029514;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum object' y, then x is a 'relationship datum' that relates its 'datum subject' to the individual y, i.e., x is a reified relationship.".
+    rdl:PCA_100029518 a owl:ObjectProperty;
+                      rdfs:comment """Reified classes should be typed with a \"classifier\" subclass of skos:Concept.""";
+                      rdfs:domain rdl:PCA_100029510;
+                      rdfs:label "datum classifier";
+                      rdfs:range skos:Concept;
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf rdl:PCA_100029517;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum classifier' y, then x is a 'classification datum' that relates its 'datum subject' to a punned class y of which x is a member, i.e., x is a reified classification.".
+    rdl:PCA_100029519 a owl:ObjectProperty;
+                      rdfs:domain rdl:PCA_100029508;
+                      rdfs:label "datum attribute";
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf rdl:PCA_100029514;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum attribute' y, then x is an 'attribute datum' that relates x to an object or quantity datum by the relation y, i.e., x is a reified relationship.".
+    rdl:PCA_100029520 a owl:ObjectProperty;
+                      rdfs:comment "Consider whether to let an attribute datum point to the 'case datum' instead of the 'case', as this may simplify processing.";
+                      rdfs:label "datum of case";
+                      rdfs:range rdl:PCA_100029524;
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf rdl:PCA_100029514;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x is a 'datum of case' y, then (1) x is an 'attribute datum' valid only in the alternative case/scenario/possible world represented by 'case' y, or (2) x is a 'case datum' that serves to record the case on the datasheet.".
+    rdl:PCA_100029521 a owl:AnnotationProperty;
+                      rdfs:domain rdl:PCA_100029505;
+                      rdfs:label "datum label";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum label' y, then y is the descriptive label of the datasheet datum entry x.".
+    rdl:PCA_100029522 a owl:AnnotationProperty;
+                      rdfs:domain rdl:PCA_100029505;
+                      rdfs:label "datum value";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum value' y, then y is the literal string value of the datasheet datum entry x.".
+    rdl:PCA_100029523 a owl:DatatypeProperty,
+                        owl:FunctionalProperty;
+                      rdfs:comment "This relation may not need to be a data property. Consider whether typing as annotation property is sufficient.";
+                      rdfs:domain rdl:PCA_100029504;
+                      rdfs:label "datasheet revision number";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datasheet revision number' y, then x is a 'datasheet' and y is a string value that represents the unique revision of x.".
+    rdl:PCA_100029524 a owl:Class;
+                      rdfs:comment "A case is typically established as a simulation, but may also represent an alternative configuration, etc.";
+                      rdfs:label "Case";
+                      rdfs:seeAlso "";
+                      rdfs:subClassOf lis:InformationObject;
+                      skos:example "A scenario simulated as operations over 15 years; the state of affairs on given that a design alternative is selected.";
+                      iof-av:naturalLanguageDefinition "A case is a scenario, a possible world, within which certain attribute values are valid.".
+    rdl:PCA_100029525 a owl:ObjectProperty;
+                      rdfs:label "datum in section";
+                      rdfs:range rdl:PCA_100029513;
+                      rdfs:seeAlso "";
+                      rdfs:subPropertyOf rdl:PCA_100029514;
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x is a 'datum in section' y, then x is a 'datasheet datum', y is a 'section datum', and x appears in the datasheet section represented by y.".
+    rdl:PCA_100029532 a owl:AnnotationProperty;
+                      rdfs:domain rdl:PCA_100029505;
+                      rdfs:label "datum source row";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum source row' y, then y is the row in which x appears on the source datasheet.".
+    rdl:PCA_100029533 a owl:AnnotationProperty;
+                      rdfs:domain rdl:PCA_100029505;
+                      rdfs:label "datum source column";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum source column' y, then y is the column in which x appears on the source datasheet.".
+    rdl:PCA_100029534 a owl:AnnotationProperty;
+                      rdfs:domain rdl:PCA_100029505;
+                      rdfs:label "datum source filename";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum source filename' y, then y is the filename of the source datasheet in which x appears (without directory path).".
+    rdl:PCA_100029535 a owl:AnnotationProperty;
+                      rdfs:domain rdl:PCA_100029505;
+                      rdfs:label "datum source sort index";
+                      rdfs:seeAlso "";
+                      skos:example "";
+                      iof-av:naturalLanguageDefinition "If x has 'datum source sort index' y, then y is the number of the row describing x in the OTTR mapping worksheet. This provides a sort order for queries.".
+    rdf:PlainLiteral a rdfs:Datatype.
+    rdfs:Literal a rdfs:Datatype.
+    rdfs:comment a owl:AnnotationProperty;
+                 rdfs:isDefinedBy "http://www.w3.org/2000/01/rdf-schema#";
+                 rdfs:label "comment";
+                 owl:deprecated "true".
+    rdfs:isDefinedBy a owl:AnnotationProperty;
+                     rdfs:isDefinedBy "http://www.w3.org/2000/01/rdf-schema#";
+                     rdfs:label "isDefinedBy";
+                     rdfs:subPropertyOf rdfs:seeAlso.
+    rdfs:label a owl:AnnotationProperty;
+               rdfs:isDefinedBy "http://www.w3.org/2000/01/rdf-schema#";
+               rdfs:label "label".
+    rdfs:seeAlso a owl:AnnotationProperty;
+                 rdfs:isDefinedBy "http://www.w3.org/2000/01/rdf-schema#";
+                 rdfs:label "see also".
+    xsd:dateTime a rdfs:Datatype.
+    xsd:decimal a rdfs:Datatype.
+    xsd:integer a rdfs:Datatype.
+    xsd:string a rdfs:Datatype.
+    skos:Concept a owl:Class;
+                 rdfs:label "Concept".
+    skos:altLabel a owl:AnnotationProperty;
+                  rdfs:comment "Alternative label for the ontology resource.";
+                  rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core";
+                  rdfs:label "altLabel";
+                  rdfs:subPropertyOf rdfs:label.
+    skos:definition a owl:AnnotationProperty;
+                    rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core";
+                    rdfs:label "definition";
+                    rdfs:subPropertyOf skos:note.
+    skos:example a owl:AnnotationProperty;
+                 rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core";
+                 rdfs:label "example";
+                 rdfs:subPropertyOf skos:note.
+    skos:note a owl:AnnotationProperty;
+              rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core";
+              rdfs:label "note".
+    skos:prefLabel a owl:AnnotationProperty;
+                   rdfs:comment "Preferred label for the ontology resource.";
+                   rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core";
+                   rdfs:label "prefLabel";
+                   rdfs:subPropertyOf rdfs:label.
+    skos:scopeNote a owl:AnnotationProperty;
+                   rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core";
+                   rdfs:label "scopeNote";
+                   rdfs:subPropertyOf skos:note.
+    foaf:isPrimaryTopicOf a owl:AnnotationProperty;
+                          rdfs:isDefinedBy "http://xmlns.com/foaf/spec/";
+                          rdfs:label "isPrimaryTopicOf".
+    iof-av:adaptedFrom a owl:AnnotationProperty;
+                       rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                       rdfs:label "adaptedFrom";
+                       rdfs:subPropertyOf dcterms:source.
+    iof-av:directSource a owl:AnnotationProperty;
+                        rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                        rdfs:label "directSource";
+                        rdfs:subPropertyOf dcterms:source.
+    iof-av:explanatoryNote a owl:AnnotationProperty;
+                           rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                           rdfs:label "explanatoryNote";
+                           rdfs:subPropertyOf skos:note.
+    iof-av:firstOrderLogicDefinition a owl:AnnotationProperty;
+                                     rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                                     rdfs:label "firstOrderLogicDefinition";
+                                     rdfs:subPropertyOf skos:definition.
+    iof-av:naturalLanguageDefinition a owl:AnnotationProperty;
+                                     rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                                     rdfs:label "naturalLanguageDefinition";
+                                     rdfs:subPropertyOf skos:definition.
+    iof-av:primitiveRationale a owl:AnnotationProperty;
+                              rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                              rdfs:label "primitiveRationale";
+                              rdfs:subPropertyOf skos:note.
+    iof-av:semiFormalNaturalLanguageAxiom a owl:AnnotationProperty;
+                                          rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                                          rdfs:label "semiFormalNaturalLanguageAxiom";
+                                          rdfs:subPropertyOf skos:note.
+    iof-av:semiFormalNaturalLanguageDefinition a owl:AnnotationProperty;
+                                               rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                                               rdfs:label "semiFormalNaturalLanguageDefinition";
+                                               rdfs:subPropertyOf skos:definition.
+    iof-av:synonym a owl:AnnotationProperty;
+                   rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                   rdfs:label "synonym";
+                   rdfs:subPropertyOf skos:altLabel.
+    iof-av:usageNote a owl:AnnotationProperty;
+                     rdfs:isDefinedBy "http://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/";
+                     rdfs:label "usageNote";
+                     rdfs:subPropertyOf skos:note.
+}
+

@@ -1,0 +1,133 @@
+<http://jazz.net/ns/ism/registry#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/ism/registry#> <http://purl.org/dc/terms/title> "Jazz for Service Management Registry Services Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#> <http://purl.org/dc/terms/description> "The Jazz for Service Management Registry vocabulary defines the types, properties, and terms used when interacting with the Jazz for SM Registries."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#> <http://www.w3.org/2000/01/rdf-schema#label> "Jazz for Service Management Registry"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/reconciliation/> .
+<http://jazz.net/ns/ism/registry#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://pic.dhe.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.psc.doc_1.1.0/integrate/rs_c_integrate.html> .
+<http://jazz.net/ns/ism/registry#> <http://purl.org/dc/terms/source> <https://jazz.net/wiki/pub/Main/JazzForServiceManagementRegistryServicesVocabulary/rr-vocabulary.ttl> .
+<http://jazz.net/ns/ism/registry#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
+<http://jazz.net/ns/ism/registry#> <http://purl.org/dc/terms/dateCopyrighted> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#RegistrationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/registry#RegistrationRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#RegistrationRecord> <http://www.w3.org/2000/01/rdf-schema#label> "RegistrationRecord"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#RegistrationRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://pic.dhe.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.psc.doc_1.1.0/rs_original/oslc/web/rs_c_registration_record.html> .
+<http://jazz.net/ns/ism/registry#RegistrationRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A record maintained by a data provider that links to additional detailed data about a resource held in the data provider. A Registration Record typically includes properties commonly used by multiple providers to identify resources of its type(s), usually properties that change infrequently."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#ResourceRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/registry#ResourceRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#ResourceRecord> <http://www.w3.org/2000/01/rdf-schema#label> "ResourceRecord"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#ResourceRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/reconciliation/> .
+<http://jazz.net/ns/ism/registry#ResourceRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://pic.dhe.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.psc.doc_1.1.0/rs_original/oslc/web/rs_c_resource_record.html> .
+<http://jazz.net/ns/ism/registry#ResourceRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A record which represents a conceptual resource and includes and/or links to resources from other providers that refer to or provide additional details about that same conceptual resource. The process of associating Registration Records with Resource is known as Reconciliation and is influenced by Resource Shapes."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#ProviderRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/registry#ProviderRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#ProviderRecord> <http://www.w3.org/2000/01/rdf-schema#label> "ProviderRecord"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#ProviderRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#RegistrationRecord> .
+<http://jazz.net/ns/ism/registry#ProviderRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#ResourceRecord> .
+<http://jazz.net/ns/ism/registry#ProviderRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "The information from a Registration Record that is specific to its provider rather than to the conceptual resource. A Resource Record typically includes one Provider Record for each Registration Record associcated with that Resource Record."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#IdentificationRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/registry#IdentificationRule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#IdentificationRule> <http://www.w3.org/2000/01/rdf-schema#label> "IdentificationRule"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#IdentificationRule> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/reconciliation/> .
+<http://jazz.net/ns/ism/registry#IdentificationRule> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#IdentificationRule> <http://www.w3.org/2000/01/rdf-schema#comment> "A Rule used to identify instances of the resource types described by a Resource Shape. A Resource Shape includes rr:identificationRule properties which refer to the Identification Rules associated with that Resource Shape.  These typically correspond to addtional requirements for reconciliation in the OSLC Reconciliation specification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#RuleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/registry#RuleProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#RuleProperty> <http://www.w3.org/2000/01/rdf-schema#label> "RuleProperty"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#RuleProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#RuleProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#IdentificationRule> .
+<http://jazz.net/ns/ism/registry#RuleProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A Property that is used as part of an Identification Rule. The Property is described in the Resource Shape that includes this Identification Rule."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#sourceRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#sourceRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#sourceRecord> <http://www.w3.org/2000/01/rdf-schema#label> "sourceRecord"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#sourceRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#RegistrationRecord> .
+<http://jazz.net/ns/ism/registry#sourceRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#ProviderRecord> .
+<http://jazz.net/ns/ism/registry#sourceRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to a resource which contains additional detailed information about a resource.  For example, a Registration Record or Provider Record can use this property to link from a conceptual resource's relatively static content to additional detailed data in a provider, where the detailed data changes more frequently."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#sameAs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#sameAs> <http://www.w3.org/2000/01/rdf-schema#label> "sameAs"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#sameAs> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#RegistrationRecord> .
+<http://jazz.net/ns/ism/registry#sameAs> <http://www.w3.org/2000/01/rdf-schema#comment> "URI which refers to another Registration Record, which describes the same resource as the current registration record. This will allow the reconciliation process to associate both Registration Records with the same Resource Record."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#recordType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#recordType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#recordType> <http://www.w3.org/2000/01/rdf-schema#label> "recordType"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#recordType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#RegistrationRecord> .
+<http://jazz.net/ns/ism/registry#recordType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#ProviderRecord> .
+<http://jazz.net/ns/ism/registry#recordType> <http://www.w3.org/2000/01/rdf-schema#comment> "URI which specifies the type of additional information that is contained in the resource referred to by the sourceRecord property."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#providerRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#providerRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#providerRecord> <http://www.w3.org/2000/01/rdf-schema#label> "providerRecord"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#providerRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#ProviderRecord> .
+<http://jazz.net/ns/ism/registry#providerRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A Provider Record which describes information in a Registration Record associated with the Resource Record which contains this providerRecord property."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#registrationRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#registrationRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#registrationRecord> <http://www.w3.org/2000/01/rdf-schema#label> "registrationRecord"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#registrationRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#RegistrationRecord> .
+<http://jazz.net/ns/ism/registry#registrationRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#ProviderRecord> .
+<http://jazz.net/ns/ism/registry#registrationRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to a Registration Record, for example a Registration Record that a Provider Record refers to."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#identificationRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#identificationRule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#identificationRule> <http://www.w3.org/2000/01/rdf-schema#label> "identificationRule"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#identificationRule> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#IdentificationRule> .
+<http://jazz.net/ns/ism/registry#identificationRule> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#identificationRule> <http://www.w3.org/2000/01/rdf-schema#comment> "An Identification Rule included in a Resource Shape."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#ruleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#ruleProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#ruleProperty> <http://www.w3.org/2000/01/rdf-schema#label> "ruleProperty"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#ruleProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#RuleProperty> .
+<http://jazz.net/ns/ism/registry#ruleProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#ruleProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A Rule Property included in an Identification Rule."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#absent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#absent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#absent> <http://www.w3.org/2000/01/rdf-schema#label> "absent"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#absent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#RuleProperty> .
+<http://jazz.net/ns/ism/registry#absent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#absent> <http://www.w3.org/2000/01/rdf-schema#comment> "True if this Rule Property must be absent to satisfy an Identification Rule."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#priority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#priority> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#priority> <http://www.w3.org/2000/01/rdf-schema#label> "priority"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#priority> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/registry#IdentificationRule> .
+<http://jazz.net/ns/ism/registry#priority> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#priority> <http://www.w3.org/2000/01/rdf-schema#comment> "The priority value of an Identification Rule. This is an integer value with lower number indicating higher priority"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#isRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#isRelationship> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#isRelationship> <http://www.w3.org/2000/01/rdf-schema#label> "isRelationship"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#isRelationship> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#isRelationship> <http://www.w3.org/2000/01/rdf-schema#comment> "True if Property being described is used to model a relationship between conceptual resources."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#version> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#version> <http://www.w3.org/2000/01/rdf-schema#label> "version"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#version> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/reconciliation/> .
+<http://jazz.net/ns/ism/registry#version> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource> .
+<http://jazz.net/ns/ism/registry#version> <http://www.w3.org/2000/01/rdf-schema#comment> "The version of the Resource Shape."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#resource-record-collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#resource-record-collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#resource-record-collection> <http://www.w3.org/2000/01/rdf-schema#label> "resource-record-collection"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#resource-record-collection> <http://www.w3.org/2000/01/rdf-schema#comment> "HTTP Link header rel= value used to identify the collection for Resoure Records in the Resoure Registry."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#registration-record-collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#registration-record-collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#registration-record-collection> <http://www.w3.org/2000/01/rdf-schema#label> "registration-record-collection"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#registration-record-collection> <http://www.w3.org/2000/01/rdf-schema#comment> "HTTP Link header rel= value used to identify the collection for Registration Records in the Resoure Registry."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#resource-shape-collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#resource-shape-collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#resource-shape-collection> <http://www.w3.org/2000/01/rdf-schema#label> "resource-shape-collection"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#resource-shape-collection> <http://www.w3.org/2000/01/rdf-schema#comment> "HTTP Link header rel= value used to identify the collection for Resource Shapes in the Resoure Registry."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#resource-automation-collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#resource-automation-collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#resource-automation-collection> <http://www.w3.org/2000/01/rdf-schema#label> "resource-automation-collection"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#resource-automation-collection> <http://www.w3.org/2000/01/rdf-schema#comment> "HTTP Link header rel= value used to identify the collection for Automation resources in the Resoure Registry."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#provider-automation-collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/registry#provider-automation-collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#provider-automation-collection> <http://www.w3.org/2000/01/rdf-schema#label> "provider-automation-collection"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#provider-automation-collection> <http://www.w3.org/2000/01/rdf-schema#comment> "HTTP Link header rel= value used to identify the collection for Automation resources in the Provider Registry."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#CreateRegistrationRecords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Description> .
+<http://jazz.net/ns/ism/registry#CreateRegistrationRecords> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#CreateRegistrationRecords> <http://www.w3.org/2000/01/rdf-schema#label> "CreateRegistrationRecords"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#CreateRegistrationRecords> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier for the Automation Plan used for batch creation of Registration Records."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#UpdateRegistrationRecordUrls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Description> .
+<http://jazz.net/ns/ism/registry#UpdateRegistrationRecordUrls> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#UpdateRegistrationRecordUrls> <http://www.w3.org/2000/01/rdf-schema#label> "UpdateRegistrationRecordUrls"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#UpdateRegistrationRecordUrls> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier for the Automation Plan used for batch update of URLs in Registration Records."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#UpdateProviderRecordUrls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Description> .
+<http://jazz.net/ns/ism/registry#UpdateProviderRecordUrls> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/registry#> .
+<http://jazz.net/ns/ism/registry#UpdateProviderRecordUrls> <http://www.w3.org/2000/01/rdf-schema#label> "UpdateProviderRecordUrls"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/registry#UpdateProviderRecordUrls> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier for the Automation Plan used for batch update of URLs in Service Provider Records."^^<http://www.w3.org/2001/XMLSchema#string> .

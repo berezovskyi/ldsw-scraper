@@ -1,0 +1,57 @@
+<https://w3id.org/list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/list> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of entities used to describe the OWL list pattern. "^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology is identical to the ontology originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/3.0/> .
+<https://w3id.org/list> <http://purl.org/dc/elements/1.1/creator> "Walter Terkaj  (walter.terkaj@itia.cnr.it)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/dc/elements/1.1/creator> "Pieter Pauwels (pipauwel.pauwels@ugent.be)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/dc/elements/1.1/date> "2016/03/03"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/dc/elements/1.1/description> "A set of entities used to describe the OWL list pattern."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/dc/elements/1.1/identifier> "List"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/dc/elements/1.1/language> "en"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/dc/elements/1.1/title> "List"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/vocab/vann/preferredNamespacePrefix> "list"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/list"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0 "^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/list#hasContents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/list#hasContents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/list#hasContents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/list#hasListProperty> .
+<https://w3id.org/list#hasListProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/list#hasListProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/list#OWLList> .
+<https://w3id.org/list#hasNext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/list#hasNext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/list#hasNext> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/list#isFollowedBy> .
+<https://w3id.org/list#isFollowedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/list#isFollowedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/list#isFollowedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/list#OWLList> .
+<https://w3id.org/list#isFollowedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/list#hasListProperty> .
+<https://w3id.org/list#EmptyList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos10008 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos10009 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/list#OWLList> .
+_:autos10009 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos10010 .
+_:autos10011 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos10012 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:autos10012 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/list#hasContents> .
+_:autos10012 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:autos10011 <http://www.w3.org/2002/07/owl#complementOf> _:autos10012 .
+_:autos10010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:autos10011 .
+_:autos10010 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos10008 <http://www.w3.org/2002/07/owl#intersectionOf> _:autos10009 .
+<https://w3id.org/list#EmptyList> <http://www.w3.org/2002/07/owl#equivalentClass> _:autos10008 .
+_:autos10013 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos10014 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/list#OWLList> .
+_:autos10014 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos10015 .
+_:autos10016 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos10017 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:autos10017 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/list#isFollowedBy> .
+_:autos10017 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:autos10016 <http://www.w3.org/2002/07/owl#complementOf> _:autos10017 .
+_:autos10015 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:autos10016 .
+_:autos10015 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos10013 <http://www.w3.org/2002/07/owl#intersectionOf> _:autos10014 .
+<https://w3id.org/list#EmptyList> <http://www.w3.org/2002/07/owl#equivalentClass> _:autos10013 .
+<https://w3id.org/list#OWLList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/list#OWLList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+_:autos10018 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:autos10018 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/list#isFollowedBy> .
+_:autos10018 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/list#OWLList> .
+<https://w3id.org/list#OWLList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:autos10018 .
