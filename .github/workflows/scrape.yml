@@ -10,19 +10,36 @@ on:
 
 jobs:
   scrape:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    # parallel is avaiable OOB
-    # - name: Setup
-    #   run: |-
-    #     sudo apt-get update -q && sudo apt-get install -y parallel     
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Cache NuGet packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
     - name: Fetch latest data
       run: |-
-        ./bin/scrape.sh      
+        dotnet run --project src/LdswScraper/LdswScraper.csproj --no-build -- -p 32 -t 0.5
+
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
