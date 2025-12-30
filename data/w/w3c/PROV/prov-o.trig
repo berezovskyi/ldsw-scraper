@@ -5,167 +5,167 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 
 {
-    _:autos8452 a owl:Restriction;
+    _:autos8280 a owl:Restriction;
                 owl:maxCardinality "0"^^xsd:nonNegativeInteger;
                 owl:onProperty :hadActivity.
-    _:autos8488 rdf:first :qualifiedDelegation;
-                rdf:rest _:autos8489.
-    _:autos8489 rdf:first :agent;
+    _:autos8321 rdf:first :qualifiedDelegation;
+                rdf:rest _:autos8322.
+    _:autos8322 rdf:first :agent;
                 rdf:rest rdf:nil.
-    _:autos8494 a owl:Class;
-                owl:unionOf _:autos8495.
-    _:autos8495 rdf:first :Activity;
-                rdf:rest _:autos8496.
-    _:autos8496 rdf:first :Agent;
-                rdf:rest _:autos8497.
-    _:autos8497 rdf:first :Entity;
-                rdf:rest _:autos8499.
-    _:autos8499 rdf:first :InstantaneousEvent;
+    _:autos8332 a owl:Class;
+                owl:unionOf _:autos8333.
+    _:autos8333 rdf:first :Activity;
+                rdf:rest _:autos8334.
+    _:autos8334 rdf:first :Agent;
+                rdf:rest _:autos8335.
+    _:autos8335 rdf:first :Entity;
+                rdf:rest _:autos8337.
+    _:autos8337 rdf:first :InstantaneousEvent;
                 rdf:rest rdf:nil.
-    _:autos8521 a owl:Class;
-                owl:unionOf _:autos8522.
-    _:autos8522 rdf:first :Delegation;
-                rdf:rest _:autos8523.
-    _:autos8523 rdf:first :Derivation;
-                rdf:rest _:autos8524.
-    _:autos8524 rdf:first :End;
-                rdf:rest _:autos8526.
-    _:autos8526 rdf:first :Start;
+    _:autos8346 a owl:Class;
+                owl:unionOf _:autos8347.
+    _:autos8347 rdf:first :Delegation;
+                rdf:rest _:autos8348.
+    _:autos8348 rdf:first :Derivation;
+                rdf:rest _:autos8349.
+    _:autos8349 rdf:first :End;
+                rdf:rest _:autos8350.
+    _:autos8350 rdf:first :Start;
                 rdf:rest rdf:nil.
-    _:autos8532 rdf:first :qualifiedPrimarySource;
-                rdf:rest _:autos8533.
-    _:autos8533 rdf:first :entity;
+    _:autos8355 rdf:first :qualifiedPrimarySource;
+                rdf:rest _:autos8356.
+    _:autos8356 rdf:first :entity;
                 rdf:rest rdf:nil.
-    _:autos8534 a owl:Class;
-                owl:unionOf _:autos8535.
-    _:autos8535 rdf:first :Association;
-                rdf:rest _:autos8536.
-    _:autos8536 rdf:first :InstantaneousEvent;
+    _:autos8357 a owl:Class;
+                owl:unionOf _:autos8358.
+    _:autos8358 rdf:first :Association;
+                rdf:rest _:autos8359.
+    _:autos8359 rdf:first :InstantaneousEvent;
                 rdf:rest rdf:nil.
-    _:autos8553 a owl:Class;
-                owl:unionOf _:autos8554.
-    _:autos8554 rdf:first :Activity;
-                rdf:rest _:autos8555.
-    _:autos8555 rdf:first :Agent;
-                rdf:rest _:autos8556.
-    _:autos8556 rdf:first :Entity;
+    _:autos8380 a owl:Class;
+                owl:unionOf _:autos8381.
+    _:autos8381 rdf:first :Activity;
+                rdf:rest _:autos8383.
+    _:autos8383 rdf:first :Agent;
+                rdf:rest _:autos8384.
+    _:autos8384 rdf:first :Entity;
                 rdf:rest rdf:nil.
-    _:autos8565 rdf:first :qualifiedUsage;
-                rdf:rest _:autos8567.
-    _:autos8567 rdf:first :entity;
+    _:autos8407 rdf:first :qualifiedUsage;
+                rdf:rest _:autos8408.
+    _:autos8408 rdf:first :entity;
                 rdf:rest rdf:nil.
-    _:autos8571 rdf:first :qualifiedAssociation;
-                rdf:rest _:autos8573.
-    _:autos8573 rdf:first :agent;
+    _:autos8410 rdf:first :qualifiedAssociation;
+                rdf:rest _:autos8411.
+    _:autos8411 rdf:first :agent;
                 rdf:rest rdf:nil.
-    _:autos8575 rdf:first :qualifiedAttribution;
-                rdf:rest _:autos8576.
-    _:autos8576 rdf:first :agent;
+    _:autos8414 rdf:first :qualifiedAttribution;
+                rdf:rest _:autos8415.
+    _:autos8415 rdf:first :agent;
                 rdf:rest rdf:nil.
-    _:autos8579 rdf:first :qualifiedDerivation;
-                rdf:rest _:autos8580.
-    _:autos8580 rdf:first :entity;
+    _:autos8418 rdf:first :qualifiedDerivation;
+                rdf:rest _:autos8420.
+    _:autos8420 rdf:first :entity;
                 rdf:rest rdf:nil.
-    _:autos8583 rdf:first :qualifiedEnd;
-                rdf:rest _:autos8584.
-    _:autos8584 rdf:first :entity;
+    _:autos8423 rdf:first :qualifiedEnd;
+                rdf:rest _:autos8424.
+    _:autos8424 rdf:first :entity;
                 rdf:rest rdf:nil.
-    _:autos8585 rdf:first :qualifiedGeneration;
-                rdf:rest _:autos8586.
-    _:autos8586 rdf:first :activity;
+    _:autos8426 rdf:first :qualifiedGeneration;
+                rdf:rest _:autos8427.
+    _:autos8427 rdf:first :activity;
                 rdf:rest rdf:nil.
-    _:autos8587 a owl:Class;
-                owl:unionOf _:autos8588.
-    _:autos8588 rdf:first :Activity;
-                rdf:rest _:autos8589.
-    _:autos8589 rdf:first :Agent;
-                rdf:rest _:autos8591.
-    _:autos8591 rdf:first :Entity;
+    _:autos8429 a owl:Class;
+                owl:unionOf _:autos8430.
+    _:autos8430 rdf:first :Activity;
+                rdf:rest _:autos8431.
+    _:autos8431 rdf:first :Agent;
+                rdf:rest _:autos8432.
+    _:autos8432 rdf:first :Entity;
                 rdf:rest rdf:nil.
-    _:autos8592 a owl:Class;
-                owl:unionOf _:autos8593.
-    _:autos8593 rdf:first :Activity;
-                rdf:rest _:autos8594.
-    _:autos8594 rdf:first :Agent;
-                rdf:rest _:autos8596.
-    _:autos8596 rdf:first :Entity;
+    _:autos8433 a owl:Class;
+                owl:unionOf _:autos8434.
+    _:autos8434 rdf:first :Activity;
+                rdf:rest _:autos8436.
+    _:autos8436 rdf:first :Agent;
+                rdf:rest _:autos8437.
+    _:autos8437 rdf:first :Entity;
                 rdf:rest rdf:nil.
-    _:autos8598 rdf:first :qualifiedCommunication;
-                rdf:rest _:autos8599.
-    _:autos8599 rdf:first :activity;
+    _:autos8439 rdf:first :qualifiedCommunication;
+                rdf:rest _:autos8440.
+    _:autos8440 rdf:first :activity;
                 rdf:rest rdf:nil.
-    _:autos8602 rdf:first :qualifiedInvalidation;
-                rdf:rest _:autos8603.
-    _:autos8603 rdf:first :activity;
+    _:autos8441 rdf:first :qualifiedInvalidation;
+                rdf:rest _:autos8442.
+    _:autos8442 rdf:first :activity;
                 rdf:rest rdf:nil.
-    _:autos8605 rdf:first :qualifiedQuotation;
-                rdf:rest _:autos8606.
-    _:autos8606 rdf:first :entity;
+    _:autos8445 rdf:first :qualifiedQuotation;
+                rdf:rest _:autos8446.
+    _:autos8446 rdf:first :entity;
                 rdf:rest rdf:nil.
-    _:autos8609 rdf:first :qualifiedRevision;
-                rdf:rest _:autos8610.
-    _:autos8610 rdf:first :entity;
+    _:autos8447 rdf:first :qualifiedRevision;
+                rdf:rest _:autos8448.
+    _:autos8448 rdf:first :entity;
                 rdf:rest rdf:nil.
-    _:autos8613 rdf:first :qualifiedStart;
-                rdf:rest _:autos8614.
-    _:autos8614 rdf:first :entity;
+    _:autos8451 rdf:first :qualifiedStart;
+                rdf:rest _:autos8452.
+    _:autos8452 rdf:first :entity;
                 rdf:rest rdf:nil.
-    _:autos8615 a owl:Axiom;
+    _:autos8455 a owl:Axiom;
                 rdfs:comment "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections."@en;
                 owl:annotatedProperty rdfs:range;
                 owl:annotatedSource :hadMember;
                 owl:annotatedTarget :Entity;
                 :dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection".
-    _:autos8616 a owl:Axiom;
+    _:autos8457 a owl:Axiom;
                 rdfs:comment "hadPrimarySource property is a particular case of wasDerivedFrom (see http://www.w3.org/TR/prov-dm/#term-original-source) that aims to give credit to the source that originated some information.";
                 owl:annotatedProperty rdfs:subPropertyOf;
                 owl:annotatedSource :hadPrimarySource;
                 owl:annotatedTarget :wasDerivedFrom.
-    _:autos8618 a owl:Axiom;
+    _:autos8459 a owl:Axiom;
                 rdfs:comment "Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it.";
                 owl:annotatedProperty rdfs:subPropertyOf;
                 owl:annotatedSource :wasAttributedTo;
                 owl:annotatedTarget :wasInfluencedBy;
                 :definition "IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds. ".
-    _:autos8620 a owl:Axiom;
+    _:autos8460 a owl:Axiom;
                 rdfs:comment "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence.";
                 owl:annotatedProperty rdfs:subPropertyOf;
                 owl:annotatedSource :wasDerivedFrom;
                 owl:annotatedTarget :wasInfluencedBy.
-    _:autos8622 a owl:Axiom;
+    _:autos8462 a owl:Axiom;
                 owl:annotatedProperty rdfs:range;
                 owl:annotatedSource :wasInfluencedBy;
-                owl:annotatedTarget _:autos8623;
+                owl:annotatedTarget _:autos8464;
                 :definition "influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;";
                 :dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence".
-    _:autos8623 a owl:Class;
-                owl:unionOf _:autos8624.
-    _:autos8624 rdf:first :Activity;
-                rdf:rest _:autos8625.
-    _:autos8625 rdf:first :Agent;
-                rdf:rest _:autos8626.
-    _:autos8626 rdf:first :Entity;
+    _:autos8464 a owl:Class;
+                owl:unionOf _:autos8465.
+    _:autos8465 rdf:first :Activity;
+                rdf:rest _:autos8466.
+    _:autos8466 rdf:first :Agent;
+                rdf:rest _:autos8467.
+    _:autos8467 rdf:first :Entity;
                 rdf:rest rdf:nil.
-    _:autos8628 a owl:Axiom;
+    _:autos8468 a owl:Axiom;
                 owl:annotatedProperty rdfs:domain;
                 owl:annotatedSource :wasInfluencedBy;
-                owl:annotatedTarget _:autos8629;
+                owl:annotatedTarget _:autos8469;
                 :definition "influencee: an identifier (o2) for an entity, activity, or agent; ";
                 :dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence".
-    _:autos8629 a owl:Class;
-                owl:unionOf _:autos8630.
-    _:autos8630 rdf:first :Activity;
-                rdf:rest _:autos8631.
-    _:autos8631 rdf:first :Agent;
-                rdf:rest _:autos8632.
-    _:autos8632 rdf:first :Entity;
+    _:autos8469 a owl:Class;
+                owl:unionOf _:autos8470.
+    _:autos8470 rdf:first :Activity;
+                rdf:rest _:autos8471.
+    _:autos8471 rdf:first :Agent;
+                rdf:rest _:autos8472.
+    _:autos8472 rdf:first :Entity;
                 rdf:rest rdf:nil.
-    _:autos8633 a owl:Axiom;
+    _:autos8474 a owl:Axiom;
                 rdfs:comment """Quotation is a particular case of derivation (see http://www.w3.org/TR/prov-dm/#term-quotation) in which an entity is derived from an original entity by copying, or \"quoting\", some or all of it. """;
                 owl:annotatedProperty rdfs:subPropertyOf;
                 owl:annotatedSource :wasQuotedFrom;
                 owl:annotatedTarget :wasDerivedFrom.
-    _:autos8634 a owl:Axiom;
+    _:autos8475 a owl:Axiom;
                 rdfs:comment """Revision is a derivation (see http://www.w3.org/TR/prov-dm/#term-Revision). Moreover, according to 
 http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 2012 'wasRevisionOf is a strict sub-relation of wasDerivedFrom since two entities e2 and e1 may satisfy wasDerivedFrom(e2,e1) without being a variant of each other.'""";
                 owl:annotatedProperty rdfs:subPropertyOf;
@@ -199,7 +199,7 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
                        rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#>;
                        rdfs:label "ActivityInfluence";
                        rdfs:seeAlso :activity;
-                       rdfs:subClassOf _:autos8452,
+                       rdfs:subClassOf _:autos8280,
                                        :Influence;
                        owl:disjointWith :EntityInfluence;
                        :category "qualified";
@@ -512,7 +512,7 @@ A primary source relation is a particular case of derivation of secondary materi
                      rdfs:label "actedOnBehalfOf";
                      rdfs:range :Agent;
                      rdfs:subPropertyOf :wasInfluencedBy;
-                     owl:propertyChainAxiom _:autos8488;
+                     owl:propertyChainAxiom _:autos8321;
                      :category "starting-point";
                      :component "agents-responsibility";
                      :inverse "hadDelegate";
@@ -557,7 +557,7 @@ A primary source relation is a particular case of derivation of secondary materi
     :atLocation a owl:ObjectProperty;
                 rdfs:comment "The Location of any resource."@en,
                              """This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>.""";
-                rdfs:domain _:autos8494;
+                rdfs:domain _:autos8332;
                 rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#>;
                 rdfs:label "atLocation";
                 rdfs:range :Location;
@@ -650,7 +650,7 @@ A primary source relation is a particular case of derivation of secondary materi
     :hadActivity a owl:ObjectProperty;
                  rdfs:comment "The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead)."@en,
                               """This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>.""";
-                 rdfs:domain _:autos8521,
+                 rdfs:domain _:autos8346,
                              :Influence;
                  rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#>;
                  rdfs:label "hadActivity";
@@ -696,7 +696,7 @@ A primary source relation is a particular case of derivation of secondary materi
                       rdfs:label "hadPrimarySource";
                       rdfs:range :Entity;
                       rdfs:subPropertyOf :wasDerivedFrom;
-                      owl:propertyChainAxiom _:autos8532;
+                      owl:propertyChainAxiom _:autos8355;
                       :category "expanded";
                       :component "derivations";
                       :inverse "wasPrimarySourceOf";
@@ -705,7 +705,7 @@ A primary source relation is a particular case of derivation of secondary materi
     :hadRole a owl:ObjectProperty;
              rdfs:comment "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en,
                           """This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>.""";
-             rdfs:domain _:autos8534,
+             rdfs:domain _:autos8357,
                          :Influence;
              rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#>;
              rdfs:label "hadRole";
@@ -886,7 +886,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
                          :unqualifiedForm :wasGeneratedBy.
     :qualifiedInfluence a owl:ObjectProperty;
                         rdfs:comment "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable."@en;
-                        rdfs:domain _:autos8553;
+                        rdfs:domain _:autos8380;
                         rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#>;
                         rdfs:label "qualifiedInfluence";
                         rdfs:range :Influence;
@@ -1008,7 +1008,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
           rdfs:label "used";
           rdfs:range :Entity;
           rdfs:subPropertyOf :wasInfluencedBy;
-          owl:propertyChainAxiom _:autos8565;
+          owl:propertyChainAxiom _:autos8407;
           :category "starting-point";
           :component "entities-activities";
           :inverse "wasUsedBy";
@@ -1031,7 +1031,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
                        rdfs:label "wasAssociatedWith";
                        rdfs:range :Agent;
                        rdfs:subPropertyOf :wasInfluencedBy;
-                       owl:propertyChainAxiom _:autos8571;
+                       owl:propertyChainAxiom _:autos8410;
                        :category "starting-point";
                        :component "agents-responsibility";
                        :inverse "wasAssociateFor";
@@ -1044,7 +1044,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
                      rdfs:label "wasAttributedTo";
                      rdfs:range :Agent;
                      rdfs:subPropertyOf :wasInfluencedBy;
-                     owl:propertyChainAxiom _:autos8575;
+                     owl:propertyChainAxiom _:autos8414;
                      :category "starting-point";
                      :component "agents-responsibility";
                      :definition "Attribution is the ascribing of an entity to an agent."@en;
@@ -1058,7 +1058,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
                     rdfs:label "wasDerivedFrom";
                     rdfs:range :Entity;
                     rdfs:subPropertyOf :wasInfluencedBy;
-                    owl:propertyChainAxiom _:autos8579;
+                    owl:propertyChainAxiom _:autos8418;
                     :category "starting-point";
                     :component "derivations";
                     :definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en;
@@ -1072,7 +1072,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
                 rdfs:label "wasEndedBy";
                 rdfs:range :Entity;
                 rdfs:subPropertyOf :wasInfluencedBy;
-                owl:propertyChainAxiom _:autos8583;
+                owl:propertyChainAxiom _:autos8423;
                 :category "expanded";
                 :component "entities-activities";
                 :inverse "ended";
@@ -1084,7 +1084,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
                     rdfs:label "wasGeneratedBy";
                     rdfs:range :Activity;
                     rdfs:subPropertyOf :wasInfluencedBy;
-                    owl:propertyChainAxiom _:autos8585;
+                    owl:propertyChainAxiom _:autos8426;
                     :category "starting-point";
                     :component "entities-activities";
                     :inverse "generated";
@@ -1093,10 +1093,10 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     :wasInfluencedBy a owl:ObjectProperty;
                      rdfs:comment "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en,
                                   """This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>.""";
-                     rdfs:domain _:autos8587;
+                     rdfs:domain _:autos8429;
                      rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#>;
                      rdfs:label "wasInfluencedBy";
-                     rdfs:range _:autos8592;
+                     rdfs:range _:autos8433;
                      :category "qualified";
                      :component "agents-responsibility";
                      :editorialNote """The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .
@@ -1116,7 +1116,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
                    rdfs:label "wasInformedBy";
                    rdfs:range :Activity;
                    rdfs:subPropertyOf :wasInfluencedBy;
-                   owl:propertyChainAxiom _:autos8598;
+                   owl:propertyChainAxiom _:autos8439;
                    :category "starting-point";
                    :component "entities-activities";
                    :inverse "informed";
@@ -1128,7 +1128,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
                       rdfs:label "wasInvalidatedBy";
                       rdfs:range :Activity;
                       rdfs:subPropertyOf :wasInfluencedBy;
-                      owl:propertyChainAxiom _:autos8602;
+                      owl:propertyChainAxiom _:autos8441;
                       :category "expanded";
                       :component "entities-activities";
                       :inverse "invalidated";
@@ -1141,7 +1141,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
                    rdfs:label "wasQuotedFrom";
                    rdfs:range :Entity;
                    rdfs:subPropertyOf :wasDerivedFrom;
-                   owl:propertyChainAxiom _:autos8605;
+                   owl:propertyChainAxiom _:autos8445;
                    :category "expanded";
                    :component "derivations";
                    :inverse "quotedAs";
@@ -1155,7 +1155,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
                    rdfs:label "wasRevisionOf";
                    rdfs:range :Entity;
                    rdfs:subPropertyOf :wasDerivedFrom;
-                   owl:propertyChainAxiom _:autos8609;
+                   owl:propertyChainAxiom _:autos8447;
                    :category "expanded";
                    :component "derivations";
                    :inverse "hadRevision";
@@ -1168,7 +1168,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
                   rdfs:label "wasStartedBy";
                   rdfs:range :Entity;
                   rdfs:subPropertyOf :wasInfluencedBy;
-                  owl:propertyChainAxiom _:autos8613;
+                  owl:propertyChainAxiom _:autos8451;
                   :category "expanded";
                   :component "entities-activities";
                   :inverse "started";

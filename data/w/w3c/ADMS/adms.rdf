@@ -20,9 +20,9 @@
 <rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:wdrs="http://www.w3.org/2007/05/powder-s#" xmlns:schema="http://schema.org/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <voaf:Vocabulary rdf:about="http://www.w3.org/ns/adms">
     <dcterms:abstract xml:lang="en">ADMS is a profile of DCAT, used to describe semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) that are used for eGovernment system development.</dcterms:abstract>
-    <dcterms:creator rdf:nodeID="autos12571" />
-    <dcterms:creator rdf:nodeID="autos12572" />
-    <dcterms:creator rdf:nodeID="autos12574" />
+    <dcterms:creator rdf:nodeID="autos12439" />
+    <dcterms:creator rdf:nodeID="autos12440" />
+    <dcterms:creator rdf:nodeID="autos12442" />
     <dcterms:description rdf:datatype="&xsd;string">This is the RDF encoding of the Asset Description Metadata Schema, originally 
     developed under the European Union's ISA Programme and further developed by the W3C Government Linked Data Working Group.
     It re-uses terms from several other vocabularies, notably Dublin Core, with elements of SKOS, FOAF and more. </dcterms:description>
@@ -38,7 +38,7 @@
     <rdfs:comment xml:lang="en">This file specifies the set of RDF classes and properties used in ADMS</rdfs:comment>
     <rdfs:label xml:lang="en">Asset Description Metadata Schema (ADMS)</rdfs:label>
     <wdrs:describedby rdf:resource="http://www.w3.org/TR/vocab-adms" />
-    <foaf:maker rdf:nodeID="autos12575" />
+    <foaf:maker rdf:nodeID="autos12443" />
   </voaf:Vocabulary>
   <rdfs:Class rdf:about="&adms;Asset">
     <dcterms:identifier rdf:datatype="&xsd;string">adms:Asset</dcterms:identifier>
@@ -174,28 +174,28 @@
     <rdfs:label xml:lang="en">version info</rdfs:label>
     <rdfs:range rdf:resource="&rdfs;Literal" />
   </rdf:Property>
-  <rdf:Description rdf:nodeID="autos12571">
+  <rdf:Description rdf:nodeID="autos12439">
     <schema:affiliation rdf:resource="http://www.w3.org/data#W3C" />
     <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me" />
     <foaf:homepage rdf:resource="http://www.w3.org/People/all#phila" />
     <foaf:name rdf:datatype="&xsd;string">Phil Archer</foaf:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos12572">
-    <schema:affiliation rdf:nodeID="autos12573" />
+  <rdf:Description rdf:nodeID="autos12440">
+    <schema:affiliation rdf:nodeID="autos12441" />
     <rdfs:seeAlso rdf:resource="http://andrea-perego.name/foaf/#me" />
     <foaf:homepage rdf:resource="http://andrea-perego.name/" />
     <foaf:name rdf:datatype="&xsd;string">Andrea Perego</foaf:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos12573">
+  <rdf:Description rdf:nodeID="autos12441">
     <foaf:homepage rdf:resource="http://ies.jrc.ec.europa.eu/DE" />
     <foaf:name rdf:datatype="&xsd;string">European Commission, Joint Research Centre </foaf:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos12574">
+  <rdf:Description rdf:nodeID="autos12442">
     <rdfs:seeAlso rdf:resource="http://makxdekkers.com/makxdekkers.rdf#me" />
     <foaf:homepage rdf:resource="http://makxdekkers.com/" />
     <foaf:name rdf:datatype="&xsd;string">Makx Dekkers</foaf:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos12575">
+  <rdf:Description rdf:nodeID="autos12443">
     <foaf:homepage rdf:resource="http://www.w3.org/2011/gld/" />
     <foaf:name rdf:datatype="&xsd;string">Government Linked Data WG, based on output from the ADMS Working Group</foaf:name>
   </rdf:Description>

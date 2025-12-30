@@ -10,174 +10,174 @@
 @prefix list: <https://w3id.org/list#>.
 
 {
-    _:autos10317 a owl:Restriction;
+    _:autos10063 a owl:Restriction;
                  owl:allValuesFrom :INTEGER_List_List;
                  owl:onProperty list:hasNext.
-    _:autos10318 a owl:Restriction;
+    _:autos10064 a owl:Restriction;
                  owl:allValuesFrom :INTEGER_List;
                  owl:onProperty list:hasContents.
-    _:autos10319 a owl:Restriction;
+    _:autos10065 a owl:Restriction;
                  owl:allValuesFrom :INTEGER_List_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10320 a owl:Restriction;
+    _:autos10066 a owl:Restriction;
                  owl:allValuesFrom xsd:hexBinary;
                  owl:onProperty :hasHexBinary.
-    _:autos10321 a owl:Restriction;
+    _:autos10067 a owl:Restriction;
                  owl:allValuesFrom xsd:boolean;
                  owl:onProperty :hasBoolean.
-    _:autos10322 a owl:Restriction;
+    _:autos10068 a owl:Restriction;
                  owl:allValuesFrom :NUMBER_List;
                  owl:onProperty list:hasNext.
-    _:autos10323 a owl:Restriction;
+    _:autos10069 a owl:Restriction;
                  owl:allValuesFrom :NUMBER;
                  owl:onProperty list:hasContents.
-    _:autos10324 a owl:Restriction;
+    _:autos10070 a owl:Restriction;
                  owl:allValuesFrom :NUMBER_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10325 a owl:Restriction;
+    _:autos10071 a owl:Restriction;
                  owl:allValuesFrom :BINARY_List_List;
                  owl:onProperty list:hasNext.
-    _:autos10326 a owl:Restriction;
+    _:autos10072 a owl:Restriction;
                  owl:allValuesFrom :BINARY_List;
                  owl:onProperty list:hasContents.
-    _:autos10327 a owl:Restriction;
+    _:autos10073 a owl:Restriction;
                  owl:allValuesFrom :BINARY_List_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10328 a owl:Restriction;
+    _:autos10074 a owl:Restriction;
                  owl:allValuesFrom :REAL_List_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10329 a owl:Restriction;
+    _:autos10075 a owl:Restriction;
                  owl:allValuesFrom :REAL_List_List;
                  owl:onProperty list:hasNext.
-    _:autos10330 a owl:Restriction;
+    _:autos10076 a owl:Restriction;
                  owl:allValuesFrom :REAL_List;
                  owl:onProperty list:hasContents.
-    _:autos10331 a owl:Restriction;
+    _:autos10077 a owl:Restriction;
                  owl:allValuesFrom xsd:double;
                  owl:onProperty :hasDouble.
-    _:autos10332 a owl:Restriction;
+    _:autos10078 a owl:Restriction;
                  owl:allValuesFrom :BOOLEAN_List_List;
                  owl:onProperty list:hasNext.
-    _:autos10333 a owl:Restriction;
+    _:autos10079 a owl:Restriction;
                  owl:allValuesFrom :BOOLEAN_List;
                  owl:onProperty list:hasContents.
-    _:autos10334 a owl:Restriction;
+    _:autos10080 a owl:Restriction;
                  owl:allValuesFrom :BOOLEAN_List_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10335 a owl:Class;
-                 owl:unionOf _:autos10336.
-    _:autos10336 rdf:first :BINARY;
+    _:autos10081 a owl:Class;
+                 owl:unionOf _:autos10082.
+    _:autos10082 rdf:first :BINARY;
                  rdf:rest rdf:nil.
-    _:autos10337 a owl:Restriction;
+    _:autos10083 a owl:Restriction;
                  owl:allValuesFrom :LOGICAL_List;
                  owl:onProperty list:hasNext.
-    _:autos10338 a owl:Restriction;
+    _:autos10084 a owl:Restriction;
                  owl:allValuesFrom :LOGICAL;
                  owl:onProperty list:hasContents.
-    _:autos10339 a owl:Restriction;
+    _:autos10085 a owl:Restriction;
                  owl:allValuesFrom :LOGICAL_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10340 a owl:Restriction;
+    _:autos10086 a owl:Restriction;
                  owl:allValuesFrom :STRING_List;
                  owl:onProperty list:hasNext.
-    _:autos10341 a owl:Restriction;
+    _:autos10087 a owl:Restriction;
                  owl:allValuesFrom :STRING;
                  owl:onProperty list:hasContents.
-    _:autos10342 a owl:Restriction;
+    _:autos10088 a owl:Restriction;
                  owl:allValuesFrom :STRING_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10343 a owl:Restriction;
+    _:autos10089 a owl:Restriction;
                  owl:allValuesFrom :NUMBER_List_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10344 a owl:Restriction;
+    _:autos10090 a owl:Restriction;
                  owl:allValuesFrom :NUMBER_List_List;
                  owl:onProperty list:hasNext.
-    _:autos10345 a owl:Restriction;
+    _:autos10091 a owl:Restriction;
                  owl:allValuesFrom :NUMBER_List;
                  owl:onProperty list:hasContents.
-    _:autos10346 a owl:Class;
-                 owl:unionOf _:autos10347.
-    _:autos10347 rdf:first :STRING;
+    _:autos10092 a owl:Class;
+                 owl:unionOf _:autos10093.
+    _:autos10093 rdf:first :STRING;
                  rdf:rest rdf:nil.
-    _:autos10348 a owl:Restriction;
+    _:autos10094 a owl:Restriction;
                  owl:allValuesFrom :LogicalEnum;
                  owl:onProperty :hasLogical.
-    _:autos10349 a owl:Class;
-                 owl:unionOf _:autos10350.
-    _:autos10350 rdf:first :NUMBER;
-                 rdf:rest _:autos10351.
-    _:autos10351 rdf:first :REAL;
+    _:autos10095 a owl:Class;
+                 owl:unionOf _:autos10096.
+    _:autos10096 rdf:first :NUMBER;
+                 rdf:rest _:autos10097.
+    _:autos10097 rdf:first :REAL;
                  rdf:rest rdf:nil.
-    _:autos10352 a owl:Class;
-                 owl:unionOf _:autos10353.
-    _:autos10353 rdf:first :INTEGER;
+    _:autos10098 a owl:Class;
+                 owl:unionOf _:autos10099.
+    _:autos10099 rdf:first :INTEGER;
                  rdf:rest rdf:nil.
-    _:autos10354 a owl:Restriction;
+    _:autos10100 a owl:Restriction;
                  owl:allValuesFrom xsd:integer;
                  owl:onProperty :hasInteger.
-    _:autos10355 a owl:Restriction;
+    _:autos10101 a owl:Restriction;
                  owl:allValuesFrom xsd:string;
                  owl:onProperty :hasString.
-    _:autos10356 a owl:Restriction;
+    _:autos10102 a owl:Restriction;
                  owl:allValuesFrom :INTEGER;
                  owl:onProperty list:hasContents.
-    _:autos10357 a owl:Restriction;
+    _:autos10103 a owl:Restriction;
                  owl:allValuesFrom :INTEGER_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10358 a owl:Restriction;
+    _:autos10104 a owl:Restriction;
                  owl:allValuesFrom :INTEGER_List;
                  owl:onProperty list:hasNext.
-    _:autos10359 a owl:Restriction;
+    _:autos10105 a owl:Restriction;
                  owl:allValuesFrom :STRING_List_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10360 a owl:Restriction;
+    _:autos10106 a owl:Restriction;
                  owl:allValuesFrom :STRING_List_List;
                  owl:onProperty list:hasNext.
-    _:autos10361 a owl:Restriction;
+    _:autos10107 a owl:Restriction;
                  owl:allValuesFrom :STRING_List;
                  owl:onProperty list:hasContents.
-    _:autos10362 a owl:Restriction;
+    _:autos10108 a owl:Restriction;
                  owl:allValuesFrom :BOOLEAN_List;
                  owl:onProperty list:hasNext.
-    _:autos10363 a owl:Restriction;
+    _:autos10109 a owl:Restriction;
                  owl:allValuesFrom :BOOLEAN_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10364 a owl:Restriction;
+    _:autos10110 a owl:Restriction;
                  owl:allValuesFrom :BOOLEAN;
                  owl:onProperty list:hasContents.
-    _:autos10365 a owl:Restriction;
+    _:autos10111 a owl:Restriction;
                  owl:allValuesFrom :REAL;
                  owl:onProperty list:hasContents.
-    _:autos10366 a owl:Restriction;
+    _:autos10112 a owl:Restriction;
                  owl:allValuesFrom :REAL_List;
                  owl:onProperty list:hasNext.
-    _:autos10367 a owl:Restriction;
+    _:autos10113 a owl:Restriction;
                  owl:allValuesFrom :REAL_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10368 a owl:Restriction;
+    _:autos10114 a owl:Restriction;
                  owl:allValuesFrom :LOGICAL_List;
                  owl:onProperty list:hasContents.
-    _:autos10369 a owl:Restriction;
+    _:autos10115 a owl:Restriction;
                  owl:allValuesFrom :LOGICAL_List_List;
                  owl:onProperty list:hasNext.
-    _:autos10370 a owl:Restriction;
+    _:autos10116 a owl:Restriction;
                  owl:allValuesFrom :LOGICAL_List_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10371 a owl:Restriction;
+    _:autos10117 a owl:Restriction;
                  owl:allValuesFrom xsd:double;
                  owl:onProperty :hasDouble.
-    _:autos10372 a owl:Restriction;
+    _:autos10118 a owl:Restriction;
                  owl:allValuesFrom :BINARY;
                  owl:onProperty list:hasContents.
-    _:autos10373 a owl:Restriction;
+    _:autos10119 a owl:Restriction;
                  owl:allValuesFrom :BINARY_List;
                  owl:onProperty list:isFollowedBy.
-    _:autos10374 a owl:Restriction;
+    _:autos10120 a owl:Restriction;
                  owl:allValuesFrom :BINARY_List;
                  owl:onProperty list:hasNext.
-    _:autos10375 a owl:Class;
-                 owl:unionOf _:autos10376.
-    _:autos10376 rdf:first :BOOLEAN;
+    _:autos10121 a owl:Class;
+                 owl:unionOf _:autos10122.
+    _:autos10122 rdf:first :BOOLEAN;
                  rdf:rest rdf:nil.
     dce:contributor a owl:AnnotationProperty.
     dce:creator a owl:AnnotationProperty.
@@ -201,137 +201,137 @@
 """;
                                owl:imports <https://w3id.org/list>.
     :BINARY a owl:Class;
-            rdfs:subClassOf _:autos10320.
+            rdfs:subClassOf _:autos10066.
     :BINARY_EmptyList a owl:Class;
                       rdfs:subClassOf :BINARY_List,
                                       list:EmptyList.
     :BINARY_List a owl:Class;
-                 rdfs:subClassOf _:autos10372,
-                                 _:autos10373,
-                                 _:autos10374,
+                 rdfs:subClassOf _:autos10118,
+                                 _:autos10119,
+                                 _:autos10120,
                                  list:OWLList.
     :BINARY_List_EmptyList a owl:Class;
                            rdfs:subClassOf :BINARY_List_List,
                                            list:EmptyList.
     :BINARY_List_List a owl:Class;
-                      rdfs:subClassOf _:autos10325,
-                                      _:autos10326,
-                                      _:autos10327,
+                      rdfs:subClassOf _:autos10071,
+                                      _:autos10072,
+                                      _:autos10073,
                                       list:OWLList.
     :BOOLEAN a owl:Class;
-             rdfs:subClassOf _:autos10321.
+             rdfs:subClassOf _:autos10067.
     :BOOLEAN_EmptyList a owl:Class;
                        rdfs:subClassOf :BOOLEAN_List,
                                        list:EmptyList.
     :BOOLEAN_List a owl:Class;
-                  rdfs:subClassOf _:autos10362,
-                                  _:autos10363,
-                                  _:autos10364,
+                  rdfs:subClassOf _:autos10108,
+                                  _:autos10109,
+                                  _:autos10110,
                                   list:OWLList.
     :BOOLEAN_List_EmptyList a owl:Class;
                             rdfs:subClassOf :BOOLEAN_List_List,
                                             list:EmptyList.
     :BOOLEAN_List_List a owl:Class;
-                       rdfs:subClassOf _:autos10332,
-                                       _:autos10333,
-                                       _:autos10334,
+                       rdfs:subClassOf _:autos10078,
+                                       _:autos10079,
+                                       _:autos10080,
                                        list:OWLList.
     :ENUMERATION a owl:Class.
     :FALSE a owl:NamedIndividual,
              :LogicalEnum;
            rdfs:label "FALSE".
     :INTEGER a owl:Class;
-             rdfs:subClassOf _:autos10354.
+             rdfs:subClassOf _:autos10100.
     :INTEGER_EmptyList a owl:Class;
                        rdfs:subClassOf :INTEGER_List,
                                        list:EmptyList.
     :INTEGER_List a owl:Class;
-                  rdfs:subClassOf _:autos10356,
-                                  _:autos10357,
-                                  _:autos10358,
+                  rdfs:subClassOf _:autos10102,
+                                  _:autos10103,
+                                  _:autos10104,
                                   list:OWLList.
     :INTEGER_List_EmptyList a owl:Class;
                             rdfs:subClassOf :INTEGER_List_List,
                                             list:EmptyList.
     :INTEGER_List_List a owl:Class;
-                       rdfs:subClassOf _:autos10317,
-                                       _:autos10318,
-                                       _:autos10319,
+                       rdfs:subClassOf _:autos10063,
+                                       _:autos10064,
+                                       _:autos10065,
                                        list:OWLList.
     :LOGICAL a owl:Class;
-             rdfs:subClassOf _:autos10348.
+             rdfs:subClassOf _:autos10094.
     :LOGICAL_EmptyList a owl:Class;
                        rdfs:subClassOf :LOGICAL_List,
                                        list:EmptyList.
     :LOGICAL_List a owl:Class;
-                  rdfs:subClassOf _:autos10337,
-                                  _:autos10338,
-                                  _:autos10339,
+                  rdfs:subClassOf _:autos10083,
+                                  _:autos10084,
+                                  _:autos10085,
                                   list:OWLList.
     :LOGICAL_List_EmptyList a owl:Class;
                             rdfs:subClassOf :LOGICAL_List_List,
                                             list:EmptyList.
     :LOGICAL_List_List a owl:Class;
-                       rdfs:subClassOf _:autos10368,
-                                       _:autos10369,
-                                       _:autos10370,
+                       rdfs:subClassOf _:autos10114,
+                                       _:autos10115,
+                                       _:autos10116,
                                        list:OWLList.
     :LogicalEnum a owl:Class;
                  rdfs:subClassOf :ENUMERATION.
     :NUMBER a owl:Class;
-            rdfs:subClassOf _:autos10331.
+            rdfs:subClassOf _:autos10077.
     :NUMBER_EmptyList a owl:Class;
                       rdfs:subClassOf :NUMBER_List,
                                       list:EmptyList.
     :NUMBER_List a owl:Class;
-                 rdfs:subClassOf _:autos10322,
-                                 _:autos10323,
-                                 _:autos10324,
+                 rdfs:subClassOf _:autos10068,
+                                 _:autos10069,
+                                 _:autos10070,
                                  list:OWLList.
     :NUMBER_List_EmptyList a owl:Class;
                            rdfs:subClassOf :NUMBER_List_List,
                                            list:EmptyList.
     :NUMBER_List_List a owl:Class;
-                      rdfs:subClassOf _:autos10343,
-                                      _:autos10344,
-                                      _:autos10345,
+                      rdfs:subClassOf _:autos10089,
+                                      _:autos10090,
+                                      _:autos10091,
                                       list:OWLList.
     :REAL a owl:Class;
-          rdfs:subClassOf _:autos10371.
+          rdfs:subClassOf _:autos10117.
     :REAL_EmptyList a owl:Class;
                     rdfs:subClassOf :REAL_List,
                                     list:EmptyList.
     :REAL_List a owl:Class;
-               rdfs:subClassOf _:autos10365,
-                               _:autos10366,
-                               _:autos10367,
+               rdfs:subClassOf _:autos10111,
+                               _:autos10112,
+                               _:autos10113,
                                list:OWLList.
     :REAL_List_EmptyList a owl:Class;
                          rdfs:subClassOf :REAL_List_List,
                                          list:EmptyList.
     :REAL_List_List a owl:Class;
-                    rdfs:subClassOf _:autos10328,
-                                    _:autos10329,
-                                    _:autos10330,
+                    rdfs:subClassOf _:autos10074,
+                                    _:autos10075,
+                                    _:autos10076,
                                     list:OWLList.
     :SELECT a owl:Class.
     :STRING a owl:Class;
-            rdfs:subClassOf _:autos10355.
+            rdfs:subClassOf _:autos10101.
     :STRING_EmptyList a owl:Class;
                       rdfs:subClassOf :STRING_List,
                                       list:EmptyList.
     :STRING_List a owl:Class;
-                 rdfs:subClassOf _:autos10340,
-                                 _:autos10341,
-                                 _:autos10342,
+                 rdfs:subClassOf _:autos10086,
+                                 _:autos10087,
+                                 _:autos10088,
                                  list:OWLList.
     :STRING_List_EmptyList a owl:Class;
                            rdfs:subClassOf :STRING_List_List,
                                            list:EmptyList.
     :STRING_List_List a owl:Class;
-                      rdfs:subClassOf _:autos10359,
-                                      _:autos10360,
-                                      _:autos10361,
+                      rdfs:subClassOf _:autos10105,
+                                      _:autos10106,
+                                      _:autos10107,
                                       list:OWLList.
     :TRUE a owl:NamedIndividual,
             :LogicalEnum;
@@ -341,22 +341,22 @@
              rdfs:label "UNKNOWN".
     :hasBoolean a owl:DatatypeProperty,
                   owl:FunctionalProperty;
-                rdfs:domain _:autos10375;
+                rdfs:domain _:autos10121;
                 rdfs:label "hasBoolean";
                 rdfs:range xsd:boolean.
     :hasDouble a owl:DatatypeProperty,
                  owl:FunctionalProperty;
-               rdfs:domain _:autos10349;
+               rdfs:domain _:autos10095;
                rdfs:label "hasDouble";
                rdfs:range xsd:double.
     :hasHexBinary a owl:DatatypeProperty,
                     owl:FunctionalProperty;
-                  rdfs:domain _:autos10335;
+                  rdfs:domain _:autos10081;
                   rdfs:label "hasHexBinary";
                   rdfs:range xsd:hexBinary.
     :hasInteger a owl:DatatypeProperty,
                   owl:FunctionalProperty;
-                rdfs:domain _:autos10352;
+                rdfs:domain _:autos10098;
                 rdfs:label "hasInteger";
                 rdfs:range xsd:integer.
     :hasLogical a owl:FunctionalProperty,
@@ -368,7 +368,7 @@
             rdfs:label "hasSet".
     :hasString a owl:DatatypeProperty,
                  owl:FunctionalProperty;
-               rdfs:domain _:autos10346;
+               rdfs:domain _:autos10092;
                rdfs:label "hasString";
                rdfs:range xsd:string.
 }

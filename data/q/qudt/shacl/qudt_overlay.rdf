@@ -18,15 +18,15 @@
     <rdfs:label rdf:datatype="&xsd;string">QUDT SHACL Schema Supplement Version 2.1.47</rdfs:label>
     <owl:imports rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
     <owl:imports rdf:resource="&sh;" />
-    <sh:declare rdf:nodeID="autos11815" />
-    <sh:declare rdf:nodeID="autos11816" />
-    <sh:declare rdf:nodeID="autos11817" />
-    <sh:declare rdf:nodeID="autos11818" />
-    <sh:declare rdf:nodeID="autos11819" />
-    <sh:declare rdf:nodeID="autos11820" />
-    <sh:declare rdf:nodeID="autos11821" />
-    <sh:declare rdf:nodeID="autos11822" />
-    <sh:declare rdf:nodeID="autos11823" />
+    <sh:declare rdf:nodeID="autos11867" />
+    <sh:declare rdf:nodeID="autos11868" />
+    <sh:declare rdf:nodeID="autos11869" />
+    <sh:declare rdf:nodeID="autos11870" />
+    <sh:declare rdf:nodeID="autos11871" />
+    <sh:declare rdf:nodeID="autos11872" />
+    <sh:declare rdf:nodeID="autos11873" />
+    <sh:declare rdf:nodeID="autos11874" />
+    <sh:declare rdf:nodeID="autos11875" />
   </owl:Ontology>
   <sh:PropertyShape rdf:about="&qudt;AbstractQuantityKind-qudt_latexSymbol">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
@@ -176,13 +176,13 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
     <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
     <sh:or rdf:parseType="Resource">
-      <rdf:first rdf:nodeID="autos11825" />
+      <rdf:first rdf:nodeID="autos11877" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos11827" />
+        <rdf:first rdf:nodeID="autos11879" />
         <rdf:rest rdf:parseType="Resource">
-          <rdf:first rdf:nodeID="autos11829" />
+          <rdf:first rdf:nodeID="autos11881" />
           <rdf:rest rdf:parseType="Resource">
-            <rdf:first rdf:nodeID="autos11831" />
+            <rdf:first rdf:nodeID="autos11883" />
             <rdf:rest rdf:resource="&rdf;nil" />
           </rdf:rest>
         </rdf:rest>
@@ -510,52 +510,52 @@ THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDE
     <rdfs:label rdf:datatype="&xsd;string">QUDT SHACL Schema Overlay Metadata Version 2.1.47</rdfs:label>
     <owl:versionIRI rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
   </vaem:GraphMetaData>
-  <sh:PrefixDeclaration rdf:nodeID="autos11815">
+  <sh:PrefixDeclaration rdf:nodeID="autos11867">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://purl.org/dc/terms/</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">dcterms</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11816">
+  <sh:PrefixDeclaration rdf:nodeID="autos11868">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/schema/qudt/</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">qudt</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11817">
+  <sh:PrefixDeclaration rdf:nodeID="autos11869">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/vocab/dimensionvector/</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">qkdv</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11818">
+  <sh:PrefixDeclaration rdf:nodeID="autos11870">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/vocab/quantitykind/</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">quantitykind</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11819">
+  <sh:PrefixDeclaration rdf:nodeID="autos11871">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/vocab/unit/</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">unit</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11820">
+  <sh:PrefixDeclaration rdf:nodeID="autos11872">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/1999/02/22-rdf-syntax-ns#</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">rdf</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11821">
+  <sh:PrefixDeclaration rdf:nodeID="autos11873">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/2000/01/rdf-schema#</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">rdfs</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11822">
+  <sh:PrefixDeclaration rdf:nodeID="autos11874">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/2002/07/owl#</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">owl</sh:prefix>
   </sh:PrefixDeclaration>
-  <sh:PrefixDeclaration rdf:nodeID="autos11823">
+  <sh:PrefixDeclaration rdf:nodeID="autos11875">
     <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core#</sh:namespace>
     <sh:prefix rdf:datatype="&xsd;string">skos</sh:prefix>
   </sh:PrefixDeclaration>
-  <rdf:Description rdf:nodeID="autos11825">
+  <rdf:Description rdf:nodeID="autos11877">
     <sh:datatype rdf:resource="&xsd;float" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11827">
+  <rdf:Description rdf:nodeID="autos11879">
     <sh:datatype rdf:resource="&xsd;double" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11829">
+  <rdf:Description rdf:nodeID="autos11881">
     <sh:datatype rdf:resource="&xsd;integer" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11831">
+  <rdf:Description rdf:nodeID="autos11883">
     <sh:datatype rdf:resource="&xsd;decimal" />
   </rdf:Description>
 </rdf:RDF>

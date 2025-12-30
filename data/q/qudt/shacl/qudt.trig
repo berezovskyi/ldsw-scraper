@@ -12,69 +12,69 @@
 @prefix voag: <http://voag.linkedmodel.org/schema/voag#>.
 
 {
-    _:autos11621 rdf:first _:autos11622;
-                 rdf:rest _:autos11623.
-    _:autos11622 sh:datatype xsd:anyURI.
-    _:autos11623 rdf:first _:autos11624;
+    _:autos11740 rdf:first _:autos11741;
+                 rdf:rest _:autos11742.
+    _:autos11741 sh:datatype xsd:anyURI.
+    _:autos11742 rdf:first _:autos11743;
                  rdf:rest rdf:nil.
-    _:autos11624 sh:class qudt:Citation.
-    _:autos11625 sh:or qudt:NumericTypeUnion;
+    _:autos11743 sh:class qudt:Citation.
+    _:autos11744 sh:or qudt:NumericTypeUnion;
                  sh:path rdf:first.
-    _:autos11626 sh:or _:autos11627;
+    _:autos11745 sh:or _:autos11746;
                  sh:path rdf:rest.
-    _:autos11627 rdf:first _:autos11628;
-                 rdf:rest _:autos11629.
-    _:autos11628 sh:node rdf:nil.
-    _:autos11629 rdf:first _:autos11630;
+    _:autos11746 rdf:first _:autos11747;
+                 rdf:rest _:autos11748.
+    _:autos11747 sh:node rdf:nil.
+    _:autos11748 rdf:first _:autos11749;
                  rdf:rest rdf:nil.
-    _:autos11630 sh:node qudt:NumericListShape.
-    _:autos11631 sh:datatype xsd:string.
-    _:autos11632 rdf:first _:autos11633;
-                 rdf:rest _:autos11634.
-    _:autos11633 sh:datatype xsd:nonNegativeInteger.
-    _:autos11634 rdf:first _:autos11635;
-                 rdf:rest _:autos11636.
-    _:autos11635 sh:datatype xsd:positiveInteger.
-    _:autos11636 rdf:first _:autos11637;
-                 rdf:rest _:autos11638.
-    _:autos11637 sh:datatype xsd:integer.
-    _:autos11638 rdf:first _:autos11639;
-                 rdf:rest _:autos11640.
-    _:autos11639 sh:datatype xsd:int.
-    _:autos11640 rdf:first _:autos11641;
-                 rdf:rest _:autos11642.
-    _:autos11641 sh:datatype xsd:float.
-    _:autos11642 rdf:first _:autos11643;
-                 rdf:rest _:autos11644.
-    _:autos11643 sh:datatype xsd:double.
-    _:autos11644 rdf:first _:autos11645;
+    _:autos11749 sh:node qudt:NumericListShape.
+    _:autos11750 sh:datatype xsd:string.
+    _:autos11751 rdf:first _:autos11752;
+                 rdf:rest _:autos11753.
+    _:autos11752 sh:datatype xsd:nonNegativeInteger.
+    _:autos11753 rdf:first _:autos11754;
+                 rdf:rest _:autos11755.
+    _:autos11754 sh:datatype xsd:positiveInteger.
+    _:autos11755 rdf:first _:autos11756;
+                 rdf:rest _:autos11757.
+    _:autos11756 sh:datatype xsd:integer.
+    _:autos11757 rdf:first _:autos11758;
+                 rdf:rest _:autos11759.
+    _:autos11758 sh:datatype xsd:int.
+    _:autos11759 rdf:first _:autos11760;
+                 rdf:rest _:autos11761.
+    _:autos11760 sh:datatype xsd:float.
+    _:autos11761 rdf:first _:autos11762;
+                 rdf:rest _:autos11763.
+    _:autos11762 sh:datatype xsd:double.
+    _:autos11763 rdf:first _:autos11764;
                  rdf:rest rdf:nil.
-    _:autos11645 sh:datatype xsd:decimal.
-    _:autos11646 rdf:first _:autos11647;
-                 rdf:rest _:autos11648.
-    _:autos11647 sh:class qudt:Datatype.
-    _:autos11648 rdf:first _:autos11649;
+    _:autos11764 sh:datatype xsd:decimal.
+    _:autos11765 rdf:first _:autos11766;
+                 rdf:rest _:autos11767.
+    _:autos11766 sh:class qudt:Datatype.
+    _:autos11767 rdf:first _:autos11768;
                  rdf:rest rdf:nil.
-    _:autos11649 sh:class qudt:EnumeratedValue.
-    _:autos11650 rdf:first _:autos11651;
-                 rdf:rest _:autos11652.
-    _:autos11651 sh:or qudt:NumericTypeUnion.
-    _:autos11652 rdf:first _:autos11653;
-                 rdf:rest _:autos11655.
-    _:autos11653 sh:property _:autos11654.
-    _:autos11654 sh:class qudt:DataItem;
+    _:autos11768 sh:class qudt:EnumeratedValue.
+    _:autos11769 rdf:first _:autos11770;
+                 rdf:rest _:autos11771.
+    _:autos11770 sh:or qudt:NumericTypeUnion.
+    _:autos11771 rdf:first _:autos11772;
+                 rdf:rest _:autos11774.
+    _:autos11772 sh:property _:autos11773.
+    _:autos11773 sh:class qudt:DataItem;
                  sh:path qudt:value.
-    _:autos11655 rdf:first _:autos11656;
+    _:autos11774 rdf:first _:autos11775;
                  rdf:rest rdf:nil.
-    _:autos11656 sh:property _:autos11657.
-    _:autos11657 sh:class qudt:EnumeratedValue;
+    _:autos11775 sh:property _:autos11776.
+    _:autos11776 sh:class qudt:EnumeratedValue;
                  sh:path qudt:value.
-    _:autos11658 rdf:first _:autos11659;
-                 rdf:rest _:autos11660.
-    _:autos11659 sh:class qudt:QuantityValue.
-    _:autos11660 rdf:first _:autos11661;
+    _:autos11777 rdf:first _:autos11778;
+                 rdf:rest _:autos11779.
+    _:autos11778 sh:class qudt:QuantityValue.
+    _:autos11779 rdf:first _:autos11780;
                  rdf:rest rdf:nil.
-    _:autos11661 sh:or qudt:NumericTypeUnion.
+    _:autos11780 sh:or qudt:NumericTypeUnion.
     dcterms:abstract a rdf:Property;
                      rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
                      rdfs:label "abstract".
@@ -535,7 +535,7 @@
                       sh:path qudt:width.
     qudt:InformativeReferencePropertyShape a sh:PropertyShape;
                                            rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
-                                           sh:or _:autos11621;
+                                           sh:or _:autos11740;
                                            sh:path qudt:informativeReference.
     qudt:IntervalScale dcterms:description """
   <p>The interval type allows for the degree of difference between items, but not the ratio between them. 
@@ -605,14 +605,14 @@
                             sh:NodeShape;
                           rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
                           rdfs:subClassOf rdf:List;
-                          sh:property _:autos11625,
-                                      _:autos11626.
+                          sh:property _:autos11744,
+                                      _:autos11745.
     qudt:NumericTypeUnion dcterms:description """
   An rdf:List that can be used in property constraints as value for sh:or to indicate that all values
    of a property must be a string, an integer, a float, a double or a decimal.
   """;
-                          rdf:first _:autos11631;
-                          rdf:rest _:autos11632;
+                          rdf:first _:autos11750;
+                          rdf:rest _:autos11751;
                           a rdf:List;
                           rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
                           rdfs:label "Numeric Type Union".
@@ -815,7 +815,7 @@
     qudt:Quantifiable-datatype a sh:PropertyShape;
                                rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
                                sh:maxCount 1 ;
-                               sh:or _:autos11646;
+                               sh:or _:autos11765;
                                sh:path qudt:datatype.
     qudt:Quantifiable-hasUnit a sh:PropertyShape;
                               rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
@@ -845,7 +845,7 @@
     qudt:Quantifiable-value a sh:PropertyShape;
                             rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
                             sh:maxCount 1 ;
-                            sh:node _:autos11650;
+                            sh:node _:autos11769;
                             sh:path qudt:value.
     qudt:Quantifiable-valueSN a sh:PropertyShape;
                               rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
@@ -1246,7 +1246,7 @@ as \"fundamental\" in this sense.</p>
     qudt:ScalarDataItem-value a sh:PropertyShape;
                               rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qydt>;
                               sh:maxCount 1 ;
-                              sh:or _:autos11658;
+                              sh:or _:autos11777;
                               sh:path qudt:value.
     qudt:ScalarDatatype dcterms:description """
   Scalar data types are those that have a single value. 
