@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix trs: <http://open-services.net/ns/core/trs#>.
+@prefix trspatch: <http://open-services.net/ns/core/trspatch#>.
+
+{
+    trs: dcterms:dateCopyrighted "2012-2023";
+         dcterms:description "The OSLC Core Tracked Resource Set vocabulary defines terms used in describing Tracked Resource Sets.";
+         dcterms:hasVersion "OS";
+         dcterms:isPartOf <https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/os/tracked-resource-set.html>;
+         dcterms:issued "2023-07-23"^^xsd:date;
+         dcterms:license <http://www.apache.org/licenses/LICENSE-2.0>;
+         dcterms:source <https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/os/trs-vocab.ttl>;
+         dcterms:title "OSLC Core Tracked Resource Set vocabulary";
+         vann:preferredNamespacePrefix "trs";
+         a owl:Ontology;
+         rdfs:label "OSLC Core Tracked Resource Set vocabulary".
+    trs:Base a rdfs:Class;
+             rdfs:comment "A Base identifies the initial set of resources in a Tracked Resource Set.";
+             rdfs:isDefinedBy trs:;
+             rdfs:label "Base";
+             rdfs:subClassOf ldp:DirectContainer.
+    trs:ChangeLog a rdfs:Class;
+                  rdfs:comment "A Change Log describes what resources have been created, modified or deleted, and when.";
+                  rdfs:isDefinedBy trs:;
+                  rdfs:label "Change Log".
+    trs:Creation a rdfs:Class;
+                 rdfs:comment "Represents a resource creation or modification change event.";
+                 rdfs:isDefinedBy trs:;
+                 rdfs:label "Creation".
+    trs:Deletion a rdfs:Class;
+                 rdfs:comment "Represents a resource deletion change event.";
+                 rdfs:isDefinedBy trs:;
+                 rdfs:label "Deletion".
+    trs:Modification a rdfs:Class;
+                     rdfs:comment "Represents a resource creation or modification change event.";
+                     rdfs:isDefinedBy trs:;
+                     rdfs:label "Modification".
+    trs:TrackedResourceSet a rdfs:Class;
+                           rdfs:comment "A Tracked Resource Set provides a representation of the current state of a Resource Set.";
+                           rdfs:isDefinedBy trs:;
+                           rdfs:label "Tracked Resource Set".
+    trs:base a rdf:Property;
+             rdfs:comment "An enumeration of the Resources in the Resource Set.";
+             rdfs:isDefinedBy trs:;
+             rdfs:label "base";
+             rdfs:range trs:Base.
+    trs:change a rdf:Property;
+               rdfs:comment "The Change Event entries.";
+               rdfs:isDefinedBy trs:;
+               rdfs:label "change".
+    trs:changeLog a rdf:Property;
+                  rdfs:comment "A Change Log providing an order series of incremental adjustments to the Resource Set.";
+                  rdfs:isDefinedBy trs:;
+                  rdfs:label "changeLog";
+                  rdfs:range trs:ChangeLog.
+    trs:changed a rdf:Property;
+                rdfs:comment "The Resource that has changed.";
+                rdfs:isDefinedBy trs:;
+                rdfs:label "changed".
+    trs:cutoffEvent a rdf:Property;
+                    rdfs:comment "The most recent Change Log entry that is accounted for in this Base. When rdf:nil, the Base is an enumeration at the start of time.";
+                    rdfs:isDefinedBy trs:;
+                    rdfs:label "cutoffEvent".
+    trs:order a rdf:Property;
+              rdfs:comment "The sequence in time of the Change Event.";
+              rdfs:isDefinedBy trs:;
+              rdfs:label "order".
+    trs:previous a rdf:Property;
+                 rdfs:comment "The continuation of the Change Log, containing the next group of chronologically earlier Change Events.";
+                 rdfs:isDefinedBy trs:;
+                 rdfs:label "previous";
+                 rdfs:range trs:ChangeLog.
+    trs:trackedResourceSet a rdf:Property;
+                           rdfs:comment "A Tracked Resource Set.";
+                           rdfs:isDefinedBy trs:;
+                           rdfs:label "trackedResourceSet";
+                           rdfs:range trs:TrackedResourceSet.
+    trspatch:afterETag a rdf:Property;
+                       rdfs:comment "HTTP entity tag of resource immediately after this change.";
+                       rdfs:isDefinedBy trs:;
+                       rdfs:label "afterETag".
+    trspatch:beforeETag a rdf:Property;
+                        rdfs:comment "HTTP entity tag of resource immediately before this change.";
+                        rdfs:isDefinedBy trs:;
+                        rdfs:label "beforeETag".
+    trspatch:createdFrom a rdf:Property;
+                         rdfs:comment "URI of antecedent resource for trs:Creation Change Events.";
+                         rdfs:isDefinedBy trs:;
+                         rdfs:label "createdFrom".
+    trspatch:rdfPatch a rdf:Property;
+                      rdfs:comment "Patch directives describing a modification to the resource's RDF representation.";
+                      rdfs:isDefinedBy trs:;
+                      rdfs:label "rdfPatch".
+}
+

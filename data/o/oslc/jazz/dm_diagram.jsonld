@@ -1,0 +1,70 @@
+[
+  {
+    "@id": "http://jazz.net/ns/dm/diagram#Diagram",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Resources of this type are able to be rendered as an image."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/diagram#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Diagram"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/diagram#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2012"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Defines the vocabulary for diagram like elements."
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "DM Diagram Vocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/diagram#diagramElement",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies a resource that is shown in the rendered image."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/diagram#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Diagram Element"
+      }
+    ]
+  }
+]

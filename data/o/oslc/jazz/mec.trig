@@ -1,0 +1,279 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix jazz_mec: <http://jazz.net/ns/mec#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+
+{
+    jazz_mec: dcterms:dateCopyrighted "2019";
+              dcterms:description "Defines the Engineering Method Composer Vocabulary."^^rdf:XMLLiteral;
+              dcterms:license <http://jazz.net/ns/license.html>;
+              dcterms:source <https://jazz.net/wiki/pub/LinkedData/EngineeringMethodComposerVocabulary/mec-vocabulary.ttl>;
+              dcterms:title "The Engineering Method Composer Vocabulary";
+              a owl:Ontology;
+              rdfs:label "The Engineering Method Composer Vocabulary"@en-us;
+              rdfs:seeAlso <http://jazz.net/ns/rm#>,
+                           <https://www.omg.org/spec/SPEM/2.0/PDF>.
+    jazz_mec:Alphabetic a jazz_mec:SortOrder;
+                        rdfs:comment "Elements are ordered alphabetically.";
+                        rdfs:isDefinedBy jazz_mec:;
+                        rdfs:label "Alphabetic"@en-us.
+    jazz_mec:AlphabeticGroupedByType a jazz_mec:SortOrder;
+                                     rdfs:comment "Elements are ordered by type and subtype, and then within each type, are ordered alphabetically.";
+                                     rdfs:isDefinedBy jazz_mec:;
+                                     rdfs:label "AlphabeticGroupedByType"@en-us.
+    jazz_mec:Artifact a jazz_mec:WorkProductType;
+                      rdfs:comment "An Artifact is a tangible work product, such as a document or model.";
+                      rdfs:isDefinedBy jazz_mec:;
+                      rdfs:label "Artifact"@en-us.
+    jazz_mec:Category a rdfs:Class;
+                      rdfs:comment "Category elements are used to group elements.  The default subtype, Custom, can group any kind of element.  Other subtypes of categories are used to group specific types of elements.  For example, domains are used to group work products.";
+                      rdfs:isDefinedBy jazz_mec:;
+                      rdfs:label "Category"@en-us.
+    jazz_mec:CategoryType a rdfs:Class;
+                          rdfs:comment "Defines an enumeration of subtypes for the Category artifact type.";
+                          rdfs:isDefinedBy jazz_mec:;
+                          rdfs:label "CategoryType"@en-us.
+    jazz_mec:Checklist a jazz_mec:GuidanceType;
+                       rdfs:comment "A Checklist is a type of guidance that lists a series of items to be completed or verified.";
+                       rdfs:isDefinedBy jazz_mec:;
+                       rdfs:label "Checklist"@en-us.
+    jazz_mec:Concept a jazz_mec:GuidanceType;
+                     rdfs:comment "A Concept is a type of guidance that outlines key ideas.";
+                     rdfs:isDefinedBy jazz_mec:;
+                     rdfs:label "Concept"@en-us.
+    jazz_mec:Custom a jazz_mec:CategoryType;
+                    rdfs:comment "Custom categories can group most types of elements.";
+                    rdfs:isDefinedBy jazz_mec:;
+                    rdfs:label "Custom"@en-us.
+    jazz_mec:Deliverable a jazz_mec:WorkProductType;
+                         rdfs:comment "A Deliverable is a work product that packages other work products, and may be delivered to an internal or external party.";
+                         rdfs:isDefinedBy jazz_mec:;
+                         rdfs:label "Deliverable"@en-us.
+    jazz_mec:Discipline a jazz_mec:CategoryType;
+                        rdfs:comment "Discipline categories can group tasks into subject areas.";
+                        rdfs:isDefinedBy jazz_mec:;
+                        rdfs:label "Discipline"@en-us.
+    jazz_mec:DisciplineGrouping a jazz_mec:CategoryType;
+                                rdfs:comment "Discipline Grouping categories can group Disciplines.";
+                                rdfs:isDefinedBy jazz_mec:;
+                                rdfs:label "DisciplineGrouping"@en-us.
+    jazz_mec:Domain a jazz_mec:CategoryType;
+                    rdfs:comment "Domain categories can group work products into subject areas.";
+                    rdfs:isDefinedBy jazz_mec:;
+                    rdfs:label "Domain"@en-us.
+    jazz_mec:EstimationConsideration a jazz_mec:GuidanceType;
+                                     rdfs:comment "An Estimation Consideration is a type of guidance that helps in defining a size, duration, effort, or cost estimate.";
+                                     rdfs:isDefinedBy jazz_mec:;
+                                     rdfs:label "EstimationConsideration"@en-us.
+    jazz_mec:Example a jazz_mec:GuidanceType;
+                     rdfs:comment "An Example is an instance of a work product.";
+                     rdfs:isDefinedBy jazz_mec:;
+                     rdfs:label "Example"@en-us.
+    jazz_mec:Guidance a rdfs:Class;
+                      rdfs:comment "Guidance elements provide supporting information.  Most of the guidance subtypes are just text, but a few have unique characteristics.  Specifically, checklists have their own artifact template because they can have check items.  Also some subtypes, specifically white papers, examples, templates, and reusable assets, can have a refers link to a resource element of type file.";
+                      rdfs:isDefinedBy jazz_mec:;
+                      rdfs:label "Guidance"@en-us.
+    jazz_mec:GuidanceType a rdfs:Class;
+                          rdfs:comment "Defines an enumeration of subtypes for the Guidance artifact type.";
+                          rdfs:isDefinedBy jazz_mec:;
+                          rdfs:label "GuidanceType"@en-us.
+    jazz_mec:Guideline a jazz_mec:GuidanceType;
+                       rdfs:comment "A Guideline is a type of guidance that provides additional detail on how to do something.";
+                       rdfs:isDefinedBy jazz_mec:;
+                       rdfs:label "Guideline"@en-us.
+    jazz_mec:Manual a jazz_mec:SortOrder;
+                    rdfs:comment "Elements are ordered in the sequence in which they have been added.";
+                    rdfs:isDefinedBy jazz_mec:;
+                    rdfs:label "Manual"@en-us.
+    jazz_mec:Outcome a jazz_mec:WorkProductType;
+                     rdfs:comment "An Outcome is an intangible work product, such as 'team has been trained'.";
+                     rdfs:isDefinedBy jazz_mec:;
+                     rdfs:label "Outcome"@en-us.
+    jazz_mec:Plugin a rdfs:Class;
+                    rdfs:comment "Top level folders are assumed to map to RMC plug-ins, with the plug-in name and presentation name both set to the folder name.  If an element of type plug-in is in the folder, then that can be specify a plugin name different than the presentation name, to specify a copyright for all elements in the plug-in, or to indicate if a plug-in is a supporting plug-in, which affects how elements are published.";
+                    rdfs:isDefinedBy jazz_mec:;
+                    rdfs:label "Plugin"@en-us.
+    jazz_mec:Practice a rdfs:Class;
+                      rdfs:comment "A practice is a collection of method elements.  A practice should be a cohesive chunk of methodology that can be adopted on its own.";
+                      rdfs:isDefinedBy jazz_mec:;
+                      rdfs:label "Practice"@en-us.
+    jazz_mec:Report a jazz_mec:GuidanceType;
+                    rdfs:comment "A Report is a type of guidance that describes the format and usage of a report that is output from a tool.";
+                    rdfs:isDefinedBy jazz_mec:;
+                    rdfs:label "Report"@en-us.
+    jazz_mec:Resource a rdfs:Class;
+                      rdfs:comment "A resource is a file attachment.  Typical resources are PDF files, word documents, slide presentations, videos, and so on. Only resources of artifact format 'file' can be imported into Method Composer, and they should have a refers link from a guidance element of type template, reusable asset, white paper, or example.";
+                      rdfs:isDefinedBy jazz_mec:;
+                      rdfs:label "Resource"@en-us.
+    jazz_mec:ReusableAsset a jazz_mec:GuidanceType;
+                           rdfs:comment "A Reusable Asset is a type of guidance that describes how to reuse a specific asset or set of assets.";
+                           rdfs:isDefinedBy jazz_mec:;
+                           rdfs:label "ReusableAsset"@en-us.
+    jazz_mec:ReverseAlphabetic a jazz_mec:SortOrder;
+                               rdfs:comment "Elements are ordered in reverse of alphabetic order.";
+                               rdfs:isDefinedBy jazz_mec:;
+                               rdfs:label "ReverseAlphabetic"@en-us.
+    jazz_mec:Roadmap a jazz_mec:GuidanceType;
+                     rdfs:comment "A Roadmap is a type of guidance that outlines how to perform a set of activities.";
+                     rdfs:isDefinedBy jazz_mec:;
+                     rdfs:label "Roadmap"@en-us.
+    jazz_mec:Role a rdfs:Class;
+                  rdfs:comment "A role defines a set of responsibilities that can be assigned to a person.";
+                  rdfs:isDefinedBy jazz_mec:;
+                  rdfs:label "Role"@en-us.
+    jazz_mec:RoleSet a jazz_mec:CategoryType;
+                     rdfs:comment "Role Set categories can group roles.";
+                     rdfs:isDefinedBy jazz_mec:;
+                     rdfs:label "RoleSet"@en-us.
+    jazz_mec:RoleSetGrouping a jazz_mec:CategoryType;
+                             rdfs:comment "Role Set Grouping categories can group Role Sets.";
+                             rdfs:isDefinedBy jazz_mec:;
+                             rdfs:label "RoleSetGrouping"@en-us.
+    jazz_mec:SortOrder a rdfs:Class;
+                       rdfs:comment "When decomposition links are displayed on the parent, this attribute controls the order in which they are displayed.  By default, the order of display is the order in which the links were added (manual order).   You can specify alphabetic, and reverse alphabetic order.  You can also specify alphabetic-grouped-by-type.";
+                       rdfs:isDefinedBy jazz_mec:;
+                       rdfs:label "SortOrder"@en-us.
+    jazz_mec:SupportingMaterial a jazz_mec:GuidanceType;
+                                rdfs:comment "A Supporting Material is a type of guidance that is a catch-all for other types of guidance not specifically defined elsewhere.";
+                                rdfs:isDefinedBy jazz_mec:;
+                                rdfs:label "SupportingMaterial"@en-us.
+    jazz_mec:Task a rdfs:Class;
+                  rdfs:comment "A task describes work that one or more roles perform.  Tasks typically become work items in a plan.";
+                  rdfs:isDefinedBy jazz_mec:;
+                  rdfs:label "Task"@en-us.
+    jazz_mec:Template a jazz_mec:GuidanceType;
+                      rdfs:comment "A Template is a type of guidance that provides a standardized format for a work product and describes how sections are to be completed.";
+                      rdfs:isDefinedBy jazz_mec:;
+                      rdfs:label "Template"@en-us.
+    jazz_mec:TermDefinition a jazz_mec:GuidanceType;
+                            rdfs:comment "A Term Definition is a type of guidance that defines terms to be put in a glossary.";
+                            rdfs:isDefinedBy jazz_mec:;
+                            rdfs:label "TermDefinition"@en-us.
+    jazz_mec:Tool a jazz_mec:CategoryType;
+                  rdfs:comment "Tool categories can group elements by the tool that they relate to.";
+                  rdfs:isDefinedBy jazz_mec:;
+                  rdfs:label "Tool"@en-us.
+    jazz_mec:ToolMentor a jazz_mec:GuidanceType;
+                        rdfs:comment "A Tool Mentor is a type of guidance that describes how to use a specific tool to accomplish some piece of work.";
+                        rdfs:isDefinedBy jazz_mec:;
+                        rdfs:label "ToolMentor"@en-us.
+    jazz_mec:Whitepaper a jazz_mec:GuidanceType;
+                        rdfs:comment "A Whitepaper is a type of guidance that is an article, often published, that can be read and understood in isolation.";
+                        rdfs:isDefinedBy jazz_mec:;
+                        rdfs:label "Whitepaper"@en-us.
+    jazz_mec:WorkProduct a rdfs:Class;
+                         rdfs:comment "A work product is a set of information.  Its subtypes are artifact, deliverable and outcome.   An artifact is a concrete thing such as a document or model.  A deliverable is a collection of artifacts.  An outcome is an intangible result, such as 'team is trained'.";
+                         rdfs:isDefinedBy jazz_mec:;
+                         rdfs:label "WorkProduct"@en-us.
+    jazz_mec:WorkProductKind a jazz_mec:CategoryType;
+                             rdfs:comment "Work Product Kind categories can group work products.";
+                             rdfs:isDefinedBy jazz_mec:;
+                             rdfs:label "WorkProductKind"@en-us.
+    jazz_mec:WorkProductType a rdfs:Class;
+                             rdfs:comment "Defines subtypes for the Work Product artifact type.";
+                             rdfs:isDefinedBy jazz_mec:;
+                             rdfs:label "WorkProductType"@en-us.
+    jazz_mec:categoryType a rdf:Property;
+                          rdfs:comment "Classifies categories into subtypes.";
+                          rdfs:isDefinedBy jazz_mec:;
+                          rdfs:label "categoryType"@en-us.
+    jazz_mec:contributes a rdf:Property;
+                         rdfs:comment "When published, the source element will merge with the target element, appending rich text sections and links to the target element.";
+                         rdfs:isDefinedBy jazz_mec:;
+                         rdfs:label "contributes"@en-us.
+    jazz_mec:copyright a rdf:Property;
+                       rdfs:comment "This is a copyright statement to be published at the bottom of the page for either this element, or in the case of a plug-in, all elements in the plugin.";
+                       rdfs:isDefinedBy jazz_mec:;
+                       rdfs:label "copyright"@en-us.
+    jazz_mec:extends a rdf:Property;
+                     rdfs:comment "When published, the extending element inherits the attributes and links of the extended element. Rich text sections or links on the extending element replaces the matching rich text sections/links from the extended element.";
+                     rdfs:isDefinedBy jazz_mec:;
+                     rdfs:label "extends"@en-us.
+    jazz_mec:fulfilsSlot a rdf:Property;
+                         rdfs:comment "A work product that fulfils a slot is logically included whenever the slot appears in another link type.";
+                         rdfs:isDefinedBy jazz_mec:;
+                         rdfs:label "fulfilsSlot"@en-us.
+    jazz_mec:guidanceType a rdf:Property;
+                          rdfs:comment "Classifies guidance elements into subtypes.";
+                          rdfs:isDefinedBy jazz_mec:;
+                          rdfs:label "guidanceType"@en-us.
+    jazz_mec:isSlot a rdf:Property;
+                    rdfs:comment "A slot is a placeholder for artifacts. Slots are logically replaced by the artifacts that fill the slot.";
+                    rdfs:isDefinedBy jazz_mec:;
+                    rdfs:label "isSlot"@en-us.
+    jazz_mec:isSupporting a rdf:Property;
+                          rdfs:comment "If an element is in a plug-in with isSupporting set to false,and that plugin is selected in the configuration, then that element is always published.  If isSupporting is set fo true, then that element is only published if referenced directly or indirectly from an element that is already to be published (is in a plugin with isSupporting set to false).";
+                          rdfs:isDefinedBy jazz_mec:;
+                          rdfs:label "isSupporting"@en-us.
+    jazz_mec:mecFilename a rdf:Property;
+                         rdfs:comment "This is the file name to be used when the element is imported into the Engineering Method Composer Eclipse client.  If left blank, a file name will be generated from the element name.";
+                         rdfs:isDefinedBy jazz_mec:;
+                         rdfs:label "mecFilename"@en-us.
+    jazz_mec:ofWorkItemType a rdf:Property;
+                            rdfs:comment "Link from a task to the work item type that should be assigned when the task is used to create a work item.";
+                            rdfs:isDefinedBy jazz_mec:;
+                            rdfs:label "ofWorkItemType"@en-us.
+    jazz_mec:refers a rdf:Property;
+                    rdfs:comment "Represents a reference from one method element to another that provides additional information.";
+                    rdfs:isDefinedBy jazz_mec:;
+                    rdfs:label "refers"@en-us.
+    jazz_mec:replaces a rdf:Property;
+                      rdfs:comment "This element and its links replaces the original element. Links to the original element are directed to this replacing element.";
+                      rdfs:isDefinedBy jazz_mec:;
+                      rdfs:label "replaces"@en-us.
+    jazz_mec:roleApprovesWorkProduct a rdf:Property;
+                                     rdfs:comment "Link from a role to a work product that the role approves.";
+                                     rdfs:isDefinedBy jazz_mec:;
+                                     rdfs:label "roleApprovesWorkProduct"@en-us.
+    jazz_mec:roleResponsibleForWorkProduct a rdf:Property;
+                                           rdfs:comment "Link from a role to a work product that the role is responsible for.";
+                                           rdfs:isDefinedBy jazz_mec:;
+                                           rdfs:label "roleResponsibleForWorkProduct"@en-us.
+    jazz_mec:selectionQuery a rdf:Property;
+                            rdfs:comment "This is a string using MEC's selection query syntax for selecting elements.  For example, this can be used to automatically include elements in a category at publishing time that match a given tag.  See MEC documentation for details.";
+                            rdfs:isDefinedBy jazz_mec:;
+                            rdfs:label "selectionQuery"@en-us.
+    jazz_mec:selectiveReplace a rdf:Property;
+                              rdfs:comment "Selectively replaces attributes and links in the linked element. If an attribute or rich text section is not specified in the replacing element, then that remains unchanged. Links can similarly be selectively replaced.";
+                              rdfs:isDefinedBy jazz_mec:;
+                              rdfs:label "selectiveReplace"@en-us.
+    jazz_mec:sortOrder a rdf:Property;
+                       rdfs:comment "When decomposition links are displayed on the parent, this attribute controls the order in which they are displayed.  By default, the order of display is the order in which the links were added (manual order).";
+                       rdfs:isDefinedBy jazz_mec:;
+                       rdfs:label "sortOrder"@en-us.
+    jazz_mec:standardMapping a rdf:Property;
+                             rdfs:comment "Link from an element that is part of a standard to the elements in a defined process that meet the standard.";
+                             rdfs:isDefinedBy jazz_mec:;
+                             rdfs:label "standardMapping"@en-us.
+    jazz_mec:taskAdditionalPerformingRole a rdf:Property;
+                                          rdfs:comment "This a role that helps with the performance of the task, but is not the primary role responsible for the task.";
+                                          rdfs:isDefinedBy jazz_mec:;
+                                          rdfs:label "taskAdditionalPerformingRole"@en-us.
+    jazz_mec:taskMandatoryInputWorkProduct a rdf:Property;
+                                           rdfs:comment "This is a work product that must be used to complete the task.";
+                                           rdfs:isDefinedBy jazz_mec:;
+                                           rdfs:label "taskMandatoryInputWorkProduct"@en-us.
+    jazz_mec:taskOptionalInputWorkProduct a rdf:Property;
+                                          rdfs:comment "This is a work product that may or may not be used to perform the task.";
+                                          rdfs:isDefinedBy jazz_mec:;
+                                          rdfs:label "taskOptionalInputWorkProduct"@en-us.
+    jazz_mec:taskOutputWorkProduct a rdf:Property;
+                                   rdfs:comment "This is a work product that is produced or updated during the performance of the task.";
+                                   rdfs:isDefinedBy jazz_mec:;
+                                   rdfs:label "taskOutputWorkProduct"@en-us.
+    jazz_mec:taskPrimaryPerformingRole a rdf:Property;
+                                       rdfs:comment "This is the role or roles that are primarily responsible for performing the task.";
+                                       rdfs:isDefinedBy jazz_mec:;
+                                       rdfs:label "taskPrimaryPerformingRole"@en-us.
+    jazz_mec:urlAttachment a rdf:Property;
+                           rdfs:comment "This is an attachment, such as a template, example, or white paper, where the attachment is provided via a URL on the web.";
+                           rdfs:isDefinedBy jazz_mec:;
+                           rdfs:label "urlAttachment"@en-us.
+    jazz_mec:workProductType a rdf:Property;
+                             rdfs:comment "Classifies work products into subtypes.";
+                             rdfs:isDefinedBy jazz_mec:;
+                             rdfs:label "workProductType"@en-us.
+}
+

@@ -1,0 +1,14 @@
+<http://jazz.net/ns/dm/rsa/deployment/core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/dm/rsa/deployment/core#> <http://purl.org/dc/terms/description> "A vocabulary that defines a core set of concepts to describe Enterprise Architectures from the Software Applications down to the hardware requirements."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rsa/deployment/core#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://jazz.net/help-dev/dm/index.jsp> .
+<http://jazz.net/ns/dm/rsa/deployment/core#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
+<http://jazz.net/ns/dm/rsa/deployment/core#> <http://purl.org/dc/terms/dateCopyrighted> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rsa/deployment/core#> <http://purl.org/dc/terms/title> "Deployment"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Topology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Topology> <http://www.w3.org/2000/01/rdf-schema#comment> "A container of Unit instances expressing a deployment topology."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Topology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rsa/deployment/core#> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Topology> <http://www.w3.org/2000/01/rdf-schema#label> "Topology"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an abstract unit of publishable deployment. A unit can contain provided capabilities and consumed requirements. It is contained in a Topology."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Unit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/rsa/deployment/core#> .
+<http://jazz.net/ns/dm/rsa/deployment/core#Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit"^^<http://www.w3.org/2001/XMLSchema#string> .

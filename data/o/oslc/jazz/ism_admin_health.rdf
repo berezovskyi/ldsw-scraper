@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-16"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY dcterms 'http://purl.org/dc/terms/'>
+	<!ENTITY health 'http://jazz.net/ns/ism/admin/health#'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY admin 'http://jazz.net/ns/ism/admin#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:health="http://jazz.net/ns/ism/admin/health#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:admin="http://jazz.net/ns/ism/admin#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:Ontology rdf:about="&health;">
+    <dcterms:dateCopyrighted rdf:datatype="&xsd;string">2012</dcterms:dateCopyrighted>
+    <dcterms:description rdf:datatype="&xsd;string">The Administration Services Health Status Vocabulary defines the health status for the related resources</dcterms:description>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html" />
+    <dcterms:title rdf:datatype="&xsd;string">Administration Services Health Status Vocabulary</dcterms:title>
+    <rdfs:label rdf:datatype="&xsd;string">Administration Services Health Status</rdfs:label>
+  </owl:Ontology>
+  <health:HealthStatus rdf:about="&health;Error">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates that the state of the resource is an error; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&health;" />
+    <rdfs:label rdf:datatype="&xsd;string">Error</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary" />
+  </health:HealthStatus>
+  <rdfs:Class rdf:about="&health;HealthStatus">
+    <rdfs:comment rdf:datatype="&xsd;string">It describes the health status of a resource. The health status could be the outcome of an automation for example prerequisite check or a health check script.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&health;" />
+    <rdfs:label rdf:datatype="&xsd;string">HealthStatus</rdfs:label>
+  </rdfs:Class>
+  <health:HealthStatus rdf:about="&health;OK">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates that the state of the resource is OK; for example, the state of admin:AdministrableResource or result of the admin:AdministrativeJob execution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&health;" />
+    <rdfs:label rdf:datatype="&xsd;string">OK</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary" />
+  </health:HealthStatus>
+  <health:HealthStatus rdf:about="&health;Unknown">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates that the state of the resource is unknown or indeterminate; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&health;" />
+    <rdfs:label rdf:datatype="&xsd;string">Unknown</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary" />
+  </health:HealthStatus>
+  <health:HealthStatus rdf:about="&health;Warning">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates that the state of the resource in a warning; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&health;" />
+    <rdfs:label rdf:datatype="&xsd;string">Warning</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary" />
+  </health:HealthStatus>
+  <rdf:Property rdf:about="&health;describes">
+    <rdfs:comment rdf:datatype="&xsd;string">The URI to the resource (for example, the admin:AdministrableResource or admin:AdministrativeJob) that it describes.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&health;" />
+    <rdfs:label rdf:datatype="&xsd;string">describes</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&health;status">
+    <rdfs:comment rdf:datatype="&xsd;string">It represents the health state (ok, warning, error or unknown state) of the resource described by the health:HealthStatus.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&health;" />
+    <rdfs:label rdf:datatype="&xsd;string">status</rdfs:label>
+  </rdf:Property>
+</rdf:RDF>

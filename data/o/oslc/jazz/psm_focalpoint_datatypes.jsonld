@@ -1,0 +1,2614 @@
+[
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Focal Point Datatypes Vocabulary"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The Focal Point datatypes vocabulary defines datatypes supported as attribute values."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Focal Point Datatypes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "https://jazz.net/wiki/pub/Main/FocalPointDatatypesVocabulary/fpdt-vocabulary.ttl"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2012"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Datatype",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Datatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Focal Point datatype. This is abstract superclass of all Focal Point datatypes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Datatype"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Focal Point simple datatype. This is an abstract class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_SimpleDatatype"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ComplexDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Focal Point complex datatype. This is an abstract class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ComplexDatatype"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Table",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Table"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Focal Point table datatype. A table is a rectangular array of cells. This is an abstract class."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Column",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Column"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A column in a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Row",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Row"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A row in a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Cell",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cell"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A cell in a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#row",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "row"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Multivalued. A row that is contained in a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#column",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "column"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Multivalued. A column that is contained in a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#columnNo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "columnNo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An integer. The column number, starting from 1, of a column or cell within a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#rowNo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rowNo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An integer. The row number, starting from 1, of a row or cell within a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#cell",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "cell"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A cell that is contained in a row."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Table"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#CheckBox",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "CheckBox"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A box that a member can select or clear to turn an option on or off."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_CheckBox"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Choice",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Choice"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A list of predefined items that a member may select a single item from (e.g. status)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Choice"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Date",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A date value (for example 3/31/2010)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#File",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "File"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A document, image or other file in the database, or a list of such files. Maximum total size is 50 MB."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Float",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A real number that contains a fractional part (e.g. 3.14)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Float"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Heading",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Heading"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An attribute consisting only of a title, used primarily for layout purposes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Heading"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#History",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "History"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "History can display attribute or element history for an element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_History"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#IncomingLinks",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IncomingLinks"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A list of elements that link to this element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_IncomingLinks"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Integer",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A real number that contains no fractional part (e.g. 42)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#IntegrationLink",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IntegrationLink"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A list of linked OSLC resources residing in a different repository."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_IntegrationLink"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Link",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Link"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A link from one element to another. The target can be either in this workspace, or in another workspace."
+      },
+      {
+        "@value": "A list is a collection of either text attributes or link attributes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Link"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Lock",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Lock"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A selection of attributes that can be locked from editing. When the lock attribute is activated for an element the attributes selected in the lock attribute cannot be edited and the element cannot be deleted."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Lock"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Matrix",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Table"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Matrix"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A matrix attribute consists of several text, float or integer attributes in a grid."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Matrix"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Mirror",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Mirror"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A mirrored value of another attribute in another element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Mirror"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#MultiChoice",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Datatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MultiChoice"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A list of predefined items that a member may select multiple items from."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_MultiChoice"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Text",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Text"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A text field where a member enters and edits text."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Text"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#TimeGrid",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#ComplexDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TimeGrid"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Use this for calculations based on a time line."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Url",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Url"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A link to a specific resource on the Internet (e.g. http://www.ibm.com)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Url"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#UniqueId",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "UniqueId"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A text field where the value must be unique. When new elements are created, the unique id attribute is automatically assigned a unique value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_UniqueId"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Version",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#SimpleDatatype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Version"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A number or character that automatically increases based on changes in other attributes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Version"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Attachment",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Attachment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A file attachment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#value",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A primary or natural value of a simple datatype."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_SimpleDatatype"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#attachment",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "attachment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Multivalued. A file attachment contained in the list of attachments."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#content",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "content"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The content of the attached file. An octet stream."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#contentType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "contentType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The content type of the attached file (e.g. 'text/plain')."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#contentLength",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "contentLength"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The length in bytes of the attached file (e.g. 4200)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_File"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#i",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "i"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The position of the resource in an ordered list, starting from 1."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ComplexDatatype"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#text",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "text"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Textual value for display purposes."
+      },
+      {
+        "@value": "One or more lines of plain text."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_CheckBox"
+      },
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Text"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#HistoryNone",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#History"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "HistoryNone"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "No history is provided."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryNone"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#HistoryGraph",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#History"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "HistoryGraph"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "History of one or more numeric attributes is provided as a graph."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#HistoryAttributeTable",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#History"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "HistoryAttributeTable"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "History of one attribute is provided as a table."
+      },
+      {
+        "@value": "A series of change events of one attribute of an element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryAttributeTable"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#HistoryElementTable",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#History"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "HistoryElementTable"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "History of all attributes in an element is provided as a table."
+      },
+      {
+        "@value": "A series of change events of all attributes of an element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryElementTable"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#image",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "image"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The link to the image of the graph."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#size",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "size"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The size of the graph."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#rangeFrom",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rangeFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The start of the time range. This is either a fixed date of the value of some date attribute."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#rangeFromAttribute",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rangeFromAttribute"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional. If a date attribute is used to define the start of the range, this is its name."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#rangeTo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rangeTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The end of the time range. This is either a fixed date of the value of some date attribute."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#rangeToAttribute",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rangeToAttribute"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional. If a date attribute is used to define the end of the range, this is its name."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#timeSeries",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "timeSeries"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A time series of numeric attribute history values. This is a multivalued property. The graph may contain zero or more time series."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryGraph"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Size",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Size"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A graph size (e.g. small, medium, or large)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Small",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#Size"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Small"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Size small."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Medium",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#Size"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Medium"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Size medium."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Large",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#Size"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Large"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Size large."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_Size"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#GraphTimeSeries",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GraphTimeSeries"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A graph time series."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#forAttribute",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "forAttribute"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The name of the attribute whose history is being graphed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#displayType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "displayType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The display type of the graph (e.g. line or bar)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#sampleInterval",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "sampleInterval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional. If absent then all of the history values within the range are graphed. If present, then only the most recent value within the specified time interval (e.g. daily, weekly) is graphed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#trendLine",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "trendLine"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional. If present, a trend line is included in the graph."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#changeEvent",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "changeEvent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Multivalued. A change event in the history set determined by the date range and the sample interval."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#DisplayType",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "DisplayType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A graph display type (e.g. bar or line)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Bar",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#DisplayType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Bar"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Bar chart."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Line",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#DisplayType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Line"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Line chart."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TimeInterval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A time interval (e.g. year, quarter, month)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Year",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Year"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A time interval of one year."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Quarter",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Quarter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A time interval of one quarter year."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Month",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Month"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A time interval of one month."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Week",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Week"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A time interval of one week."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Day",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#TimeInterval"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Day"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A time interval of one day."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_GraphTimeSeries"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#TrendLine",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TrendLine"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A straight line that is fitted to the time series of historical values of an attribute."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#valueFrom",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "valueFrom"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The value of the trend line at the start date of the range."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#valueTo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "valueTo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The value of the trend line at the end date of the range."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#fitToRange",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "fitToRange"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "True if the trend line is computed for historical values within the range of the graph. Otherwise, the trend line is fitted to all historical values."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TrendLine"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#ChangeEvent",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ChangeEvent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A record of a change to an attribute of an element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_ChangeEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#includeLast",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "includeLast"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional. If absent include all change events. If present include last 10 or 20 change events."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryAttributeTable"
+      },
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_HistoryElementTable"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#TextEntry",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TextEntry"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An entry in a list of text items."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TextEntry"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Sheet",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Sheet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A rectangular table of values in a time grid."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ScenarioType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A rectangular table of values in a time grid."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#High",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "High"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The estimated high value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Low",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Low"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The estimated low value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Likely",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Likely"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The estimated most likely value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#Actual",
+    "@type": [
+      "http://jazz.net/ns/psm/focalpoint/datatypes#ScenarioType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Actual"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The actual value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#sheet",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "sheet"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A sheet in a time grid."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#timeInterval",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "timeInterval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The time interval used for this sheet."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#startDate",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "startDate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The start date of this sheet."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#endDate",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "endDate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The end date of this sheet."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#scenarioType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scenarioType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional. The scenario type of this scheet. If absent then the scenario type is unset."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#isSummary",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "isSummary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "true if the row is a summary. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#isHeading",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "isHeading"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "true if the row is a heading."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#isLocked",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "isLocked"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "\ttrue if the row is locked."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#isBenefit",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "isBenefit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "\ttrue if the row is a benefit. false if the row is a cost."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#unit",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/psm/focalpoint/datatypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "unit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The unit of measure for this row."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/FPDatatypes#fpdt_TimeGrid"
+      }
+    ]
+  }
+]

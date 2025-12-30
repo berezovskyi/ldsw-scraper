@@ -1,0 +1,30 @@
+<http://jazz.net/ns/dm/linktypes#trace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/linktypes#trace> <http://www.w3.org/2000/01/rdf-schema#comment> "The model element has a trace to the requirement (e.g. An attribute or its value are traced to a requirement)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#trace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/linktypes#> .
+<http://jazz.net/ns/dm/linktypes#trace> <http://www.w3.org/2000/01/rdf-schema#label> "Trace"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#satisfy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/linktypes#satisfy> <http://www.w3.org/2000/01/rdf-schema#comment> "The model element satisfies the requirement (e.g. The use case satisfies a functional requirement)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#satisfy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/linktypes#> .
+<http://jazz.net/ns/dm/linktypes#satisfy> <http://www.w3.org/2000/01/rdf-schema#label> "Satisfies"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/dm/linktypes#> <http://www.w3.org/2000/01/rdf-schema#label> "The DM Link Type Vocabulary."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#> <http://purl.org/dc/terms/description> "Defines the properties that can be used in DM for OSLC linking."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#> <http://purl.org/dc/terms/title> "The DM Link Type Vocabulary."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
+<http://jazz.net/ns/dm/linktypes#> <http://purl.org/dc/terms/dateCopyrighted> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#derives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/linktypes#derives> <http://www.w3.org/2000/01/rdf-schema#comment> "The resource that derives from another resource originated from or is significantly influenced by the referenced resource. For example a model element derives from a requirement."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#derives> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/linktypes#> .
+<http://jazz.net/ns/dm/linktypes#derives> <http://www.w3.org/2000/01/rdf-schema#label> "Derives From"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#refine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/linktypes#refine> <http://www.w3.org/2000/01/rdf-schema#comment> "The target is a refinement of the source. (e.g. a use case scenario might be a refinement of a textual requirement that describes the interaction)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#refine> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/linktypes#> .
+<http://jazz.net/ns/dm/linktypes#refine> <http://www.w3.org/2000/01/rdf-schema#label> "Refines"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#elaborates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/linktypes#elaborates> <http://www.w3.org/2000/01/rdf-schema#comment> "This resource elaborates the referenced resource."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#elaborates> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/linktypes#> .
+<http://jazz.net/ns/dm/linktypes#elaborates> <http://www.w3.org/2000/01/rdf-schema#label> "Elaborates"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#external> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/dm/linktypes#external> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic link from a resource to an external web page."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/dm/linktypes#external> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/linktypes#> .
+<http://jazz.net/ns/dm/linktypes#external> <http://www.w3.org/2000/01/rdf-schema#label> "External Web Page"^^<http://www.w3.org/2001/XMLSchema#string> .

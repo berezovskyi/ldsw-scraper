@@ -1,0 +1,12 @@
+<http://jazz.net/ns/discovery#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/discovery#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "jazz_disc"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/discovery#> <http://www.w3.org/2000/01/rdf-schema#label> "IBM Jazz Discovery"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/discovery#> <http://purl.org/dc/terms/title> "The IBM Jazz Service Discovery Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/discovery#> <http://purl.org/dc/terms/description> "Vocabulary terms for IBM Jazz Service Discovery."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/discovery#> <http://purl.org/dc/terms/source> <https://jazz.net/wiki/pub/LinkedData/DiscoveryVocabulary/discovery-vocabulary.ttl> .
+<http://jazz.net/ns/discovery#> <http://purl.org/dc/terms/license> <http://jazz.net/ns/license.html> .
+<http://jazz.net/ns/discovery#> <http://purl.org/dc/terms/dateCopyrighted> "2020"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/discovery#messageReceiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/discovery#messageReceiver> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/discovery#> .
+<http://jazz.net/ns/discovery#messageReceiver> <http://www.w3.org/2000/01/rdf-schema#label> "messageReceiver"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/discovery#messageReceiver> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of HTML page which can receive messages via postMessage.  Applications can host this page in an iframe in order to participate in inter-window message passing protocols."^^<http://www.w3.org/2001/XMLSchema#string> .

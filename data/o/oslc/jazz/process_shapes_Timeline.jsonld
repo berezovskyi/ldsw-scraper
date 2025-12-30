@@ -1,0 +1,545 @@
+[
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline",
+    "@type": [
+      "http://open-services.net/ns/core#ResourceShape"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Jazz Foundation Timeline.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This shape describes timeline resources hosted by the Jazz Foundation Process component.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#describes": [
+      {
+        "@id": "http://jazz.net/ns/process#Timeline"
+      }
+    ],
+    "http://open-services.net/ns/core#property": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#accessContext"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#accessControl"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#archived"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#endDate"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#identifier"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#instanceShape"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#iterations"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#modified"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#projectArea"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#startDate"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline#title"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#accessContext",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core/acc#accessContext"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the access context of this timeline resource.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "accessContext"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-many"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://open-services.net/ns/core/acc#AccessContext"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#accessControl",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/acp#accessControl"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the access control record of this timeline resource.\r\nThis property is deprecated.\r\nUse <a href=\"http://open-services.net/ns/core/acc#accessContent\"><code>acc:accessContext</code></a> instead.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "accessControl"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#archived",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core#archive"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This boolean property is true when the timeline is archived.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "archived"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#endDate",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#endDate"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The end date of the timeline.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "endDate"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#identifier",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/identifier"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The identifier of the timeline.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "description"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#instanceShape",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core#instanceShape"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the shape of this timeline resource.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "instanceShape"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://open-services.net/ns/core#ResourceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#isProjectTime"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This boolean property is true if the timeline is the current timeline of the project area.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "isProjectTimeline"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#iterations",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#iterations"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the iterations of the timeline.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "iterations"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Iterations"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#modified",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/modified"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property is modification date of the project area definition.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "modified"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#projectArea",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#projectArea"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the project area of the timeline.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "projectArea"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#valueShape": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/ProjectArea"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#ProjectArea"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#startDate",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#startDate"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The start date of the timeline.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "startDate"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Timeline#title",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/title"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The title of the timeline.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "title"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ]
+  }
+]

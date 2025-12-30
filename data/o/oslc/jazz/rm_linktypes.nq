@@ -1,0 +1,29 @@
+<http://jazz.net/ns/rm/linktypes#> <http://purl.org/dc/terms/description> "Defines Requirements Management Link Type Vocabulary."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/rm/linktypes#> <http://purl.org/dc/terms/title> "The Rational Requirements Management Link Type Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/rm/linktypes#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/rm/linktypes#> <http://www.w3.org/2000/01/rdf-schema#label> "The Rational Requirements Management Link Type Vocabulary"@en-us .
+<http://jazz.net/ns/rm/linktypes#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/> .
+<http://jazz.net/ns/rm/linktypes#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/rm/> .
+<http://jazz.net/ns/rm/linktypes#> <http://purl.org/dc/terms/source> <https://jazz.net/wiki/bin/view/Main/RmLtResourceVocabulary/rmlt-vocabulary.ttl> .
+<http://jazz.net/ns/rm/linktypes#> <http://purl.org/dc/terms/license> <http://jazz.net/ns/license.html> .
+<http://jazz.net/ns/rm/linktypes#> <http://purl.org/dc/terms/dateCopyrighted> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/rm/linktypes#decomposes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/rm/linktypes#decomposes> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents decomposition relationship between requirements"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/rm/linktypes#decomposes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/rm/linktypes#> .
+<http://jazz.net/ns/rm/linktypes#decomposes> <http://www.w3.org/2000/01/rdf-schema#label> "Decomposes"@en-us .
+<http://jazz.net/ns/rm/linktypes#embeds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/rm/linktypes#embeds> <http://www.w3.org/2000/01/rdf-schema#comment> "Tracks a containment relationship between Requirements Management artifacts"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/rm/linktypes#embeds> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/rm/linktypes#> .
+<http://jazz.net/ns/rm/linktypes#embeds> <http://www.w3.org/2000/01/rdf-schema#label> "Embeds"@en-us .
+<http://jazz.net/ns/rm/linktypes#extracted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/rm/linktypes#extracted> <http://www.w3.org/2000/01/rdf-schema#comment> "Captures when the content of a Requirements Management artifact has been created from content of another Requirements Management artifact."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/rm/linktypes#extracted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/rm/linktypes#> .
+<http://jazz.net/ns/rm/linktypes#extracted> <http://www.w3.org/2000/01/rdf-schema#label> "Extracted"@en-us .
+<http://jazz.net/ns/rm/linktypes#termReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/rm/linktypes#termReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Captures glossary-based relationships between part of a Requirements Management artifact (e.g., a word or phrase) and a Glossary Term."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/rm/linktypes#termReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/rm/linktypes#> .
+<http://jazz.net/ns/rm/linktypes#termReference> <http://www.w3.org/2000/01/rdf-schema#label> "Term Reference"@en-us .
+<http://jazz.net/ns/rm/linktypes#synonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/rm/linktypes#synonym> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates two Requirements Management Glossary Terms that have the same meaning."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/rm/linktypes#synonym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/rm/linktypes#> .
+<http://jazz.net/ns/rm/linktypes#synonym> <http://www.w3.org/2000/01/rdf-schema#label> "Synonym"@en-us .

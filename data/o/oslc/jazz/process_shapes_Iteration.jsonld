@@ -1,0 +1,560 @@
+[
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration",
+    "@type": [
+      "http://open-services.net/ns/core#ResourceShape"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Jazz Foundation Iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This shape describes iteration resources hosted by the Jazz Foundation Process component.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#describes": [
+      {
+        "@id": "http://jazz.net/ns/process#Iteration"
+      }
+    ],
+    "http://open-services.net/ns/core#property": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#accessContext"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#accessControl"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#archived"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#childIterations"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#endDate"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#identifier"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#instanceShape"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#modified"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#parentIteration"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#timeline"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#startDate"
+      },
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration#title"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#accessContext",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core/acc#accessContext"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the access context of this iteration resource.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "accessContext"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-many"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://open-services.net/ns/core/acc#AccessContext"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#accessControl",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/acp#accessControl"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the access control record of this iteration resource.\r\nThis property is deprecated.\r\nUse <a href=\"http://open-services.net/ns/core/acc#accessContent\"><code>acc:accessContext</code></a> instead.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "accessControl"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#archived",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core#archive"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This boolean property is true when the iteration is archived.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "archived"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#childIterations",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#childIterations"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the child iterations of the iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "childIterations"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Iterations"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#endDate",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#endDate"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The end date of the iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "endDate"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#identifier",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/identifier"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The identifier of the iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "description"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#instanceShape",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://open-services.net/ns/core#instanceShape"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the shape of this iteration resource.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "instanceShape"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#readOnly": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#hidden": [
+      {
+        "@value": "true",
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://open-services.net/ns/core#ResourceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#modified",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/modified"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property is modification date of the project area definition.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "modified"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#parentIteration",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#parentIteration"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the parent iteration of the iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "parentIteration"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Zero-or-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#valueShape": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Iteration"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Iteration"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#timeline",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#timeline"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The link to the timeline of the iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "timeline"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#representation": [
+      {
+        "@id": "http://open-services.net/ns/core#Reference"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://open-services.net/ns/core#Resource"
+      }
+    ],
+    "http://open-services.net/ns/core#valueShape": [
+      {
+        "@id": "http://jazz.net/ns/process/shapes/Timeline"
+      }
+    ],
+    "http://open-services.net/ns/core#range": [
+      {
+        "@id": "http://jazz.net/ns/process#Timeline"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#startDate",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://jazz.net/ns/process#startDate"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The start date of the iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "startDate"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/process/shapes/Iteration#title",
+    "@type": [
+      "http://open-services.net/ns/core#Property"
+    ],
+    "http://open-services.net/ns/core#propertyDefinition": [
+      {
+        "@id": "http://purl.org/dc/terms/title"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The title of the iteration.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ],
+    "http://open-services.net/ns/core#name": [
+      {
+        "@value": "title"
+      }
+    ],
+    "http://open-services.net/ns/core#occurs": [
+      {
+        "@id": "http://open-services.net/ns/core#Exactly-one"
+      }
+    ],
+    "http://open-services.net/ns/core#valueType": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+      }
+    ]
+  }
+]
