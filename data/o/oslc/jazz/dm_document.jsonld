@@ -1,0 +1,49 @@
+[
+  {
+    "@id": "http://jazz.net/ns/dm/document#Document",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A class representing a rich text document."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/document#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Document"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/document#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2012"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This is the DM rich text document vocabulary"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "The DM Rich Text Document Vocabulary"
+      }
+    ]
+  }
+]

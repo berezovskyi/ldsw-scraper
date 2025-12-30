@@ -1,1003 +1,576 @@
-<?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:voag="http://voag.linkedmodel.org/voag/"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://www.linkedmodel.org/schema/vaem">
-  <owl:Ontology rdf:about=""/>
-  <owl:Class rdf:ID="GraphMetaData">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="revision"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="name"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasViewpoint"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Viewpoint"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasSteward"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Party"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >"vaem:GraphMetaData" defines basic metadata for the registration and publishing of a graph.  For specificaiton of governance the vocabulary "VOAG" may be used.</dct:description>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="turtleFileURL"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasAspect"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Aspect"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="namespacePrefix"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="owner"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasMetadata"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="description"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:seeAlso rdf:resource="http://voag.linkedmodel.org/vocab/voag"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="previousPublishedVersion"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasDiscipline"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Discipline"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasIdentifier"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="specificity"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy>
-      <rdf:Description rdf:about="http://www.linkedmodel.org/2.0/schema/vaem">
-        <owl:versionIRI rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-        <vaem:hasGraphMetadata>
-          <vaem:GraphMetaData rdf:ID="GMD_VAEM">
-            <vaem:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >VAEM</vaem:name>
-            <vaem:usesNonImportedResource>
-              <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
-                <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >modified</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-              </owl:AnnotationProperty>
-            </vaem:usesNonImportedResource>
-            <vaem:owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >TopQuadrant, Inc.</vaem:owner>
-            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >VAEM Schema Version 2.0 Metadata</rdfs:label>
-            <vaem:usesNonImportedResource>
-              <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract">
-                <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >abstract</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-              </owl:AnnotationProperty>
-            </vaem:usesNonImportedResource>
-            <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-            >2011-04-20</dct:created>
-            <vaem:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >VAEM stands for "Vocabulary for Attaching Essential Metadata". What VAEM regards as essential metadata is data about dates and times, confidentiality, and other characterisitic qualifiers of the ontology, but also references to where a ontology is documented and where to find ontology registration for governance, attribution and provenance. VAEM makes use of some properties from the DC terms vocabulary using the namespace prefix "dct". VAEM is OWL-DL compliant.</vaem:description>
-            <vaem:usesNonImportedResource>
-              <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
-                <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >created</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-              </owl:AnnotationProperty>
-            </vaem:usesNonImportedResource>
-            <vaem:latestPublishedVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://www.linkedmodel.org/doc/2014/SCHEMA_vaem-v2.0</vaem:latestPublishedVersion>
-            <vaem:hasGraphRole>
-              <vaem:GraphRole rdf:ID="SchemaGraph">
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >Schema graph</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource=""/>
-                <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-                <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >SCHEMA</vaem:filePrefix>
-              </vaem:GraphRole>
-            </vaem:hasGraphRole>
-            <vaem:hasSteward>
-              <vaem:Party rdf:ID="TopQuadrant">
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >TopQuadrant</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource=""/>
-                <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-                <vaem:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-                >http:/www.topquadrant.com</vaem:url>
-                <vaem:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >TopQuadrant, Inc.</vaem:name>
-              </vaem:Party>
-            </vaem:hasSteward>
-            <vaem:usesNonImportedResource rdf:resource="http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US"/>
-            <vaem:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >The purpose of VAEM is to provide, by import, a foundation for commonly needed resources for metadata on an ontology.</vaem:intent>
-            <vaem:logo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://linkedmodel.org/lib/lm/images/logos/TopBraid-RDM-Graph-Logo.png</vaem:logo>
-            <vaem:hasOwner rdf:resource="#TopQuadrant"/>
-            <vaem:withAttributionTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >VAEM is issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to TopQuadrant, Inc.</vaem:withAttributionTo>
-            <vaem:turtleFileURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://www.linkedmodel.org/2.0/schema/SCHEMA_vaem-v2.0.ttl</vaem:turtleFileURL>
-            <vaem:revision rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >2.0</vaem:revision>
-            <vaem:usesNonImportedResource>
-              <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-                <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >title</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-              </owl:AnnotationProperty>
-            </vaem:usesNonImportedResource>
-            <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-            <rdfs:isDefinedBy rdf:resource=""/>
-            <vaem:previousPublishedVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://linkedmodel.org/doc/vaem/1.2/</vaem:previousPublishedVersion>
-            <vaem:namespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >vaem</vaem:namespacePrefix>
-            <vaem:usesNonImportedResource>
-              <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/author">
-                <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >author</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-              </owl:AnnotationProperty>
-            </vaem:usesNonImportedResource>
-            <dct:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >VAEM Version 2.0 Metadata</dct:title>
-            <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-            >2014-07-26</dct:modified>
-            <vaem:rdfxmlFileURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://www.linkedmodel.org/2.0/schema/SCHEMA_vaem-v2.0.rdf</vaem:rdfxmlFileURL>
-            <dct:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >VAEM stands for "Vocabulary for Attaching Essential Metadata". What VAEM regards as essential metadata is data about dates and times, confidentiality, and other characterisitic qualifiers of the ontology, but also references to where a ontology is documented and where to find ontology registration for governance, attribution and provenance. VAEM makes use of some properties from the DC terms vocabulary using the namespace prefix "dct". VAEM is OWL-DL compliant.</dct:abstract>
-            <vaem:namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://www.linkedmodel.org/schema/vaem#</vaem:namespace>
-            <vaem:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Vocabulary for Attaching Essential Metadata (VAEM) - Version 2.0</vaem:title>
-          </vaem:GraphMetaData>
-        </vaem:hasGraphMetadata>
-      </rdf:Description>
-    </rdfs:isDefinedBy>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasGraphRole"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="GraphRole"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasOwner"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#Party"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasDomain"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Domain"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="namespace"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Graph Metadata</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="rdfxmlFileURL"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasLicenseType"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasMetadata"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#GraphMetaData"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasSteward"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="latestPublishedVersion"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="intent"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="#Domain">
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="Dimension"/>
-    </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Domain Dimension</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A domain is a subject area of interest. Examples of domains are "enterprise", "process", "organization" and "system". In VAEM, "Domain" is used as a dimension for characterizing an ontology graph</dct:description>
-  </owl:Class>
-  <owl:Class rdf:about="#Discipline">
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#Dimension"/>
-    </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Discipline Dimension</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A discipline is a specific area of work or study. Examples of disciplines in the engineering domain are electrical engineering, mechanical engineering and, in the financial domain, risk assessment, investment analysis.  In VAEM, discipline is used as a dimension for characterizing an ontology graph</dct:description>
-  </owl:Class>
-  <owl:Class rdf:about="#Dimension">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Domain</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A dimension identifies a separation of concens that serves as a way to categorize an ontology graph. In VAEM,  the notion of "Dimension" is partitioned into "Aspect", "Discipline", "Domain" and "Viewpoint". </dct:description>
-  </owl:Class>
-  <owl:Class rdf:about="#Party">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="url"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="id"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#name"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Party</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A "Party" is a generalization for an actor that may be realized as a person, organizaiton or named role.</dct:description>
-  </owl:Class>
-  <owl:Class rdf:about="#Viewpoint">
-    <rdfs:subClassOf rdf:resource="#Dimension"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >ViewpointDimension</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Viewpoint is used to denote how a set of resources, or an individual resource, is relevant to a context of use. The term "viewpoint" is adopted from the ISO RM-ODP specifications and its more recent use in enterprise architecture descriptions. The RM-ODP introducesd the concept of viewpoint to describe a system from a particular set of concerns. RM-ODP defines five viewpoints. Together they provide a complete description of a system: enterprise viewpoint, information viewpoint, computational viewpoint, engineering viewpoint, and technology viewpoint.  In VAEM, "Viewpoint" is used as a dimension for characterizing an ontology graph.  The viewpoints of an ontology may not always correpsond directly to those of a system but the idea of describing a subject area of interest from distinct viewpoints is still relevant. A viewpoint can be further distinguished by "aspects". For example the "information viewpoint" of an application can be partitioned into separate graphs for the "security", "operational" and"data retention" aspects.</dct:description>
-  </owl:Class>
-  <owl:Class rdf:about="#GraphRole">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="filePrefix"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#description"/>
-        </owl:onProperty>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:maxCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Graph role</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >GraphRole is used to characterize how a graph of resources participates in an ontology set.  For example, a graph can be a schema, vocabulary, dataset, script, or ruleset</dct:description>
-  </owl:Class>
-  <owl:Class rdf:about="#Aspect">
-    <rdfs:subClassOf rdf:resource="#Dimension"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Aspect Dimension</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Aspect is used to distinguish among sets of features of a domain or subject area. The term is borrowed from "aspect-oriented" programming, where it is used to separate concerns. An ontology may be characterized by this dimension so as to parition features that are orthogonal. For example,  in a systems ontology there may be aspects for "structure", "function", "behavior" and "interface" or "interoperability". A viewpoint can be distinguished by "aspects". For example the "information viewpoint" of an application can be partitioned into separate graphs for the "security", "operational" and"data retention" aspects.</dct:description>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="#hasSteward">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has steward</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A property that is used to refer to a "Steward", that is, the party or role that is responsible for maintaining an asset, in the case of VAEM, an ontology graph.</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasIdentifier">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has identifier</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaemhasIdentifier" is intended for general use as a means to specifiy a unique reference to something. This is an object property that is a sub-property of "vame:id"</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="reifiableBy">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >reifiable by</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >To express how statements in a model can be reifiable, this property is used to explicitly associate a property with a user-defined sub-class of "rdf:Statement". A recommended way of using this is to declare the properties that share the same reification constructs as sub-properties of a parent property that carries the "vaem:reifiableBy" property. The parent property should be of type "rdf:Property" so that it can have both datatype and object properties as sub-properties. By this means use and transformations of a model can be understood through a fully specified metamodel. "vaem:reifiableBy" is rangeless in order to comply with OWL DL semantics. Its range would have been rdfs:Class in order to refer to "rdf:Statement" sub-classes</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasGraphRole">
-    <rdfs:range rdf:resource="#GraphRole"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has graph role</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "lms:hasGraphRole" is used to characterize how a resource participates in an ontology set.  The property is used to specify the role that a graph plays, for example, an ontology graph can be a schema, vocabulary, dataset, script, or ruleset</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasDomain">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:ID="hasDimension"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has domain</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:hasDomain" is used to specify how  a set of resources, or an individual resource is grounded in a domain, that is, a subject area of interest. Examples of domains are "enterprise", "process", "organization" and "system". In VAEM, the property is used as a dimension for characterizing an ontology graph. The property is an "rdf:Property" to allow both scalar and object values</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasAspect">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="#hasDimension"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has aspect </rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:hasAspect" is used to distinguish among sets of features of a domain or subject area. The term is borrowed from "aspect-oriented" programming, where it is used to separate concerns. An ontology may be characterized by this dimension so as to parition features that are orthogonal. For example,  in a systems ontology we can distinguish aspects for "structure", "function", "behavior" and "interface".  The property is an "rdf:Property" to allow both scalar and object values</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasDimension">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has dimension</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:hasDimension" is used categorize an ontology.  In VAEM, the property is used to characterize an ontology graph.</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasOwner">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has owner</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasDiscipline">
-    <rdfs:subPropertyOf rdf:resource="#hasDimension"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has discipline</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:hasDiscipline" is used to indicate relevance of a set of resources, or a resource itself, to a specific discipline of work or study. Examples of disciplines in the engineering domain are electrical engineering, mechanical engineering and, in the financial domain, risk assessment, investment analysis.  In VAEM, the property is used as a dimension for characterizing an ontology graph.  The property is an "rdf:Property" to allow both scalar and object values</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasViewpoint">
-    <rdfs:subPropertyOf rdf:resource="#hasDimension"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has viewpoint</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:hasViewpoint" is used to denote how a set of resources, or an individual resource, is relevant to a context of use. The term "viewpoint" is adopted from the ISO RM-ODP specifications and its more recent use in enterprise architecture descriptions.  In VAEM, the property is used as a dimension for characterizing an ontology graph.  The property is an "rdf:Property" to allow both scalar and object values</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasMetadata">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has metadata</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "hasMetadata" is used to reference a metadata information structure.</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasLicenseType">
-    <rdfs:label xml:lang="en-US">has license type</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:hasLicenseType" points to an entry in the VOAG ontology for licenses</dct:description>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="#url">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >url</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:url" is intended for general use as the name implies.  The range of the property is set as an XSD URI</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="acronym">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >acronym</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:acronym" provides a common way to define a commonly used abbreviation on a resource</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#owner">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >owner</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#namespace">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >namespace</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:namespace" is the onotlogy URI with which a graph is primarily associated. The intent is to allow multiple graphs to define statements for resources in the same Ontology namespace. For example, a foundation level graph with the base URI of "http://www.somesite.com/1.0/schema/OurOntology"  may define general  concepts for "OurOntology". Another graph with the base URI "http://www.somesite.com/1.0/schema/level2/OurOntology"  may add more specific details to the same "OurOntology". Each of these two graphs would carry the same value for "vaem:namespace", that is, "http://www.somesite.com/schema/OurOntology".    In other words, an ontology URI is the URI associated with the resources of a controlled namespace. On the other hand the graph URIs (the base URIs) identify the graphs that hold resources that make up an ontology</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#revision">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >revision</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:revision" is a property intended for general use as the name implies.</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#description">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >description</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="title">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >title</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#previousPublishedVersion">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >previous published version</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:previousPublishedVersion"is a URL to documentation for the previous version of a graph.</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#turtleFileURL">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >turtle file URL</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:turtleFileURL" is used to provide a link to the location of the ontology's turtle file</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="abbreviation">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >abbreviation</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:abbreviation" provides a common way to define a commonly used abbreviation on a resource</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="releaseDate">
-    <rdfs:subPropertyOf>
-      <owl:DatatypeProperty rdf:ID="date"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >release date</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:releaseDate" is intended for general use as the name implies.  The range of the property is set as "vaem:dateUnion" so as to allow a value to have a number of forms from a  year only to a full timestamp</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#specificity">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >specificity</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:specificity" is intended to specify the level of detail of an ontology.  The values that can be set for this property are restriced to an integer from 1 to 5. An ontology at level 1 has concepts of more general applicability than one at level 5. By having graphs at different levels of specificity it is possible to support greater modularity for selective imports</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#name">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >name</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:name" is intended for general use. In many cases "rdfs:label" could be used give names to resources. In the case where compliance with a specific naming rule is needed,  "vaem:name" allows  a resource to carry a name that is used in more specific contexts.</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#filePrefix">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >file prefix</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:filePrefix" is for specifying a preferred file prefix for a graph. For example a schema graph may be given the file prefix "SCHEMA" followed by an underscore "_".</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#id">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >id</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:id" is intended for general use as a means to specifiy an identifier. The type of this property is intentionally set to "rdf:Property" so that use of the property can allow both object and scaler values.  For this reason, the property is rangeless</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#latestPublishedVersion">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >latest published version</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:latestPublishedVersion"is a URL to documentation for the latest version of a graph.</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="rationale">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >rationale</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A description of a justification for some other assertion or value</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#namespacePrefix">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >namespace prefix</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:namespacePrefix" specifes a short handle or label for the URI of an Ontology.  Multiple graphs can define statements for resources in the same Ontololgy namespace. For example, a foundation level graph with the base URI of "http://www.somesite.com/1.0/schema/OurOntology"  may define general  concepts for "OurOntology". Another graph with the base URI "http://www.somesite.com/1.0/schema/level2/OurOntology"  may add more specific details to the same "OurOntology". Each of these two graphs would carry the same value for "vaem:namespacePrefix", for this example, perhaps, "ourOntology"</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#intent">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >intent</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:intent" is used to outline  a statement of purpose. This typically expresses one or more desired outcomes</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#rdfxmlFileURL">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >RDF/XML file URL</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:rdfxmlFileURL" is used to provide a link to the location of the ontology's RDF/XML file</dct:description>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#date">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >date</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:date" is intended for general use as the name implies.  The range of the property is set as "vaem:dateUnion" so as to allow a value to have a number of forms from a  year only to a full timestamp. The property is also the parent of all dates so that queries can be made for any date on an ontology</dct:description>
-  </owl:DatatypeProperty>
-  <owl:AnnotationProperty rdf:ID="logo">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:logo" is a reference to an image that is used for publishing the ontology"</dct:description>
-  </owl:AnnotationProperty>
-  <vaem:GraphRole rdf:ID="LinkSetGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Link Set graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >LINKSET</vaem:filePrefix>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A "vaem:LinkSetGraph" is a graph that holds statements that specify links between resources</dct:description>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >rights</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </owl:AnnotationProperty>
-  <vaem:GraphRole rdf:ID="MappingGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Mapping graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >MAPPINGS</vaem:filePrefix>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A graph that specifies a transformation of a graph into another graph or graphs. Invariably this is a SPINMap graph using SPARQL Rules (SPIN) to express the transforms.</dct:description>
-  </vaem:GraphRole>
-  <vaem:GraphRole rdf:ID="ViewGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >View graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >VIEWS</vaem:filePrefix>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >creator</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </owl:AnnotationProperty>
-  <vaem:GraphRole rdf:ID="ControllersGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Controllers graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >CONTROLLERS</vaem:filePrefix>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >description</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </owl:AnnotationProperty>
-  <rdf:Description rdf:ID="ownedBy">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:ownedBy" is a general property that in some cases could have scalar values or may refer to some concept of "Party".  For this reason, the  type of this property is set as "rdf:Property" and the property is rangeless. There are two sub-properties of "vaem:ownedBy", namely "vaem:owner" for string values and "vaem:owningParty" for referencing a party.  Ownership applies to those ontologies that are proprietary</dct:description>
-  </rdf:Description>
-  <vaem:GraphRole rdf:ID="TransformsGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Transforms graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >TRANSFORMS</vaem:filePrefix>
-  </vaem:GraphRole>
-  <rdf:Description rdf:ID="owningParty">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:owningParty" is used to refer to some concept of "Party" and is a sub-property of "vaem:ownedBy"</dct:description>
-  </rdf:Description>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >subject</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </owl:AnnotationProperty>
-  <vaem:GraphRole rdf:ID="DataGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Data graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >DATA</vaem:filePrefix>
-  </vaem:GraphRole>
-  <rdf:Description rdf:ID="lastUpdated">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:lastUpdated" is intended for general use as the name implies.  The range of the property is set as "vaem:dateUnion" so as to allow a value to have a number of forms from a  year only to a full timestamp</dct:description>
-  </rdf:Description>
-  <vaem:GraphRole rdf:ID="FunctionsGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Functions graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >FUNCTIONS</vaem:filePrefix>
-  </vaem:GraphRole>
-  <vaem:GraphRole rdf:ID="RulesGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Rules Graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >RULES</vaem:filePrefix>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:ID="withAttributionTo">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >with attribution to</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:withAttributionTo" is an annotation property that is either used to hold either a string or a reference to an instance of "voag:Attribution", from the VOAG ontology</dct:description>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:ID="comment">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >definition</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >An annotation property that can be freely used on any kind of resource. The range of the property is "xsd:string"</dct:description>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:ID="hasGraphMetadata">
-    <rdfs:range rdf:resource="#GraphMetaData"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-  </owl:AnnotationProperty>
-  <rdf:Description rdf:ID="idString">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:idString" is intended for general use as a means to specifiy a unique reference to something. This is a data property with a string range and is a sub-property of "vame:id"</dct:description>
-  </rdf:Description>
-  <vaem:GraphRole rdf:ID="ProxyGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Proxy graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >PROXY</vaem:filePrefix>
-  </vaem:GraphRole>
-  <vaem:GraphRole rdf:ID="DocumentationGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Documentation graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >DOC</vaem:filePrefix>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:ID="todo">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >todo</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >As it name implies, a way to attach an annotation about a "todo" task</dct:description>
-  </owl:AnnotationProperty>
-  <rdf:Description rdf:ID="dateCreated">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:dateCreated" is intended for general use as the name implies.  The range of the property is set as "vaem:dateUnion" so as to allow a value to have a number of forms from a  year only to a full timestamp</dct:description>
-  </rdf:Description>
-  <vaem:GraphRole rdf:ID="CollectionGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Collection graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >COLLECTION</vaem:filePrefix>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A "vaem:CollectionGraph" is a graph that aggregates other graphs using "owl:imports" statements</dct:description>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >replaces</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </owl:AnnotationProperty>
-  <rdf:Description rdf:ID="CatalogEntry">
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >VAEM Governed Object class is a placeholder for concepts that are fully defined by the voag:GovernedObject concept hierarchy for building a catalog of ontologies and graphs</dct:description>
-  </rdf:Description>
-  <vaem:GraphRole rdf:ID="ScriptGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Script graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >SCRIPT</vaem:filePrefix>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:ID="usesNonImportedResource">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >uses non-imported resource</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The property "vaem:usesNonImportedResource" is used to express dependencies on resources from graphs that are not imported</dct:description>
-  </owl:AnnotationProperty>
-  <vaem:GraphRole rdf:ID="VocabularyGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Vocabulary graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >VOCAB</vaem:filePrefix>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >An RDF/OWL Graph that is a controlled set of instances.</dct:description>
-  </vaem:GraphRole>
-  <owl:AnnotationProperty rdf:ID="isElaboratedIn">
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <rdfs:label>isDefinedBy</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >An annotation used to reference a graph that elaborates (adds properties and axioms to) a resource</dct:description>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >contributor</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-  </owl:AnnotationProperty>
-  <vaem:GraphRole rdf:ID="CurationGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Curation graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >CURATION</vaem:filePrefix>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A "vaem:CurationGraph" is a graph to hold metadata that is needed to describe, govern and provision another graph. A curation graph will likely use VOAG and VAEM for this purpose. The property "vaem:curationGraph" is used to link to the graph (or graphs) being curated</dct:description>
-  </vaem:GraphRole>
-  <vaem:GraphRole rdf:ID="ConstraintsGraph">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Constraints graph</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource=""/>
-    <rdfs:isDefinedBy rdf:resource="http://www.linkedmodel.org/2.0/schema/vaem"/>
-    <vaem:filePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >CONSTRAINTS</vaem:filePrefix>
-    <dct:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A "vaem:ConstraintsGraph" is a graph that holds SPIN constraints</dct:description>
-  </vaem:GraphRole>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <vaem:hasGraphMetadata rdf:resource="#GMD_VAEM"/>
-  </rdf:Description>
-</rdf:RDF>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix voag: <http://voag.linkedmodel.org/voag/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#>.
 
-<!-- Created with TopBraid -->
+{
+    _:autos11495 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:revision.
+    _:autos11496 a owl:Restriction;
+                 owl:cardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:name.
+    _:autos11497 a owl:Restriction;
+                 owl:allValuesFrom vaem:Viewpoint;
+                 owl:onProperty vaem:hasViewpoint.
+    _:autos11498 a owl:Restriction;
+                 owl:allValuesFrom vaem:Party;
+                 owl:onProperty vaem:hasSteward.
+    _:autos11499 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:turtleFileURL.
+    _:autos11500 a owl:Restriction;
+                 owl:allValuesFrom vaem:Aspect;
+                 owl:onProperty vaem:hasAspect.
+    _:autos11501 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:namespacePrefix.
+    _:autos11502 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:owner.
+    _:autos11503 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:hasMetadata.
+    _:autos11504 a owl:Restriction;
+                 owl:allValuesFrom xsd:string;
+                 owl:onProperty vaem:description.
+    _:autos11505 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:previousPublishedVersion.
+    _:autos11506 a owl:Restriction;
+                 owl:allValuesFrom vaem:Discipline;
+                 owl:onProperty vaem:hasDiscipline.
+    _:autos11507 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:hasIdentifier.
+    _:autos11508 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:specificity.
+    _:autos11509 a owl:Restriction;
+                 owl:allValuesFrom vaem:GraphRole;
+                 owl:onProperty vaem:hasGraphRole.
+    _:autos11510 a owl:Restriction;
+                 owl:allValuesFrom vaem:Party;
+                 owl:onProperty vaem:hasOwner.
+    _:autos11511 a owl:Restriction;
+                 owl:allValuesFrom vaem:Domain;
+                 owl:onProperty vaem:hasDomain.
+    _:autos11512 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:namespace.
+    _:autos11513 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:rdfxmlFileURL.
+    _:autos11514 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:hasLicenseType.
+    _:autos11515 a owl:Restriction;
+                 owl:allValuesFrom vaem:GraphMetaData;
+                 owl:onProperty vaem:hasMetadata.
+    _:autos11516 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:hasSteward.
+    _:autos11517 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:latestPublishedVersion.
+    _:autos11518 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:intent.
+    _:autos11519 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:url.
+    _:autos11520 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:id.
+    _:autos11521 a owl:Restriction;
+                 owl:cardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:name.
+    _:autos11522 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:filePrefix.
+    _:autos11523 a owl:Restriction;
+                 owl:maxCardinality "1"^^xsd:nonNegativeInteger;
+                 owl:onProperty vaem:description.
+    dct:abstract a owl:AnnotationProperty;
+                 rdfs:isDefinedBy dct:;
+                 rdfs:label "abstract";
+                 rdfs:range xsd:string.
+    dct:author a owl:AnnotationProperty;
+               rdfs:isDefinedBy dct:;
+               rdfs:label "author";
+               rdfs:range xsd:string.
+    dct:contributor a owl:AnnotationProperty;
+                    rdfs:isDefinedBy dct:;
+                    rdfs:label "contributor";
+                    rdfs:range xsd:string.
+    dct:created a owl:AnnotationProperty;
+                rdfs:isDefinedBy dct:;
+                rdfs:label "created";
+                rdfs:range xsd:date.
+    dct:creator a owl:AnnotationProperty;
+                rdfs:isDefinedBy dct:;
+                rdfs:label "creator";
+                rdfs:range xsd:string.
+    dct:description a owl:AnnotationProperty;
+                    rdfs:isDefinedBy dct:;
+                    rdfs:label "description";
+                    rdfs:range xsd:string.
+    dct:modified a owl:AnnotationProperty;
+                 rdfs:isDefinedBy dct:;
+                 rdfs:label "modified";
+                 rdfs:range xsd:date.
+    dct:replaces a owl:AnnotationProperty;
+                 rdfs:isDefinedBy dct:;
+                 rdfs:label "replaces";
+                 rdfs:range rdfs:Resource.
+    dct:rights a owl:AnnotationProperty;
+               rdfs:isDefinedBy dct:;
+               rdfs:label "rights";
+               rdfs:range xsd:string.
+    dct:subject a owl:AnnotationProperty;
+                rdfs:isDefinedBy dct:;
+                rdfs:label "subject";
+                rdfs:range xsd:string.
+    dct:title a owl:AnnotationProperty;
+              rdfs:isDefinedBy dct:;
+              rdfs:label "title";
+              rdfs:range xsd:string.
+    <http://www.linkedmodel.org/2.0/schema/vaem> vaem:hasGraphMetadata vaem:GMD_VAEM;
+                                                 owl:versionIRI <http://www.linkedmodel.org/2.0/schema/vaem>.
+    <http://www.linkedmodel.org/schema/vaem> a owl:Ontology.
+    vaem:Aspect dct:description """Aspect is used to distinguish among sets of features of a domain or subject area. The term is borrowed from \"aspect-oriented\" programming, where it is used to separate concerns. An ontology may be characterized by this dimension so as to parition features that are orthogonal. For example,  in a systems ontology there may be aspects for \"structure\", \"function\", \"behavior\" and \"interface\" or \"interoperability\". A viewpoint can be distinguished by \"aspects\". For example the \"information viewpoint\" of an application can be partitioned into separate graphs for the \"security\", \"operational\" and\"data retention\" aspects.""";
+                a owl:Class;
+                rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                 <http://www.linkedmodel.org/schema/vaem>;
+                rdfs:label "Aspect Dimension";
+                rdfs:subClassOf vaem:Dimension.
+    vaem:CatalogEntry dct:description "VAEM Governed Object class is a placeholder for concepts that are fully defined by the voag:GovernedObject concept hierarchy for building a catalog of ontologies and graphs".
+    vaem:CollectionGraph dct:description """A \"vaem:CollectionGraph\" is a graph that aggregates other graphs using \"owl:imports\" statements""";
+                         vaem:filePrefix "COLLECTION";
+                         a vaem:GraphRole;
+                         rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                          <http://www.linkedmodel.org/schema/vaem>;
+                         rdfs:label "Collection graph".
+    vaem:ConstraintsGraph dct:description """A \"vaem:ConstraintsGraph\" is a graph that holds SPIN constraints""";
+                          vaem:filePrefix "CONSTRAINTS";
+                          a vaem:GraphRole;
+                          rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                           <http://www.linkedmodel.org/schema/vaem>;
+                          rdfs:label "Constraints graph".
+    vaem:ControllersGraph vaem:filePrefix "CONTROLLERS";
+                          a vaem:GraphRole;
+                          rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                           <http://www.linkedmodel.org/schema/vaem>;
+                          rdfs:label "Controllers graph".
+    vaem:CurationGraph dct:description """A \"vaem:CurationGraph\" is a graph to hold metadata that is needed to describe, govern and provision another graph. A curation graph will likely use VOAG and VAEM for this purpose. The property \"vaem:curationGraph\" is used to link to the graph (or graphs) being curated""";
+                       vaem:filePrefix "CURATION";
+                       a vaem:GraphRole;
+                       rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                        <http://www.linkedmodel.org/schema/vaem>;
+                       rdfs:label "Curation graph".
+    vaem:DataGraph vaem:filePrefix "DATA";
+                   a vaem:GraphRole;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "Data graph".
+    vaem:Dimension dct:description """A dimension identifies a separation of concens that serves as a way to categorize an ontology graph. In VAEM,  the notion of \"Dimension\" is partitioned into \"Aspect\", \"Discipline\", \"Domain\" and \"Viewpoint\". """;
+                   a owl:Class;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "Domain";
+                   rdfs:subClassOf owl:Thing.
+    vaem:Discipline dct:description "A discipline is a specific area of work or study. Examples of disciplines in the engineering domain are electrical engineering, mechanical engineering and, in the financial domain, risk assessment, investment analysis.  In VAEM, discipline is used as a dimension for characterizing an ontology graph";
+                    a owl:Class;
+                    rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                     <http://www.linkedmodel.org/schema/vaem>;
+                    rdfs:label "Discipline Dimension";
+                    rdfs:subClassOf vaem:Dimension.
+    vaem:DocumentationGraph vaem:filePrefix "DOC";
+                            a vaem:GraphRole;
+                            rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                             <http://www.linkedmodel.org/schema/vaem>;
+                            rdfs:label "Documentation graph".
+    vaem:Domain dct:description """A domain is a subject area of interest. Examples of domains are \"enterprise\", \"process\", \"organization\" and \"system\". In VAEM, \"Domain\" is used as a dimension for characterizing an ontology graph""";
+                a owl:Class;
+                rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                 <http://www.linkedmodel.org/schema/vaem>;
+                rdfs:label "Domain Dimension";
+                rdfs:subClassOf vaem:Dimension.
+    vaem:FunctionsGraph vaem:filePrefix "FUNCTIONS";
+                        a vaem:GraphRole;
+                        rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                         <http://www.linkedmodel.org/schema/vaem>;
+                        rdfs:label "Functions graph".
+    vaem:GMD_VAEM dct:abstract """VAEM stands for \"Vocabulary for Attaching Essential Metadata\". What VAEM regards as essential metadata is data about dates and times, confidentiality, and other characterisitic qualifiers of the ontology, but also references to where a ontology is documented and where to find ontology registration for governance, attribution and provenance. VAEM makes use of some properties from the DC terms vocabulary using the namespace prefix \"dct\". VAEM is OWL-DL compliant.""";
+                  dct:created "2011-04-20"^^xsd:date;
+                  dct:modified "2014-07-26"^^xsd:date;
+                  dct:title "VAEM Version 2.0 Metadata";
+                  vaem:description """VAEM stands for \"Vocabulary for Attaching Essential Metadata\". What VAEM regards as essential metadata is data about dates and times, confidentiality, and other characterisitic qualifiers of the ontology, but also references to where a ontology is documented and where to find ontology registration for governance, attribution and provenance. VAEM makes use of some properties from the DC terms vocabulary using the namespace prefix \"dct\". VAEM is OWL-DL compliant.""";
+                  vaem:hasGraphRole vaem:SchemaGraph;
+                  vaem:hasOwner vaem:TopQuadrant;
+                  vaem:hasSteward vaem:TopQuadrant;
+                  vaem:intent "The purpose of VAEM is to provide, by import, a foundation for commonly needed resources for metadata on an ontology.";
+                  vaem:latestPublishedVersion "http://www.linkedmodel.org/doc/2014/SCHEMA_vaem-v2.0"^^xsd:anyURI;
+                  vaem:logo "http://linkedmodel.org/lib/lm/images/logos/TopBraid-RDM-Graph-Logo.png"^^xsd:anyURI;
+                  vaem:name "VAEM";
+                  vaem:namespace "http://www.linkedmodel.org/schema/vaem#"^^xsd:anyURI;
+                  vaem:namespacePrefix "vaem";
+                  vaem:owner "TopQuadrant, Inc.";
+                  vaem:previousPublishedVersion "http://linkedmodel.org/doc/vaem/1.2/"^^xsd:anyURI;
+                  vaem:rdfxmlFileURL "http://www.linkedmodel.org/2.0/schema/SCHEMA_vaem-v2.0.rdf"^^xsd:anyURI;
+                  vaem:revision "2.0";
+                  vaem:title "Vocabulary for Attaching Essential Metadata (VAEM) - Version 2.0";
+                  vaem:turtleFileURL "http://www.linkedmodel.org/2.0/schema/SCHEMA_vaem-v2.0.ttl"^^xsd:anyURI;
+                  vaem:usesNonImportedResource dct:abstract,
+                                               dct:author,
+                                               dct:created,
+                                               dct:modified,
+                                               dct:title,
+                                               voag:CC-SHAREALIKE_3PT0-US;
+                  vaem:withAttributionTo "VAEM is issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to TopQuadrant, Inc.";
+                  a vaem:GraphMetaData;
+                  rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                   <http://www.linkedmodel.org/schema/vaem>;
+                  rdfs:label "VAEM Schema Version 2.0 Metadata".
+    vaem:GraphMetaData dct:description """\"vaem:GraphMetaData\" defines basic metadata for the registration and publishing of a graph.  For specificaiton of governance the vocabulary \"VOAG\" may be used.""";
+                       a owl:Class;
+                       rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                        <http://www.linkedmodel.org/schema/vaem>;
+                       rdfs:label "Graph Metadata";
+                       rdfs:seeAlso <http://voag.linkedmodel.org/vocab/voag>;
+                       rdfs:subClassOf _:autos11495,
+                                       _:autos11496,
+                                       _:autos11497,
+                                       _:autos11498,
+                                       _:autos11499,
+                                       _:autos11500,
+                                       _:autos11501,
+                                       _:autos11502,
+                                       _:autos11503,
+                                       _:autos11504,
+                                       _:autos11505,
+                                       _:autos11506,
+                                       _:autos11507,
+                                       _:autos11508,
+                                       _:autos11509,
+                                       _:autos11510,
+                                       _:autos11511,
+                                       _:autos11512,
+                                       _:autos11513,
+                                       _:autos11514,
+                                       _:autos11515,
+                                       _:autos11516,
+                                       _:autos11517,
+                                       _:autos11518,
+                                       owl:Thing.
+    vaem:GraphRole dct:description "GraphRole is used to characterize how a graph of resources participates in an ontology set.  For example, a graph can be a schema, vocabulary, dataset, script, or ruleset";
+                   a owl:Class;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "Graph role";
+                   rdfs:subClassOf _:autos11522,
+                                   _:autos11523,
+                                   owl:Thing.
+    vaem:LinkSetGraph dct:description """A \"vaem:LinkSetGraph\" is a graph that holds statements that specify links between resources""";
+                      vaem:filePrefix "LINKSET";
+                      a vaem:GraphRole;
+                      rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                       <http://www.linkedmodel.org/schema/vaem>;
+                      rdfs:label "Link Set graph".
+    vaem:MappingGraph dct:description "A graph that specifies a transformation of a graph into another graph or graphs. Invariably this is a SPINMap graph using SPARQL Rules (SPIN) to express the transforms.";
+                      vaem:filePrefix "MAPPINGS";
+                      a vaem:GraphRole;
+                      rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                       <http://www.linkedmodel.org/schema/vaem>;
+                      rdfs:label "Mapping graph".
+    vaem:Party dct:description """A \"Party\" is a generalization for an actor that may be realized as a person, organizaiton or named role.""";
+               a owl:Class;
+               rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                <http://www.linkedmodel.org/schema/vaem>;
+               rdfs:label "Party";
+               rdfs:subClassOf _:autos11519,
+                               _:autos11520,
+                               _:autos11521,
+                               owl:Thing.
+    vaem:ProxyGraph vaem:filePrefix "PROXY";
+                    a vaem:GraphRole;
+                    rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                     <http://www.linkedmodel.org/schema/vaem>;
+                    rdfs:label "Proxy graph".
+    vaem:RulesGraph vaem:filePrefix "RULES";
+                    a vaem:GraphRole;
+                    rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                     <http://www.linkedmodel.org/schema/vaem>;
+                    rdfs:label "Rules Graph".
+    vaem:SchemaGraph vaem:filePrefix "SCHEMA";
+                     a vaem:GraphRole;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "Schema graph".
+    vaem:ScriptGraph vaem:filePrefix "SCRIPT";
+                     a vaem:GraphRole;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "Script graph".
+    vaem:TopQuadrant vaem:name "TopQuadrant, Inc.";
+                     vaem:url "http:/www.topquadrant.com"^^xsd:anyURI;
+                     a vaem:Party;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "TopQuadrant".
+    vaem:TransformsGraph vaem:filePrefix "TRANSFORMS";
+                         a vaem:GraphRole;
+                         rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                          <http://www.linkedmodel.org/schema/vaem>;
+                         rdfs:label "Transforms graph".
+    vaem:ViewGraph vaem:filePrefix "VIEWS";
+                   a vaem:GraphRole;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "View graph".
+    vaem:Viewpoint dct:description """Viewpoint is used to denote how a set of resources, or an individual resource, is relevant to a context of use. The term \"viewpoint\" is adopted from the ISO RM-ODP specifications and its more recent use in enterprise architecture descriptions. The RM-ODP introducesd the concept of viewpoint to describe a system from a particular set of concerns. RM-ODP defines five viewpoints. Together they provide a complete description of a system: enterprise viewpoint, information viewpoint, computational viewpoint, engineering viewpoint, and technology viewpoint.  In VAEM, \"Viewpoint\" is used as a dimension for characterizing an ontology graph.  The viewpoints of an ontology may not always correpsond directly to those of a system but the idea of describing a subject area of interest from distinct viewpoints is still relevant. A viewpoint can be further distinguished by \"aspects\". For example the \"information viewpoint\" of an application can be partitioned into separate graphs for the \"security\", \"operational\" and\"data retention\" aspects.""";
+                   a owl:Class;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "ViewpointDimension";
+                   rdfs:subClassOf vaem:Dimension.
+    vaem:VocabularyGraph dct:description "An RDF/OWL Graph that is a controlled set of instances.";
+                         vaem:filePrefix "VOCAB";
+                         a vaem:GraphRole;
+                         rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                          <http://www.linkedmodel.org/schema/vaem>;
+                         rdfs:label "Vocabulary graph".
+    vaem:abbreviation dct:description """The property \"vaem:abbreviation\" provides a common way to define a commonly used abbreviation on a resource""";
+                      a owl:DatatypeProperty;
+                      rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                       <http://www.linkedmodel.org/schema/vaem>;
+                      rdfs:label "abbreviation".
+    vaem:acronym dct:description """The property \"vaem:acronym\" provides a common way to define a commonly used abbreviation on a resource""";
+                 a owl:DatatypeProperty;
+                 rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                  <http://www.linkedmodel.org/schema/vaem>;
+                 rdfs:label "acronym".
+    vaem:comment dct:description """An annotation property that can be freely used on any kind of resource. The range of the property is \"xsd:string\"""";
+                 a owl:AnnotationProperty;
+                 rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                  <http://www.linkedmodel.org/schema/vaem>;
+                 rdfs:label "definition";
+                 rdfs:range xsd:string.
+    vaem:date dct:description """The property \"vaem:date\" is intended for general use as the name implies.  The range of the property is set as \"vaem:dateUnion\" so as to allow a value to have a number of forms from a  year only to a full timestamp. The property is also the parent of all dates so that queries can be made for any date on an ontology""";
+              a owl:DatatypeProperty;
+              rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                               <http://www.linkedmodel.org/schema/vaem>;
+              rdfs:label "date".
+    vaem:dateCreated dct:description """The property \"vaem:dateCreated\" is intended for general use as the name implies.  The range of the property is set as \"vaem:dateUnion\" so as to allow a value to have a number of forms from a  year only to a full timestamp""".
+    vaem:description a owl:DatatypeProperty;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "description";
+                     rdfs:range xsd:string.
+    vaem:filePrefix dct:description """The property \"vaem:filePrefix\" is for specifying a preferred file prefix for a graph. For example a schema graph may be given the file prefix \"SCHEMA\" followed by an underscore \"_\".""";
+                    a owl:DatatypeProperty;
+                    rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                     <http://www.linkedmodel.org/schema/vaem>;
+                    rdfs:label "file prefix";
+                    rdfs:range xsd:string.
+    vaem:hasAspect dct:description """The property \"vaem:hasAspect\" is used to distinguish among sets of features of a domain or subject area. The term is borrowed from \"aspect-oriented\" programming, where it is used to separate concerns. An ontology may be characterized by this dimension so as to parition features that are orthogonal. For example,  in a systems ontology we can distinguish aspects for \"structure\", \"function\", \"behavior\" and \"interface\".  The property is an \"rdf:Property\" to allow both scalar and object values""";
+                   a owl:ObjectProperty;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "has aspect ";
+                   rdfs:subPropertyOf vaem:hasDimension.
+    vaem:hasDimension dct:description """The property \"vaem:hasDimension\" is used categorize an ontology.  In VAEM, the property is used to characterize an ontology graph.""";
+                      a owl:ObjectProperty;
+                      rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                       <http://www.linkedmodel.org/schema/vaem>;
+                      rdfs:label "has dimension".
+    vaem:hasDiscipline dct:description """The property \"vaem:hasDiscipline\" is used to indicate relevance of a set of resources, or a resource itself, to a specific discipline of work or study. Examples of disciplines in the engineering domain are electrical engineering, mechanical engineering and, in the financial domain, risk assessment, investment analysis.  In VAEM, the property is used as a dimension for characterizing an ontology graph.  The property is an \"rdf:Property\" to allow both scalar and object values""";
+                       a owl:ObjectProperty;
+                       rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                        <http://www.linkedmodel.org/schema/vaem>;
+                       rdfs:label "has discipline";
+                       rdfs:subPropertyOf vaem:hasDimension.
+    vaem:hasDomain dct:description """The property \"vaem:hasDomain\" is used to specify how  a set of resources, or an individual resource is grounded in a domain, that is, a subject area of interest. Examples of domains are \"enterprise\", \"process\", \"organization\" and \"system\". In VAEM, the property is used as a dimension for characterizing an ontology graph. The property is an \"rdf:Property\" to allow both scalar and object values""";
+                   a owl:ObjectProperty;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "has domain";
+                   rdfs:subPropertyOf vaem:hasDimension.
+    vaem:hasGraphMetadata a owl:AnnotationProperty;
+                          rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                           <http://www.linkedmodel.org/schema/vaem>;
+                          rdfs:range vaem:GraphMetaData.
+    vaem:hasGraphRole dct:description """The property \"lms:hasGraphRole\" is used to characterize how a resource participates in an ontology set.  The property is used to specify the role that a graph plays, for example, an ontology graph can be a schema, vocabulary, dataset, script, or ruleset""";
+                      a owl:ObjectProperty;
+                      rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                       <http://www.linkedmodel.org/schema/vaem>;
+                      rdfs:label "has graph role";
+                      rdfs:range vaem:GraphRole.
+    vaem:hasIdentifier dct:description """The property \"vaemhasIdentifier\" is intended for general use as a means to specifiy a unique reference to something. This is an object property that is a sub-property of \"vame:id\"""";
+                       a owl:ObjectProperty;
+                       rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                        <http://www.linkedmodel.org/schema/vaem>;
+                       rdfs:label "has identifier".
+    vaem:hasLicenseType dct:description """The property \"vaem:hasLicenseType\" points to an entry in the VOAG ontology for licenses""";
+                        a owl:ObjectProperty;
+                        rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                         <http://www.linkedmodel.org/schema/vaem>;
+                        rdfs:label "has license type"@en-us.
+    vaem:hasMetadata dct:description """The property \"hasMetadata\" is used to reference a metadata information structure.""";
+                     a owl:ObjectProperty;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "has metadata".
+    vaem:hasOwner a owl:ObjectProperty;
+                  rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                   <http://www.linkedmodel.org/schema/vaem>;
+                  rdfs:label "has owner".
+    vaem:hasSteward dct:description """A property that is used to refer to a \"Steward\", that is, the party or role that is responsible for maintaining an asset, in the case of VAEM, an ontology graph.""";
+                    a owl:ObjectProperty;
+                    rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                     <http://www.linkedmodel.org/schema/vaem>;
+                    rdfs:label "has steward".
+    vaem:hasViewpoint dct:description """The property \"vaem:hasViewpoint\" is used to denote how a set of resources, or an individual resource, is relevant to a context of use. The term \"viewpoint\" is adopted from the ISO RM-ODP specifications and its more recent use in enterprise architecture descriptions.  In VAEM, the property is used as a dimension for characterizing an ontology graph.  The property is an \"rdf:Property\" to allow both scalar and object values""";
+                      a owl:ObjectProperty;
+                      rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                       <http://www.linkedmodel.org/schema/vaem>;
+                      rdfs:label "has viewpoint";
+                      rdfs:subPropertyOf vaem:hasDimension.
+    vaem:id dct:description """The property \"vaem:id\" is intended for general use as a means to specifiy an identifier. The type of this property is intentionally set to \"rdf:Property\" so that use of the property can allow both object and scaler values.  For this reason, the property is rangeless""";
+            a owl:DatatypeProperty;
+            rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                             <http://www.linkedmodel.org/schema/vaem>;
+            rdfs:label "id".
+    vaem:idString dct:description """The property \"vaem:idString\" is intended for general use as a means to specifiy a unique reference to something. This is a data property with a string range and is a sub-property of \"vame:id\"""".
+    vaem:intent dct:description """The property \"vaem:intent\" is used to outline  a statement of purpose. This typically expresses one or more desired outcomes""";
+                a owl:DatatypeProperty;
+                rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                 <http://www.linkedmodel.org/schema/vaem>;
+                rdfs:label "intent";
+                rdfs:range xsd:string.
+    vaem:isElaboratedIn dct:description "An annotation used to reference a graph that elaborates (adds properties and axioms to) a resource";
+                        a owl:AnnotationProperty;
+                        rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                         <http://www.linkedmodel.org/schema/vaem>;
+                        rdfs:label "isDefinedBy";
+                        rdfs:range xsd:anyURI;
+                        rdfs:subPropertyOf rdfs:isDefinedBy.
+    vaem:lastUpdated dct:description """The property \"vaem:lastUpdated\" is intended for general use as the name implies.  The range of the property is set as \"vaem:dateUnion\" so as to allow a value to have a number of forms from a  year only to a full timestamp""".
+    vaem:latestPublishedVersion dct:description """The property \"vaem:latestPublishedVersion\"is a URL to documentation for the latest version of a graph.""";
+                                a owl:DatatypeProperty;
+                                rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                                 <http://www.linkedmodel.org/schema/vaem>;
+                                rdfs:label "latest published version";
+                                rdfs:range xsd:anyURI.
+    vaem:logo dct:description """The property \"vaem:logo\" is a reference to an image that is used for publishing the ontology\"""";
+              a owl:AnnotationProperty;
+              rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                               <http://www.linkedmodel.org/schema/vaem>;
+              rdfs:range xsd:anyURI.
+    vaem:name dct:description """The property \"vaem:name\" is intended for general use. In many cases \"rdfs:label\" could be used give names to resources. In the case where compliance with a specific naming rule is needed,  \"vaem:name\" allows  a resource to carry a name that is used in more specific contexts.""";
+              a owl:DatatypeProperty;
+              rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                               <http://www.linkedmodel.org/schema/vaem>;
+              rdfs:label "name";
+              rdfs:range xsd:string.
+    vaem:namespace dct:description """The property \"vaem:namespace\" is the onotlogy URI with which a graph is primarily associated. The intent is to allow multiple graphs to define statements for resources in the same Ontology namespace. For example, a foundation level graph with the base URI of \"http://www.somesite.com/1.0/schema/OurOntology\"  may define general  concepts for \"OurOntology\". Another graph with the base URI \"http://www.somesite.com/1.0/schema/level2/OurOntology\"  may add more specific details to the same \"OurOntology\". Each of these two graphs would carry the same value for \"vaem:namespace\", that is, \"http://www.somesite.com/schema/OurOntology\".    In other words, an ontology URI is the URI associated with the resources of a controlled namespace. On the other hand the graph URIs (the base URIs) identify the graphs that hold resources that make up an ontology""";
+                   a owl:DatatypeProperty;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "namespace";
+                   rdfs:range xsd:anyURI.
+    vaem:namespacePrefix dct:description """The property \"vaem:namespacePrefix\" specifes a short handle or label for the URI of an Ontology.  Multiple graphs can define statements for resources in the same Ontololgy namespace. For example, a foundation level graph with the base URI of \"http://www.somesite.com/1.0/schema/OurOntology\"  may define general  concepts for \"OurOntology\". Another graph with the base URI \"http://www.somesite.com/1.0/schema/level2/OurOntology\"  may add more specific details to the same \"OurOntology\". Each of these two graphs would carry the same value for \"vaem:namespacePrefix\", for this example, perhaps, \"ourOntology\"""";
+                         a owl:DatatypeProperty;
+                         rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                          <http://www.linkedmodel.org/schema/vaem>;
+                         rdfs:label "namespace prefix";
+                         rdfs:range xsd:string.
+    vaem:ownedBy dct:description """The property \"vaem:ownedBy\" is a general property that in some cases could have scalar values or may refer to some concept of \"Party\".  For this reason, the  type of this property is set as \"rdf:Property\" and the property is rangeless. There are two sub-properties of \"vaem:ownedBy\", namely \"vaem:owner\" for string values and \"vaem:owningParty\" for referencing a party.  Ownership applies to those ontologies that are proprietary""".
+    vaem:owner a owl:DatatypeProperty;
+               rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                <http://www.linkedmodel.org/schema/vaem>;
+               rdfs:label "owner";
+               rdfs:range xsd:string.
+    vaem:owningParty dct:description """The property \"vaem:owningParty\" is used to refer to some concept of \"Party\" and is a sub-property of \"vaem:ownedBy\"""".
+    vaem:previousPublishedVersion dct:description """The property \"vaem:previousPublishedVersion\"is a URL to documentation for the previous version of a graph.""";
+                                  a owl:DatatypeProperty;
+                                  rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                                   <http://www.linkedmodel.org/schema/vaem>;
+                                  rdfs:label "previous published version";
+                                  rdfs:range xsd:anyURI.
+    vaem:rationale dct:description "A description of a justification for some other assertion or value";
+                   a owl:DatatypeProperty;
+                   rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                    <http://www.linkedmodel.org/schema/vaem>;
+                   rdfs:label "rationale";
+                   rdfs:range xsd:string.
+    vaem:rdfxmlFileURL dct:description """The property \"vaem:rdfxmlFileURL\" is used to provide a link to the location of the ontology's RDF/XML file""";
+                       a owl:DatatypeProperty;
+                       rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                        <http://www.linkedmodel.org/schema/vaem>;
+                       rdfs:label "RDF/XML file URL";
+                       rdfs:range xsd:anyURI.
+    vaem:reifiableBy dct:description """To express how statements in a model can be reifiable, this property is used to explicitly associate a property with a user-defined sub-class of \"rdf:Statement\". A recommended way of using this is to declare the properties that share the same reification constructs as sub-properties of a parent property that carries the \"vaem:reifiableBy\" property. The parent property should be of type \"rdf:Property\" so that it can have both datatype and object properties as sub-properties. By this means use and transformations of a model can be understood through a fully specified metamodel. \"vaem:reifiableBy\" is rangeless in order to comply with OWL DL semantics. Its range would have been rdfs:Class in order to refer to \"rdf:Statement\" sub-classes""";
+                     a owl:ObjectProperty;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "reifiable by".
+    vaem:releaseDate dct:description """The property \"vaem:releaseDate\" is intended for general use as the name implies.  The range of the property is set as \"vaem:dateUnion\" so as to allow a value to have a number of forms from a  year only to a full timestamp""";
+                     a owl:DatatypeProperty;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "release date";
+                     rdfs:subPropertyOf vaem:date.
+    vaem:revision dct:description """The property \"vaem:revision\" is a property intended for general use as the name implies.""";
+                  a owl:DatatypeProperty;
+                  rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                   <http://www.linkedmodel.org/schema/vaem>;
+                  rdfs:label "revision";
+                  rdfs:range xsd:string.
+    vaem:specificity dct:description """The property \"vaem:specificity\" is intended to specify the level of detail of an ontology.  The values that can be set for this property are restriced to an integer from 1 to 5. An ontology at level 1 has concepts of more general applicability than one at level 5. By having graphs at different levels of specificity it is possible to support greater modularity for selective imports""";
+                     a owl:DatatypeProperty;
+                     rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                      <http://www.linkedmodel.org/schema/vaem>;
+                     rdfs:label "specificity";
+                     rdfs:range xsd:nonNegativeInteger.
+    vaem:title a owl:DatatypeProperty;
+               rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                <http://www.linkedmodel.org/schema/vaem>;
+               rdfs:label "title";
+               rdfs:range xsd:string.
+    vaem:todo dct:description """As it name implies, a way to attach an annotation about a \"todo\" task""";
+              a owl:AnnotationProperty;
+              rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                               <http://www.linkedmodel.org/schema/vaem>;
+              rdfs:label "todo";
+              rdfs:range xsd:string.
+    vaem:turtleFileURL dct:description """The property \"vaem:turtleFileURL\" is used to provide a link to the location of the ontology's turtle file""";
+                       a owl:DatatypeProperty;
+                       rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                        <http://www.linkedmodel.org/schema/vaem>;
+                       rdfs:label "turtle file URL";
+                       rdfs:range xsd:anyURI.
+    vaem:url dct:description """The property \"vaem:url\" is intended for general use as the name implies.  The range of the property is set as an XSD URI""";
+             a owl:DatatypeProperty;
+             rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                              <http://www.linkedmodel.org/schema/vaem>;
+             rdfs:label "url";
+             rdfs:range xsd:anyURI.
+    vaem:usesNonImportedResource dct:description """The property \"vaem:usesNonImportedResource\" is used to express dependencies on resources from graphs that are not imported""";
+                                 a owl:AnnotationProperty;
+                                 rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                                  <http://www.linkedmodel.org/schema/vaem>;
+                                 rdfs:label "uses non-imported resource";
+                                 rdfs:range rdfs:Resource.
+    vaem:withAttributionTo dct:description """The property \"vaem:withAttributionTo\" is an annotation property that is either used to hold either a string or a reference to an instance of \"voag:Attribution\", from the VOAG ontology""";
+                           a owl:AnnotationProperty;
+                           rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
+                                            <http://www.linkedmodel.org/schema/vaem>;
+                           rdfs:label "with attribution to".
+    owl:Ontology vaem:hasGraphMetadata vaem:GMD_VAEM.
+}
+

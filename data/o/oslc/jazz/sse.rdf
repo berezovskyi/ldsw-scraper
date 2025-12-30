@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-16"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY jazz_sse 'http://jazz.net/ns/sse#'>
+	<!ENTITY dcterms 'http://purl.org/dc/terms/'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY oslc 'http://open-services.net/ns/core#'>
+	<!ENTITY oslc_rm 'http://open-services.net/ns/rm#'>
+	<!ENTITY oslc_cm 'http://open-services.net/ns/cm#'>
+	<!ENTITY oslc_qm 'http://open-services.net/ns/qm#'>
+	<!ENTITY jazz_ccm 'http://jazz.net/ns/ccm#'>
+	<!ENTITY jazz_rm 'http://jazz.net/ns/rm#'>
+	<!ENTITY jazz_rqm 'http://jazz.net/ns/qm/rqm#'>
+	<!ENTITY jazz_esa 'http://jazz.net/ns/enterprise_agile#'>
+	<!ENTITY jazz_fusa 'http://jazz.net/ns/functional_safety#'>
+	<!ENTITY jazz_aspice 'http://jazz.net/ns/aspice#'>
+	<!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:jazz_sse="http://jazz.net/ns/sse#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:oslc="http://open-services.net/ns/core#" xmlns:oslc_rm="http://open-services.net/ns/rm#" xmlns:oslc_cm="http://open-services.net/ns/cm#" xmlns:oslc_qm="http://open-services.net/ns/qm#" xmlns:jazz_ccm="http://jazz.net/ns/ccm#" xmlns:jazz_rm="http://jazz.net/ns/rm#" xmlns:jazz_rqm="http://jazz.net/ns/qm/rqm#" xmlns:jazz_esa="http://jazz.net/ns/enterprise_agile#" xmlns:jazz_fusa="http://jazz.net/ns/functional_safety#" xmlns:jazz_aspice="http://jazz.net/ns/aspice#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:Ontology rdf:about="&jazz_sse;">
+    <dcterms:dateCopyrighted rdf:datatype="&xsd;string">2019</dcterms:dateCopyrighted>
+    <dcterms:description rdf:datatype="&xsd;string">Vocabulary terms describing typical resources used for software and systems engineering.</dcterms:description>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html" />
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/SseVocabulary/sse-vocabulary.ttl" />
+    <dcterms:title rdf:datatype="&xsd;string">IBM Software and Systems Engineering Vocabulary</dcterms:title>
+    <rdfs:label rdf:datatype="&xsd;string">Software and Systems engineering core</rdfs:label>
+  </owl:Ontology>
+  <rdfs:Class rdf:about="&jazz_sse;Actor">
+    <rdfs:comment rdf:datatype="&xsd;string">Represents a role that a human, hardware device, or another system can play in a use case or scenario.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Actor</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:ApprovalTypes rdf:about="&jazz_sse;ApprovalTypeApproved">
+    <rdfs:comment rdf:datatype="&xsd;string">Registers approval.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Approved</rdfs:label>
+  </jazz_sse:ApprovalTypes>
+  <jazz_sse:ApprovalTypes rdf:about="&jazz_sse;ApprovalTypeInAnalysisReview">
+    <rdfs:comment rdf:datatype="&xsd;string">The approval is in analysis/review.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">In Analysis/Review</rdfs:label>
+  </jazz_sse:ApprovalTypes>
+  <jazz_sse:ApprovalTypes rdf:about="&jazz_sse;ApprovalTypeNotApproved">
+    <rdfs:comment rdf:datatype="&xsd;string">Registers lack of approval.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Not Approved</rdfs:label>
+  </jazz_sse:ApprovalTypes>
+  <jazz_sse:ApprovalTypes rdf:about="&jazz_sse;ApprovalTypeNotStarted">
+    <rdfs:comment rdf:datatype="&xsd;string">The approval is not yet started (default).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Not Started</rdfs:label>
+  </jazz_sse:ApprovalTypes>
+  <rdfs:Class rdf:about="&jazz_sse;ApprovalTypes">
+    <rdfs:comment rdf:datatype="&xsd;string">Types of approvals.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Approval Types</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;ArtifactCollection">
+    <rdfs:comment rdf:datatype="&xsd;string">A logical grouping of related artifacts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Collection</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;ArtifactModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A hiearchy of requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Module</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;CheckItem">
+    <rdfs:comment rdf:datatype="&xsd;string">A check item is an item on a checklist that needs to be verified for purpose of checking.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Check Item</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;CheckItemStatusTypes">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the status of a check item in a checklist.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Check Item Status Types</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:CheckItemStatus rdf:about="&jazz_sse;CheckItemStatusTypesNotApplicable">
+    <rdfs:comment rdf:datatype="&xsd;string">The check item is not applicable to the review or artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Not Applicable</rdfs:label>
+  </jazz_sse:CheckItemStatus>
+  <jazz_sse:CheckItemStatus rdf:about="&jazz_sse;CheckItemStatusTypesNotStarted">
+    <rdfs:comment rdf:datatype="&xsd;string">The check item review has not started (default).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Not Started</rdfs:label>
+  </jazz_sse:CheckItemStatus>
+  <jazz_sse:CheckItemStatus rdf:about="&jazz_sse;CheckItemStatusTypesRejected">
+    <rdfs:comment rdf:datatype="&xsd;string">The check item has been rejected.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Rejected</rdfs:label>
+  </jazz_sse:CheckItemStatus>
+  <jazz_sse:CheckItemStatus rdf:about="&jazz_sse;CheckItemStatusTypesRework">
+    <rdfs:comment rdf:datatype="&xsd;string">The check item has recommended rework.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Rework</rdfs:label>
+  </jazz_sse:CheckItemStatus>
+  <jazz_sse:CheckItemStatus rdf:about="&jazz_sse;CheckItemStatusTypesVerified">
+    <rdfs:comment rdf:datatype="&xsd;string">The check item has been verified.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Verified</rdfs:label>
+  </jazz_sse:CheckItemStatus>
+  <jazz_rm:Module rdf:about="&jazz_sse;ChecklistModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A check item is an item on a checklist that needs to be verified for purpose of checking. A checklist module is used to create checklists composed of check items. This is used along with reviews to ensure that all aspects of the review have been covered.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Checklist Module</rdfs:label>
+  </jazz_rm:Module>
+  <rdfs:Class rdf:about="&jazz_sse;DefectDisposition">
+    <rdfs:comment rdf:datatype="&xsd;string">Disposition of the resolved defect.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Disposition</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionDuplicate">
+    <rdfs:comment rdf:datatype="&xsd;string">Duplicate of another defect.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Duplicate</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionFixed">
+    <rdfs:comment rdf:datatype="&xsd;string">Defect has been corrected.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fixed</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionFixedUpstream">
+    <rdfs:comment rdf:datatype="&xsd;string">Defect has been corrected as part of another change.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fixed Upstream</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionInvalid">
+    <rdfs:comment rdf:datatype="&xsd;string">Not valid.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Invalid</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionNotReproducible">
+    <rdfs:comment rdf:datatype="&xsd;string">Defect cannot be reproduced.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Not Reproducible</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionWontFix">
+    <rdfs:comment rdf:datatype="&xsd;string">Defect will not be fixed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Won't Fix</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionWorksAsDesigned">
+    <rdfs:comment rdf:datatype="&xsd;string">Working as designed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Works as Designed</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <jazz_sse:DefectDisposition rdf:about="&jazz_sse;DefectDispositionWorksForMe">
+    <rdfs:comment rdf:datatype="&xsd;string">Unable to reproduce.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Works for Me</rdfs:label>
+  </jazz_sse:DefectDisposition>
+  <rdfs:Class rdf:about="&jazz_sse;FreeFormDiagram">
+    <rdfs:comment rdf:datatype="&xsd;string">A diagram to help illustrate or communicate a solution or requirement.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Free-Form Diagram</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;HMLScale">
+    <rdfs:comment rdf:datatype="&xsd;string">Ordinal scale (high/medium/low) for rating properties. Typically expressed as a value of type oslc_cm:Priority.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Rating scale (High/Medium/Low)</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&oslc_cm;High" />
+    <rdfs:seeAlso rdf:resource="&oslc_cm;Low" />
+    <rdfs:seeAlso rdf:resource="&oslc_cm;Medium" />
+  </rdfs:Class>
+  <jazz_sse:HMLScale rdf:about="&jazz_sse;HMLUnassigned">
+    <rdf:value rdf:datatype="&xsd;integer">0</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Unassigned ordinal scale value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Unassigned</rdfs:label>
+  </jazz_sse:HMLScale>
+  <rdfs:Class rdf:about="&jazz_sse;HardwareRequirement">
+    <rdfs:comment rdf:datatype="&xsd;string">A requirement allocated to hardware.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Hardware Requirement</rdfs:label>
+  </rdfs:Class>
+  <jazz_rm:Module rdf:about="&jazz_sse;HardwareRequirementsModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A module for hardware requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Hardware Requirements Module</rdfs:label>
+  </jazz_rm:Module>
+  <rdfs:Class rdf:about="&jazz_sse;Heading">
+    <rdfs:comment rdf:datatype="&xsd;string">An artifact used as a heading in a strucured module.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Heading</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:HowFoundValue rdf:about="&jazz_sse;HowFoundCustomer">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates a customer found the defect or issue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Customer</rdfs:label>
+  </jazz_sse:HowFoundValue>
+  <jazz_sse:HowFoundValue rdf:about="&jazz_sse;HowFoundDevelopment">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the development team found the defect or issue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Development</rdfs:label>
+  </jazz_sse:HowFoundValue>
+  <jazz_sse:HowFoundValue rdf:about="&jazz_sse;HowFoundTest">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the test or QA team found the defect or issue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Test</rdfs:label>
+  </jazz_sse:HowFoundValue>
+  <jazz_sse:HowFoundValue rdf:about="&jazz_sse;HowFoundUnknown">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates that the origin of the defect is not known or not defined.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Unknown</rdfs:label>
+  </jazz_sse:HowFoundValue>
+  <rdfs:Class rdf:about="&jazz_sse;HowFoundValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Describes how a defect was found.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">How Found</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;Information">
+    <rdfs:comment rdf:datatype="&xsd;string">Artifact used to contain non-requirement content, such as instructions related to managing requirements or modules.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Information</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalAccessibility">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to accessibility.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Accessibility</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalAvailability">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to availability.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Availability</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalCapacity">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to capacity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Capacity</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalCompliance">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to compliance.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Compliance</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalInteroperability">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to interoperability.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Interoperability</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalPerformance">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to performance.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Performance</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalReliability">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to reliability.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Reliability</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <rdfs:Class rdf:about="&jazz_sse;NonFunctionalRequirement">
+    <rdfs:comment rdf:datatype="&xsd;string">The Non-Functional Requirement (NFR) describes system attributes such as security, reliability, maintainability, scalability and usability (i.e. 'Utilities').</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Non-Functional Requirement</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalScalability">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to scalability.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Scalability</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalSecurity">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to security.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Security</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <jazz_sse:NonFunctionalType rdf:about="&jazz_sse;NonFunctionalSupportability">
+    <rdfs:comment rdf:datatype="&xsd;string">Requirement related to supportability.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Supportability</rdfs:label>
+  </jazz_sse:NonFunctionalType>
+  <rdfs:Class rdf:about="&jazz_sse;NonFunctionalType">
+    <rdfs:comment rdf:datatype="&xsd;string">Types of non-functional requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Non-Functional Requirement Types</rdfs:label>
+  </rdfs:Class>
+  <jazz_rm:Module rdf:about="&jazz_sse;NonfunctionalRequirementsModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A module for nonfunctional requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Nonfunctional Requirements Module</rdfs:label>
+  </jazz_rm:Module>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginCompetitiveAnalysis">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from competition or competitive analysis.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Competitive Analysis</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginCustomer">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from a customer.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Customer</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginDevelopment">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from the development team.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Development</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginLegal">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from a standard or legal contraint.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Standards/Legal</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginMarketAnalysis">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from marketing or market analysis.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Market Analysis</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginPartner">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from one or more business partners.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Partner</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginQA">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from the Quality assurance team.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Quality Assurance</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginServices">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from the services team.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Services</rdfs:label>
+  </jazz_sse:OriginValue>
+  <jazz_sse:OriginValue rdf:about="&jazz_sse;OriginSupport">
+    <rdfs:comment rdf:datatype="&xsd;string">Originated from the Help Desk or support team.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Support</rdfs:label>
+  </jazz_sse:OriginValue>
+  <rdfs:Class rdf:about="&jazz_sse;OriginValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Origin of a requirement or request.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Origin</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;ReleaseCollection">
+    <rdfs:comment rdf:datatype="&xsd;string">A logical grouping of related artifacts specifically associated with a release.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Release Collection</rdfs:label>
+  </rdfs:Class>
+  <oslc_cm:ChangeRequest rdf:about="&jazz_sse;RequestForChange">
+    <rdfs:comment rdf:datatype="&xsd;string">Request for a change to some aspect of the product.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Change Request</rdfs:label>
+  </oslc_cm:ChangeRequest>
+  <jazz_sse:ReviewMethod rdf:about="&jazz_sse;ReviewAnalysis">
+    <rdfs:comment rdf:datatype="&xsd;string">Review to be verified by analysis.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Analysis</rdfs:label>
+  </jazz_sse:ReviewMethod>
+  <jazz_sse:ReviewMethod rdf:about="&jazz_sse;ReviewAudit">
+    <rdfs:comment rdf:datatype="&xsd;string">Review to be verified by audit.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Audit</rdfs:label>
+  </jazz_sse:ReviewMethod>
+  <jazz_sse:ReviewMethod rdf:about="&jazz_sse;ReviewInspection">
+    <rdfs:comment rdf:datatype="&xsd;string">Review to be verified by inspection.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Inspection</rdfs:label>
+  </jazz_sse:ReviewMethod>
+  <rdfs:Class rdf:about="&jazz_sse;ReviewMethod">
+    <rdfs:comment rdf:datatype="&xsd;string">Verification methods used in review activities.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Review Verification Methods</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:ReviewMethod rdf:about="&jazz_sse;ReviewPeer">
+    <rdfs:comment rdf:datatype="&xsd;string">Review to be verified by peer review.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Peer review</rdfs:label>
+  </jazz_sse:ReviewMethod>
+  <jazz_sse:ReviewMethod rdf:about="&jazz_sse;ReviewUnassigned">
+    <rdfs:comment rdf:datatype="&xsd;string">Review verification method has not been assigned.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Unassigned</rdfs:label>
+  </jazz_sse:ReviewMethod>
+  <jazz_sse:ReviewMethod rdf:about="&jazz_sse;ReviewWalkthrough">
+    <rdfs:comment rdf:datatype="&xsd;string">Review to be verified by a walkthrough.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Walkthrough</rdfs:label>
+  </jazz_sse:ReviewMethod>
+  <rdfs:Class rdf:about="&jazz_sse;RiskCategory">
+    <rdfs:comment rdf:datatype="&xsd;string">Category values for risks.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Risk Categories</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskCompetitive">
+    <rdfs:comment rdf:datatype="&xsd;string">Competitive risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Competitive</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <rdfs:Class rdf:about="&jazz_sse;RiskDisposition">
+    <rdfs:comment rdf:datatype="&xsd;string">Disposition of the resolved risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Disposition</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:RiskDisposition rdf:about="&jazz_sse;RiskDispositionAvoided">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk has been avoided.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Avoided</rdfs:label>
+  </jazz_sse:RiskDisposition>
+  <jazz_sse:RiskDisposition rdf:about="&jazz_sse;RiskDispositionInvalid">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk is invalid.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Invalid</rdfs:label>
+  </jazz_sse:RiskDisposition>
+  <jazz_sse:RiskDisposition rdf:about="&jazz_sse;RiskDispositionTransferredShared">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk is transferred or shared with another team.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Transferred/Shared</rdfs:label>
+  </jazz_sse:RiskDisposition>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskEconomic">
+    <rdfs:comment rdf:datatype="&xsd;string">Economic risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Economic</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <rdfs:Class rdf:about="&jazz_sse;RiskImpact">
+    <rdfs:comment rdf:datatype="&xsd;string">Impact values associated with risks.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Impact</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_ccm;Impact" />
+  </rdfs:Class>
+  <jazz_sse:RiskImpact rdf:about="&jazz_sse;RiskImpactBlocker">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk is a blocker.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">100% - Blocker</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_ccm;ImpactSignificant" />
+  </jazz_sse:RiskImpact>
+  <jazz_sse:RiskImpact rdf:about="&jazz_sse;RiskImpactCritical">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has significant or critical impact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">80% - Critical</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_ccm;ImpactSignificant" />
+  </jazz_sse:RiskImpact>
+  <jazz_sse:RiskImpact rdf:about="&jazz_sse;RiskImpactMajor">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has major impact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">60% - Major</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_ccm;ImpactMajor" />
+  </jazz_sse:RiskImpact>
+  <jazz_sse:RiskImpact rdf:about="&jazz_sse;RiskImpactMinor">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has minor impact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">20% - Minor</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_ccm;ImpactMinor" />
+  </jazz_sse:RiskImpact>
+  <jazz_sse:RiskImpact rdf:about="&jazz_sse;RiskImpactModerate">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has moderate impact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">40% - Moderate</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_ccm;ImpactModerate" />
+  </jazz_sse:RiskImpact>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskMarket">
+    <rdfs:comment rdf:datatype="&xsd;string">Market risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Market</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskPolitical">
+    <rdfs:comment rdf:datatype="&xsd;string">Political risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Political</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <rdfs:Class rdf:about="&jazz_sse;RiskProbability">
+    <rdfs:comment rdf:datatype="&xsd;string">Probability values for a risk occurring.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Probability</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:RiskProbability rdf:about="&jazz_sse;RiskProbabilityHigh">
+    <rdfs:comment rdf:datatype="&xsd;string">High probability that the risk will occur.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">80% - High</rdfs:label>
+  </jazz_sse:RiskProbability>
+  <jazz_sse:RiskProbability rdf:about="&jazz_sse;RiskProbabilityLow">
+    <rdfs:comment rdf:datatype="&xsd;string">Low probability that the risk will occur.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">40% - Low</rdfs:label>
+  </jazz_sse:RiskProbability>
+  <jazz_sse:RiskProbability rdf:about="&jazz_sse;RiskProbabilityModerate">
+    <rdfs:comment rdf:datatype="&xsd;string">Moderate probability that the risk will occur.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">60% - Moderate</rdfs:label>
+  </jazz_sse:RiskProbability>
+  <jazz_sse:RiskProbability rdf:about="&jazz_sse;RiskProbabilityVeryHigh">
+    <rdfs:comment rdf:datatype="&xsd;string">Very high probability that the risk will occur.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">100% - Very High</rdfs:label>
+  </jazz_sse:RiskProbability>
+  <jazz_sse:RiskProbability rdf:about="&jazz_sse;RiskProbabilityVeryLow">
+    <rdfs:comment rdf:datatype="&xsd;string">Very low probability that the risk will occur.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">20% - Very Low</rdfs:label>
+  </jazz_sse:RiskProbability>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskRegulatoryLegal">
+    <rdfs:comment rdf:datatype="&xsd;string">Regulatory/legal risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Regulatory/legal</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskSocioCultural">
+    <rdfs:comment rdf:datatype="&xsd;string">Socio-cultural risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Socio-cultural</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskTechnology">
+    <rdfs:comment rdf:datatype="&xsd;string">Technology risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Technology</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <jazz_sse:RiskCategory rdf:about="&jazz_sse;RiskUncertainty">
+    <rdfs:comment rdf:datatype="&xsd;string">Uncertainty risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Uncertainty</rdfs:label>
+  </jazz_sse:RiskCategory>
+  <rdfs:Class rdf:about="&jazz_sse;Role">
+    <rdfs:comment rdf:datatype="&xsd;string">Describes a role that performs activities within the context of a scenario, for example, Systems Engineer, Product Owner, Architect, Software Engineer, Hardware Engineer.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Role</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;SoftwareArchitectureDesign">
+    <rdfs:comment rdf:datatype="&xsd;string">Represents the architectural design for the software of a system or product.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Software Architecture Design</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;SoftwareDetailedDesign">
+    <rdfs:comment rdf:datatype="&xsd;string">Represents the detailed architectural design for the software of a system or product.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Software Detailed Design</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;SoftwareRequirement">
+    <rdfs:comment rdf:datatype="&xsd;string">A requirement for software.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Software Requirement</rdfs:label>
+  </rdfs:Class>
+  <jazz_rm:Module rdf:about="&jazz_sse;SoftwareRequirementsModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A module for software requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Software Requirements Module</rdfs:label>
+  </jazz_rm:Module>
+  <rdfs:Class rdf:about="&jazz_sse;StakeholderRequirement">
+    <rdfs:comment rdf:datatype="&xsd;string">A requirement from the business or enterprise operations level (users, acquirers, customers, other stakeholders) as they relate to the problem or opportunity, that describe the solution required.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Stakeholder Requirement</rdfs:label>
+  </rdfs:Class>
+  <jazz_rm:Module rdf:about="&jazz_sse;StakeholderRequirementsModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A module for stakeholder requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Stakeholder Requirements Module</rdfs:label>
+  </jazz_rm:Module>
+  <rdfs:Class rdf:about="&jazz_sse;Standard">
+    <rdfs:comment rdf:datatype="&xsd;string">A specific type of requirement that defines a regulatory or system constraint.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Standard</rdfs:label>
+  </rdfs:Class>
+  <oslc_cm:State rdf:about="&jazz_sse;StateAccepted">
+    <rdfs:comment rdf:datatype="&xsd;string">Work has been successfully implemented and tested, and accepted by the business owner/stakeholder.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Accepted</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Approved" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateAnalyzing">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact is being analyzed to understand vision, feasibility, cost, impact, iterative delivery and benefit.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Analyzing</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateDeprecated">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined has been deprecated and there might be a newer version of it.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Deprecated</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateDone">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined is completed and delivered.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Done</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateDraft">
+    <rdfs:comment rdf:datatype="&xsd;string">Initial state of the artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Draft</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateImplementing">
+    <rdfs:comment rdf:datatype="&xsd;string">Work is allocated to one or more Value Streams or Programs.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Implementing</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateInDevelopment">
+    <rdfs:comment rdf:datatype="&xsd;string">Development work has started.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">In Development</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateInTest">
+    <rdfs:comment rdf:datatype="&xsd;string">Development tasks are complete and code is delivered for testing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">In Test</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateInvalid">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined is not valid.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Invalid</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateNew">
+    <rdfs:comment rdf:datatype="&xsd;string">Initial state of the artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">New</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateObsolete">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined is obsolete.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Obsolete</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StatePostponed">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined is postponed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Postponed</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateReadyForApproval">
+    <rdfs:comment rdf:datatype="&xsd;string">Analysis is completed and the epic is submitted for approval.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Ready (for Approval)</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateRejected">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined is rejected and no further work will be done.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Rejected</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateResolved">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined is resolved.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Resolved</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateRetired">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact or work defined has been retired and is now closed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Retired</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Closed" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateReviewing">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact is being reviewed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Reviewing</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateUnderReview">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact is under review reviewed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Under Review</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_sse;StateVerifying">
+    <rdfs:comment rdf:datatype="&xsd;string">A problem is in the process of being verified.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Verifying</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <rdfs:Class rdf:about="&jazz_sse;SupportingResource">
+    <rdfs:comment rdf:datatype="&xsd;string">An artifact that does not fit one of the other categories. A supporting resource will often be leveraged when uploading artifacts where one of the artifact types does not apply.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Supporting Resource</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;SystemArchitecture">
+    <rdfs:comment rdf:datatype="&xsd;string">Represents the architecture of the overall system.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">System Architecture</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;SystemRequirement">
+    <rdfs:comment rdf:datatype="&xsd;string">An requirement describing a function that the system as a whole should fulfill to satisfy the stakeholder needs and requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">System Requirement</rdfs:label>
+  </rdfs:Class>
+  <jazz_rm:Module rdf:about="&jazz_sse;SystemRequirementsModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A module for system requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">System Requirements Module</rdfs:label>
+  </jazz_rm:Module>
+  <rdfs:Class rdf:about="&jazz_sse;Term">
+    <rdfs:comment rdf:datatype="&xsd;string">Captures phrases or words that require a description.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Term</rdfs:label>
+  </rdfs:Class>
+  <jazz_sse:UseCasePropertyValues rdf:about="&jazz_sse;UCPropertyAlternateFlow">
+    <rdfs:comment rdf:datatype="&xsd;string">Alternate flow property for a use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Alternate Flow</rdfs:label>
+  </jazz_sse:UseCasePropertyValues>
+  <jazz_sse:UseCasePropertyValues rdf:about="&jazz_sse;UCPropertyBasicFlow">
+    <rdfs:comment rdf:datatype="&xsd;string">Basic flow property for a use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Basic Flow</rdfs:label>
+  </jazz_sse:UseCasePropertyValues>
+  <jazz_sse:UseCasePropertyValues rdf:about="&jazz_sse;UCPropertyDescription">
+    <rdfs:comment rdf:datatype="&xsd;string">Brief description property for a use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Brief Description</rdfs:label>
+  </jazz_sse:UseCasePropertyValues>
+  <jazz_sse:UseCasePropertyValues rdf:about="&jazz_sse;UCPropertyName">
+    <rdfs:comment rdf:datatype="&xsd;string">Name property for a use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Name</rdfs:label>
+  </jazz_sse:UseCasePropertyValues>
+  <jazz_sse:UseCasePropertyValues rdf:about="&jazz_sse;UCPropertyPostCondition">
+    <rdfs:comment rdf:datatype="&xsd;string">Post-condition property for a use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Post-Condition</rdfs:label>
+  </jazz_sse:UseCasePropertyValues>
+  <jazz_sse:UseCasePropertyValues rdf:about="&jazz_sse;UCPropertyPreCondition">
+    <rdfs:comment rdf:datatype="&xsd;string">Pre-condition property for a use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Pre-Condition</rdfs:label>
+  </jazz_sse:UseCasePropertyValues>
+  <jazz_sse:UseCasePropertyValues rdf:about="&jazz_sse;UCPropertySpecialRequirement">
+    <rdfs:comment rdf:datatype="&xsd;string">Special requirement property for a use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Special Requirement</rdfs:label>
+  </jazz_sse:UseCasePropertyValues>
+  <rdfs:Class rdf:about="&jazz_sse;UseCase">
+    <rdfs:comment rdf:datatype="&xsd;string">The set of actions performed by a system, which yeilds an observable result that is, typically of value for one or more actors or other stakeholders of the system.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Use Case</rdfs:label>
+  </rdfs:Class>
+  <jazz_rm:Module rdf:about="&jazz_sse;UseCaseModule">
+    <rdfs:comment rdf:datatype="&xsd;string">A module describing a particular use case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Use Case Module</rdfs:label>
+  </jazz_rm:Module>
+  <rdfs:Class rdf:about="&jazz_sse;UseCasePropertyValues">
+    <rdfs:comment rdf:datatype="&xsd;string">Values for a use case property.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Use Case Property Values</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;UserRequirement">
+    <rdfs:comment rdf:datatype="&xsd;string">A User Requirement specifically describes a capability required by end-users or customers. User Requirements are typically implemented by Features or Stories.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">User Requirement</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_sse;Vision">
+    <rdfs:comment rdf:datatype="&xsd;string">The Vision is a description of the future state of the Solution under development. It reflects Customer and stakeholder needs, as well as the Feature and Capabilities, proposed to meet those needs.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Vision</rdfs:label>
+  </rdfs:Class>
+  <rdf:Property rdf:about="&jazz_sse;accepted">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates whether or not the requirement or work has been accepted. Typically expressed as a boolean value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Accepted</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;approvedBy">
+    <rdfs:comment rdf:datatype="&xsd;string">Approver of the artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Approved By</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;approverPosition">
+    <rdfs:comment rdf:datatype="&xsd;string">Position of the person approving the artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Approver Position</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;benefits">
+    <rdfs:comment rdf:datatype="&xsd;string">Benefits to be gained by implementing a change or cabability.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Benefits</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;changeReason">
+    <rdfs:comment rdf:datatype="&xsd;string">Reason for requesting a change.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Change Reason</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;checkItemStatus">
+    <rdfs:comment rdf:datatype="&xsd;string">The status of a check item in a checklist.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Check Item Status</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;CheckItemStatusTypes" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;constrains">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Constrained By</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Link type indicating that a requirement constrains another. For example, a non-functional requirement constrains a system requirement.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Constrains</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;contingencyPlan">
+    <rdfs:comment rdf:datatype="&xsd;string">Contingency plan for a risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Contingency Plan</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;customerApprovalStatus">
+    <rdfs:comment rdf:datatype="&xsd;string">The approval status for a customer.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Customer Approval Status</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;ApprovalTypes" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;defectDisposition">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the disposition of a resolved defect (how it was resolved). Typically expressed as a value of type jazz_sse:DefectDisposition.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Disposition</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;DefectDisposition" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;dependsOn">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Blocks</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Shows dependency between requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Depends On</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;derivesFrom">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Derives To</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Shows the derivation of lower level requirements from higher level requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Is Derived From</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;estimatedCost">
+    <rdfs:comment rdf:datatype="&xsd;string">Estimated cost of delivery.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Estimated Cost</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;exposure">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk exposure to the plan as a result of the risk identified.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Exposure (%)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;howFound">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates how the defect was found. Typically expressed as a value of type jazz_sse:HowFound.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">How Found</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;HowFound" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;identificationDate">
+    <rdfs:comment rdf:datatype="&xsd;string">Date when the risk was identified.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Identification Date</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;impact">
+    <rdfs:comment rdf:datatype="&xsd;string">Impact associated with a risk or change. Typically expressed as a value of type jazz_sse:RiskImpact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Impact</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;RiskImpact" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;impactAssessment">
+    <rdfs:comment rdf:datatype="&xsd;string">Description of the impact of making the change.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Impact Assessment</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;impacts">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Impacted By</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Shows impacts, for example of a system requirement on other elements of the operating environment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Impacts</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;integratesWith">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Integrates with Software</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Shows integration relationship between hardware and software requirements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Integrates with Hardware</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;isBlocked">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates a 'soft dependency', that the work is blocked by some other required work.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Blocked</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;maturity">
+    <rdfs:comment rdf:datatype="&xsd;string">Assessed maturity of the artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Maturity</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;HMLScale" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;mitigates">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Mitigated By</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Shows that a requirement mitigates another, such as in the case of a hazard or risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Mitigates</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;mitigationPlan">
+    <rdfs:comment rdf:datatype="&xsd;string">Plan to mitigate the risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Mitigation Plan</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;nonfunctionalType">
+    <rdfs:comment rdf:datatype="&xsd;string">Type or category of non-functional requirement, for example, usability, performance, serviceability. Can be expressed as a value of type jazz_sse:NonFunctionalType.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Nonfunctional Type</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;NonFunctionalType" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;occurrenceDate">
+    <rdfs:comment rdf:datatype="&xsd;string">Date when the risk actually occurred.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Occurrence Date</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;origin">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates where the requirement originated. Can be expressed as a value of type jazz_sse:OriginValue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Origin</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;OriginValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;owner">
+    <rdfs:comment rdf:datatype="&xsd;string">Owner or responsible party for the artifact or action.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Owner</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;probability">
+    <rdfs:comment rdf:datatype="&xsd;string">Probability that a risk will occur. Typically expressed as a value of type jazz_sse:RiskProbability.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Probability</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;RiskProbability" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;reasonForBlock">
+    <rdfs:comment rdf:datatype="&xsd;string">Explanation of the 'soft dependency' that is blocking the work.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Reason</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;resourceRequirements">
+    <rdfs:comment rdf:datatype="&xsd;string">Resources required to address a change request.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Resource Requirements</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;reviewCriteria">
+    <rdfs:comment rdf:datatype="&xsd;string">Specifies the verification criteria used to conduct a review.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Verification Criteria</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;reviewFindings">
+    <rdfs:comment rdf:datatype="&xsd;string">Documents any discovery or new findings as a result of a review.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Review Findings</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;reviewMethod">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the method of review to be used. Can be expressed as a value of type jazz_sse:ReviewMethod.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Verification Method</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;ReviewMethod" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;reviewStakeholders">
+    <rdfs:comment rdf:datatype="&xsd;string">Parties who are interested in the review and its outcome, but are not reviewers.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Review Stakeholders</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;reviewers">
+    <rdfs:comment rdf:datatype="&xsd;string">Participants in the review.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Reviewers</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;riskCategory">
+    <rdfs:comment rdf:datatype="&xsd;string">Category or classification of the type of risk. Typically expressed as a value of type jazz_sse:RiskCategory.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Risk Category</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;RiskCategory" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;satisfies">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Mitigated By</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Shows that a requirement satisfies another requirement.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Mitigates</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;schedulingIssues">
+    <rdfs:comment rdf:datatype="&xsd;string">Scheduling issues associated with a change request.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Scheduling Issues</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;stability">
+    <rdfs:comment rdf:datatype="&xsd;string">Assessment of how stable the requirement is, as opposed to likely to change.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Stability</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;HMLScale" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;supplierApprovalStatus">
+    <rdfs:comment rdf:datatype="&xsd;string">The approval status for a supplier.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Supplier Approval Status</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;ApprovalTypes" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testCaseCategoryTestType">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the type of the Test Case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Test Type</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testLevelIntegration">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates testing is at the Integration Test level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Integration</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testLevelSystem">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates testing is at the System Test level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">System</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testLevelUnit">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates testing is at the Unit Test level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Unit</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testLevelUserAcceptance">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates testing is at the User Acceptance Test level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">User Acceptance</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testObjectiveFinal">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the Test Suite is for final testing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Final</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testObjectiveInitial">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the Test Suite is for initial testing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Initial</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testObjectiveRegression">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the Test Suite is for regression testing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Regression</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testObjectiveSmoke">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the Test Suite is for smoke testing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Smoke</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testPlanCategoryTestLevel">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the level of testing involved.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Test Level</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testSuiteCategoryTestObjective">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the objective of the Test Suites.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Test Objective</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testTypeFunctional">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates a Functional Test Case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Functional</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testTypePerformance">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates a Performance Test Case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Performance</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testTypeReliability">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates a Reliability Test Case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Reliability</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testTypeSupportability">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates a Supportability Test Case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Supportability</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;testTypeUsability">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates a Usability Test Case.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Usability</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_sse;ucProperty">
+    <rdfs:comment rdf:datatype="&xsd;string">Property of a use case. Typically expressed as a value of type jazz_sse:UseCasePropertyValues.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_sse;" />
+    <rdfs:label rdf:datatype="&xsd;string">Use Case Property</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_sse;UseCasePropertyValues" />
+  </rdf:Property>
+</rdf:RDF>

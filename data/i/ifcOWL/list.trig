@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <https://w3id.org/list#>.
+@prefix dce: <http://purl.org/dc/elements/1.1/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix list: <https://w3id.org/list#>.
+@prefix cc: <http://creativecommons.org/ns#>.
+
+{
+    _:autos11759 a owl:Class;
+                 owl:intersectionOf _:autos11760.
+    _:autos11760 rdf:first :OWLList;
+                 rdf:rest _:autos11761.
+    _:autos11761 rdf:first _:autos11762;
+                 rdf:rest rdf:nil.
+    _:autos11762 a owl:Class;
+                 owl:complementOf _:autos11763.
+    _:autos11763 a owl:Restriction;
+                 owl:onProperty :hasContents;
+                 owl:someValuesFrom owl:Thing.
+    _:autos11764 a owl:Class;
+                 owl:intersectionOf _:autos11765.
+    _:autos11765 rdf:first :OWLList;
+                 rdf:rest _:autos11766.
+    _:autos11766 rdf:first _:autos11767;
+                 rdf:rest rdf:nil.
+    _:autos11767 a owl:Class;
+                 owl:complementOf _:autos11768.
+    _:autos11768 a owl:Restriction;
+                 owl:onProperty :isFollowedBy;
+                 owl:someValuesFrom owl:Thing.
+    _:autos11769 a owl:Restriction;
+                 owl:allValuesFrom :OWLList;
+                 owl:onProperty :isFollowedBy.
+    <https://w3id.org/list> cc:license <http://creativecommons.org/licenses/by/3.0/>;
+                            dce:creator "Pieter Pauwels (pipauwel.pauwels@ugent.be)",
+                                        "Walter Terkaj  (walter.terkaj@itia.cnr.it)";
+                            dce:date "2016/03/03";
+                            dce:description "A set of entities used to describe the OWL list pattern.";
+                            dce:identifier "List";
+                            dce:language "en";
+                            dce:title "List";
+                            vann:preferredNamespacePrefix "list";
+                            vann:preferredNamespaceUri "https://w3id.org/list";
+                            a owl:Ontology;
+                            rdfs:comment "A set of entities used to describe the OWL list pattern. ",
+                                         "This ontology is identical to the ontology originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.";
+                            owl:versionInfo "1.0.0 ".
+    :EmptyList a owl:Class;
+               owl:equivalentClass _:autos11759,
+                                   _:autos11764.
+    :OWLList a owl:Class;
+             rdfs:subClassOf _:autos11769,
+                             owl:Thing.
+    :hasContents a owl:FunctionalProperty,
+                   owl:ObjectProperty;
+                 rdfs:subPropertyOf :hasListProperty.
+    :hasListProperty a owl:ObjectProperty;
+                     rdfs:domain :OWLList.
+    :hasNext a owl:FunctionalProperty,
+               owl:ObjectProperty;
+             rdfs:subPropertyOf :isFollowedBy.
+    :isFollowedBy a owl:ObjectProperty,
+                    owl:TransitiveProperty;
+                  rdfs:range :OWLList;
+                  rdfs:subPropertyOf :hasListProperty.
+}
+

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-16"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY dcterms 'http://purl.org/dc/terms/'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY qudt 'http://qudt.org/schema/qudt/'>
+	<!ENTITY sh 'http://www.w3.org/ns/shacl#'>
+	<!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+	<!ENTITY vaem 'http://www.linkedmodel.org/schema/vaem#'>
+	<!ENTITY voag 'http://voag.linkedmodel.org/schema/voag#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:qudt="http://qudt.org/schema/qudt/" xmlns:sh="http://www.w3.org/ns/shacl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vaem="http://www.linkedmodel.org/schema/vaem#" xmlns:voag="http://voag.linkedmodel.org/schema/voag#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:Ontology rdf:about="http://qudt.org/2.1/schema/shacl/overlay/qudt">
+    <vaem:hasGraphMetadata rdf:resource="&vaem;GMD_SHACLQUDTOVERLAY-SCHEMA" />
+    <rdfs:comment rdf:datatype="&xsd;string">Supplements the generated SHACL Schema with constructs not expressible in the QUDT OWL Ontology</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">QUDT SHACL Schema Supplement Version 2.1.47</rdfs:label>
+    <owl:imports rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
+    <owl:imports rdf:resource="&sh;" />
+    <sh:declare rdf:nodeID="autos11815" />
+    <sh:declare rdf:nodeID="autos11816" />
+    <sh:declare rdf:nodeID="autos11817" />
+    <sh:declare rdf:nodeID="autos11818" />
+    <sh:declare rdf:nodeID="autos11819" />
+    <sh:declare rdf:nodeID="autos11820" />
+    <sh:declare rdf:nodeID="autos11821" />
+    <sh:declare rdf:nodeID="autos11822" />
+    <sh:declare rdf:nodeID="autos11823" />
+  </owl:Ontology>
+  <sh:PropertyShape rdf:about="&qudt;AbstractQuantityKind-qudt_latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;AbstractQuantityKind-qudt_symbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <rdf:Description rdf:about="&qudt;AbstractQuantityKind-skos_broader">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">120</sh:order>
+  </rdf:Description>
+  <sh:PropertyGroup rdf:about="&qudt;ApplicableUnitsGroup">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Applicable Units</rdfs:label>
+    <sh:order rdf:datatype="&xsd;decimal">30</sh:order>
+  </sh:PropertyGroup>
+  <rdf:Description rdf:about="&qudt;Aspect">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:property rdf:resource="&qudt;Aspect-rdfs_isDefinedBy" />
+  </rdf:Description>
+  <sh:PropertyShape rdf:about="&qudt;Aspect-rdfs_isDefinedBy">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">200</sh:order>
+    <sh:path rdf:resource="&rdfs;isDefinedBy" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Citation-qudt_description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <rdf:Description rdf:about="&qudt;Concept">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:property rdf:resource="&qudt;Concept-rdf_type" />
+    <sh:property rdf:resource="&qudt;Concept-rdfs_isDefinedBy" />
+    <sh:property rdf:resource="&qudt;Concept-rdfs_label" />
+    <sh:property rdf:resource="&qudt;Concept-rdfs_seeAlso" />
+    <sh:property rdf:resource="&qudt;Concept-skos_altLabel" />
+  </rdf:Description>
+  <sh:PropertyShape rdf:about="&qudt;Concept-dcterms_description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:name rdf:datatype="&xsd;string">dcterms description</sh:name>
+    <sh:order rdf:datatype="&xsd;decimal">60</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-qudt_abbreviation">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">18</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-qudt_code">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">100</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-qudt_description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:name rdf:datatype="&xsd;string">full description</sh:name>
+    <sh:order rdf:datatype="&xsd;decimal">60</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-qudt_guidance">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">60</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-qudt_hasRule">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">95</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-qudt_id">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-qudt_plainTextDescription">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-rdf_type">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:name rdf:datatype="&xsd;string">type</sh:name>
+    <sh:order rdf:datatype="&xsd;decimal">10</sh:order>
+    <sh:path rdf:resource="&rdf;type" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-rdfs_isDefinedBy">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">200</sh:order>
+    <sh:path rdf:resource="&rdfs;isDefinedBy" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-rdfs_label">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:minCount rdf:datatype="&xsd;integer">1</sh:minCount>
+    <sh:order rdf:datatype="&xsd;decimal">10</sh:order>
+    <sh:path rdf:resource="&rdfs;label" />
+    <sh:severity rdf:resource="&sh;Warning" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-rdfs_seeAlso">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">900</sh:order>
+    <sh:path rdf:resource="&rdfs;seeAlso" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Concept-skos_altLabel">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">12</sh:order>
+    <sh:path rdf:resource="&skos;altLabel" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;EnumeratedValue-qudt_description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyGroup rdf:about="&qudt;IdentifiersAndDescriptionsPropertyGroup">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Identifiers and Descriptions</rdfs:label>
+    <sh:order rdf:datatype="&xsd;decimal">10</sh:order>
+  </sh:PropertyGroup>
+  <qudt:AspectClass rdf:about="&qudt;Narratable">
+    <rdf:type rdf:resource="&sh;NodeShape" />
+    <rdfs:comment rdf:datatype="&rdf;HTML">&lt;p&gt;&lt;em&gt;Narratable&lt;/em&gt; specifies properties that provide for documentation and references.&lt;/p&gt;</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Narratable</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&qudt;Aspect" />
+  </qudt:AspectClass>
+  <sh:PropertyShape rdf:about="&qudt;PhysicalConstant-qudt_latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyGroup rdf:about="&qudt;PropertiesGroup">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Properties</rdfs:label>
+    <sh:order rdf:datatype="&xsd;decimal">20</sh:order>
+  </sh:PropertyGroup>
+  <sh:PropertyShape rdf:about="&qudt;Quantifiable-qudt_value">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
+    <sh:or rdf:parseType="Resource">
+      <rdf:first rdf:nodeID="autos11825" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:nodeID="autos11827" />
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:nodeID="autos11829" />
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:nodeID="autos11831" />
+            <rdf:rest rdf:resource="&rdf;nil" />
+          </rdf:rest>
+        </rdf:rest>
+      </rdf:rest>
+    </sh:or>
+    <sh:path rdf:resource="&qudt;value" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Quantity-qudt_description">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_applicableCGSUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:deactivated rdf:datatype="&xsd;boolean">true</sh:deactivated>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_applicableSIUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:deactivated rdf:datatype="&xsd;boolean">true</sh:deactivated>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_applicableUSCustomaryUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:deactivated rdf:datatype="&xsd;boolean">true</sh:deactivated>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_applicableUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;ApplicableUnitsGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">10</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_baseCGSUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_baseISOUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_baseImperialUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_baseSIUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_baseUSCustomaryUnitDimensions">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_belongsToSystemOfQuantities">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">90</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_dimensionVectorForSI">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">100</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_expression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:name rdf:datatype="&xsd;string">symbol expression</sh:name>
+    <sh:order rdf:datatype="&xsd;decimal">10</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_hasDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">50</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_latexDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_mathMLdefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">70</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_qkdvDenominator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">61</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKind-qudt_qkdvNumerator">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">60</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForAmountOfSubstance">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForLength">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForLuminousIntensity">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForMass">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForThermodynamicTemperature">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionExponentForTime">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector-dimensionlessExponent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityKindDimensionVector_dimensionExponentForElectricCurrent">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;QuantityValue-value">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;NumericTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Rule-example">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Rule-qudt_example">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:or rdf:resource="&qudt;TextTypeUnion" />
+  </sh:PropertyShape>
+  <rdf:Description rdf:about="&qudt;Unit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:subClassOf rdf:resource="&qudt;Narratable" />
+  </rdf:Description>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_applicableSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">62</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_conversionMultiplier">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;UnitConversionGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">10</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_conversionOffset">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;UnitConversionGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">20</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_denominatorDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">52</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_expression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">30</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_hasDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">50</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_hasQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:name rdf:datatype="&xsd;string">quantity kind</sh:name>
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_iec61360Code">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">IEC-61369 code</rdfs:label>
+    <sh:group rdf:resource="&qudt;UnitEquivalencePropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_latexDefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_latexSymbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">60</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_mathMLdefinition">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">70</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_numeratorDimensionVector">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">54</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_omUnit">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;UnitEquivalencePropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">10</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_siUnitsExpression">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">35</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_symbol">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_ucumCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;UnitEquivalencePropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">50</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_udunitsCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;UnitEquivalencePropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">55</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_uneceCommonCode">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;UnitEquivalencePropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Unit-qudt_unitOfSystem">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">60</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyGroup rdf:about="&qudt;UnitConversionGroup">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Conversion</rdfs:label>
+    <sh:order rdf:datatype="&xsd;decimal">60</sh:order>
+  </sh:PropertyGroup>
+  <sh:PropertyGroup rdf:about="&qudt;UnitEquivalencePropertyGroup">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">Equivalent Units</rdfs:label>
+    <sh:order rdf:datatype="&xsd;decimal">50</sh:order>
+  </sh:PropertyGroup>
+  <sh:PropertyGroup rdf:about="&qudt;UnitReferencesPropertyGroup">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">References</rdfs:label>
+    <sh:order rdf:datatype="&xsd;decimal">20</sh:order>
+  </sh:PropertyGroup>
+  <sh:PropertyShape rdf:about="&qudt;UserQuantityKind-qudt_hasQuantityKind">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;PropertiesGroup" />
+    <sh:name rdf:datatype="&xsd;string">quantity kind</sh:name>
+    <sh:order rdf:datatype="&xsd;decimal">40</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Verifiable-qudt_dbpediaMatch">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">90</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Verifiable-qudt_informativeReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">84</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Verifiable-qudt_isoNormativeReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">82</sh:order>
+  </sh:PropertyShape>
+  <sh:PropertyShape rdf:about="&qudt;Verifiable-qudt_normativeReference">
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <sh:group rdf:resource="&qudt;IdentifiersAndDescriptionsPropertyGroup" />
+    <sh:order rdf:datatype="&xsd;decimal">80</sh:order>
+  </sh:PropertyShape>
+  <vaem:GraphMetaData rdf:about="&vaem;GMD_SHACLQUDTOVERLAY-SCHEMA">
+    <dcterms:contributor rdf:datatype="&xsd;string">Steve Ray</dcterms:contributor>
+    <dcterms:created rdf:datatype="&xsd;date">2020-04-20</dcterms:created>
+    <dcterms:creator rdf:datatype="&xsd;string">Ralph Hodgson</dcterms:creator>
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;The QUDT, or "Quantity, Unit, Dimension and Type" schema defines the base classes properties, and restrictions used for modeling physical quantities,
+   units of measure, and their dimensions in various measurement systems. 
+  This overlay graph provides additional properties that affect the display of entities in a user interface, as well as some SHACL rules.
+  &lt;/p&gt;</dcterms:description>
+    <dcterms:modified rdf:datatype="&xsd;dateTime">2025-01-28T14:03:40.345-05:00</dcterms:modified>
+    <dcterms:rights rdf:datatype="&xsd;string">
+  This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.
+
+THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  </dcterms:rights>
+    <dcterms:rights rdf:datatype="&xsd;string">The QUDT Ontologies are issued under a Creative Commons Attribution 4.0 International License (CC BY 4.0), available at https://creativecommons.org/licenses/by/4.0/. Attribution should be made to QUDT.org</dcterms:rights>
+    <dcterms:subject rdf:datatype="&xsd;string">QUDT</dcterms:subject>
+    <dcterms:title rdf:datatype="&xsd;string">QUDT SHACL Schema Overlay - Version 2.1.47</dcterms:title>
+    <vaem:graphName rdf:datatype="&xsd;string">qudtOverlay</vaem:graphName>
+    <vaem:graphTitle rdf:datatype="&xsd;string">Quantities, Units, Dimensions and Types (QUDT) SHACL Schema Overlay - Version 2.1.47</vaem:graphTitle>
+    <vaem:hasGraphRole rdf:resource="&vaem;SHACLSchemaOverlayGraph" />
+    <vaem:hasOwner rdf:resource="&vaem;QUDT" />
+    <vaem:hasSteward rdf:resource="&vaem;QUDT" />
+    <vaem:intent rdf:datatype="&xsd;string">Specifies overlay properties and rules for the schema for quantities, units and dimensions. Types are defined in other schemas.</vaem:intent>
+    <vaem:isMetadataFor rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <vaem:latestPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2025/01/DOC_SCHEMA-SHACL-QUDT-OVERLAY.html</vaem:latestPublishedVersion>
+    <vaem:logo rdf:datatype="&xsd;anyURI">https://qudt.org/linkedmodels.org/assets/lib/lm/images/logos/qudt_logo-300x110.png</vaem:logo>
+    <vaem:namespace rdf:datatype="&xsd;string">http://qudt.org/schema/qudt/</vaem:namespace>
+    <vaem:namespacePrefix rdf:datatype="&xsd;string">qudt</vaem:namespacePrefix>
+    <vaem:owner rdf:datatype="&xsd;string">qudt.org</vaem:owner>
+    <vaem:previousPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2024/12/DOC_SCHEMA-SHACL-QUDT-OVERLAY.html</vaem:previousPublishedVersion>
+    <vaem:turtleFileURL rdf:datatype="&xsd;anyURI">http://qudt.org/2.1/schema/shacl/overlay/qudt</vaem:turtleFileURL>
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;abstract" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;contributor" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;created" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;description" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;modified" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;rights" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;source" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;subject" />
+    <vaem:usesNonImportedResource rdf:resource="&dcterms;title" />
+    <vaem:usesNonImportedResource rdf:resource="&voag;QUDT-Attribution" />
+    <vaem:withAttributionTo rdf:resource="&voag;QUDT-Attribution" />
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT SHACL Schema Overlay Metadata Version 2.1.47</rdfs:label>
+    <owl:versionIRI rdf:resource="http://qudt.org/2.1/schema/shacl/overlay/qudt" />
+  </vaem:GraphMetaData>
+  <sh:PrefixDeclaration rdf:nodeID="autos11815">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://purl.org/dc/terms/</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">dcterms</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11816">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/schema/qudt/</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">qudt</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11817">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/vocab/dimensionvector/</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">qkdv</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11818">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/vocab/quantitykind/</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">quantitykind</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11819">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/vocab/unit/</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">unit</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11820">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/1999/02/22-rdf-syntax-ns#</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">rdf</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11821">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/2000/01/rdf-schema#</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">rdfs</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11822">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/2002/07/owl#</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">owl</sh:prefix>
+  </sh:PrefixDeclaration>
+  <sh:PrefixDeclaration rdf:nodeID="autos11823">
+    <sh:namespace rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core#</sh:namespace>
+    <sh:prefix rdf:datatype="&xsd;string">skos</sh:prefix>
+  </sh:PrefixDeclaration>
+  <rdf:Description rdf:nodeID="autos11825">
+    <sh:datatype rdf:resource="&xsd;float" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11827">
+    <sh:datatype rdf:resource="&xsd;double" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11829">
+    <sh:datatype rdf:resource="&xsd;integer" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11831">
+    <sh:datatype rdf:resource="&xsd;decimal" />
+  </rdf:Description>
+</rdf:RDF>

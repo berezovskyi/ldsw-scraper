@@ -1,0 +1,939 @@
+[
+  {
+    "@id": "http://jazz.net/ns/dcs#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Rational Data Collection Service vocabulary"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<h3>Data Collection Service.</h3>\r\n\tThe Rational Data Collection Service vocabulary terms, an extension to the R2RML vocabulary for the purpose of mapping xml and RDF data to relational data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Collection Service"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "http://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2013,2014"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#BaseResourceGroup",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "BaseResourceGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A BaseResourceGroup refers to a specific class or type of source that can provide a set of web resources. For example RTC would constitute a base resource group ."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#MapGroup",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MapGroup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A MapGroup refers to a set of ODSTableMap,FactTableMap or DimensionTableMap instances mapping specifications grouped together with the intent to process the data as one unit of collection cycle.\r\n\tFor example we could define a MapGroup called RTC Workitem that groups together all of the ODSTableMap mapping specifications for collecting work item data from RTC. "
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#ODSTableMap",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ODSTableMap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An ODSTableMap contains information about one or more resources to collect data from to eventually store in a Operational Data Store (ODS) database table.\r\n\tIt contains the information regarding the source data, what to extract, how to transform and in which column to store the information for the selected resources."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#DimensionTableMap",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "DimensionTableMap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A DimensionTableMap contains information about one or more resources to collect data from to eventually store in a data mart dimension database table.\r\n\tIt contains the information regarding the source data, what to extract, how to transform and in which column to store the information for the selected resources."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#FactTableMap",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "FactTableMap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A FactTableMap contains information about one or more resources to collect data from to eventually store in a data mart fact database table.\r\n\tIt contains the information regarding the source data, what to extract, how to transform and in which column to store the information for the selected resources."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#TableInfo",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TableInfo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A TableInfo refers to a database table specification.\r\n\tIt contains physical table meta data in the database."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#dbTransform",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dbTransform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies in an map the transformation a value is suppose to undergo before being stored into the target table and column."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#dbTransform"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#defaultSyntax",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "defaultSyntax"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the default value, action, transformation, sql statement in a mapping."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#defaultSyntax"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#oracleSyntax",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "oracleSyntax"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies a value, action, transformation, sql statement in a mapping specific to Oracle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#oracleSyntax"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#sqlServerSyntax",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "sqlServerSyntax"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies a value, action, transformation, sql statement in a mapping specific to SQLServer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#sqlServerSyntax"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#baseXPath",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "baseXPath"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This represents the root XML path of the REST service XML document that is returned."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#baseXPath"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#xPath",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "xPath"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Excluding the root XPath of a particular XML document, this represents the XML path of an element in an XML document.  The root XML path (baseXPath) is prepended eventually to this path at runtime to get the entire XML path of an element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#xPath"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#column",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "column"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Column name of a database table.  Used in the mapping specification to indicate which column an XML attribute of a particular XML resource is being mapped to.  In the case of the database DDL specification, it simply indicates the name of a column in a particular table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#column"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#deliveryKey",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "deliveryKey"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This represents the column(s) to use during the data collection when delivering data to a table, to identify if a particular record exists or not in the target table. Essentially the natural key of a record."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#deliveryKey"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#deliveryType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "deliveryType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Defines how to handle the data delivery to the target database, i.e. update records, append to the table etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#deliveryType"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#dependency",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dependency"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies a dependency between two map groups.  This information is used to determine the data dependencies that exist between two map groups.  This information can be used to determine a map group processing order."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#dependency"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#enabled",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "enabled"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies whether a specific map group is enabled for collection when the collection jobs runs. Valid values are true or false"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#enabled"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#filter",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "filter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies filter criteria either for incoming data or data being stored in the target table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#filter"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#filterAction",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "filterAction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Within a filter specification, specifies if the filter is to include the data meeting the criteria or exclude the data meeting the criteria."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#filterAction"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#filterType",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "filterType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies whether the filtering applies to the incoming data or to the data being stored to a target table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#filterType"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#filterValue",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "filterValue"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The filter criteria to apply to the data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#filterValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#linkDeletion",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "linkDeletion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#linkDeletion"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#localTransform",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "localTransform"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies the invocation of a DCS function to transform data.  Local implies the function is an implementation in DCS and the data is transformed in the DCS engine."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#localTransform"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#lookupCondition",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "lookupCondition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "In a mapping specification that defines a lookup, this property specifies a logical operator to use when specifying to lookup data in a target table. Limited to AND and OR."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#lookupCondition"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#lookupKey",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "lookupKey"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "In a mapping specification that defines a lookup, this property specifies what constitutes the key column(s) to use to compare values in a table in order to find a matching record stored in another table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#lookupKey"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#lookupNotMatch",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "lookupNotMatch"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "In a mapping specification that defines a lookup, this property specifies how to handle the case when a record match is not found."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#lookupNotMatch"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#name",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Logical name of an XML attribute in the mapping definition.  The name could be identical to the  actual xml attribute name or different."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#name"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#needLock",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "needLock"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#needLock"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#predicateColumnLookup",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "predicateColumnLookup"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "In a lookup specification, identifies which predicate and parent table column name to use as a key to match records."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#predicateColumnLookup"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#predicateName",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "predicateName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "In a lookup specification, identifies the predicate name used as a key to match records."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#predicateName"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#relativeURL",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "relativeURL"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relative URL to the REST service server URL to use to retrieve the actual XML data for a particular resource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#relativeURL"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#resourceInfo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "resourceInfo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Provides information regarding XML resources, or database resources. Information provided include the base resource group, the relative URL and the X path in the case of an XML based resource or an SQL query in the case of a database resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#resourceInfo"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#schemaName",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "schemaName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies the table schema of the table in the target database specified in the mapping."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#schemaName"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#surrogateKey",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "surrogateKey"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Specifies which column in the target table acts as the surrogate key for the table for which DCS needs to generate a value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#surrogateKey"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#tableInfo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "tableInfo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Used in the specification to enclose information regarding a physical table in the target database."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#tableInfo"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dcs#tableName",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dcs#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "tableName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifies the tables physical name in the mapping specification."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://jazz.net/ns/dcs#tableName"
+      }
+    ]
+  }
+]

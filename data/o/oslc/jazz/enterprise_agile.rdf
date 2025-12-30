@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-16"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+	<!ENTITY jazz_esa 'http://jazz.net/ns/enterprise_agile#'>
+	<!ENTITY dcterms 'http://purl.org/dc/terms/'>
+	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+	<!ENTITY oslc 'http://open-services.net/ns/core#'>
+	<!ENTITY oslc_rm 'http://open-services.net/ns/rm#'>
+	<!ENTITY oslc_cm 'http://open-services.net/ns/cm#'>
+	<!ENTITY oslc_qm 'http://open-services.net/ns/qm#'>
+	<!ENTITY jazz_ccm 'http://jazz.net/ns/ccm#'>
+	<!ENTITY jazz_rm 'http://jazz.net/ns/rm#'>
+	<!ENTITY jazz_rqm 'http://jazz.net/ns/qm/rqm#'>
+	<!ENTITY jazz_sse 'http://jazz.net/ns/sse#'>
+	<!ENTITY jazz_fusa 'http://jazz.net/ns/functional_safety#'>
+	<!ENTITY jazz_aspice 'http://jazz.net/ns/aspice#'>
+	<!ENTITY skos 'http://www.w3.org/2004/02/skos/core#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:jazz_esa="http://jazz.net/ns/enterprise_agile#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:oslc="http://open-services.net/ns/core#" xmlns:oslc_rm="http://open-services.net/ns/rm#" xmlns:oslc_cm="http://open-services.net/ns/cm#" xmlns:oslc_qm="http://open-services.net/ns/qm#" xmlns:jazz_ccm="http://jazz.net/ns/ccm#" xmlns:jazz_rm="http://jazz.net/ns/rm#" xmlns:jazz_rqm="http://jazz.net/ns/qm/rqm#" xmlns:jazz_sse="http://jazz.net/ns/sse#" xmlns:jazz_fusa="http://jazz.net/ns/functional_safety#" xmlns:jazz_aspice="http://jazz.net/ns/aspice#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <owl:Ontology rdf:about="&jazz_esa;">
+    <dcterms:dateCopyrighted rdf:datatype="&xsd;string">2019</dcterms:dateCopyrighted>
+    <dcterms:description rdf:datatype="&xsd;string">Vocabulary terms describing resources used in IBM templates to support enterprise scaled agile methodology.</dcterms:description>
+    <dcterms:license rdf:resource="https://jazz.net/ns/license.html" />
+    <dcterms:source rdf:resource="https://jazz.net/wiki/pub/LinkedData/EnterpriseScaledAgileVocabulary/esa-vocabulary.ttl" />
+    <dcterms:title rdf:datatype="&xsd;string">IBM Enterprise Scaled Agile Vocabulary</dcterms:title>
+    <rdfs:label rdf:datatype="&xsd;string">Enterprise scaled agile core</rdfs:label>
+  </owl:Ontology>
+  <jazz_esa:EnablerType rdf:about="&jazz_esa;ArchitectureEnablerType">
+    <rdfs:comment rdf:datatype="&xsd;string">Enabler work related to architecture.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Architecture</rdfs:label>
+  </jazz_esa:EnablerType>
+  <rdfs:Class rdf:about="&jazz_esa;BusinessValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Relative business value used for planning and assessing of PI Objectives.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue0">
+    <rdf:value rdf:datatype="&xsd;integer">0</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 0 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 0</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue1">
+    <rdf:value rdf:datatype="&xsd;integer">1</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 1 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 1</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue10">
+    <rdf:value rdf:datatype="&xsd;integer">10</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 10 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 10</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue2">
+    <rdf:value rdf:datatype="&xsd;integer">2</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 2 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 2</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue3">
+    <rdf:value rdf:datatype="&xsd;integer">3</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 3 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 3</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue4">
+    <rdf:value rdf:datatype="&xsd;integer">4</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 4 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 4</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue5">
+    <rdf:value rdf:datatype="&xsd;integer">5</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 5 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 5</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue6">
+    <rdf:value rdf:datatype="&xsd;integer">6</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 6 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 6</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue7">
+    <rdf:value rdf:datatype="&xsd;integer">7</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 7 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 7</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue8">
+    <rdf:value rdf:datatype="&xsd;integer">8</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 8 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 8</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:BusinessValue rdf:about="&jazz_esa;BusinessValue9">
+    <rdf:value rdf:datatype="&xsd;integer">9</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 9 for relative business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value 9</rdfs:label>
+  </jazz_esa:BusinessValue>
+  <jazz_esa:WorkType rdf:about="&jazz_esa;BusinessWorkType">
+    <rdfs:comment rdf:datatype="&xsd;string">Work that delivers end user capabilities.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business</rdfs:label>
+  </jazz_esa:WorkType>
+  <rdfs:Class rdf:about="&jazz_esa;Capability">
+    <rdfs:comment rdf:datatype="&xsd;string">A higher-level solution behavior that typically spans multiple release trains and program increments.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Capability</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:ChecklistValue rdf:about="&jazz_esa;ChecklistComplete">
+    <rdfs:comment rdf:datatype="&xsd;string">Work or activity is completed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Complete</rdfs:label>
+  </jazz_esa:ChecklistValue>
+  <jazz_esa:ChecklistValue rdf:about="&jazz_esa;ChecklistNotRequired">
+    <rdfs:comment rdf:datatype="&xsd;string">Work or activity is not required.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Not Required</rdfs:label>
+  </jazz_esa:ChecklistValue>
+  <jazz_esa:ChecklistValue rdf:about="&jazz_esa;ChecklistRequired">
+    <rdfs:comment rdf:datatype="&xsd;string">Work or activity is required.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Required</rdfs:label>
+  </jazz_esa:ChecklistValue>
+  <rdfs:Class rdf:about="&jazz_esa;ChecklistValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Value indicating whether the item or work is required (or not) and completed. Can apply to multiple types of work.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Checklist Values</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ChecklistComplete" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ChecklistNotRequired" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ChecklistRequired" />
+  </rdfs:Class>
+  <jazz_esa:EnablerType rdf:about="&jazz_esa;ComplianceEnablerType">
+    <rdfs:comment rdf:datatype="&xsd;string">Enabler work related to Compliance.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Compliance</rdfs:label>
+  </jazz_esa:EnablerType>
+  <rdfs:Class rdf:about="&jazz_esa;EnablerType">
+    <rdfs:comment rdf:datatype="&xsd;string">SAFe Enabler Type categories.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Enabler Type</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ArchitectureEnablerType" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ComplianceEnablerType" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ExplorationEnablerType" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;InfrastructureEnablerType" />
+  </rdfs:Class>
+  <jazz_esa:WorkType rdf:about="&jazz_esa;EnablerWorkType">
+    <rdfs:comment rdf:datatype="&xsd;string">Work that provides the foundation for other capabilities (such as architecture, infrastructure, and so on.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Enabler</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;EnablerType" />
+  </jazz_esa:WorkType>
+  <rdfs:Class rdf:about="&jazz_esa;Epic">
+    <rdfs:comment rdf:datatype="&xsd;string">A container that captures and manages the most significant initiatives within a portfolio.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Epic</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:EnablerType rdf:about="&jazz_esa;ExplorationEnablerType">
+    <rdfs:comment rdf:datatype="&xsd;string">Enabler work related to exploration.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Exploration</rdfs:label>
+  </jazz_esa:EnablerType>
+  <rdfs:Class rdf:about="&jazz_esa;Feature">
+    <rdfs:comment rdf:datatype="&xsd;string">A service that fulfills a stakeholder need, and can be delivered by a single release train in a single program increment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Feature</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;Fibonacci1">
+    <rdf:value rdf:datatype="&xsd;integer">1</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 1 for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci 1</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;Fibonacci13">
+    <rdf:value rdf:datatype="&xsd;integer">13</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 13 for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci 13</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;Fibonacci2">
+    <rdf:value rdf:datatype="&xsd;integer">2</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 2 for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci 2</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;Fibonacci20">
+    <rdf:value rdf:datatype="&xsd;integer">21</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 21 for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci 21</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;Fibonacci3">
+    <rdf:value rdf:datatype="&xsd;integer">3</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 3 for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci 3</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;Fibonacci5">
+    <rdf:value rdf:datatype="&xsd;integer">5</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 5 for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci 5</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;Fibonacci8">
+    <rdf:value rdf:datatype="&xsd;integer">8</rdf:value>
+    <rdfs:comment rdf:datatype="&xsd;string">Value of 8 for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci 8</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <jazz_esa:FibonacciValue rdf:about="&jazz_esa;FibonacciUnassigned">
+    <rdfs:comment rdf:datatype="&xsd;string">No value assigned for Fibonacci sequence.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Unassigned</rdfs:label>
+  </jazz_esa:FibonacciValue>
+  <rdfs:Class rdf:about="&jazz_esa;FibonacciValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Fibonacci value used for estimating. This class is used to define the WSJF component classes.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fibonacci sequence of values</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:GoNogoDecision rdf:about="&jazz_esa;GoDecision">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates a Go decision (to proceed).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Go</rdfs:label>
+  </jazz_esa:GoNogoDecision>
+  <rdfs:Class rdf:about="&jazz_esa;GoNogoDecision">
+    <rdfs:comment rdf:datatype="&xsd;string">Values for Go or No-go decision.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Go or No-go values</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:EnablerType rdf:about="&jazz_esa;InfrastructureEnablerType">
+    <rdfs:comment rdf:datatype="&xsd;string">Enabler work related to infrastructure.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Infrastructure</rdfs:label>
+  </jazz_esa:EnablerType>
+  <rdfs:Class rdf:about="&jazz_esa;JobSizeFibonacciValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Fibonacci value used for estimating job size. Job Size is a WSJF component used in the WSJF calculation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Job Size</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;LifecycleScenario">
+    <rdfs:comment rdf:datatype="&xsd;string">An end-to-end usage model for a solution that illustrates the Vision.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Lifecycle Scenario</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;Milestone">
+    <rdfs:comment rdf:datatype="&xsd;string">A marker on the development timeline to validate business opportunities and hypotheses.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Milestone</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;MilestoneType">
+    <rdfs:comment rdf:datatype="&xsd;string">Specifies the type of a Milestone.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Milestone Type</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:MilestoneType rdf:about="&jazz_esa;MilestoneTypeFixedDate">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the Milestone has a fixed date.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Fixed-date Milestone</rdfs:label>
+  </jazz_esa:MilestoneType>
+  <jazz_esa:MilestoneType rdf:about="&jazz_esa;MilestoneTypeLearning">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates that the Milestone is for learning.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Learning Milestone</rdfs:label>
+  </jazz_esa:MilestoneType>
+  <jazz_esa:MilestoneType rdf:about="&jazz_esa;MilestoneTypePI">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the Milestone tied to a Program Increment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">PI Milestone</rdfs:label>
+  </jazz_esa:MilestoneType>
+  <jazz_esa:GoNogoDecision rdf:about="&jazz_esa;NoGoDecision">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates a No-Go decision (to stop further work).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">No-Go</rdfs:label>
+  </jazz_esa:GoNogoDecision>
+  <rdfs:Class rdf:about="&jazz_esa;PIObjective">
+    <rdfs:comment rdf:datatype="&xsd;string">A business or technical goal to achieve in a program increment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">PI Objective</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:Epic rdf:about="&jazz_esa;PortfolioEpic">
+    <rdfs:comment rdf:datatype="&xsd;string">Epic at the portfolio level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Portfolio Epic</rdfs:label>
+    <skos:narrower rdf:resource="&jazz_esa;Epic" />
+  </jazz_esa:Epic>
+  <jazz_esa:Epic rdf:about="&jazz_esa;ProgramEpic">
+    <rdfs:comment rdf:datatype="&xsd;string">Epic at the program level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Program Epic</rdfs:label>
+    <skos:narrower rdf:resource="&jazz_esa;Epic" />
+  </jazz_esa:Epic>
+  <rdfs:Class rdf:about="&jazz_esa;RROEFibonacciValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Fibonacci value used for estimating risk reduction or opportunity enablement. RROE is a WSJF component used in the WSJF calculation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">RROE</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;Retrospective">
+    <rdfs:comment rdf:datatype="&xsd;string">An activity held at the end of an iteration to reflect on what went well and identify areas for improvement.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Retrospective</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:TypeOfReturn rdf:about="&jazz_esa;ReturnMarketShare">
+    <rdfs:comment rdf:datatype="&xsd;string">Type of return is increased market share.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Market Share</rdfs:label>
+  </jazz_esa:TypeOfReturn>
+  <jazz_esa:TypeOfReturn rdf:about="&jazz_esa;ReturnNewMarkets">
+    <rdfs:comment rdf:datatype="&xsd;string">Type of return is reaching new markets.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">New Markets Served</rdfs:label>
+  </jazz_esa:TypeOfReturn>
+  <jazz_esa:TypeOfReturn rdf:about="&jazz_esa;ReturnOther">
+    <rdfs:comment rdf:datatype="&xsd;string">A type of return other than those already defined.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Other</rdfs:label>
+  </jazz_esa:TypeOfReturn>
+  <jazz_esa:TypeOfReturn rdf:about="&jazz_esa;ReturnProductivity">
+    <rdfs:comment rdf:datatype="&xsd;string">Type of return is improved productivity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Improved Productivity</rdfs:label>
+  </jazz_esa:TypeOfReturn>
+  <jazz_esa:TypeOfReturn rdf:about="&jazz_esa;ReturnRevenue">
+    <rdfs:comment rdf:datatype="&xsd;string">Type of return is increased revenue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Increased Revenue</rdfs:label>
+  </jazz_esa:TypeOfReturn>
+  <rdfs:Class rdf:about="&jazz_esa;RiskDisposition">
+    <rdfs:comment rdf:datatype="&xsd;string">Disposition of the resolved risk.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Disposition</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:RiskDisposition rdf:about="&jazz_esa;RiskDispositionAccepted">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk has been accepted.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Accepted</rdfs:label>
+  </jazz_esa:RiskDisposition>
+  <jazz_esa:RiskDisposition rdf:about="&jazz_esa;RiskDispositionMitigated">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk has been mitigated.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Mitigated</rdfs:label>
+  </jazz_esa:RiskDisposition>
+  <jazz_esa:RiskDisposition rdf:about="&jazz_esa;RiskDispositionOwned">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk is owned.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Owned</rdfs:label>
+  </jazz_esa:RiskDisposition>
+  <jazz_esa:RiskDisposition rdf:about="&jazz_esa;RiskDispositionResolved">
+    <rdfs:comment rdf:datatype="&xsd;string">The risk has been resolved.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Resolved</rdfs:label>
+  </jazz_esa:RiskDisposition>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeLeanBusinessCase">
+    <rdfs:comment rdf:datatype="&xsd;string">An artifact prescribed by SAFe to capture the results of analysis as part of the Portfolio, Solution or Program Epic Kanban process.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Lean Business Case</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFePortfolioCanvas">
+    <rdfs:comment rdf:datatype="&xsd;string">An artifact prescribed by SAFe to capture details about how the portfolio intends to driver value for an organization or enterprise.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Portfolio Canvas</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeProgram">
+    <rdfs:comment rdf:datatype="&xsd;string">Defines a long-lived self-governing system that plans and manages change to deliver value aligned with business strategy. Programs (Agile - Trains) realize Value Streams. They are where development teams and other resources are applied to important ongoing work efforts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Program</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeSWOTAnalysis">
+    <rdfs:comment rdf:datatype="&xsd;string">The SWOT Analysis artifact in SAFe® 5.0 identifies strengths, weaknesses, opportunities and threats for a business solution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] SWOT Analysis</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeSolutionContext">
+    <rdfs:comment rdf:datatype="&xsd;string">Identifies critical aspects of the target operational environment for a Solution, including usage, installation, deployment, run time and support.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Solution Context</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeSolutionIntent">
+    <rdfs:comment rdf:datatype="&xsd;string">Provides the basic understanding of the current and evolving requirements, design, and intent -- or larger purpose -- of the Solution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Solution Intent</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeStrategicTheme">
+    <rdfs:comment rdf:datatype="&xsd;string">Defines a specific business objective that connects the SAFe Porfolio vision to the evolving enterprise business strategy. Strategic themes define differentiators for the business.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Strategic Theme</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeTOWSMatrix">
+    <rdfs:comment rdf:datatype="&xsd;string">The TOWS Matrix artifact in SAFe® 5.0 is used to identify strategic options to create a better future state of a business solution.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] TOWS Matrix</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeValueStream">
+    <rdfs:comment rdf:datatype="&xsd;string">Defines a long-lived system that delivers value to the business. Value Streams are realized by Programs (Agile Release Trains).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Value Stream</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeValueStreamCanvas">
+    <rdfs:comment rdf:datatype="&xsd;string">An artifact prescribed by SAFe to elaborate the details of each value proposition that supports the portfolio.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Value Stream Canvas</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;SAFeVision">
+    <rdfs:comment rdf:datatype="&xsd;string">In SAFe, the Vision describes a future view of a solution, system or end-user capability to be developed, providing the larger, contextual overview and purpose.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">[SAFe] Vision</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;ScenarioAct">
+    <rdfs:comment rdf:datatype="&xsd;string">Elaborates a Use Case that is part of the end-to-end Lifecycle Scenario. There may be multiple Acts in a Lifecycle Scenario. Capabilities and Features might implement the Act.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Scenario Act</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;LifecycleScenario" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ScenarioScene" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;ScenarioScene">
+    <rdfs:comment rdf:datatype="&xsd;string">A Scene is a single-role activity that is part of a Scenario Act. Scenes might be implemented by Features or Stories.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Scenario Scene</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;LifecycleScenario" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ScenarioAct" />
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;Scope">
+    <rdfs:comment rdf:datatype="&xsd;string">Scope of element (e.g. PI Objective, risk, etc).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Scope</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:Scope rdf:about="&jazz_esa;ScopePortfolio">
+    <rdfs:comment rdf:datatype="&xsd;string">Scoped to the Portfolio level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Portfolio</rdfs:label>
+  </jazz_esa:Scope>
+  <jazz_esa:Scope rdf:about="&jazz_esa;ScopeProgram">
+    <rdfs:comment rdf:datatype="&xsd;string">Scoped to the Program level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Program</rdfs:label>
+  </jazz_esa:Scope>
+  <jazz_esa:Scope rdf:about="&jazz_esa;ScopeSolution">
+    <rdfs:comment rdf:datatype="&xsd;string">Scoped to the Solution level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Solution</rdfs:label>
+  </jazz_esa:Scope>
+  <jazz_esa:Scope rdf:about="&jazz_esa;ScopeTeam">
+    <rdfs:comment rdf:datatype="&xsd;string">Scoped to the Team level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Team</rdfs:label>
+  </jazz_esa:Scope>
+  <jazz_esa:Epic rdf:about="&jazz_esa;SolutionEpic">
+    <rdfs:comment rdf:datatype="&xsd;string">Epic at the solution level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Solution Epic</rdfs:label>
+    <skos:narrower rdf:resource="&jazz_esa;Epic" />
+  </jazz_esa:Epic>
+  <rdfs:Class rdf:about="&jazz_esa;Standard">
+    <rdfs:comment rdf:datatype="&xsd;string">A Standard is a specific type of requirement that defines a regulatory or system constraint.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Standard</rdfs:label>
+  </rdfs:Class>
+  <oslc_cm:State rdf:about="&jazz_esa;StateDeployingToProduction">
+    <rdfs:comment rdf:datatype="&xsd;string">The capability or feature has been validated and is deploying to a production environment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Deploying to Production</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Approved" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateInPlayback">
+    <rdfs:comment rdf:datatype="&xsd;string">The artifact is being reviewed with stakeholders and customers for feedback.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">In Playback</rdfs:label>
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateMVP">
+    <rdfs:comment rdf:datatype="&xsd;string">Unique to the Portfolio Epic workflow, indicates that the Portfolio Epic represents MVP as per SAFe® guidelines.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">MVP</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StatePersevering">
+    <rdfs:comment rdf:datatype="&xsd;string">Unique to the Portfolio Epic workflow, indicates that the Portfolio Epic is perservering beyond MVP delivery as per SAFe® guidelines.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Persevering</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateReleasing">
+    <rdfs:comment rdf:datatype="&xsd;string">The capability or feature is being released to customers/stakeholders.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Releasing</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Approved" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateRiskAccepted">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has been marked Accepted as part of Risk ROAMing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Accepted</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateRiskMitigated">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has been marked Mitigated as part of Risk ROAMing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Mitigated</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateRiskOwned">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has been marked Owned as part of Risk ROAMing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Owned</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateRiskResolved">
+    <rdfs:comment rdf:datatype="&xsd;string">The Risk has been marked Resolved as part of Risk ROAMing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Resolved</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateValidatingOnStaging">
+    <rdfs:comment rdf:datatype="&xsd;string">The capability or feature is being integrated and delivered to a staging environment for validation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Validating on Staging</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <oslc_cm:State rdf:about="&jazz_esa;StateVerifyingOnStaging">
+    <rdfs:comment rdf:datatype="&xsd;string">The feature is being verified in the staging environment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Verifying on Staging</rdfs:label>
+    <skos:narrower rdf:resource="&oslc_cm;Inprogress" />
+  </oslc_cm:State>
+  <rdfs:Class rdf:about="&jazz_esa;Story">
+    <rdfs:comment rdf:datatype="&xsd;string">Represents a small independent behavior that can be implemented incrementally.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Story</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;TimeCriticalityFibonacciValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Fibonacci value used for estimating time criticality. Time Criticality is a WSJF component used in the WSJF calculation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Time Criticality</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;TypeOfReturn">
+    <rdfs:comment rdf:datatype="&xsd;string">Types of return on investment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Types of Return</rdfs:label>
+  </rdfs:Class>
+  <jazz_esa:EnablerType rdf:about="&jazz_esa;UnassignedEnablerType">
+    <rdfs:comment rdf:datatype="&xsd;string">Enabler work that is not yet categorized.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Unassigned</rdfs:label>
+  </jazz_esa:EnablerType>
+  <rdfs:Class rdf:about="&jazz_esa;UserOrBusinessFibonacciValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Fibonacci value used for estimating user or business value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">User/Business Value</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;Wireframe">
+    <rdfs:comment rdf:datatype="&xsd;string">The wireframe further illustrates a Lifecycle Scenario and informs implementation of a Capability, Feature or Story.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Wireframe</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="&jazz_esa;WorkType">
+    <rdfs:comment rdf:datatype="&xsd;string">Categorizes the work as either Business (end-user) or Enabler work type.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Work Type</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;BusinessWorkType" />
+    <rdfs:seeAlso rdf:resource="&jazz_esa;EnablerWorkType" />
+  </rdfs:Class>
+  <rdf:Property rdf:about="&jazz_esa;acceptanceCriteria">
+    <rdfs:comment rdf:datatype="&xsd;string">Defines the criteria for final acceptance of the work.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Acceptance Criteria</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;acceptanceTest">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates whether or not acceptance test is needed and complete. Typically expressed as a value of type jazz_esa:ChecklistValue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Acceptance Test</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ChecklistValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;achievedValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Calculated value representing the percentage of achieved business value measured by planned/actual.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Achieved Value (%)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;actualBusinessValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Value achieved as a result of delivering on the PI Objective.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value (Actual)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;actualStoryPoints">
+    <rdfs:comment rdf:datatype="&xsd;string">Used to (manually) capture the actual story points to implement.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Actual Story Points</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;allocatedCapacity">
+    <rdfs:comment rdf:datatype="&xsd;string">Actual allocated capacity (resources, in any standard unit of measure) consumed to deliver work. This applies to both Value Stream and Program artifacts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Allocated Capacity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;allocatedInvestment">
+    <rdfs:comment rdf:datatype="&xsd;string">The financial resources allocated (in any standard unit of measure), based on the resources consumed to execute. This applies to both Value Stream and Program artifacts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Allocated Investment</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;anticipatedBusinessImpact">
+    <rdfs:comment rdf:datatype="&xsd;string">The revenue, ROI or other financial metric used to represent business impact in monetary terms.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Anticipated Business Impact</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;benefitHypothesis">
+    <rdfs:comment rdf:datatype="&xsd;string">Describes the potential benefits hypothesized for delivery of the work.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Benefit Hypothesis</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;budgetedCapacity">
+    <rdfs:comment rdf:datatype="&xsd;string">Capacity (in any standard unit of measure) available to a Value Stream or Program for the current budget cycle based on the Budgeted Investment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Budgeted Capacity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;budgetedInvestment">
+    <rdfs:comment rdf:datatype="&xsd;string">Expected/planned/budgeted investment as a monetary amount (in any standard unit) for the current budget cycle. This applies to both Value Stream and Program artifacts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Budgeted Investment</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;checklistNotes">
+    <rdfs:comment rdf:datatype="&xsd;string">Free-form text notes about the checklist criteria.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Checklist Notes</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;difficulty">
+    <rdfs:comment rdf:datatype="&xsd;string">Difficulty associated with delivery.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Difficulty</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&oslc_cm;Priority" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;documentation">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates whether or not documentation is needed and complete. Typically expressed as a value of type jazz_esa:ChecklistValue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Documentation</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ChecklistValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;enablerType">
+    <rdfs:comment rdf:datatype="&xsd;string">Enabler type for an enabler work item, typically expressed as a value of type jazz_esa:EnablerType.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Enabler Type</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;EnablerType" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;epicHypothesis">
+    <rdfs:comment rdf:datatype="&xsd;string">Specified the hypothesis statement for an Epic.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Epic Hypothesis Statement</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;epicOwner">
+    <rdfs:comment rdf:datatype="&xsd;string">The owner of the Epic, responsible for analysis and the iterative delivery plan.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Epic Owner</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;estimatedCompletionDate">
+    <rdfs:comment rdf:datatype="&xsd;string">Date when the Epic is estimated to be completed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Estimated Completion Date</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;estimatedCostMVP">
+    <rdfs:comment rdf:datatype="&xsd;string">Estimated cost to deliver the Minimum Viable Product (MVP).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Estimated Cost (MVP)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;estimatedStoryPoints">
+    <rdfs:comment rdf:datatype="&xsd;string">Used to specify the estimated story points to implement during planning.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Estimated Story Points</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;estimatedStoryPointsMVP">
+    <rdfs:comment rdf:datatype="&xsd;string">Estimated effort, in story points, to deliver the Minimum Viable Product (MVP).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Estimated Story Points (MVP)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;expectedTypeOfReturn">
+    <rdfs:comment rdf:datatype="&xsd;string">The type of return expected as a result of delivering the epic. Typically expressed as a value of type jazz_esa:TypeOfReturn.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Expected Type of Return</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;TypeOfReturn" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;funnelEntryDate">
+    <rdfs:comment rdf:datatype="&xsd;string">The date the Epic entered the Funnel.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Funnel Entry Date</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;goNogoDecision">
+    <rdfs:comment rdf:datatype="&xsd;string">Recommendation from Portfolio, Solution or Program Management as to whether the Epic should be put on the Backlog (Go) or Rejected (No-Go) based on the business case analysis. Can be expressed as a value of type jazz_esa:GoNogoDecision.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Go/No-Go Decision</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;GoNogoDecision" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;illustrates">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Illustrated By</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Enterprise agile link type indicating the relationship between graphical and textual artifacts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Illustrates</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;informs">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Informs</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Enterprise agile link type to indicate that Solution Intent and Solution Context inform each other.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Informs</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;isMVP">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates whether or not a capability is part of the minimal viable product (MVP).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">MVP</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;isStretchObjective">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates whether an objective is a 'stretch' versus 'committed'.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Stretch Objective</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;jobSize">
+    <rdfs:comment rdf:datatype="&xsd;string">Value representing the effort required to implement the work, relative to other work. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Job Size</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;FibonacciValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;milestoneType">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the type of milestone. Typically expressed as a value of type jazz_esa:MilestoneType.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Milestone Type</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;outsourcedDevelopment">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates recommendation whether to outsource development of Epic.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Outsourced Development</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;performanceTest">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates whether performance test is required and completed. Typically expressed as a value of type jazz_esa:ChecklistValue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Performance Test</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ChecklistValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;plannedBusinessValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Expected relative value planned on a scale from 1 to 10 for a PI Objective.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Business Value (Planned)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;proposed">
+    <rdfs:comment rdf:datatype="&xsd;string">Proposed iteration to target for delivery.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Proposed</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;realizes">
+    <oslc:inverseLabel rdf:datatype="&xsd;string">Realized By</oslc:inverseLabel>
+    <rdfs:comment rdf:datatype="&xsd;string">Enterprise agile link type to indicate that an artifact is realized by another artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Realizes</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;rroe">
+    <rdfs:comment rdf:datatype="&xsd;string">Value representing the relative risk reduction and operational enablement, meaning how the work reduces risk or enables future value. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">RROE</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;FibonacciValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;safeLevelLargeSolution">
+    <rdfs:comment rdf:datatype="&xsd;string">A Test Plan is scoped to the SAFe Large Solution level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Large Solution</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;safeLevelProgram">
+    <rdfs:comment rdf:datatype="&xsd;string">A Test Plan is scoped to the SAFe Program level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Program</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;safeLevelTeam">
+    <rdfs:comment rdf:datatype="&xsd;string">A Test Plan is scoped to the SAFe Team level.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Team</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;scope">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates the scope of the element (objective, risk, etc) of the objective. Typically expressed as a value of type jazz_esa:PIObjectiveScope.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Scope</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;PIObjectiveScope" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;startDate">
+    <rdfs:comment rdf:datatype="&xsd;string">The data the Epic is expected to begin implementation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Start Date</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;storyPoints">
+    <rdfs:comment rdf:datatype="&xsd;string">Estimation of complexity expressed in story points. Typically expressed as a value of type jazz_ccm:Complexity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Story Points</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_ccm;Complexity" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;storyPointsNumeric">
+    <rdfs:comment rdf:datatype="&xsd;string">Numeric value derived from the Story Points attribute, for use in calculations.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Story Points (numeric)</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;successCriteria">
+    <rdfs:comment rdf:datatype="&xsd;string">How success will be determined.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Success Criteria</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;testCaseCategoryComponent">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates which Component the Test Case applies to, where applicable.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Component</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;testPlanCategoryProgram">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates which Program the Test Plan applies to, where applicable.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Program</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;testPlanCategorySAFeLevel">
+    <rdfs:comment rdf:datatype="&xsd;string">Category that indicates the SAFe level at which a Test Plan applies (solution, program, or team).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Level</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;timeCriticality">
+    <rdfs:comment rdf:datatype="&xsd;string">Value representing whether the item's value is impacted or decreases over time, relative to other work. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Time Criticality</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;FibonacciValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;totalMarketOpportunity">
+    <rdfs:comment rdf:datatype="&xsd;string">Total market size in monetary units (e.g. millions of dollars). This applies to the Value Stream artifact.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">Total Market Opportunity</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;userOrBusinessValue">
+    <rdfs:comment rdf:datatype="&xsd;string">Value representing the work's benefit to the business or users, relative to other work. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">User/Business Value</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;FibonacciValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;uxDesign">
+    <rdfs:comment rdf:datatype="&xsd;string">Indicates whether user experience design is required and completed. Typically expressed as a value of type jazz_esa:ChecklistValue.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">UX Design</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;ChecklistValue" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;workType">
+    <rdfs:comment rdf:datatype="&xsd;string">Work type for work item, typically expressed as a value of type jazz_esa:WorkType.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">SAFe Work Type</rdfs:label>
+    <rdfs:seeAlso rdf:resource="&jazz_esa;WorkType" />
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;wsjf">
+    <rdfs:comment rdf:datatype="&xsd;string">Weighted shortest job first. Calculated based on job size, user/business value, RROE, and time criticality.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">WSJF</rdfs:label>
+  </rdf:Property>
+  <rdf:Property rdf:about="&jazz_esa;wsjfInteger">
+    <rdfs:comment rdf:datatype="&xsd;string">Weighted shortest job first. Calculated based on job size, user/business value, RROE, and time criticality. Expressed as an integer.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&jazz_esa;" />
+    <rdfs:label rdf:datatype="&xsd;string">WSJF (Integer)</rdfs:label>
+  </rdf:Property>
+</rdf:RDF>

@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix jazz_rm: <http://jazz.net/ns/rm#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+
+{
+    jazz_rm: dcterms:dateCopyrighted "2012, 2015";
+             dcterms:description "Vocabulary terms from the IBM Requirements Management namespace."^^rdf:XMLLiteral;
+             dcterms:license <http://jazz.net/ns/license.html>;
+             dcterms:source <https://jazz.net/wiki/bin/view/Main/RmResourceVocabulary/rm-vocabulary.ttl>;
+             dcterms:title "The IBM Requirements Management Vocabulary";
+             a owl:Ontology;
+             rdfs:label "IBM Requirements Management"@en-us;
+             rdfs:seeAlso <http://jazz.net/>.
+    jazz_rm:Attachment a rdfs:Class;
+                       rdfs:comment "Represents an attachment.";
+                       rdfs:isDefinedBy jazz_rm:;
+                       rdfs:label "Attachment"@en-us;
+                       vs:term_status "archaic".
+    jazz_rm:BusinessProcessDiagram a rdfs:Class;
+                                   rdfs:comment "Represents a business process diagram.";
+                                   rdfs:isDefinedBy jazz_rm:;
+                                   rdfs:label "Business Process Diagram"@en-us.
+    jazz_rm:Collection a rdfs:Class;
+                       rdfs:comment "A collection of requirements.";
+                       rdfs:isDefinedBy jazz_rm:;
+                       rdfs:label "Collection"@en-us.
+    jazz_rm:Composite a rdfs:Class;
+                      rdfs:comment "A composition of elements.";
+                      rdfs:isDefinedBy jazz_rm:;
+                      rdfs:label "Composite"@en-us.
+    jazz_rm:Diagram a rdfs:Class;
+                    rdfs:comment "A diagram.";
+                    rdfs:isDefinedBy jazz_rm:;
+                    rdfs:label "Diagram"@en-us.
+    jazz_rm:Document a rdfs:Class;
+                     rdfs:comment "A document.";
+                     rdfs:isDefinedBy jazz_rm:;
+                     rdfs:label "Document"@en-us.
+    jazz_rm:Glossary a rdfs:Class;
+                     rdfs:comment "A glossary of terms.";
+                     rdfs:isDefinedBy jazz_rm:;
+                     rdfs:label "Glossary"@en-us.
+    jazz_rm:Module a rdfs:Class;
+                   rdfs:comment "A hierarchy of requirements.";
+                   rdfs:isDefinedBy jazz_rm:;
+                   rdfs:label "Module"@en-us.
+    jazz_rm:Part a rdfs:Class;
+                 rdfs:comment "Represents a user interface part.";
+                 rdfs:isDefinedBy jazz_rm:;
+                 rdfs:label "Part"@en-us.
+    jazz_rm:ScreenFlow a rdfs:Class;
+                       rdfs:comment "Represents a user interface screen flow.";
+                       rdfs:isDefinedBy jazz_rm:;
+                       rdfs:label "Screen Flow"@en-us.
+    jazz_rm:SimpleFlowDiagram a rdfs:Class;
+                              rdfs:comment "Represents a simple flow diagram.";
+                              rdfs:isDefinedBy jazz_rm:;
+                              rdfs:label "Simple Flow Diagram"@en-us.
+    jazz_rm:Sketch a rdfs:Class;
+                   rdfs:comment "Represents a user interface sketch.";
+                   rdfs:isDefinedBy jazz_rm:;
+                   rdfs:label "Sketch"@en-us.
+    jazz_rm:StoryBoard a rdfs:Class;
+                       rdfs:comment "Represents a user interface story board.";
+                       rdfs:isDefinedBy jazz_rm:;
+                       rdfs:label "Story Board"@en-us;
+                       vs:term_status "archaic".
+    jazz_rm:Storyboard a rdfs:Class;
+                       rdfs:comment "Represents a user interface story board.";
+                       rdfs:isDefinedBy jazz_rm:;
+                       rdfs:label "Story Board"@en-us.
+    jazz_rm:Term a rdfs:Class;
+                 rdfs:comment "A term from a glossary.";
+                 rdfs:isDefinedBy jazz_rm:;
+                 rdfs:label "Term"@en-us.
+    jazz_rm:Text a rdfs:Class;
+                 rdfs:comment "Represents a requirement with textual content.";
+                 rdfs:isDefinedBy jazz_rm:;
+                 rdfs:label "Text"@en-us.
+    jazz_rm:UseCaseDiagram a rdfs:Class;
+                           rdfs:comment "Represents a use case diagram.";
+                           rdfs:isDefinedBy jazz_rm:;
+                           rdfs:label "Use Case Diagram"@en-us.
+    jazz_rm:UserInterfacePart a rdfs:Class;
+                              rdfs:comment "Represents a user interface part.";
+                              rdfs:isDefinedBy jazz_rm:;
+                              rdfs:label "User Interface Part"@en-us;
+                              vs:term_status "archaic".
+    jazz_rm:UserInterfaceSketch a rdfs:Class;
+                                rdfs:comment "Represents a user interface sketch.";
+                                rdfs:isDefinedBy jazz_rm:;
+                                rdfs:label "User Interface Sketch"@en-us;
+                                vs:term_status "archaic".
+    jazz_rm:WrapperResource a rdfs:Class;
+                            rdfs:comment "A resource representing a file.";
+                            rdfs:isDefinedBy jazz_rm:;
+                            rdfs:label "File"@en-us.
+    jazz_rm:primaryText a rdf:Property;
+                        rdfs:comment "Primary content of a textual requirement.";
+                        rdfs:isDefinedBy jazz_rm:;
+                        rdfs:label "Primary Text"@en-us.
+}
+

@@ -1,0 +1,141 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix oslc: <http://open-services.net/ns/core#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rr: <http://jazz.net/ns/ism/registry#>.
+
+rr: dcterms:dateCopyrighted "2012";
+    dcterms:description "The Jazz for Service Management Registry vocabulary defines the types, properties, and terms used when interacting with the Jazz for SM Registries.";
+    dcterms:license <https://jazz.net/ns/license.html>;
+    dcterms:source <https://jazz.net/wiki/pub/Main/JazzForServiceManagementRegistryServicesVocabulary/rr-vocabulary.ttl>;
+    dcterms:title "Jazz for Service Management Registry Services Vocabulary";
+    a owl:Ontology;
+    rdfs:label "Jazz for Service Management Registry";
+    rdfs:seeAlso <http://open-services.net/wiki/reconciliation/>,
+                 <http://pic.dhe.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.psc.doc_1.1.0/integrate/rs_c_integrate.html>.
+rr:CreateRegistrationRecords a rdf:Description;
+                             rdfs:comment "Identifier for the Automation Plan used for batch creation of Registration Records.";
+                             rdfs:isDefinedBy rr:;
+                             rdfs:label "CreateRegistrationRecords".
+rr:IdentificationRule a rdfs:Class;
+                      rdfs:comment "A Rule used to identify instances of the resource types described by a Resource Shape. A Resource Shape includes rr:identificationRule properties which refer to the Identification Rules associated with that Resource Shape.  These typically correspond to addtional requirements for reconciliation in the OSLC Reconciliation specification.";
+                      rdfs:isDefinedBy rr:;
+                      rdfs:label "IdentificationRule";
+                      rdfs:seeAlso <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>,
+                                   <http://open-services.net/wiki/reconciliation/>.
+rr:ProviderRecord a rdfs:Class;
+                  rdfs:comment "The information from a Registration Record that is specific to its provider rather than to the conceptual resource. A Resource Record typically includes one Provider Record for each Registration Record associcated with that Resource Record.";
+                  rdfs:isDefinedBy rr:;
+                  rdfs:label "ProviderRecord";
+                  rdfs:seeAlso rr:RegistrationRecord,
+                               rr:ResourceRecord.
+rr:RegistrationRecord a rdfs:Class;
+                      rdfs:comment "A record maintained by a data provider that links to additional detailed data about a resource held in the data provider. A Registration Record typically includes properties commonly used by multiple providers to identify resources of its type(s), usually properties that change infrequently.";
+                      rdfs:isDefinedBy rr:;
+                      rdfs:label "RegistrationRecord";
+                      rdfs:seeAlso <http://pic.dhe.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.psc.doc_1.1.0/rs_original/oslc/web/rs_c_registration_record.html>.
+rr:ResourceRecord a rdfs:Class;
+                  rdfs:comment "A record which represents a conceptual resource and includes and/or links to resources from other providers that refer to or provide additional details about that same conceptual resource. The process of associating Registration Records with Resource is known as Reconciliation and is influenced by Resource Shapes.";
+                  rdfs:isDefinedBy rr:;
+                  rdfs:label "ResourceRecord";
+                  rdfs:seeAlso <http://open-services.net/wiki/reconciliation/>,
+                               <http://pic.dhe.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.psc.doc_1.1.0/rs_original/oslc/web/rs_c_resource_record.html>.
+rr:RuleProperty a rdfs:Class;
+                rdfs:comment "A Property that is used as part of an Identification Rule. The Property is described in the Resource Shape that includes this Identification Rule.";
+                rdfs:isDefinedBy rr:;
+                rdfs:label "RuleProperty";
+                rdfs:seeAlso rr:IdentificationRule,
+                             <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>.
+rr:UpdateProviderRecordUrls a rdf:Description;
+                            rdfs:comment "Identifier for the Automation Plan used for batch update of URLs in Service Provider Records.";
+                            rdfs:isDefinedBy rr:;
+                            rdfs:label "UpdateProviderRecordUrls".
+rr:UpdateRegistrationRecordUrls a rdf:Description;
+                                rdfs:comment "Identifier for the Automation Plan used for batch update of URLs in Registration Records.";
+                                rdfs:isDefinedBy rr:;
+                                rdfs:label "UpdateRegistrationRecordUrls".
+rr:absent a rdf:Property;
+          rdfs:comment "True if this Rule Property must be absent to satisfy an Identification Rule.";
+          rdfs:isDefinedBy rr:;
+          rdfs:label "absent";
+          rdfs:seeAlso rr:RuleProperty,
+                       <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>.
+rr:identificationRule a rdf:Property;
+                      rdfs:comment "An Identification Rule included in a Resource Shape.";
+                      rdfs:isDefinedBy rr:;
+                      rdfs:label "identificationRule";
+                      rdfs:seeAlso rr:IdentificationRule,
+                                   <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>.
+rr:isRelationship a rdf:Property;
+                  rdfs:comment "True if Property being described is used to model a relationship between conceptual resources.";
+                  rdfs:isDefinedBy rr:;
+                  rdfs:label "isRelationship";
+                  rdfs:seeAlso <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>.
+rr:priority a rdf:Property;
+            rdfs:comment "The priority value of an Identification Rule. This is an integer value with lower number indicating higher priority";
+            rdfs:isDefinedBy rr:;
+            rdfs:label "priority";
+            rdfs:seeAlso rr:IdentificationRule,
+                         <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>.
+rr:provider-automation-collection a rdf:Property;
+                                  rdfs:comment "HTTP Link header rel= value used to identify the collection for Automation resources in the Provider Registry.";
+                                  rdfs:isDefinedBy rr:;
+                                  rdfs:label "provider-automation-collection".
+rr:providerRecord a rdf:Property;
+                  rdfs:comment "A Provider Record which describes information in a Registration Record associated with the Resource Record which contains this providerRecord property.";
+                  rdfs:isDefinedBy rr:;
+                  rdfs:label "providerRecord";
+                  rdfs:seeAlso rr:ProviderRecord.
+rr:recordType a rdf:Property;
+              rdfs:comment "URI which specifies the type of additional information that is contained in the resource referred to by the sourceRecord property.";
+              rdfs:isDefinedBy rr:;
+              rdfs:label "recordType";
+              rdfs:seeAlso rr:ProviderRecord,
+                           rr:RegistrationRecord.
+rr:registration-record-collection a rdf:Property;
+                                  rdfs:comment "HTTP Link header rel= value used to identify the collection for Registration Records in the Resoure Registry.";
+                                  rdfs:isDefinedBy rr:;
+                                  rdfs:label "registration-record-collection".
+rr:registrationRecord a rdf:Property;
+                      rdfs:comment "Link to a Registration Record, for example a Registration Record that a Provider Record refers to.";
+                      rdfs:isDefinedBy rr:;
+                      rdfs:label "registrationRecord";
+                      rdfs:seeAlso rr:ProviderRecord,
+                                   rr:RegistrationRecord.
+rr:resource-automation-collection a rdf:Property;
+                                  rdfs:comment "HTTP Link header rel= value used to identify the collection for Automation resources in the Resoure Registry.";
+                                  rdfs:isDefinedBy rr:;
+                                  rdfs:label "resource-automation-collection".
+rr:resource-record-collection a rdf:Property;
+                              rdfs:comment "HTTP Link header rel= value used to identify the collection for Resoure Records in the Resoure Registry.";
+                              rdfs:isDefinedBy rr:;
+                              rdfs:label "resource-record-collection".
+rr:resource-shape-collection a rdf:Property;
+                             rdfs:comment "HTTP Link header rel= value used to identify the collection for Resource Shapes in the Resoure Registry.";
+                             rdfs:isDefinedBy rr:;
+                             rdfs:label "resource-shape-collection".
+rr:ruleProperty a rdf:Property;
+                rdfs:comment "A Rule Property included in an Identification Rule.";
+                rdfs:isDefinedBy rr:;
+                rdfs:label "ruleProperty";
+                rdfs:seeAlso rr:RuleProperty,
+                             <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>.
+rr:sameAs a rdf:Property;
+          rdfs:comment "URI which refers to another Registration Record, which describes the same resource as the current registration record. This will allow the reconciliation process to associate both Registration Records with the same Resource Record.";
+          rdfs:isDefinedBy rr:;
+          rdfs:label "sameAs";
+          rdfs:seeAlso rr:RegistrationRecord.
+rr:sourceRecord a rdf:Property;
+                rdfs:comment "Link to a resource which contains additional detailed information about a resource.  For example, a Registration Record or Provider Record can use this property to link from a conceptual resource's relatively static content to additional detailed data in a provider, where the detailed data changes more frequently.";
+                rdfs:isDefinedBy rr:;
+                rdfs:label "sourceRecord";
+                rdfs:seeAlso rr:ProviderRecord,
+                             rr:RegistrationRecord.
+rr:version a rdf:Property;
+           rdfs:comment "The version of the Resource Shape.";
+           rdfs:isDefinedBy rr:;
+           rdfs:label "version";
+           rdfs:seeAlso <http://open-services.net/bin/view/Main/OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource>,
+                        <http://open-services.net/wiki/reconciliation/>.

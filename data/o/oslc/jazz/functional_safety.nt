@@ -1,0 +1,410 @@
+<http://jazz.net/ns/functional_safety#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/functional_safety#> <http://purl.org/dc/terms/title> "IBM Functional Safety Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#> <http://purl.org/dc/terms/description> "Vocabulary terms describing resources related to functional safety regulations such as those defined in ISO standards."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#> <http://www.w3.org/2000/01/rdf-schema#label> "Functional safety core"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#> <http://purl.org/dc/terms/source> <https://jazz.net/wiki/pub/LinkedData/FuncSafetyVocabulary/func-safety-vocabulary.ttl> .
+<http://jazz.net/ns/functional_safety#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
+<http://jazz.net/ns/functional_safety#> <http://purl.org/dc/terms/dateCopyrighted> "2020"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#HazardousEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#HazardousEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "A combination of a hazard and an operational situation that could lead to accident or injury if not controlled by timely action."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#HazardousEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#HazardousEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Hazardous Event"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#HazardousEventsModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/rm#Module> .
+<http://jazz.net/ns/functional_safety#HazardousEventsModule> <http://www.w3.org/2000/01/rdf-schema#comment> "A module for hazardous event artifacts."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#HazardousEventsModule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#HazardousEventsModule> <http://www.w3.org/2000/01/rdf-schema#label> "Hazardous Events Module"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ItemDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#ItemDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "An item is a system or array of systems to implement a function at the vehicle level. The item definition should include its purpose, functionality, and an implementation-independent boundary diagram for the item."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ItemDefinition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ItemDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Item Definition"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ItemDefinitionModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/rm#Module> .
+<http://jazz.net/ns/functional_safety#ItemDefinitionModule> <http://www.w3.org/2000/01/rdf-schema#comment> "A module containing Item Definitions."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ItemDefinitionModule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ItemDefinitionModule> <http://www.w3.org/2000/01/rdf-schema#label> "Item Definition Module"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SafetyGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#SafetyGoal> <http://www.w3.org/2000/01/rdf-schema#comment> "A top-level safety requirement assigned to a system to reduce risk of one or more hazardous events to a tolerable level. Determined for each hazardous event evaluated in the hazard analysis."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SafetyGoal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SafetyGoal> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Goal"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SafetyGoalsModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/rm#Module> .
+<http://jazz.net/ns/functional_safety#SafetyGoalsModule> <http://www.w3.org/2000/01/rdf-schema#comment> "A module that contains safety goals."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SafetyGoalsModule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SafetyGoalsModule> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Goals Module"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#TypeASIL> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the type of ASIL requirement."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL> <http://www.w3.org/2000/01/rdf-schema#label> "ASIL Types"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QM> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type QM."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QM> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QM> <http://www.w3.org/2000/01/rdf-schema#label> "QM"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_A> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type A."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_A> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_A> <http://www.w3.org/2000/01/rdf-schema#label> "A"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_B> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type B."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_B> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_B> <http://www.w3.org/2000/01/rdf-schema#label> "B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_C> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type C."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_C> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_C> <http://www.w3.org/2000/01/rdf-schema#label> "C"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_D> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type D."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_D> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_D> <http://www.w3.org/2000/01/rdf-schema#label> "D"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AA> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type AA."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AA> <http://www.w3.org/2000/01/rdf-schema#label> "A(A)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AB> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type AB."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AB> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AB> <http://www.w3.org/2000/01/rdf-schema#label> "A(B)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AC> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type AC."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AC> <http://www.w3.org/2000/01/rdf-schema#label> "A(C)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AD> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type AD."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AD> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_AD> <http://www.w3.org/2000/01/rdf-schema#label> "A(D)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BB> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type BB."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BB> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BB> <http://www.w3.org/2000/01/rdf-schema#label> "B(B)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BC> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type BC."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BC> <http://www.w3.org/2000/01/rdf-schema#label> "B(C)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BD> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type BD."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BD> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_BD> <http://www.w3.org/2000/01/rdf-schema#label> "B(D)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CC> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type CC."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CC> <http://www.w3.org/2000/01/rdf-schema#label> "C(C)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CD> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type CD."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CD> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_CD> <http://www.w3.org/2000/01/rdf-schema#label> "C(D)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_DD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_DD> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type DD."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_DD> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_DD> <http://www.w3.org/2000/01/rdf-schema#label> "D(D)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMA> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type QMA."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMA> <http://www.w3.org/2000/01/rdf-schema#label> "QM(A)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMB> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type QMB."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMB> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMB> <http://www.w3.org/2000/01/rdf-schema#label> "QM(B)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMC> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type QMC."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMC> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMC> <http://www.w3.org/2000/01/rdf-schema#label> "QM(C)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMD> <http://www.w3.org/2000/01/rdf-schema#comment> "ASIL type QMD."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMD> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#TypeASIL_QMD> <http://www.w3.org/2000/01/rdf-schema#label> "QM(D)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlClassTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#ControlClassTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Values for the control class for safety goals, to determine the ASIL level."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlClassTypes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControlClassTypes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlClassTypes> <http://www.w3.org/2000/01/rdf-schema#label> "Control Class Types."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControlClassTypes> .
+<http://jazz.net/ns/functional_safety#ControlC1> <http://www.w3.org/2000/01/rdf-schema#comment> "Control class C1."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControlC1> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC1> <http://www.w3.org/2000/01/rdf-schema#label> "C1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControlClassTypes> .
+<http://jazz.net/ns/functional_safety#ControlC2> <http://www.w3.org/2000/01/rdf-schema#comment> "Control class C2."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControlC2> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC2> <http://www.w3.org/2000/01/rdf-schema#label> "C2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControlClassTypes> .
+<http://jazz.net/ns/functional_safety#ControlC3> <http://www.w3.org/2000/01/rdf-schema#comment> "Control class C3."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControlC3> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlC3> <http://www.w3.org/2000/01/rdf-schema#label> "C3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlNotSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControlClassTypes> .
+<http://jazz.net/ns/functional_safety#ControlNotSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The Control Class is not set."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlNotSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControlNotSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControlNotSet> <http://www.w3.org/2000/01/rdf-schema#label> "Not Set"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityClassTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#ProbabilityClassTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Values for the probability class for safety goals, to determine the ASIL level."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityClassTypes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ProbabilityClassTypes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityClassTypes> <http://www.w3.org/2000/01/rdf-schema#label> "Probability Class Types"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ProbabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ProbabilityE1> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability Class E1."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ProbabilityE1> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE1> <http://www.w3.org/2000/01/rdf-schema#label> "E1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ProbabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ProbabilityE2> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability Class E2."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ProbabilityE2> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE2> <http://www.w3.org/2000/01/rdf-schema#label> "E2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ProbabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ProbabilityE3> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability Class E3."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ProbabilityE3> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE3> <http://www.w3.org/2000/01/rdf-schema#label> "E3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ProbabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ProbabilityE4> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability Class E4."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ProbabilityE4> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityE4> <http://www.w3.org/2000/01/rdf-schema#label> "E4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityNotSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ProbabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ProbabilityNotSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Probability Class is not set."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityNotSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ProbabilityNotSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ProbabilityNotSet> <http://www.w3.org/2000/01/rdf-schema#label> "Not Set"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityClassTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#ControllabilityClassTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Values for the controllability class for safety goals, to determine the ASIL level."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityClassTypes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControllabilityClassTypes> <http://www.w3.org/2000/01/rdf-schema#label> "Controllability Class Types."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityNotSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControllabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ControllabilityNotSet> <http://www.w3.org/2000/01/rdf-schema#comment> "The Controllability Class is not set."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityNotSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControllabilityNotSet> <http://www.w3.org/2000/01/rdf-schema#label> "Not Set"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControllabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ControllabilityC0> <http://www.w3.org/2000/01/rdf-schema#comment> "Controllability class C0 - Controllable in general."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC0> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControllabilityC0> <http://www.w3.org/2000/01/rdf-schema#label> "C0 - Controllable in general"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControllabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ControllabilityC1> <http://www.w3.org/2000/01/rdf-schema#comment> "Controllability class C1 - Simply controllable."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControllabilityC1> <http://www.w3.org/2000/01/rdf-schema#label> "C1 - Simply controllable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControllabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ControllabilityC2> <http://www.w3.org/2000/01/rdf-schema#comment> "Controllability class C2 - Normally controllable."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControllabilityC2> <http://www.w3.org/2000/01/rdf-schema#label> "C2 - Normally controllable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ControllabilityClassTypes> .
+<http://jazz.net/ns/functional_safety#ControllabilityC3> <http://www.w3.org/2000/01/rdf-schema#comment> "Controllability class C3 - Difficult to control or uncontrollable."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ControllabilityC3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ControllabilityC3> <http://www.w3.org/2000/01/rdf-schema#label> "C3 - Difficult to control or uncontrollable"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureClassTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#ExposureClassTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Values for the exposure class for safety goals, to determine the ASIL level."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureClassTypes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ExposureClassTypes> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure Class Types"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureNotSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ExposureClassTypes> .
+<http://jazz.net/ns/functional_safety#ExposureNotSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure Class is not set."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureNotSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ExposureNotSet> <http://www.w3.org/2000/01/rdf-schema#label> "Not Set"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ExposureClassTypes> .
+<http://jazz.net/ns/functional_safety#ExposureE0> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure Class E0 Incredible."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE0> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ExposureE0> <http://www.w3.org/2000/01/rdf-schema#label> "E0 - Incredible"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ExposureClassTypes> .
+<http://jazz.net/ns/functional_safety#ExposureE1> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure Class E1 - Very low probability."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ExposureE1> <http://www.w3.org/2000/01/rdf-schema#label> "E1 - Very low probability"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ExposureClassTypes> .
+<http://jazz.net/ns/functional_safety#ExposureE2> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure Class E2 - Low probability."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ExposureE2> <http://www.w3.org/2000/01/rdf-schema#label> "E2 - Low probability"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ExposureClassTypes> .
+<http://jazz.net/ns/functional_safety#ExposureE3> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure Class E3 - Medium probability."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ExposureE3> <http://www.w3.org/2000/01/rdf-schema#label> "E3 - Medium probability"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ExposureClassTypes> .
+<http://jazz.net/ns/functional_safety#ExposureE4> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure Class E4 - High probability."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ExposureE4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ExposureE4> <http://www.w3.org/2000/01/rdf-schema#label> "E4 - High probability"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityClassTypes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#SeverityClassTypes> <http://www.w3.org/2000/01/rdf-schema#comment> "Values for the severity class for safety goals, used to determine the ASIL level."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityClassTypes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SeverityClassTypes> <http://www.w3.org/2000/01/rdf-schema#label> "Severity Class Types"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityNotSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#SeverityClassTypes> .
+<http://jazz.net/ns/functional_safety#SeverityNotSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity class is not set."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityNotSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SeverityNotSet> <http://www.w3.org/2000/01/rdf-schema#label> "Not Set"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#SeverityClassTypes> .
+<http://jazz.net/ns/functional_safety#SeverityS0> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity class S0 no injuries."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS0> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SeverityS0> <http://www.w3.org/2000/01/rdf-schema#label> "S0 - No injuries"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#SeverityClassTypes> .
+<http://jazz.net/ns/functional_safety#SeverityS1> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity class S1 light and moderate injuries."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SeverityS1> <http://www.w3.org/2000/01/rdf-schema#label> "S1 - Light and moderate injuries"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#SeverityClassTypes> .
+<http://jazz.net/ns/functional_safety#SeverityS2> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity class S2 Severe and life threatening injuries, survival probable."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SeverityS2> <http://www.w3.org/2000/01/rdf-schema#label> "S2 - Severe and life threatening injuries (survival probable)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#SeverityClassTypes> .
+<http://jazz.net/ns/functional_safety#SeverityS3> <http://www.w3.org/2000/01/rdf-schema#comment> "Severity class S3 Life threatening injuries, surivival uncertain, fatal injuries."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#SeverityS3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#SeverityS3> <http://www.w3.org/2000/01/rdf-schema#label> "S3 - Life threatening injuries (surivival uncertain), fatal injuries"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#risk> <http://www.w3.org/2000/01/rdf-schema#comment> "The level of risk."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#risk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#risk> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/sse#HMLScale> .
+<http://jazz.net/ns/functional_safety#risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#asil> <http://www.w3.org/2000/01/rdf-schema#comment> "Calculated ASIL level based on severity, exposure, and controllability. Typically expressed as a value of type jazz_fusa:TypeASIL."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asil> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#asil> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#asil> <http://www.w3.org/2000/01/rdf-schema#label> "ASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilCalculation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#asilCalculation> <http://www.w3.org/2000/01/rdf-schema#comment> "For use with custom ASIL calculator.Typically expressed as a value of type jazz_fusa:TypeASIL."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilCalculation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#asilCalculation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#asilCalculation> <http://www.w3.org/2000/01/rdf-schema#label> "ASIL Calculation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilManual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#asilManual> <http://www.w3.org/2000/01/rdf-schema#comment> "For use with custom ASIL calculator-To set ASIL value manually. Typically expressed as a value of type jazz_fusa:TypeASIL."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilManual> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#asilManual> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#asilManual> <http://www.w3.org/2000/01/rdf-schema#label> "ASIL (Manual)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilRationale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#asilRationale> <http://www.w3.org/2000/01/rdf-schema#comment> "Rationale if ASIL level was set manually."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilRationale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#asilRationale> <http://www.w3.org/2000/01/rdf-schema#label> "ASIL Rationale"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilSetManually> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#asilSetManually> <http://www.w3.org/2000/01/rdf-schema#comment> "For use with custom ASIL calculator- Boolean to test if ASIL value is set manually."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#asilSetManually> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#asilSetManually> <http://www.w3.org/2000/01/rdf-schema#label> "ASIL Set Manually"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#controllabilityClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#controllabilityClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute sets the controllability class that is used to determine the ASIL level of the Hazardous Event. Typically expressed as a value of type jazz_fusa:ControllabilityClass."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#controllabilityClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#controllabilityClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#ControllabilityClass> .
+<http://jazz.net/ns/functional_safety#controllabilityClass> <http://www.w3.org/2000/01/rdf-schema#label> "Controllability Class"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#severityClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#severityClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute sets the severity class that is used to determine the ASIL level of the Hazardous Event. ONLY APPLIES TO SAFTEY GOALS. Typically expressed as a value of type jazz_fusa:SeverityClass."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#severityClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#severityClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#SeverityClass> .
+<http://jazz.net/ns/functional_safety#severityClass> <http://www.w3.org/2000/01/rdf-schema#label> "Severity Class"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#probabilityClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#probabilityClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute sets the probability class used to determine the ASIL level for Safety Goals. Typically expressed as a value of type jazz_fusa:ProbabilityClass."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#probabilityClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#probabilityClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#ProbabilityClass> .
+<http://jazz.net/ns/functional_safety#probabilityClass> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#probabilityClass> <http://www.w3.org/2000/01/rdf-schema#label> "Probability Class"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#requiredAsil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#requiredAsil> <http://www.w3.org/2000/01/rdf-schema#comment> "The required ASIL level to apply. Typically expressed as a value of type jazz_fusa:TypeASIL."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#requiredAsil> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#requiredAsil> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#TypeASIL> .
+<http://jazz.net/ns/functional_safety#requiredAsil> <http://www.w3.org/2000/01/rdf-schema#label> "ASIL"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#operationalSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#operationalSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the operational situation as defined in ISO26262."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#operationalSituation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#operationalSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Situation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#operatingMode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#operatingMode> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the operating mode as defined in ISO26262."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#operatingMode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#operatingMode> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Mode"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#hazard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#hazard> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the hazard as defined in ISO26262."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#hazard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#hazard> <http://www.w3.org/2000/01/rdf-schema#label> "Hazard"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#fault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#fault> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the fault as defined in ISO26262."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#fault> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#fault> <http://www.w3.org/2000/01/rdf-schema#label> "Fault"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#isAsilDecomposed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#isAsilDecomposed> <http://www.w3.org/2000/01/rdf-schema#comment> "Set to true when this is a safety requirement that has been decomposed."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#isAsilDecomposed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#isAsilDecomposed> <http://www.w3.org/2000/01/rdf-schema#label> "Is ASIL Decomposed"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#exposureClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#exposureClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute sets the probability of exposure class that is used to determine the ASIL level of the Hazardous Event. Typically expressed as a value of type jazz_fusa:ExposureClass."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#exposureClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#exposureClass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#ExposureClass> .
+<http://jazz.net/ns/functional_safety#exposureClass> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure Class"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureType> <http://www.w3.org/2000/01/rdf-schema#comment> "Values for the kinds of confirmation measures defined by ISO26262."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureType> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation Measure Type"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureUnassigned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureUnassigned> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type has not been assigned."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureUnassigned> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureUnassigned> <http://www.w3.org/2000/01/rdf-schema#label> "Unassigned"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewImpactAnalysisAtItemLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewImpactAnalysisAtItemLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 impact analysis at item level."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewImpactAnalysisAtItemLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewImpactAnalysisAtItemLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 impact analysis at item level"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewHARA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewHARA> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 HARA."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewHARA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewHARA> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 HARA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 Safety Plan."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyPlan> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 Safety Plan"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewFunctionalSafetyConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewFunctionalSafetyConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 Functional Safety Concept."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewFunctionalSafetyConcept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewFunctionalSafetyConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 Functional Safety Concept"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewTechnicalSafetyConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewTechnicalSafetyConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 TechnicalSafetyConcept."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewTechnicalSafetyConcept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewTechnicalSafetyConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 Technical Safety Concept"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewIntegrationAndTestStrategy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewIntegrationAndTestStrategy> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 Integration and Test Strategy."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewIntegrationAndTestStrategy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewIntegrationAndTestStrategy> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 Integration and Test Strategy"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyValidationSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyValidationSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 Safety Validation Specification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyValidationSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyValidationSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 Safety Validation Specification"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyAnalysesAndDFA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyAnalysesAndDFA> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 Safety Analyses and Dependent Failure Analyses."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyAnalysesAndDFA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyAnalysesAndDFA> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 Safety Analyses and DFA"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyCase> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Confirmation review \u2013 Safety Case."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyCase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureConfirmationReviewSafetyCase> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation review \u2013 Safety Case"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAudit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAudit> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Functional Safety Audit."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAudit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAudit> <http://www.w3.org/2000/01/rdf-schema#label> "Functional Safety Audit"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "The Confirmation Measure Type is a Functional Safety Assessment."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAssessment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#ConfirmationMeasureFunctionalSafetyAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Functional Safety Assessment"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependence> <http://www.w3.org/2000/01/rdf-schema#comment> "Values for the kinds of Independence defined by ISO26262."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependence> <http://www.w3.org/2000/01/rdf-schema#label> "Necessary Independence"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceNone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#NecessaryIndependence> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceNone> <http://www.w3.org/2000/01/rdf-schema#comment> "The Necessary Independence attribute has not been assigned."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceNone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceNone> <http://www.w3.org/2000/01/rdf-schema#label> "None"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#NecessaryIndependence> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI0> <http://www.w3.org/2000/01/rdf-schema#comment> "I0: Optional, Independent of creator."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI0> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI0> <http://www.w3.org/2000/01/rdf-schema#label> "I0: Optional, Independent of creator"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#NecessaryIndependence> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI1> <http://www.w3.org/2000/01/rdf-schema#comment> "I1: Independent of creator."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI1> <http://www.w3.org/2000/01/rdf-schema#label> "I1: Independent of creator"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#NecessaryIndependence> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI2> <http://www.w3.org/2000/01/rdf-schema#comment> "I2: Independent of team."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI2> <http://www.w3.org/2000/01/rdf-schema#label> "I2: Independent of team"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/functional_safety#NecessaryIndependence> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI3> <http://www.w3.org/2000/01/rdf-schema#comment> "I3: Independent of management."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#NecessaryIndependenceI3> <http://www.w3.org/2000/01/rdf-schema#label> "I3: Independent of management"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#safetyImpactAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#safetyImpactAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the analysis of safety-related impact as a result of the change request."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#safetyImpactAnalysis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#safetyImpactAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Safety Impact Analysis"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#isSafetyRelated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#isSafetyRelated> <http://www.w3.org/2000/01/rdf-schema#comment> "Set to true when this item is safety related and should be part of the safety plan."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#isSafetyRelated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#isSafetyRelated> <http://www.w3.org/2000/01/rdf-schema#label> "Is Safety Related"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#confirmationMeasureType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#confirmationMeasureType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of confirmation measure that is applicable."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#confirmationMeasureType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#confirmationMeasureType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#ConfirmationMeasureType> .
+<http://jazz.net/ns/functional_safety#confirmationMeasureType> <http://www.w3.org/2000/01/rdf-schema#label> "Confirmation Measure Type"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#necessaryIndependence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/functional_safety#necessaryIndependence> <http://www.w3.org/2000/01/rdf-schema#comment> "The category of independence (as defined in ISO 26262) that is necessary ."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/functional_safety#necessaryIndependence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/functional_safety#> .
+<http://jazz.net/ns/functional_safety#necessaryIndependence> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/functional_safety#NecessaryIndependence> .
+<http://jazz.net/ns/functional_safety#necessaryIndependence> <http://www.w3.org/2000/01/rdf-schema#label> "Necessary Independence"^^<http://www.w3.org/2001/XMLSchema#string> .

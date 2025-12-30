@@ -1,0 +1,168 @@
+<http://jazz.net/ns/ism/event/omnibus/itnm#Symptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Symptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Symptom> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has an NMOS cause type of symptom. Indicated by the value 2 for oslcemp:nmosCauseType."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Symptom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Symptom> <http://www.w3.org/2000/01/rdf-schema#label> "Symptom"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Symptom> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Managed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Managed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Managed> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has an NMOS managed status of managed. Indicated by the value 0 for oslcemp:nmosManagedStatus."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Managed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Managed> <http://www.w3.org/2000/01/rdf-schema#label> "Managed"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Managed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#RootCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#RootCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#RootCause> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has an NMOS cause type of root cause. Indicated by the value 1 for oslcemp:nmosCauseType."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#RootCause> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#RootCause> <http://www.w3.org/2000/01/rdf-schema#label> "RootCause"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#RootCause> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localPriObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localPriObj> <http://www.w3.org/2000/01/rdf-schema#comment> "The primary object reference by the event. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localPriObj> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localPriObj> <http://www.w3.org/2000/01/rdf-schema#label> "localPriObj"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localPriObj> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remotePriObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remotePriObj> <http://www.w3.org/2000/01/rdf-schema#comment> "The primary object of a remote network entity referenced by the event. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remotePriObj> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remotePriObj> <http://www.w3.org/2000/01/rdf-schema#label> "remotePriObj"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remotePriObj> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteNodeAlias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteNodeAlias> <http://www.w3.org/2000/01/rdf-schema#comment> "The network address of the remote network entity. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteNodeAlias> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteNodeAlias> <http://www.w3.org/2000/01/rdf-schema#label> "remoteNodeAlias"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteNodeAlias> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEventMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEventMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains the required IBM Tivoli Network Manager V3.9 or later, eventMap name and optional precedence for the event, which indicates how IBM Tivoli Network Manager should process the event. The optional precedence number can be concatenated to the end of the value, following a period (.). If the precedence is not supplied, it is set to zero."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEventMap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEventMap> <http://www.w3.org/2000/01/rdf-schema#label> "nmosEventMap"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEventMap> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Operatorunmanaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Operatorunmanaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Operatorunmanaged> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has an NMOS managed status of operator unmanaged. Indicated by the value 1 for oslcemp:nmosManagedStatus."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Operatorunmanaged> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Operatorunmanaged> <http://www.w3.org/2000/01/rdf-schema#label> "Operatorunmanaged"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Operatorunmanaged> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of NMOS manage statuses for an event."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#label> "NmosManagedStatus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosSerial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosSerial> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies a non-zero value for symptom events and contains the serial number of the root cause event (see oslc:serial) which caused the suppression."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosSerial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosSerial> <http://www.w3.org/2000/01/rdf-schema#label> "nmosSerial"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosSerial> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies an enumerated field to write results of Network Manager Root Cause Analysis (RCA) calculations. This property is an integer representation of the NMOS cause type setting defined by oslcemp:hasNmosCauseType. Default NMOS cause type values of the vocabulary include 0: Unknown, 1: Root Cause, 2: Symptom"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> <http://www.w3.org/2000/01/rdf-schema#label> "nmosCauseType"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#hasNmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#NmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of NMOS cause types for an event."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> <http://www.w3.org/2000/01/rdf-schema#label> "NmosCauseType"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localRootObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localRootObj> <http://www.w3.org/2000/01/rdf-schema#comment> "An object that is equivalent to the primary object referenced in the event. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localRootObj> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localRootObj> <http://www.w3.org/2000/01/rdf-schema#label> "localRootObj"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localRootObj> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteSecObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteSecObj> <http://www.w3.org/2000/01/rdf-schema#comment> "The secondary object of a remote network entity referenced by the event. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteSecObj> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteSecObj> <http://www.w3.org/2000/01/rdf-schema#label> "remoteSecObj"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteSecObj> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://www.w3.org/2000/01/rdf-schema#label> "Netcool/OMNIbus Event Management ITNM"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://purl.org/dc/terms/dateCopyrighted> "2013"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://purl.org/dc/terms/description> "The IBM Tivoli Netcool/OMNIbus Event Management ITNM Vocabulary defines the set of event properties that are either enriched and/or utilized by the IBM Tivoli Network Manager product."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://purl.org/dc/terms/license> <http://jazz.net/ns/license.html> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://purl.org/dc/terms/source> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#> <http://purl.org/dc/terms/title> "IBM Tivoli Netcool/OMNIbus Event Management ITNM Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the managed status of the network entity for which the event was raised. When a network entity is unmanaged, the Network Manager polls are suspended and events from other sources are ragged as unmanaged. This property allows you to filter out events from unmanaged entities. This property is an integer representation of the NMOS managed status setting d\nefined by oslcemp:hasNmosManagedStatus. Default NMOS managed status values of the vocabulary include 0: Managed, 1: Operator unmanaged, 2: System unmanaged, 3: Out of scope."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#label> "nmosManagedStatus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#hasNmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#NmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#processReq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#processReq> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the alert should be processed by IBM Tivoli Network Manager. This is populated at event collection and used by IBM Tivoli Network Manager. 0: No, 1: Yes"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#processReq> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#processReq> <http://www.w3.org/2000/01/rdf-schema#label> "processReq"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#processReq> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#eventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#eventId> <http://www.w3.org/2000/01/rdf-schema#comment> "The event ID (for example SNMPTRAP-link down). Multiple events can have the same event ID. This is populated at event collection and used by IBM Tivoli Network Manager."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#eventId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#eventId> <http://www.w3.org/2000/01/rdf-schema#label> "eventId"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#eventId> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Systemunmanaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Systemunmanaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Systemunmanaged> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has an NMOS managed status of system unmanaged. Indicated by the value 2 for oslcemp:nmosManagedStatus."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Systemunmanaged> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Systemunmanaged> <http://www.w3.org/2000/01/rdf-schema#label> "Systemunmanaged"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Systemunmanaged> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosObjInst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosObjInst> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies a unique numerical ID which identifies the containing topology chassis entity with which the event is associated."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosObjInst> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosObjInst> <http://www.w3.org/2000/01/rdf-schema#label> "nmosObjInst"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosObjInst> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosDomainName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosDomainName> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the name of the Network Manager network domain that is managing the event. By default, this field is only populated for events which are generated by Network Manager polls."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosDomainName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosDomainName> <http://www.w3.org/2000/01/rdf-schema#label> "nmosDomainName"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosDomainName> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEntityId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEntityId> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the unique numerical ID which identifies the topology entity with which the event is associated. This field is similar to the oslc:nmosObjInst property but contains more detail information. For example, this field can include the ID of an interface within a device."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEntityId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEntityId> <http://www.w3.org/2000/01/rdf-schema#label> "nmosEntityId"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#nmosEntityId> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localSecObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localSecObj> <http://www.w3.org/2000/01/rdf-schema#comment> "The secondary object referenced by the event. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localSecObj> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localSecObj> <http://www.w3.org/2000/01/rdf-schema#label> "localSecObj"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localSecObj> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has this oslcemp:NmosCauseType resource. This is the object property associated with oslcemp:nmosCauseType."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#label> "hasNmosCauseType"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#RootCause> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#nmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#Symptom> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#NmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosCauseType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#Unknown> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localNodeAlias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localNodeAlias> <http://www.w3.org/2000/01/rdf-schema#comment> "The alias of the network entity indicated by the alert. For network devices or hosts, this is the logical (layer-3) address of the entity, or another logical address that enables direct communication with the device. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localNodeAlias> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localNodeAlias> <http://www.w3.org/2000/01/rdf-schema#label> "localNodeAlias"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#localNodeAlias> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Unknown> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has an NMOS cause type of unknown. Indicated by the value 0 for oslcemp:nmosCauseType."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Unknown> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#Unknown> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosCauseType> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteRootObj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteRootObj> <http://www.w3.org/2000/01/rdf-schema#comment> "An object that is equivalent to the remote entity's primary object referenced in the event. For use in managed object instance identification."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteRootObj> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteRootObj> <http://www.w3.org/2000/01/rdf-schema#label> "remoteRootObj"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#remoteRootObj> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has this oslcemp:NmosManagedStatus resource. This is the object property associated with oslcemp:nmosManagedStatus."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasNmosManagedStatus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#Systemunmanaged> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#Operatorunmanaged> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#NmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#OutOfScope> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#Managed> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#hasNmosManagedStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementITNMVocabulary#nmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#OutOfScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/event/omnibus/itnm#NmosManagedStatus> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#OutOfScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "3"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#OutOfScope> <http://www.w3.org/2000/01/rdf-schema#comment> "The event has an NMOS managed status of out of scope. Indicated by the value 3 for oslcemp:nmosManagedStatus."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#OutOfScope> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/event/omnibus/itnm#> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#OutOfScope> <http://www.w3.org/2000/01/rdf-schema#label> "OutOfScope"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/event/omnibus/itnm#OutOfScope> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://jazz.net/ns/ism/event/omnibus/itnm#nmosManagedStatus> .

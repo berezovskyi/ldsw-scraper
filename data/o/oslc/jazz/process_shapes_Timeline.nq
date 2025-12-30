@@ -1,0 +1,106 @@
+<http://jazz.net/ns/process/shapes/Timeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://purl.org/dc/terms/title> "Jazz Foundation Timeline."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://purl.org/dc/terms/description> "This shape describes timeline resources hosted by the Jazz Foundation Process component."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#describes> <http://jazz.net/ns/process#Timeline> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#accessContext> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#accessControl> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#archived> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#endDate> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#identifier> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#instanceShape> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#iterations> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#modified> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#projectArea> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#startDate> .
+<http://jazz.net/ns/process/shapes/Timeline> <http://open-services.net/ns/core#property> <http://jazz.net/ns/process/shapes/Timeline#title> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core/acc#accessContext> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://purl.org/dc/terms/description> "The link to the access context of this timeline resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#name> "accessContext"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#accessContext> <http://open-services.net/ns/core#range> <http://open-services.net/ns/core/acc#AccessContext> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://open-services.net/ns/core#propertyDefinition> <http://jazz.net/ns/acp#accessControl> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://purl.org/dc/terms/description> "The link to the access control record of this timeline resource.\r\nThis property is deprecated.\r\nUse <a href=\"http://open-services.net/ns/core/acc#accessContent\"><code>acc:accessContext</code></a> instead."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://open-services.net/ns/core#name> "accessControl"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+<http://jazz.net/ns/process/shapes/Timeline#accessControl> <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#archived> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#archived> <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#archive> .
+<http://jazz.net/ns/process/shapes/Timeline#archived> <http://purl.org/dc/terms/description> "This boolean property is true when the timeline is archived."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#archived> <http://open-services.net/ns/core#name> "archived"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#archived> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#archived> <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#endDate> <http://open-services.net/ns/core#propertyDefinition> <http://jazz.net/ns/process#endDate> .
+<http://jazz.net/ns/process/shapes/Timeline#endDate> <http://purl.org/dc/terms/description> "The end date of the timeline."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#endDate> <http://open-services.net/ns/core#name> "endDate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#endDate> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#endDate> <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://jazz.net/ns/process/shapes/Timeline#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#identifier> <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+<http://jazz.net/ns/process/shapes/Timeline#identifier> <http://purl.org/dc/terms/description> "The identifier of the timeline."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#identifier> <http://open-services.net/ns/core#name> "description"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#identifier> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#identifier> <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#instanceShape> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://purl.org/dc/terms/description> "The link to the shape of this timeline resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#name> "instanceShape"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#instanceShape> <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ResourceShape> .
+<http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline> <http://open-services.net/ns/core#propertyDefinition> <http://jazz.net/ns/process#isProjectTime> .
+<http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline> <http://purl.org/dc/terms/description> "This boolean property is true if the timeline is the current timeline of the project area."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline> <http://open-services.net/ns/core#name> "isProjectTimeline"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#isProjectTimeline> <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#propertyDefinition> <http://jazz.net/ns/process#iterations> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://purl.org/dc/terms/description> "The link to the iterations of the timeline."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#name> "iterations"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://jazz.net/ns/process/shapes/Timeline#iterations> <http://open-services.net/ns/core#range> <http://jazz.net/ns/process#Iterations> .
+<http://jazz.net/ns/process/shapes/Timeline#modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#modified> <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/modified> .
+<http://jazz.net/ns/process/shapes/Timeline#modified> <http://purl.org/dc/terms/description> "This property is modification date of the project area definition."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#modified> <http://open-services.net/ns/core#name> "modified"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#modified> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#modified> <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://open-services.net/ns/core#propertyDefinition> <http://jazz.net/ns/process#projectArea> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://purl.org/dc/terms/description> "The link to the project area of the timeline."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://open-services.net/ns/core#name> "projectArea"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://open-services.net/ns/core#valueShape> <http://jazz.net/ns/process/shapes/ProjectArea> .
+<http://jazz.net/ns/process/shapes/Timeline#projectArea> <http://open-services.net/ns/core#range> <http://jazz.net/ns/process#ProjectArea> .
+<http://jazz.net/ns/process/shapes/Timeline#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#startDate> <http://open-services.net/ns/core#propertyDefinition> <http://jazz.net/ns/process#startDate> .
+<http://jazz.net/ns/process/shapes/Timeline#startDate> <http://purl.org/dc/terms/description> "The start date of the timeline."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#startDate> <http://open-services.net/ns/core#name> "startDate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#startDate> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#startDate> <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://jazz.net/ns/process/shapes/Timeline#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://jazz.net/ns/process/shapes/Timeline#title> <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+<http://jazz.net/ns/process/shapes/Timeline#title> <http://purl.org/dc/terms/description> "The title of the timeline."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/process/shapes/Timeline#title> <http://open-services.net/ns/core#name> "title"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/process/shapes/Timeline#title> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+<http://jazz.net/ns/process/shapes/Timeline#title> <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .

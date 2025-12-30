@@ -1,0 +1,39 @@
+<http://jazz.net/ns/ism/admin/health#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/ism/admin/health#> <http://purl.org/dc/terms/title> "Administration Services Health Status Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#> <http://purl.org/dc/terms/description> "The Administration Services Health Status Vocabulary defines the health status for the related resources"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#> <http://www.w3.org/2000/01/rdf-schema#label> "Administration Services Health Status"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
+<http://jazz.net/ns/ism/admin/health#> <http://purl.org/dc/terms/dateCopyrighted> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#HealthStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/ism/admin/health#HealthStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/admin/health#> .
+<http://jazz.net/ns/ism/admin/health#HealthStatus> <http://www.w3.org/2000/01/rdf-schema#label> "HealthStatus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#HealthStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the health status of a resource. The health status could be the outcome of an automation for example prerequisite check or a health check script."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/admin/health#describes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/admin/health#> .
+<http://jazz.net/ns/ism/admin/health#describes> <http://www.w3.org/2000/01/rdf-schema#label> "describes"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#describes> <http://www.w3.org/2000/01/rdf-schema#comment> "The URI to the resource (for example, the admin:AdministrableResource or admin:AdministrativeJob) that it describes."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#describes> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary> .
+<http://jazz.net/ns/ism/admin/health#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/ism/admin/health#status> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/admin/health#> .
+<http://jazz.net/ns/ism/admin/health#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#status> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents the health state (ok, warning, error or unknown state) of the resource described by the health:HealthStatus."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#OK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/admin/health#HealthStatus> .
+<http://jazz.net/ns/ism/admin/health#OK> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/admin/health#> .
+<http://jazz.net/ns/ism/admin/health#OK> <http://www.w3.org/2000/01/rdf-schema#label> "OK"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#OK> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the state of the resource is OK; for example, the state of admin:AdministrableResource or result of the admin:AdministrativeJob execution."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#OK> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary> .
+<http://jazz.net/ns/ism/admin/health#Warning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/admin/health#HealthStatus> .
+<http://jazz.net/ns/ism/admin/health#Warning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/admin/health#> .
+<http://jazz.net/ns/ism/admin/health#Warning> <http://www.w3.org/2000/01/rdf-schema#label> "Warning"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#Warning> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the state of the resource in a warning; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#Warning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary> .
+<http://jazz.net/ns/ism/admin/health#Error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/admin/health#HealthStatus> .
+<http://jazz.net/ns/ism/admin/health#Error> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/admin/health#> .
+<http://jazz.net/ns/ism/admin/health#Error> <http://www.w3.org/2000/01/rdf-schema#label> "Error"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#Error> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the state of the resource is an error; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#Error> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary> .
+<http://jazz.net/ns/ism/admin/health#Unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/ism/admin/health#HealthStatus> .
+<http://jazz.net/ns/ism/admin/health#Unknown> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/ism/admin/health#> .
+<http://jazz.net/ns/ism/admin/health#Unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#Unknown> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the state of the resource is unknown or indeterminate; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/ism/admin/health#Unknown> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary> .

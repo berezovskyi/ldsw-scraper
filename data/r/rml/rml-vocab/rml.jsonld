@@ -1,0 +1,749 @@
+[
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology",
+      "http://purl.org/vocommons/voaf#Vocabulary"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "RML: Generic Mapping Language for RDF"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@value": "2013-07-01",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2014-09-10",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Generic Mapping Language for RDF (RDB/CSV/TSV/XML/JSON/... to RDF) - Vocabulary description"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "_:autos7904"
+      },
+      {
+        "@id": "_:autos7905"
+      }
+    ],
+    "http://creativecommons.org/ns#license": [
+      {
+        "@id": "http://creativecommons.org/licenses/by/3.0/"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "rml"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@value": "http://semweb.mmlab.be/ns/rml#"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://www.w3.org/ns/r2rml#"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7904",
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Anastasia Dimou"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7905",
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Miel Vander Sande"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#logicalSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "logical source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Represents the logical source to be mapped. This can be a pointer to any dataset."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/r2rml#TriplesMap"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      },
+      {
+        "@id": "_:autos7935"
+      },
+      {
+        "@id": "_:autos7936"
+      },
+      {
+        "@id": "_:autos7937"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Logical Source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Represents a logical source."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#TriplesMap",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#TriplesMap"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#logicalTarget",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "logical target"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Represents the logical target to where triples are exported to. This can be a pointer to any dataset."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml-target#LogicalTarget"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/r2rml#TriplesMap"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#referenceFormulation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The reference formulation used to refer to extracts of the source data. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "reference formulation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#ReferenceFormulation"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#ReferenceFormulation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Reference Formulation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Represents a Reference Formulation."
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#iterator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "iterator"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "an expression qualified according to the reference formulation specified for pointing to an extract of the source data. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#column",
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#reference"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#reference",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A valid expression that selects values from the source data. The reference should confront to the syntax rules/grammar of the specified Reference Formulation. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/r2rml#TermMap"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#version",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "version"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "It defines the version of the reference Formulation used. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#sqlVersion",
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#version"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#source",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "qualified name of the source data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#tableName",
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#source"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#query",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A valid query."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#sqlQuery",
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#query"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7911",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/r2rml#ObjectMap"
+          },
+          {
+            "@id": "_:autos7915"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7915",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#reference"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxQualifiedCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#object",
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:autos7911"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7917",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/r2rml#PredicateMap"
+          },
+          {
+            "@id": "_:autos7921"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7921",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#reference"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxQualifiedCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#predicate",
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:autos7917"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7923",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/ns/r2rml#SubjectMap"
+          },
+          {
+            "@id": "_:autos7927"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7927",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#reference"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxQualifiedCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#subject",
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:autos7923"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#TriplesMap",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      },
+      {
+        "@id": "_:autos7930"
+      },
+      {
+        "@id": "_:autos7932"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Represents a triples map."
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7930",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#logicalSource"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#minQualifiedCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7932",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/r2rml#subjectMap"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://www.w3.org/ns/r2rml#SubjectMap"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/rml#BaseSource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Base Source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Base Source"
+      },
+      {
+        "@language": "en",
+        "@value": "Represents a base source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7935",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#referenceFormulation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7936",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#iterator"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#maxQualifiedCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos7937",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#source"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#minQualifiedCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/r2rml#LogicalTable",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://semweb.mmlab.be/ns/rml#LogicalSource"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/ql#CSV",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://semweb.mmlab.be/ns/rml#ReferenceFormulation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "CSV"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Denotes that the CSV file's column names are used for referring to extracts of CSV resources."
+      }
+    ],
+    "http://semweb.mmlab.be/ns/ql#specification": [
+      {
+        "@id": "http://tools.ietf.org/html/rfc4180"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/ql#XPath",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://semweb.mmlab.be/ns/rml#ReferenceFormulation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "XPath"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Denotes the XPath reference formulation, used for referring to extracts of XML sources."
+      }
+    ],
+    "http://semweb.mmlab.be/ns/ql#specification": [
+      {
+        "@id": "http://www.w3.org/TR/xpath20/"
+      }
+    ],
+    "http://semweb.mmlab.be/ns/rml#version": [
+      {
+        "@value": "2.0"
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/ql#JSONPath",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://semweb.mmlab.be/ns/rml#ReferenceFormulation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "JSONPath"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Denotes the JSONPath reference formulation, used for referring to extracts of JSON sources."
+      }
+    ]
+  },
+  {
+    "@id": "http://semweb.mmlab.be/ns/ql#CSS3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://semweb.mmlab.be/ns/rml#ReferenceFormulation"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Selectors Level 3"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Denotes the selectors, namely the patterns that match against elements in a tree and are used in CSS and other thechnolgies to select elements in HTML or XML documents."
+      }
+    ],
+    "http://semweb.mmlab.be/ns/ql#specification": [
+      {
+        "@id": "http://www.w3.org/TR/css3-selectors/"
+      }
+    ]
+  }
+]

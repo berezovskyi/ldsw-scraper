@@ -1,0 +1,699 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix jazz_esa: <http://jazz.net/ns/enterprise_agile#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix oslc: <http://open-services.net/ns/core#>.
+@prefix oslc_rm: <http://open-services.net/ns/rm#>.
+@prefix oslc_cm: <http://open-services.net/ns/cm#>.
+@prefix oslc_qm: <http://open-services.net/ns/qm#>.
+@prefix jazz_ccm: <http://jazz.net/ns/ccm#>.
+@prefix jazz_rm: <http://jazz.net/ns/rm#>.
+@prefix jazz_rqm: <http://jazz.net/ns/qm/rqm#>.
+@prefix jazz_sse: <http://jazz.net/ns/sse#>.
+@prefix jazz_fusa: <http://jazz.net/ns/functional_safety#>.
+@prefix jazz_aspice: <http://jazz.net/ns/aspice#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+{
+    jazz_esa: dcterms:dateCopyrighted "2019";
+              dcterms:description "Vocabulary terms describing resources used in IBM templates to support enterprise scaled agile methodology.";
+              dcterms:license <https://jazz.net/ns/license.html>;
+              dcterms:source <https://jazz.net/wiki/pub/LinkedData/EnterpriseScaledAgileVocabulary/esa-vocabulary.ttl>;
+              dcterms:title "IBM Enterprise Scaled Agile Vocabulary";
+              a owl:Ontology;
+              rdfs:label "Enterprise scaled agile core".
+    jazz_esa:ArchitectureEnablerType a jazz_esa:EnablerType;
+                                     rdfs:comment "Enabler work related to architecture.";
+                                     rdfs:isDefinedBy jazz_esa:;
+                                     rdfs:label "Architecture".
+    jazz_esa:BusinessValue a rdfs:Class;
+                           rdfs:comment "Relative business value used for planning and assessing of PI Objectives.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Business Value".
+    jazz_esa:BusinessValue0 a jazz_esa:BusinessValue;
+                            rdf:value 0 ;
+                            rdfs:comment "Value of 0 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 0".
+    jazz_esa:BusinessValue1 a jazz_esa:BusinessValue;
+                            rdf:value 1 ;
+                            rdfs:comment "Value of 1 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 1".
+    jazz_esa:BusinessValue10 a jazz_esa:BusinessValue;
+                             rdf:value 10 ;
+                             rdfs:comment "Value of 10 for relative business value.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "Business Value 10".
+    jazz_esa:BusinessValue2 a jazz_esa:BusinessValue;
+                            rdf:value 2 ;
+                            rdfs:comment "Value of 2 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 2".
+    jazz_esa:BusinessValue3 a jazz_esa:BusinessValue;
+                            rdf:value 3 ;
+                            rdfs:comment "Value of 3 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 3".
+    jazz_esa:BusinessValue4 a jazz_esa:BusinessValue;
+                            rdf:value 4 ;
+                            rdfs:comment "Value of 4 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 4".
+    jazz_esa:BusinessValue5 a jazz_esa:BusinessValue;
+                            rdf:value 5 ;
+                            rdfs:comment "Value of 5 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 5".
+    jazz_esa:BusinessValue6 a jazz_esa:BusinessValue;
+                            rdf:value 6 ;
+                            rdfs:comment "Value of 6 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 6".
+    jazz_esa:BusinessValue7 a jazz_esa:BusinessValue;
+                            rdf:value 7 ;
+                            rdfs:comment "Value of 7 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 7".
+    jazz_esa:BusinessValue8 a jazz_esa:BusinessValue;
+                            rdf:value 8 ;
+                            rdfs:comment "Value of 8 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 8".
+    jazz_esa:BusinessValue9 a jazz_esa:BusinessValue;
+                            rdf:value 9 ;
+                            rdfs:comment "Value of 9 for relative business value.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Business Value 9".
+    jazz_esa:BusinessWorkType a jazz_esa:WorkType;
+                              rdfs:comment "Work that delivers end user capabilities.";
+                              rdfs:isDefinedBy jazz_esa:;
+                              rdfs:label "Business".
+    jazz_esa:Capability a rdfs:Class;
+                        rdfs:comment "A higher-level solution behavior that typically spans multiple release trains and program increments.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Capability".
+    jazz_esa:ChecklistComplete a jazz_esa:ChecklistValue;
+                               rdfs:comment "Work or activity is completed.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Complete".
+    jazz_esa:ChecklistNotRequired a jazz_esa:ChecklistValue;
+                                  rdfs:comment "Work or activity is not required.";
+                                  rdfs:isDefinedBy jazz_esa:;
+                                  rdfs:label "Not Required".
+    jazz_esa:ChecklistRequired a jazz_esa:ChecklistValue;
+                               rdfs:comment "Work or activity is required.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Required".
+    jazz_esa:ChecklistValue a rdfs:Class;
+                            rdfs:comment "Value indicating whether the item or work is required (or not) and completed. Can apply to multiple types of work.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Checklist Values";
+                            rdfs:seeAlso jazz_esa:ChecklistComplete,
+                                         jazz_esa:ChecklistNotRequired,
+                                         jazz_esa:ChecklistRequired.
+    jazz_esa:ComplianceEnablerType a jazz_esa:EnablerType;
+                                   rdfs:comment "Enabler work related to Compliance.";
+                                   rdfs:isDefinedBy jazz_esa:;
+                                   rdfs:label "Compliance".
+    jazz_esa:EnablerType a rdfs:Class;
+                         rdfs:comment "SAFe Enabler Type categories.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "SAFe Enabler Type";
+                         rdfs:seeAlso jazz_esa:ArchitectureEnablerType,
+                                      jazz_esa:ComplianceEnablerType,
+                                      jazz_esa:ExplorationEnablerType,
+                                      jazz_esa:InfrastructureEnablerType.
+    jazz_esa:EnablerWorkType a jazz_esa:WorkType;
+                             rdfs:comment "Work that provides the foundation for other capabilities (such as architecture, infrastructure, and so on.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "Enabler";
+                             rdfs:seeAlso jazz_esa:EnablerType.
+    jazz_esa:Epic a rdfs:Class;
+                  rdfs:comment "A container that captures and manages the most significant initiatives within a portfolio.";
+                  rdfs:isDefinedBy jazz_esa:;
+                  rdfs:label "Epic".
+    jazz_esa:ExplorationEnablerType a jazz_esa:EnablerType;
+                                    rdfs:comment "Enabler work related to exploration.";
+                                    rdfs:isDefinedBy jazz_esa:;
+                                    rdfs:label "Exploration".
+    jazz_esa:Feature a rdfs:Class;
+                     rdfs:comment "A service that fulfills a stakeholder need, and can be delivered by a single release train in a single program increment.";
+                     rdfs:isDefinedBy jazz_esa:;
+                     rdfs:label "Feature".
+    jazz_esa:Fibonacci1 a jazz_esa:FibonacciValue;
+                        rdf:value 1 ;
+                        rdfs:comment "Value of 1 for Fibonacci sequence.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Fibonacci 1".
+    jazz_esa:Fibonacci13 a jazz_esa:FibonacciValue;
+                         rdf:value 13 ;
+                         rdfs:comment "Value of 13 for Fibonacci sequence.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "Fibonacci 13".
+    jazz_esa:Fibonacci2 a jazz_esa:FibonacciValue;
+                        rdf:value 2 ;
+                        rdfs:comment "Value of 2 for Fibonacci sequence.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Fibonacci 2".
+    jazz_esa:Fibonacci20 a jazz_esa:FibonacciValue;
+                         rdf:value 21 ;
+                         rdfs:comment "Value of 21 for Fibonacci sequence.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "Fibonacci 21".
+    jazz_esa:Fibonacci3 a jazz_esa:FibonacciValue;
+                        rdf:value 3 ;
+                        rdfs:comment "Value of 3 for Fibonacci sequence.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Fibonacci 3".
+    jazz_esa:Fibonacci5 a jazz_esa:FibonacciValue;
+                        rdf:value 5 ;
+                        rdfs:comment "Value of 5 for Fibonacci sequence.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Fibonacci 5".
+    jazz_esa:Fibonacci8 a jazz_esa:FibonacciValue;
+                        rdf:value 8 ;
+                        rdfs:comment "Value of 8 for Fibonacci sequence.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Fibonacci 8".
+    jazz_esa:FibonacciUnassigned a jazz_esa:FibonacciValue;
+                                 rdfs:comment "No value assigned for Fibonacci sequence.";
+                                 rdfs:isDefinedBy jazz_esa:;
+                                 rdfs:label "Unassigned".
+    jazz_esa:FibonacciValue a rdfs:Class;
+                            rdfs:comment "Fibonacci value used for estimating. This class is used to define the WSJF component classes.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Fibonacci sequence of values".
+    jazz_esa:GoDecision a jazz_esa:GoNogoDecision;
+                        rdfs:comment "Indicates a Go decision (to proceed).";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Go".
+    jazz_esa:GoNogoDecision a rdfs:Class;
+                            rdfs:comment "Values for Go or No-go decision.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Go or No-go values".
+    jazz_esa:InfrastructureEnablerType a jazz_esa:EnablerType;
+                                       rdfs:comment "Enabler work related to infrastructure.";
+                                       rdfs:isDefinedBy jazz_esa:;
+                                       rdfs:label "Infrastructure".
+    jazz_esa:JobSizeFibonacciValue a rdfs:Class;
+                                   rdfs:comment "Fibonacci value used for estimating job size. Job Size is a WSJF component used in the WSJF calculation.";
+                                   rdfs:isDefinedBy jazz_esa:;
+                                   rdfs:label "Job Size".
+    jazz_esa:LifecycleScenario a rdfs:Class;
+                               rdfs:comment "An end-to-end usage model for a solution that illustrates the Vision.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Lifecycle Scenario".
+    jazz_esa:Milestone a rdfs:Class;
+                       rdfs:comment "A marker on the development timeline to validate business opportunities and hypotheses.";
+                       rdfs:isDefinedBy jazz_esa:;
+                       rdfs:label "Milestone".
+    jazz_esa:MilestoneType a rdfs:Class;
+                           rdfs:comment "Specifies the type of a Milestone.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Milestone Type".
+    jazz_esa:MilestoneTypeFixedDate a jazz_esa:MilestoneType;
+                                    rdfs:comment "Indicates the Milestone has a fixed date.";
+                                    rdfs:isDefinedBy jazz_esa:;
+                                    rdfs:label "Fixed-date Milestone".
+    jazz_esa:MilestoneTypeLearning a jazz_esa:MilestoneType;
+                                   rdfs:comment "Indicates that the Milestone is for learning.";
+                                   rdfs:isDefinedBy jazz_esa:;
+                                   rdfs:label "Learning Milestone".
+    jazz_esa:MilestoneTypePI a jazz_esa:MilestoneType;
+                             rdfs:comment "Indicates the Milestone tied to a Program Increment.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "PI Milestone".
+    jazz_esa:NoGoDecision a jazz_esa:GoNogoDecision;
+                          rdfs:comment "Indicates a No-Go decision (to stop further work).";
+                          rdfs:isDefinedBy jazz_esa:;
+                          rdfs:label "No-Go".
+    jazz_esa:PIObjective a rdfs:Class;
+                         rdfs:comment "A business or technical goal to achieve in a program increment.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "PI Objective".
+    jazz_esa:PortfolioEpic a jazz_esa:Epic;
+                           rdfs:comment "Epic at the portfolio level.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Portfolio Epic";
+                           skos:narrower jazz_esa:Epic.
+    jazz_esa:ProgramEpic a jazz_esa:Epic;
+                         rdfs:comment "Epic at the program level.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "Program Epic";
+                         skos:narrower jazz_esa:Epic.
+    jazz_esa:RROEFibonacciValue a rdfs:Class;
+                                rdfs:comment "Fibonacci value used for estimating risk reduction or opportunity enablement. RROE is a WSJF component used in the WSJF calculation.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "RROE".
+    jazz_esa:Retrospective a rdfs:Class;
+                           rdfs:comment "An activity held at the end of an iteration to reflect on what went well and identify areas for improvement.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Retrospective".
+    jazz_esa:ReturnMarketShare a jazz_esa:TypeOfReturn;
+                               rdfs:comment "Type of return is increased market share.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Market Share".
+    jazz_esa:ReturnNewMarkets a jazz_esa:TypeOfReturn;
+                              rdfs:comment "Type of return is reaching new markets.";
+                              rdfs:isDefinedBy jazz_esa:;
+                              rdfs:label "New Markets Served".
+    jazz_esa:ReturnOther a jazz_esa:TypeOfReturn;
+                         rdfs:comment "A type of return other than those already defined.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "Other".
+    jazz_esa:ReturnProductivity a jazz_esa:TypeOfReturn;
+                                rdfs:comment "Type of return is improved productivity.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "Improved Productivity".
+    jazz_esa:ReturnRevenue a jazz_esa:TypeOfReturn;
+                           rdfs:comment "Type of return is increased revenue.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Increased Revenue".
+    jazz_esa:RiskDisposition a rdfs:Class;
+                             rdfs:comment "Disposition of the resolved risk.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "Disposition".
+    jazz_esa:RiskDispositionAccepted a jazz_esa:RiskDisposition;
+                                     rdfs:comment "The risk has been accepted.";
+                                     rdfs:isDefinedBy jazz_esa:;
+                                     rdfs:label "Accepted".
+    jazz_esa:RiskDispositionMitigated a jazz_esa:RiskDisposition;
+                                      rdfs:comment "The risk has been mitigated.";
+                                      rdfs:isDefinedBy jazz_esa:;
+                                      rdfs:label "Mitigated".
+    jazz_esa:RiskDispositionOwned a jazz_esa:RiskDisposition;
+                                  rdfs:comment "The risk is owned.";
+                                  rdfs:isDefinedBy jazz_esa:;
+                                  rdfs:label "Owned".
+    jazz_esa:RiskDispositionResolved a jazz_esa:RiskDisposition;
+                                     rdfs:comment "The risk has been resolved.";
+                                     rdfs:isDefinedBy jazz_esa:;
+                                     rdfs:label "Resolved".
+    jazz_esa:SAFeLeanBusinessCase a rdfs:Class;
+                                  rdfs:comment "An artifact prescribed by SAFe to capture the results of analysis as part of the Portfolio, Solution or Program Epic Kanban process.";
+                                  rdfs:isDefinedBy jazz_esa:;
+                                  rdfs:label "[SAFe] Lean Business Case".
+    jazz_esa:SAFePortfolioCanvas a rdfs:Class;
+                                 rdfs:comment "An artifact prescribed by SAFe to capture details about how the portfolio intends to driver value for an organization or enterprise.";
+                                 rdfs:isDefinedBy jazz_esa:;
+                                 rdfs:label "[SAFe] Portfolio Canvas".
+    jazz_esa:SAFeProgram a rdfs:Class;
+                         rdfs:comment "Defines a long-lived self-governing system that plans and manages change to deliver value aligned with business strategy. Programs (Agile - Trains) realize Value Streams. They are where development teams and other resources are applied to important ongoing work efforts.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "[SAFe] Program".
+    jazz_esa:SAFeSWOTAnalysis a rdfs:Class;
+                              rdfs:comment "The SWOT Analysis artifact in SAFe® 5.0 identifies strengths, weaknesses, opportunities and threats for a business solution.";
+                              rdfs:isDefinedBy jazz_esa:;
+                              rdfs:label "[SAFe] SWOT Analysis".
+    jazz_esa:SAFeSolutionContext a rdfs:Class;
+                                 rdfs:comment "Identifies critical aspects of the target operational environment for a Solution, including usage, installation, deployment, run time and support.";
+                                 rdfs:isDefinedBy jazz_esa:;
+                                 rdfs:label "[SAFe] Solution Context".
+    jazz_esa:SAFeSolutionIntent a rdfs:Class;
+                                rdfs:comment "Provides the basic understanding of the current and evolving requirements, design, and intent -- or larger purpose -- of the Solution.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "[SAFe] Solution Intent".
+    jazz_esa:SAFeStrategicTheme a rdfs:Class;
+                                rdfs:comment "Defines a specific business objective that connects the SAFe Porfolio vision to the evolving enterprise business strategy. Strategic themes define differentiators for the business.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "[SAFe] Strategic Theme".
+    jazz_esa:SAFeTOWSMatrix a rdfs:Class;
+                            rdfs:comment "The TOWS Matrix artifact in SAFe® 5.0 is used to identify strategic options to create a better future state of a business solution.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "[SAFe] TOWS Matrix".
+    jazz_esa:SAFeValueStream a rdfs:Class;
+                             rdfs:comment "Defines a long-lived system that delivers value to the business. Value Streams are realized by Programs (Agile Release Trains).";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "[SAFe] Value Stream".
+    jazz_esa:SAFeValueStreamCanvas a rdfs:Class;
+                                   rdfs:comment "An artifact prescribed by SAFe to elaborate the details of each value proposition that supports the portfolio.";
+                                   rdfs:isDefinedBy jazz_esa:;
+                                   rdfs:label "[SAFe] Value Stream Canvas".
+    jazz_esa:SAFeVision a rdfs:Class;
+                        rdfs:comment "In SAFe, the Vision describes a future view of a solution, system or end-user capability to be developed, providing the larger, contextual overview and purpose.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "[SAFe] Vision".
+    jazz_esa:ScenarioAct a rdfs:Class;
+                         rdfs:comment "Elaborates a Use Case that is part of the end-to-end Lifecycle Scenario. There may be multiple Acts in a Lifecycle Scenario. Capabilities and Features might implement the Act.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "Scenario Act";
+                         rdfs:seeAlso jazz_esa:LifecycleScenario,
+                                      jazz_esa:ScenarioScene.
+    jazz_esa:ScenarioScene a rdfs:Class;
+                           rdfs:comment "A Scene is a single-role activity that is part of a Scenario Act. Scenes might be implemented by Features or Stories.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Scenario Scene";
+                           rdfs:seeAlso jazz_esa:LifecycleScenario,
+                                        jazz_esa:ScenarioAct.
+    jazz_esa:Scope a rdfs:Class;
+                   rdfs:comment "Scope of element (e.g. PI Objective, risk, etc).";
+                   rdfs:isDefinedBy jazz_esa:;
+                   rdfs:label "Scope".
+    jazz_esa:ScopePortfolio a jazz_esa:Scope;
+                            rdfs:comment "Scoped to the Portfolio level.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Portfolio".
+    jazz_esa:ScopeProgram a jazz_esa:Scope;
+                          rdfs:comment "Scoped to the Program level.";
+                          rdfs:isDefinedBy jazz_esa:;
+                          rdfs:label "Program".
+    jazz_esa:ScopeSolution a jazz_esa:Scope;
+                           rdfs:comment "Scoped to the Solution level.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Solution".
+    jazz_esa:ScopeTeam a jazz_esa:Scope;
+                       rdfs:comment "Scoped to the Team level.";
+                       rdfs:isDefinedBy jazz_esa:;
+                       rdfs:label "Team".
+    jazz_esa:SolutionEpic a jazz_esa:Epic;
+                          rdfs:comment "Epic at the solution level.";
+                          rdfs:isDefinedBy jazz_esa:;
+                          rdfs:label "Solution Epic";
+                          skos:narrower jazz_esa:Epic.
+    jazz_esa:Standard a rdfs:Class;
+                      rdfs:comment "A Standard is a specific type of requirement that defines a regulatory or system constraint.";
+                      rdfs:isDefinedBy jazz_esa:;
+                      rdfs:label "Standard".
+    jazz_esa:StateDeployingToProduction a oslc_cm:State;
+                                        rdfs:comment "The capability or feature has been validated and is deploying to a production environment.";
+                                        rdfs:isDefinedBy jazz_esa:;
+                                        rdfs:label "Deploying to Production";
+                                        skos:narrower oslc_cm:Approved.
+    jazz_esa:StateInPlayback a oslc_cm:State;
+                             rdfs:comment "The artifact is being reviewed with stakeholders and customers for feedback.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "In Playback".
+    jazz_esa:StateMVP a oslc_cm:State;
+                      rdfs:comment "Unique to the Portfolio Epic workflow, indicates that the Portfolio Epic represents MVP as per SAFe® guidelines.";
+                      rdfs:isDefinedBy jazz_esa:;
+                      rdfs:label "MVP";
+                      skos:narrower oslc_cm:Inprogress.
+    jazz_esa:StatePersevering a oslc_cm:State;
+                              rdfs:comment "Unique to the Portfolio Epic workflow, indicates that the Portfolio Epic is perservering beyond MVP delivery as per SAFe® guidelines.";
+                              rdfs:isDefinedBy jazz_esa:;
+                              rdfs:label "Persevering";
+                              skos:narrower oslc_cm:Inprogress.
+    jazz_esa:StateReleasing a oslc_cm:State;
+                            rdfs:comment "The capability or feature is being released to customers/stakeholders.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Releasing";
+                            skos:narrower oslc_cm:Approved.
+    jazz_esa:StateRiskAccepted a oslc_cm:State;
+                               rdfs:comment "The Risk has been marked Accepted as part of Risk ROAMing.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Accepted";
+                               skos:narrower oslc_cm:Inprogress.
+    jazz_esa:StateRiskMitigated a oslc_cm:State;
+                                rdfs:comment "The Risk has been marked Mitigated as part of Risk ROAMing.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "Mitigated";
+                                skos:narrower oslc_cm:Inprogress.
+    jazz_esa:StateRiskOwned a oslc_cm:State;
+                            rdfs:comment "The Risk has been marked Owned as part of Risk ROAMing.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Owned";
+                            skos:narrower oslc_cm:Inprogress.
+    jazz_esa:StateRiskResolved a oslc_cm:State;
+                               rdfs:comment "The Risk has been marked Resolved as part of Risk ROAMing.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Resolved";
+                               skos:narrower oslc_cm:Inprogress.
+    jazz_esa:StateValidatingOnStaging a oslc_cm:State;
+                                      rdfs:comment "The capability or feature is being integrated and delivered to a staging environment for validation.";
+                                      rdfs:isDefinedBy jazz_esa:;
+                                      rdfs:label "Validating on Staging";
+                                      skos:narrower oslc_cm:Inprogress.
+    jazz_esa:StateVerifyingOnStaging a oslc_cm:State;
+                                     rdfs:comment "The feature is being verified in the staging environment.";
+                                     rdfs:isDefinedBy jazz_esa:;
+                                     rdfs:label "Verifying on Staging";
+                                     skos:narrower oslc_cm:Inprogress.
+    jazz_esa:Story a rdfs:Class;
+                   rdfs:comment "Represents a small independent behavior that can be implemented incrementally.";
+                   rdfs:isDefinedBy jazz_esa:;
+                   rdfs:label "Story".
+    jazz_esa:TimeCriticalityFibonacciValue a rdfs:Class;
+                                           rdfs:comment "Fibonacci value used for estimating time criticality. Time Criticality is a WSJF component used in the WSJF calculation.";
+                                           rdfs:isDefinedBy jazz_esa:;
+                                           rdfs:label "Time Criticality".
+    jazz_esa:TypeOfReturn a rdfs:Class;
+                          rdfs:comment "Types of return on investment.";
+                          rdfs:isDefinedBy jazz_esa:;
+                          rdfs:label "Types of Return".
+    jazz_esa:UnassignedEnablerType a jazz_esa:EnablerType;
+                                   rdfs:comment "Enabler work that is not yet categorized.";
+                                   rdfs:isDefinedBy jazz_esa:;
+                                   rdfs:label "Unassigned".
+    jazz_esa:UserOrBusinessFibonacciValue a rdfs:Class;
+                                          rdfs:comment "Fibonacci value used for estimating user or business value.";
+                                          rdfs:isDefinedBy jazz_esa:;
+                                          rdfs:label "User/Business Value".
+    jazz_esa:Wireframe a rdfs:Class;
+                       rdfs:comment "The wireframe further illustrates a Lifecycle Scenario and informs implementation of a Capability, Feature or Story.";
+                       rdfs:isDefinedBy jazz_esa:;
+                       rdfs:label "Wireframe".
+    jazz_esa:WorkType a rdfs:Class;
+                      rdfs:comment "Categorizes the work as either Business (end-user) or Enabler work type.";
+                      rdfs:isDefinedBy jazz_esa:;
+                      rdfs:label "SAFe Work Type";
+                      rdfs:seeAlso jazz_esa:BusinessWorkType,
+                                   jazz_esa:EnablerWorkType.
+    jazz_esa:acceptanceCriteria a rdf:Property;
+                                rdfs:comment "Defines the criteria for final acceptance of the work.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "Acceptance Criteria".
+    jazz_esa:acceptanceTest a rdf:Property;
+                            rdfs:comment "Indicates whether or not acceptance test is needed and complete. Typically expressed as a value of type jazz_esa:ChecklistValue.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Acceptance Test";
+                            rdfs:seeAlso jazz_esa:ChecklistValue.
+    jazz_esa:achievedValue a rdf:Property;
+                           rdfs:comment "Calculated value representing the percentage of achieved business value measured by planned/actual.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Achieved Value (%)".
+    jazz_esa:actualBusinessValue a rdf:Property;
+                                 rdfs:comment "Value achieved as a result of delivering on the PI Objective.";
+                                 rdfs:isDefinedBy jazz_esa:;
+                                 rdfs:label "Business Value (Actual)".
+    jazz_esa:actualStoryPoints a rdf:Property;
+                               rdfs:comment "Used to (manually) capture the actual story points to implement.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Actual Story Points".
+    jazz_esa:allocatedCapacity a rdf:Property;
+                               rdfs:comment "Actual allocated capacity (resources, in any standard unit of measure) consumed to deliver work. This applies to both Value Stream and Program artifacts.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Allocated Capacity".
+    jazz_esa:allocatedInvestment a rdf:Property;
+                                 rdfs:comment "The financial resources allocated (in any standard unit of measure), based on the resources consumed to execute. This applies to both Value Stream and Program artifacts.";
+                                 rdfs:isDefinedBy jazz_esa:;
+                                 rdfs:label "Allocated Investment".
+    jazz_esa:anticipatedBusinessImpact a rdf:Property;
+                                       rdfs:comment "The revenue, ROI or other financial metric used to represent business impact in monetary terms.";
+                                       rdfs:isDefinedBy jazz_esa:;
+                                       rdfs:label "Anticipated Business Impact".
+    jazz_esa:benefitHypothesis a rdf:Property;
+                               rdfs:comment "Describes the potential benefits hypothesized for delivery of the work.";
+                               rdfs:isDefinedBy jazz_esa:;
+                               rdfs:label "Benefit Hypothesis".
+    jazz_esa:budgetedCapacity a rdf:Property;
+                              rdfs:comment "Capacity (in any standard unit of measure) available to a Value Stream or Program for the current budget cycle based on the Budgeted Investment.";
+                              rdfs:isDefinedBy jazz_esa:;
+                              rdfs:label "Budgeted Capacity".
+    jazz_esa:budgetedInvestment a rdf:Property;
+                                rdfs:comment "Expected/planned/budgeted investment as a monetary amount (in any standard unit) for the current budget cycle. This applies to both Value Stream and Program artifacts.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "Budgeted Investment".
+    jazz_esa:checklistNotes a rdf:Property;
+                            rdfs:comment "Free-form text notes about the checklist criteria.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Checklist Notes".
+    jazz_esa:difficulty a rdf:Property;
+                        rdfs:comment "Difficulty associated with delivery.";
+                        rdfs:isDefinedBy jazz_esa:;
+                        rdfs:label "Difficulty";
+                        rdfs:seeAlso oslc_cm:Priority.
+    jazz_esa:documentation a rdf:Property;
+                           rdfs:comment "Indicates whether or not documentation is needed and complete. Typically expressed as a value of type jazz_esa:ChecklistValue.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Documentation";
+                           rdfs:seeAlso jazz_esa:ChecklistValue.
+    jazz_esa:enablerType a rdf:Property;
+                         rdfs:comment "Enabler type for an enabler work item, typically expressed as a value of type jazz_esa:EnablerType.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "SAFe Enabler Type";
+                         rdfs:seeAlso jazz_esa:EnablerType.
+    jazz_esa:epicHypothesis a rdf:Property;
+                            rdfs:comment "Specified the hypothesis statement for an Epic.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Epic Hypothesis Statement".
+    jazz_esa:epicOwner a rdf:Property;
+                       rdfs:comment "The owner of the Epic, responsible for analysis and the iterative delivery plan.";
+                       rdfs:isDefinedBy jazz_esa:;
+                       rdfs:label "Epic Owner".
+    jazz_esa:estimatedCompletionDate a rdf:Property;
+                                     rdfs:comment "Date when the Epic is estimated to be completed.";
+                                     rdfs:isDefinedBy jazz_esa:;
+                                     rdfs:label "Estimated Completion Date".
+    jazz_esa:estimatedCostMVP a rdf:Property;
+                              rdfs:comment "Estimated cost to deliver the Minimum Viable Product (MVP).";
+                              rdfs:isDefinedBy jazz_esa:;
+                              rdfs:label "Estimated Cost (MVP)".
+    jazz_esa:estimatedStoryPoints a rdf:Property;
+                                  rdfs:comment "Used to specify the estimated story points to implement during planning.";
+                                  rdfs:isDefinedBy jazz_esa:;
+                                  rdfs:label "Estimated Story Points".
+    jazz_esa:estimatedStoryPointsMVP a rdf:Property;
+                                     rdfs:comment "Estimated effort, in story points, to deliver the Minimum Viable Product (MVP).";
+                                     rdfs:isDefinedBy jazz_esa:;
+                                     rdfs:label "Estimated Story Points (MVP)".
+    jazz_esa:expectedTypeOfReturn a rdf:Property;
+                                  rdfs:comment "The type of return expected as a result of delivering the epic. Typically expressed as a value of type jazz_esa:TypeOfReturn.";
+                                  rdfs:isDefinedBy jazz_esa:;
+                                  rdfs:label "Expected Type of Return";
+                                  rdfs:seeAlso jazz_esa:TypeOfReturn.
+    jazz_esa:funnelEntryDate a rdf:Property;
+                             rdfs:comment "The date the Epic entered the Funnel.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "Funnel Entry Date".
+    jazz_esa:goNogoDecision a rdf:Property;
+                            rdfs:comment "Recommendation from Portfolio, Solution or Program Management as to whether the Epic should be put on the Backlog (Go) or Rejected (No-Go) based on the business case analysis. Can be expressed as a value of type jazz_esa:GoNogoDecision.";
+                            rdfs:isDefinedBy jazz_esa:;
+                            rdfs:label "Go/No-Go Decision";
+                            rdfs:seeAlso jazz_esa:GoNogoDecision.
+    jazz_esa:illustrates oslc:inverseLabel "Illustrated By";
+                         a rdf:Property;
+                         rdfs:comment "Enterprise agile link type indicating the relationship between graphical and textual artifacts.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "Illustrates".
+    jazz_esa:informs oslc:inverseLabel "Informs";
+                     a rdf:Property;
+                     rdfs:comment "Enterprise agile link type to indicate that Solution Intent and Solution Context inform each other.";
+                     rdfs:isDefinedBy jazz_esa:;
+                     rdfs:label "Informs".
+    jazz_esa:isMVP a rdf:Property;
+                   rdfs:comment "Indicates whether or not a capability is part of the minimal viable product (MVP).";
+                   rdfs:isDefinedBy jazz_esa:;
+                   rdfs:label "MVP".
+    jazz_esa:isStretchObjective a rdf:Property;
+                                rdfs:comment "Indicates whether an objective is a 'stretch' versus 'committed'.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "Stretch Objective".
+    jazz_esa:jobSize a rdf:Property;
+                     rdfs:comment "Value representing the effort required to implement the work, relative to other work. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).";
+                     rdfs:isDefinedBy jazz_esa:;
+                     rdfs:label "Job Size";
+                     rdfs:seeAlso jazz_esa:FibonacciValue.
+    jazz_esa:milestoneType a rdf:Property;
+                           rdfs:comment "Indicates the type of milestone. Typically expressed as a value of type jazz_esa:MilestoneType.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "Milestone Type".
+    jazz_esa:outsourcedDevelopment a rdf:Property;
+                                   rdfs:comment "Indicates recommendation whether to outsource development of Epic.";
+                                   rdfs:isDefinedBy jazz_esa:;
+                                   rdfs:label "Outsourced Development".
+    jazz_esa:performanceTest a rdf:Property;
+                             rdfs:comment "Indicates whether performance test is required and completed. Typically expressed as a value of type jazz_esa:ChecklistValue.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "Performance Test";
+                             rdfs:seeAlso jazz_esa:ChecklistValue.
+    jazz_esa:plannedBusinessValue a rdf:Property;
+                                  rdfs:comment "Expected relative value planned on a scale from 1 to 10 for a PI Objective.";
+                                  rdfs:isDefinedBy jazz_esa:;
+                                  rdfs:label "Business Value (Planned)".
+    jazz_esa:proposed a rdf:Property;
+                      rdfs:comment "Proposed iteration to target for delivery.";
+                      rdfs:isDefinedBy jazz_esa:;
+                      rdfs:label "Proposed".
+    jazz_esa:realizes oslc:inverseLabel "Realized By";
+                      a rdf:Property;
+                      rdfs:comment "Enterprise agile link type to indicate that an artifact is realized by another artifact.";
+                      rdfs:isDefinedBy jazz_esa:;
+                      rdfs:label "Realizes".
+    jazz_esa:rroe a rdf:Property;
+                  rdfs:comment "Value representing the relative risk reduction and operational enablement, meaning how the work reduces risk or enables future value. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).";
+                  rdfs:isDefinedBy jazz_esa:;
+                  rdfs:label "RROE";
+                  rdfs:seeAlso jazz_esa:FibonacciValue.
+    jazz_esa:safeLevelLargeSolution a rdf:Property;
+                                    rdfs:comment "A Test Plan is scoped to the SAFe Large Solution level.";
+                                    rdfs:isDefinedBy jazz_esa:;
+                                    rdfs:label "SAFe Large Solution".
+    jazz_esa:safeLevelProgram a rdf:Property;
+                              rdfs:comment "A Test Plan is scoped to the SAFe Program level.";
+                              rdfs:isDefinedBy jazz_esa:;
+                              rdfs:label "SAFe Program".
+    jazz_esa:safeLevelTeam a rdf:Property;
+                           rdfs:comment "A Test Plan is scoped to the SAFe Team level.";
+                           rdfs:isDefinedBy jazz_esa:;
+                           rdfs:label "SAFe Team".
+    jazz_esa:scope a rdf:Property;
+                   rdfs:comment "Indicates the scope of the element (objective, risk, etc) of the objective. Typically expressed as a value of type jazz_esa:PIObjectiveScope.";
+                   rdfs:isDefinedBy jazz_esa:;
+                   rdfs:label "Scope";
+                   rdfs:seeAlso jazz_esa:PIObjectiveScope.
+    jazz_esa:startDate a rdf:Property;
+                       rdfs:comment "The data the Epic is expected to begin implementation.";
+                       rdfs:isDefinedBy jazz_esa:;
+                       rdfs:label "Start Date".
+    jazz_esa:storyPoints a rdf:Property;
+                         rdfs:comment "Estimation of complexity expressed in story points. Typically expressed as a value of type jazz_ccm:Complexity.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "Story Points";
+                         rdfs:seeAlso jazz_ccm:Complexity.
+    jazz_esa:storyPointsNumeric a rdf:Property;
+                                rdfs:comment "Numeric value derived from the Story Points attribute, for use in calculations.";
+                                rdfs:isDefinedBy jazz_esa:;
+                                rdfs:label "Story Points (numeric)".
+    jazz_esa:successCriteria a rdf:Property;
+                             rdfs:comment "How success will be determined.";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "Success Criteria".
+    jazz_esa:testCaseCategoryComponent a rdf:Property;
+                                       rdfs:comment "Category that indicates which Component the Test Case applies to, where applicable.";
+                                       rdfs:isDefinedBy jazz_esa:;
+                                       rdfs:label "Component".
+    jazz_esa:testPlanCategoryProgram a rdf:Property;
+                                     rdfs:comment "Category that indicates which Program the Test Plan applies to, where applicable.";
+                                     rdfs:isDefinedBy jazz_esa:;
+                                     rdfs:label "Program".
+    jazz_esa:testPlanCategorySAFeLevel a rdf:Property;
+                                       rdfs:comment "Category that indicates the SAFe level at which a Test Plan applies (solution, program, or team).";
+                                       rdfs:isDefinedBy jazz_esa:;
+                                       rdfs:label "SAFe Level".
+    jazz_esa:timeCriticality a rdf:Property;
+                             rdfs:comment "Value representing whether the item's value is impacted or decreases over time, relative to other work. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).";
+                             rdfs:isDefinedBy jazz_esa:;
+                             rdfs:label "Time Criticality";
+                             rdfs:seeAlso jazz_esa:FibonacciValue.
+    jazz_esa:totalMarketOpportunity a rdf:Property;
+                                    rdfs:comment "Total market size in monetary units (e.g. millions of dollars). This applies to the Value Stream artifact.";
+                                    rdfs:isDefinedBy jazz_esa:;
+                                    rdfs:label "Total Market Opportunity".
+    jazz_esa:userOrBusinessValue a rdf:Property;
+                                 rdfs:comment "Value representing the work's benefit to the business or users, relative to other work. Typically expressed as a number in the Fibonacci sequence (of type jazz_esa:FibonacciValue).";
+                                 rdfs:isDefinedBy jazz_esa:;
+                                 rdfs:label "User/Business Value";
+                                 rdfs:seeAlso jazz_esa:FibonacciValue.
+    jazz_esa:uxDesign a rdf:Property;
+                      rdfs:comment "Indicates whether user experience design is required and completed. Typically expressed as a value of type jazz_esa:ChecklistValue.";
+                      rdfs:isDefinedBy jazz_esa:;
+                      rdfs:label "UX Design";
+                      rdfs:seeAlso jazz_esa:ChecklistValue.
+    jazz_esa:workType a rdf:Property;
+                      rdfs:comment "Work type for work item, typically expressed as a value of type jazz_esa:WorkType.";
+                      rdfs:isDefinedBy jazz_esa:;
+                      rdfs:label "SAFe Work Type";
+                      rdfs:seeAlso jazz_esa:WorkType.
+    jazz_esa:wsjf a rdf:Property;
+                  rdfs:comment "Weighted shortest job first. Calculated based on job size, user/business value, RROE, and time criticality.";
+                  rdfs:isDefinedBy jazz_esa:;
+                  rdfs:label "WSJF".
+    jazz_esa:wsjfInteger a rdf:Property;
+                         rdfs:comment "Weighted shortest job first. Calculated based on job size, user/business value, RROE, and time criticality. Expressed as an integer.";
+                         rdfs:isDefinedBy jazz_esa:;
+                         rdfs:label "WSJF (Integer)".
+}
+

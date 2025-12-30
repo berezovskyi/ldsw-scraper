@@ -1,0 +1,159 @@
+[
+  {
+    "@id": "http://jazz.net/ns/dm/linktypes#trace",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The model element has a trace to the requirement (e.g. An attribute or its value are traced to a requirement)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/linktypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Trace"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/linktypes#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "The DM Link Type Vocabulary."
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Defines the properties that can be used in DM for OSLC linking."
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "The DM Link Type Vocabulary."
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2012"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/linktypes#satisfy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The model element satisfies the requirement (e.g. The use case satisfies a functional requirement)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/linktypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Satisfies"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/linktypes#derives",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The resource that derives from another resource originated from or is significantly influenced by the referenced resource. For example a model element derives from a requirement."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/linktypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Derives From"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/linktypes#refine",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The target is a refinement of the source. (e.g. a use case scenario might be a refinement of a textual requirement that describes the interaction)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/linktypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Refines"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/linktypes#elaborates",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "This resource elaborates the referenced resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/linktypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Elaborates"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/dm/linktypes#external",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A generic link from a resource to an external web page."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/dm/linktypes#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "External Web Page"
+      }
+    ]
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Administration Services Health Status Vocabulary"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The Administration Services Health Status Vocabulary defines the health status for the related resources"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Administration Services Health Status"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://jazz.net/ns/license.html"
+      }
+    ],
+    "http://purl.org/dc/terms/dateCopyrighted": [
+      {
+        "@value": "2012"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#HealthStatus",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/admin/health#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "HealthStatus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It describes the health status of a resource. The health status could be the outcome of an automation for example prerequisite check or a health check script."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#describes",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/admin/health#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "describes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The URI to the resource (for example, the admin:AdministrableResource or admin:AdministrativeJob) that it describes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#status",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/admin/health#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "It represents the health state (ok, warning, error or unknown state) of the resource described by the health:HealthStatus."
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#OK",
+    "@type": [
+      "http://jazz.net/ns/ism/admin/health#HealthStatus"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/admin/health#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "OK"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates that the state of the resource is OK; for example, the state of admin:AdministrableResource or result of the admin:AdministrativeJob execution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#Warning",
+    "@type": [
+      "http://jazz.net/ns/ism/admin/health#HealthStatus"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/admin/health#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Warning"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates that the state of the resource in a warning; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#Error",
+    "@type": [
+      "http://jazz.net/ns/ism/admin/health#HealthStatus"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/admin/health#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Error"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates that the state of the resource is an error; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary"
+      }
+    ]
+  },
+  {
+    "@id": "http://jazz.net/ns/ism/admin/health#Unknown",
+    "@type": [
+      "http://jazz.net/ns/ism/admin/health#HealthStatus"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://jazz.net/ns/ism/admin/health#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Unknown"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Indicates that the state of the resource is unknown or indeterminate; for example, the state of the admin:AdministrableResource or result of the admin:AdministrativeJob execution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesVocabulary"
+      }
+    ]
+  }
+]

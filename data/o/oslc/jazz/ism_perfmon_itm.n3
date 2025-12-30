@@ -1,0 +1,266 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix oslc: <http://open-services.net/ns/core#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix crtv: <http://open-services.net/ns/crtv#>.
+@prefix pm: <http://open-services.net/ns/pm#>.
+@prefix itm: <http://jazz.net/ns/ism/perfmon/itm#>.
+
+itm: dcterms:description "The IBM Tivoli Monitoring vocabulary.";
+     dcterms:title "IBM Tivoli Monitoring Vocabulary";
+     a owl:Ontology;
+     rdfs:comment "Predicates within this vocabulary are generally defined without constraints on the units used, or which resources they apply to, in order to maximize potential re-use. One way ITM uses them is as part of ems:Measure resources when exposing pm:PerformanceMonitoringRecord resources; in that context, units of measure etc. are supplied by other predicates on the ems:Measure resources.";
+     rdfs:label "IBM Tivoli Monitoring Vocabulary";
+     rdfs:seeAlso <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0>,
+                  <http://www.ibm.com/software/products/us/en/tivomoni/>.
+itm:AIX rdfs:comment "Indicates that the operating system type is AIX. ";
+        rdfs:isDefinedBy itm:;
+        rdfs:label "AIX".
+itm:BufferUsed a rdfs:Class;
+               rdfs:comment "Measures utilization of buffers such as DB2 Fast Communication Manager buffers.";
+               rdfs:isDefinedBy itm:;
+               rdfs:label "Buffer Used".
+itm:ConfigurationSetting a rdfs:Class;
+                         rdfs:comment "Class that categories configuration settings.";
+                         rdfs:isDefinedBy itm:;
+                         rdfs:label "ConfigurationSetting".
+itm:ConnectionEntriesUsed a rdfs:Class;
+                          rdfs:comment "Measures utilization of connection entries such as DB2 Fast Communication Manager connection entries.";
+                          rdfs:isDefinedBy itm:;
+                          rdfs:label "Connection Entries used".
+itm:DataFileFreeUtil a rdfs:Class;
+                     rdfs:comment "Relative number of unused data files.  The percentage of files that are not open compared to the maximum number of files that are allowed to be open at the same time by an Oracle database, for example.";
+                     rdfs:isDefinedBy itm:;
+                     rdfs:label "Data file free utilization".
+itm:Disabled a rdfs:Class;
+             rdfs:comment "Configuration setting that indicates a particular behavior is disabled.";
+             rdfs:isDefinedBy itm:;
+             rdfs:label "Disabled";
+             rdfs:subClassOf itm:ConfigurationSetting.
+itm:DlqDepth a rdfs:Class;
+             rdfs:comment "Measures the depth of the dead letter queue on, for example, a message server.";
+             rdfs:isDefinedBy itm:;
+             rdfs:label "Dead letter queue depth".
+itm:Enabled a rdfs:Class;
+            rdfs:comment "Configuration setting that indicates a particular behavior is enabled.";
+            rdfs:isDefinedBy itm:;
+            rdfs:label "Enabled";
+            rdfs:subClassOf itm:ConfigurationSetting.
+itm:HP-UX rdfs:comment "Indicates that the operating system type is HP-UX. ";
+          rdfs:isDefinedBy itm:;
+          rdfs:label "HP-UX".
+itm:IBMi rdfs:comment "Indicates that the operating system type is IBM i. ";
+         rdfs:isDefinedBy itm:;
+         rdfs:label "IBM i".
+itm:InputHandles a rdfs:Class;
+                 rdfs:comment "Input handles or connection metric. ITM measures the number of applications that have a handle open to an input queue, for example.";
+                 rdfs:isDefinedBy itm:;
+                 rdfs:label "Input handles".
+itm:LibraryCacheHitRatio a rdfs:Class;
+                         rdfs:comment "Measures the library cache efficiency. In ITM, this as measured by the percentage of times the fully parsed or compiled representation of PL/SQL blocks and SQL statements are already in memory in an Oracle database.";
+                         rdfs:isDefinedBy itm:;
+                         rdfs:label "Library Cache Hit Ratio".
+itm:Linux rdfs:comment "Indicates that the operating system type is Linux. ";
+          rdfs:isDefinedBy itm:;
+          rdfs:label "Linux".
+itm:MaxActiveChannelsUsed a rdfs:Class;
+                          rdfs:comment "Active channels used by a message server, for example. ITM measures the maximum number of active channels.";
+                          rdfs:isDefinedBy itm:;
+                          rdfs:label "Maximum number of active channels used".
+itm:MaxChannelsUsed a rdfs:Class;
+                    rdfs:comment "Channels used by a message server, for example. ITM measures the maximum number of channels used.";
+                    rdfs:isDefinedBy itm:;
+                    rdfs:label "Maximum number of channels used".
+itm:Mounted rdfs:comment "Indicates that a resource, such as a database instance, is mounted.";
+            rdfs:isDefinedBy itm:;
+            rdfs:label "Mounted";
+            rdfs:seeAlso <http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm>.
+itm:NativeIdentity a rdfs:Class;
+                   rdfs:comment "A resource that helps client programs correlate ITM's OSLC resources with resources exposed via other ITM interfaces.";
+                   rdfs:isDefinedBy itm:;
+                   rdfs:label "Native Identity".
+itm:Offline rdfs:comment "Indicates that a resource, such as a database instance, is offline.";
+            rdfs:isDefinedBy itm:;
+            rdfs:label "Offline";
+            rdfs:seeAlso <http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm>.
+itm:Open rdfs:comment "Indicates that a resource is open. In the case of Oracle database instances, an open database is one that is started, mounted, and available for access by clients.";
+         rdfs:isDefinedBy itm:;
+         rdfs:label "Open";
+         rdfs:seeAlso <http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm>.
+itm:OpenMigrate rdfs:comment "Indicates that a resource, such as a database instance, has been opened so that migration or upgrade can be performed.";
+                rdfs:isDefinedBy itm:;
+                rdfs:label "OpenMigrate";
+                rdfs:seeAlso <http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm>.
+itm:OutputHandles a rdfs:Class;
+                  rdfs:comment "Output handles or connection metric. ITM measures the number of applications that have a handle open to an output queue, for example.";
+                  rdfs:isDefinedBy itm:;
+                  rdfs:label "Output handles".
+itm:PrimaryKey a rdfs:Class;
+               rdfs:comment "A resource that helps client programs correlate ITM's OSLC resources with resources exposed via other interfaces, for example those that might be expressed as a row in an ODI table.";
+               rdfs:isDefinedBy itm:;
+               rdfs:label "Primary Key".
+itm:ProcessesInUse a rdfs:Class;
+                   rdfs:comment "Processes in use within some context.  The percentage of  processes that are connected to an Oracle database instance out of the maximum number of configured processes for that instance, for example.";
+                   rdfs:isDefinedBy itm:;
+                   rdfs:label "Processes in use".
+itm:SessionsInUse a rdfs:Class;
+                  rdfs:comment "Sessions in use within some context.  The percentage of  sessions that are in use out of the maximum number of sessions configured for an Oracle database instance, for example.";
+                  rdfs:isDefinedBy itm:;
+                  rdfs:label "Sessions in use".
+itm:Started rdfs:comment "Indicates that a resource, such as a database instance, is started.";
+            rdfs:isDefinedBy itm:;
+            rdfs:label "Started";
+            rdfs:seeAlso <http://docs.oracle.com/cd/B19306_01/server.102/b14220/intro.htm>.
+itm:SunOS rdfs:comment "Indicates that the operating system type is SunOS. ";
+          rdfs:isDefinedBy itm:;
+          rdfs:label "SunOS".
+itm:Windows2000 rdfs:comment "Indicates that the operating system type is Windows 2000. ";
+                rdfs:isDefinedBy itm:;
+                rdfs:label "Windows 2000".
+itm:Windows7 rdfs:comment "Indicates that the operating system type is Windows 7. ";
+             rdfs:isDefinedBy itm:;
+             rdfs:label "Windows 7".
+itm:Windows8 rdfs:comment "Indicates that the operating system type is Windows 8. ";
+             rdfs:isDefinedBy itm:;
+             rdfs:label "Windows 8".
+itm:WindowsNT rdfs:comment "Indicates that the operating system type is Windows NT. ";
+              rdfs:isDefinedBy itm:;
+              rdfs:label "Windows NT".
+itm:WindowsServer2003 rdfs:comment "Indicates that the operating system type is Windows Server 2003. ";
+                      rdfs:isDefinedBy itm:;
+                      rdfs:label "Windows Server 2003".
+itm:WindowsServer2008 rdfs:comment "Indicates that the operating system type is Windows Server 2008. ";
+                      rdfs:isDefinedBy itm:;
+                      rdfs:label "Windows Server 2008".
+itm:WindowsServer2012 rdfs:comment "Indicates that the operating system type is Windows Server 2012. ";
+                      rdfs:isDefinedBy itm:;
+                      rdfs:label "Windows Server 2012".
+itm:WindowsVista rdfs:comment "Indicates that the operating system type is Windows Vista. ";
+                 rdfs:isDefinedBy itm:;
+                 rdfs:label "Windows Vista".
+itm:WindowsXP rdfs:comment "Indicates that the operating system type is Windows XP. ";
+              rdfs:isDefinedBy itm:;
+              rdfs:label "Windows XP".
+itm:affinity a rdf:Property;
+             rdfs:comment "An affinity in the ITM context is a way of associating a version of an agent product with the attribute groups, situations, and other ITM artifacts it supports.";
+             rdfs:isDefinedBy itm:;
+             rdfs:label "affinity".
+itm:applicationHealth a rdf:Property;
+                      rdfs:comment "Specifies the health of an enterprise application using health:OK, health:Warning, health:Error, health:Unknown.";
+                      rdfs:isDefinedBy itm:;
+                      rdfs:label "applicationHealth";
+                      rdfs:seeAlso <https://jazz.net/wiki/bin/view/Main/JazzForServiceManagementAdministrationServicesHealthStatusVocabulary>.
+itm:applicationStatus a rdf:Property;
+                      rdfs:comment "A sequence of crtv:ServiceInstance resources representing enterprise applications and sorted alphabetically and whose operational status is provided in terms of pm:availabilityStatus. ";
+                      rdfs:isDefinedBy itm:;
+                      rdfs:label "applicationStatus";
+                      rdfs:seeAlso <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties>,
+                                   <http://open-services.net/wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/>.
+itm:attribute a rdf:Property;
+              rdfs:comment "Name of an ITM attribute, for example one that is a primary key for the resource. It is an attribute in the attribute group specified for the itm:attributeGroup property. The attribute name should be the value of the *COLUMN: tag from the agent's ODI file. ";
+              rdfs:isDefinedBy itm:;
+              rdfs:label "attribute".
+itm:attributeGroup a rdf:Property;
+                   rdfs:comment "This property specifies the name of the ITM attribute group that has a row which uniquely identifies the resource internally within ITM. It should be the value of the *TABLE: tag for the attribute group from the agent's ODI file. ";
+                   rdfs:isDefinedBy itm:;
+                   rdfs:label "attributeGroup".
+itm:attributeValue a rdf:Property;
+                   rdfs:comment "Value of the attribute identified by the itm:attribute property, which is an attribute in an ITM attribute group that identifies a column as a primay key value for the attribute group. ";
+                   rdfs:isDefinedBy itm:;
+                   rdfs:label "attributeValue".
+itm:channelInitiatorStatus a rdf:Property;
+                           rdfs:comment "Status of an IBM MQ channel initiator in terms of pm:availabilityStatus values. ";
+                           rdfs:isDefinedBy itm:;
+                           rdfs:label "channelInitiatorStatus";
+                           rdfs:seeAlso <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties>.
+itm:commandServerStatus a rdf:Property;
+                        rdfs:comment "Status of an IBM MQ server in terms of pm:availabilityStatus values.";
+                        rdfs:isDefinedBy itm:;
+                        rdfs:label "commandServerStatus";
+                        rdfs:seeAlso <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties>.
+itm:disksByPercentageSpaceUsed a rdf:Property;
+                               rdfs:comment "A list of disks sorted by percentage space used, for example those used by a computer operating system.";
+                               rdfs:isDefinedBy itm:;
+                               rdfs:label "disksByPercentageSpaceUsed".
+itm:getStatus a rdf:Property;
+              rdfs:comment "Indicates whether 'gets' are enabled or disabled for an IBM MQ queue. Valid values are any subclass of http://jazz.net/ns/ism/perfmon/itm#ConfigurationSetting, for example http://jazz.net/ns/ism/perfmon/itm#Enabled or http://jazz.net/ns/ism/perfmon/itm#Disabled.";
+              rdfs:isDefinedBy itm:;
+              rdfs:label "getStatus".
+itm:instanceName a rdf:Property;
+                 rdfs:comment "For ITM multi-instance agents, this property specifies the agent's instance name if it has been configured by a user.  If no instance name has been configured, this property should be absent (omitted).";
+                 rdfs:isDefinedBy itm:;
+                 rdfs:label "instanceName".
+itm:internalID a rdf:Property;
+               rdfs:comment "This property is not intended for use by OSLC-only client applications.  It allows correlation between entries in ITM's internal resource repository with the resources ITM registers with Registry Services. ";
+               rdfs:isDefinedBy itm:;
+               rdfs:label "internalID".
+itm:managedSystemName a rdf:Property;
+                      rdfs:comment "Specifies the ITM product-specific internal identifier for the monitored resource used in many ITM APIs, including non-HTTP APIs. Allows products that use ITM's monitored resource identifier in their products to correlate them with crtv resources.";
+                      rdfs:isDefinedBy itm:;
+                      rdfs:label "managedSystemName".
+itm:monitoringAgentsByStatus a rdf:Property;
+                             rdfs:comment "The list of monitoring agents sorted by pm:availabilityStatus values, for example those running in an operating system. ";
+                             rdfs:isDefinedBy itm:;
+                             rdfs:label "monitoringAgentsByStatus";
+                             rdfs:seeAlso <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties>.
+itm:nativeIdentity a rdf:Property;
+                   rdfs:comment "Links to a resource containing properties used in many non-HTTP ITM APIs to identify the subject resource in those other API contexts.";
+                   rdfs:isDefinedBy itm:;
+                   rdfs:label "nativeIdentity".
+itm:osType a rdf:Property;
+           rdfs:comment "The type of operating system running on a crtv:ComputerSystem instance, such as itm:Windows2000.";
+           rdfs:isDefinedBy itm:;
+           rdfs:label "osType".
+itm:primaryKey a rdf:Property;
+               rdfs:comment "This property links to a resource that contains the the attribute and attribute value for the primary key of an ITM ODI attribute group. If multiple attributes in the attribute group are required to uniquely identify the resource then there should be multiple instances of this property. ";
+               rdfs:isDefinedBy itm:;
+               rdfs:label "primaryKey".
+itm:putStatus a rdf:Property;
+              rdfs:comment "Indicates whether 'puts' are enabled or disabled for an IBM MQ queue. Valid values are any subclass of http://jazz.net/ns/ism/perfmon/itm#ConfigurationSetting, for example http://jazz.net/ns/ism/perfmon/itm#Enabled or http://jazz.net/ns/ism/perfmon/itm#Disabled.";
+              rdfs:isDefinedBy itm:;
+              rdfs:label "putStatus".
+itm:topDBConnectionPoolsInUse a rdf:Property;
+                              rdfs:comment "The top database connection pools in use. For example, those in use by a web application server, sorted by utilization. ";
+                              rdfs:isDefinedBy itm:;
+                              rdfs:label "topDBConnectionPoolsInUse".
+itm:topJ2CConnectionPoolsInUse a rdf:Property;
+                               rdfs:comment "The top J2C connection pools in use. For example, those in use by a web application server, sorted by utilization. ";
+                               rdfs:isDefinedBy itm:;
+                               rdfs:label "topJ2CConnectionPoolsInUse".
+itm:topProcessesforCPUUtil a rdf:Property;
+                           rdfs:comment "The top consumers of CPU resource, for example amongst those running in a computer operating system. Other examples include Java Virtual Machines and Database Management Systems. ";
+                           rdfs:isDefinedBy itm:;
+                           rdfs:label "topProcessesforCPUUtil".
+itm:topProcessesforRealMemUtil a rdf:Property;
+                               rdfs:comment "The top consumers of real memory, for example amongst those running in a computer operating system, for example. ";
+                               rdfs:isDefinedBy itm:;
+                               rdfs:label "topProcessesforRealMemUtil".
+itm:topProcessesforVirtMemUtil a rdf:Property;
+                               rdfs:comment "The top consumers of virtual memory, for example amongst those running in a computer operating system, for example. ";
+                               rdfs:isDefinedBy itm:;
+                               rdfs:label "topProcessesforVirtMemUtil".
+itm:topSlowestPortalPages a rdf:Property;
+                          rdfs:comment "The slowest-responding web portal pages. For example, those being served by a web portal server, sorted by response time. ";
+                          rdfs:isDefinedBy itm:;
+                          rdfs:label "topSlowestPortalPages".
+itm:topSlowestServiceComponents a rdf:Property;
+                                rdfs:comment "The top slowest-responding service components. For example, those in use by a web application server. ";
+                                rdfs:isDefinedBy itm:;
+                                rdfs:label "topSlowestServiceComponents".
+itm:topTablespaceUsage a rdf:Property;
+                       rdfs:comment "Lists a sequence of table space resources used by a database and sorted by utilization; ITM currently uses crtv:TableSpace resources, but clients should tolerate others in the future. ";
+                       rdfs:isDefinedBy itm:;
+                       rdfs:label "topTablespaceUsage";
+                       rdfs:seeAlso <http://open-services.net/wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/>.
+itm:topThreadPoolsInUse a rdf:Property;
+                        rdfs:comment "The top thread pools in use. For example, those used by a web application server, sorted by utilization. ";
+                        rdfs:isDefinedBy itm:;
+                        rdfs:label "topThreadPoolsInUse".
+itm:zOS rdfs:comment "Indicates that the operating system type is zOS. ";
+        rdfs:isDefinedBy itm:;
+        rdfs:label "zOS".
+itm:zVM rdfs:comment "Indicates that the operating system type is zVM. ";
+        rdfs:isDefinedBy itm:;
+        rdfs:label "zVM".

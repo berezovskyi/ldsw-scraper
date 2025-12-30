@@ -1,0 +1,152 @@
+<http://jazz.net/ns/am/rmm#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://jazz.net/ns/am/rmm#> <http://purl.org/dc/terms/title> "RMM Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#> <http://purl.org/dc/terms/description> "The RMM vocabulary is used to describe changes made to modeling artifacts by developers in Rhapsody Model Manager."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://jazz.net/ns/am/rmm#> <http://www.w3.org/2000/01/rdf-schema#label> "RMM Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "rmm_am"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
+<http://jazz.net/ns/am/rmm#> <http://purl.org/dc/terms/dateCopyrighted> "2021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#> <http://purl.org/dc/terms/source> <https://jazz.net/wiki/pub/LinkedData/RmmVocabulary/rmm-vocabulary.ttl> .
+<http://jazz.net/ns/am/rmm#ArchitectureElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/am/rmm#ArchitectureElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#ArchitectureElement> <http://www.w3.org/2000/01/rdf-schema#label> "Architecture Element"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#ArchitectureElement> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an Architecture Element."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/am/rmm#Relation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#Relation> <http://www.w3.org/2000/01/rdf-schema#label> "Relation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#Relation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a modeling Relation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#Tag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/am/rmm#Tag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#Tag> <http://www.w3.org/2000/01/rdf-schema#label> "Rhapsody Tag"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#Tag> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a Rhapsody Tag."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#type> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the type of the element, for example, Class or Attribute."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#name> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the name of the element."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#valueAsStr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#valueAsStr> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the value of a Rhapsody Tag - relevant for tag values that are not Architecture Elements."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#valueAsStr> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#valueAsStr> <http://www.w3.org/2000/01/rdf-schema#label> "Value as string"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#valueAsRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#valueAsRef> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the value of a Rhapsody Tag, for tags whose values are Architecture Elements."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#valueAsRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#valueAsRef> <http://www.w3.org/2000/01/rdf-schema#label> "Value as reference"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#aggregate> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the elements contained in a parent element, for example, a class that is part of a package."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregate"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#file> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#file> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the file used to store the Rhapsody unit."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#file> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#file> <http://www.w3.org/2000/01/rdf-schema#label> "File"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#appliedStereotype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#appliedStereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents a stereotype that was applied to the element."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#appliedStereotype> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#appliedStereotype> <http://www.w3.org/2000/01/rdf-schema#label> "Applied stereotype"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#target> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the target element of a relation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#target> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#target> <http://www.w3.org/2000/01/rdf-schema#label> "Target"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#hyperlinkTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#hyperlinkTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the target of a hyperlink."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#hyperlinkTarget> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#hyperlinkTarget> <http://www.w3.org/2000/01/rdf-schema#label> "Hyperlink target"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#source> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the source element of a relation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#source> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#tag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#tag> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents a specific Rhapsody tag of an element."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#tag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#tag> <http://www.w3.org/2000/01/rdf-schema#label> "Rhapsody tag"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#targetPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#targetPort> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the target port of a relation such as a Link."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#targetPort> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#targetPort> <http://www.w3.org/2000/01/rdf-schema#label> "Target port"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#sourcePort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#sourcePort> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the source port of a relation such as a Link."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#sourcePort> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#sourcePort> <http://www.w3.org/2000/01/rdf-schema#label> "Source port"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#ofType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#ofType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the type of an element such as an Attribute. For example, an Attribute of type integer."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#ofType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#ofType> <http://www.w3.org/2000/01/rdf-schema#label> "Of type"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#portRequiredInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#portRequiredInterface> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents a required interface of a port."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#portRequiredInterface> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#portRequiredInterface> <http://www.w3.org/2000/01/rdf-schema#label> "Port required interface"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#portProvidedInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#portProvidedInterface> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents a provided interface of a port."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#portProvidedInterface> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#portProvidedInterface> <http://www.w3.org/2000/01/rdf-schema#label> "Port provided interface"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#itemFlowRepresented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#itemFlowRepresented> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the architecture element represented by an item flow."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#itemFlowRepresented> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#itemFlowRepresented> <http://www.w3.org/2000/01/rdf-schema#label> "ItemFlow represented"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#aggregationKind> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the kind of association end, for example, composition."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#aggregationKind> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregation kind"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#flowDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the direction of a flow - directed or bidirectional."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Flow direction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#flowPortDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the direction of a flow port - input, output, unspecified or bidirectional."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowPortDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Flow Port direction"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#isPortConjugated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://jazz.net/ns/am/rmm#isPortConjugated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates if the port is conjugated."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#isPortConjugated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#isPortConjugated> <http://www.w3.org/2000/01/rdf-schema#label> "Is port conjugated"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#AggregationKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/am/rmm#AggregationKind> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the enumerated values for aggregation kinds."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#AggregationKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#AggregationKind> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregation kind enumeration"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#AggregationKind> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Aggregation> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents an Association end of kind aggregation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Aggregation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Aggregation> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregation"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#AggregationKind> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Composition> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents an Association end of kind composition."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Composition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Composition> <http://www.w3.org/2000/01/rdf-schema#label> "Composition"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#AggregationKind> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Association> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents an Association end of kind association."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Association> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#aggregationKind-Association> <http://www.w3.org/2000/01/rdf-schema#label> "Association"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#FlowPortDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/am/rmm#FlowPortDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the enumerated values for flow port directions."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#FlowPortDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#FlowPortDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Flow port direction enumeration"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Bidirectional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#FlowPortDirection> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Bidirectional> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents a Flow port with bidirectional direction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Bidirectional> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Bidirectional> <http://www.w3.org/2000/01/rdf-schema#label> "Bidirectional"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#FlowPortDirection> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Input> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents a Flow port with input direction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Input> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Input> <http://www.w3.org/2000/01/rdf-schema#label> "Input"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#FlowPortDirection> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Output> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents a Flow port with output direction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Output> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Unspecified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#FlowPortDirection> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Unspecified> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents a Flow port with unspecified direction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Unspecified> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowPortDirection-Unspecified> <http://www.w3.org/2000/01/rdf-schema#label> "Unspecified"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#FlowDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://jazz.net/ns/am/rmm#FlowDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the enumerated values for flow directions."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#FlowDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#FlowDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Flow direction enumeration"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowDirection-Bidirectional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#FlowDirection> .
+<http://jazz.net/ns/am/rmm#flowDirection-Bidirectional> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents a Flow with bidirectional direction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowDirection-Bidirectional> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowDirection-Bidirectional> <http://www.w3.org/2000/01/rdf-schema#label> "Bidirectional"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowDirection-Directed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://jazz.net/ns/am/rmm#FlowDirection> .
+<http://jazz.net/ns/am/rmm#flowDirection-Directed> <http://www.w3.org/2000/01/rdf-schema#comment> "This value represents a Flow with directed direction."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://jazz.net/ns/am/rmm#flowDirection-Directed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/am/rmm#> .
+<http://jazz.net/ns/am/rmm#flowDirection-Directed> <http://www.w3.org/2000/01/rdf-schema#label> "Directed"^^<http://www.w3.org/2001/XMLSchema#string> .

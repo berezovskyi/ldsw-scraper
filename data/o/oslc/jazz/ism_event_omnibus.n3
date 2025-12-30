@@ -1,0 +1,465 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix oslcemp: <http://jazz.net/ns/ism/event/omnibus/itnm#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix oslcem: <http://jazz.net/ns/ism/event/omnibus#>.
+@prefix oslcemm: <http://jazz.net/ns/ism/event/omnibus/misc#>.
+@prefix crtv: <http://open-services.net/ns/crtv#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix oslcemb: <http://jazz.net/ns/ism/event/omnibus/tbsm#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+
+oslcem: dcterms:dateCopyrighted "2013";
+        dcterms:description """The IBM Tivoli Netcool/OMNIbus Event Management Core Vocabulary defines events, journals, details and event collection identifier pattern resources and related concepts. To Support the concept of event and journal ownership there are also a set of \"read-only\" utility resources, user and group that are provided.""";
+        dcterms:license <http://jazz.net/ns/license.html>;
+        dcterms:source <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary>;
+        dcterms:title "IBM Tivoli Netcool/OMNIbus Event Management Core Vocabulary";
+        a owl:Ontology;
+        rdfs:label "Netcool/OMNIbus Event Management Core";
+        rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:Clear a oslcem:Severity;
+             rdf:value "0";
+             rdfs:comment "The event has a severity of clear. Indicated by the value 0 for oslcem:severity.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "Clear";
+             rdfs:seeAlso oslcem:severity.
+oslcem:Critical a oslcem:Severity;
+                rdf:value "5";
+                rdfs:comment "The event has a severity of critical. Indicated by the value 5 for oslcem:severity.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "Critical";
+                rdfs:seeAlso oslcem:severity.
+oslcem:Detail a rdfs:Class;
+              rdfs:comment "The representation of an entry that provides details on a raw data element from the event source for an associated event. Data elements can become a detail entry when the data element has not been mapped to the event resource due to mapping problems or is considered to be extended event data.";
+              rdfs:isDefinedBy oslcem:;
+              rdfs:label "Detail";
+              rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Detail>.
+oslcem:Escalated a oslcem:SuppressEscl;
+                 rdf:value "1";
+                 rdfs:comment "The event has a grade of escalated. Indicated by the value 1 for oslcem:grade.",
+                              "The event has a suppression or escalation setting of escalated. Indicated by the value 1 for oslcem:suppressEscl.";
+                 rdfs:isDefinedBy oslcem:;
+                 rdfs:label "Escalated";
+                 rdfs:seeAlso oslcem:grade,
+                              oslcem:suppressEscl.
+oslcem:Escalated-Level2 a oslcem:SuppressEscl;
+                        rdf:value "2";
+                        rdfs:comment "The event has a suppression or escalation setting of escalated-level 2. Indicated by the value 2 for oslcem:suppressEscl.";
+                        rdfs:isDefinedBy oslcem:;
+                        rdfs:label "Escalated-Level2";
+                        rdfs:seeAlso oslcem:suppressEscl.
+oslcem:Escalated-Level3 a oslcem:SuppressEscl;
+                        rdf:value "3";
+                        rdfs:comment "The event has a suppression or escalation setting of escalated-level 3. Indicated by the value 3 for oslcem:suppressEscl.";
+                        rdfs:isDefinedBy oslcem:;
+                        rdfs:label "Escalated-Level3";
+                        rdfs:seeAlso oslcem:suppressEscl.
+oslcem:Event a rdfs:Class;
+             rdfs:comment "Representation of an event that has been collected from an arbitrary event source, such as a computer system, network device, application, log file, etc.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "Event";
+             rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Event>.
+oslcem:Grade a rdfs:Class;
+             rdfs:comment "The set of grades for an event.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "Grade";
+             rdfs:seeAlso oslcem:grade.
+oslcem:Hidden a oslcem:SuppressEscl;
+              rdf:value "5";
+              rdfs:comment "The event has a suppression or escalation setting of hidden. Indicated by the value 5 for oslcem:suppressEscl.";
+              rdfs:isDefinedBy oslcem:;
+              rdfs:label "Hidden";
+              rdfs:seeAlso oslcem:suppressEscl.
+oslcem:ISMNewAlarm a oslcem:Type;
+                   rdf:value "7";
+                   rdfs:comment "The event has a type of ism new alarm. Indicated by the value 7 for oslcem:type.";
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "ISMNewAlarm";
+                   rdfs:seeAlso oslcem:type.
+oslcem:ISMOldAlarm a oslcem:Type;
+                   rdf:value "8";
+                   rdfs:comment "The event has a type of ism old alarm. Indicated by the value 8 for oslcem:type.";
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "ISMOldAlarm";
+                   rdfs:seeAlso oslcem:type.
+oslcem:Indeterminate a oslcem:Severity;
+                     rdf:value "1";
+                     rdfs:comment "The event has a severity of indeterminate. Indicated by the value 1 for oslcem:severity.";
+                     rdfs:isDefinedBy oslcem:;
+                     rdfs:label "Indeterminate";
+                     rdfs:seeAlso oslcem:severity.
+oslcem:Information a oslcem:Type;
+                   rdf:value "13";
+                   rdfs:comment "The event has a type of information. Indicated by the value 13 for oslcem:type.";
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "Information";
+                   rdfs:seeAlso oslcem:type.
+oslcem:Journal a rdfs:Class;
+               rdfs:comment "The representation of a journal entry that documents some action or update to an associated event resource that has been performed by either an automatic or operator action.";
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "Journal";
+               rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#oslcem_Journal>.
+oslcem:LessSevere a oslcem:Type;
+                  rdf:value "12";
+                  rdfs:comment "The event has a type of less severe. Indicated by the value 12 for oslcem:type.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "LessSevere";
+                  rdfs:seeAlso oslcem:type.
+oslcem:Maintenance a oslcem:SuppressEscl;
+                   rdf:value "6";
+                   rdfs:comment "The event has a suppression or escalation setting of maintenance. Indicated by the value 6 for oslcem:suppressEscl.";
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "Maintenance";
+                   rdfs:seeAlso oslcem:suppressEscl.
+oslcem:Major a oslcem:Severity;
+             rdf:value "4";
+             rdfs:comment "The event has a severity of major. Indicated by the value 4 for oslcem:severity.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "Major";
+             rdfs:seeAlso oslcem:severity.
+oslcem:Minor a oslcem:Severity;
+             rdf:value "3";
+             rdfs:comment "The event has a severity of minor. Indicated by the value 3 for oslcem:severity.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "Minor";
+             rdfs:seeAlso oslcem:severity.
+oslcem:MoreSevere a oslcem:Type;
+                  rdf:value "11";
+                  rdfs:comment "The event has a type of more severe. Indicated by the value 11 for oslcem:type.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "MoreSevere";
+                  rdfs:seeAlso oslcem:type.
+oslcem:Normal a oslcem:SuppressEscl;
+              rdf:value "0";
+              rdfs:comment "The event has a suppression or escalation setting of normal. Indicated by the value 0 for oslcem:suppressEscl.";
+              rdfs:isDefinedBy oslcem:;
+              rdfs:label "Normal";
+              rdfs:seeAlso oslcem:suppressEscl.
+oslcem:NotEscalated a oslcem:Grade;
+                    rdf:value "0";
+                    rdfs:comment "The event has a grade of not escalated. Indicated by the value 0 for oslcem:grade.";
+                    rdfs:isDefinedBy oslcem:;
+                    rdfs:label "NotEscalated";
+                    rdfs:seeAlso oslcem:grade.
+oslcem:Problem a oslcem:Type;
+               rdf:value "1";
+               rdfs:comment "The event has a type of problem. Indicated by the value 1 for oslcem:type.";
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "Problem";
+               rdfs:seeAlso oslcem:type.
+oslcem:Resolution a oslcem:Type;
+                  rdf:value "2";
+                  rdfs:comment "The event has a type of resolution. Indicated by the value 2 for oslcem:type.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "Resolution";
+                  rdfs:seeAlso oslcem:type.
+oslcem:Severity a rdfs:Class;
+                rdfs:comment "The set of severities for an event.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "Severity";
+                rdfs:seeAlso oslcem:severity.
+oslcem:SuppressEscl a rdfs:Class;
+                    rdfs:comment "The set of suppression or escalation settings for an event.";
+                    rdfs:isDefinedBy oslcem:;
+                    rdfs:label "SuppressEscl";
+                    rdfs:seeAlso oslcem:suppressEscl.
+oslcem:Suppressed a oslcem:SuppressEscl;
+                  rdf:value "4";
+                  rdfs:comment "The event has a suppression or escalation setting of suppressed. Indicated by the value 4 for oslcem:suppressEscl.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "Suppressed";
+                  rdfs:seeAlso oslcem:suppressEscl.
+oslcem:Type a rdfs:Class;
+            rdfs:comment "The set of types for an event.";
+            rdfs:isDefinedBy oslcem:;
+            rdfs:label "Type";
+            rdfs:seeAlso oslcem:type.
+oslcem:TypeNotSet a oslcem:Type;
+                  rdf:value "0";
+                  rdfs:comment "The event has a type of type not set. Indicated by the value 0 for oslcem:type.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "TypeNotSet";
+                  rdfs:seeAlso oslcem:type.
+oslcem:VisionaryProblem a oslcem:Type;
+                        rdf:value "3";
+                        rdfs:comment "The event has a type of visionary problem. Indicated by the value 3 for oslcem:type.";
+                        rdfs:isDefinedBy oslcem:;
+                        rdfs:label "VisionaryProblem";
+                        rdfs:seeAlso oslcem:type.
+oslcem:VisionaryResolution a oslcem:Type;
+                           rdf:value "4";
+                           rdfs:comment "The event has a type of visionary resolution. Indicated by the value 4 for oslcem:type.";
+                           rdfs:isDefinedBy oslcem:;
+                           rdfs:label "VisionaryResolution";
+                           rdfs:seeAlso oslcem:type.
+oslcem:Warning a oslcem:Severity;
+               rdf:value "2";
+               rdfs:comment "The event has a severity of warning. Indicated by the value 2 for oslcem:severity.";
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "Warning";
+               rdfs:seeAlso oslcem:severity.
+oslcem:acknowledged a rdf:Property;
+                    rdfs:comment "Indicates whether the event has been acknowledged.";
+                    rdfs:isDefinedBy oslcem:;
+                    rdfs:label "acknowledged";
+                    rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:agent a rdf:Property;
+             rdfs:comment "The descriptive name of a sub-manager that generated the event. For example, vendor or standard MIB name from which the trap event was generated from.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "agent";
+             rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:alertGroup a rdf:Property;
+                  rdfs:comment "The descriptive name of the failure type indicated by the event.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "alertGroup";
+                  rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:alertKey a rdf:Property;
+                rdfs:comment "The descriptive key that indicates the managed object instance referenced by the event. For example, the disk partition indicated by a file system full alert or the switch port indicated by a utilization alert.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "alertKey";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:attrValue a rdf:Property;
+                 rdfs:comment "Specifies whether the attribute value of the detail resource (oslcem:detailValue) is valid, or just the name (oslcem:detailName) is valid.";
+                 rdfs:isDefinedBy oslcem:;
+                 rdfs:label "attrValue";
+                 rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:class a rdf:Property;
+             rdfs:comment "The event class used to identify the event collector or vendor from which the event was generated.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "class";
+             rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:customer a rdf:Property;
+                rdfs:comment "The name of the customer affected by this event.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "customer";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:description a rdf:Property;
+                   rdfs:comment "Human-readable IBM Tivoli Netcool/OMNIbus group name description.";
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "description";
+                   rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:detail a rdf:Property;
+              rdfs:comment "The URI reference that will fetch all detail entries that have been made against the event in the event service provider.";
+              rdfs:domain oslcem:Detail;
+              rdfs:isDefinedBy oslcem:;
+              rdfs:label "detail";
+              rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Detail>,
+                           <http://open-services.net/ns/core#ResponseInfo>.
+oslcem:detailName a rdf:Property;
+                  rdfs:comment "The name of the detail resource value stored in the detail value (oslcem:detailValue) property.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "detailName";
+                  rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:detailValue a rdf:Property;
+                   rdfs:comment "The detail resource attribute value.";
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "detailValue";
+                   rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:event a rdf:Property;
+             rdfs:comment "The URI reference to an event resource that is associated to the current resource.";
+             rdfs:domain oslcem:Event;
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "event";
+             rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Event>.
+oslcem:expireTime a rdf:Property;
+                  rdfs:comment "The number of seconds from the time this event was last received until it is cleared automatically.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "expireTime";
+                  rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:flash a rdf:Property;
+             rdfs:comment "The Tivoli Netcool/OMNIbus flashing indicator for the resource used by the user interface.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "flash";
+             rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:grade a rdf:Property;
+             rdfs:comment "Indicates the state of escalation for the event. This property is an integer representation of the grade defined by oslcem:hasGrade. Default type values of the vocabulary include 0: Not Escalated, 1: Escalated.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "grade";
+             rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Grade>,
+                          <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasGrade>.
+oslcem:groupId a rdf:Property;
+               rdfs:comment "Numeric IBM Tivoli Netcool/OMNIbus group identifier.";
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "groupId";
+               rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:hasGrade a rdf:Property;
+                rdfs:comment "The event has this oslcem:Grade resource. This is the object property associated with oslcem:grade.";
+                rdfs:domain oslcem:Grade;
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "hasGrade";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated>,
+                             <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Grade>,
+                             <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#NotEscalated>,
+                             <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#grade>.
+oslcem:hasSeverity a rdf:Property;
+                   rdfs:comment "The event has this oslcem:Severity resource. This is the object property associated with oslcem:severity.";
+                   rdfs:domain oslcem:Severity;
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "hasSeverity";
+                   rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Clear>,
+                                <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Critical>,
+                                <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Indeterminate>,
+                                <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Major>,
+                                <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Minor>,
+                                <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Severity>,
+                                <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Warning>,
+                                <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#severity>.
+oslcem:hasSuppressEscl a rdf:Property;
+                       rdfs:comment "The event has this oslcem:SuppressEscl resource. This is the object property associated with oslcem:suppressEscl.";
+                       rdfs:domain oslcem:SuppressEscl;
+                       rdfs:isDefinedBy oslcem:;
+                       rdfs:label "hasSuppressEscl";
+                       rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated-Level2>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Escalated-Level3>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Hidden>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Maintenance>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Normal>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#SuppressEscl>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Suppressed>,
+                                    <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#suppressEscl>.
+oslcem:hasType a rdf:Property;
+               rdfs:comment "The event has this oslcem:Type resource. This is the object property associated with oslcem:type.";
+               rdfs:domain oslcem:Type;
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "hasType";
+               rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#ISMNewAlarm>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#ISMOldAlarm>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Information>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#LessSevere>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#MoreSevere>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Problem>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Resolution>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Type>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#TypeNotSet>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#VisionaryProblem>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#VisionaryResolution>,
+                            <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#type>.
+oslcem:internalLast a rdf:Property;
+                    rdfs:comment "The time when this resource was last updated by the event service provider.";
+                    rdfs:isDefinedBy oslcem:;
+                    rdfs:label "internalLast";
+                    rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:journal a rdf:Property;
+               rdfs:comment "The URI reference that will fetch all journal resources that have been made against this event resource in the event service provider.";
+               rdfs:domain oslcem:Journal;
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "journal";
+               rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Journal>,
+                            <http://open-services.net/ns/core#ResponseInfo>.
+oslcem:lastOccurrence a rdf:Property;
+                      rdfs:comment "The time when this resource was last updated by the service provider. For an event resource, this represents the time at which this event was last updated by the event collector.";
+                      rdfs:isDefinedBy oslcem:;
+                      rdfs:label "lastOccurrence";
+                      rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:manager a rdf:Property;
+               rdfs:comment "The descriptive name of the event collector that collected and forwarded the event to the event service provider.";
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "manager";
+               rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:name a rdf:Property;
+            rdfs:comment "The name of the detail resource value stored in the detail value (oslcem:detail) property.";
+            rdfs:isDefinedBy oslcem:;
+            rdfs:label "name";
+            rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:node a rdf:Property;
+            rdfs:comment "Identifies the managed entity that the resource is related to. For an event resource this identifies the managed entity from which the alarm originated in the form of a hostname.";
+            rdfs:isDefinedBy oslcem:;
+            rdfs:label "node";
+            rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:nodeAlias a rdf:Property;
+                 rdfs:comment "The alias for the managed entity. For network devices or hosts, this should be the logical (layer-3) address of the entity. For IP devices or hosts, this must be the IP address.";
+                 rdfs:isDefinedBy oslcem:;
+                 rdfs:label "nodeAlias";
+                 rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:ownerGID a rdf:Property;
+                rdfs:comment "The URI reference to the event service provider group that currently owns the resource.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "ownerGID";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#foaf_Group>,
+                             <http://xmlns.com/foaf/0.1/#term_Group>.
+oslcem:ownerUID a rdf:Property;
+                rdfs:comment "The URI reference to the event service provider user that currently owns the resource or was created by.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "ownerUID";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification#foaf_Person>,
+                             <http://xmlns.com/foaf/0.1/#term_Person>.
+oslcem:probeSubSecondId a rdf:Property;
+                        rdfs:comment "For events that an event collector sends within the same one-second interval, and which therefore have the same oslcem:lastOccurence value, is added to this property field to differentiate the oslcem:lastOccurrence times.";
+                        rdfs:isDefinedBy oslcem:;
+                        rdfs:label "probeSubSecondId";
+                        rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:sequence a rdf:Property;
+                rdfs:comment "The sequence number of the detail resource. This is used to order detail resources related to the same event resource.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "sequence";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:serial a rdf:Property;
+              rdfs:comment "The IBM Tivoli Netcool/OMNIbus serial number of the event resource.";
+              rdfs:isDefinedBy oslcem:;
+              rdfs:label "serial";
+              rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:serverName a rdf:Property;
+                  rdfs:comment "The IBM Tivoli Netcool/OMNIbus originating server name of the event resource.";
+                  rdfs:isDefinedBy oslcem:;
+                  rdfs:label "serverName";
+                  rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:serverSerial a rdf:Property;
+                    rdfs:comment "The IBM Tivoli Netcool/OMNIbus originating server serial number of the event resource.";
+                    rdfs:isDefinedBy oslcem:;
+                    rdfs:label "serverSerial";
+                    rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:service a rdf:Property;
+               rdfs:comment "The name of the service affected by this event.";
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "service";
+               rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:severity a rdf:Property;
+                rdfs:comment "Indicates the severity level of a resource. It indicates how the perceived capability of the managed object has been affected. This property is an integer representation of the severity defined by oslcem:hasSeverity. Default severity values for the vocabulary include 0: (Clear) Event is resolved. 1: (Indeterminate) Severity level cannot be determined. 2: (Warning: Potential or impending service affecting fault. 3: (Minor) Non-service affecting fault condition. 4: (Major) Service affecting condition. 5: (Critical) Service affecting condition requiring urgent action.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "severity";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Severity>,
+                             <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasSeverity>.
+oslcem:stateChange a rdf:Property;
+                   rdfs:comment "An automatically maintained time stamp of the last insert or update of the event from any source.";
+                   rdfs:isDefinedBy oslcem:;
+                   rdfs:label "stateChange";
+                   rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:summary a rdf:Property;
+               rdfs:comment "Human readable text summary of of the resource. For an event resource this describes the event condition and the affected managed object instance.";
+               rdfs:isDefinedBy oslcem:;
+               rdfs:label "summary";
+               rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:suppressEscl a rdf:Property;
+                    rdfs:comment "Used to suppress or escalate the event. This property is an integer representation of the supression or escalation setting defined by oslcem:hasSuppressEscl. Default suppression and escalation values of the vocabulary include 0: Normal, 2: Escalated, 3: Escalated-Level 2, 3: Escalated-Level 3, 4: Suppressed, 5: Hidden, 6: Maintenance.";
+                    rdfs:isDefinedBy oslcem:;
+                    rdfs:label "suppressEscl";
+                    rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#SuppressEscl>,
+                                 <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasSuppressEscl>.
+oslcem:tally a rdf:Property;
+             rdfs:comment "Automatically maintained count of the the number of inserts and updates of the event from the event source.";
+             rdfs:isDefinedBy oslcem:;
+             rdfs:label "tally";
+             rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:taskList a rdf:Property;
+                rdfs:comment "Indicates whether a user has added the event to the Task List.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "taskList";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:type a rdf:Property;
+            rdfs:comment "The type of alarm, where type refers to the problem or resolution state of the event. This property is an integer representation of the type defined by oslcem:hasType. Default type values of the vocabulary include 0: Type not set, 1: Problem, 2: Resolution.";
+            rdfs:isDefinedBy oslcem:;
+            rdfs:label "type";
+            rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#Type>,
+                         <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementCoreVocabulary#hasType>.
+oslcem:userId a rdf:Property;
+              rdfs:comment "Numeric IBM Tivoli Netcool/OMNIbus user identifier.";
+              rdfs:isDefinedBy oslcem:;
+              rdfs:label "userId";
+              rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
+oslcem:userName a rdf:Property;
+                rdfs:comment "Human-readable Netcool/OMNIbus user name identifier.";
+                rdfs:isDefinedBy oslcem:;
+                rdfs:label "userName";
+                rdfs:seeAlso <http://jazz.net/wiki/bin/view/Main/OMNIbusEventManagementSpecification>.
