@@ -125,7 +125,7 @@
   </rdfs:Class>
   <rdf:Property rdf:about="&csvw;aboutUrl">
     <rdfs:comment xml:lang="en">A URI template property that MAY be used to indicate what a cell contains information about.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11550" />
+    <rdfs:domain rdf:nodeID="autos11513" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">about URL</rdfs:label>
     <rdfs:range rdf:resource="&csvw;uriTemplate" />
@@ -151,7 +151,7 @@
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;columnReference">
     <rdfs:comment xml:lang="en">A column reference property that holds either a single reference to a column description object within this schema, or an array of references. These form the referencing columns for the foreign key definition.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11555" />
+    <rdfs:domain rdf:nodeID="autos11518" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">column reference</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
@@ -170,10 +170,10 @@
   </prov:Role>
   <rdf:Property rdf:about="&csvw;datatype">
     <rdfs:comment xml:lang="en">An object property that contains either a single string that is the main datatype of the values of the cell or a datatype description object. If the value of this property is a string, it MUST be one of the built-in datatypes defined in section 5.11.1 Built-in Datatypes or an absolute URL; if it is an object then it describes a more specialised datatype.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11558" />
+    <rdfs:domain rdf:nodeID="autos11521" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">datatype</rdfs:label>
-    <rdfs:range rdf:nodeID="autos11563" />
+    <rdfs:range rdf:nodeID="autos11526" />
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;decimalChar">
     <rdfs:comment xml:lang="en">A string whose value is used to represent a decimal point within the number.</rdfs:comment>
@@ -184,7 +184,7 @@
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;default">
     <rdfs:comment xml:lang="en">An atomic property holding a single string that is used to create a default value for the cell in cases where the original string value is an empty string.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11566" />
+    <rdfs:domain rdf:nodeID="autos11529" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">default</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
@@ -204,7 +204,7 @@
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;dialect">
     <rdfs:comment xml:lang="en">An object property that provides a single dialect description. If provided, dialect provides hints to processors about how to parse the referenced files to create tabular data models for the tables in the group.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11571" />
+    <rdfs:domain rdf:nodeID="autos11534" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">dialect</rdfs:label>
     <rdfs:range rdf:resource="&csvw;Dialect" />
@@ -227,7 +227,7 @@
     <rdfs:comment xml:lang="en">For a Table: a list of foreign keys on the table.
 
 For a Schema: an array property of foreign key definitions that define how the values from specified columns within this table link to rows within this table or other tables.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11574" />
+    <rdfs:domain rdf:nodeID="autos11537" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">foreign key</rdfs:label>
     <rdfs:range rdf:resource="&csvw;ForeignKey" />
@@ -244,7 +244,7 @@ For a Schema: an array property of foreign key definitions that define how the v
     <rdfs:domain rdf:resource="&csvw;NumericFormat" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">group character</rdfs:label>
-    <rdfs:range rdf:nodeID="autos11577" />
+    <rdfs:range rdf:nodeID="autos11540" />
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;header">
     <rdfs:comment xml:lang="en">A boolean atomic property that, if `true`, sets the header row count flag to `1`, and if `false` to `0`, unless headerRowCount is provided, in which case the value provided for the header property is ignored.</rdfs:comment>
@@ -267,7 +267,7 @@ For a Schema: an array property of foreign key definitions that define how the v
   </csvw:Direction>
   <rdf:Property rdf:about="&csvw;lang">
     <rdfs:comment xml:lang="en">An atomic property giving a single string language code as defined by [[BCP47]].</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11580" />
+    <rdfs:domain rdf:nodeID="autos11543" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">language</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
@@ -342,20 +342,20 @@ For a Schema: an array property of foreign key definitions that define how the v
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;note">
     <rdfs:comment xml:lang="en">An array property that provides an array of objects representing arbitrary annotations on the annotated tabular data model.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11585" />
+    <rdfs:domain rdf:nodeID="autos11548" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">note</rdfs:label>
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;null">
     <rdfs:comment xml:lang="en">An atomic property giving the string or strings used for null values within the data. If the string value of the cell is equal to any one of these values, the cell value is `null`.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11588" />
+    <rdfs:domain rdf:nodeID="autos11551" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">null</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;ordered">
     <rdfs:comment xml:lang="en">A boolean atomic property taking a single value which indicates whether a list that is the value of the cell is ordered (if `true`) or unordered (if `false`).</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11593" />
+    <rdfs:domain rdf:nodeID="autos11556" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">ordered</rdfs:label>
     <rdfs:range rdf:resource="&xsd;boolean" />
@@ -371,14 +371,14 @@ For a Schema: an array property of foreign key definitions that define how the v
     <rdfs:comment xml:lang="en">For Schema: A column reference property that holds either a single reference to a column description object or an array of references.
 
 For Row: a possibly empty list of cells whose values together provide a unique identifier for this row. This is similar to the name of a column.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11598" />
+    <rdfs:domain rdf:nodeID="autos11561" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">primary key</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;propertyUrl">
     <rdfs:comment xml:lang="en">An URI template property that MAY be used to create a URI for a property if the table is mapped to another format. </rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11601" />
+    <rdfs:domain rdf:nodeID="autos11564" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">property URL</rdfs:label>
     <rdfs:range rdf:resource="&csvw;uriTemplate" />
@@ -405,7 +405,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;required">
     <rdfs:comment xml:lang="en">A boolean atomic property taking a single value which indicates whether the cell must have a non-null value. The default is `false`. </rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11606" />
+    <rdfs:domain rdf:nodeID="autos11569" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">required</rdfs:label>
     <rdfs:range rdf:resource="&xsd;boolean" />
@@ -459,7 +459,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;separator">
     <rdfs:comment xml:lang="en">An atomic property that MUST have a single string value that is the character used to separate items in the string value of the cell.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11611" />
+    <rdfs:domain rdf:nodeID="autos11574" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">separator</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
@@ -501,7 +501,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;suppressOutput">
     <rdfs:comment xml:lang="en">A boolean atomic property. If `true`, suppresses any output that would be generated when converting a table or cells within a column.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11616" />
+    <rdfs:domain rdf:nodeID="autos11579" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">suppress output</rdfs:label>
     <rdfs:range rdf:resource="&xsd;boolean" />
@@ -516,14 +516,14 @@ For Row: a possibly empty list of cells whose values together provide a unique i
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;tableDirection">
     <rdfs:comment xml:lang="en">One of `rtl`, `ltr` or `auto`. Indicates whether the tables in the group should be displayed with the first column on the right, on the left, or based on the first character in the table that has a specific direction.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11619" />
+    <rdfs:domain rdf:nodeID="autos11582" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">table direction</rdfs:label>
     <rdfs:range rdf:resource="&csvw;Direction" />
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;tableSchema">
     <rdfs:comment xml:lang="en">An object property that provides a single schema description as described in section 5.5 Schemas, used as the default for all the tables in the group</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11622" />
+    <rdfs:domain rdf:nodeID="autos11585" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">table schema</rdfs:label>
     <rdfs:range rdf:resource="&csvw;Schema" />
@@ -542,7 +542,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;textDirection">
     <rdfs:comment xml:lang="en">An atomic property that must have a single value that is one of `rtl` or `ltr` (the default).</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11630" />
+    <rdfs:domain rdf:nodeID="autos11593" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">text direction</rdfs:label>
     <rdfs:range rdf:resource="&csvw;Direction" />
@@ -551,13 +551,13 @@ For Row: a possibly empty list of cells whose values together provide a unique i
     <rdfs:comment xml:lang="en">For a Transformation A natural language property that describes the format that will be generated from the transformation.
 
 For a Column: A natural language property that provides possible alternative names for the column.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11635" />
+    <rdfs:domain rdf:nodeID="autos11598" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">title</rdfs:label>
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;transformations">
     <rdfs:comment xml:lang="en">An array property of transformation definitions that provide mechanisms to transform the tabular data into other formats.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11625" />
+    <rdfs:domain rdf:nodeID="autos11588" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">transformations</rdfs:label>
     <rdfs:range rdf:resource="&csvw;Transformation" />
@@ -579,14 +579,14 @@ For a Column: A natural language property that provides possible alternative nam
     <rdfs:comment xml:lang="en">For a Table: This link property gives the single URL of the CSV file that the table is held in, relative to the location of the metadata document.
 
 For a Transformation: A link property giving the single URL of the file that the script or template is held in, relative to the location of the metadata document.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11639" />
+    <rdfs:domain rdf:nodeID="autos11602" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">url</rdfs:label>
     <rdfs:range rdf:resource="&xsd;anyURI" />
   </rdf:Property>
   <rdf:Property rdf:about="&csvw;valueUrl">
     <rdfs:comment xml:lang="en">An URI template property that is used to map the values of cells into URLs.</rdfs:comment>
-    <rdfs:domain rdf:nodeID="autos11642" />
+    <rdfs:domain rdf:nodeID="autos11605" />
     <rdfs:isDefinedBy rdf:resource="&csvw;" />
     <rdfs:label xml:lang="en">valueUrl</rdfs:label>
     <rdfs:range rdf:resource="&csvw;uriTemplate" />
@@ -598,7 +598,7 @@ For a Transformation: A link property giving the single URL of the file that the
     <rdfs:label xml:lang="en">virtual</rdfs:label>
     <rdfs:range rdf:resource="&xsd;boolean" />
   </rdf:Property>
-  <rdf:Description rdf:nodeID="autos11550">
+  <rdf:Description rdf:nodeID="autos11513">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;TableGroup" />
       <rdf:rest rdf:parseType="Resource">
@@ -613,7 +613,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11555">
+  <rdf:Description rdf:nodeID="autos11518">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;ForeignKey" />
       <rdf:rest rdf:parseType="Resource">
@@ -622,7 +622,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11558">
+  <rdf:Description rdf:nodeID="autos11521">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;TableGroup" />
       <rdf:rest rdf:parseType="Resource">
@@ -637,7 +637,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11563">
+  <rdf:Description rdf:nodeID="autos11526">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;Datatype" />
       <rdf:rest rdf:parseType="Resource">
@@ -646,7 +646,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11566">
+  <rdf:Description rdf:nodeID="autos11529">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;TableGroup" />
       <rdf:rest rdf:parseType="Resource">
@@ -661,7 +661,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11571">
+  <rdf:Description rdf:nodeID="autos11534">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;TableGroup" />
       <rdf:rest rdf:parseType="Resource">
@@ -670,7 +670,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11574">
+  <rdf:Description rdf:nodeID="autos11537">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;Table" />
       <rdf:rest rdf:parseType="Resource">
@@ -679,7 +679,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11577">
+  <rdf:Description rdf:nodeID="autos11540">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;NumericFormat" />
       <rdf:rest rdf:parseType="Resource">
@@ -688,7 +688,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11580">
+  <rdf:Description rdf:nodeID="autos11543">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;TableGroup" />
       <rdf:rest rdf:parseType="Resource">
@@ -700,6 +700,117 @@ For a Transformation: A link property giving the single URL of the file that the
             <rdf:rest rdf:resource="&rdf;nil" />
           </rdf:rest>
         </rdf:rest>
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11548">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;TableGroup" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Table" />
+        <rdf:rest rdf:resource="&rdf;nil" />
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11551">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;TableGroup" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Table" />
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:resource="&csvw;Schema" />
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:resource="&csvw;Column" />
+            <rdf:rest rdf:resource="&rdf;nil" />
+          </rdf:rest>
+        </rdf:rest>
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11556">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;TableGroup" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Table" />
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:resource="&csvw;Schema" />
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:resource="&csvw;Column" />
+            <rdf:rest rdf:resource="&rdf;nil" />
+          </rdf:rest>
+        </rdf:rest>
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11561">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;Schema" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Row" />
+        <rdf:rest rdf:resource="&rdf;nil" />
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11564">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;TableGroup" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Table" />
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:resource="&csvw;Schema" />
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:resource="&csvw;Column" />
+            <rdf:rest rdf:resource="&rdf;nil" />
+          </rdf:rest>
+        </rdf:rest>
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11569">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;TableGroup" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Table" />
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:resource="&csvw;Schema" />
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:resource="&csvw;Column" />
+            <rdf:rest rdf:resource="&rdf;nil" />
+          </rdf:rest>
+        </rdf:rest>
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11574">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;TableGroup" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Table" />
+        <rdf:rest rdf:parseType="Resource">
+          <rdf:first rdf:resource="&csvw;Schema" />
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:first rdf:resource="&csvw;Column" />
+            <rdf:rest rdf:resource="&rdf;nil" />
+          </rdf:rest>
+        </rdf:rest>
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11579">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;Table" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Column" />
+        <rdf:rest rdf:resource="&rdf;nil" />
+      </rdf:rest>
+    </owl:unionOf>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="autos11582">
+    <owl:unionOf rdf:parseType="Resource">
+      <rdf:first rdf:resource="&csvw;TableGroup" />
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:resource="&csvw;Table" />
+        <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
@@ -744,117 +855,6 @@ For a Transformation: A link property giving the single URL of the file that the
   </rdf:Description>
   <rdf:Description rdf:nodeID="autos11598">
     <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;Schema" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Row" />
-        <rdf:rest rdf:resource="&rdf;nil" />
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11601">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;TableGroup" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Table" />
-        <rdf:rest rdf:parseType="Resource">
-          <rdf:first rdf:resource="&csvw;Schema" />
-          <rdf:rest rdf:parseType="Resource">
-            <rdf:first rdf:resource="&csvw;Column" />
-            <rdf:rest rdf:resource="&rdf;nil" />
-          </rdf:rest>
-        </rdf:rest>
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11606">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;TableGroup" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Table" />
-        <rdf:rest rdf:parseType="Resource">
-          <rdf:first rdf:resource="&csvw;Schema" />
-          <rdf:rest rdf:parseType="Resource">
-            <rdf:first rdf:resource="&csvw;Column" />
-            <rdf:rest rdf:resource="&rdf;nil" />
-          </rdf:rest>
-        </rdf:rest>
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11611">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;TableGroup" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Table" />
-        <rdf:rest rdf:parseType="Resource">
-          <rdf:first rdf:resource="&csvw;Schema" />
-          <rdf:rest rdf:parseType="Resource">
-            <rdf:first rdf:resource="&csvw;Column" />
-            <rdf:rest rdf:resource="&rdf;nil" />
-          </rdf:rest>
-        </rdf:rest>
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11616">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;Table" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Column" />
-        <rdf:rest rdf:resource="&rdf;nil" />
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11619">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;TableGroup" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Table" />
-        <rdf:rest rdf:resource="&rdf;nil" />
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11622">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;TableGroup" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Table" />
-        <rdf:rest rdf:resource="&rdf;nil" />
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11625">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;TableGroup" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Table" />
-        <rdf:rest rdf:parseType="Resource">
-          <rdf:first rdf:resource="&csvw;Schema" />
-          <rdf:rest rdf:parseType="Resource">
-            <rdf:first rdf:resource="&csvw;Column" />
-            <rdf:rest rdf:resource="&rdf;nil" />
-          </rdf:rest>
-        </rdf:rest>
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11630">
-    <owl:unionOf rdf:parseType="Resource">
-      <rdf:first rdf:resource="&csvw;TableGroup" />
-      <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:resource="&csvw;Table" />
-        <rdf:rest rdf:parseType="Resource">
-          <rdf:first rdf:resource="&csvw;Schema" />
-          <rdf:rest rdf:parseType="Resource">
-            <rdf:first rdf:resource="&csvw;Column" />
-            <rdf:rest rdf:resource="&rdf;nil" />
-          </rdf:rest>
-        </rdf:rest>
-      </rdf:rest>
-    </owl:unionOf>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11635">
-    <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;Transformation" />
       <rdf:rest rdf:parseType="Resource">
         <rdf:first rdf:resource="&csvw;Column" />
@@ -865,7 +865,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11639">
+  <rdf:Description rdf:nodeID="autos11602">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;Table" />
       <rdf:rest rdf:parseType="Resource">
@@ -874,7 +874,7 @@ For a Transformation: A link property giving the single URL of the file that the
       </rdf:rest>
     </owl:unionOf>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11642">
+  <rdf:Description rdf:nodeID="autos11605">
     <owl:unionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&csvw;TableGroup" />
       <rdf:rest rdf:parseType="Resource">

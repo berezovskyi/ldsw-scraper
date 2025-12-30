@@ -11,19 +11,19 @@
 @prefix vaem: <http://www.linkedmodel.org/schema/vaem#>.
 @prefix voag: <http://voag.linkedmodel.org/schema/voag#>.
 
-_:autos11751 rdf:first [sh:datatype xsd:nonNegativeInteger];
-             rdf:rest _:autos11753.
-_:autos11753 rdf:first [sh:datatype xsd:positiveInteger];
-             rdf:rest _:autos11755.
-_:autos11755 rdf:first [sh:datatype xsd:integer];
-             rdf:rest _:autos11757.
-_:autos11757 rdf:first [sh:datatype xsd:int];
-             rdf:rest _:autos11759.
-_:autos11759 rdf:first [sh:datatype xsd:float];
-             rdf:rest _:autos11761.
-_:autos11761 rdf:first [sh:datatype xsd:double];
-             rdf:rest _:autos11763.
-_:autos11763 rdf:first [sh:datatype xsd:decimal];
+_:autos11621 rdf:first [sh:datatype xsd:nonNegativeInteger];
+             rdf:rest _:autos11623.
+_:autos11623 rdf:first [sh:datatype xsd:positiveInteger];
+             rdf:rest _:autos11625.
+_:autos11625 rdf:first [sh:datatype xsd:integer];
+             rdf:rest _:autos11627.
+_:autos11627 rdf:first [sh:datatype xsd:int];
+             rdf:rest _:autos11629.
+_:autos11629 rdf:first [sh:datatype xsd:float];
+             rdf:rest _:autos11631.
+_:autos11631 rdf:first [sh:datatype xsd:double];
+             rdf:rest _:autos11633.
+_:autos11633 rdf:first [sh:datatype xsd:decimal];
              rdf:rest rdf:nil.
 dcterms:abstract a rdf:Property;
                  rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
@@ -564,7 +564,7 @@ qudt:NumericTypeUnion dcterms:description """
    of a property must be a string, an integer, a float, a double or a decimal.
   """;
                       rdf:first [sh:datatype xsd:string];
-                      rdf:rest _:autos11751;
+                      rdf:rest _:autos11621;
                       a rdf:List;
                       rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/qudt>;
                       rdfs:label "Numeric Type Union".

@@ -30,18 +30,18 @@
     ],
     "http://purl.org/dc/terms/creator": [
       {
-        "@id": "_:autos12439"
+        "@id": "_:autos12878"
       },
       {
-        "@id": "_:autos12440"
+        "@id": "_:autos12879"
       },
       {
-        "@id": "_:autos12442"
+        "@id": "_:autos12881"
       }
     ],
     "http://xmlns.com/foaf/0.1/maker": [
       {
-        "@id": "_:autos12443"
+        "@id": "_:autos12882"
       }
     ],
     "http://purl.org/dc/terms/description": [
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "@id": "_:autos12439",
+    "@id": "_:autos12878",
     "http://schema.org/affiliation": [
       {
         "@id": "http://www.w3.org/data#W3C"
@@ -113,7 +113,7 @@
     ]
   },
   {
-    "@id": "_:autos12441",
+    "@id": "_:autos12880",
     "http://xmlns.com/foaf/0.1/homepage": [
       {
         "@id": "http://ies.jrc.ec.europa.eu/DE"
@@ -126,10 +126,10 @@
     ]
   },
   {
-    "@id": "_:autos12440",
+    "@id": "_:autos12879",
     "http://schema.org/affiliation": [
       {
-        "@id": "_:autos12441"
+        "@id": "_:autos12880"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -149,7 +149,7 @@
     ]
   },
   {
-    "@id": "_:autos12442",
+    "@id": "_:autos12881",
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
         "@id": "http://makxdekkers.com/makxdekkers.rdf#me"
@@ -167,7 +167,7 @@
     ]
   },
   {
-    "@id": "_:autos12443",
+    "@id": "_:autos12882",
     "http://xmlns.com/foaf/0.1/name": [
       {
         "@value": "Government Linked Data WG, based on output from the ADMS Working Group"

@@ -14,53 +14,53 @@
 @prefix : <http://semweb.mmlab.be/ns/rml#>.
 
 {
-    _:autos9696 foaf:name "Anastasia Dimou".
-    _:autos9697 foaf:name "Miel Vander Sande".
-    _:autos9698 a owl:Class;
-                owl:intersectionOf _:autos9699.
-    _:autos9699 rdf:first rr:ObjectMap;
-                rdf:rest _:autos9700.
-    _:autos9700 rdf:first _:autos9701;
+    _:autos8684 foaf:name "Anastasia Dimou".
+    _:autos8685 foaf:name "Miel Vander Sande".
+    _:autos8696 a owl:Class;
+                owl:intersectionOf _:autos8697.
+    _:autos8697 rdf:first rr:ObjectMap;
+                rdf:rest _:autos8698.
+    _:autos8698 rdf:first _:autos8699;
                 rdf:rest rdf:nil.
-    _:autos9701 a owl:Restriction;
+    _:autos8699 a owl:Restriction;
                 owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger;
                 owl:onDataRange xsd:string;
                 owl:onProperty rml:reference.
-    _:autos9702 a owl:Class;
-                owl:intersectionOf _:autos9703.
-    _:autos9703 rdf:first rr:PredicateMap;
-                rdf:rest _:autos9704.
-    _:autos9704 rdf:first _:autos9705;
+    _:autos8702 a owl:Class;
+                owl:intersectionOf _:autos8703.
+    _:autos8703 rdf:first rr:PredicateMap;
+                rdf:rest _:autos8704.
+    _:autos8704 rdf:first _:autos8705;
                 rdf:rest rdf:nil.
-    _:autos9705 a owl:Restriction;
+    _:autos8705 a owl:Restriction;
                 owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger;
                 owl:onDataRange xsd:string;
                 owl:onProperty rml:reference.
-    _:autos9706 a owl:Class;
-                owl:intersectionOf _:autos9707.
-    _:autos9707 rdf:first rr:SubjectMap;
-                rdf:rest _:autos9708.
-    _:autos9708 rdf:first _:autos9709;
+    _:autos8706 a owl:Class;
+                owl:intersectionOf _:autos8707.
+    _:autos8707 rdf:first rr:SubjectMap;
+                rdf:rest _:autos8708.
+    _:autos8708 rdf:first _:autos8709;
                 rdf:rest rdf:nil.
-    _:autos9709 a owl:Restriction;
+    _:autos8709 a owl:Restriction;
                 owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger;
                 owl:onDataRange xsd:string;
                 owl:onProperty rml:reference.
-    _:autos9710 a owl:Restriction;
+    _:autos8712 a owl:Restriction;
                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
                 owl:onClass rml:LogicalSource;
                 owl:onProperty rml:logicalSource.
-    _:autos9711 a owl:Restriction;
+    _:autos8714 a owl:Restriction;
                 owl:onClass rr:SubjectMap;
                 owl:onProperty rr:subjectMap;
                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger.
-    _:autos9712 a owl:Restriction;
+    _:autos8718 a owl:Restriction;
                 owl:onProperty rml:referenceFormulation;
                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger.
-    _:autos9713 a owl:Restriction;
+    _:autos8720 a owl:Restriction;
                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger;
                 owl:onProperty rml:iterator.
-    _:autos9714 a owl:Restriction;
+    _:autos8721 a owl:Restriction;
                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
                 owl:onProperty rml:source.
     ql:CSS3 ql:specification <http://www.w3.org/TR/css3-selectors/>;
@@ -84,8 +84,8 @@
              rdfs:comment "Denotes the XPath reference formulation, used for referring to extracts of XML sources."@en;
              rdfs:label "XPath".
     rml: cc:license <http://creativecommons.org/licenses/by/3.0/>;
-         dcterms:creator _:autos9696,
-                         _:autos9697;
+         dcterms:creator _:autos8684,
+                         _:autos8685;
          dcterms:description "Generic Mapping Language for RDF (RDB/CSV/TSV/XML/JSON/... to RDF) - Vocabulary description"@en;
          dcterms:issued "2013-07-01"^^xsd:date;
          dcterms:modified "2014-09-10"^^xsd:date;
@@ -103,16 +103,16 @@
     rml:LogicalSource a owl:Class;
                       rdfs:comment "Represents a logical source."@en;
                       rdfs:label "Logical Source";
-                      rdfs:subClassOf _:autos9712,
-                                      _:autos9713,
-                                      _:autos9714,
+                      rdfs:subClassOf _:autos8718,
+                                      _:autos8720,
+                                      _:autos8721,
                                       owl:Thing.
     rml:ReferenceFormulation a owl:Class;
                              rdfs:comment "Represents a Reference Formulation."@en;
                              rdfs:label "Reference Formulation".
     rml:TriplesMap rdfs:comment "Represents a triples map."@en;
-                   rdfs:subClassOf _:autos9710,
-                                   _:autos9711,
+                   rdfs:subClassOf _:autos8712,
+                                   _:autos8714,
                                    owl:Thing.
     rml:iterator a owl:DatatypeProperty;
                  rdfs:comment "an expression qualified according to the reference formulation specified for pointing to an extract of the source data. "@en;
@@ -154,11 +154,11 @@
     rr:LogicalTable rdfs:subClassOf rml:LogicalSource.
     rr:TriplesMap rdfs:subClassOf rml:TriplesMap.
     rr:column rdfs:subPropertyOf rml:reference.
-    rr:object rdfs:domain _:autos9698.
-    rr:predicate rdfs:domain _:autos9702.
+    rr:object rdfs:domain _:autos8696.
+    rr:predicate rdfs:domain _:autos8702.
     rr:sqlQuery rdfs:subPropertyOf rml:query.
     rr:sqlVersion rdfs:subPropertyOf rml:version.
-    rr:subject rdfs:domain _:autos9706.
+    rr:subject rdfs:domain _:autos8706.
     rr:tableName rdfs:subPropertyOf rml:source.
 }
 

@@ -549,9 +549,9 @@
   <sh:PropertyShape rdf:about="&qudt;InformativeReferencePropertyShape">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
     <sh:or rdf:parseType="Resource">
-      <rdf:first rdf:nodeID="autos11741" />
+      <rdf:first rdf:nodeID="autos11611" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos11743" />
+        <rdf:first rdf:nodeID="autos11613" />
         <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </sh:or>
@@ -630,16 +630,16 @@
     <rdf:type rdf:resource="&sh;NodeShape" />
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
     <rdfs:subClassOf rdf:resource="&rdf;List" />
-    <sh:property rdf:nodeID="autos11744" />
-    <sh:property rdf:nodeID="autos11745" />
+    <sh:property rdf:nodeID="autos11614" />
+    <sh:property rdf:nodeID="autos11615" />
   </rdfs:Class>
   <rdf:List rdf:about="&qudt;NumericTypeUnion">
     <dcterms:description rdf:datatype="&xsd;string">
   An rdf:List that can be used in property constraints as value for sh:or to indicate that all values
    of a property must be a string, an integer, a float, a double or a decimal.
   </dcterms:description>
-    <rdf:first rdf:nodeID="autos11750" />
-    <rdf:rest rdf:nodeID="autos11751" />
+    <rdf:first rdf:nodeID="autos11620" />
+    <rdf:rest rdf:nodeID="autos11621" />
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Numeric Type Union</rdfs:label>
   </rdf:List>
@@ -873,9 +873,9 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
     <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
     <sh:or rdf:parseType="Resource">
-      <rdf:first rdf:nodeID="autos11766" />
+      <rdf:first rdf:nodeID="autos11636" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos11768" />
+        <rdf:first rdf:nodeID="autos11638" />
         <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </sh:or>
@@ -915,11 +915,11 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qudt" />
     <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
     <sh:node rdf:parseType="Resource">
-      <rdf:first rdf:nodeID="autos11770" />
+      <rdf:first rdf:nodeID="autos11640" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos11772" />
+        <rdf:first rdf:nodeID="autos11642" />
         <rdf:rest rdf:parseType="Resource">
-          <rdf:first rdf:nodeID="autos11775" />
+          <rdf:first rdf:nodeID="autos11645" />
           <rdf:rest rdf:resource="&rdf;nil" />
         </rdf:rest>
       </rdf:rest>
@@ -1385,9 +1385,9 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/shacl/qydt" />
     <sh:maxCount rdf:datatype="&xsd;integer">1</sh:maxCount>
     <sh:or rdf:parseType="Resource">
-      <rdf:first rdf:nodeID="autos11778" />
+      <rdf:first rdf:nodeID="autos11648" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos11780" />
+        <rdf:first rdf:nodeID="autos11650" />
         <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </sh:or>
@@ -2755,111 +2755,111 @@ THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDE
   <rdf:Property rdf:about="&prov;wasDerivedFrom">
     <rdfs:label rdf:datatype="&xsd;string">was derived from</rdfs:label>
   </rdf:Property>
-  <rdf:Description rdf:nodeID="autos11741">
+  <rdf:Description rdf:nodeID="autos11611">
     <sh:datatype rdf:resource="&xsd;anyURI" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11743">
+  <rdf:Description rdf:nodeID="autos11613">
     <sh:class rdf:resource="&qudt;Citation" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11744">
+  <rdf:Description rdf:nodeID="autos11614">
     <sh:or rdf:resource="&qudt;NumericTypeUnion" />
     <sh:path rdf:resource="&rdf;first" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11745">
+  <rdf:Description rdf:nodeID="autos11615">
     <sh:or rdf:parseType="Resource">
-      <rdf:first rdf:nodeID="autos11747" />
+      <rdf:first rdf:nodeID="autos11617" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos11749" />
+        <rdf:first rdf:nodeID="autos11619" />
         <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </sh:or>
     <sh:path rdf:resource="&rdf;rest" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11747">
+  <rdf:Description rdf:nodeID="autos11617">
     <sh:node rdf:resource="&rdf;nil" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11749">
+  <rdf:Description rdf:nodeID="autos11619">
     <sh:node rdf:resource="&qudt;NumericListShape" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11750">
+  <rdf:Description rdf:nodeID="autos11620">
     <sh:datatype rdf:resource="&xsd;string" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11751">
-    <rdf:first rdf:nodeID="autos11752" />
-    <rdf:rest rdf:nodeID="autos11753" />
+  <rdf:Description rdf:nodeID="autos11621">
+    <rdf:first rdf:nodeID="autos11622" />
+    <rdf:rest rdf:nodeID="autos11623" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11752">
+  <rdf:Description rdf:nodeID="autos11622">
     <sh:datatype rdf:resource="&xsd;nonNegativeInteger" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11753">
-    <rdf:first rdf:nodeID="autos11754" />
-    <rdf:rest rdf:nodeID="autos11755" />
+  <rdf:Description rdf:nodeID="autos11623">
+    <rdf:first rdf:nodeID="autos11624" />
+    <rdf:rest rdf:nodeID="autos11625" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11754">
+  <rdf:Description rdf:nodeID="autos11624">
     <sh:datatype rdf:resource="&xsd;positiveInteger" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11755">
-    <rdf:first rdf:nodeID="autos11756" />
-    <rdf:rest rdf:nodeID="autos11757" />
+  <rdf:Description rdf:nodeID="autos11625">
+    <rdf:first rdf:nodeID="autos11626" />
+    <rdf:rest rdf:nodeID="autos11627" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11756">
+  <rdf:Description rdf:nodeID="autos11626">
     <sh:datatype rdf:resource="&xsd;integer" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11757">
-    <rdf:first rdf:nodeID="autos11758" />
-    <rdf:rest rdf:nodeID="autos11759" />
+  <rdf:Description rdf:nodeID="autos11627">
+    <rdf:first rdf:nodeID="autos11628" />
+    <rdf:rest rdf:nodeID="autos11629" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11758">
+  <rdf:Description rdf:nodeID="autos11628">
     <sh:datatype rdf:resource="&xsd;int" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11759">
-    <rdf:first rdf:nodeID="autos11760" />
-    <rdf:rest rdf:nodeID="autos11761" />
+  <rdf:Description rdf:nodeID="autos11629">
+    <rdf:first rdf:nodeID="autos11630" />
+    <rdf:rest rdf:nodeID="autos11631" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11760">
+  <rdf:Description rdf:nodeID="autos11630">
     <sh:datatype rdf:resource="&xsd;float" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11761">
-    <rdf:first rdf:nodeID="autos11762" />
-    <rdf:rest rdf:nodeID="autos11763" />
+  <rdf:Description rdf:nodeID="autos11631">
+    <rdf:first rdf:nodeID="autos11632" />
+    <rdf:rest rdf:nodeID="autos11633" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11762">
+  <rdf:Description rdf:nodeID="autos11632">
     <sh:datatype rdf:resource="&xsd;double" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11763">
-    <rdf:first rdf:nodeID="autos11764" />
+  <rdf:Description rdf:nodeID="autos11633">
+    <rdf:first rdf:nodeID="autos11634" />
     <rdf:rest rdf:resource="&rdf;nil" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11764">
+  <rdf:Description rdf:nodeID="autos11634">
     <sh:datatype rdf:resource="&xsd;decimal" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11766">
+  <rdf:Description rdf:nodeID="autos11636">
     <sh:class rdf:resource="&qudt;Datatype" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11768">
+  <rdf:Description rdf:nodeID="autos11638">
     <sh:class rdf:resource="&qudt;EnumeratedValue" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11770">
+  <rdf:Description rdf:nodeID="autos11640">
     <sh:or rdf:resource="&qudt;NumericTypeUnion" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11772">
-    <sh:property rdf:nodeID="autos11773" />
+  <rdf:Description rdf:nodeID="autos11642">
+    <sh:property rdf:nodeID="autos11643" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11773">
+  <rdf:Description rdf:nodeID="autos11643">
     <sh:class rdf:resource="&qudt;DataItem" />
     <sh:path rdf:resource="&qudt;value" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11775">
-    <sh:property rdf:nodeID="autos11776" />
+  <rdf:Description rdf:nodeID="autos11645">
+    <sh:property rdf:nodeID="autos11646" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11776">
+  <rdf:Description rdf:nodeID="autos11646">
     <sh:class rdf:resource="&qudt;EnumeratedValue" />
     <sh:path rdf:resource="&qudt;value" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11778">
+  <rdf:Description rdf:nodeID="autos11648">
     <sh:class rdf:resource="&qudt;QuantityValue" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos11780">
+  <rdf:Description rdf:nodeID="autos11650">
     <sh:or rdf:resource="&qudt;NumericTypeUnion" />
   </rdf:Description>
 </rdf:RDF>

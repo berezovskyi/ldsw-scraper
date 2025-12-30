@@ -350,10 +350,10 @@
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2000/01/rdf-schema#"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos21749 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos21749 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/2000/01/rdf-schema#comment> .
-_:autos21749 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2002/07/owl#deprecated> .
-_:autos21749 <http://www.w3.org/2002/07/owl#annotatedTarget> "true"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos21749 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote> "The IOF Annotation Property Guide V2.2 states, \"comment MUST NOT be used\"."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos21740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos21740 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:autos21740 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2002/07/owl#deprecated> .
+_:autos21740 <http://www.w3.org/2002/07/owl#annotatedTarget> "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos21740 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote> "The IOF Annotation Property Guide V2.2 states, \"comment MUST NOT be used\"."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2000/01/rdf-schema#"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "label"^^<http://www.w3.org/2001/XMLSchema#string> .

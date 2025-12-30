@@ -16,25 +16,25 @@
 @prefix adms: <http://www.w3.org/ns/adms#>.
 
 {
-    _:autos12439 schema:affiliation <http://www.w3.org/data#W3C>;
+    _:autos12878 schema:affiliation <http://www.w3.org/data#W3C>;
                  rdfs:seeAlso <http://philarcher.org/foaf.rdf#me>;
                  foaf:homepage <http://www.w3.org/People/all#phila>;
                  foaf:name "Phil Archer".
-    _:autos12440 schema:affiliation _:autos12441;
+    _:autos12879 schema:affiliation _:autos12880;
                  rdfs:seeAlso <http://andrea-perego.name/foaf/#me>;
                  foaf:homepage <http://andrea-perego.name/>;
                  foaf:name "Andrea Perego".
-    _:autos12441 foaf:homepage <http://ies.jrc.ec.europa.eu/DE>;
+    _:autos12880 foaf:homepage <http://ies.jrc.ec.europa.eu/DE>;
                  foaf:name "European Commission, Joint Research Centre ".
-    _:autos12442 rdfs:seeAlso <http://makxdekkers.com/makxdekkers.rdf#me>;
+    _:autos12881 rdfs:seeAlso <http://makxdekkers.com/makxdekkers.rdf#me>;
                  foaf:homepage <http://makxdekkers.com/>;
                  foaf:name "Makx Dekkers".
-    _:autos12443 foaf:homepage <http://www.w3.org/2011/gld/>;
+    _:autos12882 foaf:homepage <http://www.w3.org/2011/gld/>;
                  foaf:name "Government Linked Data WG, based on output from the ADMS Working Group".
     <http://www.w3.org/ns/adms> dcterms:abstract "ADMS is a profile of DCAT, used to describe semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) that are used for eGovernment system development."@en;
-                                dcterms:creator _:autos12439,
-                                                _:autos12440,
-                                                _:autos12442;
+                                dcterms:creator _:autos12878,
+                                                _:autos12879,
+                                                _:autos12881;
                                 dcterms:description """This is the RDF encoding of the Asset Description Metadata Schema, originally 
     developed under the European Union's ISA Programme and further developed by the W3C Government Linked Data Working Group.
     It re-uses terms from several other vocabularies, notably Dublin Core, with elements of SKOS, FOAF and more. """;
@@ -51,7 +51,7 @@
                                 rdfs:comment "This file specifies the set of RDF classes and properties used in ADMS"@en;
                                 rdfs:label "Asset Description Metadata Schema (ADMS)"@en;
                                 wdrs:describedby <http://www.w3.org/TR/vocab-adms>;
-                                foaf:maker _:autos12443.
+                                foaf:maker _:autos12882.
     adms:Asset dcterms:identifier "adms:Asset";
                a rdfs:Class;
                rdfs:comment "An Asset is an abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work). Assets can be versioned. Every time the intellectual content of an asset changes, the result is considered to be a new asset that can be linked to previous and next versions of the Asset. The physical embodiment of an Asset is called an Asset Distribution. A particular Asset may have zero or more Asset Distributions.."@en;
