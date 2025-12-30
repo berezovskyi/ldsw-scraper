@@ -1,9 +1,0 @@
-<http://jazz.net/ns/dm/document#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://jazz.net/ns/dm/document#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "A class representing a rich text document."^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://jazz.net/ns/dm/document#Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://jazz.net/ns/dm/document#> .
-<http://jazz.net/ns/dm/document#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://jazz.net/ns/dm/document#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://jazz.net/ns/dm/document#> <http://purl.org/dc/terms/dateCopyrighted> "2012"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://jazz.net/ns/dm/document#> <http://purl.org/dc/terms/description> "This is the DM rich text document vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://jazz.net/ns/dm/document#> <http://purl.org/dc/terms/license> <https://jazz.net/ns/license.html> .
-<http://jazz.net/ns/dm/document#> <http://purl.org/dc/terms/title> "The DM Rich Text Document Vocabulary"^^<http://www.w3.org/2001/XMLSchema#string> .

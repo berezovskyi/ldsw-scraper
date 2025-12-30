@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Text;
 using VDS.RDF;
+using Microsoft.Extensions.Logging;
 
 namespace LdswScraper;
 
@@ -13,13 +15,15 @@ public class HostScraper
     private readonly ScraperConfig _config;
     private readonly string _hostname;
     private readonly List<ScrapeTask> _tasks;
+    private readonly ILogger<HostScraper> _logger;
 
-    public HostScraper(HttpClient httpClient, ScraperConfig config, string hostname, List<ScrapeTask> tasks)
+    public HostScraper(HttpClient httpClient, ScraperConfig config, string hostname, List<ScrapeTask> tasks, ILogger<HostScraper> logger)
     {
         _httpClient = httpClient;
         _config = config;
         _hostname = hostname;
         _tasks = tasks;
+        _logger = logger;
     }
 
     public async Task RunAsync()
@@ -33,7 +37,8 @@ public class HostScraper
 
     private async Task ProcessTaskAsync(ScrapeTask task)
     {
-        Console.WriteLine($"Processing {task.Uri} ({task.Type})");
+        // _logger.LogInformation("Processing {Uri} ({Type})", task.Uri, task.Type);
+        // We defer logging to inside the method to support buffering for conneg
 
         switch (task.Type)
         {
@@ -51,6 +56,9 @@ public class HostScraper
 
     private async Task ProcessConnegAsync(ScrapeTask task)
     {
+        var sb = new StringBuilder();
+        sb.AppendLine($"Processing {task.Uri} ({task.Type})");
+
         // Defined formats to try for conneg
         var formats = new[]
         {
@@ -72,97 +80,199 @@ public class HostScraper
             {
                 if (RdfHandler.TryParse(content, accept, out var graph, out _))
                 {
-                    SaveFile(task.Path, ext, content);
+                    // Use a temp file first
+                    var tempPath = Path.GetTempFileName();
+                    File.WriteAllText(tempPath, content);
+
+                    var finalPath = GetOutputPath(task.Path) + ext;
+                    EnsureDirectory(finalPath);
+                    MoveOrReplace(tempPath, finalPath);
+
                     validGraph ??= graph; // Keep the first valid graph
-                    Console.WriteLine($"  {name}: OK");
+                    sb.AppendLine($"  {name}: OK");
                 }
                 else
                 {
-                    Console.WriteLine($"  {name}: Invalid Format");
+                    sb.AppendLine($"  {name}: Invalid Format");
                 }
             }
             else
             {
-                Console.WriteLine($"  {name}: Failed");
+                sb.AppendLine($"  {name}: Failed");
             }
             await Task.Delay(TimeSpan.FromSeconds(_config.DelaySeconds));
         }
 
         // Transcoding
+        // "If the current run produced no n-triples file, for example, but one exists in the repo, we must generate it from the valid graph."
+        // This means if we HAVE a valid graph, we should ensure all formats exist on disk.
+        // If they exist already, we might overwrite them if we generated a better one, OR we just generate missing ones.
+        // The comment says: "If the current run produced no n-triples file... but one exists in the repo, we must generate it from the valid graph."
+        // Wait, if it exists in the repo, we assume it's stale or we just want to update it?
+        // Actually, if the *fetch* failed for n-triples, but we got Turtle, we should generate n-triples.
+        // The comment implies: don't get confused by old files. If we failed to fetch it, we should regenerate it if possible.
+        // So, regardless of whether file exists or not, if we have a valid graph, we should probably ensure consistency by regenerating derived formats if we didn't just fetch them.
+        // But to be safe and efficient: if we successfully fetched it, we kept it. If we didn't fetch it (failed or invalid), but we have a valid graph from another format, we generate it.
+
         if (validGraph != null)
         {
             foreach (var (accept, ext, name) in formats)
             {
-                if (!FileExists(task.Path, ext))
+                // If we successfully fetched this format in this run, we shouldn't regenerate it (it's the source of truth).
+                // But tracking which one was fetched is tricky without extra state.
+                // However, if we write to disk immediately upon fetch, we can check if file was modified recently? No, that's brittle.
+                // Let's rely on the fact that if RdfHandler.TryParse succeeded, we overwrote the file.
+                // So if we just fetched it, we don't need to regenerate.
+                // But we can just overwrite it again with the graph we parsed? That ensures normalization.
+                // But "exact" fetching is preferred over transcoding.
+                // The issue is distinguishing "failed to fetch" vs "successfully fetched".
+                // Let's just regenerate IF we didn't fetch it successfully.
+
+                // We can check if we just wrote it?
+                // Or just try to regenerate everything except the one we got validGraph from?
+                // Actually, validGraph is from the *first* successful fetch.
+                // Later fetches might also be successful.
+
+                // Simplified logic: If we have a valid graph, try to generate all formats that we didn't successfully fetch in this loop.
+                // But we need to know which ones we fetched.
+
+                // Let's use a set to track success.
+                // But wait, the buffering makes this logic local.
+
+                // Refactoring slightly to track success.
+             }
+        }
+
+        // RE-IMPLEMENTING CONNEG LOOP WITH STATE TRACKING
+        var successfulFormats = new HashSet<string>();
+        sb.Clear(); // Clear and restart log buffer
+        sb.AppendLine($"Processing {task.Uri} ({task.Type})");
+
+        validGraph = null;
+
+        foreach (var (accept, ext, name) in formats)
+        {
+            var content = await FetchAsync(task.Uri, accept);
+            bool success = false;
+            if (content != null)
+            {
+                if (RdfHandler.TryParse(content, accept, out var graph, out _))
+                {
+                    var tempPath = Path.GetTempFileName();
+                    File.WriteAllText(tempPath, content);
+                    var finalPath = GetOutputPath(task.Path) + ext;
+                    EnsureDirectory(finalPath);
+                    MoveOrReplace(tempPath, finalPath);
+
+                    validGraph ??= graph;
+                    successfulFormats.Add(ext);
+                    success = true;
+                    sb.AppendLine($"  {name}: OK");
+                }
+                else
+                {
+                    sb.AppendLine($"  {name}: Invalid Format");
+                }
+            }
+            else
+            {
+                sb.AppendLine($"  {name}: Failed");
+            }
+            await Task.Delay(TimeSpan.FromSeconds(_config.DelaySeconds));
+        }
+
+        if (validGraph != null)
+        {
+            foreach (var (accept, ext, name) in formats)
+            {
+                if (!successfulFormats.Contains(ext))
                 {
                     try
                     {
                         var content = RdfHandler.Generate(validGraph, accept);
-                        SaveFile(task.Path, ext, content);
-                        Console.WriteLine($"  {name}: Generated");
+                        // Save generated content
+                        var finalPath = GetOutputPath(task.Path) + ext;
+                        EnsureDirectory(finalPath);
+                        File.WriteAllText(finalPath, content);
+                        sb.AppendLine($"  {name}: Generated");
                     }
                     catch (Exception)
                     {
-                        // Ignore if generation fails (e.g. not supported)
+                        // Ignore
                     }
                 }
             }
         }
+
+        _logger.LogInformation(sb.ToString().TrimEnd());
     }
 
     private async Task ProcessExactAsync(ScrapeTask task)
     {
         if (string.IsNullOrEmpty(task.AcceptHeader)) return;
 
+        // Exact is simpler, usually single request. No need for buffering unless we want consistency.
+        // But buffering is good practice for parallel output.
+
+        var sb = new StringBuilder();
+        sb.AppendLine($"Processing {task.Uri} ({task.Type})");
+
         var content = await FetchAsync(task.Uri, task.AcceptHeader);
         if (content != null)
         {
-            // For Exact, we might not have a clean extension mapping, but the task.Path includes extension usually?
-            // In the bash script, 'path' often has extension.
-            // But wait, curl_get_exact calls curl_safe with empty extension.
-            // So we write directly to task.Path.
-
-            // We should still validate if possible.
-            // Try to guess format from extension or Content-Type?
-            // The task has AcceptHeader which tells us the format.
-
             if (RdfHandler.TryParse(content, task.AcceptHeader, out _, out _))
             {
-                 SaveFileDirect(task.Path, content);
-                 Console.WriteLine($"  Exact ({task.AcceptHeader}): OK");
+                 var finalPath = GetOutputPath(task.Path); // Exact usually has extension in Path
+                 EnsureDirectory(finalPath);
+
+                 // Use temp
+                 var tempPath = Path.GetTempFileName();
+                 File.WriteAllText(tempPath, content);
+                 MoveOrReplace(tempPath, finalPath);
+
+                 sb.AppendLine($"  Exact ({task.AcceptHeader}): OK");
             }
             else
             {
-                 Console.WriteLine($"  Exact ({task.AcceptHeader}): Invalid Format");
+                 sb.AppendLine($"  Exact ({task.AcceptHeader}): Invalid Format");
             }
         }
         else
         {
-             Console.WriteLine($"  Exact ({task.AcceptHeader}): Failed");
+             sb.AppendLine($"  Exact ({task.AcceptHeader}): Failed");
         }
+        _logger.LogInformation(sb.ToString().TrimEnd());
     }
 
     private async Task ProcessShexAsync(ScrapeTask task)
     {
+        var sb = new StringBuilder();
+        sb.AppendLine($"Processing {task.Uri} ({task.Type})");
+
         var content = await FetchAsync(task.Uri, "text/shex");
         if (content != null)
         {
-             // dotNetRDF might not support Shex parsing easily.
-             // We'll just save it for now as per bash script behavior, maybe checking for HTML.
              if (!IsHtml(content))
              {
-                 SaveFile(task.Path, ".shex", content);
-                 Console.WriteLine("  ShEx: OK");
+                 var finalPath = GetOutputPath(task.Path) + ".shex";
+                 EnsureDirectory(finalPath);
+
+                 var tempPath = Path.GetTempFileName();
+                 File.WriteAllText(tempPath, content);
+                 MoveOrReplace(tempPath, finalPath);
+
+                 sb.AppendLine("  ShEx: OK");
              }
              else
              {
-                 Console.WriteLine("  ShEx: HTML detected (Ignored)");
+                 sb.AppendLine("  ShEx: HTML detected (Ignored)");
              }
         }
         else
         {
-             Console.WriteLine("  ShEx: Failed");
+             sb.AppendLine("  ShEx: Failed");
         }
+        _logger.LogInformation(sb.ToString().TrimEnd());
     }
 
     private async Task<string?> FetchAsync(string uri, string accept)
@@ -191,34 +301,39 @@ public class HostScraper
     {
         if (string.IsNullOrWhiteSpace(content)) return false;
         var trimmed = content.TrimStart();
-        return trimmed.StartsWith("<!DOCTYPE html", StringComparison.OrdinalIgnoreCase) ||
-               trimmed.StartsWith("<html", StringComparison.OrdinalIgnoreCase);
+
+        // Robust HTML detection
+        if (trimmed.StartsWith("<!DOCTYPE html", StringComparison.OrdinalIgnoreCase)) return true;
+        if (trimmed.StartsWith("<html", StringComparison.OrdinalIgnoreCase)) return true;
+
+        // Check for common HTML tags near the start
+        // Some servers return XML that is actually XHTML or similar
+        // Or sometimes we get a 200 OK with an error page
+
+        // Simple heuristic: look for <head>, <body>, <script>, <meta within the first 1000 chars
+        var sample = trimmed.Length > 1000 ? trimmed.Substring(0, 1000) : trimmed;
+        if (sample.IndexOf("<head", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            sample.IndexOf("<body", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            sample.IndexOf("<script", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            sample.IndexOf("<title", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            sample.IndexOf("<meta http-equiv", StringComparison.OrdinalIgnoreCase) >= 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 
-    private void SaveFile(string taskPath, string ext, string content)
+    private void MoveOrReplace(string source, string dest)
     {
-        var fullPath = GetOutputPath(taskPath);
-        // If taskPath has extension and ext is empty, it's exact.
-        // But here we construct path.
-        // Bash logic: outpath="data/${firstchar,,}/${path}"
-        // curl_safe uses "${outpath}${ext}"
-
-        var filePath = $"{fullPath}{ext}";
-        Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
-        File.WriteAllText(filePath, content);
+        if (File.Exists(dest)) File.Delete(dest);
+        File.Move(source, dest);
     }
 
-    private void SaveFileDirect(string taskPath, string content)
+    private void EnsureDirectory(string path)
     {
-        var filePath = GetOutputPath(taskPath);
-        Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
-        File.WriteAllText(filePath, content);
-    }
-
-    private bool FileExists(string taskPath, string ext)
-    {
-        var filePath = $"{GetOutputPath(taskPath)}{ext}";
-        return File.Exists(filePath);
+        var dir = Path.GetDirectoryName(path);
+        if (!string.IsNullOrEmpty(dir)) Directory.CreateDirectory(dir);
     }
 
     private string GetOutputPath(string taskPath)
