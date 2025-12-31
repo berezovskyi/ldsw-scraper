@@ -104,7 +104,7 @@ public class HostScraper
 
                     if (isIsomorphic)
                     {
-                        sb.AppendLine($"  {name}: Skipped (Isomorphic)");
+                        sb.AppendLine($"  {name}: Updated (Isomorphic)");
                         if (validGraph == null)
                         {
                             validGraphIsomorphicToDisk = true;
@@ -112,12 +112,14 @@ public class HostScraper
                     }
                     else
                     {
-                        var tempPath = Path.GetTempFileName();
-                        File.WriteAllText(tempPath, content);
-                        EnsureDirectory(finalPath);
-                        MoveOrReplace(tempPath, finalPath);
                         sb.AppendLine($"  {name}: OK");
                     }
+
+                    // Always overwrite source
+                    var tempPath = Path.GetTempFileName();
+                    File.WriteAllText(tempPath, content);
+                    EnsureDirectory(finalPath);
+                    MoveOrReplace(tempPath, finalPath);
 
                     validGraph ??= graph; // Keep the first valid graph
                     successfulFormats.Add(ext);
