@@ -9,29 +9,29 @@
 @prefix cc: <http://creativecommons.org/ns#>.
 
 {
-    _:autos11759 a owl:Class;
-                 owl:intersectionOf _:autos11760.
-    _:autos11760 rdf:first :OWLList;
-                 rdf:rest _:autos11761.
-    _:autos11761 rdf:first _:autos11762;
+    _:autos11647 a owl:Class;
+                 owl:intersectionOf _:autos11648.
+    _:autos11648 rdf:first :OWLList;
+                 rdf:rest _:autos11649.
+    _:autos11649 rdf:first _:autos11650;
                  rdf:rest rdf:nil.
-    _:autos11762 a owl:Class;
-                 owl:complementOf _:autos11763.
-    _:autos11763 a owl:Restriction;
+    _:autos11650 a owl:Class;
+                 owl:complementOf _:autos11651.
+    _:autos11651 a owl:Restriction;
                  owl:onProperty :hasContents;
                  owl:someValuesFrom owl:Thing.
-    _:autos11764 a owl:Class;
-                 owl:intersectionOf _:autos11765.
-    _:autos11765 rdf:first :OWLList;
-                 rdf:rest _:autos11766.
-    _:autos11766 rdf:first _:autos11767;
+    _:autos11652 a owl:Class;
+                 owl:intersectionOf _:autos11653.
+    _:autos11653 rdf:first :OWLList;
+                 rdf:rest _:autos11654.
+    _:autos11654 rdf:first _:autos11655;
                  rdf:rest rdf:nil.
-    _:autos11767 a owl:Class;
-                 owl:complementOf _:autos11768.
-    _:autos11768 a owl:Restriction;
+    _:autos11655 a owl:Class;
+                 owl:complementOf _:autos11656.
+    _:autos11656 a owl:Restriction;
                  owl:onProperty :isFollowedBy;
                  owl:someValuesFrom owl:Thing.
-    _:autos11769 a owl:Restriction;
+    _:autos11657 a owl:Restriction;
                  owl:allValuesFrom :OWLList;
                  owl:onProperty :isFollowedBy.
     <https://w3id.org/list> cc:license <http://creativecommons.org/licenses/by/3.0/>;
@@ -49,10 +49,10 @@
                                          "This ontology is identical to the ontology originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.";
                             owl:versionInfo "1.0.0 ".
     :EmptyList a owl:Class;
-               owl:equivalentClass _:autos11759,
-                                   _:autos11764.
+               owl:equivalentClass _:autos11647,
+                                   _:autos11652.
     :OWLList a owl:Class;
-             rdfs:subClassOf _:autos11769,
+             rdfs:subClassOf _:autos11657,
                              owl:Thing.
     :hasContents a owl:FunctionalProperty,
                    owl:ObjectProperty;

@@ -4,25 +4,25 @@
 <http://www.w3.org/ns/adms> <http://purl.org/dc/terms/title> "Asset Description Metadata Schema (ADMS)"@en .
 <http://www.w3.org/ns/adms> <http://www.w3.org/2000/01/rdf-schema#label> "Asset Description Metadata Schema (ADMS)"@en .
 <http://www.w3.org/ns/adms> <http://purl.org/dc/terms/abstract> "ADMS is a profile of DCAT, used to describe semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) that are used for eGovernment system development."@en .
-_:autos12936 <http://schema.org/affiliation> <http://www.w3.org/data#W3C> .
-_:autos12936 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://philarcher.org/foaf.rdf#me> .
-_:autos12936 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/People/all#phila> .
-_:autos12936 <http://xmlns.com/foaf/0.1/name> "Phil Archer"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/creator> _:autos12936 .
-_:autos12938 <http://xmlns.com/foaf/0.1/homepage> <http://ies.jrc.ec.europa.eu/DE> .
-_:autos12938 <http://xmlns.com/foaf/0.1/name> "European Commission, Joint Research Centre "^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos12937 <http://schema.org/affiliation> _:autos12938 .
-_:autos12937 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://andrea-perego.name/foaf/#me> .
-_:autos12937 <http://xmlns.com/foaf/0.1/homepage> <http://andrea-perego.name/> .
-_:autos12937 <http://xmlns.com/foaf/0.1/name> "Andrea Perego"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/creator> _:autos12937 .
-_:autos12939 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://makxdekkers.com/makxdekkers.rdf#me> .
-_:autos12939 <http://xmlns.com/foaf/0.1/homepage> <http://makxdekkers.com/> .
-_:autos12939 <http://xmlns.com/foaf/0.1/name> "Makx Dekkers"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/creator> _:autos12939 .
-_:autos12940 <http://xmlns.com/foaf/0.1/name> "Government Linked Data WG, based on output from the ADMS Working Group"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos12940 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2011/gld/> .
-<http://www.w3.org/ns/adms> <http://xmlns.com/foaf/0.1/maker> _:autos12940 .
+_:autos12846 <http://schema.org/affiliation> <http://www.w3.org/data#W3C> .
+_:autos12846 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://philarcher.org/foaf.rdf#me> .
+_:autos12846 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/People/all#phila> .
+_:autos12846 <http://xmlns.com/foaf/0.1/name> "Phil Archer"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/creator> _:autos12846 .
+_:autos12848 <http://xmlns.com/foaf/0.1/homepage> <http://ies.jrc.ec.europa.eu/DE> .
+_:autos12848 <http://xmlns.com/foaf/0.1/name> "European Commission, Joint Research Centre "^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos12847 <http://schema.org/affiliation> _:autos12848 .
+_:autos12847 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://andrea-perego.name/foaf/#me> .
+_:autos12847 <http://xmlns.com/foaf/0.1/homepage> <http://andrea-perego.name/> .
+_:autos12847 <http://xmlns.com/foaf/0.1/name> "Andrea Perego"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/creator> _:autos12847 .
+_:autos12849 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://makxdekkers.com/makxdekkers.rdf#me> .
+_:autos12849 <http://xmlns.com/foaf/0.1/homepage> <http://makxdekkers.com/> .
+_:autos12849 <http://xmlns.com/foaf/0.1/name> "Makx Dekkers"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/creator> _:autos12849 .
+_:autos12850 <http://xmlns.com/foaf/0.1/name> "Government Linked Data WG, based on output from the ADMS Working Group"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos12850 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2011/gld/> .
+<http://www.w3.org/ns/adms> <http://xmlns.com/foaf/0.1/maker> _:autos12850 .
 <http://www.w3.org/ns/adms> <http://purl.org/dc/terms/description> "This is the RDF encoding of the Asset Description Metadata Schema, originally \n    developed under the European Union's ISA Programme and further developed by the W3C Government Linked Data Working Group.\n    It re-uses terms from several other vocabularies, notably Dublin Core, with elements of SKOS, FOAF and more. "^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/adms> <http://purl.org/dc/terms/modified> "2013-05-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.w3.org/ns/adms> <http://purl.org/dc/terms/modified> "2013-09-16"^^<http://www.w3.org/2001/XMLSchema#date> .

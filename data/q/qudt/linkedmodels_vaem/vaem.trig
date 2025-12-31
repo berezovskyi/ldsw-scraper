@@ -8,91 +8,91 @@
 @prefix vaem: <http://www.linkedmodel.org/schema/vaem#>.
 
 {
-    _:autos11495 a owl:Restriction;
+    _:autos11618 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:revision.
-    _:autos11496 a owl:Restriction;
+    _:autos11619 a owl:Restriction;
                  owl:cardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:name.
-    _:autos11497 a owl:Restriction;
+    _:autos11620 a owl:Restriction;
                  owl:allValuesFrom vaem:Viewpoint;
                  owl:onProperty vaem:hasViewpoint.
-    _:autos11498 a owl:Restriction;
+    _:autos11621 a owl:Restriction;
                  owl:allValuesFrom vaem:Party;
                  owl:onProperty vaem:hasSteward.
-    _:autos11499 a owl:Restriction;
+    _:autos11622 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:turtleFileURL.
-    _:autos11500 a owl:Restriction;
+    _:autos11623 a owl:Restriction;
                  owl:allValuesFrom vaem:Aspect;
                  owl:onProperty vaem:hasAspect.
-    _:autos11501 a owl:Restriction;
+    _:autos11624 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:namespacePrefix.
-    _:autos11502 a owl:Restriction;
+    _:autos11625 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:owner.
-    _:autos11503 a owl:Restriction;
+    _:autos11626 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:hasMetadata.
-    _:autos11504 a owl:Restriction;
+    _:autos11627 a owl:Restriction;
                  owl:allValuesFrom xsd:string;
                  owl:onProperty vaem:description.
-    _:autos11505 a owl:Restriction;
+    _:autos11628 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:previousPublishedVersion.
-    _:autos11506 a owl:Restriction;
+    _:autos11629 a owl:Restriction;
                  owl:allValuesFrom vaem:Discipline;
                  owl:onProperty vaem:hasDiscipline.
-    _:autos11507 a owl:Restriction;
+    _:autos11630 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:hasIdentifier.
-    _:autos11508 a owl:Restriction;
+    _:autos11631 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:specificity.
-    _:autos11509 a owl:Restriction;
+    _:autos11632 a owl:Restriction;
                  owl:allValuesFrom vaem:GraphRole;
                  owl:onProperty vaem:hasGraphRole.
-    _:autos11510 a owl:Restriction;
+    _:autos11633 a owl:Restriction;
                  owl:allValuesFrom vaem:Party;
                  owl:onProperty vaem:hasOwner.
-    _:autos11511 a owl:Restriction;
+    _:autos11634 a owl:Restriction;
                  owl:allValuesFrom vaem:Domain;
                  owl:onProperty vaem:hasDomain.
-    _:autos11512 a owl:Restriction;
+    _:autos11635 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:namespace.
-    _:autos11513 a owl:Restriction;
+    _:autos11636 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:rdfxmlFileURL.
-    _:autos11514 a owl:Restriction;
+    _:autos11637 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:hasLicenseType.
-    _:autos11515 a owl:Restriction;
+    _:autos11638 a owl:Restriction;
                  owl:allValuesFrom vaem:GraphMetaData;
                  owl:onProperty vaem:hasMetadata.
-    _:autos11516 a owl:Restriction;
+    _:autos11639 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:hasSteward.
-    _:autos11517 a owl:Restriction;
+    _:autos11640 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:latestPublishedVersion.
-    _:autos11518 a owl:Restriction;
+    _:autos11641 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:intent.
-    _:autos11519 a owl:Restriction;
+    _:autos11642 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:url.
-    _:autos11520 a owl:Restriction;
+    _:autos11643 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:id.
-    _:autos11521 a owl:Restriction;
+    _:autos11644 a owl:Restriction;
                  owl:cardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:name.
-    _:autos11522 a owl:Restriction;
+    _:autos11645 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:filePrefix.
-    _:autos11523 a owl:Restriction;
+    _:autos11646 a owl:Restriction;
                  owl:maxCardinality "1"^^xsd:nonNegativeInteger;
                  owl:onProperty vaem:description.
     dct:abstract a owl:AnnotationProperty;
@@ -242,38 +242,38 @@
                                         <http://www.linkedmodel.org/schema/vaem>;
                        rdfs:label "Graph Metadata";
                        rdfs:seeAlso <http://voag.linkedmodel.org/vocab/voag>;
-                       rdfs:subClassOf _:autos11495,
-                                       _:autos11496,
-                                       _:autos11497,
-                                       _:autos11498,
-                                       _:autos11499,
-                                       _:autos11500,
-                                       _:autos11501,
-                                       _:autos11502,
-                                       _:autos11503,
-                                       _:autos11504,
-                                       _:autos11505,
-                                       _:autos11506,
-                                       _:autos11507,
-                                       _:autos11508,
-                                       _:autos11509,
-                                       _:autos11510,
-                                       _:autos11511,
-                                       _:autos11512,
-                                       _:autos11513,
-                                       _:autos11514,
-                                       _:autos11515,
-                                       _:autos11516,
-                                       _:autos11517,
-                                       _:autos11518,
+                       rdfs:subClassOf _:autos11618,
+                                       _:autos11619,
+                                       _:autos11620,
+                                       _:autos11621,
+                                       _:autos11622,
+                                       _:autos11623,
+                                       _:autos11624,
+                                       _:autos11625,
+                                       _:autos11626,
+                                       _:autos11627,
+                                       _:autos11628,
+                                       _:autos11629,
+                                       _:autos11630,
+                                       _:autos11631,
+                                       _:autos11632,
+                                       _:autos11633,
+                                       _:autos11634,
+                                       _:autos11635,
+                                       _:autos11636,
+                                       _:autos11637,
+                                       _:autos11638,
+                                       _:autos11639,
+                                       _:autos11640,
+                                       _:autos11641,
                                        owl:Thing.
     vaem:GraphRole dct:description "GraphRole is used to characterize how a graph of resources participates in an ontology set.  For example, a graph can be a schema, vocabulary, dataset, script, or ruleset";
                    a owl:Class;
                    rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
                                     <http://www.linkedmodel.org/schema/vaem>;
                    rdfs:label "Graph role";
-                   rdfs:subClassOf _:autos11522,
-                                   _:autos11523,
+                   rdfs:subClassOf _:autos11645,
+                                   _:autos11646,
                                    owl:Thing.
     vaem:LinkSetGraph dct:description """A \"vaem:LinkSetGraph\" is a graph that holds statements that specify links between resources""";
                       vaem:filePrefix "LINKSET";
@@ -292,9 +292,9 @@
                rdfs:isDefinedBy <http://www.linkedmodel.org/2.0/schema/vaem>,
                                 <http://www.linkedmodel.org/schema/vaem>;
                rdfs:label "Party";
-               rdfs:subClassOf _:autos11519,
-                               _:autos11520,
-                               _:autos11521,
+               rdfs:subClassOf _:autos11642,
+                               _:autos11643,
+                               _:autos11644,
                                owl:Thing.
     vaem:ProxyGraph vaem:filePrefix "PROXY";
                     a vaem:GraphRole;

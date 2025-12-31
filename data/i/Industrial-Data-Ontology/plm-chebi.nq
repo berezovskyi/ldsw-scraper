@@ -74,10 +74,10 @@
 <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004939> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004939> .
-_:autos11952 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:autos11952 <http://www.w3.org/2002/07/owl#onProperty> <http://rds.posccaesar.org/ontology/lis14/rdl/partOf> .
-_:autos11952 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://rds.posccaesar.org/ontology/lis14/rdl/Stream> .
-<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:autos11952 .
+_:autos11943 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:autos11943 <http://www.w3.org/2002/07/owl#onProperty> <http://rds.posccaesar.org/ontology/lis14/rdl/partOf> .
+_:autos11943 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://rds.posccaesar.org/ontology/lis14/rdl/Stream> .
+<http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:autos11943 .
 <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005000> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical component of a stream"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005000> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical component of stream"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://purl.obolibrary.org/obo/CHEBI_15377> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

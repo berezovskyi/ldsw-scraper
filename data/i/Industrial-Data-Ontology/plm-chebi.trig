@@ -36,7 +36,7 @@
 @prefix o-owl-dec: <http://tpl.ottr.xyz/owl/declaration/0.1/>.
 
 {
-    _:autos11952 a owl:Restriction;
+    _:autos11943 a owl:Restriction;
                  owl:onProperty lis:partOf;
                  owl:someValuesFrom lis:Stream.
     <http://purl.obolibrary.org/obo/CHEBI_15377> dc:identifier <http://purl.obolibrary.org/obo/CHEBI_15377>;
@@ -1698,7 +1698,7 @@
     rdl:PCA_100005000 a owl:Class;
                       rdfs:comment "A chemical component of a stream";
                       rdfs:label "Chemical component of stream";
-                      rdfs:subClassOf _:autos11952,
+                      rdfs:subClassOf _:autos11943,
                                       rdl:PCA_100004939.
     rdl:PCA_100005605 a owl:ObjectProperty;
                       rdfs:comment "The datum determining this material composition quality";
