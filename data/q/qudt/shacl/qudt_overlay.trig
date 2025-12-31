@@ -10,60 +10,60 @@
 @prefix voag: <http://voag.linkedmodel.org/schema/voag#>.
 
 {
-    _:autos12552 a sh:PrefixDeclaration;
+    _:autos12500 a sh:PrefixDeclaration;
                  sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI;
                  sh:prefix "dcterms".
-    _:autos12553 a sh:PrefixDeclaration;
+    _:autos12501 a sh:PrefixDeclaration;
                  sh:namespace "http://qudt.org/schema/qudt/"^^xsd:anyURI;
                  sh:prefix "qudt".
-    _:autos12554 a sh:PrefixDeclaration;
+    _:autos12502 a sh:PrefixDeclaration;
                  sh:namespace "http://qudt.org/vocab/dimensionvector/"^^xsd:anyURI;
                  sh:prefix "qkdv".
-    _:autos12555 a sh:PrefixDeclaration;
+    _:autos12503 a sh:PrefixDeclaration;
                  sh:namespace "http://qudt.org/vocab/quantitykind/"^^xsd:anyURI;
                  sh:prefix "quantitykind".
-    _:autos12556 a sh:PrefixDeclaration;
+    _:autos12504 a sh:PrefixDeclaration;
                  sh:namespace "http://qudt.org/vocab/unit/"^^xsd:anyURI;
                  sh:prefix "unit".
-    _:autos12557 a sh:PrefixDeclaration;
+    _:autos12505 a sh:PrefixDeclaration;
                  sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI;
                  sh:prefix "rdf".
-    _:autos12558 a sh:PrefixDeclaration;
+    _:autos12506 a sh:PrefixDeclaration;
                  sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI;
                  sh:prefix "rdfs".
-    _:autos12559 a sh:PrefixDeclaration;
+    _:autos12507 a sh:PrefixDeclaration;
                  sh:namespace "http://www.w3.org/2002/07/owl#"^^xsd:anyURI;
                  sh:prefix "owl".
-    _:autos12560 a sh:PrefixDeclaration;
+    _:autos12508 a sh:PrefixDeclaration;
                  sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI;
                  sh:prefix "skos".
-    _:autos12561 rdf:first _:autos12562;
-                 rdf:rest _:autos12563.
-    _:autos12562 sh:datatype xsd:float.
-    _:autos12563 rdf:first _:autos12564;
-                 rdf:rest _:autos12565.
-    _:autos12564 sh:datatype xsd:double.
-    _:autos12565 rdf:first _:autos12566;
-                 rdf:rest _:autos12567.
-    _:autos12566 sh:datatype xsd:integer.
-    _:autos12567 rdf:first _:autos12568;
+    _:autos12509 rdf:first _:autos12510;
+                 rdf:rest _:autos12511.
+    _:autos12510 sh:datatype xsd:float.
+    _:autos12511 rdf:first _:autos12512;
+                 rdf:rest _:autos12513.
+    _:autos12512 sh:datatype xsd:double.
+    _:autos12513 rdf:first _:autos12514;
+                 rdf:rest _:autos12515.
+    _:autos12514 sh:datatype xsd:integer.
+    _:autos12515 rdf:first _:autos12516;
                  rdf:rest rdf:nil.
-    _:autos12568 sh:datatype xsd:decimal.
+    _:autos12516 sh:datatype xsd:decimal.
     <http://qudt.org/2.1/schema/shacl/overlay/qudt> vaem:hasGraphMetadata vaem:GMD_SHACLQUDTOVERLAY-SCHEMA;
                                                     a owl:Ontology;
                                                     rdfs:comment "Supplements the generated SHACL Schema with constructs not expressible in the QUDT OWL Ontology";
                                                     rdfs:label "QUDT SHACL Schema Supplement Version 2.1.47";
                                                     owl:imports <http://qudt.org/2.1/schema/shacl/qudt>,
                                                                 sh:;
-                                                    sh:declare _:autos12552,
-                                                               _:autos12553,
-                                                               _:autos12554,
-                                                               _:autos12555,
-                                                               _:autos12556,
-                                                               _:autos12557,
-                                                               _:autos12558,
-                                                               _:autos12559,
-                                                               _:autos12560.
+                                                    sh:declare _:autos12500,
+                                                               _:autos12501,
+                                                               _:autos12502,
+                                                               _:autos12503,
+                                                               _:autos12504,
+                                                               _:autos12505,
+                                                               _:autos12506,
+                                                               _:autos12507,
+                                                               _:autos12508.
     qudt:AbstractQuantityKind-qudt_latexSymbol a sh:PropertyShape;
                                                rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/overlay/qudt>;
                                                sh:group qudt:IdentifiersAndDescriptionsPropertyGroup;
@@ -182,7 +182,7 @@
     qudt:Quantifiable-qudt_value a sh:PropertyShape;
                                  rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/overlay/qudt>;
                                  sh:maxCount 1 ;
-                                 sh:or _:autos12561;
+                                 sh:or _:autos12509;
                                  sh:path qudt:value.
     qudt:Quantity-qudt_description a sh:PropertyShape;
                                    rdfs:isDefinedBy <http://qudt.org/2.1/schema/shacl/overlay/qudt>;

@@ -23,523 +23,523 @@
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>.
 
-_:autos10619 a owl:Axiom;
+_:autos11340 a owl:Axiom;
              rdfs:comment "BFO_0000062 is 'preceded by' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:after;
              owl:annotatedTarget obo:BFO_0000062.
-_:autos10620 a owl:Axiom;
+_:autos11341 a owl:Axiom;
              rdfs:comment "BFO_0000063 is 'precedes' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:before;
              owl:annotatedTarget obo:BFO_0000063.
-_:autos10624 a owl:Axiom;
+_:autos11345 a owl:Axiom;
              rdfs:comment "BFO_0000059 is 'concretizes at some time', from BFO-ISO";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:concretizes;
              owl:annotatedTarget obo:BFO_0000059.
-_:autos10625 a owl:Axiom;
+_:autos11346 a owl:Axiom;
              rdfs:comment "BFO_0000164 is 'concretizes at all times', from BFO-ISO";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:concretizes;
              owl:annotatedTarget obo:BFO_0000164.
-_:autos10626 a owl:Axiom;
+_:autos11347 a owl:Axiom;
              rdfs:comment "RO_0000059 is 'concretizes', from the Relations Ontology; also used in the Information Artifact Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:concretizes;
              owl:annotatedTarget obo:RO_0000059.
-_:autos10627 a owl:Axiom;
+_:autos11348 a owl:Axiom;
              rdfs:comment "RO_0002170 is 'connected to', in the Relations Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:connectedTo;
              owl:annotatedTarget obo:RO_0002170.
-_:autos10628 a owl:Axiom;
+_:autos11349 a owl:Axiom;
              rdfs:comment "BFO_0000124 is 'location of at some time' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:contains;
              owl:annotatedTarget obo:BFO_0000124.
-_:autos10629 a owl:Axiom;
+_:autos11350 a owl:Axiom;
              rdfs:comment "RO_0001015 is 'location of' in the Relations Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:contains;
              owl:annotatedTarget obo:RO_0001015.
-_:autos10630 a owl:Axiom;
+_:autos11351 a owl:Axiom;
              rdfs:comment """ISO 15926-2:2003, 5.2.10.2 provides an example as, \"A car manufacturing activity causes the beginning of a car\".""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:creates;
              owl:annotatedTarget "ISO 15926-2:2003 'class_of_cause_of_beginning_of_class_of_individual'".
-_:autos10631 a owl:Axiom;
+_:autos11352 a owl:Axiom;
              rdfs:comment "IAO_0000039 is 'has measurement unit label' in the Information Artifact Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:datumUOM;
              owl:annotatedTarget obo:IAO_0000039.
-_:autos10632 a owl:Axiom;
+_:autos11353 a owl:Axiom;
              rdfs:comment "RO_0002536 is 'measurement property has unit', an annotation property in the Relations Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:datumUOM;
              owl:annotatedTarget obo:RO_0002536.
-_:autos10633 a owl:Axiom;
+_:autos11354 a owl:Axiom;
              rdfs:comment "unitCode is a property in the Schema.org vocabulary.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:datumUOM;
              owl:annotatedTarget "https://schema.org/unitCode".
-_:autos10634 a owl:Axiom;
+_:autos11355 a owl:Axiom;
              rdfs:comment "BFO_0000117 is 'has occurrent part' in BFO-ISO. This relation has 'occurrent' as domain and range, where the IDO 'has activity part' is restricted to just 'activity'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasActivityPart;
              owl:annotatedTarget obo:BFO_0000117.
-_:autos10635 a owl:Axiom;
+_:autos11356 a owl:Axiom;
              rdfs:comment "BFO_0000024 is 'fiat object part' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasArrangedPart;
              owl:annotatedTarget obo:BFO_0000024.
-_:autos10636 a owl:Axiom;
+_:autos11357 a owl:Axiom;
              rdfs:comment "BFO_0000222 is 'has first instant' in BFO-ISO, defined for 'temporal region' (differently from 'has beginning' in IDO, defined for 'activity').";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasBeginning;
              owl:annotatedTarget obo:BFO_0000222.
-_:autos10637 a owl:Axiom;
+_:autos11358 a owl:Axiom;
              rdfs:comment "BFO_0000197 is 'inheres in'";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasDisposition;
              owl:annotatedTarget obo:BFO_0000197.
-_:autos10638 a owl:Axiom;
+_:autos11359 a owl:Axiom;
              rdfs:comment "RO_0000091 is 'has disposition'";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasDisposition;
              owl:annotatedTarget obo:RO_0000091.
-_:autos10639 a owl:Axiom;
+_:autos11360 a owl:Axiom;
              rdfs:comment "BFO_0000224 is 'has last instant' in BFO-ISO, defined for 'temporal region' (differently from 'has ending' in IDO, defined for 'activity').";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasEnding;
              owl:annotatedTarget obo:BFO_0000224.
-_:autos10640 a owl:Axiom;
+_:autos11361 a owl:Axiom;
              rdfs:comment "The definition is lifted directly from 'feature whole part' of ISO 15926-2:2003.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasFeature;
              owl:annotatedTarget "ISO 15926-2:2003 'feature_whole_part'".
-_:autos10641 a owl:Axiom;
+_:autos11362 a owl:Axiom;
              rdfs:comment "RO_0000085 is 'has function'";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasFunction;
              owl:annotatedTarget obo:RO_0000085.
-_:autos10645 a owl:Axiom;
+_:autos11366 a owl:Axiom;
              rdfs:comment "IAO_0000033 is 'directive information entity' in the Information Artifact Ontology. See, e.g., subtypes 'action specification', 'objective specification', 'plan specification'; and specifically, 'software' as a subtype of 'plan specification'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasInterest;
              owl:annotatedTarget obo:IAO_0000033.
-_:autos10646 a owl:Axiom;
+_:autos11367 a owl:Axiom;
              rdfs:comment """Derived from the relation 'lifecycle_stage' of ISO 15926-2:2003, which has the attribute pair 'interest'/'interested'; 'class_of_lifecycle_stage' provides examples of specialisations as, \"EXAMPLE Planned, required, expected, and proposed can be represented by instances of [class_of_lifecycle_stage].\" Following this, 'interest of' is a superproperty suitable for various intentional relationships, such as planning, approving, or ordering. With IDO, we restrict interest to 'potential' entities, while in ISO 15926-2:2003 the domain and range are both unrestricted.""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasInterest;
              owl:annotatedTarget "ISO 15926-2:2003 'lifecycle_stage'".
-_:autos10647 a owl:Axiom;
+_:autos11368 a owl:Axiom;
              rdfs:comment "BFO_0000051 is 'has part', in the Information Artifact Ontology and in the Relations Ontology (in the latter, BFO_0000051 appears as a subrelation of 'overlaps').";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasPart;
              owl:annotatedTarget obo:BFO_0000051.
-_:autos10648 a owl:Axiom;
+_:autos11369 a owl:Axiom;
              rdfs:comment "BFO_0000117 is 'has occurrent part' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasPart;
              owl:annotatedTarget obo:BFO_0000117.
-_:autos10649 a owl:Axiom;
+_:autos11370 a owl:Axiom;
              rdfs:comment "BFO_0000178 is 'has continuant part of at some time' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasPart;
              owl:annotatedTarget obo:BFO_0000178.
-_:autos10656 a owl:Axiom;
+_:autos11377 a owl:Axiom;
              rdfs:comment "BFO_0000057 is 'has participant at some time'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasParticipant;
              owl:annotatedTarget obo:BFO_0000057.
-_:autos10657 a owl:Axiom;
+_:autos11378 a owl:Axiom;
              rdfs:comment "RO_0000057 is 'has participant'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasParticipant;
              owl:annotatedTarget obo:RO_0000057.
-_:autos10658 a owl:Axiom;
+_:autos11379 a owl:Axiom;
              rdfs:comment "BFO_0000196 is 'bearer of', a more generic relation than 'has potential' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasPotential;
              owl:annotatedTarget obo:BFO_0000196.
-_:autos10659 a owl:Axiom;
+_:autos11380 a owl:Axiom;
              rdfs:comment "RO_0000053 is 'has characteristic', which in the Relation Ontology also has 'quality of' as a subrelation.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasPotential;
              owl:annotatedTarget obo:RO_0000053.
-_:autos10660 a owl:Axiom;
+_:autos11381 a owl:Axiom;
              rdfs:comment "BFO_0000196 is 'bearer of', a more generic relation than 'has quality' in that its range is any 'specifically dependent continuant', which in IDO corresponds to 'dependent'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasQuality;
              owl:annotatedTarget obo:BFO_0000196.
-_:autos10661 a owl:Axiom;
+_:autos11382 a owl:Axiom;
              rdfs:comment "RO_0000086 is 'has quality' in the Relations Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasQuality;
              owl:annotatedTarget obo:RO_0000086.
-_:autos10667 a owl:Axiom;
+_:autos11388 a owl:Axiom;
              rdfs:comment "BFO_0000210 is 'occupies spatial region at some time' (from BFO-ISO)";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasSpatialExtent;
              owl:annotatedTarget obo:BFO_0000210.
-_:autos10668 a owl:Axiom;
+_:autos11389 a owl:Axiom;
              rdfs:comment "BFO_0000200 is 'occupies spatiotemporal region'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasSpatiotemporalExtent;
              owl:annotatedTarget obo:BFO_0000200.
-_:autos10669 a owl:Axiom;
+_:autos11390 a owl:Axiom;
              rdfs:comment "BFO_0000199 is 'occupies temporal region'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:hasTemporalExtent;
              owl:annotatedTarget obo:BFO_0000199.
-_:autos10670 a owl:Axiom;
+_:autos11391 a owl:Axiom;
              rdfs:comment "IAO_0000136 is 'is about', in the Information Artifact Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:isAbout;
              owl:annotatedTarget obo:IAO_0000136.
-_:autos10671 a owl:Axiom;
+_:autos11392 a owl:Axiom;
              rdfs:comment "BFO_0000171 is 'located in at some time' in BFO-ISO. This relation has domain and range restricted to 'independent continuant' and not 'spatial region', meaning it's a relation between entities that are material objects or determined by material objects, only.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:locatedRelativeTo;
              owl:annotatedTarget obo:BFO_0000171.
-_:autos10672 a owl:Axiom;
+_:autos11393 a owl:Axiom;
              rdfs:comment "BFO_0000210 is 'occupies spatial region at some time' in BFO-ISO. This relation has domain restricted to 'independent continuant' and not 'spatial region', and range to 'spatial region', meaning it's a relation from entities that are material objects or determined by material objects, to spatial regions determined independently of material objects.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:locatedRelativeTo;
              owl:annotatedTarget obo:BFO_0000210.
-_:autos10673 a owl:Axiom;
+_:autos11394 a owl:Axiom;
              rdfs:comment "BFO_0000066 is 'occurs in'";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:occursIn;
              owl:annotatedTarget obo:BFO_0000066.
-_:autos10676 a owl:Axiom;
+_:autos11397 a owl:Axiom;
              rdfs:comment """IAO_0000417 is 'is quality measured as' of the Information Artifact Ontology. In IDO, the term \"quantified\" replaces \"measured\" to support cases where measurement is not involved, as in, e.g., estimates.""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:qualityQuantifiedAs;
              owl:annotatedTarget obo:IAO_0000417.
-_:autos10677 a owl:Axiom;
+_:autos11398 a owl:Axiom;
              rdfs:comment "BFO_0000054 is 'has realization' in BFO-ISO, and 'realized in' in the Relations Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:realizedIn;
              owl:annotatedTarget obo:BFO_0000054.
-_:autos10678 a owl:Axiom;
+_:autos11399 a owl:Axiom;
              rdfs:comment "BFO_0000055 is 'realizes' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:realizes;
              owl:annotatedTarget obo:BFO_0000055.
-_:autos10679 a owl:Axiom;
+_:autos11400 a owl:Axiom;
              rdfs:comment "RO_0000081 is 'role of' in the Relations Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:roleOf;
              owl:annotatedTarget obo:RO_0000081.
-_:autos10680 a owl:Axiom;
+_:autos11401 a owl:Axiom;
              rdfs:comment """BFO_0000067 is 'contains process', from RO, where an annotation says the 'editor preferred term' is \"site of\". There are subtle differences in the range and domain restrictions between BFO's 'environs' and RO's 'contains process': where RO has domain as the broad 'independent continuant' only, BFO has ('site' or 'material entity'); where RO has range as 'occurrent', BFO has ('process' or 'process boundary').""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:siteOf;
              owl:annotatedTarget obo:BFO_0000067.
-_:autos10681 a owl:Axiom;
+_:autos11402 a owl:Axiom;
              rdfs:comment "BFO_0000183 is 'environs' from BFO";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:siteOf;
              owl:annotatedTarget obo:BFO_0000183.
-_:autos10682 a owl:Axiom;
+_:autos11403 a owl:Axiom;
              rdfs:comment "BFO_0000217 is 'spatially projects onto at all times'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:siteOf;
              owl:annotatedTarget obo:BFO_0000217.
-_:autos10683 a owl:Axiom;
+_:autos11404 a owl:Axiom;
              rdfs:comment "BFO-ISO declares no data properties.",
                           "IAO_0000004 is the data property 'has measurement value', in the Information Artifact Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:datumValue;
              owl:annotatedTarget obo:IAO_0000004.
-_:autos10684 a owl:Axiom;
+_:autos11405 a owl:Axiom;
              rdfs:comment "numericValue is a data property in QUDT.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:datumValue;
              owl:annotatedTarget qudt:numericValue.
-_:autos10685 a owl:Axiom;
+_:autos11406 a owl:Axiom;
              rdfs:comment "hasNumericalValue is a data property in the Ontology of Units of Measure.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:datumValue;
              owl:annotatedTarget om:hasNumericalValue.
-_:autos10686 a owl:Axiom;
+_:autos11407 a owl:Axiom;
              rdfs:comment "hasSimpleResult is a data property in the Semantic Sensor Networks ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:datumValue;
              owl:annotatedTarget ssn:hasSimpleResult.
-_:autos10688 a owl:Axiom;
+_:autos11409 a owl:Axiom;
              rdfs:comment """ISO 15926-2:2003, 4.7.17 states, \"... activities are considered to be space-time extensions in which other individuals and events participate.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Activity;
              owl:annotatedTarget "ISO 15926-2:2003 'activity'".
-_:autos10690 a owl:Axiom;
+_:autos11411 a owl:Axiom;
              rdfs:comment "BFO_0000144 is 'process profile'.";
              owl:annotatedProperty iof-av:adaptedFrom;
              owl:annotatedSource lis:ActivityProfile;
              owl:annotatedTarget obo:BFO_0000144.
-_:autos10691 a owl:Axiom;
+_:autos11412 a owl:Axiom;
              rdfs:comment "MF_0000043 is 'capability'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Capability;
              owl:annotatedTarget obo:MF_0000043.
-_:autos10692 a owl:Axiom;
+_:autos11413 a owl:Axiom;
              rdfs:comment "NCIT_C74979 is 'capability'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Capability;
              owl:annotatedTarget obo:NCIT_C74979.
-_:autos10693 a owl:Axiom;
+_:autos11414 a owl:Axiom;
              rdfs:comment "SIO_000112 is 'capability'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Capability;
              owl:annotatedTarget obo:SIO_000112.
-_:autos10695 a owl:Axiom;
+_:autos11416 a owl:Axiom;
              rdfs:comment "BFO_0000020 is 'specifically dependent continuant'.";
              owl:annotatedProperty iof-av:adaptedFrom;
              owl:annotatedSource lis:Dependent;
              owl:annotatedTarget obo:BFO_0000020.
-_:autos10696 a owl:Axiom;
+_:autos11417 a owl:Axiom;
              rdfs:comment "BFO_0000016 is 'disposition'.";
              owl:annotatedProperty iof-av:adaptedFrom;
              owl:annotatedSource lis:Disposition;
              owl:annotatedTarget obo:BFO_0000016.
-_:autos10698 a owl:Axiom;
+_:autos11419 a owl:Axiom;
              rdfs:comment "BFO_0000035 is 'process boundary'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Event;
              owl:annotatedTarget obo:BFO_0000035.
-_:autos10699 a owl:Axiom;
+_:autos11420 a owl:Axiom;
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Feature;
              owl:annotatedTarget obo:BFO_0000024;
              iof-av:explanatoryNote "BFO_0000024 is 'fiat object part'. This is at least very close in meaning to 'feature' as defined in in ISO 15926.".
-_:autos10700 a owl:Axiom;
+_:autos11421 a owl:Axiom;
              rdfs:comment "BFO_0000034 is 'function'.";
              owl:annotatedProperty iof-av:adaptedFrom;
              owl:annotatedSource lis:Function;
              owl:annotatedTarget obo:BFO_0000034.
-_:autos10702 a owl:Axiom;
+_:autos11423 a owl:Axiom;
              rdfs:comment """ISO 15926-2:2003, p. 110, states, \"A functional_physical_object is a physical_object that has functional, rather than material, continuity as its basis for identity. Adjacent temporal parts of a functional_physical_object need not have common matter or energy, provided the matter or energy of each temporal part fulfils the same function.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:FunctionalObject;
              owl:annotatedTarget "ISO 15926-2:2003 'functional_physical_object'".
-_:autos10703 a owl:Axiom;
+_:autos11424 a owl:Axiom;
              rdfs:comment """ISO 15926-2:2003, p. 122: \"A class_of_inanimate_physical_object is a class_of_arranged\\-_individual whose members are not living.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:InanimatePhysicalObject;
              owl:annotatedTarget "ISO 15926-2:2003 'class_of_inanimate_physical_object'".
-_:autos10704 a owl:Axiom;
+_:autos11425 a owl:Axiom;
              rdfs:comment "BFO_0000031 is 'generically dependent continuant'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:InformationObject;
              owl:annotatedTarget obo:BFO_0000031.
-_:autos10705 a owl:Axiom;
+_:autos11426 a owl:Axiom;
              rdfs:comment "IAO_0000030 is 'information content entity', a subclass of BFO_0000031 'generically dependent continuant' defined in the Information Artifact Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:InformationObject;
              owl:annotatedTarget obo:IAO_0000030.
-_:autos10706 a owl:Axiom;
+_:autos11427 a owl:Axiom;
              rdfs:comment """'instant' is defined in OWL Time as \"A temporal entity with zero extent or duration\".""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Instant;
              owl:annotatedTarget time:Instant.
-_:autos10707 a owl:Axiom;
+_:autos11428 a owl:Axiom;
              rdfs:comment "obo:BFO_0000148 is 'zero-dimensional temporal region'";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:InstantRegion;
              owl:annotatedTarget obo:BFO_0000148.
-_:autos10708 a owl:Axiom;
+_:autos11429 a owl:Axiom;
              rdfs:comment "BFO_0000202 is 'temporal interval'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Interval;
              owl:annotatedTarget obo:BFO_0000202.
-_:autos10709 a owl:Axiom;
+_:autos11430 a owl:Axiom;
              rdfs:comment """'interval' is defined in OWL Time as \"A temporal entity with an extent or duration\".""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Interval;
              owl:annotatedTarget time:Interval.
-_:autos10710 a owl:Axiom;
+_:autos11431 a owl:Axiom;
              rdfs:comment "BFO_0000038 is 'one-dimensional temporal region' in BFO-ISO.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:IntervalRegion;
              owl:annotatedTarget obo:BFO_0000038.
-_:autos10711 a owl:Axiom;
+_:autos11432 a owl:Axiom;
              rdfs:comment "BFO_0000004 is 'independent continuant'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Object;
              owl:annotatedTarget obo:BFO_0000004;
              skos:scopeNote "In IDO, ’information object’ is represented as a subclass of ’object’. According to the BFO literature, and applied in the Information Artifact Ontology and other BFO compliant ontologies, information artifacts are (multiply) dependent objects. a /sibling/ class to ’independent continuant’ rather than a subclass, as used in IDO.".
-_:autos10712 a owl:Axiom;
+_:autos11433 a owl:Axiom;
              rdfs:comment """From the DOLCE description of 'endurant': \"The main characteristic of endurants is that all of them are independent essential wholes. ...\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Object;
              owl:annotatedTarget dol:endurant.
-_:autos10713 a owl:Axiom;
+_:autos11434 a owl:Axiom;
              rdfs:comment "Organization is a class in the IOF Core ontology.";
              owl:annotatedProperty iof-av:adaptedFrom;
              owl:annotatedSource lis:Organization;
              owl:annotatedTarget iof-core:Organization.
-_:autos10715 a owl:Axiom;
+_:autos11436 a owl:Axiom;
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:PhysicalObject;
              owl:annotatedTarget obo:BFO_0000040;
              iof-av:explanatoryNote "BFO_0000040 is 'material entity'.".
-_:autos10716 a owl:Axiom;
+_:autos11437 a owl:Axiom;
              rdfs:comment """IDO asserts that 'physical object' and 'activity' are disjunct classes. In contrast to this, and according to a 4D approach, ISO 15926-2:2003, p. 26, states that \"physical_object and activity are not mutually exclusive. A possible_individual can be both\".""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:PhysicalObject;
              owl:annotatedTarget "ISO 15926-2:2003 'physical_object'".
-_:autos10717 a owl:Axiom;
+_:autos11438 a owl:Axiom;
              rdfs:comment """QUDT explains 'quantity kind' as, \"any observable property that can be measured and quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:PhysicalQuantity;
              owl:annotatedTarget qudt:QuantityKind.
-_:autos10718 a owl:Axiom;
+_:autos11439 a owl:Axiom;
              rdfs:comment """DOLCE defines 'physical-quality' as, \"A quality inherent in a physical endurant.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:PhysicalQuantity;
              owl:annotatedTarget dol:physical-quality.
-_:autos10719 a owl:Axiom;
+_:autos11440 a owl:Axiom;
              rdfs:comment """OM2 explains 'quantity' as, \"A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:PhysicalQuantity;
              owl:annotatedTarget om:Quantity.
-_:autos10720 a owl:Axiom;
+_:autos11441 a owl:Axiom;
              rdfs:comment """SSN offers the following examples for ObservableProperty, a subclass of Property: \"The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:PhysicalQuantity;
              owl:annotatedTarget ssn:ObservableProperty.
-_:autos10721 a owl:Axiom;
+_:autos11442 a owl:Axiom;
              rdfs:comment """PATO_0001018 is 'physical quality', defined in the Information Artifact Ontology as \"A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.\" Note that this is distinct from 'physical object quality'; see annotation to lis:Quality.""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:PhysicalQuantity;
              owl:annotatedTarget obo:PATO_0001018.
-_:autos10722 a owl:Axiom;
+_:autos11443 a owl:Axiom;
              rdfs:comment "BFO_0000017 is 'realizable entity'.";
              owl:annotatedProperty iof-av:adaptedFrom;
              owl:annotatedSource lis:Potential;
              owl:annotatedTarget obo:BFO_0000017.
-_:autos10723 a owl:Axiom;
+_:autos11444 a owl:Axiom;
              rdfs:comment "BFO_0000019 is 'quality'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Quality;
              owl:annotatedTarget obo:BFO_0000019.
-_:autos10724 a owl:Axiom;
+_:autos11445 a owl:Axiom;
              rdfs:comment "PATO_0000001 is 'quality'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Quality;
              owl:annotatedTarget obo:PATO_0000001.
-_:autos10725 a owl:Axiom;
+_:autos11446 a owl:Axiom;
              rdfs:comment """PATO_0001241 is 'physical object quality', defined in the Information Artifact Ontology as \"A quality which inheres in a continuant\".""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Quality;
              owl:annotatedTarget obo:PATO_0001241.
-_:autos10726 a owl:Axiom;
+_:autos11447 a owl:Axiom;
              rdfs:comment """DOLCE describes qualities as follows: \"Qualities can be seen as the basic entities we can perceive or measure: shapes, colors, sizes, sounds, smells, as well as weights, lengths, electrical charges... 'Quality' is often used as a synonymous of 'property', but this is not the case in this upper ontology: qualities are particulars, properties are universals.  Qualities inhere to entities: every entity (including qualities themselves) comes with certain qualities, which exist as long as the entity exists.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Quality;
              owl:annotatedTarget dol:quality.
-_:autos10727 a owl:Axiom;
+_:autos11448 a owl:Axiom;
              rdfs:comment """SSN offers the following as an example for ActuatableProperty, a subclass of Property: \"A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Quality;
              owl:annotatedTarget ssn:ActuatableProperty.
-_:autos10728 a owl:Axiom;
+_:autos11449 a owl:Axiom;
              rdfs:comment """SSN defines 'Property' as follows (2017): \"A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Quality;
              owl:annotatedTarget ssn:Property.
-_:autos10729 a owl:Axiom;
+_:autos11450 a owl:Axiom;
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Quality;
              owl:annotatedTarget "ISO 15926-2:2003 'property'";
              iof-av:explanatoryNote """In ISO 15926-2:2003, the term \"quality or characteristic\" is used to explain what the entity type 'property' represents (clause 5.2.26.5, notes 1 and 2). Note 2 reads, \"The types of characteristic or quality, such as temperature or density, are instances of class_of_property.\"""".
-_:autos10731 a owl:Axiom;
+_:autos11452 a owl:Axiom;
              rdfs:comment "IAO_0000109 is 'measurement datum', a class in the Information Artifact Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:QualityDatum;
              owl:annotatedTarget obo:IAO_0000109.
-_:autos10732 a owl:Axiom;
+_:autos11453 a owl:Axiom;
              rdfs:comment "BFO_0000023 is 'role'.";
              owl:annotatedProperty iof-av:adaptedFrom;
              owl:annotatedSource lis:Role;
              owl:annotatedTarget obo:BFO_0000023.
-_:autos10736 a owl:Axiom;
+_:autos11457 a owl:Axiom;
              rdfs:comment "IAO_0000032 is 'scalar measurement datum', a class in the Information Artifact Ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:ScalarQuantityDatum;
              owl:annotatedTarget obo:IAO_0000032.
-_:autos10737 a owl:Axiom;
+_:autos11458 a owl:Axiom;
              rdfs:comment """QUDT describes 'quantity value' as follows. \"A Quantity Value expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:ScalarQuantityDatum;
              owl:annotatedTarget qudt:QuantityValue.
-_:autos10738 a owl:Axiom;
+_:autos11459 a owl:Axiom;
              rdfs:comment """OM 2 describes 'measure' as follows. \"A measure combines a number to a unit of measure. For example, '3 m' is a measure.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:ScalarQuantityDatum;
              owl:annotatedTarget om:Measure.
-_:autos10739 a owl:Axiom;
+_:autos11460 a owl:Axiom;
              rdfs:comment "QUDT provides the following subclasses of 'scale': 'Enumeration scale', 'Interval scale', 'Nominal scale', 'Ordinal scale', 'Ratio scale'. Note that the notion of nominal scales diverges in being a coding scheme, with numbers not implying relative magnitude.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Scale;
              owl:annotatedTarget qudt:Scale.
-_:autos10740 a owl:Axiom;
+_:autos11461 a owl:Axiom;
              rdfs:comment "BFO_0000029 is 'site'";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Site;
              owl:annotatedTarget obo:BFO_0000029.
-_:autos10741 a owl:Axiom;
+_:autos11462 a owl:Axiom;
              rdfs:comment "BFO_0000006 is 'spatial region'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:SpatialLocation;
              owl:annotatedTarget obo:BFO_0000006.
-_:autos10742 a owl:Axiom;
+_:autos11463 a owl:Axiom;
              rdfs:comment "BFO_0000011 is 'spatiotemporal region'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:SpatiotemporalRegion;
              owl:annotatedTarget obo:BFO_0000011.
-_:autos10743 a owl:Axiom;
+_:autos11464 a owl:Axiom;
              rdfs:comment """ISO 15926-2:2003, p. 112, states, \"A stream is a physical_object that is material or energy moving along a path, where the path is the basis of identity and may be constrained. The stream consists of the temporal parts of those things that are in the stream whilst they are in it.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Stream;
              owl:annotatedTarget "ISO 15926-2:2003 'stream'".
-_:autos10745 a owl:Axiom;
+_:autos11466 a owl:Axiom;
              rdfs:comment """The SSN definition of 'System' (2017): \"System is a unit of abstraction for pieces of infrastructure that implement Procedures. A System may have components, its subsystems, which are other Systems.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:System;
              owl:annotatedTarget ssn:System.
-_:autos10746 a owl:Axiom;
+_:autos11467 a owl:Axiom;
              rdfs:comment "BFO_0000003 is 'occurrent'.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Temporal;
              owl:annotatedTarget obo:BFO_0000003.
-_:autos10747 a owl:Axiom;
+_:autos11468 a owl:Axiom;
              rdfs:comment """From the DOLCE description of 'perdurant': \"Perdurants (AKA occurrences) comprise what are variously called events, processes, phenomena, activities and states.\"""";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:Temporal;
              owl:annotatedTarget dol:perdurant.
-_:autos10748 a owl:Axiom;
+_:autos11469 a owl:Axiom;
              rdfs:comment "BFO_0000008 is 'temporal region'";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:TemporalRegion;
              owl:annotatedTarget obo:BFO_0000008.
-_:autos10749 a owl:Axiom;
+_:autos11470 a owl:Axiom;
              rdfs:comment "UO_0000000 is 'unit', a class in the OBO Units of measure ontology.";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:UnitOfMeasure;
              owl:annotatedTarget obo:UO_0000000.
-_:autos10750 a owl:Axiom;
+_:autos11471 a owl:Axiom;
              rdfs:comment "'unit' is a class in the Ontology of units of Measure (OM 2).";
              owl:annotatedProperty rdfs:seeAlso;
              owl:annotatedSource lis:UnitOfMeasure;
              owl:annotatedTarget om:Unit.
-_:autos10751 a owl:AllDisjointClasses;
+_:autos11472 a owl:AllDisjointClasses;
              owl:members (lis:Activity                          lis:SpatiotemporalRegion                          lis:TemporalRegion).
-_:autos10755 a owl:AllDisjointClasses;
+_:autos11476 a owl:AllDisjointClasses;
              owl:members (lis:Dependent                          lis:Object                          lis:Temporal).
-_:autos10759 a owl:AllDisjointClasses;
+_:autos11480 a owl:AllDisjointClasses;
              owl:members (lis:InformationObject                          lis:Location                          lis:Organization                          lis:PhysicalObject).
 dc:rights a owl:AnnotationProperty;
           rdfs:isDefinedBy "http://purl.org/dc/elements/1.1/";
