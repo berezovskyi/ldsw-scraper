@@ -72,6 +72,8 @@ public class HostScraper
         };
 
         IGraph? validGraph = null;
+        var successfulFormats = new HashSet<string>();
+        bool validGraphIsomorphicToDisk = false;
 
         foreach (var (accept, ext, name) in formats)
         {
@@ -80,94 +82,45 @@ public class HostScraper
             {
                 if (RdfHandler.TryParse(content, accept, out var graph, out _))
                 {
-                    // Use a temp file first
-                    var tempPath = Path.GetTempFileName();
-                    File.WriteAllText(tempPath, content);
-
                     var finalPath = GetOutputPath(task.Path) + ext;
-                    EnsureDirectory(finalPath);
-                    MoveOrReplace(tempPath, finalPath);
+                    bool isIsomorphic = false;
+
+                    // If file exists, check isomorphism
+                    if (File.Exists(finalPath))
+                    {
+                        try
+                        {
+                            var existingContent = File.ReadAllText(finalPath);
+                            if (RdfHandler.TryParse(existingContent, accept, out var existingGraph, out _))
+                            {
+                                if (new GraphMatcher().Equals(graph, existingGraph))
+                                {
+                                    isIsomorphic = true;
+                                }
+                            }
+                        }
+                        catch { /* ignore errors */ }
+                    }
+
+                    if (isIsomorphic)
+                    {
+                        sb.AppendLine($"  {name}: Skipped (Isomorphic)");
+                        if (validGraph == null)
+                        {
+                            validGraphIsomorphicToDisk = true;
+                        }
+                    }
+                    else
+                    {
+                        var tempPath = Path.GetTempFileName();
+                        File.WriteAllText(tempPath, content);
+                        EnsureDirectory(finalPath);
+                        MoveOrReplace(tempPath, finalPath);
+                        sb.AppendLine($"  {name}: OK");
+                    }
 
                     validGraph ??= graph; // Keep the first valid graph
-                    sb.AppendLine($"  {name}: OK");
-                }
-                else
-                {
-                    sb.AppendLine($"  {name}: Invalid Format");
-                }
-            }
-            else
-            {
-                sb.AppendLine($"  {name}: Failed");
-            }
-            await Task.Delay(TimeSpan.FromSeconds(_config.DelaySeconds));
-        }
-
-        // Transcoding
-        // "If the current run produced no n-triples file, for example, but one exists in the repo, we must generate it from the valid graph."
-        // This means if we HAVE a valid graph, we should ensure all formats exist on disk.
-        // If they exist already, we might overwrite them if we generated a better one, OR we just generate missing ones.
-        // The comment says: "If the current run produced no n-triples file... but one exists in the repo, we must generate it from the valid graph."
-        // Wait, if it exists in the repo, we assume it's stale or we just want to update it?
-        // Actually, if the *fetch* failed for n-triples, but we got Turtle, we should generate n-triples.
-        // The comment implies: don't get confused by old files. If we failed to fetch it, we should regenerate it if possible.
-        // So, regardless of whether file exists or not, if we have a valid graph, we should probably ensure consistency by regenerating derived formats if we didn't just fetch them.
-        // But to be safe and efficient: if we successfully fetched it, we kept it. If we didn't fetch it (failed or invalid), but we have a valid graph from another format, we generate it.
-
-        if (validGraph != null)
-        {
-            foreach (var (accept, ext, name) in formats)
-            {
-                // If we successfully fetched this format in this run, we shouldn't regenerate it (it's the source of truth).
-                // But tracking which one was fetched is tricky without extra state.
-                // However, if we write to disk immediately upon fetch, we can check if file was modified recently? No, that's brittle.
-                // Let's rely on the fact that if RdfHandler.TryParse succeeded, we overwrote the file.
-                // So if we just fetched it, we don't need to regenerate.
-                // But we can just overwrite it again with the graph we parsed? That ensures normalization.
-                // But "exact" fetching is preferred over transcoding.
-                // The issue is distinguishing "failed to fetch" vs "successfully fetched".
-                // Let's just regenerate IF we didn't fetch it successfully.
-
-                // We can check if we just wrote it?
-                // Or just try to regenerate everything except the one we got validGraph from?
-                // Actually, validGraph is from the *first* successful fetch.
-                // Later fetches might also be successful.
-
-                // Simplified logic: If we have a valid graph, try to generate all formats that we didn't successfully fetch in this loop.
-                // But we need to know which ones we fetched.
-
-                // Let's use a set to track success.
-                // But wait, the buffering makes this logic local.
-
-                // Refactoring slightly to track success.
-             }
-        }
-
-        // RE-IMPLEMENTING CONNEG LOOP WITH STATE TRACKING
-        var successfulFormats = new HashSet<string>();
-        sb.Clear(); // Clear and restart log buffer
-        sb.AppendLine($"Processing {task.Uri} ({task.Type})");
-
-        validGraph = null;
-
-        foreach (var (accept, ext, name) in formats)
-        {
-            var content = await FetchAsync(task.Uri, accept);
-            bool success = false;
-            if (content != null)
-            {
-                if (RdfHandler.TryParse(content, accept, out var graph, out _))
-                {
-                    var tempPath = Path.GetTempFileName();
-                    File.WriteAllText(tempPath, content);
-                    var finalPath = GetOutputPath(task.Path) + ext;
-                    EnsureDirectory(finalPath);
-                    MoveOrReplace(tempPath, finalPath);
-
-                    validGraph ??= graph;
                     successfulFormats.Add(ext);
-                    success = true;
-                    sb.AppendLine($"  {name}: OK");
                 }
                 else
                 {
@@ -187,39 +140,22 @@ public class HostScraper
             {
                 if (!successfulFormats.Contains(ext))
                 {
+                    var finalPath = GetOutputPath(task.Path) + ext;
+
+                    // If the source (validGraph) is isomorphic to its on-disk counterpart,
+                    // we skip generating derived formats if they already exist, assuming they are consistent.
+                    if (validGraphIsomorphicToDisk && File.Exists(finalPath))
+                    {
+                         sb.AppendLine($"  {name}: Skipped (Source Isomorphic)");
+                         continue;
+                    }
+
                     try
                     {
-                        var finalPath = GetOutputPath(task.Path) + ext;
-                        bool shouldWrite = true;
-
-                        if (File.Exists(finalPath))
-                        {
-                            try
-                            {
-                                var existingContent = File.ReadAllText(finalPath);
-                                if (RdfHandler.TryParse(existingContent, accept, out var existingGraph, out _))
-                                {
-                                    var matcher = new GraphMatcher();
-                                    if (matcher.Equals(validGraph, existingGraph))
-                                    {
-                                        shouldWrite = false;
-                                        sb.AppendLine($"  {name}: Skipped (Isomorphic)");
-                                    }
-                                }
-                            }
-                            catch
-                            {
-                                // If reading or parsing existing file fails, we overwrite it.
-                            }
-                        }
-
-                        if (shouldWrite)
-                        {
-                            var content = RdfHandler.Generate(validGraph, accept);
-                            EnsureDirectory(finalPath);
-                            File.WriteAllText(finalPath, content);
-                            sb.AppendLine($"  {name}: Generated");
-                        }
+                        var content = RdfHandler.Generate(validGraph, accept);
+                        EnsureDirectory(finalPath);
+                        File.WriteAllText(finalPath, content);
+                        sb.AppendLine($"  {name}: Generated");
                     }
                     catch (Exception)
                     {
