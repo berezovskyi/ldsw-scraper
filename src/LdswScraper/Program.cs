@@ -1,5 +1,6 @@
 using System.CommandLine;
 using LdswScraper;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -29,6 +30,12 @@ rootCommand.Options.Add(parallelOption);
 rootCommand.Options.Add(timeoutOption);
 rootCommand.Options.Add(inputFileOption);
 
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(AppContext.BaseDirectory)
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: false)
+    .AddEnvironmentVariables()
+    .Build();
+
 rootCommand.SetAction((ParseResult parseResult) =>
 {
     var parallelism = parseResult.GetValue(parallelOption);
@@ -40,14 +47,14 @@ rootCommand.SetAction((ParseResult parseResult) =>
         throw new ArgumentException("Input file path cannot be empty.");
     }
 
-    var config = new ScraperConfig(parallelism, timeout);
+    var scraperConfig = new ScraperConfig(parallelism, timeout);
 
     var services = new ServiceCollection();
     services.AddHttpClient();
     services.AddLogging(builder =>
     {
+        builder.AddConfiguration(configuration.GetSection("Logging"));
         builder.AddConsole();
-        builder.SetMinimumLevel(LogLevel.Information);
     });
 
     var serviceProvider = services.BuildServiceProvider();
@@ -63,10 +70,10 @@ rootCommand.SetAction((ParseResult parseResult) =>
         catch { return "unknown"; }
     });
 
-    var options = new ParallelOptions { MaxDegreeOfParallelism = config.Parallelism };
+    var options = new ParallelOptions { MaxDegreeOfParallelism = scraperConfig.Parallelism };
 
     // Blocking call to async method
-    RunScraperAsync(tasksByHost, httpClientFactory, config, serviceProvider.GetRequiredService<ILoggerFactory>(), options).GetAwaiter().GetResult();
+    RunScraperAsync(tasksByHost, httpClientFactory, scraperConfig, serviceProvider.GetRequiredService<ILoggerFactory>(), options).GetAwaiter().GetResult();
 
     return Task.CompletedTask;
 });
