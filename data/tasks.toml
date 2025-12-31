@@ -1,0 +1,619 @@
+# Scraping tasks configuration
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dcs#"
+path = "oslc/jazz/dcs"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/prov-o"
+path = "w3c/PROV/prov-o"
+
+[[tasks]]
+type = "exact"
+uri = "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/ontology.ttl"
+path = "ifcOWL/IFC/4.2/ifc.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "exact"
+uri = "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/ontology.xml"
+path = "ifcOWL/IFC/4.2/ifc.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://w3id.org/express#"
+path = "ifcOWL/express"
+
+[[tasks]]
+type = "conneg"
+uri = "http://w3id.org/list#"
+path = "ifcOWL/list"
+
+[[tasks]]
+type = "conneg"
+uri = "http://qudt.org/schema/qudt"
+path = "qudt/qudt"
+
+[[tasks]]
+type = "conneg"
+uri = "http://qudt.org/2.1/schema/shacl/qudt"
+path = "qudt/shacl/qudt"
+
+[[tasks]]
+type = "conneg"
+uri = "http://qudt.org/2.1/schema/shacl/datatype"
+path = "qudt/shacl/qudt_datatype"
+
+[[tasks]]
+type = "conneg"
+uri = "http://qudt.org/2.1/schema/shacl/overlay/qudt"
+path = "qudt/shacl/qudt_overlay"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.linkedmodel.org/schema/dtype"
+path = "qudt/linkedmodels_dtype/dtype"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.linkedmodel.org/schema/vaem"
+path = "qudt/linkedmodels_vaem/vaem"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/mec#"
+path = "oslc/jazz/mec"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/enterprise_agile#"
+path = "oslc/jazz/enterprise_agile"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/functional_safety#"
+path = "oslc/jazz/functional_safety"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/aspice#"
+path = "oslc/jazz/aspice"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/discovery#"
+path = "oslc/jazz/discovery"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/sse#"
+path = "oslc/jazz/sse"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/process/shapes/Iteration"
+path = "oslc/jazz/process_shapes_Iteration"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/process#"
+path = "oslc/jazz/process"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/process/shapes/ProjectArea"
+path = "oslc/jazz/process_shapes_ProjectArea"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/process/shapes/TeamArea"
+path = "oslc/jazz/process_shapes_TeamArea"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/process/shapes/Timeline"
+path = "oslc/jazz/process_shapes_Timeline"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/validity#"
+path = "oslc/jazz/validity"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ccm#"
+path = "oslc/jazz/ccm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/diagram#"
+path = "oslc/jazz/dm_diagram"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/document#"
+path = "oslc/jazz/dm_document"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/linktypes#"
+path = "oslc/jazz/dm_linktypes"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/sketcher#"
+path = "oslc/jazz/dm_sketcher"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/pd/extensions#"
+path = "oslc/jazz/pd_extensions"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/psm/focalpoint/datatypes#"
+path = "oslc/jazz/psm_focalpoint_datatypes"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/psm/focalpoint#"
+path = "oslc/jazz/psm_focalpoint"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/pd#"
+path = "oslc/jazz/pd"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/qm/rqm#"
+path = "oslc/jazz/qm_rqm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/rm/linktypes#"
+path = "oslc/jazz/rm_linktypes"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/rm#"
+path = "oslc/jazz/rm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/rhapsody/sysml#"
+path = "oslc/jazz/dm_rhapsody_sysml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/rhapsody/testing#"
+path = "oslc/jazz/dm_rhapsody_testing"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/rhapsody/uml#"
+path = "oslc/jazz/dm_rhapsody_uml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/rsa/deployment/core#"
+path = "oslc/jazz/dm_rsa_deployment_core"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/rsa/uml#"
+path = "oslc/jazz/dm_rsa_uml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/reporting/sparqlgateway#"
+path = "oslc/jazz/reporting_sparqlgateway"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/rtc/scm/config#"
+path = "oslc/jazz/rtc_scm_config"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/qm/rtcp#"
+path = "oslc/jazz/qm_rtcp"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/reporting/data/dictionary#"
+path = "oslc/jazz/reporting_data_dictionary"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/am/rmm#"
+path = "oslc/jazz/am_rmm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/scm#"
+path = "oslc/jazz/scm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/rhapsody/HarmonySE#"
+path = "oslc/jazz/dm_rhapsody_HarmonySE"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/qm/rqm/labmanagement#"
+path = "oslc/jazz/qm_rqm_labmanagement"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#"
+path = "oslc/jazz/dm_rhapsody_UPDM2_MODAF"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/admin/health#"
+path = "oslc/jazz/ism_admin_health"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/admin#"
+path = "oslc/jazz/ism_admin"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/perfmon/tt#"
+path = "oslc/jazz/ism_perfmon_tt"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/perfmon/itm#"
+path = "oslc/jazz/ism_perfmon_itm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/event/omnibus#"
+path = "oslc/jazz/ism_event_omnibus"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/event/omnibus/itnm#"
+path = "oslc/jazz/ism_event_omnibus_itnm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/event/omnibus/misc#"
+path = "oslc/jazz/ism_event_omnibus_misc"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/event/omnibus/tbsm#"
+path = "oslc/jazz/ism_event_omnibus_tbsm"
+
+[[tasks]]
+type = "conneg"
+uri = "http://jazz.net/ns/ism/registry#"
+path = "oslc/jazz/ism_registry"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/csvw"
+path = "w3c/CVSW/csvw"
+
+[[tasks]]
+type = "conneg"
+uri = "https://www.w3.org/ns/ldp"
+path = "w3c/LDP/ldp"
+
+[[tasks]]
+type = "conneg"
+uri = "https://www.w3.org/ns/activitystreams"
+path = "w3c/ActivityStreams/as"
+
+[[tasks]]
+type = "conneg"
+uri = "http://purl.org/NET/scovo#"
+path = "scovo/scovo"
+
+[[tasks]]
+type = "exact"
+uri = "http://purl.org/linked-data/cube#"
+path = "w3c/Data-Cube/qb.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "conneg"
+uri = "https://www.w3.org/ns/org#"
+path = "w3c/org/org"
+
+[[tasks]]
+type = "exact"
+uri = "http://purl.org/goodrelations/v1"
+path = "goodrelations/goodrelations.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "exact"
+uri = "https://spec.ottr.xyz/wOTTR/0.4.5/all.owl.ttl"
+path = "OTTR/all.owl.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "exact"
+uri = "http://spec.ottr.xyz/wOTTR/0.4/core-vocabulary.owl.ttl"
+path = "OTTR/core-vocabulary.owl.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "exact"
+uri = "http://spec.ottr.xyz/wOTTR/0.4/core-grammar.shacl.ttl"
+path = "OTTR/core-grammar.shacl.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "exact"
+uri = "http://spec.ottr.xyz/rOTTR/0.2/types.owl.ttl"
+path = "OTTR/types.owl.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "exact"
+uri = "http://spec.ottr.xyz/rOTTR/0.2/types.shacl.ttl"
+path = "OTTR/types.shacl.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "exact"
+uri = "http://spec.ottr.xyz/rOTTR/0.2/puntypes.shacl.ttl"
+path = "OTTR/puntypes.shacl.ttl"
+accept = "text/turtle"
+
+[[tasks]]
+type = "exact"
+uri = "http://vocab.org/waiver/vocab.rdf"
+path = "WAIVER/waiver.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "conneg"
+uri = "https://www.w3.org/ns/sparql-service-description"
+path = "w3c/SPARQL-SD/sd"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rdfs.org/ns/void"
+path = "w3c/VoID/void"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/prov"
+path = "w3c/PROV/prov"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/adms"
+path = "w3c/ADMS/adms"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/lis14/ont/core"
+path = "Industrial-Data-Ontology/ido-core"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/core"
+path = "Industrial-Data-Ontology/plm-core"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt"
+path = "Industrial-Data-Ontology/plm-chebi"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/process"
+path = "Industrial-Data-Ontology/plm-process"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/equipment"
+path = "Industrial-Data-Ontology/plm-equipment"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/uom"
+path = "Industrial-Data-Ontology/plm-uom"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/datasheet"
+path = "Industrial-Data-Ontology/plm-datasheet"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/norsok-z001"
+path = "Industrial-Data-Ontology/plm-norsok-z001"
+
+[[tasks]]
+type = "conneg"
+uri = "http://rds.posccaesar.org/ontology/plm/ont/core-collect"
+path = "Industrial-Data-Ontology/plm-core-collect"
+
+[[tasks]]
+type = "exact"
+uri = "https://www.w3.org/2006/03/wn/wn20/schemas/wnfull.rdfs"
+path = "wordnet/wnfull.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "exact"
+uri = "https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl"
+path = "Basic-Formal-Ontology/bfo.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "exact"
+uri = "http://xmlns.com/wot/0.1/index.rdf"
+path = "web-of-trust/wot.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/solid/terms"
+path = "solid/solid-terms"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/pim/space"
+path = "w3c/pim/space"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/pim/arg"
+path = "w3c/pim/arg"
+
+[[tasks]]
+type = "shex"
+uri = "http://www.w3.org/2002/12/cal/ical"
+path = "w3c/w3c-ical/ical"
+
+[[tasks]]
+type = "exact"
+uri = "https://www.w3.org/2002/12/cal/icaltzd"
+path = "w3c/w3c-ical/icaltzd.rdf"
+accept = "applications/rdf+xml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/auth/acl"
+path = "w3c/auth/WAC/acl"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/auth/cert"
+path = "w3c/auth/WebID-TLS/cert"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/posix/stat"
+path = "w3c/w3c-posix/stat"
+
+[[tasks]]
+type = "exact"
+uri = "http://usefulinc.com/ns/doap"
+path = "doap/doap.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://purl.org/dc/elements/1.1/"
+path = "dc/elements/dc"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/2007/ont/http"
+path = "w3c/w3c-ont/http"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/2007/ont/httph"
+path = "w3c/w3c-ont/httph"
+
+[[tasks]]
+type = "exact"
+uri = "http://www.w3.org/2004/02/skos/core"
+path = "skos/skos-core.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://semweb.mmlab.be/ns/rml"
+path = "rml/rml-vocab/rml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://semweb.mmlab.be/ns/rml-target"
+path = "rml/rml-target/rmlt"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/ns/r2rml"
+path = "rml/r2rml-vocab/r2rml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://open-services.net/ns/sysmlv2"
+path = "oslc/oslc-sysmlv2/sysmlv2"
+
+[[tasks]]
+type = "conneg"
+uri = "http://open-services.net/ns/sysmlv2/shapes/20240801"
+path = "oslc/oslc-sysmlv2/sysmlv2-shapes"
+
+[[tasks]]
+type = "conneg"
+uri = "https://open-services.net/ns/config"
+path = "oslc/oslc-config/config"
+
+[[tasks]]
+type = "conneg"
+uri = "https://open-services.net/ns/config/shapes/1.0/"
+path = "oslc/oslc-config/config-shapes"
+
+[[tasks]]
+type = "conneg"
+uri = "https://open-services.net/ns/core/trs"
+path = "oslc/oslc-trs/trs"
+
+[[tasks]]
+type = "conneg"
+uri = "https://open-services.net/ns/core/trspatch"
+path = "oslc/oslc-trs/trspatch"
+
+[[tasks]]
+type = "conneg"
+uri = "https://open-services.net/ns/trs/shapes/3.0/"
+path = "oslc/oslc-trs/trs-shapes"
+
+[[tasks]]
+type = "conneg"
+uri = "https://open-services.net/ns/core"
+path = "oslc/oslc-core/core"
+
+[[tasks]]
+type = "conneg"
+uri = "https://open-services.net/ns/core/shapes/3.0"
+path = "oslc/oslc-core/core-shapes"
+
+[[tasks]]
+type = "conneg"
+uri = "http://purl.org/dc/terms/"
+path = "dc/terms/dcterms"
+
+[[tasks]]
+type = "exact"
+uri = "https://purl.org/vocab/vann/vann-vocab-20100607.rdf"
+path = "vann/vann-vocab.rdf"
+accept = "application/rdf+xml"
+
+[[tasks]]
+type = "conneg"
+uri = "http://xmlns.com/foaf/0.1/"
+path = "foaf/foaf"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/1999/02/22-rdf-syntax-ns"
+path = "w3c/rdf/rdf"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/2000/01/rdf-schema"
+path = "w3c/rdf/rdfs"
+
+[[tasks]]
+type = "conneg"
+uri = "http://www.w3.org/2002/07/owl#"
+path = "w3c/owl"
