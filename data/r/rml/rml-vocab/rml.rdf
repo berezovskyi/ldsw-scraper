@@ -41,8 +41,8 @@
   </owl:NamedIndividual>
   <owl:Ontology rdf:about="http://semweb.mmlab.be/ns/rml#">
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
-    <dcterms:creator rdf:nodeID="autos8684" />
-    <dcterms:creator rdf:nodeID="autos8685" />
+    <dcterms:creator rdf:nodeID="autos6820" />
+    <dcterms:creator rdf:nodeID="autos6821" />
     <dcterms:description xml:lang="en">Generic Mapping Language for RDF (RDB/CSV/TSV/XML/JSON/... to RDF) - Vocabulary description</dcterms:description>
     <dcterms:issued rdf:datatype="&xsd;date">2013-07-01</dcterms:issued>
     <dcterms:modified rdf:datatype="&xsd;date">2014-09-10</dcterms:modified>
@@ -62,9 +62,9 @@
     <rdfs:comment xml:lang="en">Represents a logical source.</rdfs:comment>
     <rdfs:label rdf:datatype="&xsd;string">Logical Source</rdfs:label>
     <rdfs:subClassOf rdf:resource="&owl;Thing" />
-    <rdfs:subClassOf rdf:nodeID="autos8718" />
-    <rdfs:subClassOf rdf:nodeID="autos8720" />
-    <rdfs:subClassOf rdf:nodeID="autos8721" />
+    <rdfs:subClassOf rdf:nodeID="autos6844" />
+    <rdfs:subClassOf rdf:nodeID="autos6846" />
+    <rdfs:subClassOf rdf:nodeID="autos6848" />
   </owl:Class>
   <owl:Class rdf:about="http://semweb.mmlab.be/ns/rml#ReferenceFormulation">
     <rdfs:comment xml:lang="en">Represents a Reference Formulation.</rdfs:comment>
@@ -73,8 +73,8 @@
   <rdf:Description rdf:about="http://semweb.mmlab.be/ns/rml#TriplesMap">
     <rdfs:comment xml:lang="en">Represents a triples map.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&owl;Thing" />
-    <rdfs:subClassOf rdf:nodeID="autos8712" />
-    <rdfs:subClassOf rdf:nodeID="autos8714" />
+    <rdfs:subClassOf rdf:nodeID="autos6840" />
+    <rdfs:subClassOf rdf:nodeID="autos6841" />
   </rdf:Description>
   <owl:DatatypeProperty rdf:about="http://semweb.mmlab.be/ns/rml#iterator">
     <rdfs:comment xml:lang="en">an expression qualified according to the reference formulation specified for pointing to an extract of the source data. </rdfs:comment>
@@ -131,10 +131,10 @@
     <rdfs:subPropertyOf rdf:resource="http://semweb.mmlab.be/ns/rml#reference" />
   </rdf:Description>
   <rdf:Description rdf:about="&rr;object">
-    <rdfs:domain rdf:nodeID="autos8696" />
+    <rdfs:domain rdf:nodeID="autos6824" />
   </rdf:Description>
   <rdf:Description rdf:about="&rr;predicate">
-    <rdfs:domain rdf:nodeID="autos8702" />
+    <rdfs:domain rdf:nodeID="autos6830" />
   </rdf:Description>
   <rdf:Description rdf:about="&rr;sqlQuery">
     <rdfs:subPropertyOf rdf:resource="http://semweb.mmlab.be/ns/rml#query" />
@@ -143,78 +143,78 @@
     <rdfs:subPropertyOf rdf:resource="http://semweb.mmlab.be/ns/rml#version" />
   </rdf:Description>
   <rdf:Description rdf:about="&rr;subject">
-    <rdfs:domain rdf:nodeID="autos8706" />
+    <rdfs:domain rdf:nodeID="autos6835" />
   </rdf:Description>
   <rdf:Description rdf:about="&rr;tableName">
     <rdfs:subPropertyOf rdf:resource="http://semweb.mmlab.be/ns/rml#source" />
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos8684">
+  <rdf:Description rdf:nodeID="autos6820">
     <foaf:name rdf:datatype="&xsd;string">Anastasia Dimou</foaf:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="autos8685">
+  <rdf:Description rdf:nodeID="autos6821">
     <foaf:name rdf:datatype="&xsd;string">Miel Vander Sande</foaf:name>
   </rdf:Description>
-  <owl:Class rdf:nodeID="autos8696">
+  <owl:Class rdf:nodeID="autos6824">
     <owl:intersectionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&rr;ObjectMap" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos8699" />
+        <rdf:first rdf:nodeID="autos6828" />
         <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </owl:intersectionOf>
   </owl:Class>
-  <owl:Restriction rdf:nodeID="autos8699">
+  <owl:Restriction rdf:nodeID="autos6828">
     <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxQualifiedCardinality>
     <owl:onDataRange rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="http://semweb.mmlab.be/ns/rml#reference" />
   </owl:Restriction>
-  <owl:Class rdf:nodeID="autos8702">
+  <owl:Class rdf:nodeID="autos6830">
     <owl:intersectionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&rr;PredicateMap" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos8705" />
+        <rdf:first rdf:nodeID="autos6833" />
         <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </owl:intersectionOf>
   </owl:Class>
-  <owl:Restriction rdf:nodeID="autos8705">
+  <owl:Restriction rdf:nodeID="autos6833">
     <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxQualifiedCardinality>
     <owl:onDataRange rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="http://semweb.mmlab.be/ns/rml#reference" />
   </owl:Restriction>
-  <owl:Class rdf:nodeID="autos8706">
+  <owl:Class rdf:nodeID="autos6835">
     <owl:intersectionOf rdf:parseType="Resource">
       <rdf:first rdf:resource="&rr;SubjectMap" />
       <rdf:rest rdf:parseType="Resource">
-        <rdf:first rdf:nodeID="autos8709" />
+        <rdf:first rdf:nodeID="autos6838" />
         <rdf:rest rdf:resource="&rdf;nil" />
       </rdf:rest>
     </owl:intersectionOf>
   </owl:Class>
-  <owl:Restriction rdf:nodeID="autos8709">
+  <owl:Restriction rdf:nodeID="autos6838">
     <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxQualifiedCardinality>
     <owl:onDataRange rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="http://semweb.mmlab.be/ns/rml#reference" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos8712">
+  <owl:Restriction rdf:nodeID="autos6840">
     <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
     <owl:onClass rdf:resource="http://semweb.mmlab.be/ns/rml#LogicalSource" />
     <owl:onProperty rdf:resource="http://semweb.mmlab.be/ns/rml#logicalSource" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos8714">
+  <owl:Restriction rdf:nodeID="autos6841">
     <owl:onClass rdf:resource="&rr;SubjectMap" />
     <owl:onProperty rdf:resource="&rr;subjectMap" />
     <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos8718">
+  <owl:Restriction rdf:nodeID="autos6844">
     <owl:onProperty rdf:resource="http://semweb.mmlab.be/ns/rml#referenceFormulation" />
     <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos8720">
+  <owl:Restriction rdf:nodeID="autos6846">
     <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
     <owl:onProperty rdf:resource="http://semweb.mmlab.be/ns/rml#iterator" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos8721">
+  <owl:Restriction rdf:nodeID="autos6848">
     <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
     <owl:onProperty rdf:resource="http://semweb.mmlab.be/ns/rml#source" />
   </owl:Restriction>

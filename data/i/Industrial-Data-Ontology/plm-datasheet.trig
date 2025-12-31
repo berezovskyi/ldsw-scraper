@@ -21,7 +21,7 @@
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 
 {
-    _:autos21740 a owl:Axiom;
+    _:autos21749 a owl:Axiom;
                  owl:annotatedProperty owl:deprecated;
                  owl:annotatedSource rdfs:comment;
                  owl:annotatedTarget "true";

@@ -4,10 +4,10 @@
 <http://www.w3.org/ns/solid/terms#> <http://www.w3.org/2000/01/rdf-schema#comment> "The Solid Terms vocabulary defines terms referenced in Solid specifications."@en .
 <http://www.w3.org/ns/solid/terms#> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/solid/terms#> .
 <http://www.w3.org/ns/solid/terms#> <http://purl.org/dc/terms/issued> "2015-11-16"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:autos13028 <http://purl.org/dc/terms/date> "2020-12-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:autos13028 <http://purl.org/dc/terms/replaces> <https://raw.githubusercontent.com/solid/vocab/46a5e2a8df1df48cd21a6ecdd422a37d29d39cbe/solid-terms.ttl> .
-_:autos13028 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/solid/vocab/pull/67> .
-<http://www.w3.org/ns/solid/terms#> <http://www.w3.org/2002/07/owl#versionInfo> _:autos13028 .
+_:autos13037 <http://purl.org/dc/terms/date> "2020-12-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:autos13037 <http://purl.org/dc/terms/replaces> <https://raw.githubusercontent.com/solid/vocab/46a5e2a8df1df48cd21a6ecdd422a37d29d39cbe/solid-terms.ttl> .
+_:autos13037 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/solid/vocab/pull/67> .
+<http://www.w3.org/ns/solid/terms#> <http://www.w3.org/2002/07/owl#versionInfo> _:autos13037 .
 <http://www.w3.org/ns/solid/terms#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "solid"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/solid/terms#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3.org/ns/solid/terms#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://www.w3.org/ns/solid/terms#Account> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .

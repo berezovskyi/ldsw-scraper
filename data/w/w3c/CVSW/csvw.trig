@@ -42,143 +42,124 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 
 {
-    _:autos11513 owl:unionOf _:autos11514.
-    _:autos11514 rdf:first csvw:TableGroup;
-                 rdf:rest _:autos11515.
-    _:autos11515 rdf:first csvw:Table;
-                 rdf:rest _:autos11516.
-    _:autos11516 rdf:first csvw:Schema;
-                 rdf:rest _:autos11517.
-    _:autos11517 rdf:first csvw:Column;
-                 rdf:rest rdf:nil.
-    _:autos11518 owl:unionOf _:autos11519.
-    _:autos11519 rdf:first csvw:ForeignKey;
-                 rdf:rest _:autos11520.
-    _:autos11520 rdf:first csvw:TableReference;
-                 rdf:rest rdf:nil.
-    _:autos11521 owl:unionOf _:autos11522.
-    _:autos11522 rdf:first csvw:TableGroup;
-                 rdf:rest _:autos11523.
-    _:autos11523 rdf:first csvw:Table;
-                 rdf:rest _:autos11524.
-    _:autos11524 rdf:first csvw:Schema;
-                 rdf:rest _:autos11525.
-    _:autos11525 rdf:first csvw:Column;
-                 rdf:rest rdf:nil.
-    _:autos11526 owl:unionOf _:autos11527.
-    _:autos11527 rdf:first csvw:Datatype;
+    _:autos11524 owl:unionOf _:autos11525.
+    _:autos11525 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11526.
+    _:autos11526 rdf:first csvw:Table;
+                 rdf:rest _:autos11527.
+    _:autos11527 rdf:first csvw:Schema;
                  rdf:rest _:autos11528.
-    _:autos11528 rdf:first xsd:string;
+    _:autos11528 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
     _:autos11529 owl:unionOf _:autos11530.
-    _:autos11530 rdf:first csvw:TableGroup;
+    _:autos11530 rdf:first csvw:ForeignKey;
                  rdf:rest _:autos11531.
-    _:autos11531 rdf:first csvw:Table;
-                 rdf:rest _:autos11532.
-    _:autos11532 rdf:first csvw:Schema;
-                 rdf:rest _:autos11533.
-    _:autos11533 rdf:first csvw:Column;
+    _:autos11531 rdf:first csvw:TableReference;
                  rdf:rest rdf:nil.
-    _:autos11534 owl:unionOf _:autos11535.
-    _:autos11535 rdf:first csvw:TableGroup;
+    _:autos11532 owl:unionOf _:autos11533.
+    _:autos11533 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11534.
+    _:autos11534 rdf:first csvw:Table;
+                 rdf:rest _:autos11535.
+    _:autos11535 rdf:first csvw:Schema;
                  rdf:rest _:autos11536.
-    _:autos11536 rdf:first csvw:Table;
+    _:autos11536 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
     _:autos11537 owl:unionOf _:autos11538.
-    _:autos11538 rdf:first csvw:Table;
+    _:autos11538 rdf:first csvw:Datatype;
                  rdf:rest _:autos11539.
-    _:autos11539 rdf:first csvw:Schema;
+    _:autos11539 rdf:first xsd:string;
                  rdf:rest rdf:nil.
     _:autos11540 owl:unionOf _:autos11541.
-    _:autos11541 rdf:first csvw:NumericFormat;
+    _:autos11541 rdf:first csvw:TableGroup;
                  rdf:rest _:autos11542.
-    _:autos11542 rdf:first xsd:string;
+    _:autos11542 rdf:first csvw:Table;
+                 rdf:rest _:autos11543.
+    _:autos11543 rdf:first csvw:Schema;
+                 rdf:rest _:autos11544.
+    _:autos11544 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11543 owl:unionOf _:autos11544.
-    _:autos11544 rdf:first csvw:TableGroup;
-                 rdf:rest _:autos11545.
-    _:autos11545 rdf:first csvw:Table;
-                 rdf:rest _:autos11546.
-    _:autos11546 rdf:first csvw:Schema;
+    _:autos11545 owl:unionOf _:autos11546.
+    _:autos11546 rdf:first csvw:TableGroup;
                  rdf:rest _:autos11547.
-    _:autos11547 rdf:first csvw:Column;
+    _:autos11547 rdf:first csvw:Table;
                  rdf:rest rdf:nil.
     _:autos11548 owl:unionOf _:autos11549.
-    _:autos11549 rdf:first csvw:TableGroup;
+    _:autos11549 rdf:first csvw:Table;
                  rdf:rest _:autos11550.
-    _:autos11550 rdf:first csvw:Table;
+    _:autos11550 rdf:first csvw:Schema;
                  rdf:rest rdf:nil.
     _:autos11551 owl:unionOf _:autos11552.
-    _:autos11552 rdf:first csvw:TableGroup;
+    _:autos11552 rdf:first csvw:NumericFormat;
                  rdf:rest _:autos11553.
-    _:autos11553 rdf:first csvw:Table;
-                 rdf:rest _:autos11554.
-    _:autos11554 rdf:first csvw:Schema;
-                 rdf:rest _:autos11555.
-    _:autos11555 rdf:first csvw:Column;
+    _:autos11553 rdf:first xsd:string;
                  rdf:rest rdf:nil.
-    _:autos11556 owl:unionOf _:autos11557.
-    _:autos11557 rdf:first csvw:TableGroup;
+    _:autos11554 owl:unionOf _:autos11555.
+    _:autos11555 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11556.
+    _:autos11556 rdf:first csvw:Table;
+                 rdf:rest _:autos11557.
+    _:autos11557 rdf:first csvw:Schema;
                  rdf:rest _:autos11558.
-    _:autos11558 rdf:first csvw:Table;
-                 rdf:rest _:autos11559.
-    _:autos11559 rdf:first csvw:Schema;
-                 rdf:rest _:autos11560.
-    _:autos11560 rdf:first csvw:Column;
+    _:autos11558 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11561 owl:unionOf _:autos11562.
-    _:autos11562 rdf:first csvw:Schema;
-                 rdf:rest _:autos11563.
-    _:autos11563 rdf:first csvw:Row;
+    _:autos11559 owl:unionOf _:autos11560.
+    _:autos11560 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11561.
+    _:autos11561 rdf:first csvw:Table;
                  rdf:rest rdf:nil.
-    _:autos11564 owl:unionOf _:autos11565.
-    _:autos11565 rdf:first csvw:TableGroup;
+    _:autos11562 owl:unionOf _:autos11563.
+    _:autos11563 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11564.
+    _:autos11564 rdf:first csvw:Table;
+                 rdf:rest _:autos11565.
+    _:autos11565 rdf:first csvw:Schema;
                  rdf:rest _:autos11566.
-    _:autos11566 rdf:first csvw:Table;
-                 rdf:rest _:autos11567.
-    _:autos11567 rdf:first csvw:Schema;
-                 rdf:rest _:autos11568.
-    _:autos11568 rdf:first csvw:Column;
+    _:autos11566 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11569 owl:unionOf _:autos11570.
-    _:autos11570 rdf:first csvw:TableGroup;
+    _:autos11567 owl:unionOf _:autos11568.
+    _:autos11568 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11569.
+    _:autos11569 rdf:first csvw:Table;
+                 rdf:rest _:autos11570.
+    _:autos11570 rdf:first csvw:Schema;
                  rdf:rest _:autos11571.
-    _:autos11571 rdf:first csvw:Table;
-                 rdf:rest _:autos11572.
-    _:autos11572 rdf:first csvw:Schema;
-                 rdf:rest _:autos11573.
-    _:autos11573 rdf:first csvw:Column;
+    _:autos11571 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11574 owl:unionOf _:autos11575.
-    _:autos11575 rdf:first csvw:TableGroup;
-                 rdf:rest _:autos11576.
-    _:autos11576 rdf:first csvw:Table;
+    _:autos11572 owl:unionOf _:autos11573.
+    _:autos11573 rdf:first csvw:Schema;
+                 rdf:rest _:autos11574.
+    _:autos11574 rdf:first csvw:Row;
+                 rdf:rest rdf:nil.
+    _:autos11575 owl:unionOf _:autos11576.
+    _:autos11576 rdf:first csvw:TableGroup;
                  rdf:rest _:autos11577.
-    _:autos11577 rdf:first csvw:Schema;
+    _:autos11577 rdf:first csvw:Table;
                  rdf:rest _:autos11578.
-    _:autos11578 rdf:first csvw:Column;
+    _:autos11578 rdf:first csvw:Schema;
+                 rdf:rest _:autos11579.
+    _:autos11579 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11579 owl:unionOf _:autos11580.
-    _:autos11580 rdf:first csvw:Table;
-                 rdf:rest _:autos11581.
-    _:autos11581 rdf:first csvw:Column;
-                 rdf:rest rdf:nil.
-    _:autos11582 owl:unionOf _:autos11583.
-    _:autos11583 rdf:first csvw:TableGroup;
+    _:autos11580 owl:unionOf _:autos11581.
+    _:autos11581 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11582.
+    _:autos11582 rdf:first csvw:Table;
+                 rdf:rest _:autos11583.
+    _:autos11583 rdf:first csvw:Schema;
                  rdf:rest _:autos11584.
-    _:autos11584 rdf:first csvw:Table;
+    _:autos11584 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
     _:autos11585 owl:unionOf _:autos11586.
     _:autos11586 rdf:first csvw:TableGroup;
                  rdf:rest _:autos11587.
     _:autos11587 rdf:first csvw:Table;
+                 rdf:rest _:autos11588.
+    _:autos11588 rdf:first csvw:Schema;
+                 rdf:rest _:autos11589.
+    _:autos11589 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11588 owl:unionOf _:autos11589.
-    _:autos11589 rdf:first csvw:TableGroup;
-                 rdf:rest _:autos11590.
-    _:autos11590 rdf:first csvw:Table;
-                 rdf:rest _:autos11591.
-    _:autos11591 rdf:first csvw:Schema;
+    _:autos11590 owl:unionOf _:autos11591.
+    _:autos11591 rdf:first csvw:Table;
                  rdf:rest _:autos11592.
     _:autos11592 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
@@ -186,31 +167,50 @@
     _:autos11594 rdf:first csvw:TableGroup;
                  rdf:rest _:autos11595.
     _:autos11595 rdf:first csvw:Table;
-                 rdf:rest _:autos11596.
-    _:autos11596 rdf:first csvw:Schema;
-                 rdf:rest _:autos11597.
-    _:autos11597 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11598 owl:unionOf _:autos11599.
-    _:autos11599 rdf:first csvw:Transformation;
-                 rdf:rest _:autos11600.
-    _:autos11600 rdf:first csvw:Column;
+    _:autos11596 owl:unionOf _:autos11597.
+    _:autos11597 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11598.
+    _:autos11598 rdf:first csvw:Table;
+                 rdf:rest rdf:nil.
+    _:autos11599 owl:unionOf _:autos11600.
+    _:autos11600 rdf:first csvw:TableGroup;
                  rdf:rest _:autos11601.
-    _:autos11601 rdf:first csvw:Row;
+    _:autos11601 rdf:first csvw:Table;
+                 rdf:rest _:autos11602.
+    _:autos11602 rdf:first csvw:Schema;
+                 rdf:rest _:autos11603.
+    _:autos11603 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
-    _:autos11602 owl:unionOf _:autos11603.
-    _:autos11603 rdf:first csvw:Table;
-                 rdf:rest _:autos11604.
-    _:autos11604 rdf:first csvw:Transformation;
-                 rdf:rest rdf:nil.
-    _:autos11605 owl:unionOf _:autos11606.
-    _:autos11606 rdf:first csvw:TableGroup;
+    _:autos11604 owl:unionOf _:autos11605.
+    _:autos11605 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11606.
+    _:autos11606 rdf:first csvw:Table;
                  rdf:rest _:autos11607.
-    _:autos11607 rdf:first csvw:Table;
+    _:autos11607 rdf:first csvw:Schema;
                  rdf:rest _:autos11608.
-    _:autos11608 rdf:first csvw:Schema;
-                 rdf:rest _:autos11609.
-    _:autos11609 rdf:first csvw:Column;
+    _:autos11608 rdf:first csvw:Column;
+                 rdf:rest rdf:nil.
+    _:autos11609 owl:unionOf _:autos11610.
+    _:autos11610 rdf:first csvw:Transformation;
+                 rdf:rest _:autos11611.
+    _:autos11611 rdf:first csvw:Column;
+                 rdf:rest _:autos11612.
+    _:autos11612 rdf:first csvw:Row;
+                 rdf:rest rdf:nil.
+    _:autos11613 owl:unionOf _:autos11614.
+    _:autos11614 rdf:first csvw:Table;
+                 rdf:rest _:autos11615.
+    _:autos11615 rdf:first csvw:Transformation;
+                 rdf:rest rdf:nil.
+    _:autos11616 owl:unionOf _:autos11617.
+    _:autos11617 rdf:first csvw:TableGroup;
+                 rdf:rest _:autos11618.
+    _:autos11618 rdf:first csvw:Table;
+                 rdf:rest _:autos11619.
+    _:autos11619 rdf:first csvw:Schema;
+                 rdf:rest _:autos11620.
+    _:autos11620 rdf:first csvw:Column;
                  rdf:rest rdf:nil.
     csvw: dc:date "2017-06-06"^^xsd:date;
           dc:description "This document describes the RDFS vocabulary description used in the Metadata Vocabulary for Tabular Data [[tabular-metadata]] along with the default JSON-LD Context."@en;
@@ -278,7 +278,7 @@
                         rdfs:label "Transformation Definition"@en.
     csvw:aboutUrl a rdf:Property;
                   rdfs:comment "A URI template property that MAY be used to indicate what a cell contains information about."@en;
-                  rdfs:domain _:autos11513;
+                  rdfs:domain _:autos11524;
                   rdfs:isDefinedBy csvw:;
                   rdfs:label "about URL"@en;
                   rdfs:range csvw:uriTemplate.
@@ -300,7 +300,7 @@
                 rdfs:range csvw:Column.
     csvw:columnReference a rdf:Property;
                          rdfs:comment "A column reference property that holds either a single reference to a column description object within this schema, or an array of references. These form the referencing columns for the foreign key definition."@en;
-                         rdfs:domain _:autos11518;
+                         rdfs:domain _:autos11529;
                          rdfs:isDefinedBy csvw:;
                          rdfs:label "column reference"@en;
                          rdfs:range xsd:string.
@@ -316,10 +316,10 @@
                                rdfs:label "CSV Encoded Tabular Data"@en.
     csvw:datatype a rdf:Property;
                   rdfs:comment "An object property that contains either a single string that is the main datatype of the values of the cell or a datatype description object. If the value of this property is a string, it MUST be one of the built-in datatypes defined in section 5.11.1 Built-in Datatypes or an absolute URL; if it is an object then it describes a more specialised datatype."@en;
-                  rdfs:domain _:autos11521;
+                  rdfs:domain _:autos11532;
                   rdfs:isDefinedBy csvw:;
                   rdfs:label "datatype"@en;
-                  rdfs:range _:autos11526.
+                  rdfs:range _:autos11537.
     csvw:decimalChar a rdf:Property;
                      rdfs:comment "A string whose value is used to represent a decimal point within the number."@en;
                      rdfs:domain csvw:NumericFormat;
@@ -328,7 +328,7 @@
                      rdfs:range xsd:string.
     csvw:default a rdf:Property;
                  rdfs:comment "An atomic property holding a single string that is used to create a default value for the cell in cases where the original string value is an empty string."@en;
-                 rdfs:domain _:autos11529;
+                 rdfs:domain _:autos11540;
                  rdfs:isDefinedBy csvw:;
                  rdfs:label "default"@en;
                  rdfs:range xsd:string.
@@ -345,7 +345,7 @@
                    rdfs:label "describes"@en.
     csvw:dialect a rdf:Property;
                  rdfs:comment "An object property that provides a single dialect description. If provided, dialect provides hints to processors about how to parse the referenced files to create tabular data models for the tables in the group."@en;
-                 rdfs:domain _:autos11534;
+                 rdfs:domain _:autos11545;
                  rdfs:isDefinedBy csvw:;
                  rdfs:label "dialect"@en;
                  rdfs:range csvw:Dialect.
@@ -365,7 +365,7 @@
                     rdfs:comment """For a Table: a list of foreign keys on the table.
 
 For a Schema: an array property of foreign key definitions that define how the values from specified columns within this table link to rows within this table or other tables."""@en;
-                    rdfs:domain _:autos11537;
+                    rdfs:domain _:autos11548;
                     rdfs:isDefinedBy csvw:;
                     rdfs:label "foreign key"@en;
                     rdfs:range csvw:ForeignKey.
@@ -380,7 +380,7 @@ For a Schema: an array property of foreign key definitions that define how the v
                    rdfs:domain csvw:NumericFormat;
                    rdfs:isDefinedBy csvw:;
                    rdfs:label "group character"@en;
-                   rdfs:range _:autos11540.
+                   rdfs:range _:autos11551.
     csvw:header a rdf:Property;
                 rdfs:comment "A boolean atomic property that, if `true`, sets the header row count flag to `1`, and if `false` to `0`, unless headerRowCount is provided, in which case the value provided for the header property is ignored."@en;
                 rdfs:domain csvw:Dialect;
@@ -399,7 +399,7 @@ For a Schema: an array property of foreign key definitions that define how the v
                  rdfs:label "inherit"@en.
     csvw:lang a rdf:Property;
               rdfs:comment "An atomic property giving a single string language code as defined by [[BCP47]]."@en;
-              rdfs:domain _:autos11543;
+              rdfs:domain _:autos11554;
               rdfs:isDefinedBy csvw:;
               rdfs:label "language"@en;
               rdfs:range xsd:string.
@@ -463,18 +463,18 @@ For a Schema: an array property of foreign key definitions that define how the v
               rdfs:range xsd:string.
     csvw:note a rdf:Property;
               rdfs:comment "An array property that provides an array of objects representing arbitrary annotations on the annotated tabular data model."@en;
-              rdfs:domain _:autos11548;
+              rdfs:domain _:autos11559;
               rdfs:isDefinedBy csvw:;
               rdfs:label "note"@en.
     csvw:null a rdf:Property;
               rdfs:comment "An atomic property giving the string or strings used for null values within the data. If the string value of the cell is equal to any one of these values, the cell value is `null`."@en;
-              rdfs:domain _:autos11551;
+              rdfs:domain _:autos11562;
               rdfs:isDefinedBy csvw:;
               rdfs:label "null"@en;
               rdfs:range xsd:string.
     csvw:ordered a rdf:Property;
                  rdfs:comment "A boolean atomic property taking a single value which indicates whether a list that is the value of the cell is ordered (if `true`) or unordered (if `false`)."@en;
-                 rdfs:domain _:autos11556;
+                 rdfs:domain _:autos11567;
                  rdfs:isDefinedBy csvw:;
                  rdfs:label "ordered"@en;
                  rdfs:range xsd:boolean.
@@ -488,13 +488,13 @@ For a Schema: an array property of foreign key definitions that define how the v
                     rdfs:comment """For Schema: A column reference property that holds either a single reference to a column description object or an array of references.
 
 For Row: a possibly empty list of cells whose values together provide a unique identifier for this row. This is similar to the name of a column."""@en;
-                    rdfs:domain _:autos11561;
+                    rdfs:domain _:autos11572;
                     rdfs:isDefinedBy csvw:;
                     rdfs:label "primary key"@en;
                     rdfs:range xsd:string.
     csvw:propertyUrl a rdf:Property;
                      rdfs:comment "An URI template property that MAY be used to create a URI for a property if the table is mapped to another format. "@en;
-                     rdfs:domain _:autos11564;
+                     rdfs:domain _:autos11575;
                      rdfs:isDefinedBy csvw:;
                      rdfs:label "property URL"@en;
                      rdfs:range csvw:uriTemplate.
@@ -517,7 +517,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
                        rdfs:label "referenced rows"@en.
     csvw:required a rdf:Property;
                   rdfs:comment "A boolean atomic property taking a single value which indicates whether the cell must have a non-null value. The default is `false`. "@en;
-                  rdfs:domain _:autos11569;
+                  rdfs:domain _:autos11580;
                   rdfs:isDefinedBy csvw:;
                   rdfs:label "required"@en;
                   rdfs:range xsd:boolean.
@@ -563,7 +563,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
                       rdfs:range xsd:anyURI.
     csvw:separator a rdf:Property;
                    rdfs:comment "An atomic property that MUST have a single string value that is the character used to separate items in the string value of the cell."@en;
-                   rdfs:domain _:autos11574;
+                   rdfs:domain _:autos11585;
                    rdfs:isDefinedBy csvw:;
                    rdfs:label "separator"@en;
                    rdfs:range xsd:string.
@@ -599,7 +599,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
                 rdfs:range xsd:string.
     csvw:suppressOutput a rdf:Property;
                         rdfs:comment "A boolean atomic property. If `true`, suppresses any output that would be generated when converting a table or cells within a column."@en;
-                        rdfs:domain _:autos11579;
+                        rdfs:domain _:autos11590;
                         rdfs:isDefinedBy csvw:;
                         rdfs:label "suppress output"@en;
                         rdfs:range xsd:boolean.
@@ -612,13 +612,13 @@ For Row: a possibly empty list of cells whose values together provide a unique i
                rdfs:subPropertyOf rdfs:member.
     csvw:tableDirection a rdf:Property;
                         rdfs:comment "One of `rtl`, `ltr` or `auto`. Indicates whether the tables in the group should be displayed with the first column on the right, on the left, or based on the first character in the table that has a specific direction."@en;
-                        rdfs:domain _:autos11582;
+                        rdfs:domain _:autos11593;
                         rdfs:isDefinedBy csvw:;
                         rdfs:label "table direction"@en;
                         rdfs:range csvw:Direction.
     csvw:tableSchema a rdf:Property;
                      rdfs:comment "An object property that provides a single schema description as described in section 5.5 Schemas, used as the default for all the tables in the group"@en;
-                     rdfs:domain _:autos11585;
+                     rdfs:domain _:autos11596;
                      rdfs:isDefinedBy csvw:;
                      rdfs:label "table schema"@en;
                      rdfs:range csvw:Schema.
@@ -634,7 +634,7 @@ For Row: a possibly empty list of cells whose values together provide a unique i
                       rdfs:range xsd:anyURI.
     csvw:textDirection a rdf:Property;
                        rdfs:comment "An atomic property that must have a single value that is one of `rtl` or `ltr` (the default)."@en;
-                       rdfs:domain _:autos11593;
+                       rdfs:domain _:autos11604;
                        rdfs:isDefinedBy csvw:;
                        rdfs:label "text direction"@en;
                        rdfs:range csvw:Direction.
@@ -642,12 +642,12 @@ For Row: a possibly empty list of cells whose values together provide a unique i
                rdfs:comment """For a Transformation A natural language property that describes the format that will be generated from the transformation.
 
 For a Column: A natural language property that provides possible alternative names for the column."""@en;
-               rdfs:domain _:autos11598;
+               rdfs:domain _:autos11609;
                rdfs:isDefinedBy csvw:;
                rdfs:label "title"@en.
     csvw:transformations a rdf:Property;
                          rdfs:comment "An array property of transformation definitions that provide mechanisms to transform the tabular data into other formats."@en;
-                         rdfs:domain _:autos11588;
+                         rdfs:domain _:autos11599;
                          rdfs:isDefinedBy csvw:;
                          rdfs:label "transformations"@en;
                          rdfs:range csvw:Transformation.
@@ -666,13 +666,13 @@ For a Column: A natural language property that provides possible alternative nam
              rdfs:comment """For a Table: This link property gives the single URL of the CSV file that the table is held in, relative to the location of the metadata document.
 
 For a Transformation: A link property giving the single URL of the file that the script or template is held in, relative to the location of the metadata document."""@en;
-             rdfs:domain _:autos11602;
+             rdfs:domain _:autos11613;
              rdfs:isDefinedBy csvw:;
              rdfs:label "url"@en;
              rdfs:range xsd:anyURI.
     csvw:valueUrl a rdf:Property;
                   rdfs:comment "An URI template property that is used to map the values of cells into URLs."@en;
-                  rdfs:domain _:autos11605;
+                  rdfs:domain _:autos11616;
                   rdfs:isDefinedBy csvw:;
                   rdfs:label "valueUrl"@en;
                   rdfs:range csvw:uriTemplate.

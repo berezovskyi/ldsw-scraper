@@ -27,10 +27,10 @@
 <http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityInfluence"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#activity> .
 <http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Influence> .
-_:autos7896 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:autos7896 <http://www.w3.org/2002/07/owl#maxCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:autos7896 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#hadActivity> .
-<http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:autos7896 .
+_:autos8180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:autos8180 <http://www.w3.org/2002/07/owl#maxCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:autos8180 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#hadActivity> .
+<http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:autos8180 .
 <http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/prov#EntityInfluence> .
 <http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/ns/prov#category> "qualified"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#ActivityInfluence> <http://www.w3.org/ns/prov#editorsDefinition> "ActivitiyInfluence is the capacity of an activity to have an effect on the character, development, or behavior of another by means of generation, invalidation, communication, or other."@en .
@@ -334,11 +334,11 @@ _:autos7896 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/pro
 <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#label> "actedOnBehalfOf"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos7939 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedDelegation> .
-_:autos7939 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7940 .
-_:autos7940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
-_:autos7940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos7939 .
+_:autos8282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedDelegation> .
+_:autos8282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8283 .
+_:autos8283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
+_:autos8283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8282 .
 <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#category> "starting-point"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#component> "agents-responsibility"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#inverse> "hadDelegate"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -383,17 +383,17 @@ _:autos7940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The Location of any resource."@en .
 <http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos7945 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos7947 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
-_:autos7947 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7948 .
-_:autos7948 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
-_:autos7948 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7949 .
-_:autos7949 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
-_:autos7949 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7950 .
-_:autos7950 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#InstantaneousEvent> .
-_:autos7950 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos7945 <http://www.w3.org/2002/07/owl#unionOf> _:autos7947 .
-<http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos7945 .
+_:autos8295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
+_:autos8296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8297 .
+_:autos8297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
+_:autos8297 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8299 .
+_:autos8299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
+_:autos8299 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8300 .
+_:autos8300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#InstantaneousEvent> .
+_:autos8300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8295 <http://www.w3.org/2002/07/owl#unionOf> _:autos8296 .
+<http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos8295 .
 <http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
 <http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2000/01/rdf-schema#label> "atLocation"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#atLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Location> .
@@ -487,17 +487,17 @@ _:autos7945 <http://www.w3.org/2002/07/owl#unionOf> _:autos7947 .
 <http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead)."@en .
 <http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Influence> .
-_:autos7964 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos7965 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Delegation> .
-_:autos7965 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7966 .
-_:autos7966 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Derivation> .
-_:autos7966 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7967 .
-_:autos7967 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#End> .
-_:autos7967 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7968 .
-_:autos7968 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Start> .
-_:autos7968 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos7964 <http://www.w3.org/2002/07/owl#unionOf> _:autos7965 .
-<http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos7964 .
+_:autos8321 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Delegation> .
+_:autos8322 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8323 .
+_:autos8323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Derivation> .
+_:autos8323 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8324 .
+_:autos8324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#End> .
+_:autos8324 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8325 .
+_:autos8325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Start> .
+_:autos8325 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8321 <http://www.w3.org/2002/07/owl#unionOf> _:autos8322 .
+<http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos8321 .
 <http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
 <http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#label> "hadActivity"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#hadActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
@@ -542,11 +542,11 @@ _:autos7964 <http://www.w3.org/2002/07/owl#unionOf> _:autos7965 .
 <http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2000/01/rdf-schema#label> "hadPrimarySource"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-_:autos7977 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedPrimarySource> .
-_:autos7977 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7978 .
-_:autos7978 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
-_:autos7978 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos7977 .
+_:autos8335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedPrimarySource> .
+_:autos8335 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8336 .
+_:autos8336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
+_:autos8336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8335 .
 <http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/ns/prov#category> "expanded"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/ns/prov#component> "derivations"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/ns/prov#inverse> "wasPrimarySourceOf"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -556,13 +556,13 @@ _:autos7978 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Influence> .
-_:autos7979 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos7980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Association> .
-_:autos7980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos7981 .
-_:autos7981 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#InstantaneousEvent> .
-_:autos7981 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos7979 <http://www.w3.org/2002/07/owl#unionOf> _:autos7980 .
-<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos7979 .
+_:autos8340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Association> .
+_:autos8341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8343 .
+_:autos8343 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#InstantaneousEvent> .
+_:autos8343 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8340 <http://www.w3.org/2002/07/owl#unionOf> _:autos8341 .
+<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos8340 .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#label> "hadRole"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Role> .
@@ -724,15 +724,15 @@ _:autos7979 <http://www.w3.org/2002/07/owl#unionOf> _:autos7980 .
 <http://www.w3.org/ns/prov#qualifiedGeneration> <http://www.w3.org/ns/prov#unqualifiedForm> <http://www.w3.org/ns/prov#wasGeneratedBy> .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#comment> "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable."@en .
-_:autos8022 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos8023 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
-_:autos8023 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8025 .
-_:autos8025 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
-_:autos8025 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8026 .
-_:autos8026 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
-_:autos8026 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos8022 <http://www.w3.org/2002/07/owl#unionOf> _:autos8023 .
-<http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos8022 .
+_:autos8378 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
+_:autos8380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8381 .
+_:autos8381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
+_:autos8381 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8382 .
+_:autos8382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
+_:autos8382 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8378 <http://www.w3.org/2002/07/owl#unionOf> _:autos8380 .
+<http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos8378 .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#label> "qualifiedInfluence"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#qualifiedInfluence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Influence> .
@@ -854,11 +854,11 @@ _:autos8022 <http://www.w3.org/2002/07/owl#unionOf> _:autos8023 .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#label> "used"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8041 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedUsage> .
-_:autos8041 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8042 .
-_:autos8042 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
-_:autos8042 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#used> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8041 .
+_:autos8419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedUsage> .
+_:autos8419 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8420 .
+_:autos8420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
+_:autos8420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8419 .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#category> "starting-point"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#component> "entities-activities"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#inverse> "wasUsedBy"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -881,11 +881,11 @@ _:autos8042 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "wasAssociatedWith"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8043 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedAssociation> .
-_:autos8043 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8044 .
-_:autos8044 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
-_:autos8044 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8043 .
+_:autos8427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedAssociation> .
+_:autos8427 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8428 .
+_:autos8428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
+_:autos8428 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8427 .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#category> "starting-point"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#component> "agents-responsibility"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#inverse> "wasAssociateFor"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -898,11 +898,11 @@ _:autos8044 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#label> "wasAttributedTo"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8046 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedAttribution> .
-_:autos8046 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8047 .
-_:autos8047 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
-_:autos8047 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8046 .
+_:autos8432 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedAttribution> .
+_:autos8432 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8433 .
+_:autos8433 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
+_:autos8433 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8432 .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#category> "starting-point"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#component> "agents-responsibility"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#definition> "Attribution is the ascribing of an entity to an agent."@en .
@@ -916,11 +916,11 @@ _:autos8047 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "wasDerivedFrom"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedDerivation> .
-_:autos8049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8050 .
-_:autos8050 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
-_:autos8050 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8049 .
+_:autos8437 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedDerivation> .
+_:autos8437 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8438 .
+_:autos8438 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
+_:autos8438 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8437 .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#category> "starting-point"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#component> "derivations"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#definition> "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en .
@@ -934,11 +934,11 @@ _:autos8050 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasEndedBy"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8051 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedEnd> .
-_:autos8051 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8052 .
-_:autos8052 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
-_:autos8052 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8051 .
+_:autos8441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedEnd> .
+_:autos8441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8442 .
+_:autos8442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
+_:autos8442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8441 .
 <http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/ns/prov#category> "expanded"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/ns/prov#component> "entities-activities"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasEndedBy> <http://www.w3.org/ns/prov#inverse> "ended"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -950,11 +950,11 @@ _:autos8052 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasGeneratedBy"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8054 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedGeneration> .
-_:autos8054 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8055 .
-_:autos8055 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
-_:autos8055 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8054 .
+_:autos8444 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedGeneration> .
+_:autos8444 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8446 .
+_:autos8446 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
+_:autos8446 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8444 .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#category> "starting-point"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#component> "entities-activities"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#inverse> "generated"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -963,26 +963,26 @@ _:autos8055 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable."@en .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>."^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8057 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos8058 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
-_:autos8058 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8059 .
-_:autos8059 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
-_:autos8059 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8060 .
-_:autos8060 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
-_:autos8060 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos8057 <http://www.w3.org/2002/07/owl#unionOf> _:autos8058 .
-<http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos8057 .
+_:autos8449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8450 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
+_:autos8450 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8452 .
+_:autos8452 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
+_:autos8452 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8453 .
+_:autos8453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
+_:autos8453 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8449 <http://www.w3.org/2002/07/owl#unionOf> _:autos8450 .
+<http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos8449 .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasInfluencedBy"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8061 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos8062 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
-_:autos8062 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8063 .
-_:autos8063 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
-_:autos8063 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8064 .
-_:autos8064 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
-_:autos8064 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos8061 <http://www.w3.org/2002/07/owl#unionOf> _:autos8062 .
-<http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:autos8061 .
+_:autos8454 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
+_:autos8456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8457 .
+_:autos8457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
+_:autos8457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8458 .
+_:autos8458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
+_:autos8458 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8454 <http://www.w3.org/2002/07/owl#unionOf> _:autos8456 .
+<http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:autos8454 .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/ns/prov#category> "qualified"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/ns/prov#component> "agents-responsibility"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/ns/prov#editorialNote> "The sub-properties of prov:wasInfluencedBy can be elaborated in more detail using the Qualification Pattern. For example, the binary relation :baking prov:used :spoon can be qualified by asserting :baking prov:qualifiedUsage [ a prov:Usage; prov:entity :spoon; prov:atLocation :kitchen ] .\n\nSubproperties of prov:wasInfluencedBy may also be asserted directly without being qualified.\n\nprov:wasInfluencedBy should not be used without also using one of its subproperties. \n"@en .
@@ -997,11 +997,11 @@ _:autos8061 <http://www.w3.org/2002/07/owl#unionOf> _:autos8062 .
 <http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasInformedBy"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8065 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedCommunication> .
-_:autos8065 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8066 .
-_:autos8066 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
-_:autos8066 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8065 .
+_:autos8464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedCommunication> .
+_:autos8464 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8465 .
+_:autos8465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
+_:autos8465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8464 .
 <http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#category> "starting-point"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#component> "entities-activities"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/ns/prov#inverse> "informed"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -1013,11 +1013,11 @@ _:autos8066 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasInvalidatedBy"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
 <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8068 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedInvalidation> .
-_:autos8068 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8069 .
-_:autos8069 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
-_:autos8069 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8068 .
+_:autos8469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedInvalidation> .
+_:autos8469 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8470 .
+_:autos8470 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
+_:autos8470 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8469 .
 <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/ns/prov#category> "expanded"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/ns/prov#component> "entities-activities"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/ns/prov#inverse> "invalidated"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -1030,11 +1030,11 @@ _:autos8069 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "wasQuotedFrom"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-_:autos8075 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedQuotation> .
-_:autos8075 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8076 .
-_:autos8076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
-_:autos8076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8075 .
+_:autos8474 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedQuotation> .
+_:autos8474 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8475 .
+_:autos8475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
+_:autos8475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8474 .
 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/ns/prov#category> "expanded"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/ns/prov#component> "derivations"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasQuotedFrom> <http://www.w3.org/ns/prov#inverse> "quotedAs"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -1048,11 +1048,11 @@ _:autos8076 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/2000/01/rdf-schema#label> "wasRevisionOf"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-_:autos8079 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedRevision> .
-_:autos8079 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8080 .
-_:autos8080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
-_:autos8080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8079 .
+_:autos8479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedRevision> .
+_:autos8479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8480 .
+_:autos8480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
+_:autos8480 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8479 .
 <http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/ns/prov#category> "expanded"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/ns/prov#component> "derivations"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/ns/prov#inverse> "hadRevision"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -1065,11 +1065,11 @@ _:autos8080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasStartedBy"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedStart> .
-_:autos8082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8083 .
-_:autos8083 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
-_:autos8083 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8082 .
+_:autos8484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedStart> .
+_:autos8484 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8485 .
+_:autos8485 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#entity> .
+_:autos8485 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos8484 .
 <http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/ns/prov#category> "expanded"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/ns/prov#component> "entities-activities"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/prov#wasStartedBy> <http://www.w3.org/ns/prov#inverse> "started"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -1084,63 +1084,63 @@ _:autos8083 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org
 <http://www.w3.org/ns/prov-o#> <http://www.w3.org/2002/07/owl#versionInfo> "Recommendation version 2013-04-30"@en .
 <http://www.w3.org/ns/prov-o#> <http://www.w3.org/ns/prov#specializationOf> <http://www.w3.org/ns/prov-o> .
 <http://www.w3.org/ns/prov-o#> <http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/ns/prov-o-20130312> .
-_:autos8085 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8085 <http://www.w3.org/2000/01/rdf-schema#comment> "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections."@en .
-_:autos8085 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:autos8085 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#hadMember> .
-_:autos8085 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#Entity> .
-_:autos8085 <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8086 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8086 <http://www.w3.org/2000/01/rdf-schema#comment> "hadPrimarySource property is a particular case of wasDerivedFrom (see http://www.w3.org/TR/prov-dm/#term-original-source) that aims to give credit to the source that originated some information."^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8086 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
-_:autos8086 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#hadPrimarySource> .
-_:autos8086 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-_:autos8087 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8087 <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it."^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8087 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
-_:autos8087 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasAttributedTo> .
-_:autos8087 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8087 <http://www.w3.org/ns/prov#definition> "IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds. "^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8088 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8088 <http://www.w3.org/2000/01/rdf-schema#comment> "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence."^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8088 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
-_:autos8088 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-_:autos8088 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8089 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8089 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
-_:autos8089 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8090 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos8091 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
-_:autos8091 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8093 .
-_:autos8093 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
-_:autos8093 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8094 .
-_:autos8094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
-_:autos8094 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos8090 <http://www.w3.org/2002/07/owl#unionOf> _:autos8091 .
-_:autos8089 <http://www.w3.org/2002/07/owl#annotatedTarget> _:autos8090 .
-_:autos8089 <http://www.w3.org/ns/prov#definition> "influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8089 <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8095 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8095 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#domain> .
-_:autos8095 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasInfluencedBy> .
-_:autos8096 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos8097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
-_:autos8097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8098 .
-_:autos8098 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
-_:autos8098 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8099 .
-_:autos8099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
-_:autos8099 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos8096 <http://www.w3.org/2002/07/owl#unionOf> _:autos8097 .
-_:autos8095 <http://www.w3.org/2002/07/owl#annotatedTarget> _:autos8096 .
-_:autos8095 <http://www.w3.org/ns/prov#definition> "influencee: an identifier (o2) for an entity, activity, or agent; "^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8095 <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8100 <http://www.w3.org/2000/01/rdf-schema#comment> "Quotation is a particular case of derivation (see http://www.w3.org/TR/prov-dm/#term-quotation) in which an entity is derived from an original entity by copying, or \"quoting\", some or all of it. "^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8100 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
-_:autos8100 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasQuotedFrom> .
-_:autos8100 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-_:autos8107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
-_:autos8107 <http://www.w3.org/2000/01/rdf-schema#comment> "Revision is a derivation (see http://www.w3.org/TR/prov-dm/#term-Revision). Moreover, according to \nhttp://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 2012 'wasRevisionOf is a strict sub-relation of wasDerivedFrom since two entities e2 and e1 may satisfy wasDerivedFrom(e2,e1) without being a variant of each other.'"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos8107 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
-_:autos8107 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasRevisionOf> .
-_:autos8107 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:autos8490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8490 <http://www.w3.org/2000/01/rdf-schema#comment> "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections."@en .
+_:autos8490 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
+_:autos8490 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#hadMember> .
+_:autos8490 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#Entity> .
+_:autos8490 <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8493 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8493 <http://www.w3.org/2000/01/rdf-schema#comment> "hadPrimarySource property is a particular case of wasDerivedFrom (see http://www.w3.org/TR/prov-dm/#term-original-source) that aims to give credit to the source that originated some information."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8493 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:autos8493 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#hadPrimarySource> .
+_:autos8493 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:autos8496 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8496 <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8496 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:autos8496 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasAttributedTo> .
+_:autos8496 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+_:autos8496 <http://www.w3.org/ns/prov#definition> "IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds. "^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8497 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8497 <http://www.w3.org/2000/01/rdf-schema#comment> "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8497 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:autos8497 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:autos8497 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+_:autos8498 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8498 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> .
+_:autos8498 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+_:autos8500 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8501 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
+_:autos8501 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8502 .
+_:autos8502 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
+_:autos8502 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8503 .
+_:autos8503 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
+_:autos8503 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8500 <http://www.w3.org/2002/07/owl#unionOf> _:autos8501 .
+_:autos8498 <http://www.w3.org/2002/07/owl#annotatedTarget> _:autos8500 .
+_:autos8498 <http://www.w3.org/ns/prov#definition> "influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8498 <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8509 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8509 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#domain> .
+_:autos8509 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+_:autos8512 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos8513 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Activity> .
+_:autos8513 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8514 .
+_:autos8514 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Agent> .
+_:autos8514 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos8515 .
+_:autos8515 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
+_:autos8515 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos8512 <http://www.w3.org/2002/07/owl#unionOf> _:autos8513 .
+_:autos8509 <http://www.w3.org/2002/07/owl#annotatedTarget> _:autos8512 .
+_:autos8509 <http://www.w3.org/ns/prov#definition> "influencee: an identifier (o2) for an entity, activity, or agent; "^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8509 <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8517 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8517 <http://www.w3.org/2000/01/rdf-schema#comment> "Quotation is a particular case of derivation (see http://www.w3.org/TR/prov-dm/#term-quotation) in which an entity is derived from an original entity by copying, or \"quoting\", some or all of it. "^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8517 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:autos8517 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasQuotedFrom> .
+_:autos8517 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:autos8519 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:autos8519 <http://www.w3.org/2000/01/rdf-schema#comment> "Revision is a derivation (see http://www.w3.org/TR/prov-dm/#term-Revision). Moreover, according to \nhttp://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 2012 'wasRevisionOf is a strict sub-relation of wasDerivedFrom since two entities e2 and e1 may satisfy wasDerivedFrom(e2,e1) without being a variant of each other.'"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos8519 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:autos8519 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasRevisionOf> .
+_:autos8519 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasDerivedFrom> .
