@@ -22,33 +22,33 @@
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/title> "Ontologie des organisations"@fr .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/title> "Ontologia delle organizzazioni"@it .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/title> "Ontolog\u00EDa de organizaciones"@es .
-_:autos11893 <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11893 <http://xmlns.com/foaf/0.1/name> "Dave Reynolds"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11892 <http://xmlns.com/foaf/0.1/mbox> "dave@epimorphics.com"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11892 <http://xmlns.com/foaf/0.1/name> "Dave Reynolds"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11892 .
+_:autos11893 <http://xmlns.com/foaf/0.1/mbox> "dguardiola@quinode.fr"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11893 <http://xmlns.com/foaf/0.1/name> "Dominique Guardiola"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11893 .
-_:autos11894 <http://xmlns.com/foaf/0.1/mbox> "dguardiola@quinode.fr"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11894 <http://xmlns.com/foaf/0.1/name> "Dominique Guardiola"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11894 <http://xmlns.com/foaf/0.1/mbox> "antonio.maccioni@agid.gov.it"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11894 <http://xmlns.com/foaf/0.1/name> "Antonio Maccioni"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11894 .
-_:autos11895 <http://xmlns.com/foaf/0.1/mbox> "antonio.maccioni@agid.gov.it"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11895 <http://xmlns.com/foaf/0.1/name> "Antonio Maccioni"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11895 <http://xmlns.com/foaf/0.1/mbox> "giorgia.lodi@agid.gov.it"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11895 <http://xmlns.com/foaf/0.1/name> "Giorgia Lodi"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11895 .
-_:autos11896 <http://xmlns.com/foaf/0.1/mbox> "giorgia.lodi@agid.gov.it"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11896 <http://xmlns.com/foaf/0.1/name> "Giorgia Lodi"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11896 <http://xmlns.com/foaf/0.1/name> "Shuji Kamitsuna"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11896 <http://xmlns.com/foaf/0.1/homepage> <http://www.asahi-net.or.jp/~ax2s-kmtn/> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11896 .
-_:autos11897 <http://xmlns.com/foaf/0.1/name> "Shuji Kamitsuna"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11897 <http://xmlns.com/foaf/0.1/homepage> <http://www.asahi-net.or.jp/~ax2s-kmtn/> .
+_:autos11897 <http://xmlns.com/foaf/0.1/mbox> "lupe@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11897 <http://xmlns.com/foaf/0.1/name> "Guadalupe Aguado de Cea"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11897 .
-_:autos11898 <http://xmlns.com/foaf/0.1/mbox> "lupe@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11898 <http://xmlns.com/foaf/0.1/name> "Guadalupe Aguado de Cea"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11898 <http://xmlns.com/foaf/0.1/mbox> "emontiel@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11898 <http://xmlns.com/foaf/0.1/name> "Elena Montiel Ponsoda"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11898 .
-_:autos11899 <http://xmlns.com/foaf/0.1/mbox> "emontiel@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11899 <http://xmlns.com/foaf/0.1/name> "Elena Montiel Ponsoda"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11899 <http://xmlns.com/foaf/0.1/mbox> "ogiraldo@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11899 <http://xmlns.com/foaf/0.1/name> "Olga Ximena Giraldo"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11899 .
-_:autos11900 <http://xmlns.com/foaf/0.1/mbox> "ogiraldo@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11900 <http://xmlns.com/foaf/0.1/name> "Olga Ximena Giraldo"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11900 <http://xmlns.com/foaf/0.1/mbox> "mpoveda@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:autos11900 <http://xmlns.com/foaf/0.1/name> "Mar\u00EDa Poveda Villal\u00F3n"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11900 .
-_:autos11901 <http://xmlns.com/foaf/0.1/mbox> "mpoveda@fi.upm.es"^^<http://www.w3.org/2001/XMLSchema#string> .
-_:autos11901 <http://xmlns.com/foaf/0.1/name> "Mar\u00EDa Poveda Villal\u00F3n"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/ns/org#> <http://purl.org/dc/terms/contributor> _:autos11901 .
 <http://www.w3.org/ns/org#> <http://purl.org/dc/terms/license> <http://www.opendatacommons.org/licenses/pddl/1.0/> .
 <http://www.w3.org/ns/org#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/TR/vocab-org/> .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -58,9 +58,9 @@ _:autos11901 <http://xmlns.com/foaf/0.1/name> "Mar\u00EDa Poveda Villal\u00F3n"^
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@fr .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organizzazione"@it .
-_:autos11902 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#identifier> .
-_:autos11902 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2002/07/owl#hasKey> _:autos11902 .
+_:autos11901 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#identifier> .
+_:autos11901 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2002/07/owl#hasKey> _:autos11901 .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"@en .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Repr\u00E9sente un groupe de personnes organis\u00E9es en communaut\u00E9 o\u00F9 tout autre forme de structure sociale, commerciale ou politique. Le groupe a un but commun ou une raison d'\u00EAtre qui va au-del\u00E0 de la somme des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations sont souvent d\u00E9composables en structures hi\u00E9rarchis\u00E9es. Il est recommand\u00E9 que des labels lexicaux SKOS soient utilis\u00E9s pour nommer l'Organisation. En particulier `skos:prefLabel` pour le nom principal (en g\u00E9n\u00E9ral le nom l\u00E9gal), `skos:altLabel` pour les noms alternatifs (marques, sigles, appellations famili\u00E8res) et `skos:notation` pour indiquer un code provenant d'une liste de code."@fr .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Rappresenta una collezione di persone organizzate all'interno di una communit\u00E0 o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e  pu\u00F2 agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le propriet\u00E0 di SKOS. In particolare, `skos:prefLabel` per il nome principale (possibilmente un nome legalmente riconosciuto)\u201D, `skos:altLabel` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici."@it .
@@ -266,20 +266,20 @@ _:autos11902 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.or
 <http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#label> "reports to"@en .
 <http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#label> "est subordonn\u00E9 \u00E0"@fr .
 <http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#label> "riporta a"@it .
-_:autos11903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos11904 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
-_:autos11904 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11905 .
-_:autos11905 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Post> .
-_:autos11905 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos11903 <http://www.w3.org/2002/07/owl#unionOf> _:autos11904 .
-<http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos11903 .
-_:autos11906 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos11907 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
-_:autos11907 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11908 .
-_:autos11908 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Post> .
-_:autos11908 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos11906 <http://www.w3.org/2002/07/owl#unionOf> _:autos11907 .
-<http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#range> _:autos11906 .
+_:autos11902 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos11903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
+_:autos11903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11904 .
+_:autos11904 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Post> .
+_:autos11904 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos11902 <http://www.w3.org/2002/07/owl#unionOf> _:autos11903 .
+<http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos11902 .
+_:autos11905 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos11906 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
+_:autos11906 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11907 .
+_:autos11907 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Post> .
+_:autos11907 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos11905 <http://www.w3.org/2002/07/owl#unionOf> _:autos11906 .
+<http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#range> _:autos11905 .
 <http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a reporting relationship as might be depicted on an organizational chart. The precise semantics of the reporting relationship will vary by organization but is intended to encompass both direct supervisory relationships (e.g. carrying objective and salary setting authority) and more general reporting or accountability relationships (e.g. so called _dotted line_ reporting)."@en .
 <http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indique une relation de subordination comme elle pourrait figurer dans un organigramme. La s\u00E9mantique pr\u00E9cise de cette subordination pourra varier selon l'Organisation mais vise \u00E0 englober aussi bien les relations hi\u00E9rarchiques directes (d\u00E9finition d'objectifs, montant du salaire) que des relations plus g\u00E9n\u00E9rales ou organisationnelles (les liens en pointill\u00E9s dans les organigrammes)."@fr .
 <http://www.w3.org/ns/org#reportsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una relazione di subordinazione all'interno dell'organigramma. La semantica precisa pu\u00F2 variare a seconda dell'organizzazione, per esempio pu\u00F2 essere usata per rappresentare la propriet\u00E0 di supervisione oppure per le relazioni di rendicontazione."@it .
@@ -347,13 +347,13 @@ _:autos11906 <http://www.w3.org/2002/07/owl#unionOf> _:autos11907 .
 <http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#label> "role"@en .
 <http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#label> "r\u00F4le"@fr .
 <http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#label> "ruolo"@it .
-_:autos11909 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos11910 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Membership> .
-_:autos11910 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11911 .
-_:autos11911 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Post> .
-_:autos11911 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos11909 <http://www.w3.org/2002/07/owl#unionOf> _:autos11910 .
-<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos11909 .
+_:autos11908 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos11909 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Membership> .
+_:autos11909 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11910 .
+_:autos11910 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Post> .
+_:autos11910 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos11908 <http://www.w3.org/2002/07/owl#unionOf> _:autos11909 .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#domain> _:autos11908 .
 <http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/org#Role> .
 <http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the Role that the Agent plays in a Membership relationship with an Organization."@en .
 <http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#comment> "Indique le R\u00F4le de l'Agent dans son Engagement avec l'Organisation."@fr .
@@ -565,16 +565,16 @@ _:autos11909 <http://www.w3.org/2002/07/owl#unionOf> _:autos11910 .
 <http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
-_:autos11912 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:autos11913 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Organization> .
-_:autos11913 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11914 .
-_:autos11915 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:autos11915 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/org#Organization> .
-_:autos11915 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/org#hasMember> .
-_:autos11914 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:autos11915 .
-_:autos11914 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:autos11912 <http://www.w3.org/2002/07/owl#intersectionOf> _:autos11913 .
-<http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/2002/07/owl#equivalentClass> _:autos11912 .
+_:autos11911 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:autos11912 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Organization> .
+_:autos11912 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11913 .
+_:autos11914 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:autos11914 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/org#Organization> .
+_:autos11914 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/org#hasMember> .
+_:autos11913 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:autos11914 .
+_:autos11913 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:autos11911 <http://www.w3.org/2002/07/owl#intersectionOf> _:autos11912 .
+<http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/2002/07/owl#equivalentClass> _:autos11911 .
 <http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/2000/01/rdf-schema#label> "Endeavour"@en .
 <http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/2000/01/rdf-schema#label> "Partenariat"@fr .
 <http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborazione"@it .
@@ -661,11 +661,11 @@ _:autos11912 <http://www.w3.org/2002/07/owl#intersectionOf> _:autos11913 .
 <http://www.w3.org/ns/org#resultingOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organizaci\u00F3n que ha sido creada o modificada tras un evento espec\u00EDfico.\u00A0 Es la relaci\u00F3n inversa de `org:resultedFrom`."@es .
 <http://www.w3.org/ns/org#resultedFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/org#resultingOrganization> .
 <http://www.w3.org/ns/org#resultingOrganization> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/org#resultedFrom> .
-_:autos11916 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#resultedFrom> .
-_:autos11916 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11917 .
-_:autos11917 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#originalOrganization> .
-_:autos11917 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos11916 .
+_:autos11915 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#resultedFrom> .
+_:autos11915 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:autos11916 .
+_:autos11916 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#originalOrganization> .
+_:autos11916 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:autos11915 .
 <http://www.w3.org/ns/org#Post> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/org#Post> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/ns/org#Post> <http://www.w3.org/2000/01/rdf-schema#label> "Post"@en .

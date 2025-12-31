@@ -21,7 +21,7 @@
     <rdfs:comment xml:lang="en">The Solid Terms vocabulary defines terms referenced in Solid specifications.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="&solid;" />
     <rdfs:label xml:lang="en">Solid Terms</rdfs:label>
-    <owl:versionInfo rdf:nodeID="autos14251" />
+    <owl:versionInfo rdf:nodeID="autos13037" />
   </owl:Ontology>
   <rdfs:Class rdf:about="&solid;Account">
     <dc:issued rdf:datatype="&xsd;date">2016-05-17</dc:issued>
@@ -266,7 +266,7 @@
     <rdfs:label xml:lang="en">where</rdfs:label>
     <rdfs:range rdf:resource="&log;Formula" />
   </rdf:Property>
-  <rdf:Description rdf:nodeID="autos14251">
+  <rdf:Description rdf:nodeID="autos13037">
     <dc:date rdf:datatype="&xsd;date">2020-12-22</dc:date>
     <dc:replaces rdf:resource="https://raw.githubusercontent.com/solid/vocab/46a5e2a8df1df48cd21a6ecdd422a37d29d39cbe/solid-terms.ttl" />
     <rdfs:seeAlso rdf:resource="https://github.com/solid/vocab/pull/67" />

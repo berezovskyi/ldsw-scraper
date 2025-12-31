@@ -189,12 +189,37 @@ public class HostScraper
                 {
                     try
                     {
-                        var content = RdfHandler.Generate(validGraph, accept);
-                        // Save generated content
                         var finalPath = GetOutputPath(task.Path) + ext;
-                        EnsureDirectory(finalPath);
-                        File.WriteAllText(finalPath, content);
-                        sb.AppendLine($"  {name}: Generated");
+                        bool shouldWrite = true;
+
+                        if (File.Exists(finalPath))
+                        {
+                            try
+                            {
+                                var existingContent = File.ReadAllText(finalPath);
+                                if (RdfHandler.TryParse(existingContent, accept, out var existingGraph, out _))
+                                {
+                                    var matcher = new GraphMatcher();
+                                    if (matcher.Equals(validGraph, existingGraph))
+                                    {
+                                        shouldWrite = false;
+                                        sb.AppendLine($"  {name}: Skipped (Isomorphic)");
+                                    }
+                                }
+                            }
+                            catch
+                            {
+                                // If reading or parsing existing file fails, we overwrite it.
+                            }
+                        }
+
+                        if (shouldWrite)
+                        {
+                            var content = RdfHandler.Generate(validGraph, accept);
+                            EnsureDirectory(finalPath);
+                            File.WriteAllText(finalPath, content);
+                            sb.AppendLine($"  {name}: Generated");
+                        }
                     }
                     catch (Exception)
                     {

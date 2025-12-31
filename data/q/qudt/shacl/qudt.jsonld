@@ -3143,10 +3143,10 @@
       {
         "@list": [
           {
-            "@id": "_:autos11741"
+            "@id": "_:autos11622"
           },
           {
-            "@id": "_:autos11743"
+            "@id": "_:autos11624"
           }
         ]
       }
@@ -3174,7 +3174,7 @@
     ]
   },
   {
-    "@id": "_:autos11741",
+    "@id": "_:autos11622",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -3182,7 +3182,7 @@
     ]
   },
   {
-    "@id": "_:autos11743",
+    "@id": "_:autos11624",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "http://qudt.org/schema/qudt/Citation"
@@ -3492,15 +3492,15 @@
     ],
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:autos11744"
+        "@id": "_:autos11625"
       },
       {
-        "@id": "_:autos11745"
+        "@id": "_:autos11626"
       }
     ]
   },
   {
-    "@id": "_:autos11744",
+    "@id": "_:autos11625",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
@@ -3524,32 +3524,32 @@
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:autos11750"
+        "@id": "_:autos11631"
       }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@list": [
           {
-            "@id": "_:autos11752"
+            "@id": "_:autos11633"
           },
           {
-            "@id": "_:autos11754"
+            "@id": "_:autos11635"
           },
           {
-            "@id": "_:autos11756"
+            "@id": "_:autos11637"
           },
           {
-            "@id": "_:autos11758"
+            "@id": "_:autos11639"
           },
           {
-            "@id": "_:autos11760"
+            "@id": "_:autos11641"
           },
           {
-            "@id": "_:autos11762"
+            "@id": "_:autos11643"
           },
           {
-            "@id": "_:autos11764"
+            "@id": "_:autos11645"
           }
         ]
       }
@@ -3566,7 +3566,7 @@
     ]
   },
   {
-    "@id": "_:autos11745",
+    "@id": "_:autos11626",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
@@ -3576,17 +3576,17 @@
       {
         "@list": [
           {
-            "@id": "_:autos11747"
+            "@id": "_:autos11628"
           },
           {
-            "@id": "_:autos11749"
+            "@id": "_:autos11630"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:autos11747",
+    "@id": "_:autos11628",
     "http://www.w3.org/ns/shacl#node": [
       {
         "@list": []
@@ -3594,7 +3594,7 @@
     ]
   },
   {
-    "@id": "_:autos11749",
+    "@id": "_:autos11630",
     "http://www.w3.org/ns/shacl#node": [
       {
         "@id": "http://qudt.org/schema/qudt/NumericListShape"
@@ -3602,7 +3602,7 @@
     ]
   },
   {
-    "@id": "_:autos11750",
+    "@id": "_:autos11631",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
@@ -3610,7 +3610,7 @@
     ]
   },
   {
-    "@id": "_:autos11752",
+    "@id": "_:autos11633",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -3618,7 +3618,7 @@
     ]
   },
   {
-    "@id": "_:autos11754",
+    "@id": "_:autos11635",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
@@ -3626,7 +3626,7 @@
     ]
   },
   {
-    "@id": "_:autos11756",
+    "@id": "_:autos11637",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#integer"
@@ -3634,7 +3634,7 @@
     ]
   },
   {
-    "@id": "_:autos11758",
+    "@id": "_:autos11639",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#int"
@@ -3642,7 +3642,7 @@
     ]
   },
   {
-    "@id": "_:autos11760",
+    "@id": "_:autos11641",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#float"
@@ -3650,7 +3650,7 @@
     ]
   },
   {
-    "@id": "_:autos11762",
+    "@id": "_:autos11643",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#double"
@@ -3658,7 +3658,7 @@
     ]
   },
   {
-    "@id": "_:autos11764",
+    "@id": "_:autos11645",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#decimal"
@@ -4941,10 +4941,10 @@
       {
         "@list": [
           {
-            "@id": "_:autos11766"
+            "@id": "_:autos11647"
           },
           {
-            "@id": "_:autos11768"
+            "@id": "_:autos11649"
           }
         ]
       }
@@ -5110,13 +5110,13 @@
       {
         "@list": [
           {
-            "@id": "_:autos11770"
+            "@id": "_:autos11651"
           },
           {
-            "@id": "_:autos11772"
+            "@id": "_:autos11653"
           },
           {
-            "@id": "_:autos11775"
+            "@id": "_:autos11656"
           }
         ]
       }
@@ -5145,7 +5145,7 @@
     ]
   },
   {
-    "@id": "_:autos11766",
+    "@id": "_:autos11647",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "http://qudt.org/schema/qudt/Datatype"
@@ -5153,7 +5153,7 @@
     ]
   },
   {
-    "@id": "_:autos11768",
+    "@id": "_:autos11649",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
@@ -5301,7 +5301,7 @@
     ]
   },
   {
-    "@id": "_:autos11770",
+    "@id": "_:autos11651",
     "http://www.w3.org/ns/shacl#or": [
       {
         "@id": "http://qudt.org/schema/qudt/NumericTypeUnion"
@@ -5309,7 +5309,7 @@
     ]
   },
   {
-    "@id": "_:autos11773",
+    "@id": "_:autos11654",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://qudt.org/schema/qudt/value"
@@ -5322,15 +5322,15 @@
     ]
   },
   {
-    "@id": "_:autos11772",
+    "@id": "_:autos11653",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:autos11773"
+        "@id": "_:autos11654"
       }
     ]
   },
   {
-    "@id": "_:autos11776",
+    "@id": "_:autos11657",
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "http://qudt.org/schema/qudt/value"
@@ -5343,10 +5343,10 @@
     ]
   },
   {
-    "@id": "_:autos11775",
+    "@id": "_:autos11656",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:autos11776"
+        "@id": "_:autos11657"
       }
     ]
   },
@@ -7248,10 +7248,10 @@
       {
         "@list": [
           {
-            "@id": "_:autos11778"
+            "@id": "_:autos11659"
           },
           {
-            "@id": "_:autos11780"
+            "@id": "_:autos11661"
           }
         ]
       }
@@ -7285,7 +7285,7 @@
     ]
   },
   {
-    "@id": "_:autos11778",
+    "@id": "_:autos11659",
     "http://www.w3.org/ns/shacl#class": [
       {
         "@id": "http://qudt.org/schema/qudt/QuantityValue"
@@ -7293,7 +7293,7 @@
     ]
   },
   {
-    "@id": "_:autos11780",
+    "@id": "_:autos11661",
     "http://www.w3.org/ns/shacl#or": [
       {
         "@id": "http://qudt.org/schema/qudt/NumericTypeUnion"

@@ -7,7 +7,7 @@ namespace LdswScraper;
 
 public static class Tasks
 {
-    private class TaskConfig
+    internal class TaskConfig
     {
         public string Type { get; set; } = "";
         public string Uri { get; set; } = "";
@@ -15,7 +15,7 @@ public static class Tasks
         public string? Accept { get; set; }
     }
 
-    private class RootConfig
+    internal class RootConfig
     {
         public List<TaskConfig> Tasks { get; set; } = new();
     }
