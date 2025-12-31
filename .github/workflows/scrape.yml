@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   schedule:
     # - cron:  '*/60 * * * *'
-    - cron:  '48 5,19 * * *'
+      - cron:  '48 5 * * 4,6'
 
 
 jobs:
@@ -38,7 +38,7 @@ jobs:
 
     - name: Fetch latest data
       run: |-
-        dotnet run --project src/LdswScraper/LdswScraper.csproj --no-build -- -p 32 -t 0.5
+        dotnet run --project src/LdswScraper/LdswScraper.csproj --no-build -- -p 32 -t 0.3
 
     - name: Commit and push if it changed
       run: |-
