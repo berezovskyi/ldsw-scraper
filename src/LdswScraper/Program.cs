@@ -17,14 +17,28 @@ var timeoutOption = new Option<double>("--timeout")
 };
 timeoutOption.Aliases.Add("-t");
 
+var inputFileOption = new Option<string>("--input-file")
+{
+    Description = "The path to the input TOML file.",
+    DefaultValueFactory = _ => "data/tasks.toml"
+};
+inputFileOption.Aliases.Add("-i");
+
 var rootCommand = new RootCommand("LDSW Scraper");
 rootCommand.Options.Add(parallelOption);
 rootCommand.Options.Add(timeoutOption);
+rootCommand.Options.Add(inputFileOption);
 
 rootCommand.SetAction((ParseResult parseResult) =>
 {
     var parallelism = parseResult.GetValue(parallelOption);
     var timeout = parseResult.GetValue(timeoutOption);
+    var inputFile = parseResult.GetValue(inputFileOption);
+
+    if (string.IsNullOrWhiteSpace(inputFile))
+    {
+        throw new ArgumentException("Input file path cannot be empty.");
+    }
 
     var config = new ScraperConfig(parallelism, timeout);
 
@@ -40,9 +54,9 @@ rootCommand.SetAction((ParseResult parseResult) =>
     var logger = serviceProvider.GetRequiredService<ILogger<Program>>();
     var httpClientFactory = serviceProvider.GetRequiredService<IHttpClientFactory>();
 
-    logger.LogInformation("Starting scraper with P={Parallelism}, T={Timeout}s", parallelism, timeout);
+    logger.LogInformation("Starting scraper with P={Parallelism}, T={Timeout}s, Input={InputFile}", parallelism, timeout, inputFile);
 
-    var tasks = Tasks.GetAll().ToList();
+    var tasks = Tasks.GetAll(inputFile).ToList();
     var tasksByHost = tasks.GroupBy(t =>
     {
         try { return new Uri(t.Uri).Host; }

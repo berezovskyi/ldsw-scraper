@@ -1,151 +1,41 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+using Tomlyn;
 
 namespace LdswScraper;
 
 public static class Tasks
 {
-    private static readonly string[] _rawTasks =
-    [
-        "conneg|http://jazz.net/ns/dcs#|oslc/jazz/dcs",
-        "conneg|http://www.w3.org/ns/prov-o|w3c/PROV/prov-o",
-        "exact|https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/ontology.ttl|ifcOWL/IFC/4.2/ifc.ttl|text/turtle",
-        "exact|https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/ontology.xml|ifcOWL/IFC/4.2/ifc.rdf|application/rdf+xml",
-        "conneg|http://w3id.org/express#|ifcOWL/express",
-        "conneg|http://w3id.org/list#|ifcOWL/list",
-        "conneg|http://qudt.org/schema/qudt|qudt/qudt",
-        "conneg|http://qudt.org/2.1/schema/shacl/qudt|qudt/shacl/qudt",
-        "conneg|http://qudt.org/2.1/schema/shacl/datatype|qudt/shacl/qudt_datatype",
-        "conneg|http://qudt.org/2.1/schema/shacl/overlay/qudt|qudt/shacl/qudt_overlay",
-        "conneg|http://www.linkedmodel.org/schema/dtype|qudt/linkedmodels_dtype/dtype",
-        "conneg|http://www.linkedmodel.org/schema/vaem|qudt/linkedmodels_vaem/vaem",
-        "conneg|http://jazz.net/ns/mec#|oslc/jazz/mec",
-        "conneg|http://jazz.net/ns/enterprise_agile#|oslc/jazz/enterprise_agile",
-        "conneg|http://jazz.net/ns/functional_safety#|oslc/jazz/functional_safety",
-        "conneg|http://jazz.net/ns/aspice#|oslc/jazz/aspice",
-        "conneg|http://jazz.net/ns/discovery#|oslc/jazz/discovery",
-        "conneg|http://jazz.net/ns/sse#|oslc/jazz/sse",
-        "conneg|http://jazz.net/ns/process/shapes/Iteration|oslc/jazz/process_shapes_Iteration",
-        "conneg|http://jazz.net/ns/process#|oslc/jazz/process",
-        "conneg|http://jazz.net/ns/process/shapes/ProjectArea|oslc/jazz/process_shapes_ProjectArea",
-        "conneg|http://jazz.net/ns/process/shapes/TeamArea|oslc/jazz/process_shapes_TeamArea",
-        "conneg|http://jazz.net/ns/process/shapes/Timeline|oslc/jazz/process_shapes_Timeline",
-        "conneg|http://jazz.net/ns/validity#|oslc/jazz/validity",
-        "conneg|http://jazz.net/ns/ccm#|oslc/jazz/ccm",
-        "conneg|http://jazz.net/ns/dm/diagram#|oslc/jazz/dm_diagram",
-        "conneg|http://jazz.net/ns/dm/document#|oslc/jazz/dm_document",
-        "conneg|http://jazz.net/ns/dm/linktypes#|oslc/jazz/dm_linktypes",
-        "conneg|http://jazz.net/ns/dm/sketcher#|oslc/jazz/dm_sketcher",
-        "conneg|http://jazz.net/ns/pd/extensions#|oslc/jazz/pd_extensions",
-        "conneg|http://jazz.net/ns/psm/focalpoint/datatypes#|oslc/jazz/psm_focalpoint_datatypes",
-        "conneg|http://jazz.net/ns/psm/focalpoint#|oslc/jazz/psm_focalpoint",
-        "conneg|http://jazz.net/ns/pd#|oslc/jazz/pd",
-        "conneg|http://jazz.net/ns/qm/rqm#|oslc/jazz/qm_rqm",
-        "conneg|http://jazz.net/ns/rm/linktypes#|oslc/jazz/rm_linktypes",
-        "conneg|http://jazz.net/ns/rm#|oslc/jazz/rm",
-        "conneg|http://jazz.net/ns/dm/rhapsody/sysml#|oslc/jazz/dm_rhapsody_sysml",
-        "conneg|http://jazz.net/ns/dm/rhapsody/testing#|oslc/jazz/dm_rhapsody_testing",
-        "conneg|http://jazz.net/ns/dm/rhapsody/uml#|oslc/jazz/dm_rhapsody_uml",
-        "conneg|http://jazz.net/ns/dm/rsa/deployment/core#|oslc/jazz/dm_rsa_deployment_core",
-        "conneg|http://jazz.net/ns/dm/rsa/uml#|oslc/jazz/dm_rsa_uml",
-        "conneg|http://jazz.net/ns/reporting/sparqlgateway#|oslc/jazz/reporting_sparqlgateway",
-        "conneg|http://jazz.net/ns/rtc/scm/config#|oslc/jazz/rtc_scm_config",
-        "conneg|http://jazz.net/ns/qm/rtcp#|oslc/jazz/qm_rtcp",
-        "conneg|http://jazz.net/ns/reporting/data/dictionary#|oslc/jazz/reporting_data_dictionary",
-        "conneg|http://jazz.net/ns/am/rmm#|oslc/jazz/am_rmm",
-        "conneg|http://jazz.net/ns/scm#|oslc/jazz/scm",
-        "conneg|http://jazz.net/ns/dm/rhapsody/HarmonySE#|oslc/jazz/dm_rhapsody_HarmonySE",
-        "conneg|http://jazz.net/ns/qm/rqm/labmanagement#|oslc/jazz/qm_rqm_labmanagement",
-        "conneg|http://jazz.net/ns/dm/rhapsody/UPDM2_MODAF#|oslc/jazz/dm_rhapsody_UPDM2_MODAF",
-        "conneg|http://jazz.net/ns/ism/admin/health#|oslc/jazz/ism_admin_health",
-        "conneg|http://jazz.net/ns/ism/admin#|oslc/jazz/ism_admin",
-        "conneg|http://jazz.net/ns/ism/perfmon/tt#|oslc/jazz/ism_perfmon_tt",
-        "conneg|http://jazz.net/ns/ism/perfmon/itm#|oslc/jazz/ism_perfmon_itm",
-        "conneg|http://jazz.net/ns/ism/event/omnibus#|oslc/jazz/ism_event_omnibus",
-        "conneg|http://jazz.net/ns/ism/event/omnibus/itnm#|oslc/jazz/ism_event_omnibus_itnm",
-        "conneg|http://jazz.net/ns/ism/event/omnibus/misc#|oslc/jazz/ism_event_omnibus_misc",
-        "conneg|http://jazz.net/ns/ism/event/omnibus/tbsm#|oslc/jazz/ism_event_omnibus_tbsm",
-        "conneg|http://jazz.net/ns/ism/registry#|oslc/jazz/ism_registry",
-        "conneg|http://www.w3.org/ns/csvw|w3c/CVSW/csvw",
-        "conneg|https://www.w3.org/ns/ldp|w3c/LDP/ldp",
-        "conneg|https://www.w3.org/ns/activitystreams|w3c/ActivityStreams/as",
-        "conneg|http://purl.org/NET/scovo#|scovo/scovo",
-        "exact|http://purl.org/linked-data/cube#|w3c/Data-Cube/qb.ttl|text/turtle",
-        "conneg|https://www.w3.org/ns/org#|w3c/org/org",
-        "exact|http://purl.org/goodrelations/v1|goodrelations/goodrelations.rdf|application/rdf+xml",
-        "exact|https://spec.ottr.xyz/wOTTR/0.4.5/all.owl.ttl|OTTR/all.owl.ttl|text/turtle",
-        "exact|http://spec.ottr.xyz/wOTTR/0.4/core-vocabulary.owl.ttl|OTTR/core-vocabulary.owl.ttl|text/turtle",
-        "exact|http://spec.ottr.xyz/wOTTR/0.4/core-grammar.shacl.ttl|OTTR/core-grammar.shacl.ttl|text/turtle",
-        "exact|http://spec.ottr.xyz/rOTTR/0.2/types.owl.ttl|OTTR/types.owl.ttl|text/turtle",
-        "exact|http://spec.ottr.xyz/rOTTR/0.2/types.shacl.ttl|OTTR/types.shacl.ttl|text/turtle",
-        "exact|http://spec.ottr.xyz/rOTTR/0.2/puntypes.shacl.ttl|OTTR/puntypes.shacl.ttl|text/turtle",
-        "exact|http://vocab.org/waiver/vocab.rdf|WAIVER/waiver.rdf|application/rdf+xml",
-        "conneg|https://www.w3.org/ns/sparql-service-description|w3c/SPARQL-SD/sd",
-        "conneg|http://rdfs.org/ns/void|w3c/VoID/void",
-        "conneg|http://www.w3.org/ns/prov|w3c/PROV/prov",
-        "conneg|http://www.w3.org/ns/adms|w3c/ADMS/adms",
-        "conneg|http://rds.posccaesar.org/ontology/lis14/ont/core|Industrial-Data-Ontology/ido-core",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/core|Industrial-Data-Ontology/plm-core",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt|Industrial-Data-Ontology/plm-chebi",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/process|Industrial-Data-Ontology/plm-process",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/equipment|Industrial-Data-Ontology/plm-equipment",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/uom|Industrial-Data-Ontology/plm-uom",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/datasheet|Industrial-Data-Ontology/plm-datasheet",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/norsok-z001|Industrial-Data-Ontology/plm-norsok-z001",
-        "conneg|http://rds.posccaesar.org/ontology/plm/ont/core-collect|Industrial-Data-Ontology/plm-core-collect",
-        "exact|https://www.w3.org/2006/03/wn/wn20/schemas/wnfull.rdfs|wordnet/wnfull.rdf|application/rdf+xml",
-        "exact|https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl|Basic-Formal-Ontology/bfo.rdf|application/rdf+xml",
-        "exact|http://xmlns.com/wot/0.1/index.rdf|web-of-trust/wot.rdf|application/rdf+xml",
-        "conneg|http://www.w3.org/ns/solid/terms|solid/solid-terms",
-        "conneg|http://www.w3.org/ns/pim/space|w3c/pim/space",
-        "conneg|http://www.w3.org/ns/pim/arg|w3c/pim/arg",
-        "shex|http://www.w3.org/2002/12/cal/ical|w3c/w3c-ical/ical",
-        "exact|https://www.w3.org/2002/12/cal/icaltzd|w3c/w3c-ical/icaltzd.rdf|applications/rdf+xml",
-        "conneg|http://www.w3.org/ns/auth/acl|w3c/auth/WAC/acl",
-        "conneg|http://www.w3.org/ns/auth/cert|w3c/auth/WebID-TLS/cert",
-        "conneg|http://www.w3.org/ns/posix/stat|w3c/w3c-posix/stat",
-        "exact|http://usefulinc.com/ns/doap|doap/doap.rdf|application/rdf+xml",
-        "conneg|http://purl.org/dc/elements/1.1/|dc/elements/dc",
-        "conneg|http://www.w3.org/2007/ont/http|w3c/w3c-ont/http",
-        "conneg|http://www.w3.org/2007/ont/httph|w3c/w3c-ont/httph",
-        "exact|http://www.w3.org/2004/02/skos/core|skos/skos-core.rdf|application/rdf+xml",
-        "conneg|http://semweb.mmlab.be/ns/rml|rml/rml-vocab/rml",
-        "conneg|http://semweb.mmlab.be/ns/rml-target|rml/rml-target/rmlt",
-        "conneg|http://www.w3.org/ns/r2rml|rml/r2rml-vocab/r2rml",
-        "conneg|http://open-services.net/ns/sysmlv2|oslc/oslc-sysmlv2/sysmlv2",
-        "conneg|http://open-services.net/ns/sysmlv2/shapes/20240801|oslc/oslc-sysmlv2/sysmlv2-shapes",
-        "conneg|https://open-services.net/ns/config|oslc/oslc-config/config",
-        "conneg|https://open-services.net/ns/config/shapes/1.0/|oslc/oslc-config/config-shapes",
-        "conneg|https://open-services.net/ns/core/trs|oslc/oslc-trs/trs",
-        "conneg|https://open-services.net/ns/core/trspatch|oslc/oslc-trs/trspatch",
-        "conneg|https://open-services.net/ns/trs/shapes/3.0/|oslc/oslc-trs/trs-shapes",
-        "conneg|https://open-services.net/ns/core|oslc/oslc-core/core",
-        "conneg|https://open-services.net/ns/core/shapes/3.0|oslc/oslc-core/core-shapes",
-        "conneg|http://purl.org/dc/terms/|dc/terms/dcterms",
-        "exact|https://purl.org/vocab/vann/vann-vocab-20100607.rdf|vann/vann-vocab.rdf|application/rdf+xml",
-        "conneg|http://xmlns.com/foaf/0.1/|foaf/foaf",
-        "conneg|http://www.w3.org/1999/02/22-rdf-syntax-ns|w3c/rdf/rdf",
-        "conneg|http://www.w3.org/2000/01/rdf-schema|w3c/rdf/rdfs",
-        "conneg|http://www.w3.org/2002/07/owl#|w3c/owl"
-    ];
-
-    public static IEnumerable<ScrapeTask> GetAll()
+    internal class TaskConfig
     {
-        foreach (var line in _rawTasks)
+        public string Type { get; set; } = "";
+        public string Uri { get; set; } = "";
+        public string Path { get; set; } = "";
+        public string? Accept { get; set; }
+    }
+
+    internal class RootConfig
+    {
+        public List<TaskConfig> Tasks { get; set; } = new();
+    }
+
+    public static IEnumerable<ScrapeTask> GetAll(string filePath)
+    {
+        var content = File.ReadAllText(filePath);
+        var config = Toml.ToModel<RootConfig>(content);
+
+        foreach (var taskConfig in config.Tasks)
         {
-            var parts = line.Split('|');
-            var type = parts[0] switch
+            var type = taskConfig.Type.ToLowerInvariant() switch
             {
                 "conneg" => TaskType.Conneg,
                 "exact" => TaskType.Exact,
                 "shex" => TaskType.Shex,
-                _ => throw new FormatException($"Unknown task type: {parts[0]}")
+                _ => throw new FormatException($"Unknown task type: {taskConfig.Type}")
             };
-            var uri = parts[1];
-            var path = parts[2];
-            string? accept = parts.Length > 3 ? parts[3] : null;
 
-            yield return new ScrapeTask(type, uri, path, accept);
+            yield return new ScrapeTask(type, taskConfig.Uri, taskConfig.Path, taskConfig.Accept);
         }
     }
 }
