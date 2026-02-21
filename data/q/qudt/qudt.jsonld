@@ -1,189 +1,8 @@
 [
   {
-    "@id": "http://purl.org/dc/terms/abstract",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/terms/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "abstract"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/contributor",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "contributor"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "created"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#date"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "creator"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "description"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/isReplacedBy",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "is replaced by"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/modified",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "modified"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#date"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/rights",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "rights"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/source",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/terms/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "source"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/subject",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "subject"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "title"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
     "@id": "http://qudt.org/schema/qudt",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
-    ],
-    "http://www.linkedmodel.org/schema/vaem#hasGraphMetadata": [
-      {
-        "@id": "http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "QUDT Schema - Version 3.1.10"
-      }
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
@@ -199,6 +18,35 @@
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
         "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QUDT Schema - Version 3.1.11"
+      }
+    ],
+    "http://www.linkedmodel.org/schema/vaem#hasGraphMetadata": [
+      {
+        "@id": "http://www.linkedmodel.org/schema/vaem#GMD_QUDT-SCHEMA"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.linkedmodel.org/schema/dtype",
+    "http://www.linkedmodel.org/schema/vaem#namespace": [
+      {
+        "@value": "http://www.linkedmodel.org/schema/dtype#",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.linkedmodel.org/schema/vaem#namespacePrefix": [
+      {
+        "@value": "dtype"
       }
     ]
   },
@@ -246,7 +94,7 @@
     ],
     "http://purl.org/dc/terms/modified": [
       {
-        "@value": "2026-01-15T13:18:54Z",
+        "@value": "2026-02-19T13:23:21Z",
         "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
       }
     ],
@@ -265,7 +113,12 @@
     ],
     "http://purl.org/dc/terms/title": [
       {
-        "@value": "QUDT Schema - Version 3.1.10"
+        "@value": "QUDT Schema - Version 3.1.11"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
       }
     ],
     "http://qudt.org/schema/qudt/informativeReference": [
@@ -290,6 +143,16 @@
         "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
       }
     ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QUDT Schema - Version 3.1.11"
+      }
+    ],
     "http://www.linkedmodel.org/schema/vaem#graphName": [
       {
         "@value": "qudt"
@@ -297,7 +160,7 @@
     ],
     "http://www.linkedmodel.org/schema/vaem#graphTitle": [
       {
-        "@value": "Quantities, Units, Dimensions and Types (QUDT) Schema - Version 3.1.10"
+        "@value": "Quantities, Units, Dimensions and Types (QUDT) Schema - Version 3.1.11"
       }
     ],
     "http://www.linkedmodel.org/schema/vaem#hasGraphRole": [
@@ -327,7 +190,7 @@
     ],
     "http://www.linkedmodel.org/schema/vaem#latestPublishedVersion": [
       {
-        "@value": "https://qudt.org/doc/2026/01/DOC_SCHEMA-QUDT.html",
+        "@value": "https://qudt.org/doc/2026/02/DOC_SCHEMA-QUDT.html",
         "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
       }
     ],
@@ -355,7 +218,7 @@
     ],
     "http://www.linkedmodel.org/schema/vaem#previousPublishedVersion": [
       {
-        "@value": "https://qudt.org/doc/2025/12/DOC_SCHEMA-QUDT.html",
+        "@value": "https://qudt.org/doc/2026/01/DOC_SCHEMA-QUDT.html",
         "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
       }
     ],
@@ -401,41 +264,12 @@
       {
         "@id": "http://voag.linkedmodel.org/schema/voag#QUDT-Attribution"
       }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "QUDT Schema - Version 3.1.10"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#versionIRI": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
     ]
   },
   {
-    "@id": "http://www.linkedmodel.org/schema/dtype",
-    "http://www.linkedmodel.org/schema/vaem#namespace": [
-      {
-        "@value": "http://www.linkedmodel.org/schema/dtype#",
-        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
-      }
-    ],
-    "http://www.linkedmodel.org/schema/vaem#namespacePrefix": [
-      {
-        "@value": "dtype"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/AbstractQuantityKind",
+    "@id": "http://qudt.org/schema/qudt/FactorUnit",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2000/01/rdf-schema#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -444,7 +278,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Quantity Kind (abstract)"
+        "@value": "Reified Factor"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -452,16 +286,10 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos431"
+        "@id": "_:autos257"
       },
       {
-        "@id": "_:autos432"
-      },
-      {
-        "@id": "_:autos433"
-      },
-      {
-        "@id": "_:autos434"
+        "@id": "_:autos258"
       }
     ]
   },
@@ -491,10 +319,81 @@
         "@id": "http://www.w3.org/2002/07/owl#Thing"
       },
       {
-        "@id": "_:autos452"
+        "@id": "_:autos283"
       },
       {
-        "@id": "_:autos453"
+        "@id": "_:autos284"
+      },
+      {
+        "@id": "_:autos285"
+      },
+      {
+        "@id": "_:autos286"
+      },
+      {
+        "@id": "_:autos287"
+      },
+      {
+        "@id": "_:autos288"
+      },
+      {
+        "@id": "_:autos289"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos257",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Unit"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasUnit"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/Unit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "\n  A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). \n  For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). \n  Any measurement of the length can be expressed as a number multiplied by the unit meter. \n  More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  $Q = nU$.\n  ",
+        "@type": "http://qudt.org/schema/qudt/LatexString"
+      }
+    ],
+    "http://qudt.org/schema/qudt/informativeReference": [
+      {
+        "@value": "http://dbpedia.org/resource/Category:Units_of_measure",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      },
+      {
+        "@value": "http://www.allmeasures.com/Fullconversion.asp",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Unit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Concept"
+      },
+      {
+        "@id": "http://qudt.org/schema/qudt/Verifiable"
       },
       {
         "@id": "_:autos454"
@@ -510,11 +409,230 @@
       },
       {
         "@id": "_:autos458"
+      },
+      {
+        "@id": "_:autos459"
+      },
+      {
+        "@id": "_:autos460"
+      },
+      {
+        "@id": "_:autos461"
+      },
+      {
+        "@id": "_:autos462"
+      },
+      {
+        "@id": "_:autos463"
+      },
+      {
+        "@id": "_:autos464"
+      },
+      {
+        "@id": "_:autos465"
+      },
+      {
+        "@id": "_:autos466"
+      },
+      {
+        "@id": "_:autos467"
+      },
+      {
+        "@id": "_:autos468"
+      },
+      {
+        "@id": "_:autos469"
+      },
+      {
+        "@id": "_:autos470"
+      },
+      {
+        "@id": "_:autos471"
+      },
+      {
+        "@id": "_:autos472"
+      },
+      {
+        "@id": "_:autos473"
+      },
+      {
+        "@id": "_:autos474"
+      },
+      {
+        "@id": "_:autos475"
+      },
+      {
+        "@id": "_:autos476"
+      },
+      {
+        "@id": "_:autos477"
+      },
+      {
+        "@id": "_:autos478"
+      },
+      {
+        "@id": "_:autos479"
+      },
+      {
+        "@id": "_:autos480"
+      },
+      {
+        "@id": "_:autos481"
+      },
+      {
+        "@id": "_:autos482"
+      },
+      {
+        "@id": "_:autos483"
       }
     ]
   },
   {
-    "@id": "_:autos431",
+    "@id": "http://qudt.org/schema/qudt/hasUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property relates a factor unit its unit",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      },
+      {
+        "@value": "This property relates a factor unit to its unit or a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has unit"
+      },
+      {
+        "@value": "hasUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Unit"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos258",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:autos259"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/exponent"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos259",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/exponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property relates a factor unit its exponent",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "exponent"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/Statement",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Statement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/AbstractQuantityKind",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Quantity Kind (abstract)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Concept"
+      },
+      {
+        "@id": "_:autos262"
+      },
+      {
+        "@id": "_:autos263"
+      },
+      {
+        "@id": "_:autos264"
+      },
+      {
+        "@id": "_:autos265"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos262",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -564,54 +682,54 @@
         "@id": "http://qudt.org/schema/qudt/Verifiable"
       },
       {
-        "@id": "_:autos567"
+        "@id": "_:autos391"
       },
       {
-        "@id": "_:autos568"
+        "@id": "_:autos392"
       },
       {
-        "@id": "_:autos569"
+        "@id": "_:autos393"
       },
       {
-        "@id": "_:autos570"
+        "@id": "_:autos394"
       },
       {
-        "@id": "_:autos571"
+        "@id": "_:autos395"
       },
       {
-        "@id": "_:autos572"
+        "@id": "_:autos396"
       },
       {
-        "@id": "_:autos573"
+        "@id": "_:autos397"
       },
       {
-        "@id": "_:autos574"
+        "@id": "_:autos398"
       },
       {
-        "@id": "_:autos575"
+        "@id": "_:autos399"
       },
       {
-        "@id": "_:autos576"
+        "@id": "_:autos400"
       },
       {
-        "@id": "_:autos577"
+        "@id": "_:autos401"
       },
       {
-        "@id": "_:autos578"
+        "@id": "_:autos402"
       },
       {
-        "@id": "_:autos579"
+        "@id": "_:autos403"
       },
       {
-        "@id": "_:autos580"
+        "@id": "_:autos404"
       },
       {
-        "@id": "_:autos581"
+        "@id": "_:autos405"
       }
     ]
   },
   {
-    "@id": "_:autos432",
+    "@id": "_:autos263",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -655,7 +773,7 @@
     ]
   },
   {
-    "@id": "_:autos433",
+    "@id": "_:autos264",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -699,7 +817,7 @@
     ]
   },
   {
-    "@id": "_:autos434",
+    "@id": "_:autos265",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -801,33 +919,6 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/Aspect",
-    "@type": [
-      "http://qudt.org/schema/qudt/AspectClass"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An aspect is an abstract type class that defines properties that can be reused.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "QUDT Aspect"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Thing"
-      }
-    ]
-  },
-  {
     "@id": "http://qudt.org/schema/qudt/AspectClass",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -884,21 +975,21 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos435"
+        "@id": "_:autos266"
       },
       {
-        "@id": "_:autos436"
+        "@id": "_:autos267"
       },
       {
-        "@id": "_:autos437"
+        "@id": "_:autos268"
       },
       {
-        "@id": "_:autos438"
+        "@id": "_:autos269"
       }
     ]
   },
   {
-    "@id": "_:autos435",
+    "@id": "_:autos266",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -916,8 +1007,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/hasBaseQuantityKind",
     "@type": [
-      "http://www.w3.org/2002/07/owl#FunctionalProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -936,7 +1027,7 @@
     ]
   },
   {
-    "@id": "_:autos436",
+    "@id": "_:autos267",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -974,7 +1065,7 @@
     ]
   },
   {
-    "@id": "_:autos437",
+    "@id": "_:autos268",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -991,7 +1082,7 @@
     ]
   },
   {
-    "@id": "_:autos438",
+    "@id": "_:autos269",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1004,71 +1095,6 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://qudt.org/schema/qudt/vectorMagnitude"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/BigEndian",
-    "@type": [
-      "http://qudt.org/schema/qudt/EndianType"
-    ],
-    "http://www.linkedmodel.org/schema/dtype#literal": [
-      {
-        "@value": "big"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Big Endian"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/EndianType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://qudt.org/schema/qudt/informativeReference": [
-      {
-        "@value": "http://en.wikipedia.org/wiki/Endianness",
-        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
-      }
-    ],
-    "http://qudt.org/schema/qudt/plainTextDescription": [
-      {
-        "@value": "In computing, endianness is the ordering used to represent some kind of data as a sequence of smaller units. Typical cases are the order in which integer values are stored as bytes in computer memory (relative to a given memory addressing scheme) and the transmission order over a network or other medium. When specifically talking about bytes, endianness is also referred to simply as byte order.  Most computer processors simply store integers as sequences of bytes, so that, conceptually, the encoded value can be obtained by simple concatenation. For an 'n-byte' integer value this allows 'n!' (n factorial) possible representations (one for each byte permutation). The two most common of them are: increasing numeric significance with increasing memory addresses, known as little-endian, and its opposite, called big-endian."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Endian Type"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://qudt.org/schema/qudt/LittleEndian"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/BigEndian"
-          }
-        ]
       }
     ]
   },
@@ -1121,22 +1147,57 @@
         "@id": "http://qudt.org/schema/qudt/Verifiable"
       },
       {
-        "@id": "_:autos544"
+        "@id": "_:autos368"
       },
       {
-        "@id": "_:autos545"
+        "@id": "_:autos369"
       },
       {
-        "@id": "_:autos546"
+        "@id": "_:autos370"
       },
       {
-        "@id": "_:autos547"
+        "@id": "_:autos371"
       },
       {
-        "@id": "_:autos548"
+        "@id": "_:autos372"
       },
       {
-        "@id": "_:autos549"
+        "@id": "_:autos373"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/BitEncodingType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "A bit encoding is a correspondence between the two possible values of a bit, 0 or 1, and some interpretation. For example, in a boolean encoding, a bit denotes a truth value, where 0 corresponds to False and 1 corresponds to True."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://qudt.org/schema/qudt/BitEncoding"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Bit Encoding"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Encoding"
       }
     ]
   },
@@ -1159,41 +1220,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Bit Encoding"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/BitEncodingType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "A bit encoding is a correspondence between the two possible values of a bit, 0 or 1, and some interpretation. For example, in a boolean encoding, a bit denotes a truth value, where 0 corresponds to False and 1 corresponds to True."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Bit Encoding"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Encoding"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://qudt.org/schema/qudt/BitEncoding"
-          }
-        ]
       }
     ]
   },
@@ -1222,10 +1248,46 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos492"
+        "@id": "_:autos323"
       },
       {
-        "@id": "_:autos493"
+        "@id": "_:autos324"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/BooleanEncodingType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://qudt.org/schema/qudt/BooleanEncoding"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/BitEncoding"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/OctetEncoding"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Boolean encoding type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Encoding"
       }
     ]
   },
@@ -1248,42 +1310,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Boolean Encoding"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/BooleanEncodingType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Boolean encoding type"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Encoding"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://qudt.org/schema/qudt/BooleanEncoding"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/BitEncoding"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/OctetEncoding"
-          }
-        ]
       }
     ]
   },
@@ -1337,39 +1363,6 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE",
-    "@type": [
-      "http://qudt.org/schema/qudt/CardinalityType"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "\n  A set of numbers is called countably infinite if there is a way to enumerate them. \n  Formally this is done with a bijection function that associates each number in the set with exactly one of the positive integers.\n  The set of all fractions is also countably infinite.\n  In other words, any set $X$ that has the same cardinality as the set of the natural numbers,\n   or $| X | \\; =  \\; | \\mathbb N | \\; = \\; \\aleph0$, is said to be a countably infinite set.\n  ",
-        "@type": "http://qudt.org/schema/qudt/LatexString"
-      }
-    ],
-    "http://qudt.org/schema/qudt/informativeReference": [
-      {
-        "@value": "http://www.math.vanderbilt.edu/~schectex/courses/infinity.pdf",
-        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
-      }
-    ],
-    "http://www.linkedmodel.org/schema/dtype#literal": [
-      {
-        "@value": "countable"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Countably Infinite Cardinality Type"
-      }
-    ]
-  },
-  {
     "@id": "http://qudt.org/schema/qudt/CardinalityType",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -1378,6 +1371,21 @@
       {
         "@value": "\n  In mathematics, the cardinality of a set is a measure of the number of elements of the set.\n  For example, the set $A = {2, 4, 6}$ contains 3 elements, and therefore $A$ has a cardinality of 3. \n  There are two approaches to cardinality: one which compares sets directly using bijections and injections,\n   and another which uses cardinal numbers.\n  ",
         "@type": "http://qudt.org/schema/qudt/LatexString"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/CT_FINITE"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/CT_UNCOUNTABLE"
+          }
+        ]
       }
     ],
     "http://qudt.org/schema/qudt/informativeReference": [
@@ -1410,22 +1418,40 @@
         "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
       },
       {
-        "@id": "_:autos443"
+        "@id": "_:autos277"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE",
+    "@type": [
+      "http://qudt.org/schema/qudt/CardinalityType"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "\n  A set of numbers is called countably infinite if there is a way to enumerate them. \n  Formally this is done with a bijection function that associates each number in the set with exactly one of the positive integers.\n  The set of all fractions is also countably infinite.\n  In other words, any set $X$ that has the same cardinality as the set of the natural numbers,\n   or $| X | \\; =  \\; | \\mathbb N | \\; = \\; \\aleph0$, is said to be a countably infinite set.\n  ",
+        "@type": "http://qudt.org/schema/qudt/LatexString"
       }
     ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
+    "http://www.linkedmodel.org/schema/dtype#literal": [
       {
-        "@list": [
-          {
-            "@id": "http://qudt.org/schema/qudt/CT_COUNTABLY-INFINITE"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/CT_FINITE"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/CT_UNCOUNTABLE"
-          }
-        ]
+        "@value": "countable"
+      }
+    ],
+    "http://qudt.org/schema/qudt/informativeReference": [
+      {
+        "@value": "http://www.math.vanderbilt.edu/~schectex/courses/infinity.pdf",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Countably Infinite Cardinality Type"
       }
     ]
   },
@@ -1512,30 +1538,30 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
+        "@id": "http://www.linkedmodel.org/schema/dtype#EnumeratedValue"
+      },
+      {
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
         "@id": "http://qudt.org/schema/qudt/Verifiable"
       },
       {
-        "@id": "http://www.linkedmodel.org/schema/dtype#EnumeratedValue"
+        "@id": "_:autos327"
       },
       {
-        "@id": "_:autos498"
+        "@id": "_:autos328"
       },
       {
-        "@id": "_:autos499"
+        "@id": "_:autos329"
       },
       {
-        "@id": "_:autos500"
-      },
-      {
-        "@id": "_:autos501"
+        "@id": "_:autos330"
       }
     ]
   },
   {
-    "@id": "_:autos443",
+    "@id": "_:autos277",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1578,6 +1604,41 @@
     ]
   },
   {
+    "@id": "http://qudt.org/schema/qudt/CharEncodingType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The class of all character encoding schemes, each of which defines a rule or algorithm for encoding character data as a sequence of bits or bytes."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://qudt.org/schema/qudt/CharEncoding"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Char Encoding Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Encoding"
+      }
+    ]
+  },
+  {
     "@id": "http://qudt.org/schema/qudt/CharEncoding",
     "@type": [
       "http://qudt.org/schema/qudt/BooleanEncodingType",
@@ -1602,41 +1663,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Char Encoding"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/CharEncodingType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "The class of all character encoding schemes, each of which defines a rule or algorithm for encoding character data as a sequence of bits or bytes."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Char Encoding Type"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Encoding"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://qudt.org/schema/qudt/CharEncoding"
-          }
-        ]
       }
     ]
   },
@@ -1666,15 +1692,15 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos448"
+        "@id": "_:autos279"
       },
       {
-        "@id": "_:autos449"
+        "@id": "_:autos280"
       }
     ]
   },
   {
-    "@id": "_:autos448",
+    "@id": "_:autos279",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1691,7 +1717,18 @@
     ]
   },
   {
-    "@id": "_:autos449",
+    "@id": "http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "description"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos280",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1745,16 +1782,16 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://qudt.org/schema/qudt/Verifiable"
-      },
-      {
         "@id": "http://www.w3.org/2002/07/owl#Thing"
       },
       {
-        "@id": "_:autos450"
+        "@id": "http://qudt.org/schema/qudt/Verifiable"
       },
       {
-        "@id": "_:autos451"
+        "@id": "_:autos281"
+      },
+      {
+        "@id": "_:autos282"
       }
     ]
   },
@@ -1783,27 +1820,27 @@
         "@id": "http://qudt.org/schema/qudt/Aspect"
       },
       {
-        "@id": "_:autos666"
+        "@id": "_:autos495"
       },
       {
-        "@id": "_:autos667"
+        "@id": "_:autos496"
       },
       {
-        "@id": "_:autos668"
+        "@id": "_:autos497"
       },
       {
-        "@id": "_:autos669"
+        "@id": "_:autos498"
       },
       {
-        "@id": "_:autos670"
+        "@id": "_:autos499"
       },
       {
-        "@id": "_:autos671"
+        "@id": "_:autos500"
       }
     ]
   },
   {
-    "@id": "_:autos450",
+    "@id": "_:autos281",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1820,7 +1857,7 @@
     ]
   },
   {
-    "@id": "_:autos451",
+    "@id": "_:autos282",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1858,7 +1895,7 @@
     ]
   },
   {
-    "@id": "_:autos452",
+    "@id": "_:autos283",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1896,10 +1933,10 @@
         "@id": "http://qudt.org/schema/qudt/Verifiable"
       },
       {
-        "@id": "_:autos595"
+        "@id": "_:autos419"
       },
       {
-        "@id": "_:autos596"
+        "@id": "_:autos420"
       }
     ]
   },
@@ -1920,7 +1957,7 @@
     ]
   },
   {
-    "@id": "_:autos453",
+    "@id": "_:autos284",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1937,7 +1974,7 @@
     ]
   },
   {
-    "@id": "_:autos454",
+    "@id": "_:autos285",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1954,7 +1991,18 @@
     ]
   },
   {
-    "@id": "_:autos455",
+    "@id": "http://purl.org/dc/terms/isReplacedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is replaced by"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos286",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1998,7 +2046,7 @@
     ]
   },
   {
-    "@id": "_:autos456",
+    "@id": "_:autos287",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2036,7 +2084,7 @@
     ]
   },
   {
-    "@id": "_:autos457",
+    "@id": "_:autos288",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2085,7 +2133,7 @@
     ]
   },
   {
-    "@id": "_:autos458",
+    "@id": "_:autos289",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2154,7 +2202,7 @@
         "@id": "http://qudt.org/schema/qudt/QuantityValue"
       },
       {
-        "@id": "_:autos459"
+        "@id": "_:autos290"
       }
     ]
   },
@@ -2187,12 +2235,12 @@
         "@id": "http://qudt.org/schema/qudt/Quantifiable"
       },
       {
-        "@id": "_:autos594"
+        "@id": "_:autos418"
       }
     ]
   },
   {
-    "@id": "_:autos459",
+    "@id": "_:autos290",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2249,142 +2297,12 @@
         "@id": "http://qudt.org/schema/qudt/Unit"
       },
       {
-        "@id": "_:autos460"
+        "@id": "_:autos291"
       }
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/Unit",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "\n  A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). \n  For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). \n  Any measurement of the length can be expressed as a number multiplied by the unit meter. \n  More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  $Q = nU$.\n  ",
-        "@type": "http://qudt.org/schema/qudt/LatexString"
-      }
-    ],
-    "http://qudt.org/schema/qudt/informativeReference": [
-      {
-        "@value": "http://dbpedia.org/resource/Category:Units_of_measure",
-        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
-      },
-      {
-        "@value": "http://www.allmeasures.com/Fullconversion.asp",
-        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Unit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Concept"
-      },
-      {
-        "@id": "http://qudt.org/schema/qudt/Verifiable"
-      },
-      {
-        "@id": "_:autos634"
-      },
-      {
-        "@id": "_:autos635"
-      },
-      {
-        "@id": "_:autos636"
-      },
-      {
-        "@id": "_:autos637"
-      },
-      {
-        "@id": "_:autos638"
-      },
-      {
-        "@id": "_:autos639"
-      },
-      {
-        "@id": "_:autos640"
-      },
-      {
-        "@id": "_:autos641"
-      },
-      {
-        "@id": "_:autos642"
-      },
-      {
-        "@id": "_:autos643"
-      },
-      {
-        "@id": "_:autos644"
-      },
-      {
-        "@id": "_:autos645"
-      },
-      {
-        "@id": "_:autos646"
-      },
-      {
-        "@id": "_:autos647"
-      },
-      {
-        "@id": "_:autos648"
-      },
-      {
-        "@id": "_:autos649"
-      },
-      {
-        "@id": "_:autos650"
-      },
-      {
-        "@id": "_:autos651"
-      },
-      {
-        "@id": "_:autos652"
-      },
-      {
-        "@id": "_:autos653"
-      },
-      {
-        "@id": "_:autos654"
-      },
-      {
-        "@id": "_:autos655"
-      },
-      {
-        "@id": "_:autos656"
-      },
-      {
-        "@id": "_:autos657"
-      },
-      {
-        "@id": "_:autos658"
-      },
-      {
-        "@id": "_:autos659"
-      },
-      {
-        "@id": "_:autos660"
-      },
-      {
-        "@id": "_:autos661"
-      },
-      {
-        "@id": "_:autos662"
-      },
-      {
-        "@id": "_:autos663"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos460",
+    "@id": "_:autos291",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2456,22 +2374,17 @@
         "@id": "http://qudt.org/schema/qudt/DimensionlessUnit"
       },
       {
-        "@id": "_:autos461"
+        "@id": "_:autos292"
       },
       {
-        "@id": "_:autos462"
+        "@id": "_:autos293"
       }
     ]
   },
   {
-    "@id": "_:autos461",
+    "@id": "_:autos292",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2001/XMLSchema#pattern": [
-      {
-        "@value": "^\\d{3}$"
-      }
     ],
     "http://www.w3.org/2002/07/owl#maxCardinality": [
       {
@@ -2482,6 +2395,11 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://qudt.org/schema/qudt/currencyCode"
+      }
+    ],
+    "http://www.w3.org/2001/XMLSchema#pattern": [
+      {
+        "@value": "^\\d{3}$"
       }
     ]
   },
@@ -2520,7 +2438,7 @@
     ]
   },
   {
-    "@id": "_:autos462",
+    "@id": "_:autos293",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2590,24 +2508,51 @@
         "@id": "http://qudt.org/schema/qudt/Aspect"
       },
       {
-        "@id": "_:autos463"
+        "@id": "_:autos294"
       },
       {
-        "@id": "_:autos464"
+        "@id": "_:autos295"
       },
       {
-        "@id": "_:autos465"
+        "@id": "_:autos296"
       },
       {
-        "@id": "_:autos466"
+        "@id": "_:autos297"
       },
       {
-        "@id": "_:autos467"
+        "@id": "_:autos298"
       }
     ]
   },
   {
-    "@id": "_:autos463",
+    "@id": "http://qudt.org/schema/qudt/Aspect",
+    "@type": [
+      "http://qudt.org/schema/qudt/AspectClass"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An aspect is an abstract type class that defines properties that can be reused.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QUDT Aspect"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos294",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2639,7 +2584,7 @@
     ]
   },
   {
-    "@id": "_:autos464",
+    "@id": "_:autos295",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2651,6 +2596,50 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://qudt.org/schema/qudt/bitOrder"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/EndianType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://qudt.org/schema/qudt/LittleEndian"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/BigEndian"
+          }
+        ]
+      }
+    ],
+    "http://qudt.org/schema/qudt/informativeReference": [
+      {
+        "@value": "http://en.wikipedia.org/wiki/Endianness",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://qudt.org/schema/qudt/plainTextDescription": [
+      {
+        "@value": "In computing, endianness is the ordering used to represent some kind of data as a sequence of smaller units. Typical cases are the order in which integer values are stored as bytes in computer memory (relative to a given memory addressing scheme) and the transmission order over a network or other medium. When specifically talking about bytes, endianness is also referred to simply as byte order.  Most computer processors simply store integers as sequences of bytes, so that, conceptually, the encoded value can be obtained by simple concatenation. For an 'n-byte' integer value this allows 'n!' (n factorial) possible representations (one for each byte permutation). The two most common of them are: increasing numeric significance with increasing memory addresses, known as little-endian, and its opposite, called big-endian."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Endian Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
       }
     ]
   },
@@ -2676,7 +2665,7 @@
     ]
   },
   {
-    "@id": "_:autos465",
+    "@id": "_:autos296",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2693,7 +2682,7 @@
     ]
   },
   {
-    "@id": "_:autos466",
+    "@id": "_:autos297",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2736,7 +2725,7 @@
     ]
   },
   {
-    "@id": "_:autos467",
+    "@id": "_:autos298",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2778,21 +2767,22 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos468"
+        "@id": "_:autos299"
       },
       {
-        "@id": "_:autos469"
+        "@id": "_:autos300"
       }
     ]
   },
   {
-    "@id": "_:autos468",
+    "@id": "_:autos299",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -2824,14 +2814,13 @@
     ]
   },
   {
-    "@id": "_:autos469",
+    "@id": "_:autos300",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -2880,72 +2869,72 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos470"
+        "@id": "_:autos301"
       },
       {
-        "@id": "_:autos471"
+        "@id": "_:autos302"
       },
       {
-        "@id": "_:autos472"
+        "@id": "_:autos303"
       },
       {
-        "@id": "_:autos473"
+        "@id": "_:autos304"
       },
       {
-        "@id": "_:autos474"
+        "@id": "_:autos305"
       },
       {
-        "@id": "_:autos475"
+        "@id": "_:autos306"
       },
       {
-        "@id": "_:autos476"
+        "@id": "_:autos307"
       },
       {
-        "@id": "_:autos477"
+        "@id": "_:autos308"
       },
       {
-        "@id": "_:autos478"
+        "@id": "_:autos309"
       },
       {
-        "@id": "_:autos479"
+        "@id": "_:autos310"
       },
       {
-        "@id": "_:autos480"
+        "@id": "_:autos311"
       },
       {
-        "@id": "_:autos481"
+        "@id": "_:autos312"
       },
       {
-        "@id": "_:autos482"
+        "@id": "_:autos313"
       },
       {
-        "@id": "_:autos483"
+        "@id": "_:autos314"
       },
       {
-        "@id": "_:autos484"
+        "@id": "_:autos315"
       },
       {
-        "@id": "_:autos485"
+        "@id": "_:autos316"
       },
       {
-        "@id": "_:autos486"
+        "@id": "_:autos317"
       },
       {
-        "@id": "_:autos487"
+        "@id": "_:autos318"
       },
       {
-        "@id": "_:autos488"
+        "@id": "_:autos319"
       },
       {
-        "@id": "_:autos489"
+        "@id": "_:autos320"
       },
       {
-        "@id": "_:autos490"
+        "@id": "_:autos321"
       }
     ]
   },
   {
-    "@id": "_:autos470",
+    "@id": "_:autos301",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2977,7 +2966,7 @@
     ]
   },
   {
-    "@id": "_:autos471",
+    "@id": "_:autos302",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3009,7 +2998,7 @@
     ]
   },
   {
-    "@id": "_:autos472",
+    "@id": "_:autos303",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3034,6 +3023,21 @@
         "@value": "Describes how a data or information structure is ordered."
       }
     ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://qudt.org/schema/qudt/Unordered"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/PartiallyOrdered"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/TotallyOrdered"
+          }
+        ]
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "http://qudt.org/schema/qudt"
@@ -3049,22 +3053,7 @@
         "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
       },
       {
-        "@id": "_:autos524"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://qudt.org/schema/qudt/Unordered"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/PartiallyOrdered"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/TotallyOrdered"
-          }
-        ]
+        "@id": "_:autos351"
       }
     ]
   },
@@ -3085,7 +3074,7 @@
     ]
   },
   {
-    "@id": "_:autos473",
+    "@id": "_:autos304",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3123,7 +3112,7 @@
     ]
   },
   {
-    "@id": "_:autos474",
+    "@id": "_:autos305",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3140,7 +3129,7 @@
     ]
   },
   {
-    "@id": "_:autos475",
+    "@id": "_:autos306",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3173,7 +3162,7 @@
     ]
   },
   {
-    "@id": "_:autos476",
+    "@id": "_:autos307",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3216,7 +3205,7 @@
     ]
   },
   {
-    "@id": "_:autos477",
+    "@id": "_:autos308",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3233,7 +3222,7 @@
     ]
   },
   {
-    "@id": "_:autos478",
+    "@id": "_:autos309",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3250,7 +3239,7 @@
     ]
   },
   {
-    "@id": "_:autos479",
+    "@id": "_:autos310",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3288,7 +3277,7 @@
     ]
   },
   {
-    "@id": "_:autos480",
+    "@id": "_:autos311",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3326,7 +3315,7 @@
     ]
   },
   {
-    "@id": "_:autos481",
+    "@id": "_:autos312",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3364,7 +3353,7 @@
     ]
   },
   {
-    "@id": "_:autos482",
+    "@id": "_:autos313",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3402,7 +3391,7 @@
     ]
   },
   {
-    "@id": "_:autos483",
+    "@id": "_:autos314",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3440,7 +3429,7 @@
     ]
   },
   {
-    "@id": "_:autos484",
+    "@id": "_:autos315",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3478,7 +3467,7 @@
     ]
   },
   {
-    "@id": "_:autos485",
+    "@id": "_:autos316",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3531,7 +3520,7 @@
     ]
   },
   {
-    "@id": "_:autos486",
+    "@id": "_:autos317",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3569,7 +3558,7 @@
     ]
   },
   {
-    "@id": "_:autos487",
+    "@id": "_:autos318",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3586,7 +3575,7 @@
     ]
   },
   {
-    "@id": "_:autos488",
+    "@id": "_:autos319",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3624,7 +3613,7 @@
     ]
   },
   {
-    "@id": "_:autos489",
+    "@id": "_:autos320",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3662,7 +3651,7 @@
     ]
   },
   {
-    "@id": "_:autos490",
+    "@id": "_:autos321",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3724,12 +3713,12 @@
         "@id": "http://qudt.org/schema/qudt/StringEncodingType"
       },
       {
-        "@id": "_:autos491"
+        "@id": "_:autos322"
       }
     ]
   },
   {
-    "@id": "_:autos491",
+    "@id": "_:autos322",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3842,55 +3831,7 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/DoublePrecisionEncoding",
-    "@type": [
-      "http://qudt.org/schema/qudt/FloatingPointEncodingType"
-    ],
-    "http://qudt.org/schema/qudt/bytes": [
-      {
-        "@value": "64",
-        "@type": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Single Precision Real Encoding"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/FloatingPointEncodingType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "A \"Encoding\" with the following instance(s): \"Double Precision Encoding\", \"Single Precision Real Encoding\"."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Floating Point Encoding"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Encoding"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos492",
+    "@id": "_:autos323",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3928,7 +3869,7 @@
     ]
   },
   {
-    "@id": "_:autos493",
+    "@id": "_:autos324",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3947,8 +3888,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/bytes",
     "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -3988,72 +3929,91 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/EnumeratedQuantity",
+    "@id": "http://qudt.org/schema/qudt/BigEndian",
     "@type": [
-      "http://qudt.org/schema/qudt/AspectClass"
+      "http://qudt.org/schema/qudt/EndianType"
+    ],
+    "http://www.linkedmodel.org/schema/dtype#literal": [
+      {
+        "@value": "big"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Enumerated Quantity"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Concept"
-      },
-      {
-        "@id": "_:autos496"
-      },
-      {
-        "@id": "_:autos497"
+        "@value": "Big Endian"
       }
     ]
   },
   {
-    "@id": "_:autos496",
+    "@id": "_:autos327",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
       {
-        "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://qudt.org/schema/qudt/enumeratedValue"
+        "@id": "http://purl.org/dc/terms/description"
       }
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/enumeratedValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "enumerated value"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos497",
+    "@id": "_:autos328",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
       {
-        "@id": "http://qudt.org/schema/qudt/Enumeration"
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://qudt.org/schema/qudt/enumeration"
+        "@id": "http://qudt.org/schema/qudt/abbreviation"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos329",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/symbol"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos330",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/altSymbol"
       }
     ]
   },
@@ -4096,114 +4056,30 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://qudt.org/schema/qudt/Concept"
-      },
-      {
         "@id": "http://www.linkedmodel.org/schema/dtype#Enumeration"
       },
       {
-        "@id": "_:autos502"
+        "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos503"
+        "@id": "_:autos331"
       },
       {
-        "@id": "_:autos504"
+        "@id": "_:autos332"
       },
       {
-        "@id": "_:autos505"
+        "@id": "_:autos333"
       },
       {
-        "@id": "_:autos506"
+        "@id": "_:autos334"
+      },
+      {
+        "@id": "_:autos335"
       }
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/enumeration",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "enumeration"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Enumeration"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos498",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
-      {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/description"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos499",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
-      {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/abbreviation"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos500",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
-      {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/symbol"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos501",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/altSymbol"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos502",
+    "@id": "_:autos331",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4241,7 +4117,7 @@
     ]
   },
   {
-    "@id": "_:autos503",
+    "@id": "_:autos332",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4279,7 +4155,7 @@
     ]
   },
   {
-    "@id": "_:autos504",
+    "@id": "_:autos333",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4296,7 +4172,7 @@
     ]
   },
   {
-    "@id": "_:autos505",
+    "@id": "_:autos334",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4313,7 +4189,7 @@
     ]
   },
   {
-    "@id": "_:autos506",
+    "@id": "_:autos335",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4346,10 +4222,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://qudt.org/schema/qudt/Scale"
+        "@id": "http://www.linkedmodel.org/schema/dtype#Enumeration"
       },
       {
-        "@id": "http://www.linkedmodel.org/schema/dtype#Enumeration"
+        "@id": "http://qudt.org/schema/qudt/Scale"
       }
     ]
   },
@@ -4379,152 +4255,19 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos606"
+        "@id": "_:autos430"
       },
       {
-        "@id": "_:autos607"
+        "@id": "_:autos431"
       },
       {
-        "@id": "_:autos608"
+        "@id": "_:autos432"
       },
       {
-        "@id": "_:autos609"
+        "@id": "_:autos433"
       },
       {
-        "@id": "_:autos610"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/FactorUnit",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Reified Factor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Concept"
-      },
-      {
-        "@id": "_:autos507"
-      },
-      {
-        "@id": "_:autos508"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos507",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Unit"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasUnit"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/hasUnit",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "This property relates a factor unit its unit",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      },
-      {
-        "@value": "This property relates a factor unit to its unit or a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has unit"
-      },
-      {
-        "@value": "hasUnit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Unit"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos508",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "_:autos509"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/exponent"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos509",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#integer"
-          },
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/exponent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "This property relates a factor unit its exponent",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "exponent"
+        "@id": "_:autos434"
       }
     ]
   },
@@ -4548,30 +4291,30 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos512"
+        "@id": "_:autos336"
       },
       {
-        "@id": "_:autos513"
+        "@id": "_:autos337"
       },
       {
-        "@id": "_:autos514"
+        "@id": "_:autos338"
       },
       {
-        "@id": "_:autos515"
+        "@id": "_:autos339"
       },
       {
-        "@id": "_:autos516"
+        "@id": "_:autos340"
       },
       {
-        "@id": "_:autos517"
+        "@id": "_:autos341"
       },
       {
-        "@id": "_:autos518"
+        "@id": "_:autos342"
       }
     ]
   },
   {
-    "@id": "_:autos512",
+    "@id": "_:autos336",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4609,7 +4352,7 @@
     ]
   },
   {
-    "@id": "_:autos513",
+    "@id": "_:autos337",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4647,7 +4390,7 @@
     ]
   },
   {
-    "@id": "_:autos514",
+    "@id": "_:autos338",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4685,7 +4428,7 @@
     ]
   },
   {
-    "@id": "_:autos515",
+    "@id": "_:autos339",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4723,7 +4466,7 @@
     ]
   },
   {
-    "@id": "_:autos516",
+    "@id": "_:autos340",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4761,7 +4504,7 @@
     ]
   },
   {
-    "@id": "_:autos517",
+    "@id": "_:autos341",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4799,7 +4542,7 @@
     ]
   },
   {
-    "@id": "_:autos518",
+    "@id": "_:autos342",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -4837,14 +4580,13 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/IEEE754_1985RealEncoding",
+    "@id": "http://qudt.org/schema/qudt/FloatingPointEncodingType",
     "@type": [
-      "http://qudt.org/schema/qudt/FloatingPointEncodingType"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://qudt.org/schema/qudt/bytes": [
+    "http://purl.org/dc/terms/description": [
       {
-        "@value": "32",
-        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        "@value": "A \"Encoding\" with the following instance(s): \"Double Precision Encoding\", \"Single Precision Real Encoding\"."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -4854,31 +4596,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "IEEE 754 1985 Real Encoding"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/ISO8601-UTCDateTime-BasicFormat",
-    "@type": [
-      "http://qudt.org/schema/qudt/DateTimeStringEncodingType"
-    ],
-    "http://qudt.org/schema/qudt/allowedPattern": [
-      {
-        "@value": "[0-9]{4}[0-9]{2}[0-9]{2}T[0-9]{2}[0-9]{2}[0-9]{2}.[0-9]+Z"
-      },
-      {
-        "@value": "[0-9]{4}[0-9]{2}[0-9]{2}T[0-9]{2}[0-9]{2}[0-9]{2}Z"
+        "@value": "Floating Point Encoding"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "ISO 8601 UTC Date Time - Basic Format"
+        "@id": "http://qudt.org/schema/qudt/Encoding"
       }
     ]
   },
@@ -4890,21 +4613,6 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "The encoding scheme for integer types"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Integer Encoding"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Encoding"
       }
     ],
     "http://www.w3.org/2002/07/owl#oneOf": [
@@ -4926,6 +4634,21 @@
             "@id": "http://qudt.org/schema/qudt/UnsignedIntegerEncoding"
           }
         ]
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Integer Encoding"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Encoding"
       }
     ]
   },
@@ -5153,7 +4876,7 @@
         "@id": "http://qudt.org/schema/qudt/Scale"
       },
       {
-        "@id": "_:autos528"
+        "@id": "_:autos352"
       }
     ]
   },
@@ -5198,32 +4921,6 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://qudt.org/schema/qudt/Scale"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/LatexString",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A type of string in which some characters may be wrapped with '$' and '$ characters for LaTeX rendering."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Latex String"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     ]
   },
@@ -5318,27 +5015,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://qudt.org/schema/qudt/Concept"
+        "@id": "http://www.linkedmodel.org/schema/dtype#numericUnion"
       },
       {
-        "@id": "http://www.linkedmodel.org/schema/dtype#numericUnion"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos524",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
-      {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.linkedmodel.org/schema/dtype#literal"
+        "@id": "http://qudt.org/schema/qudt/Concept"
       }
     ]
   },
@@ -5347,14 +5027,14 @@
     "@type": [
       "http://qudt.org/schema/qudt/OrderedType"
     ],
-    "http://qudt.org/schema/qudt/plainTextDescription": [
-      {
-        "@value": "Unordered structure."
-      }
-    ],
     "http://www.linkedmodel.org/schema/dtype#literal": [
       {
         "@value": "unordered"
+      }
+    ],
+    "http://qudt.org/schema/qudt/plainTextDescription": [
+      {
+        "@value": "Unordered structure."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -5373,14 +5053,14 @@
     "@type": [
       "http://qudt.org/schema/qudt/OrderedType"
     ],
-    "http://qudt.org/schema/qudt/plainTextDescription": [
-      {
-        "@value": "Partial ordered structure."
-      }
-    ],
     "http://www.linkedmodel.org/schema/dtype#literal": [
       {
         "@value": "partial"
+      }
+    ],
+    "http://qudt.org/schema/qudt/plainTextDescription": [
+      {
+        "@value": "Partial ordered structure."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -5399,14 +5079,14 @@
     "@type": [
       "http://qudt.org/schema/qudt/OrderedType"
     ],
-    "http://qudt.org/schema/qudt/plainTextDescription": [
-      {
-        "@value": "Totally ordered structure."
-      }
-    ],
     "http://www.linkedmodel.org/schema/dtype#literal": [
       {
         "@value": "total"
+      }
+    ],
+    "http://qudt.org/schema/qudt/plainTextDescription": [
+      {
+        "@value": "Totally ordered structure."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -5421,7 +5101,24 @@
     ]
   },
   {
-    "@id": "_:autos528",
+    "@id": "_:autos351",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.linkedmodel.org/schema/dtype#literal"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos352",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5478,12 +5175,12 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos529"
+        "@id": "_:autos353"
       }
     ]
   },
   {
-    "@id": "_:autos529",
+    "@id": "_:autos353",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5531,46 +5228,46 @@
         "@id": "http://qudt.org/schema/qudt/Quantity"
       },
       {
-        "@id": "_:autos530"
+        "@id": "_:autos354"
       },
       {
-        "@id": "_:autos531"
+        "@id": "_:autos355"
       },
       {
-        "@id": "_:autos532"
+        "@id": "_:autos356"
       },
       {
-        "@id": "_:autos533"
+        "@id": "_:autos357"
       },
       {
-        "@id": "_:autos534"
+        "@id": "_:autos358"
       },
       {
-        "@id": "_:autos535"
+        "@id": "_:autos359"
       },
       {
-        "@id": "_:autos536"
+        "@id": "_:autos360"
       },
       {
-        "@id": "_:autos537"
+        "@id": "_:autos361"
       },
       {
-        "@id": "_:autos538"
+        "@id": "_:autos362"
       },
       {
-        "@id": "_:autos539"
+        "@id": "_:autos363"
       },
       {
-        "@id": "_:autos540"
+        "@id": "_:autos364"
       },
       {
-        "@id": "_:autos541"
+        "@id": "_:autos365"
       },
       {
-        "@id": "_:autos542"
+        "@id": "_:autos366"
       },
       {
-        "@id": "_:autos543"
+        "@id": "_:autos367"
       }
     ]
   },
@@ -5609,21 +5306,21 @@
         "@id": "http://qudt.org/schema/qudt/Quantifiable"
       },
       {
-        "@id": "_:autos563"
+        "@id": "_:autos387"
       },
       {
-        "@id": "_:autos564"
+        "@id": "_:autos388"
       },
       {
-        "@id": "_:autos565"
+        "@id": "_:autos389"
       },
       {
-        "@id": "_:autos566"
+        "@id": "_:autos390"
       }
     ]
   },
   {
-    "@id": "_:autos530",
+    "@id": "_:autos354",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5641,8 +5338,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/exactMatch",
     "@type": [
-      "http://qudt.org/schema/qudt/SymmetricRelation",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://qudt.org/schema/qudt/SymmetricRelation"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -5656,7 +5353,7 @@
     ]
   },
   {
-    "@id": "_:autos531",
+    "@id": "_:autos355",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5707,37 +5404,37 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos582"
+        "@id": "_:autos406"
       },
       {
-        "@id": "_:autos583"
+        "@id": "_:autos407"
       },
       {
-        "@id": "_:autos584"
+        "@id": "_:autos408"
       },
       {
-        "@id": "_:autos585"
+        "@id": "_:autos409"
       },
       {
-        "@id": "_:autos586"
+        "@id": "_:autos410"
       },
       {
-        "@id": "_:autos587"
+        "@id": "_:autos411"
       },
       {
-        "@id": "_:autos588"
+        "@id": "_:autos412"
       },
       {
-        "@id": "_:autos589"
+        "@id": "_:autos413"
       },
       {
-        "@id": "_:autos590"
+        "@id": "_:autos414"
       },
       {
-        "@id": "_:autos591"
+        "@id": "_:autos415"
       },
       {
-        "@id": "_:autos592"
+        "@id": "_:autos416"
       }
     ]
   },
@@ -5763,7 +5460,7 @@
     ]
   },
   {
-    "@id": "_:autos532",
+    "@id": "_:autos356",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5817,31 +5514,31 @@
         "@id": "http://qudt.org/schema/qudt/Verifiable"
       },
       {
-        "@id": "_:autos621"
+        "@id": "_:autos445"
       },
       {
-        "@id": "_:autos622"
+        "@id": "_:autos446"
       },
       {
-        "@id": "_:autos623"
+        "@id": "_:autos447"
       },
       {
-        "@id": "_:autos624"
+        "@id": "_:autos448"
       },
       {
-        "@id": "_:autos625"
+        "@id": "_:autos449"
       },
       {
-        "@id": "_:autos626"
+        "@id": "_:autos450"
       },
       {
-        "@id": "_:autos627"
+        "@id": "_:autos451"
       },
       {
-        "@id": "_:autos628"
+        "@id": "_:autos452"
       },
       {
-        "@id": "_:autos629"
+        "@id": "_:autos453"
       }
     ]
   },
@@ -5868,7 +5565,7 @@
     ]
   },
   {
-    "@id": "_:autos533",
+    "@id": "_:autos357",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5911,7 +5608,7 @@
     ]
   },
   {
-    "@id": "_:autos534",
+    "@id": "_:autos358",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5927,7 +5624,7 @@
     ]
   },
   {
-    "@id": "_:autos535",
+    "@id": "_:autos359",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -5965,7 +5662,7 @@
     ]
   },
   {
-    "@id": "_:autos536",
+    "@id": "_:autos360",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6008,7 +5705,7 @@
     ]
   },
   {
-    "@id": "_:autos537",
+    "@id": "_:autos361",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6025,7 +5722,7 @@
     ]
   },
   {
-    "@id": "_:autos538",
+    "@id": "_:autos362",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6063,7 +5760,7 @@
     ]
   },
   {
-    "@id": "_:autos539",
+    "@id": "_:autos363",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6112,7 +5809,7 @@
     ]
   },
   {
-    "@id": "_:autos540",
+    "@id": "_:autos364",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6129,7 +5826,7 @@
     ]
   },
   {
-    "@id": "_:autos541",
+    "@id": "_:autos365",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6173,7 +5870,7 @@
     ]
   },
   {
-    "@id": "_:autos542",
+    "@id": "_:autos366",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6190,7 +5887,7 @@
     ]
   },
   {
-    "@id": "_:autos543",
+    "@id": "_:autos367",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6235,7 +5932,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:autos682"
+        "@id": "_:autos486"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -6271,7 +5968,7 @@
     ]
   },
   {
-    "@id": "_:autos544",
+    "@id": "_:autos368",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6287,7 +5984,7 @@
     ]
   },
   {
-    "@id": "_:autos545",
+    "@id": "_:autos369",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6311,6 +6008,20 @@
       {
         "@value": "https://ucum.org/ucum.html",
         "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onDatatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#withRestrictions": [
+      {
+        "@list": [
+          {
+            "@id": "_:autos494"
+          }
+        ]
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
@@ -6337,24 +6048,10 @@
       {
         "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#onDatatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#withRestrictions": [
-      {
-        "@list": [
-          {
-            "@id": "_:autos633"
-          }
-        ]
-      }
     ]
   },
   {
-    "@id": "_:autos546",
+    "@id": "_:autos370",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6393,7 +6090,7 @@
     ]
   },
   {
-    "@id": "_:autos547",
+    "@id": "_:autos371",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6410,7 +6107,7 @@
     ]
   },
   {
-    "@id": "_:autos548",
+    "@id": "_:autos372",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6427,7 +6124,7 @@
     ]
   },
   {
-    "@id": "_:autos549",
+    "@id": "_:autos373",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6469,48 +6166,48 @@
         "@id": "http://qudt.org/schema/qudt/Aspect"
       },
       {
-        "@id": "_:autos550"
+        "@id": "_:autos374"
       },
       {
-        "@id": "_:autos551"
+        "@id": "_:autos375"
       },
       {
-        "@id": "_:autos552"
+        "@id": "_:autos376"
       },
       {
-        "@id": "_:autos553"
+        "@id": "_:autos377"
       },
       {
-        "@id": "_:autos554"
+        "@id": "_:autos378"
       },
       {
-        "@id": "_:autos555"
+        "@id": "_:autos379"
       },
       {
-        "@id": "_:autos556"
+        "@id": "_:autos380"
       },
       {
-        "@id": "_:autos557"
+        "@id": "_:autos381"
       },
       {
-        "@id": "_:autos558"
+        "@id": "_:autos382"
       },
       {
-        "@id": "_:autos559"
+        "@id": "_:autos383"
       },
       {
-        "@id": "_:autos560"
+        "@id": "_:autos384"
       },
       {
-        "@id": "_:autos561"
+        "@id": "_:autos385"
       },
       {
-        "@id": "_:autos562"
+        "@id": "_:autos386"
       }
     ]
   },
   {
-    "@id": "_:autos550",
+    "@id": "_:autos374",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6547,7 +6244,7 @@
     ]
   },
   {
-    "@id": "_:autos551",
+    "@id": "_:autos375",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6582,7 +6279,7 @@
     ]
   },
   {
-    "@id": "_:autos552",
+    "@id": "_:autos376",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6598,7 +6295,7 @@
     ]
   },
   {
-    "@id": "_:autos553",
+    "@id": "_:autos377",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6641,7 +6338,7 @@
     ]
   },
   {
-    "@id": "_:autos554",
+    "@id": "_:autos378",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6684,7 +6381,7 @@
     ]
   },
   {
-    "@id": "_:autos555",
+    "@id": "_:autos379",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6727,7 +6424,7 @@
     ]
   },
   {
-    "@id": "_:autos556",
+    "@id": "_:autos380",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6744,7 +6441,7 @@
     ]
   },
   {
-    "@id": "_:autos557",
+    "@id": "_:autos381",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6761,7 +6458,7 @@
     ]
   },
   {
-    "@id": "_:autos558",
+    "@id": "_:autos382",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6778,7 +6475,7 @@
     ]
   },
   {
-    "@id": "_:autos559",
+    "@id": "_:autos383",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6795,7 +6492,7 @@
     ]
   },
   {
-    "@id": "_:autos560",
+    "@id": "_:autos384",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6812,7 +6509,7 @@
     ]
   },
   {
-    "@id": "_:autos561",
+    "@id": "_:autos385",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6829,7 +6526,7 @@
     ]
   },
   {
-    "@id": "_:autos562",
+    "@id": "_:autos386",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6868,7 +6565,7 @@
     ]
   },
   {
-    "@id": "_:autos563",
+    "@id": "_:autos387",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6905,7 +6602,7 @@
     ]
   },
   {
-    "@id": "_:autos564",
+    "@id": "_:autos388",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6942,7 +6639,7 @@
     ]
   },
   {
-    "@id": "_:autos565",
+    "@id": "_:autos389",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -6984,7 +6681,7 @@
     ]
   },
   {
-    "@id": "_:autos566",
+    "@id": "_:autos390",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7001,7 +6698,7 @@
     ]
   },
   {
-    "@id": "_:autos567",
+    "@id": "_:autos391",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7017,7 +6714,7 @@
     ]
   },
   {
-    "@id": "_:autos568",
+    "@id": "_:autos392",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7033,7 +6730,7 @@
     ]
   },
   {
-    "@id": "_:autos569",
+    "@id": "_:autos393",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7091,7 +6788,7 @@
     ]
   },
   {
-    "@id": "_:autos570",
+    "@id": "_:autos394",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7128,7 +6825,7 @@
     ]
   },
   {
-    "@id": "_:autos571",
+    "@id": "_:autos395",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7145,7 +6842,7 @@
     ]
   },
   {
-    "@id": "_:autos572",
+    "@id": "_:autos396",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7162,7 +6859,7 @@
     ]
   },
   {
-    "@id": "_:autos573",
+    "@id": "_:autos397",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7179,7 +6876,7 @@
     ]
   },
   {
-    "@id": "_:autos574",
+    "@id": "_:autos398",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7222,7 +6919,7 @@
     ]
   },
   {
-    "@id": "_:autos575",
+    "@id": "_:autos399",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7265,7 +6962,7 @@
     ]
   },
   {
-    "@id": "_:autos576",
+    "@id": "_:autos400",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7308,7 +7005,7 @@
     ]
   },
   {
-    "@id": "_:autos577",
+    "@id": "_:autos401",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7351,7 +7048,7 @@
     ]
   },
   {
-    "@id": "_:autos578",
+    "@id": "_:autos402",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7394,7 +7091,7 @@
     ]
   },
   {
-    "@id": "_:autos579",
+    "@id": "_:autos403",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7437,7 +7134,7 @@
     ]
   },
   {
-    "@id": "_:autos580",
+    "@id": "_:autos404",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7480,7 +7177,7 @@
     ]
   },
   {
-    "@id": "_:autos581",
+    "@id": "_:autos405",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7497,7 +7194,7 @@
     ]
   },
   {
-    "@id": "_:autos582",
+    "@id": "_:autos406",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7529,7 +7226,7 @@
     ]
   },
   {
-    "@id": "_:autos583",
+    "@id": "_:autos407",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7562,7 +7259,7 @@
     ]
   },
   {
-    "@id": "_:autos584",
+    "@id": "_:autos408",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7595,7 +7292,7 @@
     ]
   },
   {
-    "@id": "_:autos585",
+    "@id": "_:autos409",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7628,7 +7325,7 @@
     ]
   },
   {
-    "@id": "_:autos586",
+    "@id": "_:autos410",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7661,7 +7358,7 @@
     ]
   },
   {
-    "@id": "_:autos587",
+    "@id": "_:autos411",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7694,7 +7391,7 @@
     ]
   },
   {
-    "@id": "_:autos588",
+    "@id": "_:autos412",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7727,7 +7424,7 @@
     ]
   },
   {
-    "@id": "_:autos589",
+    "@id": "_:autos413",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7760,7 +7457,7 @@
     ]
   },
   {
-    "@id": "_:autos590",
+    "@id": "_:autos414",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7793,7 +7490,7 @@
     ]
   },
   {
-    "@id": "_:autos591",
+    "@id": "_:autos415",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -7810,7 +7507,7 @@
     ]
   },
   {
-    "@id": "_:autos592",
+    "@id": "_:autos416",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8029,12 +7726,12 @@
         "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
       },
       {
-        "@id": "_:autos593"
+        "@id": "_:autos417"
       }
     ]
   },
   {
-    "@id": "_:autos593",
+    "@id": "_:autos417",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8050,7 +7747,7 @@
     ]
   },
   {
-    "@id": "_:autos594",
+    "@id": "_:autos418",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8067,7 +7764,7 @@
     ]
   },
   {
-    "@id": "_:autos595",
+    "@id": "_:autos419",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8120,7 +7817,7 @@
     ]
   },
   {
-    "@id": "_:autos596",
+    "@id": "_:autos420",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8161,36 +7858,36 @@
         "@id": "http://qudt.org/schema/qudt/Datatype"
       },
       {
-        "@id": "_:autos597"
+        "@id": "_:autos421"
       },
       {
-        "@id": "_:autos598"
+        "@id": "_:autos422"
       },
       {
-        "@id": "_:autos599"
+        "@id": "_:autos423"
       },
       {
-        "@id": "_:autos600"
+        "@id": "_:autos424"
       },
       {
-        "@id": "_:autos601"
+        "@id": "_:autos425"
       },
       {
-        "@id": "_:autos602"
+        "@id": "_:autos426"
       },
       {
-        "@id": "_:autos603"
+        "@id": "_:autos427"
       },
       {
-        "@id": "_:autos604"
+        "@id": "_:autos428"
       },
       {
-        "@id": "_:autos605"
+        "@id": "_:autos429"
       }
     ]
   },
   {
-    "@id": "_:autos597",
+    "@id": "_:autos421",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8222,7 +7919,7 @@
     ]
   },
   {
-    "@id": "_:autos598",
+    "@id": "_:autos422",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8239,7 +7936,7 @@
     ]
   },
   {
-    "@id": "_:autos599",
+    "@id": "_:autos423",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8256,7 +7953,7 @@
     ]
   },
   {
-    "@id": "_:autos600",
+    "@id": "_:autos424",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8294,7 +7991,7 @@
     ]
   },
   {
-    "@id": "_:autos601",
+    "@id": "_:autos425",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8342,7 +8039,7 @@
     ]
   },
   {
-    "@id": "_:autos602",
+    "@id": "_:autos426",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8385,7 +8082,7 @@
     ]
   },
   {
-    "@id": "_:autos603",
+    "@id": "_:autos427",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8404,8 +8101,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/minExclusive",
     "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     ],
     "http://purl.org/dc/terms/description": [
       {
@@ -8429,7 +8126,7 @@
     ]
   },
   {
-    "@id": "_:autos604",
+    "@id": "_:autos428",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8472,7 +8169,7 @@
     ]
   },
   {
-    "@id": "_:autos605",
+    "@id": "_:autos429",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8489,7 +8186,7 @@
     ]
   },
   {
-    "@id": "_:autos606",
+    "@id": "_:autos430",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8521,7 +8218,7 @@
     ]
   },
   {
-    "@id": "_:autos607",
+    "@id": "_:autos431",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8561,13 +8258,13 @@
         "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
       },
       {
-        "@id": "_:autos611"
+        "@id": "_:autos435"
       },
       {
-        "@id": "_:autos612"
+        "@id": "_:autos436"
       },
       {
-        "@id": "_:autos613"
+        "@id": "_:autos437"
       }
     ]
   },
@@ -8588,7 +8285,7 @@
     ]
   },
   {
-    "@id": "_:autos608",
+    "@id": "_:autos432",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8646,7 +8343,7 @@
     ]
   },
   {
-    "@id": "_:autos609",
+    "@id": "_:autos433",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8684,7 +8381,7 @@
     ]
   },
   {
-    "@id": "_:autos610",
+    "@id": "_:autos434",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8701,7 +8398,7 @@
     ]
   },
   {
-    "@id": "_:autos611",
+    "@id": "_:autos435",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8717,7 +8414,7 @@
     ]
   },
   {
-    "@id": "_:autos612",
+    "@id": "_:autos436",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8733,7 +8430,7 @@
     ]
   },
   {
-    "@id": "_:autos613",
+    "@id": "_:autos437",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8746,71 +8443,6 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://qudt.org/schema/qudt/dataStructure"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/ShortSignedIntegerEncoding",
-    "@type": [
-      "http://qudt.org/schema/qudt/IntegerEncodingType"
-    ],
-    "http://qudt.org/schema/qudt/bytes": [
-      {
-        "@value": "2",
-        "@type": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Short Signed Integer Encoding"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/Signed",
-    "@type": [
-      "http://qudt.org/schema/qudt/SignednessType"
-    ],
-    "http://www.linkedmodel.org/schema/dtype#literal": [
-      {
-        "@value": "signed"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Signed"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/SinglePrecisionRealEncoding",
-    "@type": [
-      "http://qudt.org/schema/qudt/FloatingPointEncodingType"
-    ],
-    "http://qudt.org/schema/qudt/bytes": [
-      {
-        "@value": "32",
-        "@type": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Single Precision Real Encoding"
       }
     ]
   },
@@ -8837,27 +8469,6 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://qudt.org/schema/qudt/AngleUnit"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/Statement",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Statement"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
       }
     ]
   },
@@ -8908,30 +8519,30 @@
         "@id": "http://qudt.org/schema/qudt/Concept"
       },
       {
-        "@id": "_:autos614"
+        "@id": "_:autos438"
       },
       {
-        "@id": "_:autos615"
+        "@id": "_:autos439"
       },
       {
-        "@id": "_:autos616"
+        "@id": "_:autos440"
       },
       {
-        "@id": "_:autos617"
+        "@id": "_:autos441"
       },
       {
-        "@id": "_:autos618"
+        "@id": "_:autos442"
       },
       {
-        "@id": "_:autos619"
+        "@id": "_:autos443"
       },
       {
-        "@id": "_:autos620"
+        "@id": "_:autos444"
       }
     ]
   },
   {
-    "@id": "_:autos614",
+    "@id": "_:autos438",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8949,8 +8560,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/baseDimensionEnumeration",
     "@type": [
-      "http://www.w3.org/2002/07/owl#FunctionalProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/dc/terms/description": [
       {
@@ -8975,7 +8586,7 @@
     ]
   },
   {
-    "@id": "_:autos615",
+    "@id": "_:autos439",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -8991,7 +8602,7 @@
     ]
   },
   {
-    "@id": "_:autos616",
+    "@id": "_:autos440",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9007,7 +8618,7 @@
     ]
   },
   {
-    "@id": "_:autos617",
+    "@id": "_:autos441",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9044,7 +8655,7 @@
     ]
   },
   {
-    "@id": "_:autos618",
+    "@id": "_:autos442",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9062,8 +8673,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/hasUnitSystem",
     "@type": [
-      "http://www.w3.org/2002/07/owl#FunctionalProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -9077,7 +8688,7 @@
     ]
   },
   {
-    "@id": "_:autos619",
+    "@id": "_:autos443",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9094,7 +8705,7 @@
     ]
   },
   {
-    "@id": "_:autos620",
+    "@id": "_:autos444",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9111,7 +8722,7 @@
     ]
   },
   {
-    "@id": "_:autos621",
+    "@id": "_:autos445",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9143,7 +8754,7 @@
     ]
   },
   {
-    "@id": "_:autos622",
+    "@id": "_:autos446",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9185,7 +8796,7 @@
     ]
   },
   {
-    "@id": "_:autos623",
+    "@id": "_:autos447",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9233,7 +8844,7 @@
     ]
   },
   {
-    "@id": "_:autos624",
+    "@id": "_:autos448",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9259,6 +8870,11 @@
         "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
       }
     ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/baseUnitOfSystem"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "http://qudt.org/schema/qudt"
@@ -9273,15 +8889,10 @@
       {
         "@id": "http://qudt.org/schema/qudt/hasCoherentUnit"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/baseUnitOfSystem"
-      }
     ]
   },
   {
-    "@id": "_:autos625",
+    "@id": "_:autos449",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9324,7 +8935,7 @@
     ]
   },
   {
-    "@id": "_:autos626",
+    "@id": "_:autos450",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9372,7 +8983,7 @@
     ]
   },
   {
-    "@id": "_:autos627",
+    "@id": "_:autos451",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9392,6 +9003,11 @@
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/derivedCoherentUnitOfSystem"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "http://qudt.org/schema/qudt"
@@ -9409,15 +9025,10 @@
       {
         "@id": "http://qudt.org/schema/qudt/hasDerivedUnit"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/derivedCoherentUnitOfSystem"
-      }
     ]
   },
   {
-    "@id": "_:autos628",
+    "@id": "_:autos452",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9443,6 +9054,11 @@
         "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
       }
     ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "http://qudt.org/schema/qudt"
@@ -9452,15 +9068,10 @@
       {
         "@value": "derived unit"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem"
-      }
     ]
   },
   {
-    "@id": "_:autos629",
+    "@id": "_:autos453",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9476,6 +9087,265 @@
     ]
   },
   {
+    "@id": "_:autos454",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Prefix"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/prefix"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos455",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/QuantityKind"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasQuantityKind"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos456",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/QuantityKindDimensionVector"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasDimensionVector"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos457",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/QuantityKindDimensionVector"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/qkdvDenominator"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos458",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/QuantityKindDimensionVector"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/qkdvNumerator"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos459",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/applicableSystem"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos460",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/definedUnitOfSystem"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/definedUnitOfSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property relates a unit of measure with the unit system that defines the unit.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasDefinedUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "defined unit of system"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/isUnitOfSystem"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos461",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/derivedCoherentUnitOfSystem"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/derivedCoherentUnitOfSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property relates a unit of measure to the unit system in which the unit is derived from the system's base units with a proportionality constant of one.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasDerivedCoherentUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is coherent derived unit of system"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/definedUnitOfSystem"
+      },
+      {
+        "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos462",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property relates a unit of measure to the system of units in which it is defined as a derived unit. That is, the derived unit is defined as a product of the base units for the system raised to some rational power.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasDerivedUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is derived unit of system"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/isUnitOfSystem"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos463",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/UCUMcs"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/ucumCode"
+      }
+    ]
+  },
+  {
     "@id": "http://qudt.org/schema/qudt/UCUMcs",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Datatype"
@@ -9484,6 +9354,20 @@
       {
         "@value": "https://ucum.org/ucum.html",
         "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onDatatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#withRestrictions": [
+      {
+        "@list": [
+          {
+            "@id": "_:autos492"
+          }
+        ]
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
@@ -9510,320 +9394,10 @@
       {
         "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#onDatatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#withRestrictions": [
-      {
-        "@list": [
-          {
-            "@id": "_:autos631"
-          }
-        ]
-      }
     ]
   },
   {
-    "@id": "_:autos631",
-    "http://www.w3.org/2001/XMLSchema#pattern": [
-      {
-        "@value": "[\\x21-\\x7e]+"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos633",
-    "http://www.w3.org/2001/XMLSchema#pattern": [
-      {
-        "@value": "[\\x21,\\x23-\\x27,\\x2a,\\x2c,\\x30-\\x3c,\\x3e-\\x5a,\\x5c,\\x5e-\\x7a,\\x7c,\\x7e]+"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/UNSIGNED",
-    "@type": [
-      "http://qudt.org/schema/qudt/SignednessType"
-    ],
-    "http://www.linkedmodel.org/schema/dtype#literal": [
-      {
-        "@value": "unsigned"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Unsigned"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos634",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Prefix"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/prefix"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos635",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/QuantityKind"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasQuantityKind"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos636",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/QuantityKindDimensionVector"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasDimensionVector"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos637",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/QuantityKindDimensionVector"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/qkdvDenominator"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos638",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/QuantityKindDimensionVector"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/qkdvNumerator"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos639",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/applicableSystem"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos640",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/definedUnitOfSystem"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/definedUnitOfSystem",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "This property relates a unit of measure with the unit system that defines the unit.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "defined unit of system"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/isUnitOfSystem"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasDefinedUnit"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos641",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/derivedCoherentUnitOfSystem"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/derivedCoherentUnitOfSystem",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "This property relates a unit of measure to the unit system in which the unit is derived from the system's base units with a proportionality constant of one.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "is coherent derived unit of system"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/definedUnitOfSystem"
-      },
-      {
-        "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasDerivedCoherentUnit"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos642",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/SystemOfUnits"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "This property relates a unit of measure to the system of units in which it is defined as a derived unit. That is, the derived unit is defined as a product of the base units for the system raised to some rational power.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "is derived unit of system"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/isUnitOfSystem"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasDerivedUnit"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos643",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://qudt.org/schema/qudt/UCUMcs"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/ucumCode"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos644",
+    "@id": "_:autos464",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9839,7 +9413,45 @@
     ]
   },
   {
-    "@id": "_:autos645",
+    "@id": "_:autos465",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasFactorUnit"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/hasFactorUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "This property relates a derived unit to one of its constituent factor units",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasFactorUnit"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos466",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9881,7 +9493,7 @@
     ]
   },
   {
-    "@id": "_:autos646",
+    "@id": "_:autos467",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9897,7 +9509,7 @@
     ]
   },
   {
-    "@id": "_:autos647",
+    "@id": "_:autos468",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9946,7 +9558,7 @@
     ]
   },
   {
-    "@id": "_:autos648",
+    "@id": "_:autos469",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -9999,45 +9611,7 @@
     ]
   },
   {
-    "@id": "_:autos649",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Class"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasFactorUnit"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/hasFactorUnit",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "This property relates a derived unit to one of its constituent factor units",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "hasFactorUnit"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos650",
+    "@id": "_:autos470",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10076,124 +9650,7 @@
     ]
   },
   {
-    "@id": "_:autos651",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
-      {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/conversionMultiplierSN"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/conversionMultiplierSN",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "conversion multiplier scientific"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos652",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
-      {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/conversionOffset"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/conversionOffset",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "conversion offset"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos653",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
-      {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#int"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/conversionOffsetSN"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/conversionOffsetSN",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "conversion offset scientific"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#double"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos654",
+    "@id": "_:autos471",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10232,7 +9689,124 @@
     ]
   },
   {
-    "@id": "_:autos655",
+    "@id": "_:autos472",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/conversionMultiplierSN"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/conversionMultiplierSN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "conversion multiplier scientific"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos473",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/conversionOffset"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/conversionOffset",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "conversion offset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos474",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#int"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/conversionOffsetSN"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/conversionOffsetSN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "conversion offset scientific"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos475",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10249,7 +9823,7 @@
     ]
   },
   {
-    "@id": "_:autos656",
+    "@id": "_:autos476",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10266,7 +9840,7 @@
     ]
   },
   {
-    "@id": "_:autos657",
+    "@id": "_:autos477",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10283,7 +9857,7 @@
     ]
   },
   {
-    "@id": "_:autos658",
+    "@id": "_:autos478",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10300,7 +9874,7 @@
     ]
   },
   {
-    "@id": "_:autos659",
+    "@id": "_:autos479",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10317,7 +9891,7 @@
     ]
   },
   {
-    "@id": "_:autos660",
+    "@id": "_:autos480",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10334,7 +9908,7 @@
     ]
   },
   {
-    "@id": "_:autos661",
+    "@id": "_:autos481",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10351,7 +9925,7 @@
     ]
   },
   {
-    "@id": "_:autos662",
+    "@id": "_:autos482",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10389,7 +9963,7 @@
     ]
   },
   {
-    "@id": "_:autos663",
+    "@id": "_:autos483",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10425,15 +9999,15 @@
         "@id": "http://qudt.org/schema/qudt/AbstractQuantityKind"
       },
       {
-        "@id": "_:autos664"
+        "@id": "_:autos484"
       },
       {
-        "@id": "_:autos665"
+        "@id": "_:autos485"
       }
     ]
   },
   {
-    "@id": "_:autos664",
+    "@id": "_:autos484",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10449,7 +10023,7 @@
     ]
   },
   {
-    "@id": "_:autos665",
+    "@id": "_:autos485",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -10466,136 +10040,71 @@
     ]
   },
   {
-    "@id": "_:autos666",
+    "@id": "http://purl.org/dc/terms/contributor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     ],
-    "http://www.w3.org/2002/07/owl#maxCardinality": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "1",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/wikidataMatch"
+        "@value": "contributor"
       }
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/wikidataMatch",
+    "@id": "http://purl.org/dc/terms/created",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "wikidata match"
+        "@value": "created"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
       }
     ]
   },
   {
-    "@id": "_:autos667",
+    "@id": "http://purl.org/dc/terms/modified",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        "@value": "modified"
       }
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://qudt.org/schema/qudt/dbpediaMatch"
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
       }
     ]
   },
   {
-    "@id": "_:autos668",
+    "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        "@id": "http://www.w3.org/ns/prov"
       }
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@id": "http://qudt.org/schema/qudt/isoNormativeReference"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos669",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        "@value": "was derived from"
       }
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://qudt.org/schema/qudt/isoNormativeReference"
+        "@id": "http://qudt.org/schema/qudt/Concept"
       }
     ]
   },
   {
-    "@id": "_:autos670",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/normativeReference"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos671",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#minCardinality": [
-      {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://qudt.org/schema/qudt/normativeReference"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/acronym",
+    "@id": "http://qudt.org/schema/qudt/lowerBound",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -10606,12 +10115,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "acronym"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@value": "lower bound"
       }
     ]
   },
@@ -10652,6 +10156,11 @@
         "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
       }
     ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasBaseUnit"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "http://qudt.org/schema/qudt"
@@ -10665,11 +10174,6 @@
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://qudt.org/schema/qudt/definedUnitOfSystem"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasBaseUnit"
       }
     ]
   },
@@ -10718,8 +10222,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/coherentUnitSystem",
     "@type": [
-      "http://www.w3.org/2002/07/owl#FunctionalProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://purl.org/dc/terms/description": [
       {
@@ -10746,40 +10250,6 @@
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://qudt.org/schema/qudt/hasUnitSystem"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/currencyNumber",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "Numeric currency Code as defined by ISO 4217. For example, US Dollar has the number 840.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "currency number"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://en.wikipedia.org/wiki/ISO_4217",
-        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
       }
     ]
   },
@@ -10847,6 +10317,11 @@
         "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
       }
     ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasDerivedNonCoherentUnit"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "http://qudt.org/schema/qudt"
@@ -10866,17 +10341,17 @@
       {
         "@id": "http://qudt.org/schema/qudt/derivedUnitOfSystem"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasDerivedNonCoherentUnit"
-      }
     ]
   },
   {
     "@id": "http://qudt.org/schema/qudt/hasDerivedNonCoherentUnit",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/derivedNonCoherentUnitOfSystem"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -10892,36 +10367,20 @@
       {
         "@id": "http://qudt.org/schema/qudt/hasDerivedUnit"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/derivedNonCoherentUnitOfSystem"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/dimensionExponent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "dimension exponent"
-      }
     ]
   },
   {
     "@id": "http://qudt.org/schema/qudt/dimensionInverse",
     "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
       "http://www.w3.org/2002/07/owl#FunctionalProperty",
       "http://www.w3.org/2002/07/owl#InverseFunctionalProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
       "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/dimensionInverse"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -10931,11 +10390,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "dimension inverse"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/dimensionInverse"
       }
     ]
   },
@@ -10956,72 +10410,34 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/example",
+    "@id": "http://qudt.org/schema/qudt/enumeratedValue",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The 'qudt:example' property is used to annotate an instance of a class with a reference to a concept that is an example. The type of this property is 'rdf:Property'. This allows both scalar and object ranges.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "example"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/expression",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "An 'expression' is a finite combination of symbols that are well-formed according to rules that apply to units of measure, quantity kinds and their dimensions.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "expression"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/fieldCode",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://qudt.org/schema/qudt/plainTextDescription": [
-      {
-        "@value": "A field code is a generic property for representing unique codes that make up other identifiers. For example each QuantityKind class carries a domain code as its field code."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "field code"
+        "@value": "enumerated value"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/enumeration",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "enumeration"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Enumeration"
       }
     ]
   },
@@ -11049,120 +10465,6 @@
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://qudt.org/schema/qudt/Figure"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/floatPercentage",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "float percentage"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:autos672"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos672",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2002/07/owl#onDatatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#float"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#withRestrictions": [
-      {
-        "@list": [
-          {
-            "@id": "_:autos674"
-          },
-          {
-            "@id": "_:autos676"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:autos674",
-    "http://www.w3.org/2001/XMLSchema#minInclusive": [
-      {
-        "@value": "0.00",
-        "@type": "http://www.w3.org/2001/XMLSchema#float"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos676",
-    "http://www.w3.org/2001/XMLSchema#maxInclusive": [
-      {
-        "@value": "100.00",
-        "@type": "http://www.w3.org/2001/XMLSchema#float"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/guidance",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Concept"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "guidance"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/hasCitation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://qudt.org/schema/qudt/plainTextDescription": [
-      {
-        "@value": "Used to provide an annotation for an informative reference."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "citation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     ]
   },
@@ -11330,95 +10632,6 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/informativeReference",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "Provides a way to reference a source that provided useful but non-normative information.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "informative reference"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/integerPercentage",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "integer percentage"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:autos677"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos677",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2002/07/owl#onDatatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#withRestrictions": [
-      {
-        "@list": [
-          {
-            "@id": "_:autos679"
-          },
-          {
-            "@id": "_:autos681"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:autos679",
-    "http://www.w3.org/2001/XMLSchema#minInclusive": [
-      {
-        "@value": "0",
-        "@type": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos681",
-    "http://www.w3.org/2001/XMLSchema#maxInclusive": [
-      {
-        "@value": "100",
-        "@type": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ]
-  },
-  {
     "@id": "http://qudt.org/schema/qudt/isDimensionInSystem",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -11431,112 +10644,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "is dimension in system"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/isMetricUnit",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "is metric unit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/lowerBound",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "lower bound"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/mathDefinition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "math definition"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/upperBound",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "upper bound"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#anySimpleType"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/negativeDeltaLimit",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "A negative change limit between consecutive sample values for a parameter. The Negative Delta may be the encoded value or engineering units value depending on whether or not a Calibrator is defined.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "negative delta limit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     ]
   },
@@ -11562,27 +10669,6 @@
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/numericValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "numeric value"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://qudt.org/schema/qudt/NumericUnion"
-      }
-    ]
-  },
-  {
     "@id": "http://qudt.org/schema/qudt/omUnit",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -11600,97 +10686,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "om unit"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/onlineReference",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "online reference"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/outOfScope",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "out of scope"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/positiveDeltaLimit",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "A positive change limit between consecutive sample values for a parameter. The Positive Delta may be the encoded value or engineering units value depending on whether or not a Calibrator is defined.",
-        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Positive delta limit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/prefixMultiplierSN",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "http://www.w3.org/2002/07/owl#FunctionalProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "prefix multiplier scientific"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#double"
       }
     ]
   },
@@ -11735,8 +10730,8 @@
   {
     "@id": "http://qudt.org/schema/qudt/referenceUnit",
     "@type": [
-      "http://www.w3.org/2002/07/owl#FunctionalProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -11846,27 +10841,14 @@
     ]
   },
   {
-    "@id": "_:autos682",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://qudt.org/schema/qudt/UCUMcs"
-          },
-          {
-            "@id": "http://qudt.org/schema/qudt/UCUMcs-term"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "@id": "http://qudt.org/schema/qudt/unitFor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/hasUnit"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
@@ -11882,17 +10864,17 @@
       {
         "@value": "unit for"
       }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/hasUnit"
-      }
     ]
   },
   {
     "@id": "http://qudt.org/schema/qudt/valueQuantity",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/quantityValue"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -11902,76 +10884,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "value for quantity"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#inverseOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/quantityValue"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/valueUnion",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@value": "A datatype that is the union of numeric xsd data types. \"numericUnion\" is equivalent to the xsd specification that uses an xsd:union of memberTypes=\"xsd:decimal xsd:double xsd:float xsd:integer\"."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "value union"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:autos685"
-      }
-    ]
-  },
-  {
-    "@id": "_:autos685",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#anySimpleType"
-          },
-          {
-            "@id": "http://www.linkedmodel.org/schema/dtype#EnumeratedValue"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry",
-    "@type": [
-      "http://www.linkedmodel.org/schema/vaem#CatalogEntry"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://qudt.org/schema/qudt"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "QUDT Schema Catalog Entry"
       }
     ]
   },
@@ -11992,6 +10904,1099 @@
     ]
   },
   {
+    "@id": "http://qudt.org/schema/qudt/acronym",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "acronym"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/currencyNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Numeric currency Code as defined by ISO 4217. For example, US Dollar has the number 840.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "currency number"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://en.wikipedia.org/wiki/ISO_4217",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/dimensionExponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dimension exponent"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/fieldCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://qudt.org/schema/qudt/plainTextDescription": [
+      {
+        "@value": "A field code is a generic property for representing unique codes that make up other identifiers. For example each QuantityKind class carries a domain code as its field code."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "field code"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/guidance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "guidance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/hasCitation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://qudt.org/schema/qudt/plainTextDescription": [
+      {
+        "@value": "Used to provide an annotation for an informative reference."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "citation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/isMetricUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is metric unit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/LatexString",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A type of string in which some characters may be wrapped with '$' and '$ characters for LaTeX rendering."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Latex String"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/mathDefinition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "math definition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/upperBound",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "upper bound"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anySimpleType"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/negativeDeltaLimit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "A negative change limit between consecutive sample values for a parameter. The Negative Delta may be the encoded value or engineering units value depending on whether or not a Calibrator is defined.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "negative delta limit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/numericValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "numeric value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://qudt.org/schema/qudt/NumericUnion"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/onlineReference",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "online reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/outOfScope",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "out of scope"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/positiveDeltaLimit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "A positive change limit between consecutive sample values for a parameter. The Positive Delta may be the encoded value or engineering units value depending on whether or not a Calibrator is defined.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Positive delta limit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/prefixMultiplierSN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "prefix multiplier scientific"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos486",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://qudt.org/schema/qudt/UCUMcs"
+          },
+          {
+            "@id": "http://qudt.org/schema/qudt/UCUMcs-term"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/abstract",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "abstract"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "creator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rights"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/subject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "subject"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "title"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/example",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The 'qudt:example' property is used to annotate an instance of a class with a reference to a concept that is an example. The type of this property is 'rdf:Property'. This allows both scalar and object ranges.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "example"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/expression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "An 'expression' is a finite combination of symbols that are well-formed according to rules that apply to units of measure, quantity kinds and their dimensions.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "expression"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/informativeReference",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Provides a way to reference a source that provided useful but non-normative information.",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "informative reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/wikidataMatch",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "wikidata match"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/DoublePrecisionEncoding",
+    "@type": [
+      "http://qudt.org/schema/qudt/FloatingPointEncodingType"
+    ],
+    "http://qudt.org/schema/qudt/bytes": [
+      {
+        "@value": "64",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Single Precision Real Encoding"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/EnumeratedQuantity",
+    "@type": [
+      "http://qudt.org/schema/qudt/AspectClass"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Enumerated Quantity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Concept"
+      },
+      {
+        "@id": "_:autos489"
+      },
+      {
+        "@id": "_:autos490"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos489",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/EnumeratedValue"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/enumeratedValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos490",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Enumeration"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/enumeration"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/IEEE754_1985RealEncoding",
+    "@type": [
+      "http://qudt.org/schema/qudt/FloatingPointEncodingType"
+    ],
+    "http://qudt.org/schema/qudt/bytes": [
+      {
+        "@value": "32",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IEEE 754 1985 Real Encoding"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/ISO8601-UTCDateTime-BasicFormat",
+    "@type": [
+      "http://qudt.org/schema/qudt/DateTimeStringEncodingType"
+    ],
+    "http://qudt.org/schema/qudt/allowedPattern": [
+      {
+        "@value": "[0-9]{4}[0-9]{2}[0-9]{2}T[0-9]{2}[0-9]{2}[0-9]{2}.[0-9]+Z"
+      },
+      {
+        "@value": "[0-9]{4}[0-9]{2}[0-9]{2}T[0-9]{2}[0-9]{2}[0-9]{2}Z"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ISO 8601 UTC Date Time - Basic Format"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/ShortSignedIntegerEncoding",
+    "@type": [
+      "http://qudt.org/schema/qudt/IntegerEncodingType"
+    ],
+    "http://qudt.org/schema/qudt/bytes": [
+      {
+        "@value": "2",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Short Signed Integer Encoding"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/Signed",
+    "@type": [
+      "http://qudt.org/schema/qudt/SignednessType"
+    ],
+    "http://www.linkedmodel.org/schema/dtype#literal": [
+      {
+        "@value": "signed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Signed"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/SinglePrecisionRealEncoding",
+    "@type": [
+      "http://qudt.org/schema/qudt/FloatingPointEncodingType"
+    ],
+    "http://qudt.org/schema/qudt/bytes": [
+      {
+        "@value": "32",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Single Precision Real Encoding"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos492",
+    "http://www.w3.org/2001/XMLSchema#pattern": [
+      {
+        "@value": "[\\x21-\\x7e]+"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos494",
+    "http://www.w3.org/2001/XMLSchema#pattern": [
+      {
+        "@value": "[\\x21,\\x23-\\x27,\\x2a,\\x2c,\\x30-\\x3c,\\x3e-\\x5a,\\x5c,\\x5e-\\x7a,\\x7c,\\x7e]+"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/UNSIGNED",
+    "@type": [
+      "http://qudt.org/schema/qudt/SignednessType"
+    ],
+    "http://www.linkedmodel.org/schema/dtype#literal": [
+      {
+        "@value": "unsigned"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Unsigned"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos495",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/dbpediaMatch"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos496",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#maxCardinality": [
+      {
+        "@value": "1",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/wikidataMatch"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos497",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/isoNormativeReference"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos498",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/isoNormativeReference"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos499",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/normativeReference"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos500",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#minCardinality": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://qudt.org/schema/qudt/normativeReference"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/floatPercentage",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:autos501"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "float percentage"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos501",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2002/07/owl#onDatatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#withRestrictions": [
+      {
+        "@list": [
+          {
+            "@id": "_:autos503"
+          },
+          {
+            "@id": "_:autos505"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos503",
+    "http://www.w3.org/2001/XMLSchema#minInclusive": [
+      {
+        "@value": "0.00",
+        "@type": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos505",
+    "http://www.w3.org/2001/XMLSchema#maxInclusive": [
+      {
+        "@value": "100.00",
+        "@type": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/integerPercentage",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:autos506"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "integer percentage"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos506",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2002/07/owl#onDatatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#withRestrictions": [
+      {
+        "@list": [
+          {
+            "@id": "_:autos508"
+          },
+          {
+            "@id": "_:autos510"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:autos508",
+    "http://www.w3.org/2001/XMLSchema#minInclusive": [
+      {
+        "@value": "0",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos510",
+    "http://www.w3.org/2001/XMLSchema#maxInclusive": [
+      {
+        "@value": "100",
+        "@type": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/valueUnion",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "A datatype that is the union of numeric xsd data types. \"numericUnion\" is equivalent to the xsd specification that uses an xsd:union of memberTypes=\"xsd:decimal xsd:double xsd:float xsd:integer\"."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:autos511"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "value union"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ]
+  },
+  {
+    "@id": "_:autos511",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#anySimpleType"
+          },
+          {
+            "@id": "http://www.linkedmodel.org/schema/dtype#EnumeratedValue"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@id": "http://www.linkedmodel.org/schema/vaem#QUDT",
     "@type": [
       "http://www.linkedmodel.org/schema/vaem#Party"
@@ -12000,6 +12005,16 @@
       {
         "@value": "QUDT is a non-profit organization that governs the QUDT ontologies.",
         "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://qudt.org/schema/qudt"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "QUDT"
       }
     ],
     "http://www.linkedmodel.org/schema/vaem#graphName": [
@@ -12012,6 +12027,12 @@
         "@value": "http://www.qudt.org",
         "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
       }
+    ]
+  },
+  {
+    "@id": "http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry",
+    "@type": [
+      "http://www.linkedmodel.org/schema/vaem#CatalogEntry"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
@@ -12020,28 +12041,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "QUDT"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/prov"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "was derived from"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Concept"
+        "@value": "QUDT Schema Catalog Entry"
       }
     ]
   }
