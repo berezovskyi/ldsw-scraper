@@ -54,6 +54,12 @@
 <http://www.w3.org/ns/sparql-service-description#supportedLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sparql-service-description#Language> .
 <http://www.w3.org/ns/sparql-service-description#supportedLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "supported language"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#supportedLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an instance of sd:Service to a SPARQL language (e.g. Query and Update) that it implements."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/sparql-service-description#supportedVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/sparql-service-description#supportedVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/sparql-service-description#feature> .
+<http://www.w3.org/ns/sparql-service-description#supportedVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sparql-service-description#Service> .
+<http://www.w3.org/ns/sparql-service-description#supportedVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/sparql-service-description#supportedVersion> <http://www.w3.org/2000/01/rdf-schema#label> "supported version"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/sparql-service-description#supportedVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an instance of sd:Service to a SPARQL language version that it supports."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#propertyFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/ns/sparql-service-description#propertyFeature> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/sparql-service-description#feature> .
 <http://www.w3.org/ns/sparql-service-description#propertyFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sparql-service-description#Service> .
@@ -109,7 +115,7 @@
 <http://www.w3.org/ns/sparql-service-description#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/ns/sparql-service-description#Language> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sparql-service-description#Feature> .
 <http://www.w3.org/ns/sparql-service-description#Language> <http://www.w3.org/2000/01/rdf-schema#label> "Language"^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/ns/sparql-service-description#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of sd:Language represents one of the SPARQL languages, including specific configurations providing particular features or extensions. This document defines three instances of sd:Language: sd:SPARQL10Query, sd:SPARQL11Query, and sd:SPARQL11Update."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/sparql-service-description#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of sd:Language represents one of the SPARQL languages, including specific configurations providing particular features or extensions. This document defines five instances of sd:Language: sd:SPARQLQuery, sd:SPARQLUpdate, sd:SPARQL10Query, sd:SPARQL11Query, and sd:SPARQL11Update."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/ns/sparql-service-description#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sparql-service-description#Feature> .
 <http://www.w3.org/ns/sparql-service-description#Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -139,12 +145,18 @@
 <http://www.w3.org/ns/sparql-service-description#NamedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://www.w3.org/ns/sparql-service-description#NamedGraph> <http://www.w3.org/2000/01/rdf-schema#label> "Named Graph"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#NamedGraph> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of sd:NamedGraph represents a named graph having a name (via sd:name) and an optional graph description (via sd:graph)."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/sparql-service-description#SPARQLQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
+<http://www.w3.org/ns/sparql-service-description#SPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL Query"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/sparql-service-description#SPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQLQuery is an sd:Language representing the SPARQL Query language."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL10Query> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL10Query> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL 1.0 Query"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL10Query> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQL10Query is an sd:Language representing the SPARQL 1.0 Query language."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL11Query> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL11Query> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL 1.1 Query"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL11Query> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQL11Query is an sd:Language representing the SPARQL 1.1 Query language."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/sparql-service-description#SPARQLUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
+<http://www.w3.org/ns/sparql-service-description#SPARQLUpdate> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL Update"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/sparql-service-description#SPARQLUpdate> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQLUpdate is an sd:Language representing the SPARQL Update language."^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL11Update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL 1.1 Update"^^<http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/sparql-service-description#SPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language."^^<http://www.w3.org/2001/XMLSchema#string> .

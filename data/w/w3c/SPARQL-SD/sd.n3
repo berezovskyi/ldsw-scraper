@@ -43,7 +43,7 @@ sd:GraphCollection a rdfs:Class;
                    rdfs:comment "An instance of sd:GraphCollection represents a collection of zero or more named graph descriptions. Each named graph description belonging to an sd:GraphCollection MUST be linked with the sd:namedGraph predicate.";
                    rdfs:label "Graph Collection".
 sd:Language a rdfs:Class;
-            rdfs:comment "An instance of sd:Language represents one of the SPARQL languages, including specific configurations providing particular features or extensions. This document defines three instances of sd:Language: sd:SPARQL10Query, sd:SPARQL11Query, and sd:SPARQL11Update.";
+            rdfs:comment "An instance of sd:Language represents one of the SPARQL languages, including specific configurations providing particular features or extensions. This document defines five instances of sd:Language: sd:SPARQLQuery, sd:SPARQLUpdate, sd:SPARQL10Query, sd:SPARQL11Query, and sd:SPARQL11Update.";
             rdfs:label "Language";
             rdfs:subClassOf sd:Feature.
 sd:NamedGraph a rdfs:Class;
@@ -61,6 +61,12 @@ sd:SPARQL11Query a sd:Language;
 sd:SPARQL11Update a sd:Language;
                   rdfs:comment "sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language.";
                   rdfs:label "SPARQL 1.1 Update".
+sd:SPARQLQuery a sd:Language;
+               rdfs:comment "sd:SPARQLQuery is an sd:Language representing the SPARQL Query language.";
+               rdfs:label "SPARQL Query".
+sd:SPARQLUpdate a sd:Language;
+                rdfs:comment "sd:SPARQLUpdate is an sd:Language representing the SPARQL Update language.";
+                rdfs:label "SPARQL Update".
 sd:Service a rdfs:Class;
            rdfs:comment "An instance of sd:Service represents a SPARQL service made available via the SPARQL Protocol.";
            rdfs:label "Service".
@@ -169,3 +175,9 @@ sd:supportedLanguage a rdf:Property;
                      rdfs:label "supported language";
                      rdfs:range sd:Language;
                      rdfs:subPropertyOf sd:feature.
+sd:supportedVersion a rdf:Property;
+                    rdfs:comment "Relates an instance of sd:Service to a SPARQL language version that it supports.";
+                    rdfs:domain sd:Service;
+                    rdfs:label "supported version";
+                    rdfs:range rdfs:Resource;
+                    rdfs:subPropertyOf sd:feature.

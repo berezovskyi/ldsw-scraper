@@ -434,7 +434,38 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "An instance of sd:Language represents one of the SPARQL languages, including specific configurations providing particular features or extensions. This document defines three instances of sd:Language: sd:SPARQL10Query, sd:SPARQL11Query, and sd:SPARQL11Update."
+        "@value": "An instance of sd:Language represents one of the SPARQL languages, including specific configurations providing particular features or extensions. This document defines five instances of sd:Language: sd:SPARQLQuery, sd:SPARQLUpdate, sd:SPARQL10Query, sd:SPARQL11Query, and sd:SPARQL11Update."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/sparql-service-description#supportedVersion",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/sparql-service-description#feature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/sparql-service-description#Service"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "supported version"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Relates an instance of sd:Service to a SPARQL language version that it supports."
       }
     ]
   },
@@ -727,6 +758,22 @@
     ]
   },
   {
+    "@id": "http://www.w3.org/ns/sparql-service-description#SPARQLQuery",
+    "@type": [
+      "http://www.w3.org/ns/sparql-service-description#Language"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SPARQL Query"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "sd:SPARQLQuery is an sd:Language representing the SPARQL Query language."
+      }
+    ]
+  },
+  {
     "@id": "http://www.w3.org/ns/sparql-service-description#SPARQL10Query",
     "@type": [
       "http://www.w3.org/ns/sparql-service-description#Language"
@@ -755,6 +802,22 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@value": "sd:SPARQL11Query is an sd:Language representing the SPARQL 1.1 Query language."
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/sparql-service-description#SPARQLUpdate",
+    "@type": [
+      "http://www.w3.org/ns/sparql-service-description#Language"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SPARQL Update"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "sd:SPARQLUpdate is an sd:Language representing the SPARQL Update language."
       }
     ]
   },
