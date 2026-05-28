@@ -76,14 +76,6 @@ rdfs:Resource a owl:Class.
 :ObjectMap a owl:Class;
            rdfs:comment "Represents an object map."@en;
            rdfs:subClassOf [a owl:Restriction ; 
-                            owl:onProperty :object ; 
-                            owl:onClass rdfs:Resource ; 
-                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger],
-                           [a owl:Restriction ; 
-                            owl:onProperty :object ; 
-                            owl:onClass rdfs:Resource ; 
-                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger],
-                           [a owl:Restriction ; 
                             owl:onProperty :language ; 
                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ; 
                             owl:onDataRange xsd:string],
@@ -95,22 +87,22 @@ rdfs:Resource a owl:Class.
                            :TermMap.
 :PredicateMap a owl:Class;
               rdfs:comment "Represents a predicate map."@en;
-              rdfs:subClassOf [a owl:Restriction ; 
-                               owl:onProperty :predicate ; 
-                               owl:onClass rdf:Property ; 
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger],
-                              owl:Thing,
+              rdfs:subClassOf owl:Thing,
                               :TermMap.
 :PredicateObjectMap a owl:Class;
                     rdfs:comment "Represents a predicate-object map."@en;
-                    rdfs:subClassOf [a owl:Restriction ; 
-                                     owl:onProperty :objectMap ; 
-                                     owl:onClass :ObjectMap ; 
-                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger],
-                                    [a owl:Restriction ; 
-                                     owl:onProperty :predicateMap ; 
-                                     owl:onClass :PredicateMap ; 
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger],
+                    rdfs:subClassOf [a owl:Class ; 
+                                     owl:unionOf ([a owl:Restriction ; 
+                                                  owl:onProperty :predicateMap ; 
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger]                                                  [a owl:Restriction ; 
+                                                  owl:onProperty :predicate ; 
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger])],
+                                    [a owl:Class ; 
+                                     owl:unionOf ([a owl:Restriction ; 
+                                                  owl:onProperty :objectMap ; 
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger]                                                  [a owl:Restriction ; 
+                                                  owl:onProperty :object ; 
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger])],
                                     owl:Thing.
 :R2RMLView a owl:Class;
            rdfs:subClassOf :LogicalTable.
@@ -136,10 +128,13 @@ rdfs:Resource a owl:Class.
                              owl:onProperty :logicalTable ; 
                              owl:onClass :LogicalTable ; 
                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger],
-                            [a owl:Restriction ; 
-                             owl:onProperty :subjectMap ; 
-                             owl:onClass :SubjectMap ; 
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger],
+                            [a owl:Class ; 
+                             owl:unionOf ([a owl:Restriction ; 
+                                          owl:onProperty :subjectMap ; 
+                                          owl:onClass :SubjectMap ; 
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger]                                          [a owl:Restriction ; 
+                                          owl:onProperty :subject ; 
+                                          owl:cardinality "1"^^xsd:nonNegativeInteger])],
                             owl:Thing.
 :child a owl:DatatypeProperty;
        rdfs:comment "Names a column in the child table of a join."@en;
@@ -153,7 +148,8 @@ rdfs:Resource a owl:Class.
         rdfs:comment "Name of a column in the logical table. When generating RDF triples from a logical table row, value from the specified column is used as the subject, predicate, or object (based upon the specific domain)."@en;
         rdfs:domain :TermMap;
         rdfs:range xsd:string.
-:constant a owl:ObjectProperty.
+:constant a rdf:Property;
+          rdfs:domain :TermMap.
 :datatype a owl:ObjectProperty;
           rdfs:comment "Specifies the datatype of the object component for the generated triple from a logical table row."@en;
           rdfs:domain :ObjectMap;
@@ -163,10 +159,7 @@ rdfs:Resource a owl:Class.
 :graph a owl:ObjectProperty;
        rdfs:comment "An IRI reference for use as the graph name of all triples generated with the GraphMap."@en;
        rdfs:domain [a owl:Class ; 
-                    owl:intersectionOf (:GraphMap                                        [a owl:Restriction ; 
-                                        owl:onProperty :template ; 
-                                        owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger ; 
-                                        owl:onDataRange xsd:string])].
+                    owl:unionOf (:PredicateObjectMap                                 :SubjectMap)].
 :graphMap a owl:ObjectProperty;
           rdfs:comment "Specifies a GraphMap. When used with a SubjectMap element, all the RDF triples generated from a logical row will be stored in the specified named graph. Otherwise, the RDF triple generated using the (predicate, object) pair will be stored in the specified named graph."@en;
           rdfs:domain [a owl:Class ; 
@@ -188,14 +181,9 @@ rdfs:Resource a owl:Class.
               rdfs:comment "Definition of logical table to be mapped."@en;
               rdfs:domain :TriplesMap;
               rdfs:range :LogicalTable.
-:object a owl:ObjectProperty;
+:object a rdf:Property;
         rdfs:comment "Specifies the object for the generated triple from the logical table row."@en;
-        rdfs:domain [a owl:Class ; 
-                     owl:intersectionOf (:ObjectMap                                         [a owl:Restriction ; 
-                                         owl:onProperty :column ; 
-                                         owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger ; 
-                                         owl:onDataRange xsd:string])];
-        rdfs:range rdfs:Resource.
+        rdfs:domain :PredicateObjectMap.
 :objectMap a owl:ObjectProperty;
            rdfs:comment "An ObjectMap element to generate the object component of the (predicate, object) pair from a logical table row."@en;
            rdfs:domain :PredicateObjectMap;
@@ -211,11 +199,7 @@ rdfs:Resource a owl:Class.
                   rdfs:range :TriplesMap.
 :predicate a owl:ObjectProperty;
            rdfs:comment "Specifies the predicate for the generated triple from the logical table row."@en;
-           rdfs:domain [a owl:Class ; 
-                        owl:intersectionOf (:PredicateMap                                            [a owl:Restriction ; 
-                                            owl:onProperty :column ; 
-                                            owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger ; 
-                                            owl:onDataRange xsd:string])];
+           rdfs:domain :PredicateObjectMap;
            rdfs:range rdf:Property.
 :predicateMap a owl:ObjectProperty;
               rdfs:comment "A PredicateMap element to generate the predicate component of the (predicate, object) pair from a logical table row."@en;
@@ -233,11 +217,7 @@ rdfs:Resource a owl:Class.
             rdfs:domain :R2RMLView.
 :subject a owl:ObjectProperty;
          rdfs:comment "An IRI reference for use as subject for all the RDF triples generated from a logical table row."@en;
-         rdfs:domain [a owl:Class ; 
-                      owl:intersectionOf (:SubjectMap                                          [a owl:Restriction ; 
-                                          owl:onProperty :column ; 
-                                          owl:maxQualifiedCardinality "0"^^xsd:nonNegativeInteger ; 
-                                          owl:onDataRange xsd:string])].
+         rdfs:domain :TriplesMap.
 :subjectMap a owl:ObjectProperty;
             rdfs:comment "A SubjectMap element to generate a subject from a logical table row."@en;
             rdfs:domain :TriplesMap;
