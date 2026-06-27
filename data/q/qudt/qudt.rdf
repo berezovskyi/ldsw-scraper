@@ -50,7 +50,7 @@
   <owl:Ontology rdf:about="http://qudt.org/schema/qudt">
     <vaem:hasGraphMetadata rdf:resource="&vaem;GMD_QUDT-SCHEMA" />
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
-    <rdfs:label rdf:datatype="&xsd;string">QUDT Schema - Version 3.3.0</rdfs:label>
+    <rdfs:label rdf:datatype="&xsd;string">QUDT Schema - Version 3.4.0</rdfs:label>
     <owl:imports rdf:resource="http://qudt.org/schema/coordinateSystems" />
     <owl:imports rdf:resource="http://qudt.org/schema/datatype" />
     <owl:imports rdf:resource="http://www.linkedmodel.org/schema/dtype" />
@@ -62,8 +62,10 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Quantity Kind (abstract)</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos551" />
-    <rdfs:subClassOf rdf:nodeID="autos552" />
+    <rdfs:subClassOf rdf:nodeID="autos431" />
+    <rdfs:subClassOf rdf:nodeID="autos432" />
+    <rdfs:subClassOf rdf:nodeID="autos433" />
+    <rdfs:subClassOf rdf:nodeID="autos434" />
   </owl:Class>
   <rdf:Description rdf:about="&qudt;AbstractQuantityKind-skos_broader">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
@@ -98,14 +100,14 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Base Dimension Magnitude</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos553" />
-    <rdfs:subClassOf rdf:nodeID="autos554" />
-    <rdfs:subClassOf rdf:nodeID="autos555" />
-    <rdfs:subClassOf rdf:nodeID="autos556" />
-    <rdfs:subClassOf rdf:nodeID="autos557" />
-    <rdfs:subClassOf rdf:nodeID="autos558" />
-    <rdfs:subClassOf rdf:nodeID="autos559" />
-    <rdfs:subClassOf rdf:nodeID="autos560" />
+    <rdfs:subClassOf rdf:nodeID="autos435" />
+    <rdfs:subClassOf rdf:nodeID="autos436" />
+    <rdfs:subClassOf rdf:nodeID="autos437" />
+    <rdfs:subClassOf rdf:nodeID="autos438" />
+    <rdfs:subClassOf rdf:nodeID="autos439" />
+    <rdfs:subClassOf rdf:nodeID="autos440" />
+    <rdfs:subClassOf rdf:nodeID="autos441" />
+    <rdfs:subClassOf rdf:nodeID="autos442" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;BinaryPrefix">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -122,49 +124,49 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Citation</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos561" />
-    <rdfs:subClassOf rdf:nodeID="autos562" />
-    <rdfs:subClassOf rdf:nodeID="autos563" />
-    <rdfs:subClassOf rdf:nodeID="autos564" />
-    <rdfs:subClassOf rdf:nodeID="autos565" />
+    <rdfs:subClassOf rdf:nodeID="autos443" />
+    <rdfs:subClassOf rdf:nodeID="autos444" />
+    <rdfs:subClassOf rdf:nodeID="autos445" />
+    <rdfs:subClassOf rdf:nodeID="autos446" />
+    <rdfs:subClassOf rdf:nodeID="autos447" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Comment">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Comment</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos566" />
-    <rdfs:subClassOf rdf:nodeID="autos567" />
-    <rdfs:subClassOf rdf:nodeID="autos568" />
+    <rdfs:subClassOf rdf:nodeID="autos448" />
+    <rdfs:subClassOf rdf:nodeID="autos449" />
+    <rdfs:subClassOf rdf:nodeID="autos450" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Concept">
     <dcterms:description rdf:datatype="&rdf;HTML">The root class for all QUDT concepts.</dcterms:description>
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">QUDT Concept</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="autos569" />
-    <rdfs:subClassOf rdf:nodeID="autos570" />
-    <rdfs:subClassOf rdf:nodeID="autos571" />
-    <rdfs:subClassOf rdf:nodeID="autos572" />
-    <rdfs:subClassOf rdf:nodeID="autos573" />
-    <rdfs:subClassOf rdf:nodeID="autos574" />
-    <rdfs:subClassOf rdf:nodeID="autos575" />
-    <rdfs:subClassOf rdf:nodeID="autos576" />
-    <rdfs:subClassOf rdf:nodeID="autos577" />
-    <rdfs:subClassOf rdf:nodeID="autos578" />
-    <rdfs:subClassOf rdf:nodeID="autos579" />
+    <rdfs:subClassOf rdf:nodeID="autos451" />
+    <rdfs:subClassOf rdf:nodeID="autos452" />
+    <rdfs:subClassOf rdf:nodeID="autos453" />
+    <rdfs:subClassOf rdf:nodeID="autos454" />
+    <rdfs:subClassOf rdf:nodeID="autos455" />
+    <rdfs:subClassOf rdf:nodeID="autos456" />
+    <rdfs:subClassOf rdf:nodeID="autos457" />
+    <rdfs:subClassOf rdf:nodeID="autos458" />
+    <rdfs:subClassOf rdf:nodeID="autos459" />
+    <rdfs:subClassOf rdf:nodeID="autos460" />
+    <rdfs:subClassOf rdf:nodeID="autos461" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;ConstantValue">
     <dcterms:description rdf:datatype="&rdf;HTML">Used to specify the values of a constant.</dcterms:description>
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Constant value</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;QuantityValue" />
-    <rdfs:subClassOf rdf:nodeID="autos580" />
-    <rdfs:subClassOf rdf:nodeID="autos581" />
+    <rdfs:subClassOf rdf:nodeID="autos462" />
+    <rdfs:subClassOf rdf:nodeID="autos463" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;ContextualUnit">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Contextual Unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Unit" />
-    <rdfs:subClassOf rdf:nodeID="autos582" />
+    <rdfs:subClassOf rdf:nodeID="autos464" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;CountingUnit">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -185,9 +187,9 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Currency Unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;DimensionlessUnit" />
-    <rdfs:subClassOf rdf:nodeID="autos583" />
-    <rdfs:subClassOf rdf:nodeID="autos584" />
-    <rdfs:subClassOf rdf:nodeID="autos585" />
+    <rdfs:subClassOf rdf:nodeID="autos465" />
+    <rdfs:subClassOf rdf:nodeID="autos466" />
+    <rdfs:subClassOf rdf:nodeID="autos467" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;DataItem">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -236,14 +238,14 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label xml:lang="en">Digital Currency Unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;CurrencyUnit" />
-    <rdfs:subClassOf rdf:nodeID="autos586" />
-    <rdfs:subClassOf rdf:nodeID="autos587" />
-    <rdfs:subClassOf rdf:nodeID="autos588" />
-    <rdfs:subClassOf rdf:nodeID="autos589" />
-    <rdfs:subClassOf rdf:nodeID="autos590" />
-    <rdfs:subClassOf rdf:nodeID="autos591" />
-    <rdfs:subClassOf rdf:nodeID="autos592" />
-    <rdfs:subClassOf rdf:nodeID="autos593" />
+    <rdfs:subClassOf rdf:nodeID="autos468" />
+    <rdfs:subClassOf rdf:nodeID="autos469" />
+    <rdfs:subClassOf rdf:nodeID="autos470" />
+    <rdfs:subClassOf rdf:nodeID="autos471" />
+    <rdfs:subClassOf rdf:nodeID="autos472" />
+    <rdfs:subClassOf rdf:nodeID="autos473" />
+    <rdfs:subClassOf rdf:nodeID="autos474" />
+    <rdfs:subClassOf rdf:nodeID="autos475" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;DimensionlessUnit">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -262,10 +264,10 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Enumerated Quantity</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos594" />
-    <rdfs:subClassOf rdf:nodeID="autos595" />
-    <rdfs:subClassOf rdf:nodeID="autos596" />
-    <rdfs:subClassOf rdf:nodeID="autos597" />
+    <rdfs:subClassOf rdf:nodeID="autos476" />
+    <rdfs:subClassOf rdf:nodeID="autos477" />
+    <rdfs:subClassOf rdf:nodeID="autos478" />
+    <rdfs:subClassOf rdf:nodeID="autos479" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;EnumeratedValue">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -291,9 +293,9 @@
     <rdfs:label rdf:datatype="&xsd;string">Enumerated Value</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
     <rdfs:subClassOf rdf:resource="&dtype;EnumeratedValue" />
-    <rdfs:subClassOf rdf:nodeID="autos598" />
-    <rdfs:subClassOf rdf:nodeID="autos599" />
-    <rdfs:subClassOf rdf:nodeID="autos600" />
+    <rdfs:subClassOf rdf:nodeID="autos480" />
+    <rdfs:subClassOf rdf:nodeID="autos481" />
+    <rdfs:subClassOf rdf:nodeID="autos482" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Enumeration">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -315,12 +317,12 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Enumeration</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos601" />
-    <rdfs:subClassOf rdf:nodeID="autos602" />
-    <rdfs:subClassOf rdf:nodeID="autos603" />
-    <rdfs:subClassOf rdf:nodeID="autos604" />
-    <rdfs:subClassOf rdf:nodeID="autos605" />
-    <rdfs:subClassOf rdf:nodeID="autos606" />
+    <rdfs:subClassOf rdf:nodeID="autos483" />
+    <rdfs:subClassOf rdf:nodeID="autos484" />
+    <rdfs:subClassOf rdf:nodeID="autos485" />
+    <rdfs:subClassOf rdf:nodeID="autos486" />
+    <rdfs:subClassOf rdf:nodeID="autos487" />
+    <rdfs:subClassOf rdf:nodeID="autos488" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;FactorUnit">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -330,30 +332,30 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Factor Unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos607" />
-    <rdfs:subClassOf rdf:nodeID="autos608" />
-    <rdfs:subClassOf rdf:nodeID="autos609" />
+    <rdfs:subClassOf rdf:nodeID="autos489" />
+    <rdfs:subClassOf rdf:nodeID="autos490" />
+    <rdfs:subClassOf rdf:nodeID="autos491" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Figure">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Figure</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos610" />
-    <rdfs:subClassOf rdf:nodeID="autos611" />
-    <rdfs:subClassOf rdf:nodeID="autos612" />
-    <rdfs:subClassOf rdf:nodeID="autos613" />
-    <rdfs:subClassOf rdf:nodeID="autos614" />
-    <rdfs:subClassOf rdf:nodeID="autos615" />
-    <rdfs:subClassOf rdf:nodeID="autos616" />
-    <rdfs:subClassOf rdf:nodeID="autos617" />
-    <rdfs:subClassOf rdf:nodeID="autos618" />
-    <rdfs:subClassOf rdf:nodeID="autos619" />
-    <rdfs:subClassOf rdf:nodeID="autos620" />
-    <rdfs:subClassOf rdf:nodeID="autos621" />
-    <rdfs:subClassOf rdf:nodeID="autos622" />
-    <rdfs:subClassOf rdf:nodeID="autos623" />
-    <rdfs:subClassOf rdf:nodeID="autos624" />
-    <rdfs:subClassOf rdf:nodeID="autos625" />
+    <rdfs:subClassOf rdf:nodeID="autos492" />
+    <rdfs:subClassOf rdf:nodeID="autos493" />
+    <rdfs:subClassOf rdf:nodeID="autos494" />
+    <rdfs:subClassOf rdf:nodeID="autos495" />
+    <rdfs:subClassOf rdf:nodeID="autos496" />
+    <rdfs:subClassOf rdf:nodeID="autos497" />
+    <rdfs:subClassOf rdf:nodeID="autos498" />
+    <rdfs:subClassOf rdf:nodeID="autos499" />
+    <rdfs:subClassOf rdf:nodeID="autos500" />
+    <rdfs:subClassOf rdf:nodeID="autos501" />
+    <rdfs:subClassOf rdf:nodeID="autos502" />
+    <rdfs:subClassOf rdf:nodeID="autos503" />
+    <rdfs:subClassOf rdf:nodeID="autos504" />
+    <rdfs:subClassOf rdf:nodeID="autos505" />
+    <rdfs:subClassOf rdf:nodeID="autos506" />
+    <rdfs:subClassOf rdf:nodeID="autos507" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;IntervalScale">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -436,17 +438,17 @@
     <rdfs:seeAlso rdf:resource="&qudt;NominalScale" />
     <rdfs:seeAlso rdf:resource="&qudt;RatioScale" />
     <rdfs:subClassOf rdf:resource="&qudt;Scale" />
-    <rdfs:subClassOf rdf:nodeID="autos626" />
-    <rdfs:subClassOf rdf:nodeID="autos627" />
-    <rdfs:subClassOf rdf:nodeID="autos628" />
-    <rdfs:subClassOf rdf:nodeID="autos629" />
+    <rdfs:subClassOf rdf:nodeID="autos508" />
+    <rdfs:subClassOf rdf:nodeID="autos509" />
+    <rdfs:subClassOf rdf:nodeID="autos510" />
+    <rdfs:subClassOf rdf:nodeID="autos511" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Organization">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos630" />
-    <rdfs:subClassOf rdf:nodeID="autos631" />
+    <rdfs:subClassOf rdf:nodeID="autos512" />
+    <rdfs:subClassOf rdf:nodeID="autos513" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;PhysicalConstant">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -463,20 +465,22 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Physical Constant</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Quantity" />
-    <rdfs:subClassOf rdf:nodeID="autos632" />
-    <rdfs:subClassOf rdf:nodeID="autos633" />
-    <rdfs:subClassOf rdf:nodeID="autos634" />
-    <rdfs:subClassOf rdf:nodeID="autos635" />
-    <rdfs:subClassOf rdf:nodeID="autos636" />
-    <rdfs:subClassOf rdf:nodeID="autos637" />
-    <rdfs:subClassOf rdf:nodeID="autos638" />
-    <rdfs:subClassOf rdf:nodeID="autos639" />
-    <rdfs:subClassOf rdf:nodeID="autos640" />
-    <rdfs:subClassOf rdf:nodeID="autos641" />
-    <rdfs:subClassOf rdf:nodeID="autos642" />
-    <rdfs:subClassOf rdf:nodeID="autos643" />
-    <rdfs:subClassOf rdf:nodeID="autos644" />
-    <rdfs:subClassOf rdf:nodeID="autos645" />
+    <rdfs:subClassOf rdf:nodeID="autos514" />
+    <rdfs:subClassOf rdf:nodeID="autos515" />
+    <rdfs:subClassOf rdf:nodeID="autos516" />
+    <rdfs:subClassOf rdf:nodeID="autos517" />
+    <rdfs:subClassOf rdf:nodeID="autos518" />
+    <rdfs:subClassOf rdf:nodeID="autos519" />
+    <rdfs:subClassOf rdf:nodeID="autos520" />
+    <rdfs:subClassOf rdf:nodeID="autos521" />
+    <rdfs:subClassOf rdf:nodeID="autos522" />
+    <rdfs:subClassOf rdf:nodeID="autos523" />
+    <rdfs:subClassOf rdf:nodeID="autos524" />
+    <rdfs:subClassOf rdf:nodeID="autos525" />
+    <rdfs:subClassOf rdf:nodeID="autos526" />
+    <rdfs:subClassOf rdf:nodeID="autos527" />
+    <rdfs:subClassOf rdf:nodeID="autos528" />
+    <rdfs:subClassOf rdf:nodeID="autos529" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;PlaneAngleUnit">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
@@ -488,12 +492,12 @@
     <rdfs:label rdf:datatype="&xsd;string">Prefix</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos646" />
-    <rdfs:subClassOf rdf:nodeID="autos647" />
-    <rdfs:subClassOf rdf:nodeID="autos648" />
-    <rdfs:subClassOf rdf:nodeID="autos649" />
-    <rdfs:subClassOf rdf:nodeID="autos650" />
-    <rdfs:subClassOf rdf:nodeID="autos651" />
+    <rdfs:subClassOf rdf:nodeID="autos530" />
+    <rdfs:subClassOf rdf:nodeID="autos531" />
+    <rdfs:subClassOf rdf:nodeID="autos532" />
+    <rdfs:subClassOf rdf:nodeID="autos533" />
+    <rdfs:subClassOf rdf:nodeID="autos534" />
+    <rdfs:subClassOf rdf:nodeID="autos535" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Quantifiable">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -503,15 +507,15 @@
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Quantifiable</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Aspect" />
-    <rdfs:subClassOf rdf:nodeID="autos652" />
-    <rdfs:subClassOf rdf:nodeID="autos653" />
-    <rdfs:subClassOf rdf:nodeID="autos654" />
-    <rdfs:subClassOf rdf:nodeID="autos655" />
-    <rdfs:subClassOf rdf:nodeID="autos656" />
-    <rdfs:subClassOf rdf:nodeID="autos657" />
-    <rdfs:subClassOf rdf:nodeID="autos658" />
-    <rdfs:subClassOf rdf:nodeID="autos659" />
-    <rdfs:subClassOf rdf:nodeID="autos660" />
+    <rdfs:subClassOf rdf:nodeID="autos536" />
+    <rdfs:subClassOf rdf:nodeID="autos537" />
+    <rdfs:subClassOf rdf:nodeID="autos538" />
+    <rdfs:subClassOf rdf:nodeID="autos539" />
+    <rdfs:subClassOf rdf:nodeID="autos540" />
+    <rdfs:subClassOf rdf:nodeID="autos541" />
+    <rdfs:subClassOf rdf:nodeID="autos542" />
+    <rdfs:subClassOf rdf:nodeID="autos543" />
+    <rdfs:subClassOf rdf:nodeID="autos544" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Quantity">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -535,10 +539,10 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
     <rdfs:subClassOf rdf:resource="&qudt;Quantifiable" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos661" />
-    <rdfs:subClassOf rdf:nodeID="autos662" />
-    <rdfs:subClassOf rdf:nodeID="autos663" />
-    <rdfs:subClassOf rdf:nodeID="autos664" />
+    <rdfs:subClassOf rdf:nodeID="autos545" />
+    <rdfs:subClassOf rdf:nodeID="autos546" />
+    <rdfs:subClassOf rdf:nodeID="autos547" />
+    <rdfs:subClassOf rdf:nodeID="autos548" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;QuantityKind">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -551,38 +555,39 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">Quantity Kind</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;AbstractQuantityKind" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos665" />
-    <rdfs:subClassOf rdf:nodeID="autos666" />
-    <rdfs:subClassOf rdf:nodeID="autos667" />
-    <rdfs:subClassOf rdf:nodeID="autos668" />
-    <rdfs:subClassOf rdf:nodeID="autos669" />
-    <rdfs:subClassOf rdf:nodeID="autos670" />
-    <rdfs:subClassOf rdf:nodeID="autos671" />
-    <rdfs:subClassOf rdf:nodeID="autos672" />
-    <rdfs:subClassOf rdf:nodeID="autos673" />
-    <rdfs:subClassOf rdf:nodeID="autos674" />
-    <rdfs:subClassOf rdf:nodeID="autos675" />
-    <rdfs:subClassOf rdf:nodeID="autos676" />
-    <rdfs:subClassOf rdf:nodeID="autos677" />
-    <rdfs:subClassOf rdf:nodeID="autos678" />
-    <rdfs:subClassOf rdf:nodeID="autos679" />
-    <rdfs:subClassOf rdf:nodeID="autos680" />
-    <rdfs:subClassOf rdf:nodeID="autos681" />
-    <rdfs:subClassOf rdf:nodeID="autos682" />
-    <rdfs:subClassOf rdf:nodeID="autos683" />
-    <rdfs:subClassOf rdf:nodeID="autos684" />
-    <rdfs:subClassOf rdf:nodeID="autos685" />
-    <rdfs:subClassOf rdf:nodeID="autos686" />
-    <rdfs:subClassOf rdf:nodeID="autos687" />
-    <rdfs:subClassOf rdf:nodeID="autos688" />
-    <rdfs:subClassOf rdf:nodeID="autos689" />
-    <rdfs:subClassOf rdf:nodeID="autos690" />
-    <rdfs:subClassOf rdf:nodeID="autos691" />
-    <rdfs:subClassOf rdf:nodeID="autos692" />
-    <rdfs:subClassOf rdf:nodeID="autos693" />
-    <rdfs:subClassOf rdf:nodeID="autos694" />
-    <rdfs:subClassOf rdf:nodeID="autos695" />
-    <rdfs:subClassOf rdf:nodeID="autos696" />
+    <rdfs:subClassOf rdf:nodeID="autos549" />
+    <rdfs:subClassOf rdf:nodeID="autos550" />
+    <rdfs:subClassOf rdf:nodeID="autos551" />
+    <rdfs:subClassOf rdf:nodeID="autos552" />
+    <rdfs:subClassOf rdf:nodeID="autos553" />
+    <rdfs:subClassOf rdf:nodeID="autos554" />
+    <rdfs:subClassOf rdf:nodeID="autos555" />
+    <rdfs:subClassOf rdf:nodeID="autos556" />
+    <rdfs:subClassOf rdf:nodeID="autos557" />
+    <rdfs:subClassOf rdf:nodeID="autos558" />
+    <rdfs:subClassOf rdf:nodeID="autos559" />
+    <rdfs:subClassOf rdf:nodeID="autos560" />
+    <rdfs:subClassOf rdf:nodeID="autos561" />
+    <rdfs:subClassOf rdf:nodeID="autos562" />
+    <rdfs:subClassOf rdf:nodeID="autos563" />
+    <rdfs:subClassOf rdf:nodeID="autos564" />
+    <rdfs:subClassOf rdf:nodeID="autos565" />
+    <rdfs:subClassOf rdf:nodeID="autos566" />
+    <rdfs:subClassOf rdf:nodeID="autos567" />
+    <rdfs:subClassOf rdf:nodeID="autos568" />
+    <rdfs:subClassOf rdf:nodeID="autos569" />
+    <rdfs:subClassOf rdf:nodeID="autos570" />
+    <rdfs:subClassOf rdf:nodeID="autos571" />
+    <rdfs:subClassOf rdf:nodeID="autos572" />
+    <rdfs:subClassOf rdf:nodeID="autos573" />
+    <rdfs:subClassOf rdf:nodeID="autos574" />
+    <rdfs:subClassOf rdf:nodeID="autos575" />
+    <rdfs:subClassOf rdf:nodeID="autos576" />
+    <rdfs:subClassOf rdf:nodeID="autos577" />
+    <rdfs:subClassOf rdf:nodeID="autos578" />
+    <rdfs:subClassOf rdf:nodeID="autos579" />
+    <rdfs:subClassOf rdf:nodeID="autos580" />
+    <rdfs:subClassOf rdf:nodeID="autos581" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;QuantityKindDimensionVector">
     <dcterms:description rdf:datatype="&qudt;LatexString">
@@ -603,13 +608,13 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Quantity Kind Dimension Vector</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos697" />
-    <rdfs:subClassOf rdf:nodeID="autos698" />
-    <rdfs:subClassOf rdf:nodeID="autos699" />
-    <rdfs:subClassOf rdf:nodeID="autos700" />
-    <rdfs:subClassOf rdf:nodeID="autos701" />
-    <rdfs:subClassOf rdf:nodeID="autos702" />
-    <rdfs:subClassOf rdf:nodeID="autos703" />
+    <rdfs:subClassOf rdf:nodeID="autos582" />
+    <rdfs:subClassOf rdf:nodeID="autos583" />
+    <rdfs:subClassOf rdf:nodeID="autos584" />
+    <rdfs:subClassOf rdf:nodeID="autos585" />
+    <rdfs:subClassOf rdf:nodeID="autos586" />
+    <rdfs:subClassOf rdf:nodeID="autos587" />
+    <rdfs:subClassOf rdf:nodeID="autos588" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;QuantityKindDimensionVector_CGS">
     <dcterms:description rdf:datatype="&rdf;HTML">A &lt;em&gt;CGS Dimension Vector&lt;/em&gt; is used to specify the dimensions for a C.G.S. quantity kind.</dcterms:description>
@@ -664,7 +669,7 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Quantity type</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;EnumeratedValue" />
-    <rdfs:subClassOf rdf:nodeID="autos704" />
+    <rdfs:subClassOf rdf:nodeID="autos589" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;QuantityValue">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -700,9 +705,9 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">Rule</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos705" />
-    <rdfs:subClassOf rdf:nodeID="autos706" />
-    <rdfs:subClassOf rdf:nodeID="autos707" />
+    <rdfs:subClassOf rdf:nodeID="autos590" />
+    <rdfs:subClassOf rdf:nodeID="autos591" />
+    <rdfs:subClassOf rdf:nodeID="autos592" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;RuleType">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
@@ -716,8 +721,8 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Scalar Data Item</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
-    <rdfs:subClassOf rdf:nodeID="autos708" />
-    <rdfs:subClassOf rdf:nodeID="autos709" />
+    <rdfs:subClassOf rdf:nodeID="autos593" />
+    <rdfs:subClassOf rdf:nodeID="autos594" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;ScalarDatatype">
     <dcterms:description rdf:datatype="&xsd;string">
@@ -737,12 +742,12 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">Scale</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos710" />
-    <rdfs:subClassOf rdf:nodeID="autos711" />
-    <rdfs:subClassOf rdf:nodeID="autos712" />
-    <rdfs:subClassOf rdf:nodeID="autos713" />
-    <rdfs:subClassOf rdf:nodeID="autos714" />
-    <rdfs:subClassOf rdf:nodeID="autos715" />
+    <rdfs:subClassOf rdf:nodeID="autos595" />
+    <rdfs:subClassOf rdf:nodeID="autos596" />
+    <rdfs:subClassOf rdf:nodeID="autos597" />
+    <rdfs:subClassOf rdf:nodeID="autos598" />
+    <rdfs:subClassOf rdf:nodeID="autos599" />
+    <rdfs:subClassOf rdf:nodeID="autos600" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;ScaleType">
     <qudt:plainTextDescription rdf:datatype="&xsd;string">
@@ -753,10 +758,10 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">Scale type</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;EnumeratedValue" />
-    <rdfs:subClassOf rdf:nodeID="autos716" />
-    <rdfs:subClassOf rdf:nodeID="autos717" />
-    <rdfs:subClassOf rdf:nodeID="autos718" />
-    <rdfs:subClassOf rdf:nodeID="autos719" />
+    <rdfs:subClassOf rdf:nodeID="autos601" />
+    <rdfs:subClassOf rdf:nodeID="autos602" />
+    <rdfs:subClassOf rdf:nodeID="autos603" />
+    <rdfs:subClassOf rdf:nodeID="autos604" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;SolidAngleUnit">
     <dcterms:description rdf:datatype="&xsd;string">
@@ -798,16 +803,16 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">System of Quantity Kinds</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos720" />
-    <rdfs:subClassOf rdf:nodeID="autos721" />
-    <rdfs:subClassOf rdf:nodeID="autos722" />
-    <rdfs:subClassOf rdf:nodeID="autos723" />
-    <rdfs:subClassOf rdf:nodeID="autos724" />
-    <rdfs:subClassOf rdf:nodeID="autos725" />
-    <rdfs:subClassOf rdf:nodeID="autos726" />
-    <rdfs:subClassOf rdf:nodeID="autos727" />
-    <rdfs:subClassOf rdf:nodeID="autos728" />
-    <rdfs:subClassOf rdf:nodeID="autos729" />
+    <rdfs:subClassOf rdf:nodeID="autos605" />
+    <rdfs:subClassOf rdf:nodeID="autos606" />
+    <rdfs:subClassOf rdf:nodeID="autos607" />
+    <rdfs:subClassOf rdf:nodeID="autos608" />
+    <rdfs:subClassOf rdf:nodeID="autos609" />
+    <rdfs:subClassOf rdf:nodeID="autos610" />
+    <rdfs:subClassOf rdf:nodeID="autos611" />
+    <rdfs:subClassOf rdf:nodeID="autos612" />
+    <rdfs:subClassOf rdf:nodeID="autos613" />
+    <rdfs:subClassOf rdf:nodeID="autos614" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;SystemOfUnits">
     <dcterms:description rdf:datatype="&rdf;HTML">
@@ -821,15 +826,15 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">System of Units</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos730" />
-    <rdfs:subClassOf rdf:nodeID="autos731" />
-    <rdfs:subClassOf rdf:nodeID="autos732" />
-    <rdfs:subClassOf rdf:nodeID="autos733" />
-    <rdfs:subClassOf rdf:nodeID="autos734" />
-    <rdfs:subClassOf rdf:nodeID="autos735" />
-    <rdfs:subClassOf rdf:nodeID="autos736" />
-    <rdfs:subClassOf rdf:nodeID="autos737" />
-    <rdfs:subClassOf rdf:nodeID="autos738" />
+    <rdfs:subClassOf rdf:nodeID="autos615" />
+    <rdfs:subClassOf rdf:nodeID="autos616" />
+    <rdfs:subClassOf rdf:nodeID="autos617" />
+    <rdfs:subClassOf rdf:nodeID="autos618" />
+    <rdfs:subClassOf rdf:nodeID="autos619" />
+    <rdfs:subClassOf rdf:nodeID="autos620" />
+    <rdfs:subClassOf rdf:nodeID="autos621" />
+    <rdfs:subClassOf rdf:nodeID="autos622" />
+    <rdfs:subClassOf rdf:nodeID="autos623" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;TransformType">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
@@ -859,55 +864,58 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">Unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;Concept" />
     <rdfs:subClassOf rdf:resource="&qudt;Verifiable" />
-    <rdfs:subClassOf rdf:nodeID="autos739" />
-    <rdfs:subClassOf rdf:nodeID="autos740" />
-    <rdfs:subClassOf rdf:nodeID="autos741" />
-    <rdfs:subClassOf rdf:nodeID="autos742" />
-    <rdfs:subClassOf rdf:nodeID="autos743" />
-    <rdfs:subClassOf rdf:nodeID="autos744" />
-    <rdfs:subClassOf rdf:nodeID="autos745" />
-    <rdfs:subClassOf rdf:nodeID="autos746" />
-    <rdfs:subClassOf rdf:nodeID="autos747" />
-    <rdfs:subClassOf rdf:nodeID="autos748" />
-    <rdfs:subClassOf rdf:nodeID="autos749" />
-    <rdfs:subClassOf rdf:nodeID="autos750" />
-    <rdfs:subClassOf rdf:nodeID="autos751" />
-    <rdfs:subClassOf rdf:nodeID="autos752" />
-    <rdfs:subClassOf rdf:nodeID="autos753" />
-    <rdfs:subClassOf rdf:nodeID="autos754" />
-    <rdfs:subClassOf rdf:nodeID="autos755" />
-    <rdfs:subClassOf rdf:nodeID="autos756" />
-    <rdfs:subClassOf rdf:nodeID="autos757" />
-    <rdfs:subClassOf rdf:nodeID="autos758" />
-    <rdfs:subClassOf rdf:nodeID="autos759" />
-    <rdfs:subClassOf rdf:nodeID="autos760" />
-    <rdfs:subClassOf rdf:nodeID="autos761" />
-    <rdfs:subClassOf rdf:nodeID="autos762" />
-    <rdfs:subClassOf rdf:nodeID="autos763" />
-    <rdfs:subClassOf rdf:nodeID="autos764" />
-    <rdfs:subClassOf rdf:nodeID="autos765" />
-    <rdfs:subClassOf rdf:nodeID="autos766" />
-    <rdfs:subClassOf rdf:nodeID="autos767" />
-    <rdfs:subClassOf rdf:nodeID="autos768" />
-    <rdfs:subClassOf rdf:nodeID="autos769" />
-    <rdfs:subClassOf rdf:nodeID="autos770" />
-    <rdfs:subClassOf rdf:nodeID="autos771" />
-    <rdfs:subClassOf rdf:nodeID="autos772" />
-    <rdfs:subClassOf rdf:nodeID="autos773" />
-    <rdfs:subClassOf rdf:nodeID="autos774" />
-    <rdfs:subClassOf rdf:nodeID="autos775" />
-    <rdfs:subClassOf rdf:nodeID="autos776" />
-    <rdfs:subClassOf rdf:nodeID="autos777" />
-    <rdfs:subClassOf rdf:nodeID="autos778" />
+    <rdfs:subClassOf rdf:nodeID="autos624" />
+    <rdfs:subClassOf rdf:nodeID="autos625" />
+    <rdfs:subClassOf rdf:nodeID="autos626" />
+    <rdfs:subClassOf rdf:nodeID="autos627" />
+    <rdfs:subClassOf rdf:nodeID="autos628" />
+    <rdfs:subClassOf rdf:nodeID="autos629" />
+    <rdfs:subClassOf rdf:nodeID="autos630" />
+    <rdfs:subClassOf rdf:nodeID="autos631" />
+    <rdfs:subClassOf rdf:nodeID="autos632" />
+    <rdfs:subClassOf rdf:nodeID="autos633" />
+    <rdfs:subClassOf rdf:nodeID="autos634" />
+    <rdfs:subClassOf rdf:nodeID="autos635" />
+    <rdfs:subClassOf rdf:nodeID="autos636" />
+    <rdfs:subClassOf rdf:nodeID="autos637" />
+    <rdfs:subClassOf rdf:nodeID="autos638" />
+    <rdfs:subClassOf rdf:nodeID="autos639" />
+    <rdfs:subClassOf rdf:nodeID="autos640" />
+    <rdfs:subClassOf rdf:nodeID="autos641" />
+    <rdfs:subClassOf rdf:nodeID="autos642" />
+    <rdfs:subClassOf rdf:nodeID="autos643" />
+    <rdfs:subClassOf rdf:nodeID="autos644" />
+    <rdfs:subClassOf rdf:nodeID="autos645" />
+    <rdfs:subClassOf rdf:nodeID="autos646" />
+    <rdfs:subClassOf rdf:nodeID="autos647" />
+    <rdfs:subClassOf rdf:nodeID="autos648" />
+    <rdfs:subClassOf rdf:nodeID="autos649" />
+    <rdfs:subClassOf rdf:nodeID="autos650" />
+    <rdfs:subClassOf rdf:nodeID="autos651" />
+    <rdfs:subClassOf rdf:nodeID="autos652" />
+    <rdfs:subClassOf rdf:nodeID="autos653" />
+    <rdfs:subClassOf rdf:nodeID="autos654" />
+    <rdfs:subClassOf rdf:nodeID="autos655" />
+    <rdfs:subClassOf rdf:nodeID="autos656" />
+    <rdfs:subClassOf rdf:nodeID="autos657" />
+    <rdfs:subClassOf rdf:nodeID="autos658" />
+    <rdfs:subClassOf rdf:nodeID="autos659" />
+    <rdfs:subClassOf rdf:nodeID="autos660" />
+    <rdfs:subClassOf rdf:nodeID="autos661" />
+    <rdfs:subClassOf rdf:nodeID="autos662" />
+    <rdfs:subClassOf rdf:nodeID="autos663" />
+    <rdfs:subClassOf rdf:nodeID="autos664" />
+    <rdfs:subClassOf rdf:nodeID="autos665" />
+    <rdfs:subClassOf rdf:nodeID="autos666" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;UserQuantityKind">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">User Quantity Kind</rdfs:label>
     <rdfs:subClassOf rdf:resource="&qudt;AbstractQuantityKind" />
-    <rdfs:subClassOf rdf:nodeID="autos779" />
-    <rdfs:subClassOf rdf:nodeID="autos780" />
-    <rdfs:subClassOf rdf:nodeID="autos781" />
-    <rdfs:subClassOf rdf:nodeID="autos782" />
+    <rdfs:subClassOf rdf:nodeID="autos667" />
+    <rdfs:subClassOf rdf:nodeID="autos668" />
+    <rdfs:subClassOf rdf:nodeID="autos669" />
+    <rdfs:subClassOf rdf:nodeID="autos670" />
   </owl:Class>
   <owl:Class rdf:about="&qudt;Verifiable">
     <dcterms:description rdf:datatype="&xsd;string">
@@ -1053,6 +1061,18 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">categorized as</rdfs:label>
   </owl:AnnotationProperty>
+  <owl:ObjectProperty rdf:about="&qudt;categorizedByQuantityKind">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;Relates a unit to a non-commensurate quantity-kind &lt;em&gt;category&lt;/em&gt; under which it is grouped
+  &amp;mdash; e.g. the placeholder &lt;code&gt;quantitykind:Unknown&lt;/code&gt;, or a dimensionless bucket such as
+  &lt;code&gt;quantitykind:DimensionlessRatio&lt;/code&gt; &amp;mdash; &lt;strong&gt;without&lt;/strong&gt; asserting that the
+  unit measures or is convertible within a commensurate family. A sub-property of
+  &lt;code&gt;qudt:hasQuantityKind&lt;/code&gt;. Contrast &lt;code&gt;qudt:unitForQuantityKind&lt;/code&gt;.&lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">categorized by quantity kind</rdfs:label>
+    <rdfs:range rdf:resource="&qudt;QuantityKind" />
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasQuantityKind" />
+  </owl:ObjectProperty>
   <owl:AnnotationProperty rdf:about="&qudt;coherentUnitSystem">
     <dcterms:description rdf:datatype="&qudt;LatexString">
   &lt;p&gt;A system of units is coherent with respect to a system of quantities and equations if the system of units is chosen in such a way that the equations between numerical values have exactly the same form (including the numerical factors) as the corresponding equations between the quantities. 
@@ -1242,6 +1262,12 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">dimensionless exponent</rdfs:label>
   </owl:AnnotationProperty>
+  <owl:DatatypeProperty rdf:about="&qudt;eclassCode">
+    <dcterms:description rdf:datatype="&xsd;string">Provides an IRDI (International Registration Data Identifier) that identifies the corresponding definition in the ECLASS Standard.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">ECLASS code</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string" />
+  </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="&qudt;element">
     <dcterms:description rdf:datatype="&rdf;HTML">An element of an enumeration</dcterms:description>
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
@@ -1513,8 +1539,9 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="&qudt;iec61360Code">
+    <dcterms:description rdf:datatype="&xsd;string">Provides an IRDI (International Registration Data Identifier) that identifies the corresponding definition in the IEC CDD (Common Data Dictionary).</dcterms:description>
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
-    <rdfs:label rdf:datatype="&xsd;string">iec-61360 code</rdfs:label>
+    <rdfs:label rdf:datatype="&xsd;string">IEC 61360 code</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="&qudt;image">
@@ -1626,6 +1653,27 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">order</rdfs:label>
     <rdfs:range rdf:resource="&xsd;nonNegativeInteger" />
   </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&qudt;organizedUnder">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;Relates a quantity kind to a broader quantity kind for the purpose of &lt;em&gt;organization and unit
+  applicability only&lt;/em&gt; &amp;mdash; it does &lt;strong&gt;not&lt;/strong&gt; assert commensurability. A sub-property
+  of &lt;code&gt;skos:broader&lt;/code&gt; (so it contributes to the concept hierarchy), but unlike
+  &lt;code&gt;qudt:specializationOf&lt;/code&gt; it makes no commensurability claim:
+  &lt;code&gt;qudt:organizedUnder&lt;/code&gt; groups quantity kinds that share a dimension but are &lt;em&gt;not&lt;/em&gt;
+  interchangeable &amp;mdash; principally the dimensionless quantity kinds, which are all organised under
+  &lt;code&gt;quantitykind:Dimensionless&lt;/code&gt; / &lt;code&gt;quantitykind:DimensionlessRatio&lt;/code&gt; without being
+  commensurable with one another. &lt;code&gt;qudt:organizedUnder&lt;/code&gt; still contributes to the concept
+  hierarchy (via &lt;code&gt;skos:broader&lt;/code&gt;), and the build still validates that it only links
+  quantity kinds of the same dimension, but the applicable-unit computation traverses only
+  &lt;code&gt;qudt:specializationOf&lt;/code&gt; &amp;mdash; an organizational grouping confers no units on its
+  members. The commensurability test likewise traverses
+  &lt;code&gt;qudt:specializationOf&lt;/code&gt; and &lt;code&gt;qudt:exactMatch&lt;/code&gt; (never
+  &lt;code&gt;qudt:organizedUnder&lt;/code&gt;).&lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">organized under</rdfs:label>
+    <rdfs:range rdf:resource="&qudt;QuantityKind" />
+    <rdfs:subPropertyOf rdf:resource="&skos;broader" />
+  </owl:ObjectProperty>
   <owl:AnnotationProperty rdf:about="&qudt;outOfScope">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">out of scope</rdfs:label>
@@ -1744,6 +1792,19 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:label rdf:datatype="&xsd;string">si units expression</rdfs:label>
     <rdfs:range rdf:resource="&xsd;string" />
   </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&qudt;specializationOf">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;Relates a quantity kind to a broader quantity kind of which it is a &lt;em&gt;specialization&lt;/em&gt;,
+  asserting &lt;strong&gt;commensurability&lt;/strong&gt;: the two share a dimension, their values are comparable
+  and addable, and their units are inter-convertible. A sub-property of &lt;code&gt;skos:broader&lt;/code&gt;.
+  Commensurability families are the connected components under
+  &lt;code&gt;(qudt:specializationOf | qudt:exactMatch)&lt;/code&gt;. Contrast &lt;code&gt;qudt:organizedUnder&lt;/code&gt;,
+  which groups quantity kinds without asserting commensurability.&lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">specialization of</rdfs:label>
+    <rdfs:range rdf:resource="&qudt;QuantityKind" />
+    <rdfs:subPropertyOf rdf:resource="&skos;broader" />
+  </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="&qudt;standardUncertainty">
     <dcterms:description rdf:datatype="&xsd;string">The standard uncertainty of a quantity is the estimated standard deviation of the mean taken from a series of measurements.</dcterms:description>
     <rdf:type rdf:resource="&owl;FunctionalProperty" />
@@ -1807,6 +1868,17 @@ as "fundamental" in this sense.&lt;/p&gt;
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
     <rdfs:label rdf:datatype="&xsd;string">unit for</rdfs:label>
     <owl:inverseOf rdf:resource="&qudt;hasUnit" />
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="&qudt;unitForQuantityKind">
+    <dcterms:description rdf:datatype="&rdf;HTML">
+  &lt;p&gt;Relates a unit to a quantity kind it is a &lt;em&gt;unit for&lt;/em&gt; &amp;mdash; a quantity kind the unit
+  measures, a member of the commensurate family within which the unit is convertible. A
+  sub-property of &lt;code&gt;qudt:hasQuantityKind&lt;/code&gt;. Contrast
+  &lt;code&gt;qudt:categorizedByQuantityKind&lt;/code&gt;.&lt;/p&gt;</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
+    <rdfs:label rdf:datatype="&xsd;string">unit for quantity kind</rdfs:label>
+    <rdfs:range rdf:resource="&qudt;QuantityKind" />
+    <rdfs:subPropertyOf rdf:resource="&qudt;hasQuantityKind" />
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="&qudt;url">
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
@@ -1873,7 +1945,7 @@ as "fundamental" in this sense.&lt;/p&gt;
     <dcterms:contributor rdf:datatype="&xsd;string">Steve Ray</dcterms:contributor>
     <dcterms:created rdf:datatype="&xsd;date">2011-04-20</dcterms:created>
     <dcterms:description rdf:datatype="&rdf;HTML">&lt;p&gt;This OWL schema is derived from the SHACL schema found at http://qudt.org/schema/shacl/qudt. &lt;/p&gt;</dcterms:description>
-    <dcterms:modified rdf:datatype="&xsd;dateTime">2026-05-25T19:49:07Z</dcterms:modified>
+    <dcterms:modified rdf:datatype="&xsd;dateTime">2026-06-25T12:34:17Z</dcterms:modified>
     <dcterms:rights rdf:datatype="&xsd;string">
   This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.
 
@@ -1881,25 +1953,25 @@ THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDE
   </dcterms:rights>
     <dcterms:rights rdf:datatype="&xsd;string">The QUDT Ontologies are issued under a Creative Commons Attribution 4.0 International License (CC BY 4.0), available at https://creativecommons.org/licenses/by/4.0/. Attribution should be made to QUDT.org</dcterms:rights>
     <dcterms:subject rdf:datatype="&xsd;string">QUDT</dcterms:subject>
-    <dcterms:title rdf:datatype="&xsd;string">QUDT Schema - Version 3.3.0</dcterms:title>
+    <dcterms:title rdf:datatype="&xsd;string">QUDT Schema - Version 3.4.0</dcterms:title>
     <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://unitsofmeasure.org/trac</qudt:informativeReference>
     <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.bipm.org/en/publications/si-brochure</qudt:informativeReference>
     <qudt:informativeReference rdf:datatype="&xsd;anyURI">http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</qudt:informativeReference>
     <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://books.google.com/books?id=pIlCAAAAIAAJ&amp;dq=dimensional+analysis&amp;hl=en</qudt:informativeReference>
     <qudt:informativeReference rdf:datatype="&xsd;anyURI">https://www.nist.gov/physical-measurement-laboratory/special-publication-811</qudt:informativeReference>
     <vaem:graphName rdf:datatype="&xsd;string">qudt</vaem:graphName>
-    <vaem:graphTitle rdf:datatype="&xsd;string">Quantities, Units, Dimensions and Types (QUDT) Schema - Version 3.3.0</vaem:graphTitle>
+    <vaem:graphTitle rdf:datatype="&xsd;string">Quantities, Units, Dimensions and Types (QUDT) Schema - Version 3.4.0</vaem:graphTitle>
     <vaem:hasGraphRole rdf:resource="&vaem;SchemaGraph" />
     <vaem:hasOwner rdf:resource="&vaem;QUDT" />
     <vaem:hasSteward rdf:resource="&vaem;QUDT" />
     <vaem:intent rdf:datatype="&xsd;string">Specifies the schema for quantities, units and dimensions. Types are defined in other schemas.</vaem:intent>
     <vaem:isMetadataFor rdf:resource="http://qudt.org/schema/qudt" />
-    <vaem:latestPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2026/05/DOC_SCHEMA-QUDT.html</vaem:latestPublishedVersion>
+    <vaem:latestPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2026/06/DOC_SCHEMA-QUDT.html</vaem:latestPublishedVersion>
     <vaem:logo rdf:datatype="&xsd;anyURI">https://qudt.org/linkedmodels.org/assets/lib/lm/images/logos/qudt_logo-300x110.png</vaem:logo>
     <vaem:namespace rdf:datatype="&xsd;anyURI">http://qudt.org/schema/qudt/</vaem:namespace>
     <vaem:namespacePrefix rdf:datatype="&xsd;string">qudt</vaem:namespacePrefix>
     <vaem:owner rdf:datatype="&xsd;string">qudt.org</vaem:owner>
-    <vaem:previousPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2026/04/DOC_SCHEMA-QUDT.html</vaem:previousPublishedVersion>
+    <vaem:previousPublishedVersion rdf:datatype="&xsd;anyURI">https://qudt.org/doc/2026/05/DOC_SCHEMA-QUDT.html</vaem:previousPublishedVersion>
     <vaem:turtleFileURL rdf:datatype="&xsd;anyURI">http://qudt.org/schema/qudt</vaem:turtleFileURL>
     <vaem:usesNonImportedResource rdf:resource="&dcterms;abstract" />
     <vaem:usesNonImportedResource rdf:resource="&dcterms;contributor" />
@@ -1914,7 +1986,7 @@ THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDE
     <vaem:usesNonImportedResource rdf:resource="&voag;QUDT-Attribution" />
     <vaem:withAttributionTo rdf:resource="&voag;QUDT-Attribution" />
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt" />
-    <rdfs:label rdf:datatype="&xsd;string">QUDT Schema Metadata Version 3.3.0</rdfs:label>
+    <rdfs:label rdf:datatype="&xsd;string">QUDT Schema Metadata Version 3.4.0</rdfs:label>
     <owl:versionIRI rdf:resource="http://qudt.org/schema/qudt" />
     <prov:derivedFrom rdf:resource="http://qudt.org/schema/shacl/qudt" />
   </vaem:GraphMetaData>
@@ -1932,931 +2004,963 @@ THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDE
   <owl:AnnotationProperty rdf:about="&prov;wasDerivedFrom">
     <rdfs:label rdf:datatype="&xsd;string">was derived from</rdfs:label>
   </owl:AnnotationProperty>
-  <owl:Restriction rdf:nodeID="autos551">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&skos;broader" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos552">
+  <owl:Restriction rdf:nodeID="autos431">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;latexSymbol" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos553">
+  <owl:Restriction rdf:nodeID="autos432">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;organizedUnder" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos433">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&skos;broader" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos434">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;specializationOf" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos435">
     <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
     <owl:onProperty rdf:resource="&qudt;vectorMagnitude" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos554">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;vectorMagnitude" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos555">
+  <owl:Restriction rdf:nodeID="autos436">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;vectorMagnitude" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos556">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+  <owl:Restriction rdf:nodeID="autos437">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos557">
+  <owl:Restriction rdf:nodeID="autos438">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;vectorMagnitude" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos439">
+    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos440">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos558">
+  <owl:Restriction rdf:nodeID="autos441">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos442">
     <owl:allValuesFrom rdf:resource="&xsd;float" />
     <owl:onProperty rdf:resource="&qudt;vectorMagnitude" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos559">
+  <owl:Restriction rdf:nodeID="autos443">
     <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
+    <owl:onProperty rdf:resource="&dcterms;description" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos560">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos561">
+  <owl:Restriction rdf:nodeID="autos444">
     <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
     <owl:onProperty rdf:resource="&qudt;url" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos562">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;url" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos563">
+  <owl:Restriction rdf:nodeID="autos445">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
     <owl:onProperty rdf:resource="&dcterms;description" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos564">
+  <owl:Restriction rdf:nodeID="autos446">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&dcterms;description" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos565">
-    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+  <owl:Restriction rdf:nodeID="autos447">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;url" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos448">
+    <owl:allValuesFrom rdf:resource="&rdf;HTML" />
+    <owl:onProperty rdf:resource="&qudt;rationale" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos449">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&dcterms;description" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos566">
+  <owl:Restriction rdf:nodeID="autos450">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;rationale" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos567">
-    <owl:allValuesFrom rdf:resource="&rdf;HTML" />
-    <owl:onProperty rdf:resource="&qudt;rationale" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos568">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&dcterms;description" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos569">
-    <owl:allValuesFrom rdf:resource="&qudt;Rule" />
-    <owl:onProperty rdf:resource="&qudt;hasRule" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos570">
-    <owl:allValuesFrom rdf:resource="&xsd;boolean" />
-    <owl:onProperty rdf:resource="&qudt;deprecated" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos571">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;abbreviation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos572">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;deprecatedInVersion" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos573">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;id" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos574">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;abbreviation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos575">
-    <owl:allValuesFrom rdf:resource="&rdf;HTML" />
-    <owl:onProperty rdf:resource="&qudt;guidance" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos576">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;deprecatedInVersion" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos577">
+  <owl:Restriction rdf:nodeID="autos451">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;deprecated" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos578">
+  <owl:Restriction rdf:nodeID="autos452">
     <owl:allValuesFrom rdf:resource="&qudt;Concept" />
     <owl:onProperty rdf:resource="&qudt;exactMatch" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos579">
+  <owl:Restriction rdf:nodeID="autos453">
+    <owl:allValuesFrom rdf:resource="&xsd;boolean" />
+    <owl:onProperty rdf:resource="&qudt;deprecated" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos454">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;abbreviation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos455">
+    <owl:allValuesFrom rdf:resource="&qudt;Rule" />
+    <owl:onProperty rdf:resource="&qudt;hasRule" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos456">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;deprecatedInVersion" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos457">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;id" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos458">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;id" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos580">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;exactConstant" />
+  <owl:Restriction rdf:nodeID="autos459">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;deprecatedInVersion" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos581">
+  <owl:Restriction rdf:nodeID="autos460">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;abbreviation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos461">
+    <owl:allValuesFrom rdf:resource="&rdf;HTML" />
+    <owl:onProperty rdf:resource="&qudt;guidance" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos462">
     <owl:allValuesFrom rdf:resource="&xsd;boolean" />
     <owl:onProperty rdf:resource="&qudt;exactConstant" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos582">
+  <owl:Restriction rdf:nodeID="autos463">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;exactConstant" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos464">
     <owl:allValuesFrom rdf:resource="&qudt;Unit" />
     <owl:onProperty rdf:resource="&skos;broader" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos583">
+  <owl:Restriction rdf:nodeID="autos465">
     <owl:allValuesFrom rdf:resource="&xsd;integer" />
     <owl:onProperty rdf:resource="&qudt;currencyExponent" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos584">
+  <owl:Restriction rdf:nodeID="autos466">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;currencyNumber" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos585">
+  <owl:Restriction rdf:nodeID="autos467">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;currencyCode" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos586">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;currencyExponent" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos587">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;blockchainNetwork" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos588">
+  <owl:Restriction rdf:nodeID="autos468">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;currencyCode" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos589">
+  <owl:Restriction rdf:nodeID="autos469">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;currencyExponent" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos470">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;currencyCode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos471">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasDTICode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos472">
     <owl:allValuesFrom rdf:resource="&xsd;integer" />
     <owl:onProperty rdf:resource="&qudt;currencyExponent" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos590">
+  <owl:Restriction rdf:nodeID="autos473">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;blockchainNetwork" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos591">
+  <owl:Restriction rdf:nodeID="autos474">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;hasDTICode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos475">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasDTICode" />
+    <owl:onProperty rdf:resource="&qudt;blockchainNetwork" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos592">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;hasDTICode" />
+  <owl:Restriction rdf:nodeID="autos476">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;enumeration" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos593">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;currencyCode" />
+  <owl:Restriction rdf:nodeID="autos477">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;enumeratedValue" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos594">
+  <owl:Restriction rdf:nodeID="autos478">
     <owl:allValuesFrom rdf:resource="&qudt;Enumeration" />
     <owl:onProperty rdf:resource="&qudt;enumeration" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos595">
+  <owl:Restriction rdf:nodeID="autos479">
     <owl:allValuesFrom rdf:resource="&qudt;EnumeratedValue" />
     <owl:onProperty rdf:resource="&qudt;enumeratedValue" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos596">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;enumeratedValue" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos597">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;enumeration" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos598">
+  <owl:Restriction rdf:nodeID="autos480">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;abbreviation" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos599">
+  <owl:Restriction rdf:nodeID="autos481">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;abbreviation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos482">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&dcterms;description" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos600">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;abbreviation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos601">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;abbreviation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos602">
-    <owl:allValuesFrom rdf:resource="&qudt;EnumeratedValue" />
-    <owl:onProperty rdf:resource="&qudt;element" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos603">
+  <owl:Restriction rdf:nodeID="autos483">
     <owl:allValuesFrom rdf:resource="&qudt;EnumeratedValue" />
     <owl:onProperty rdf:resource="&qudt;default" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos604">
+  <owl:Restriction rdf:nodeID="autos484">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;element" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos605">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;default" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos606">
+  <owl:Restriction rdf:nodeID="autos485">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;abbreviation" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos607">
+  <owl:Restriction rdf:nodeID="autos486">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;abbreviation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos487">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;default" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos488">
+    <owl:allValuesFrom rdf:resource="&qudt;EnumeratedValue" />
+    <owl:onProperty rdf:resource="&qudt;element" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos489">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos490">
     <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
     <owl:onProperty rdf:resource="&qudt;hasUnit" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos608">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos609">
+  <owl:Restriction rdf:nodeID="autos491">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;hasUnit" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos610">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;imageLocation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos611">
+  <owl:Restriction rdf:nodeID="autos492">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;figureCaption" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos612">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;width" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos613">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
+  <owl:Restriction rdf:nodeID="autos493">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;imageLocation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos494">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;height" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos495">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;figureCaption" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos614">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;height" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos615">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;figureLabel" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos616">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;image" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos617">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;height" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos618">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;figureLabel" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos619">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;imageLocation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos620">
-    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
-    <owl:onProperty rdf:resource="&qudt;imageLocation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos621">
-    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
-    <owl:onProperty rdf:resource="&qudt;image" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos622">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;landscape" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos623">
+  <owl:Restriction rdf:nodeID="autos496">
     <owl:allValuesFrom rdf:resource="&xsd;boolean" />
     <owl:onProperty rdf:resource="&qudt;landscape" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos624">
+  <owl:Restriction rdf:nodeID="autos497">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;width" />
+    <owl:onProperty rdf:resource="&qudt;image" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos625">
+  <owl:Restriction rdf:nodeID="autos498">
+    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
+    <owl:onProperty rdf:resource="&qudt;image" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos499">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;imageLocation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos500">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;figureCaption" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos501">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;figureLabel" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos502">
+    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
+    <owl:onProperty rdf:resource="&qudt;imageLocation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos503">
     <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
     <owl:onProperty rdf:resource="&qudt;imageLocation" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos626">
+  <owl:Restriction rdf:nodeID="autos504">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;figureLabel" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos505">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;width" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos506">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;height" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos507">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;landscape" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos508">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;order" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos627">
+  <owl:Restriction rdf:nodeID="autos509">
     <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
     <owl:onProperty rdf:resource="&qudt;order" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos628">
+  <owl:Restriction rdf:nodeID="autos510">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;order" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos511">
     <owl:allValuesFrom rdf:resource="&xsd;nonNegativeInteger" />
     <owl:onProperty rdf:resource="&qudt;order" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos629">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;order" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos630">
+  <owl:Restriction rdf:nodeID="autos512">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;url" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos631">
+  <owl:Restriction rdf:nodeID="autos513">
     <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
     <owl:onProperty rdf:resource="&qudt;url" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos632">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos633">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;iec61360Code" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos634">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;iec61360Code" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos635">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos636">
-    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
-    <owl:onProperty rdf:resource="&qudt;applicableSystem" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos637">
-    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
-    <owl:onProperty rdf:resource="&qudt;isoNormativeReference" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos638">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;latexSymbol" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos639">
-    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
-    <owl:onProperty rdf:resource="&qudt;normativeReference" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos640">
+  <owl:Restriction rdf:nodeID="autos514">
     <owl:allValuesFrom rdf:resource="&qudt;Unit" />
     <owl:onProperty rdf:resource="&qudt;applicableUnit" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos641">
+  <owl:Restriction rdf:nodeID="autos515">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;latexDefinition" />
+    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos642">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
-    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos643">
-    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
+  <owl:Restriction rdf:nodeID="autos516">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;dbpediaMatch" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos644">
+  <owl:Restriction rdf:nodeID="autos517">
     <owl:allValuesFrom rdf:resource="&xsd;boolean" />
     <owl:onProperty rdf:resource="&qudt;exactConstant" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos645">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;dbpediaMatch" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos646">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;ucumCode" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos647">
-    <owl:allValuesFrom rdf:resource="&xsd;double" />
-    <owl:onProperty rdf:resource="&qudt;prefixMultiplierSN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos648">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;latexSymbol" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos649">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;prefixMultiplier" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos650">
-    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
-    <owl:onProperty rdf:resource="&qudt;prefixMultiplier" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos651">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;prefixMultiplierSN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos652">
-    <owl:allValuesFrom rdf:resource="&xsd;double" />
-    <owl:onProperty rdf:resource="&qudt;relativeStandardUncertainty" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos653">
-    <owl:allValuesFrom rdf:resource="&xsd;double" />
-    <owl:onProperty rdf:resource="&qudt;standardUncertaintySN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos654">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;relativeStandardUncertainty" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos655">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;datatype" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos656">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;standardUncertaintySN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos657">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;standardUncertainty" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos658">
-    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
-    <owl:onProperty rdf:resource="&qudt;standardUncertainty" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos659">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos660">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos661">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos662">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos663">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityValue" />
-    <owl:onProperty rdf:resource="&qudt;quantityValue" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos664">
-    <owl:allValuesFrom rdf:resource="&xsd;boolean" />
-    <owl:onProperty rdf:resource="&qudt;isDeltaQuantity" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos665">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;baseImperialUnitDimensions" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos666">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;baseSIUnitDimensions" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos667">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos668">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;iec61360Code" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos669">
+  <owl:Restriction rdf:nodeID="autos518">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos670">
+  <owl:Restriction rdf:nodeID="autos519">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;latexDefinition" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos671">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;applicableISOUnit" />
+  <owl:Restriction rdf:nodeID="autos520">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;eclassCode" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos672">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
+  <owl:Restriction rdf:nodeID="autos521">
+    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
+    <owl:onProperty rdf:resource="&qudt;isoNormativeReference" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos673">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;applicableCGSUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos674">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;applicableUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos675">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;applicableUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos676">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;applicableImperialUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos677">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;applicableSIUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos678">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;baseISOUnitDimensions" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos679">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;qkdvDenominator" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos680">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;applicableUSCustomaryUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos681">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;applicableISOUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos682">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;applicableCGSUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos683">
-    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos684">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;applicableSIUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos685">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
-    <owl:onProperty rdf:resource="&qudt;qkdvDenominator" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos686">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;baseUSCustomaryUnitDimensions" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos687">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;dimensionVectorForSI" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos688">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;applicableUSCustomaryUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos689">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector_SI" />
-    <owl:onProperty rdf:resource="&qudt;dimensionVectorForSI" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos690">
-    <owl:allValuesFrom rdf:resource="&qudt;SystemOfQuantityKinds" />
-    <owl:onProperty rdf:resource="&qudt;belongsToSystemOfQuantities" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos691">
+  <owl:Restriction rdf:nodeID="autos522">
     <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
     <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos692">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
+  <owl:Restriction rdf:nodeID="autos523">
+    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
+    <owl:onProperty rdf:resource="&qudt;normativeReference" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos693">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;applicableImperialUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos694">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos695">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;baseCGSUnitDimensions" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos696">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
-    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos697">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;latexDefinition" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos698">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos699">
+  <owl:Restriction rdf:nodeID="autos524">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;latexSymbol" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos700">
-    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos701">
-    <owl:allValuesFrom rdf:resource="&xsd;integer" />
-    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos702">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos703">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&qudt;hasReferenceQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos704">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&dtype;value" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos705">
-    <owl:allValuesFrom rdf:resource="&rdf;HTML" />
-    <owl:onProperty rdf:resource="&qudt;rationale" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos706">
-    <owl:allValuesFrom rdf:resource="&qudt;RuleType" />
-    <owl:onProperty rdf:resource="&qudt;ruleType" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos707">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;rationale" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos708">
-    <owl:allValuesFrom rdf:resource="&qudt;ScalarDatatype" />
-    <owl:onProperty rdf:resource="&qudt;datatype" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos709">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;datatype" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos710">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;scaleType" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos711">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;dataStructure" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos712">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;dataStructure" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos713">
-    <owl:allValuesFrom rdf:resource="&qudt;MathsFunctionType" />
-    <owl:onProperty rdf:resource="&qudt;permissibleMaths" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos714">
-    <owl:allValuesFrom rdf:resource="&qudt;TransformType" />
-    <owl:onProperty rdf:resource="&qudt;permissibleTransformation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos715">
-    <owl:allValuesFrom rdf:resource="&qudt;ScaleType" />
-    <owl:onProperty rdf:resource="&qudt;scaleType" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos716">
-    <owl:allValuesFrom rdf:resource="&qudt;MathsFunctionType" />
-    <owl:onProperty rdf:resource="&qudt;permissibleMaths" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos717">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;dataStructure" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos718">
-    <owl:allValuesFrom rdf:resource="&qudt;TransformType" />
-    <owl:onProperty rdf:resource="&qudt;permissibleTransformation" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos719">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;dataStructure" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos720">
-    <owl:allValuesFrom rdf:resource="&qudt;Enumeration" />
-    <owl:onProperty rdf:resource="&qudt;baseDimensionEnumeration" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos721">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos722">
-    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
-    <owl:onProperty rdf:resource="&qudt;hasUnitSystem" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos723">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&qudt;systemDerivedQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos724">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos725">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasUnitSystem" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos726">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;systemDerivedQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos727">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos728">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;baseDimensionEnumeration" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos729">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos730">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasAllowedUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos731">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasDerivedUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos732">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos733">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasCoherentUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos734">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasDefinedUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos735">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasDerivedCoherentUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos736">
-    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasBaseUnit" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos737">
-    <owl:allValuesFrom rdf:resource="&qudt;PhysicalConstant" />
-    <owl:onProperty rdf:resource="&qudt;applicablePhysicalConstant" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos738">
-    <owl:allValuesFrom rdf:resource="&qudt;Prefix" />
-    <owl:onProperty rdf:resource="&qudt;prefix" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos739">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;conversionOffsetSN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos740">
+  <owl:Restriction rdf:nodeID="autos525">
     <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
     <owl:onProperty rdf:resource="&qudt;applicableSystem" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos741">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos742">
-    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
-    <owl:onProperty rdf:resource="&qudt;isUnitOfSystem" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos743">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
-    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos744">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
-    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos745">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;conversionOffset" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos746">
-    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
-    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos747">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;ucumCode" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos748">
-    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
-    <owl:onProperty rdf:resource="&qudt;derivedCoherentUnitOfSystem" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos749">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos750">
-    <owl:allValuesFrom rdf:resource="&xsd;double" />
-    <owl:onProperty rdf:resource="&qudt;conversionOffsetSN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos751">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;factorUnitScalar" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos752">
-    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
-    <owl:onProperty rdf:resource="&qudt;derivedUnitOfSystem" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos753">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos754">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;conversionMultiplierSN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos755">
-    <owl:allValuesFrom rdf:resource="&xsd;double" />
-    <owl:onProperty rdf:resource="&qudt;conversionMultiplierSN" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos756">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;conversionMultiplier" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos757">
+  <owl:Restriction rdf:nodeID="autos526">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;siUnitsExpression" />
+    <owl:onProperty rdf:resource="&qudt;eclassCode" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos758">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;latexSymbol" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos759">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;latexDefinition" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos760">
+  <owl:Restriction rdf:nodeID="autos527">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
     <owl:onProperty rdf:resource="&qudt;iec61360Code" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos761">
-    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
-    <owl:onProperty rdf:resource="&qudt;conversionOffset" />
+  <owl:Restriction rdf:nodeID="autos528">
+    <owl:allValuesFrom rdf:resource="&xsd;anyURI" />
+    <owl:onProperty rdf:resource="&qudt;dbpediaMatch" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos762">
+  <owl:Restriction rdf:nodeID="autos529">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;iec61360Code" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos530">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;prefix" />
+    <owl:onProperty rdf:resource="&qudt;prefixMultiplier" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos763">
+  <owl:Restriction rdf:nodeID="autos531">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;latexSymbol" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos532">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;ucumCode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos533">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;prefixMultiplierSN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos534">
+    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
+    <owl:onProperty rdf:resource="&qudt;prefixMultiplier" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos535">
+    <owl:allValuesFrom rdf:resource="&xsd;double" />
+    <owl:onProperty rdf:resource="&qudt;prefixMultiplierSN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos536">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;relativeStandardUncertainty" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos537">
+    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
+    <owl:onProperty rdf:resource="&qudt;standardUncertainty" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos538">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;standardUncertainty" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos539">
+    <owl:allValuesFrom rdf:resource="&xsd;double" />
+    <owl:onProperty rdf:resource="&qudt;relativeStandardUncertainty" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos540">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;datatype" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos541">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;standardUncertaintySN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos542">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos543">
+    <owl:allValuesFrom rdf:resource="&xsd;double" />
+    <owl:onProperty rdf:resource="&qudt;standardUncertaintySN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos544">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos545">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos546">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos547">
+    <owl:allValuesFrom rdf:resource="&xsd;boolean" />
+    <owl:onProperty rdf:resource="&qudt;isDeltaQuantity" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos548">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityValue" />
+    <owl:onProperty rdf:resource="&qudt;quantityValue" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos549">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;applicableISOUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos550">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;applicableUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos551">
+    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos552">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;iec61360Code" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos553">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector_SI" />
+    <owl:onProperty rdf:resource="&qudt;dimensionVectorForSI" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos554">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;baseISOUnitDimensions" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos555">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;applicableISOUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos556">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;applicableImperialUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos557">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;applicableCGSUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos558">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;baseCGSUnitDimensions" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos559">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;applicableUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos560">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;baseUSCustomaryUnitDimensions" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos561">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;baseSIUnitDimensions" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos562">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos563">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos564">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;latexDefinition" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos565">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos566">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;applicableUSCustomaryUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos567">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;applicableSIUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos568">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos569">
     <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
     <owl:onProperty rdf:resource="&qudt;qkdvDenominator" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos764">
-    <owl:allValuesFrom rdf:resource="&qudt;Prefix" />
-    <owl:onProperty rdf:resource="&qudt;prefix" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos765">
-    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
-    <owl:onProperty rdf:resource="&qudt;definedUnitOfSystem" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos766">
-    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos767">
-    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
-    <owl:onProperty rdf:resource="&qudt;conversionMultiplier" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos768">
+  <owl:Restriction rdf:nodeID="autos570">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos769">
-    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+  <owl:Restriction rdf:nodeID="autos571">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos572">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;applicableImperialUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos573">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;eclassCode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos574">
+    <owl:allValuesFrom rdf:resource="&qudt;SystemOfQuantityKinds" />
+    <owl:onProperty rdf:resource="&qudt;belongsToSystemOfQuantities" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos575">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
     <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos770">
+  <owl:Restriction rdf:nodeID="autos576">
     <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;scalingOf" />
+    <owl:onProperty rdf:resource="&qudt;applicableCGSUnit" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos771">
+  <owl:Restriction rdf:nodeID="autos577">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;qkdvDenominator" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos772">
-    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
-    <owl:onProperty rdf:resource="&qudt;scalingOf" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos773">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;uneceCommonCode" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos774">
+  <owl:Restriction rdf:nodeID="autos578">
     <owl:allValuesFrom rdf:resource="&qudt;Unit" />
-    <owl:onProperty rdf:resource="&qudt;hasReciprocalUnit" />
+    <owl:onProperty rdf:resource="&qudt;applicableUSCustomaryUnit" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos775">
+  <owl:Restriction rdf:nodeID="autos579">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;dimensionVectorForSI" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos580">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;baseImperialUnitDimensions" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos581">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;applicableSIUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos582">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos583">
+    <owl:allValuesFrom rdf:resource="&xsd;integer" />
+    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos584">
+    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos585">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;latexSymbol" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos586">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;latexDefinition" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos587">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;hasReferenceQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos588">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;dimensionExponentForElectricCurrent" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos589">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&dtype;value" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos590">
+    <owl:allValuesFrom rdf:resource="&qudt;RuleType" />
+    <owl:onProperty rdf:resource="&qudt;ruleType" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos591">
+    <owl:allValuesFrom rdf:resource="&rdf;HTML" />
+    <owl:onProperty rdf:resource="&qudt;rationale" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos592">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;rationale" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos593">
+    <owl:allValuesFrom rdf:resource="&qudt;ScalarDatatype" />
+    <owl:onProperty rdf:resource="&qudt;datatype" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos594">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;datatype" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos595">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;dataStructure" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos596">
+    <owl:allValuesFrom rdf:resource="&qudt;TransformType" />
+    <owl:onProperty rdf:resource="&qudt;permissibleTransformation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos597">
+    <owl:allValuesFrom rdf:resource="&qudt;ScaleType" />
+    <owl:onProperty rdf:resource="&qudt;scaleType" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos598">
     <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;siUnitsExpression" />
+    <owl:onProperty rdf:resource="&qudt;dataStructure" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos776">
+  <owl:Restriction rdf:nodeID="autos599">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;scaleType" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos600">
+    <owl:allValuesFrom rdf:resource="&qudt;MathsFunctionType" />
+    <owl:onProperty rdf:resource="&qudt;permissibleMaths" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos601">
+    <owl:allValuesFrom rdf:resource="&qudt;TransformType" />
+    <owl:onProperty rdf:resource="&qudt;permissibleTransformation" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos602">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;dataStructure" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos603">
+    <owl:allValuesFrom rdf:resource="&qudt;MathsFunctionType" />
+    <owl:onProperty rdf:resource="&qudt;permissibleMaths" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos604">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;dataStructure" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos605">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;systemDerivedQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos606">
+    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
+    <owl:onProperty rdf:resource="&qudt;hasUnitSystem" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos607">
+    <owl:allValuesFrom rdf:resource="&qudt;Enumeration" />
+    <owl:onProperty rdf:resource="&qudt;baseDimensionEnumeration" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos608">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos609">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos610">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos611">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;hasBaseQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos612">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasUnitSystem" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos613">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;baseDimensionEnumeration" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos614">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;systemDerivedQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos615">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasDerivedCoherentUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos616">
+    <owl:allValuesFrom rdf:resource="&qudt;PhysicalConstant" />
+    <owl:onProperty rdf:resource="&qudt;applicablePhysicalConstant" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos617">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos618">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasCoherentUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos619">
+    <owl:allValuesFrom rdf:resource="&qudt;Prefix" />
+    <owl:onProperty rdf:resource="&qudt;prefix" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos620">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasDefinedUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos621">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasBaseUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos622">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasAllowedUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos623">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasDerivedUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos624">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;ucumCode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos625">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos626">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos627">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <owl:onProperty rdf:resource="&qudt;qkdvDenominator" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos628">
+    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
+    <owl:onProperty rdf:resource="&qudt;conversionMultiplier" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos629">
+    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
+    <owl:onProperty rdf:resource="&qudt;definedUnitOfSystem" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos630">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos777">
-    <owl:allValuesFrom rdf:resource="&xsd;string" />
-    <owl:onProperty rdf:resource="&qudt;udunitsCode" />
+  <owl:Restriction rdf:nodeID="autos631">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos778">
+  <owl:Restriction rdf:nodeID="autos632">
     <owl:allValuesFrom rdf:resource="&xsd;decimal" />
     <owl:onProperty rdf:resource="&qudt;factorUnitScalar" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos779">
+  <owl:Restriction rdf:nodeID="autos633">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;conversionOffset" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos634">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;udunitsCode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos635">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;qkdvDenominator" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos636">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;siUnitsExpression" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos637">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos638">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos639">
+    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
+    <owl:onProperty rdf:resource="&qudt;derivedUnitOfSystem" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos640">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;scalingOf" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos641">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;factorUnitScalar" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos642">
+    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
+    <owl:onProperty rdf:resource="&qudt;isUnitOfSystem" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos643">
+    <owl:allValuesFrom rdf:resource="&xsd;double" />
+    <owl:onProperty rdf:resource="&qudt;conversionMultiplierSN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos644">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;conversionMultiplier" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos645">
+    <owl:allValuesFrom rdf:resource="&qudt;Prefix" />
+    <owl:onProperty rdf:resource="&qudt;prefix" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos646">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;prefix" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos647">
+    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
+    <owl:onProperty rdf:resource="&qudt;derivedCoherentUnitOfSystem" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos648">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;unitForQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos649">
+    <owl:allValuesFrom rdf:resource="&qudt;Unit" />
+    <owl:onProperty rdf:resource="&qudt;hasReciprocalUnit" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos650">
+    <owl:allValuesFrom rdf:resource="&xsd;double" />
+    <owl:onProperty rdf:resource="&qudt;conversionOffsetSN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos651">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;siUnitsExpression" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos652">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;conversionOffsetSN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos653">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;scalingOf" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos654">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;iec61360Code" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos655">
+    <owl:allValuesFrom rdf:resource="&qudt;SystemOfUnits" />
+    <owl:onProperty rdf:resource="&qudt;applicableSystem" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos656">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKindDimensionVector" />
+    <owl:onProperty rdf:resource="&qudt;qkdvNumerator" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos657">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;eclassCode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos658">
+    <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="&qudt;conversionMultiplierSN" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos659">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;latexDefinition" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos660">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;latexSymbol" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos661">
+    <owl:allValuesFrom rdf:resource="&xsd;decimal" />
+    <owl:onProperty rdf:resource="&qudt;conversionOffset" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos662">
+    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos663">
+    <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="&qudt;hasDimensionVector" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos664">
+    <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
+    <owl:onProperty rdf:resource="&qudt;categorizedByQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos665">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;uneceCommonCode" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos666">
+    <owl:allValuesFrom rdf:resource="&xsd;string" />
+    <owl:onProperty rdf:resource="&qudt;mathMLdefinition" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos667">
     <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
     <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos780">
-    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
-  </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos781">
+  <owl:Restriction rdf:nodeID="autos668">
     <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
     <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
   </owl:Restriction>
-  <owl:Restriction rdf:nodeID="autos782">
+  <owl:Restriction rdf:nodeID="autos669">
+    <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
+  </owl:Restriction>
+  <owl:Restriction rdf:nodeID="autos670">
     <owl:allValuesFrom rdf:resource="&qudt;QuantityKind" />
     <owl:onProperty rdf:resource="&qudt;hasQuantityKind" />
   </owl:Restriction>
