@@ -1,0 +1,417 @@
+[
+  {
+    "@id": "http://purl.org/NET/scovo#min",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/NET/scovo#Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has a minimum range value"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/scovo#Dimension",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a dimension of a statistical data item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dimension"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/scovo#Item",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a statistical data item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Item"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#dayers",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://vocab.deri.ie/scovo"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Danny Ayers"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology",
+      "http://www.w3.org/ns/adms#SemanticAsset"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@id": "http://vocab.deri.ie/scovo#yraimond"
+      },
+      {
+        "@id": "http://vocab.deri.ie/scovo#theath"
+      },
+      {
+        "@id": "http://vocab.deri.ie/scovo#Michael%20Hausenblas"
+      },
+      {
+        "@id": "http://vocab.deri.ie/scovo#lfeigenbaum"
+      },
+      {
+        "@id": "http://vocab.deri.ie/scovo#whalb"
+      },
+      {
+        "@id": "http://vocab.deri.ie/scovo#dayers"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2010-01-26",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "A vocabulary for representing statistical data on the Web.\r\n\r\n<div style=\"border: 2px solid red; padding: 0.4em 0.7em; background: #fcc\">Note: The SCOVO vocabulary is deprecated. We strongly advise to use the <a href=\"http://www.w3.org/TR/vocab-data-cube/\">Data Cube Vocabulary</a> instead.</div>"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2012-08-09",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/partOf": [
+      {
+        "@id": "http://vocab.deri.ie/"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@value": "http://vocab.deri.ie/scovo#LiDRC"
+      }
+    ],
+    "http://purl.org/dc/terms/status": [
+      {
+        "@id": "http://purl.org/adms/status/UnderDevelopment"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "The Statistical Core Vocabulary (SCOVO)"
+      }
+    ],
+    "http://purl.org/dc/terms/type": [
+      {
+        "@id": "http://purl.org/adms/assettype/Ontology"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "scovo"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@value": "http://purl.org/NET/scovo#"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://vocab.deri.ie/scovo.html"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#theath",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://vocab.deri.ie/scovo"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Tom Heath"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/scovo#datasetOf",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/NET/scovo#Dataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is the dataset of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/NET/scovo#Item"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/scovo#Dataset",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "a statistical dataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/scovo#max",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/NET/scovo#Dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has a maximum range value"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#whalb",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://vocab.deri.ie/scovo"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Wolfgang Halb"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#JOANNEUM%20RESEARCH",
+    "@type": [
+      "http://purl.org/dc/terms/Agent"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://www.joanneum.at/en/digital/iis.html"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/member": [
+      {
+        "@id": "http://vocab.deri.ie/scovo#whalb"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "JOANNEUM RESEARCH"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/scovo#dimension",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/NET/scovo#Item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has a dimension"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/NET/scovo#Dimension"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#yraimond",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://vocab.deri.ie/scovo"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Yves Raimond"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#Michael%20Hausenblas",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://sw-app.org/about.html"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/mbox": [
+      {
+        "@id": "mailto:michael.hausenblas@deri.org"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Michael Hausenblas"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/scovo#dataset",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/NET/scovo#Item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "belongs to dataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/NET/scovo#Dataset"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#lfeigenbaum",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://vocab.deri.ie/scovo"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Lee Feigenbaum"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#LiDRC",
+    "@type": [
+      "http://purl.org/dc/terms/Agent"
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "http://linkeddata.deri.ie/"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/member": [
+      {
+        "@id": "http://vocab.deri.ie/scovo#Michael%20Hausenblas"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "LiDRC"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#rdf",
+    "@type": [
+      "http://www.w3.org/ns/adms#SemanticDistribution"
+    ],
+    "http://purl.org/dc/terms/FileFormat": [
+      {
+        "@id": "http://vocab.deri.ie/scovo"
+      }
+    ],
+    "http://www.w3.org/ns/adms#accessURL": [
+      {
+        "@value": "http://vocab.deri.ie/scovo.rdf"
+      }
+    ],
+    "http://www.w3.org/ns/adms#status": [
+      {
+        "@id": "http://purl.org/adms/status/Completed"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.deri.ie/scovo#ttl",
+    "@type": [
+      "http://www.w3.org/ns/adms#SemanticDistribution"
+    ],
+    "http://purl.org/dc/terms/FileFormat": [
+      {
+        "@id": "http://vocab.deri.ie/scovo"
+      }
+    ],
+    "http://www.w3.org/ns/adms#accessURL": [
+      {
+        "@value": "http://vocab.deri.ie/scovo.ttl"
+      }
+    ],
+    "http://www.w3.org/ns/adms#status": [
+      {
+        "@id": "http://purl.org/adms/status/Completed"
+      }
+    ]
+  }
+]
