@@ -1,0 +1,747 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX oslc_config: <http://open-services.net/ns/config#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#>
+PREFIX ldp: <http://www.w3.org/ns/ldp#>
+PREFIX trs: <http://open-services.net/ns/core/trs#>
+PREFIX trspatch: <http://open-services.net/ns/core/trspatch#>
+PREFIX oslc: <http://open-services.net/ns/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://open-services.net/ns/trs/shapes/3.0#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX oslc_am: <http://open-services.net/ns/am#>
+PREFIX oslc_sysmlv2: <http://open-services.net/ns/sysmlv2#>
+PREFIX jazz_am: <http://jazz.net/ns/dm/linktypes#>
+PREFIX oslcemp: <http://jazz.net/ns/ism/event/omnibus/itnm#>
+PREFIX oslcem: <http://jazz.net/ns/ism/event/omnibus#>
+PREFIX oslcemm: <http://jazz.net/ns/ism/event/omnibus/misc#>
+PREFIX crtv: <http://open-services.net/ns/crtv#>
+PREFIX oslcemb: <http://jazz.net/ns/ism/event/omnibus/tbsm#>
+PREFIX jazz_sse: <http://jazz.net/ns/sse#>
+PREFIX oslc_rm: <http://open-services.net/ns/rm#>
+PREFIX oslc_cm: <http://open-services.net/ns/cm#>
+PREFIX oslc_qm: <http://open-services.net/ns/qm#>
+PREFIX jazz_ccm: <http://jazz.net/ns/ccm#>
+PREFIX jazz_rm: <http://jazz.net/ns/rm#>
+PREFIX jazz_rqm: <http://jazz.net/ns/qm/rqm#>
+PREFIX jazz_esa: <http://jazz.net/ns/enterprise_agile#>
+PREFIX jazz_fusa: <http://jazz.net/ns/functional_safety#>
+PREFIX jazz_aspice: <http://jazz.net/ns/aspice#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dd: <http://jazz.net/ns/reporting/data/dictionary#>
+PREFIX pd: <http://jazz.net/ns/pd#>
+PREFIX pd_ext: <http://jazz.net/ns/pd/extensions#>
+PREFIX acc: <http://open-services.net/ns/core/acc#>
+PREFIX acp: <http://jazz.net/ns/acp#>
+PREFIX process: <http://jazz.net/ns/process#>
+PREFIX shapes: <http://jazz.net/ns/process/shapes/>
+PREFIX rhp_updm1: <http://jazz.net/ns/dm/rhapsody/updml1#>
+PREFIX rhp_updm2: <http://jazz.net/ns/dm/rhapsody/updm2#>
+PREFIX dm: <http://jazz.net/ns/dm/core#>
+PREFIX UPDML1: <http://jazz.net/ns/dm/rhapsody/updml1#>
+PREFIX SysML: <http://jazz.net/ns/dm/rhapsody/sysml#>
+PREFIX rhp_uml: <http://jazz.net/ns/dm/rhapsody/uml#>
+PREFIX dmui: <http://jazz.net/ns/dm/ui#>
+PREFIX rhp_soaml: <http://jazz.net/ns/dm/rhapsody/soaml#>
+PREFIX UPDM20: <http://jazz.net/ns/dm/rhapsody/updm20#>
+PREFIX dmoslc: <http://jazz.net/ns/dm/oslc#>
+PREFIX rhp_sysml: <http://jazz.net/ns/dm/rhapsody/sysml#>
+PREFIX dmindex: <http://jazz.net/ns/dm/index#>
+PREFIX rhp_reporting: <http://jazz.net/ns/dm/reporting#>
+PREFIX dmcg: <http://jazz.net/ns/dm/codegen#>
+PREFIX UML: <http://jazz.net/ns/dm/rhapsody/uml#>
+PREFIX Autosar: <http://jazz.net/ns/dm/rhapsody/autosar_40#>
+PREFIX dmeditor: <http://jazz.net/ns/dm/editor#>
+PREFIX HarmonySE: <http://jazz.net/ns/dm/rhapsody/HarmonySE#>
+PREFIX rm: <http://open-services.net/ns/rm#>
+PREFIX rtcp: <http://jazz.net/ns/qm/rtcp#>
+PREFIX dcs: <http://jazz.net/ns/dcs#>
+PREFIX fpdt: <http://jazz.net/ns/psm/focalpoint/datatypes#>
+PREFIX health: <http://jazz.net/ns/ism/admin/health#>
+PREFIX admin: <http://jazz.net/ns/ism/admin#>
+PREFIX tt: <http://jazz.net/ns/ism/perfmon/tt#>
+PREFIX scm: <http://jazz.net/ns/scm#>
+PREFIX rmm_am: <http://jazz.net/ns/am/rmm#>
+PREFIX fps: <http://jazz.net/ns/psm/focalpoint#>
+PREFIX pm: <http://open-services.net/ns/pm#>
+PREFIX itm: <http://jazz.net/ns/ism/perfmon/itm#>
+PREFIX rtc_scm_config: <http://jazz.net/ns/rtc/scm/config#>
+PREFIX vc: <http://www.w3.org/2003/06/sw-vocab-status/ns#>
+PREFIX jazz_mec: <http://jazz.net/ns/mec#>
+PREFIX jazz_qm: <http://jazz.net/ns/qm/rqm#>
+PREFIX rsa_uml: <http://jazz.net/ns/dm/rsa/uml#>
+PREFIX jazz_rmlt: <http://jazz.net/ns/rm/linktypes#>
+PREFIX rr: <http://jazz.net/ns/ism/registry#>
+PREFIX jazz_disc: <http://jazz.net/ns/discovery#>
+PREFIX auto: <http://open-services.net/ns/auto#>
+PREFIX ccm: <http://jazz.net/ns/ccm#>
+PREFIX validity: <http://jazz.net/ns/validity#>
+PREFIX gw: <http://jazz.net/ns/reporting/sparqlgateway#>
+
+itm:Disabled  rdfs:subClassOf  itm:ConfigurationSetting .
+
+itm:Enabled  rdfs:subClassOf  itm:ConfigurationSetting .
+
+pd:Part  rdfs:subClassOf  ldp:Container .
+
+pd:View  rdfs:subClassOf  ldp:Container .
+
+fpdt:CheckBox  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Choice  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:ComplexDatatype  rdfs:subClassOf  fpdt:Datatype .
+
+fpdt:Date  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:File  rdfs:subClassOf  fpdt:ComplexDatatype .
+
+fpdt:Float  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Heading  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:History  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:HistoryAttributeTable
+        rdfs:subClassOf  fpdt:History .
+
+fpdt:HistoryElementTable
+        rdfs:subClassOf  fpdt:History .
+
+fpdt:HistoryGraph  rdfs:subClassOf  fpdt:History .
+
+fpdt:HistoryNone  rdfs:subClassOf  fpdt:History .
+
+fpdt:IncomingLinks  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Integer  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:IntegrationLink  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Link  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Lock  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Matrix  rdfs:subClassOf  fpdt:Table .
+
+fpdt:Mirror  rdfs:subClassOf  fpdt:Datatype .
+
+fpdt:MultiChoice  rdfs:subClassOf  fpdt:Datatype .
+
+fpdt:SimpleDatatype  rdfs:subClassOf  fpdt:Datatype .
+
+fpdt:Table  rdfs:subClassOf  fpdt:ComplexDatatype .
+
+fpdt:Text  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:TimeGrid  rdfs:subClassOf  fpdt:ComplexDatatype .
+
+fpdt:UniqueId  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Url  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fpdt:Version  rdfs:subClassOf  fpdt:SimpleDatatype .
+
+fps:Baseline  rdfs:subClassOf  fps:Element .
+
+fps:BaselineModule  rdfs:subClassOf  fps:Module .
+
+fps:Chart  rdfs:subClassOf  fps:Element .
+
+fps:ChartModule  rdfs:subClassOf  fps:Module .
+
+fps:Checkpoint  rdfs:subClassOf  fps:Element .
+
+fps:CheckpointModule  rdfs:subClassOf  fps:Module .
+
+fps:Criterion  rdfs:subClassOf  fps:Element .
+
+fps:CriterionModule  rdfs:subClassOf  fps:Module .
+
+fps:Folder  rdfs:subClassOf  fps:Element .
+
+fps:Member  rdfs:subClassOf  fps:Element .
+
+fps:MemberModule  rdfs:subClassOf  fps:Module .
+
+fps:Plan  rdfs:subClassOf  fps:Element .
+
+fps:PlanModule  rdfs:subClassOf  fps:Module .
+
+fps:Release  rdfs:subClassOf  fps:Element .
+
+fps:ReleaseModule  rdfs:subClassOf  fps:Module .
+
+fps:Report  rdfs:subClassOf  fps:Element .
+
+fps:ReportModule  rdfs:subClassOf  fps:Module .
+
+fps:ResourceType  rdfs:subClassOf  fps:Element .
+
+fps:ResourceTypeModule
+        rdfs:subClassOf  fps:Module .
+
+fps:UserModule  rdfs:subClassOf  fps:Module .
+
+dd:Topic  rdfs:subClassOf  dd:Item .
+
+oslc_config:Baseline  rdfs:subClassOf  oslc_config:Configuration .
+
+oslc_config:ChangeSet
+        rdfs:subClassOf  oslc_config:Configuration .
+
+oslc_config:ChangeSetSelections
+        rdfs:subClassOf  oslc_config:Selections .
+
+oslc_config:PersonalConfiguration
+        rdfs:subClassOf  oslc_config:Configuration .
+
+oslc_config:Stream  rdfs:subClassOf  oslc_config:Configuration .
+
+trs:Base  rdfs:subClassOf  ldp:DirectContainer .
+
+oslc_sysmlv2:AcceptActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:ActionDefinition
+        rdfs:subClassOf  oslc_sysmlv2:Behavior;
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceDefinition .
+
+oslc_sysmlv2:ActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceUsage;
+        rdfs:subClassOf  oslc_sysmlv2:Step .
+
+oslc_sysmlv2:ActorMembership
+        rdfs:subClassOf  oslc_sysmlv2:ParameterMembership .
+
+oslc_sysmlv2:AllocationDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ConnectionDefinition .
+
+oslc_sysmlv2:AllocationUsage
+        rdfs:subClassOf  oslc_sysmlv2:ConnectionUsage .
+
+oslc_sysmlv2:AnalysisCaseDefinition
+        rdfs:subClassOf  oslc_sysmlv2:CaseDefinition .
+
+oslc_sysmlv2:AnalysisCaseUsage
+        rdfs:subClassOf  oslc_sysmlv2:CaseUsage .
+
+oslc_sysmlv2:AnnotatingElement
+        rdfs:subClassOf  oslc_sysmlv2:Element .
+
+oslc_sysmlv2:Annotation
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:AssertConstraintUsage
+        rdfs:subClassOf  oslc_sysmlv2:ConstraintUsage;
+        rdfs:subClassOf  oslc_sysmlv2:Invariant .
+
+oslc_sysmlv2:AssignmentActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:Association
+        rdfs:subClassOf  oslc_sysmlv2:Classifier;
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:AssociationStructure
+        rdfs:subClassOf  oslc_sysmlv2:Association;
+        rdfs:subClassOf  oslc_sysmlv2:Structure .
+
+oslc_sysmlv2:AttributeDefinition
+        rdfs:subClassOf  oslc_sysmlv2:DataType;
+        rdfs:subClassOf  oslc_sysmlv2:Definition .
+
+oslc_sysmlv2:AttributeUsage
+        rdfs:subClassOf  oslc_sysmlv2:Usage .
+
+oslc_sysmlv2:Behavior
+        rdfs:subClassOf  oslc_sysmlv2:Class .
+
+oslc_sysmlv2:BindingConnector
+        rdfs:subClassOf  oslc_sysmlv2:Connector .
+
+oslc_sysmlv2:BindingConnectorAsUsage
+        rdfs:subClassOf  oslc_sysmlv2:BindingConnector;
+        rdfs:subClassOf  oslc_sysmlv2:ConnectorAsUsage .
+
+oslc_sysmlv2:BooleanExpression
+        rdfs:subClassOf  oslc_sysmlv2:Expression .
+
+oslc_sysmlv2:CalculationDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ActionDefinition;
+        rdfs:subClassOf  oslc_sysmlv2:Function .
+
+oslc_sysmlv2:CalculationUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage;
+        rdfs:subClassOf  oslc_sysmlv2:Expression .
+
+oslc_sysmlv2:CaseDefinition
+        rdfs:subClassOf  oslc_sysmlv2:CalculationDefinition .
+
+oslc_sysmlv2:CaseUsage
+        rdfs:subClassOf  oslc_sysmlv2:CalculationUsage .
+
+oslc_sysmlv2:Class  rdfs:subClassOf  oslc_sysmlv2:Classifier .
+
+oslc_sysmlv2:Classifier
+        rdfs:subClassOf  oslc_sysmlv2:Type .
+
+oslc_sysmlv2:CollectExpression
+        rdfs:subClassOf  oslc_sysmlv2:OperatorExpression .
+
+oslc_sysmlv2:Comment  rdfs:subClassOf  oslc_sysmlv2:AnnotatingElement .
+
+oslc_sysmlv2:ConcernDefinition
+        rdfs:subClassOf  oslc_sysmlv2:RequirementDefinition .
+
+oslc_sysmlv2:ConcernUsage
+        rdfs:subClassOf  oslc_sysmlv2:RequirementUsage .
+
+oslc_sysmlv2:ConjugatedPortDefinition
+        rdfs:subClassOf  oslc_sysmlv2:PortDefinition .
+
+oslc_sysmlv2:ConjugatedPortTyping
+        rdfs:subClassOf  oslc_sysmlv2:FeatureTyping .
+
+oslc_sysmlv2:Conjugation
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:ConnectionDefinition
+        rdfs:subClassOf  oslc_sysmlv2:AssociationStructure;
+        rdfs:subClassOf  oslc_sysmlv2:PartDefinition .
+
+oslc_sysmlv2:ConnectionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ConnectorAsUsage;
+        rdfs:subClassOf  oslc_sysmlv2:PartUsage .
+
+oslc_sysmlv2:Connector
+        rdfs:subClassOf  oslc_sysmlv2:Feature;
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:ConnectorAsUsage
+        rdfs:subClassOf  oslc_sysmlv2:Connector;
+        rdfs:subClassOf  oslc_sysmlv2:Usage .
+
+oslc_sysmlv2:ConstraintDefinition
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceDefinition;
+        rdfs:subClassOf  oslc_sysmlv2:Predicate .
+
+oslc_sysmlv2:ConstraintUsage
+        rdfs:subClassOf  oslc_sysmlv2:BooleanExpression;
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceUsage .
+
+oslc_sysmlv2:ControlNode
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:DataType
+        rdfs:subClassOf  oslc_sysmlv2:Classifier .
+
+oslc_sysmlv2:DecisionNode
+        rdfs:subClassOf  oslc_sysmlv2:ControlNode .
+
+oslc_sysmlv2:Definition
+        rdfs:subClassOf  oslc_sysmlv2:Classifier .
+
+oslc_sysmlv2:Dependency
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:Differencing
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:Disjoining
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:Documentation
+        rdfs:subClassOf  oslc_sysmlv2:Comment .
+
+oslc_sysmlv2:Element  rdfs:subClassOf  oslc_am:Resource .
+
+oslc_sysmlv2:ElementFilterMembership
+        rdfs:subClassOf  oslc_sysmlv2:OwningMembership .
+
+oslc_sysmlv2:EndFeatureMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:EnumerationDefinition
+        rdfs:subClassOf  oslc_sysmlv2:AttributeDefinition .
+
+oslc_sysmlv2:EnumerationUsage
+        rdfs:subClassOf  oslc_sysmlv2:AttributeUsage .
+
+oslc_sysmlv2:EventOccurrenceUsage
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceUsage .
+
+oslc_sysmlv2:ExhibitStateUsage
+        rdfs:subClassOf  oslc_sysmlv2:PerformActionUsage;
+        rdfs:subClassOf  oslc_sysmlv2:StateUsage .
+
+oslc_sysmlv2:Expose  rdfs:subClassOf  oslc_sysmlv2:Import .
+
+oslc_sysmlv2:Expression
+        rdfs:subClassOf  oslc_sysmlv2:Step .
+
+oslc_sysmlv2:Feature  rdfs:subClassOf  oslc_sysmlv2:Type .
+
+oslc_sysmlv2:FeatureChainExpression
+        rdfs:subClassOf  oslc_sysmlv2:OperatorExpression .
+
+oslc_sysmlv2:FeatureChaining
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:FeatureInverting
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:FeatureMembership
+        rdfs:subClassOf  oslc_sysmlv2:Featuring;
+        rdfs:subClassOf  oslc_sysmlv2:OwningMembership .
+
+oslc_sysmlv2:FeatureReferenceExpression
+        rdfs:subClassOf  oslc_sysmlv2:Expression .
+
+oslc_sysmlv2:FeatureTyping
+        rdfs:subClassOf  oslc_sysmlv2:Specialization .
+
+oslc_sysmlv2:FeatureValue
+        rdfs:subClassOf  oslc_sysmlv2:OwningMembership .
+
+oslc_sysmlv2:Featuring
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:FlowConnectionDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ActionDefinition;
+        rdfs:subClassOf  oslc_sysmlv2:ConnectionDefinition;
+        rdfs:subClassOf  oslc_sysmlv2:Interaction .
+
+oslc_sysmlv2:FlowConnectionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage;
+        rdfs:subClassOf  oslc_sysmlv2:ConnectionUsage;
+        rdfs:subClassOf  oslc_sysmlv2:ItemFlow .
+
+oslc_sysmlv2:ForkNode
+        rdfs:subClassOf  oslc_sysmlv2:ControlNode .
+
+oslc_sysmlv2:ForLoopActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:LoopActionUsage .
+
+oslc_sysmlv2:FramedConcernMembership
+        rdfs:subClassOf  oslc_sysmlv2:RequirementConstraintMembership .
+
+oslc_sysmlv2:Function
+        rdfs:subClassOf  oslc_sysmlv2:Behavior .
+
+oslc_sysmlv2:IfActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:Import  rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:IncludeUseCaseUsage
+        rdfs:subClassOf  oslc_sysmlv2:PerformActionUsage;
+        rdfs:subClassOf  oslc_sysmlv2:UseCaseUsage .
+
+oslc_sysmlv2:Interaction
+        rdfs:subClassOf  oslc_sysmlv2:Association;
+        rdfs:subClassOf  oslc_sysmlv2:Behavior .
+
+oslc_sysmlv2:InterfaceDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ConnectionDefinition .
+
+oslc_sysmlv2:InterfaceUsage
+        rdfs:subClassOf  oslc_sysmlv2:ConnectionUsage .
+
+oslc_sysmlv2:Intersecting
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:Invariant
+        rdfs:subClassOf  oslc_sysmlv2:BooleanExpression .
+
+oslc_sysmlv2:InvocationExpression
+        rdfs:subClassOf  oslc_sysmlv2:Expression .
+
+oslc_sysmlv2:ItemDefinition
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceDefinition;
+        rdfs:subClassOf  oslc_sysmlv2:Structure .
+
+oslc_sysmlv2:ItemFeature
+        rdfs:subClassOf  oslc_sysmlv2:Feature .
+
+oslc_sysmlv2:ItemFlow
+        rdfs:subClassOf  oslc_sysmlv2:Connector;
+        rdfs:subClassOf  oslc_sysmlv2:Step .
+
+oslc_sysmlv2:ItemFlowEnd
+        rdfs:subClassOf  oslc_sysmlv2:Feature .
+
+oslc_sysmlv2:ItemUsage
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceUsage .
+
+oslc_sysmlv2:JoinNode
+        rdfs:subClassOf  oslc_sysmlv2:ControlNode .
+
+oslc_sysmlv2:LibraryPackage
+        rdfs:subClassOf  oslc_sysmlv2:Package .
+
+oslc_sysmlv2:LifeClass
+        rdfs:subClassOf  oslc_sysmlv2:Class .
+
+oslc_sysmlv2:LiteralBoolean
+        rdfs:subClassOf  oslc_sysmlv2:LiteralExpression .
+
+oslc_sysmlv2:LiteralExpression
+        rdfs:subClassOf  oslc_sysmlv2:Expression .
+
+oslc_sysmlv2:LiteralInfinity
+        rdfs:subClassOf  oslc_sysmlv2:LiteralExpression .
+
+oslc_sysmlv2:LiteralInteger
+        rdfs:subClassOf  oslc_sysmlv2:LiteralExpression .
+
+oslc_sysmlv2:LiteralRational
+        rdfs:subClassOf  oslc_sysmlv2:LiteralExpression .
+
+oslc_sysmlv2:LiteralString
+        rdfs:subClassOf  oslc_sysmlv2:LiteralExpression .
+
+oslc_sysmlv2:LoopActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:Membership
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:MembershipExpose
+        rdfs:subClassOf  oslc_sysmlv2:Expose;
+        rdfs:subClassOf  oslc_sysmlv2:MembershipImport .
+
+oslc_sysmlv2:MembershipImport
+        rdfs:subClassOf  oslc_sysmlv2:Import .
+
+oslc_sysmlv2:MergeNode
+        rdfs:subClassOf  oslc_sysmlv2:ControlNode .
+
+oslc_sysmlv2:Metaclass
+        rdfs:subClassOf  oslc_sysmlv2:Structure .
+
+oslc_sysmlv2:MetadataAccessExpression
+        rdfs:subClassOf  oslc_sysmlv2:Expression .
+
+oslc_sysmlv2:MetadataDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ItemDefinition;
+        rdfs:subClassOf  oslc_sysmlv2:Metaclass .
+
+oslc_sysmlv2:MetadataFeature
+        rdfs:subClassOf  oslc_sysmlv2:AnnotatingElement;
+        rdfs:subClassOf  oslc_sysmlv2:Feature .
+
+oslc_sysmlv2:MetadataUsage
+        rdfs:subClassOf  oslc_sysmlv2:ItemUsage;
+        rdfs:subClassOf  oslc_sysmlv2:MetadataFeature .
+
+oslc_sysmlv2:Multiplicity
+        rdfs:subClassOf  oslc_sysmlv2:Feature .
+
+oslc_sysmlv2:MultiplicityRange
+        rdfs:subClassOf  oslc_sysmlv2:Multiplicity .
+
+oslc_sysmlv2:Namespace
+        rdfs:subClassOf  oslc_sysmlv2:Element .
+
+oslc_sysmlv2:NamespaceExpose
+        rdfs:subClassOf  oslc_sysmlv2:Expose;
+        rdfs:subClassOf  oslc_sysmlv2:NamespaceImport .
+
+oslc_sysmlv2:NamespaceImport
+        rdfs:subClassOf  oslc_sysmlv2:Import .
+
+oslc_sysmlv2:NullExpression
+        rdfs:subClassOf  oslc_sysmlv2:Expression .
+
+oslc_sysmlv2:ObjectiveMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:OccurrenceDefinition
+        rdfs:subClassOf  oslc_sysmlv2:Class;
+        rdfs:subClassOf  oslc_sysmlv2:Definition .
+
+oslc_sysmlv2:OccurrenceUsage
+        rdfs:subClassOf  oslc_sysmlv2:Usage .
+
+oslc_sysmlv2:OperatorExpression
+        rdfs:subClassOf  oslc_sysmlv2:InvocationExpression .
+
+oslc_sysmlv2:OwningMembership
+        rdfs:subClassOf  oslc_sysmlv2:Membership .
+
+oslc_sysmlv2:Package  rdfs:subClassOf  oslc_sysmlv2:Namespace .
+
+oslc_sysmlv2:ParameterMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:PartDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ItemDefinition .
+
+oslc_sysmlv2:PartUsage
+        rdfs:subClassOf  oslc_sysmlv2:ItemUsage .
+
+oslc_sysmlv2:PerformActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage;
+        rdfs:subClassOf  oslc_sysmlv2:EventOccurrenceUsage .
+
+oslc_sysmlv2:PortConjugation
+        rdfs:subClassOf  oslc_sysmlv2:Conjugation .
+
+oslc_sysmlv2:PortDefinition
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceDefinition;
+        rdfs:subClassOf  oslc_sysmlv2:Structure .
+
+oslc_sysmlv2:PortUsage
+        rdfs:subClassOf  oslc_sysmlv2:OccurrenceUsage .
+
+oslc_sysmlv2:Predicate
+        rdfs:subClassOf  oslc_sysmlv2:Function .
+
+oslc_sysmlv2:Redefinition
+        rdfs:subClassOf  oslc_sysmlv2:Subsetting .
+
+oslc_sysmlv2:ReferenceSubsetting
+        rdfs:subClassOf  oslc_sysmlv2:Subsetting .
+
+oslc_sysmlv2:ReferenceUsage
+        rdfs:subClassOf  oslc_sysmlv2:Usage .
+
+oslc_sysmlv2:Relationship
+        rdfs:subClassOf  oslc_sysmlv2:Element .
+
+oslc_sysmlv2:RenderingDefinition
+        rdfs:subClassOf  oslc_sysmlv2:PartDefinition .
+
+oslc_sysmlv2:RenderingUsage
+        rdfs:subClassOf  oslc_sysmlv2:PartUsage .
+
+oslc_sysmlv2:RequirementConstraintMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:RequirementDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ConstraintDefinition .
+
+oslc_sysmlv2:RequirementUsage
+        rdfs:subClassOf  oslc_sysmlv2:ConstraintUsage .
+
+oslc_sysmlv2:RequirementVerificationMembership
+        rdfs:subClassOf  oslc_sysmlv2:RequirementConstraintMembership .
+
+oslc_sysmlv2:ResultExpressionMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:ReturnParameterMembership
+        rdfs:subClassOf  oslc_sysmlv2:ParameterMembership .
+
+oslc_sysmlv2:SatisfyRequirementUsage
+        rdfs:subClassOf  oslc_sysmlv2:AssertConstraintUsage;
+        rdfs:subClassOf  oslc_sysmlv2:RequirementUsage .
+
+oslc_sysmlv2:SelectExpression
+        rdfs:subClassOf  oslc_sysmlv2:OperatorExpression .
+
+oslc_sysmlv2:SendActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:Specialization
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:StakeholderMembership
+        rdfs:subClassOf  oslc_sysmlv2:ParameterMembership .
+
+oslc_sysmlv2:StateDefinition
+        rdfs:subClassOf  oslc_sysmlv2:ActionDefinition .
+
+oslc_sysmlv2:StateSubactionMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:StateUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:Step  rdfs:subClassOf  oslc_sysmlv2:Feature .
+
+oslc_sysmlv2:Structure
+        rdfs:subClassOf  oslc_sysmlv2:Class .
+
+oslc_sysmlv2:Subclassification
+        rdfs:subClassOf  oslc_sysmlv2:Specialization .
+
+oslc_sysmlv2:SubjectMembership
+        rdfs:subClassOf  oslc_sysmlv2:ParameterMembership .
+
+oslc_sysmlv2:Subsetting
+        rdfs:subClassOf  oslc_sysmlv2:Specialization .
+
+oslc_sysmlv2:Succession
+        rdfs:subClassOf  oslc_sysmlv2:Connector .
+
+oslc_sysmlv2:SuccessionAsUsage
+        rdfs:subClassOf  oslc_sysmlv2:ConnectorAsUsage;
+        rdfs:subClassOf  oslc_sysmlv2:Succession .
+
+oslc_sysmlv2:SuccessionFlowConnectionUsage
+        rdfs:subClassOf  oslc_sysmlv2:FlowConnectionUsage;
+        rdfs:subClassOf  oslc_sysmlv2:SuccessionItemFlow .
+
+oslc_sysmlv2:SuccessionItemFlow
+        rdfs:subClassOf  oslc_sysmlv2:ItemFlow;
+        rdfs:subClassOf  oslc_sysmlv2:Succession .
+
+oslc_sysmlv2:TextualRepresentation
+        rdfs:subClassOf  oslc_sysmlv2:AnnotatingElement .
+
+oslc_sysmlv2:TransitionFeatureMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:TransitionUsage
+        rdfs:subClassOf  oslc_sysmlv2:ActionUsage .
+
+oslc_sysmlv2:TriggerInvocationExpression
+        rdfs:subClassOf  oslc_sysmlv2:InvocationExpression .
+
+oslc_sysmlv2:Type  rdfs:subClassOf  oslc_sysmlv2:Namespace .
+
+oslc_sysmlv2:TypeFeaturing
+        rdfs:subClassOf  oslc_sysmlv2:Featuring .
+
+oslc_sysmlv2:Unioning
+        rdfs:subClassOf  oslc_sysmlv2:Relationship .
+
+oslc_sysmlv2:Usage  rdfs:subClassOf  oslc_sysmlv2:Feature .
+
+oslc_sysmlv2:UseCaseDefinition
+        rdfs:subClassOf  oslc_sysmlv2:CaseDefinition .
+
+oslc_sysmlv2:UseCaseUsage
+        rdfs:subClassOf  oslc_sysmlv2:CaseUsage .
+
+oslc_sysmlv2:VariantMembership
+        rdfs:subClassOf  oslc_sysmlv2:OwningMembership .
+
+oslc_sysmlv2:VerificationCaseDefinition
+        rdfs:subClassOf  oslc_sysmlv2:CaseDefinition .
+
+oslc_sysmlv2:VerificationCaseUsage
+        rdfs:subClassOf  oslc_sysmlv2:CaseUsage .
+
+oslc_sysmlv2:ViewDefinition
+        rdfs:subClassOf  oslc_sysmlv2:PartDefinition .
+
+oslc_sysmlv2:ViewpointDefinition
+        rdfs:subClassOf  oslc_sysmlv2:RequirementDefinition .
+
+oslc_sysmlv2:ViewpointUsage
+        rdfs:subClassOf  oslc_sysmlv2:RequirementUsage .
+
+oslc_sysmlv2:ViewRenderingMembership
+        rdfs:subClassOf  oslc_sysmlv2:FeatureMembership .
+
+oslc_sysmlv2:ViewUsage
+        rdfs:subClassOf  oslc_sysmlv2:PartUsage .
+
+oslc_sysmlv2:WhileLoopActionUsage
+        rdfs:subClassOf  oslc_sysmlv2:LoopActionUsage .
