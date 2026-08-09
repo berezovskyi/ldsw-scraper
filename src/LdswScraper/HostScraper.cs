@@ -77,7 +77,7 @@ public class HostScraper
 
         foreach (var (accept, ext, name) in formats)
         {
-            var content = await FetchAsync(task.Uri, accept);
+            var (content, rawBytes) = await FetchAsync(task.Uri, accept);
             if (content != null)
             {
                 if (RdfHandler.TryParse(content, accept, out var graph, out _))
@@ -115,9 +115,9 @@ public class HostScraper
                         sb.AppendLine($"  {name}: OK");
                     }
 
-                    // Always overwrite source
+                    // Always overwrite source with raw bytes to preserve original encoding
                     var tempPath = Path.GetTempFileName();
-                    File.WriteAllText(tempPath, content);
+                    File.WriteAllBytes(tempPath, rawBytes!);
                     EnsureDirectory(finalPath);
                     MoveOrReplace(tempPath, finalPath);
 
@@ -180,7 +180,7 @@ public class HostScraper
         var sb = new StringBuilder();
         sb.AppendLine($"Processing {task.Uri} ({task.Type})");
 
-        var content = await FetchAsync(task.Uri, task.AcceptHeader);
+        var (content, rawBytes) = await FetchAsync(task.Uri, task.AcceptHeader);
         if (content != null)
         {
             if (RdfHandler.TryParse(content, task.AcceptHeader, out _, out _))
@@ -188,9 +188,9 @@ public class HostScraper
                  var finalPath = GetOutputPath(task.Path); // Exact usually has extension in Path
                  EnsureDirectory(finalPath);
 
-                 // Use temp
+                 // Use temp, write raw bytes to preserve original encoding
                  var tempPath = Path.GetTempFileName();
-                 File.WriteAllText(tempPath, content);
+                 File.WriteAllBytes(tempPath, rawBytes!);
                  MoveOrReplace(tempPath, finalPath);
 
                  sb.AppendLine($"  Exact ({task.AcceptHeader}): OK");
@@ -212,7 +212,7 @@ public class HostScraper
         var sb = new StringBuilder();
         sb.AppendLine($"Processing {task.Uri} ({task.Type})");
 
-        var content = await FetchAsync(task.Uri, "text/shex");
+        var (content, rawBytes) = await FetchAsync(task.Uri, "text/shex");
         if (content != null)
         {
              if (!IsHtml(content))
@@ -221,7 +221,7 @@ public class HostScraper
                  EnsureDirectory(finalPath);
 
                  var tempPath = Path.GetTempFileName();
-                 File.WriteAllText(tempPath, content);
+                 File.WriteAllBytes(tempPath, rawBytes!);
                  MoveOrReplace(tempPath, finalPath);
 
                  sb.AppendLine("  ShEx: OK");
@@ -238,7 +238,7 @@ public class HostScraper
         _logger.LogInformation(sb.ToString().TrimEnd());
     }
 
-    private async Task<string?> FetchAsync(string uri, string accept)
+    private async Task<(string? Content, byte[]? RawBytes)> FetchAsync(string uri, string accept)
     {
         try
         {
@@ -247,16 +247,17 @@ public class HostScraper
             request.Headers.UserAgent.ParseAdd("LdswScraper/1.0");
 
             var response = await _httpClient.SendAsync(request);
-            if (!response.IsSuccessStatusCode) return null;
+            if (!response.IsSuccessStatusCode) return (null, null);
 
+            var rawBytes = await response.Content.ReadAsByteArrayAsync();
             var content = await response.Content.ReadAsStringAsync();
-            if (IsHtml(content)) return null;
+            if (IsHtml(content)) return (null, null);
 
-            return content;
+            return (content, rawBytes);
         }
         catch
         {
-            return null;
+            return (null, null);
         }
     }
 
