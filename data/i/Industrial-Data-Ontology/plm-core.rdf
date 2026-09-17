@@ -1,673 +1,603 @@
-<rdf:RDF
-    xmlns:req="https://w3id.org/requirement-ontology/rdl/"
-    xmlns:o-owl-ax="http://tpl.ottr.xyz/owl/axiom/0.1/"
-    xmlns:o-owl-dec="http://tpl.ottr.xyz/owl/declaration/0.1/"
-    xmlns:o-docttr="http://tpl.ottr.xyz/p/docttr/0.1/"
-    xmlns:o-owl-ma="http://tpl.ottr.xyz/owl/macro/0.1/"
-    xmlns:ntpl="http://norsok.org/templates/"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:pca="http://data.posccaesar.org/rdl/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
-    xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:orcid="https://orcid.org/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:lis="http://rds.posccaesar.org/ontology/lis14/rdl/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdl="http://rds.posccaesar.org/ontology/plm/rdl/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:rrdl="http://w3id.org/readi/rdl/"
-    xmlns:void="http://rdfs.org/ns/void#"
-    xmlns:o-rdfs="http://tpl.ottr.xyz/rdfs/0.1/"
-    xmlns:plmtpl="http://rds.posccaesar.org/ontology/plm/tpl/0.1/"
-    xmlns:listpl="http://rds.posccaesar.org/ontology/lis14/tpl/0.1/"
-    xmlns:ottr="http://ns.ottr.xyz/0.4/"
-    xmlns:ex="http://example.org/"
-    xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:o-owl-re="http://tpl.ottr.xyz/owl/restriction/0.1/"
-    xmlns:pav="http://purl.org/pav/"
-    xmlns:o-rdf="http://tpl.ottr.xyz/rdf/0.1/"
-    xmlns:reqtpl="http://w3id.org/requirement-ontology/tpl/0.1/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
-    xmlns:o-owl-ut="http://tpl.ottr.xyz/owl/util/0.1/">
-  <owl:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/core">
-    <dc:creator rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:imports rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core"/>
-    <dc:description>Core ontology for PLM RDL.</dc:description>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2022-09-26</dcterms:modified>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
-    <dc:title>core</dc:title>
-    <rdfs:label>core</rdfs:label>
-    <rdfs:comment>Core ontology for PLM RDL.</rdfs:comment>
-    <pav:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core/0.9.0"/>
-    <void:exampleResource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011"/>
-    <skos:changeNote>Moved definitions from core to chebi/uom</skos:changeNote>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD"/>
-    <owl:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core/0.9.1"/>
-    <foaf:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/core"/>
-    <owl:versionInfo>0.9.1</owl:versionInfo>
-    <void:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql"/>
-    <vann:preferredNamespacePrefix>rdl</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/"/>
-    <ottr:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete"/>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
-    <dcterms:publisher rdf:resource="http://www.posccaesar.org/"/>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-    <pav:lastUpdateOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-09-26T23:40:00Z</pav:lastUpdateOn>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester"/>
-    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2022-01-26</dcterms:issued>
-  </owl:Ontology>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006767">
-    <rdfs:label>NORSOK Z-001 Information Item</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004039">
-    <rdfs:label>Measured Datum</rdfs:label>
-    <rdfs:comment>A Measured datum originates in a monitoring of the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503">
-    <rdfs:label>External RDL classifier</rdfs:label>
-    <rdfs:comment>A classifier (type) resource that is part of an external reference data library.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920">
-    <rdfs:label>P&amp;ID Symbol</rdfs:label>
-    <rdfs:comment> A symbol for use in piping and instrumentation diagrams.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004047">
-    <rdfs:label>Average Datum</rdfs:label>
-    <rdfs:comment>An Average datum represents an average of a set of magnitudes of the relevant quantity, typically a set of measurements or calculated values.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035">
-    <rdfs:label>Range Specifying Quantity Datum</rdfs:label>
-    <rdfs:comment>Quantity datum which characterises the range of variation of the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004043">
-    <rdfs:label>Operating Datum</rdfs:label>
-    <rdfs:comment>An Operating datum represents a magnitude of the relevant quantity prescribed for, or reported from, normal operation.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606">
-    <rdfs:label>Chemical Composition Datum</rdfs:label>
-    <rdfs:comment>A datum characterizing a material composition.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004051">
-    <rdfs:label>Continuous Datum</rdfs:label>
-    <rdfs:comment>A Continuous datum represents a default magnitude of the relevant quantity, during sustained operation within normal variations.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003543">
-    <rdfs:label>Technical Standard</rdfs:label>
-    <rdfs:comment>A technical standard is an established norm or requirement in regard to technical systems. It is usually a formal document that establishes uniform engineering or technical criteria, methods, processes and practices. In contrast, a custom, convention, company product, corporate standard, etc. that becomes generally accepted and dominant is often called a de facto standard. (Wikipedia)</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003555">
-    <rdfs:label>SI derived quantity</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-    <rdfs:label>Concept</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-    <rdfs:comment>An idea or notion; a unit of thought.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
-    <rdfs:label>Collection</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-    <rdfs:comment>A meaningful collection of concepts.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502">
-    <rdfs:label>External RDL entity</rdfs:label>
-    <rdfs:comment>An entity that is part of an external reference data library.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004046">
-    <rdfs:label>Normal Datum</rdfs:label>
-    <rdfs:comment>A Normal datum represents a magnitude of the relevant quantity that is expected or typical for operation.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004038">
-    <rdfs:label>Calculated Datum</rdfs:label>
-    <rdfs:comment>A Calculated datum is an output value of a simulation or similar model of behaviour of the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537">
-    <rdfs:label>Specification</rdfs:label>
-    <rdfs:comment>A Specification is a document that states an explicit set of requirements to be satisfied by a material, design, product, or service.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054">
-    <rdfs:label>Quantity Class</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004042">
-    <rdfs:label>Design Datum</rdfs:label>
-    <rdfs:comment>A Design datum represents a limit magnitude of the relevant quantity within which full function is expected.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034">
-    <rdfs:label>Quantity Datum with specified Scope</rdfs:label>
-    <rdfs:comment>Quantity datum for which the scope to which it applies (design, operations, etc.)  is specified.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004050">
-    <rdfs:label>Actual Datum</rdfs:label>
-    <rdfs:comment>An Actual datum represents a singular measured magnitude of the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003540">
-    <rdfs:label>International Standard</rdfs:label>
-    <rdfs:comment>A standard developed by an international standards organization. (Other published standards may well also be used internationally.)</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005604">
-    <rdfs:label>Material Composition</rdfs:label>
-    <rdfs:comment>Composition of material.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Quality"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556">
-    <rdfs:label>SI unit</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Scale"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003536">
-    <rdfs:label>Discipline</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501">
-    <rdfs:label>External RDL entity collection</rdfs:label>
-    <rdfs:comment>A collection of SKOS concepts from one or more external reference data libraries. Identifiers are URIs, as defined in the external source where provided by the source. Where not, for instance if the external RDL provides only string identifiers, local URIs are introduced to represent each external concept.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003560">
-    <rdfs:label>non-SI unit of measure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Scale"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004908">
-    <rdfs:label>Document</rdfs:label>
-    <rdfs:comment>A document.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004049">
-    <rdfs:label>Minimum Datum</rdfs:label>
-    <rdfs:comment>A Minimum datum represents a minimal magnitude of the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004037">
-    <rdfs:label>Specified Datum</rdfs:label>
-    <rdfs:comment>A Specified datum originates in (is prescribed in) a requirement or specification expressing constraints on the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538">
-    <rdfs:label>Standard</rdfs:label>
-    <rdfs:comment>A Standard is 'Any norm, convention or requirement' (Wikipedia).  In PLM RDL, the typical standard is a Technical Standard and should be classified as such.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004045">
-    <rdfs:label>Nominal Datum</rdfs:label>
-    <rdfs:comment>A Nominal datum represents a conventional (and, in many cases, standardised) magnitude used to classify the relevant artefact.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033">
-    <rdfs:label>Quantity Datum with specified Provenance</rdfs:label>
-    <rdfs:comment>Quantity datum for which the origin is provided: whether the datum is measured, calculated, or provided as part of a specification, etc.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728">
-    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_physical_quantities"/>
-    <rdfs:label>SI Physical Dimension</rdfs:label>
-    <rdfs:comment>A combination of basic physical dimensions, with exponents. Note that the choice and order of letters varies widely among sources. The format used here follows the Wikipedia entry.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004041">
-    <rdfs:label>Set Datum</rdfs:label>
-    <rdfs:comment>A Set datum originates in a configuration, as a fixed magnitude to be maintained for the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003541">
-    <rdfs:label>Material Standard</rdfs:label>
-    <rdfs:comment>A standard specifying material grades, properties, or manufacturing requirements relevant for product properties.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553">
-    <rdfs:label>SI Quantity Class</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003557">
-    <rdfs:label>SI base unit</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004935">
-    <rdfs:label>ChEBI classifier</rdfs:label>
-    <rdfs:comment>A classifier (type) resource that is part of the ChEBI reference data library.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919">
-    <rdfs:label>Symbol</rdfs:label>
-    <rdfs:comment> A symbol or icon for use in graphical representations.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036">
-    <rdfs:label>Regularity Specified Quantity Datum</rdfs:label>
-    <rdfs:comment>Quantity datum which ...</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004048">
-    <rdfs:label>Maximum Datum</rdfs:label>
-    <rdfs:comment>A Maximum datum represents a maximal magnitude of the relevant quantity.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032">
-    <rdfs:label>Interpreted Quantity Datum</rdfs:label>
-    <rdfs:comment>Quantity datum for which an interpretation of relevance is provided. Classification of a datum in terms of its method of production (origin), type of aggregation, etc., helps clarify why the datum exists and for which purposes it  may be relevant.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003559">
-    <rdfs:label>non-SI Quantity Class</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003539">
-    <rdfs:label>Industry Organization Standard</rdfs:label>
-    <rdfs:comment>A standard issued by an industry-based standards developing organization.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004044">
-    <rdfs:label>Test Datum</rdfs:label>
-    <rdfs:comment>A Test datum represents a magnitude of the relevant quantity that is prescribed for, or reported from, test operation.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004052">
-    <rdfs:label>Absolute Datum</rdfs:label>
-    <rdfs:comment>An Absolute datum represents a limit magnitude of the relevant quantity, at which operation can only be sustained for a limited time or number of cycles.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004040">
-    <rdfs:label>Estimated Datum</rdfs:label>
-    <rdfs:comment>An Estimated datum originates in an analysis of expected behaviour of the relevant quantity, typically with significant uncertainty.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003542">
-    <rdfs:label>National Standard</rdfs:label>
-    <rdfs:comment>A standard developed by a national standards organization. In general, each country or economy has a single recognized national standards body (NSB). A national standards body is likely the sole member from that economy in ISO; ISO currently has 161 members. National standards bodies usually do not prepare the technical content of standards, which instead is developed by national technical societies. (Wikipedia)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003554">
-    <rdfs:label>SI base quantity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003558">
-    <rdfs:label>SI derived unit</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
-    <rdfs:label>Concept Scheme</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-    <rdfs:comment>A set of concepts, optionally including statements about semantic relationships between those concepts.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003772">
-    <rdfs:label>External RDL individual</rdfs:label>
-    <rdfs:comment>An individual resource that is part of an external reference data library.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502"/>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551">
-    <rdfs:label>is nominal magnitude of</rdfs:label>
-    <rdfs:comment>Relation from a magnitude to the physical quantity of which it is a nominal magnitude</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544">
-    <rdfs:label>specified magnitude</rdfs:label>
-    <rdfs:comment>Relation from a physical quantity to its specified magnitude</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545">
-    <rdfs:label>is specified magnitude of</rdfs:label>
-    <rdfs:comment>Relation from a magnitude to the physical quantity of which it is a specification</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546">
-    <rdfs:label>measured magnitude</rdfs:label>
-    <rdfs:comment>Relation from a physical quantity to its measured magnitude</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547">
-    <rdfs:label>is measured magnitude of</rdfs:label>
-    <rdfs:comment>Relation from a magnitude to the physical quantity of which it is a measurement</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548">
-    <rdfs:label>rated magnitude</rdfs:label>
-    <rdfs:comment>Relation from a physical quantity to its rated magnitude</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549">
-    <rdfs:label>is rated magnitude of</rdfs:label>
-    <rdfs:comment>Relation from a magnitude to the physical quantity of which it is a rating</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/quantifiesQuality"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730">
-    <rdfs:label>dimension of</rdfs:label>
-    <rdfs:comment>Relation from an SI dimension concept to a physical quantity that it describes</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/represents"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550">
-    <rdfs:label>nominal magnitude</rdfs:label>
-    <rdfs:comment>Relation from a physical quantity to its nominal magnitude</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/QuantityDatum"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <owl:inverseOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/qualityQuantifiedAs"/>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005609">
-    <rdfs:label>maxCarbonAtoms</rdfs:label>
-    <rdfs:comment>The maximum (inclusive) number of carbon atoms in the chemical composistion represented by this datum</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005608">
-    <rdfs:label>minCarbonAtoms</rdfs:label>
-    <rdfs:comment>The minimum (inclusive) number of carbon atoms in the chemical composistion represented by this datum</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606"/>
-  </owl:DatatypeProperty>
-  <owl:FunctionalProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729">
-    <rdfs:label>has dimension</rdfs:label>
-    <rdfs:comment>Relation from a physical quantity to the concept that describes its SI dimension</rdfs:comment>
-    <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728"/>
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/PhysicalQuantity"/>
-    <owl:inverseOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/representedBy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </owl:FunctionalProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510">
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <rdfs:label>default unit of measure</rdfs:label>
-    <rdfs:comment>For a quantity datum class, pointer to default unit of measure</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006772">
-    <rdfs:label>CFIHOS Discipline</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004928">
-    <rdfs:subPropertyOf>
-      <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927">
-        <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001001"/>
-        <rdfs:range rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920"/>
-        <rdfs:label>P&amp;ID Symbol</rdfs:label>
-        <rdfs:comment>Relation to symbol for use in P&amp;ID for this artefact</rdfs:comment>
-      </owl:AnnotationProperty>
-    </rdfs:subPropertyOf>
-    <rdfs:label>DEXPI P&amp;ID Symbol</rdfs:label>
-    <rdfs:comment>Relation to DEXPI symbol for use in P&amp;ID for this artefact</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004">
-    <rdfs:seeAlso rdf:resource="https://endpoint.dexpi.org/"/>
-    <rdfs:seeAlso rdf:resource="https://dexpi.org/wp-content/uploads/2020/09/DEXPI-PID-Specification-1.3.pdf#section.3.2."/>
-    <rdfs:label>DEXPI model entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://dexpi.org/"/>
-    <rdfs:comment>An entity defined by the DEXPI Information Model.</rdfs:comment>
-    <rdfs:comment>An entity defined by the DEXPI Information Model is a UML entity. Many entities have legacy PCA RDL references. Also available from the DEXPI SPARQL endpoint with URIs like http://sandbox.dexpi.org/informationmodel/AreaIsa95.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006773">
-    <rdfs:label>Z-001 Information Item</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771">
-    <rdfs:seeAlso rdf:resource="https://github.com/qudt/qudt-public-repo"/>
-    <rdfs:label>QUDT ontology entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://qudt.org/"/>
-    <rdfs:comment>An entity defined by the QUDT - Quantities, Units, Dimensions and dataTypes ontology.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769">
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <rdfs:label>applicable unit of measure</rdfs:label>
-    <rdfs:comment>For a quantity datum class, pointer to applicable unit of measure</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004914">
-    <rdfs:label>ChEBI ontology entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://www.ebi.ac.uk/chebi/"/>
-    <rdfs:comment>An entity defined by the Chemical Entities of Biological Interest (ChEBI) ontology</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://purl.org/pav/createdBy">
-    <rdfs:label>Created by</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
-    <rdfs:comment>An agent primary responsible for making the digital artifact or resource representation.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002">
-    <rdfs:label>OntoCAPE ontology entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-    <rdfs:comment>OntoCAPE entities have informative, local file system identifiers, like "file:/C:/OntoCAPE/OntoCAPE/chemical_process_system/CPS_function/process.owl#EnthalpyChange" ("EnthalpyChange"). For the PLM RDL, we introduce PCA URIs to represent OntoCAPE entities.</rdfs:comment>
-    <rdfs:comment>An entity defined by the OntoCAPE ontology.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006763">
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006767"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>NORSOK Z-001 rationale</rdfs:label>
-    <rdfs:comment>NORSOK Z-001 rationale for information item type: The function of the information item and/or why it is needed.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note">
-    <rdfs:label>note</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-    <rdfs:comment>A general note, for any purpose.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503">
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf>
-      <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
-        <rdfs:label>defining source for shortcut quantification data property</rdfs:label>
-        <rdfs:comment>Pointer from a 'shortcut' data property to quantification related resources that define its meaning</rdfs:comment>
-      </owl:AnnotationProperty>
-    </rdfs:subPropertyOf>
-    <rdfs:label>quantification type of shortcut property</rdfs:label>
-    <rdfs:comment>How values of the data property are, implicitly, obtained (e.g., measured-as, assigned-as-nominal-value, as subproperties of lis:qualityQuantifiedAs)</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003">
-    <rdfs:label>PCA RDL entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://data.posccaesar.org/"/>
-    <rdfs:comment>PCA RDL entities have non-informative identifiers, like "http://data.posccaesar.org/rdl/RDS349874" ("AREA").</rdfs:comment>
-    <rdfs:comment>An entity defined by the legacy PCA reference data library.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006764">
-    <rdfs:domain>
-      <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006769">
-        <rdfs:label>NORSOK Z-DP-002 Structural Facility Elements</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </rdl:PCA_100001501>
-    </rdfs:domain>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>NORSOK Z-001 extended definition</rdfs:label>
-    <rdfs:comment>NORSOK Z-001 content definition extended: Discipline specific content definition.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770">
-    <rdfs:seeAlso rdf:resource="https://github.com/HajoRijgersberg/OM"/>
-    <rdfs:label>OM ontology entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.foodvoc.org/page/om-2"/>
-    <rdfs:comment>An entity defined by the Ontology of units of Measure (OM).</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003552">
-    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <rdfs:label>has no match in scheme</rdfs:label>
-    <rdfs:comment>Use this relation to express that the subject concept has no matching concept in the target SKOS scheme.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502">
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501"/>
-    <rdfs:label>quality type of shortcut property</rdfs:label>
-    <rdfs:comment>Which quality is, implicitly, represented by the data property (e.g., Mass, Length as subclasses of lis:Quality)</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004922">
-    <rdfs:subPropertyOf>
-      <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924">
-        <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919"/>
-        <rdfs:label>Symbol identifier</rdfs:label>
-        <rdfs:comment>Identifier used for symbols/icons</rdfs:comment>
-      </owl:AnnotationProperty>
-    </rdfs:subPropertyOf>
-    <rdfs:label>Z004 identifier</rdfs:label>
-    <rdfs:comment>Symbol ID used in Z004</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006765">
-    <rdfs:domain>
-      <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006770">
-        <rdfs:label>ISO/IEC 81355 Information Item</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </rdl:PCA_100001501>
-    </rdfs:domain>
-    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label>NORSOK Z-001 interests stakeholder category</rdfs:label>
-    <rdfs:comment>NORSOK Z-001 interests stakeholder category: typical CFIHOS discipline code of stakeholder with interest in the information item.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505">
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501"/>
-    <rdfs:label>unit of measure of shortcut property</rdfs:label>
-    <rdfs:comment>Which unit of measure applies, implicitly, to values of the data property (e.g., kilogram, millimetre as members of lis:UnitOfMeasure)</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004923">
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924"/>
-    <rdfs:label>ISA-5.1 identifier</rdfs:label>
-    <rdfs:comment>Symbol reference in ISA-5.1 given in Z004</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:label>identifier</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"/>
-    <rdfs:comment>An unambiguous reference to the resource within a given context.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001">
-    <rdfs:label>CFIHOS RDL entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://www.jip36-cfihos.org"/>
-    <rdfs:comment>CFIHOS entities have non-informative identifiers, like "CFIHOS-00000003" ("AREA").</rdfs:comment>
-    <rdfs:comment>An entity defined by the CFIHOS reference data library.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://purl.org/pav/createdOn">
-    <rdfs:label>Created on</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
-    <rdfs:comment>The date of creation of the resource representation.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006766">
-    <rdfs:domain>
-      <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006771">
-        <rdfs:label>NORSOK Z-001 Information Item Category</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </rdl:PCA_100001501>
-    </rdfs:domain>
-    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label>NORSOK Z-001 describes structural element</rdfs:label>
-    <rdfs:comment>NORSOK Z-001 describes structural element: typical NORSOK Z-DP-002 category of structural element or system that the information item describes.</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004921">
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924"/>
-    <rdfs:label>dexpi identifier</rdfs:label>
-    <rdfs:comment>Symbol Reference ID to be sent in DEXPI transfer file</rdfs:comment>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504">
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501"/>
-    <rdfs:label>datum type of shortcut property</rdfs:label>
-    <rdfs:comment>Which type of quantification datum is, implicitly, represented by the data property (e.g., Mass Quantity Datum, Length Quantity Datum as subclasses of lis:QuantityDatum)</rdfs:comment>
-  </owl:AnnotationProperty>
-  <rdl:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602">
-    <rdfs:label>IEC CDD RDL entities</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://cdd.iec.ch/"/>
-    <rdfs:comment>IEC CDD entities have non-informative identifiers, like "0112/2///61360_4#AAA013" ("antenna").</rdfs:comment>
-    <rdfs:comment>An entity defined by the IEC Common Data Dictionary.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdl:PCA_100001501>
-  <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768">
-    <rdfs:domain rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>NORSOK Z-001 definition</rdfs:label>
-    <rdfs:comment>NORSOK Z-001 content definition: What the information item is expected to contain.</rdfs:comment>
-  </owl:AnnotationProperty>
+<?xml version="1.0" encoding="utf-16"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:ns0="http://www.w3.org/2002/07/owl#" xmlns:ns1="https://posccaesar.org/metadata/" xmlns:ns2="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns3="https://posccaesar.org/metadata/log/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+    <rdfs:label rdf:datatype="&xsd;string">issued</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+    <rdfs:label rdf:datatype="&xsd;string">license</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+    <rdfs:label rdf:datatype="&xsd;string">modified</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+    <rdfs:label rdf:datatype="&xsd;string">publisher</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/pav/contributedBy">
+    <rdfs:label rdf:datatype="&xsd;string">contributedBy</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/pav/createdBy">
+    <rdfs:label rdf:datatype="&xsd;string">Created by</rdfs:label>
+    <rdfs:label rdf:datatype="&xsd;string">createdBy</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/pav/lastUpdateOn">
+    <rdfs:label rdf:datatype="&xsd;string">lastUpdateOn</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/lis14/ont/core">
+    <rdfs:label rdf:datatype="&xsd;string">Industrial Data Ontology</rdfs:label>
+  </ns0:Ontology>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt">
+    <ns4:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete" xmlns:ns4="http://ns.ottr.xyz/0.4/" />
+    <ns5:creator rdf:resource="https://orcid.org/0000-0001-8076-7460" xmlns:ns5="http://purl.org/dc/elements/1.1/" />
+    <ns6:description rdf:datatype="&xsd;string" xmlns:ns6="http://purl.org/dc/elements/1.1/">ChEBI entities ontology for PLM RDL. Disclaimer: This ontology is based on an earlier, unspecified version of IDO and may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied.</ns6:description>
+    <ns7:title rdf:datatype="&xsd;string" xmlns:ns7="http://purl.org/dc/elements/1.1/">chebi</ns7:title>
+    <ns8:issued rdf:datatype="&xsd;date" xmlns:ns8="http://purl.org/dc/terms/">2022-02-25</ns8:issued>
+    <ns9:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" xmlns:ns9="http://purl.org/dc/terms/" />
+    <ns10:modified rdf:datatype="&xsd;date" xmlns:ns10="http://purl.org/dc/terms/">2022-09-26</ns10:modified>
+    <ns11:publisher rdf:resource="http://www.posccaesar.org/" xmlns:ns11="http://purl.org/dc/terms/" />
+    <ns12:createdBy rdf:resource="https://orcid.org/0000-0001-8076-7460" xmlns:ns12="http://purl.org/pav/" />
+    <ns13:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt/0.9.1" xmlns:ns13="http://purl.org/pav/" />
+    <ns14:lastUpdateOn rdf:datatype="&xsd;dateTime" xmlns:ns14="http://purl.org/pav/">2022-09-26T23:40:00Z</ns14:lastUpdateOn>
+    <ns15:preferredNamespacePrefix rdf:datatype="&xsd;string" xmlns:ns15="http://purl.org/vocab/vann/">rdl</ns15:preferredNamespacePrefix>
+    <ns16:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns16="http://purl.org/vocab/vann/" />
+    <ns17:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD" xmlns:ns17="http://rdfs.org/ns/void#" />
+    <ns18:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples" xmlns:ns18="http://rdfs.org/ns/void#" />
+    <ns19:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester" xmlns:ns19="http://rdfs.org/ns/void#" />
+    <ns20:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML" xmlns:ns20="http://rdfs.org/ns/void#" />
+    <ns21:feature rdf:resource="http://www.w3.org/ns/formats/Turtle" xmlns:ns21="http://rdfs.org/ns/void#" />
+    <ns22:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql" xmlns:ns22="http://rdfs.org/ns/void#" />
+    <rdfs:comment rdf:datatype="&xsd;string">ChEBI entities ontology for PLM RDL. Disclaimer: This ontology is based on an earlier, unspecified version of IDO. Since parts of IDO have been removed in later releases, this ontology may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied. Your feedback will help us develop updated ontologies aligned with the latest IDO version.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">chebi</rdfs:label>
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <ns0:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/chebi-adapt/0.9.2" />
+    <ns0:versionInfo rdf:datatype="&xsd;string">0.9.2</ns0:versionInfo>
+    <ns23:changeNote rdf:datatype="&xsd;string" xmlns:ns23="http://www.w3.org/2004/02/skos/core#">2026-08-25: Added direct skos:definition annotations to PLM RDL resources without iof-av:naturalLanguageDefinition, using applicable rdfs:comment values.</ns23:changeNote>
+    <ns24:changeNote rdf:datatype="&xsd;string" xmlns:ns24="http://www.w3.org/2004/02/skos/core#">Added chebi entities.</ns24:changeNote>
+    <ns25:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/chebi-adapt" xmlns:ns25="http://xmlns.com/foaf/0.1/" />
+  </ns0:Ontology>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/core">
+    <ns26:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete" xmlns:ns26="http://ns.ottr.xyz/0.4/" />
+    <ns27:creator rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns27="http://purl.org/dc/elements/1.1/" />
+    <ns28:description rdf:datatype="&xsd;string" xmlns:ns28="http://purl.org/dc/elements/1.1/">Core ontology for PLM RDL. Disclaimer: This ontology is based on an earlier, unspecified version of IDO and may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied.</ns28:description>
+    <ns29:title rdf:datatype="&xsd;string" xmlns:ns29="http://purl.org/dc/elements/1.1/">core</ns29:title>
+    <ns30:issued rdf:datatype="&xsd;date" xmlns:ns30="http://purl.org/dc/terms/">2022-01-26</ns30:issued>
+    <ns31:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" xmlns:ns31="http://purl.org/dc/terms/" />
+    <ns32:modified rdf:datatype="&xsd;date" xmlns:ns32="http://purl.org/dc/terms/">2022-09-26</ns32:modified>
+    <ns33:publisher rdf:resource="http://www.posccaesar.org/" xmlns:ns33="http://purl.org/dc/terms/" />
+    <ns34:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns34="http://purl.org/pav/" />
+    <ns35:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core/0.9.0" xmlns:ns35="http://purl.org/pav/" />
+    <ns36:lastUpdateOn rdf:datatype="&xsd;dateTime" xmlns:ns36="http://purl.org/pav/">2022-09-26T23:40:00Z</ns36:lastUpdateOn>
+    <ns37:preferredNamespacePrefix rdf:datatype="&xsd;string" xmlns:ns37="http://purl.org/vocab/vann/">rdl</ns37:preferredNamespacePrefix>
+    <ns38:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns38="http://purl.org/vocab/vann/" />
+    <ns39:exampleResource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011" xmlns:ns39="http://rdfs.org/ns/void#" />
+    <ns40:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD" xmlns:ns40="http://rdfs.org/ns/void#" />
+    <ns41:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples" xmlns:ns41="http://rdfs.org/ns/void#" />
+    <ns42:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester" xmlns:ns42="http://rdfs.org/ns/void#" />
+    <ns43:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML" xmlns:ns43="http://rdfs.org/ns/void#" />
+    <ns44:feature rdf:resource="http://www.w3.org/ns/formats/Turtle" xmlns:ns44="http://rdfs.org/ns/void#" />
+    <ns45:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql" xmlns:ns45="http://rdfs.org/ns/void#" />
+    <rdfs:comment rdf:datatype="&xsd;string">Core ontology for PLM RDL. Disclaimer: This ontology is based on an earlier, unspecified version of IDO. Since parts of IDO have been removed in later releases, this ontology may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied. Your feedback will help us develop updated ontologies aligned with the latest IDO version.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">core</rdfs:label>
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/lis14/ont/core" />
+    <ns0:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core/0.9.1" />
+    <ns0:versionInfo rdf:datatype="&xsd;string">0.9.1</ns0:versionInfo>
+    <ns46:changeNote rdf:datatype="&xsd;string" xmlns:ns46="http://www.w3.org/2004/02/skos/core#">2026-08-25: Added direct skos:definition annotations to PLM RDL resources without iof-av:naturalLanguageDefinition, using applicable rdfs:comment values.</ns46:changeNote>
+    <ns47:changeNote rdf:datatype="&xsd;string" xmlns:ns47="http://www.w3.org/2004/02/skos/core#">Moved definitions from core to chebi/uom.</ns47:changeNote>
+    <ns48:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/core" xmlns:ns48="http://xmlns.com/foaf/0.1/" />
+  </ns0:Ontology>
+  <ns1:Provenance rdf:about="http://rds.posccaesar.org/ontology/plm/ont/core-provenance">
+    <ns1:hasLogEntry rdf:resource="https://posccaesar.org/provisioning/logentry/47fe2b41-80a2-473a-962d-bd4e57748611" />
+    <ns1:referent rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+  </ns1:Provenance>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/document">
+    <ns49:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete" xmlns:ns49="http://ns.ottr.xyz/0.4/" />
+    <ns50:creator rdf:resource="https://orcid.org/0000-0001-8076-7460" xmlns:ns50="http://purl.org/dc/elements/1.1/" />
+    <ns51:description rdf:datatype="&xsd;string" xmlns:ns51="http://purl.org/dc/elements/1.1/">Document ontology for PLM RDL. Disclaimer: This ontology is based on an earlier, unspecified version of IDO and may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied.</ns51:description>
+    <ns52:title rdf:datatype="&xsd;string" xmlns:ns52="http://purl.org/dc/elements/1.1/">document</ns52:title>
+    <ns53:issued rdf:datatype="&xsd;date" xmlns:ns53="http://purl.org/dc/terms/">2022-02-25</ns53:issued>
+    <ns54:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" xmlns:ns54="http://purl.org/dc/terms/" />
+    <ns55:modified rdf:datatype="&xsd;date" xmlns:ns55="http://purl.org/dc/terms/">2022-09-26</ns55:modified>
+    <ns56:publisher rdf:resource="http://www.posccaesar.org/" xmlns:ns56="http://purl.org/dc/terms/" />
+    <ns57:createdBy rdf:resource="https://orcid.org/0000-0001-8076-7460" xmlns:ns57="http://purl.org/pav/" />
+    <ns58:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/document/0.9.0" xmlns:ns58="http://purl.org/pav/" />
+    <ns59:lastUpdateOn rdf:datatype="&xsd;dateTime" xmlns:ns59="http://purl.org/pav/">2022-09-26T23:40:00Z</ns59:lastUpdateOn>
+    <ns60:preferredNamespacePrefix rdf:datatype="&xsd;string" xmlns:ns60="http://purl.org/vocab/vann/">rdl</ns60:preferredNamespacePrefix>
+    <ns61:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns61="http://purl.org/vocab/vann/" />
+    <ns62:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD" xmlns:ns62="http://rdfs.org/ns/void#" />
+    <ns63:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples" xmlns:ns63="http://rdfs.org/ns/void#" />
+    <ns64:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester" xmlns:ns64="http://rdfs.org/ns/void#" />
+    <ns65:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML" xmlns:ns65="http://rdfs.org/ns/void#" />
+    <ns66:feature rdf:resource="http://www.w3.org/ns/formats/Turtle" xmlns:ns66="http://rdfs.org/ns/void#" />
+    <ns67:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql" xmlns:ns67="http://rdfs.org/ns/void#" />
+    <rdfs:comment rdf:datatype="&xsd;string">Document ontology for PLM RDL. Disclaimer: This ontology is based on an earlier, unspecified version of IDO. Since parts of IDO have been removed in later releases, this ontology may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied. Your feedback will help us develop updated ontologies aligned with the latest IDO version.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">document</rdfs:label>
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <ns0:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/document/0.9.1" />
+    <ns0:versionInfo rdf:datatype="&xsd;string">0.9.1</ns0:versionInfo>
+    <ns68:changeNote rdf:datatype="&xsd;string" xmlns:ns68="http://www.w3.org/2004/02/skos/core#">Moved definitions from core to chebi/uom.</ns68:changeNote>
+    <ns69:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/document" xmlns:ns69="http://xmlns.com/foaf/0.1/" />
+  </ns0:Ontology>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/process">
+    <ns70:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete" xmlns:ns70="http://ns.ottr.xyz/0.4/" />
+    <ns71:contributor rdf:resource="https://dblp.org/pid/227/6122.html" xmlns:ns71="http://purl.org/dc/elements/1.1/" />
+    <ns72:contributor rdf:resource="https://orcid.org/0000-0002-1172-478X" xmlns:ns72="http://purl.org/dc/elements/1.1/" />
+    <ns73:creator rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns73="http://purl.org/dc/elements/1.1/" />
+    <ns74:description rdf:datatype="&xsd;string" xmlns:ns74="http://purl.org/dc/elements/1.1/">Process ontology for PLM RDL. Includes unit operations, reaction, transport. Disclaimer: This ontology is based on an earlier, unspecified version of IDO and may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied.</ns74:description>
+    <ns75:title rdf:datatype="&xsd;string" xmlns:ns75="http://purl.org/dc/elements/1.1/">process</ns75:title>
+    <ns76:issued rdf:datatype="&xsd;date" xmlns:ns76="http://purl.org/dc/terms/">2021-08-30</ns76:issued>
+    <ns77:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" xmlns:ns77="http://purl.org/dc/terms/" />
+    <ns78:modified rdf:datatype="&xsd;date" xmlns:ns78="http://purl.org/dc/terms/">2022-09-26</ns78:modified>
+    <ns79:publisher rdf:resource="http://www.posccaesar.org/" xmlns:ns79="http://purl.org/dc/terms/" />
+    <ns80:subject rdf:resource="https://en.wikipedia.org/wiki/Chemical_plant" xmlns:ns80="http://purl.org/dc/terms/" />
+    <ns81:contributedBy rdf:resource="https://dblp.org/pid/227/6122.html" xmlns:ns81="http://purl.org/pav/" />
+    <ns82:contributedBy rdf:resource="https://orcid.org/0000-0002-1172-478X" xmlns:ns82="http://purl.org/pav/" />
+    <ns83:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns83="http://purl.org/pav/" />
+    <ns84:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process/0.9.0" xmlns:ns84="http://purl.org/pav/" />
+    <ns85:lastUpdateOn rdf:datatype="&xsd;dateTime" xmlns:ns85="http://purl.org/pav/">2022-09-26T23:40:00Z</ns85:lastUpdateOn>
+    <ns86:preferredNamespacePrefix rdf:datatype="&xsd;string" xmlns:ns86="http://purl.org/vocab/vann/">rdl</ns86:preferredNamespacePrefix>
+    <ns87:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns87="http://purl.org/vocab/vann/" />
+    <ns88:exampleResource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011" xmlns:ns88="http://rdfs.org/ns/void#" />
+    <ns89:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD" xmlns:ns89="http://rdfs.org/ns/void#" />
+    <ns90:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples" xmlns:ns90="http://rdfs.org/ns/void#" />
+    <ns91:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester" xmlns:ns91="http://rdfs.org/ns/void#" />
+    <ns92:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML" xmlns:ns92="http://rdfs.org/ns/void#" />
+    <ns93:feature rdf:resource="http://www.w3.org/ns/formats/Turtle" xmlns:ns93="http://rdfs.org/ns/void#" />
+    <ns94:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql" xmlns:ns94="http://rdfs.org/ns/void#" />
+    <rdfs:comment rdf:datatype="&xsd;string">Process ontology for PLM RDL. Includes unit operations, reaction, transport. Disclaimer: This ontology is based on an earlier, unspecified version of IDO. Since parts of IDO have been removed in later releases, this ontology may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied. Your feedback will help us develop updated ontologies aligned with the latest IDO version.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">process</rdfs:label>
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <ns0:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process/0.9.1" />
+    <ns0:versionInfo rdf:datatype="&xsd;string">0.9.1</ns0:versionInfo>
+    <ns95:changeNote rdf:datatype="&xsd;string" xmlns:ns95="http://www.w3.org/2004/02/skos/core#">2026-08-25: Added direct skos:definition annotations to PLM RDL resources without iof-av:naturalLanguageDefinition, using applicable rdfs:comment values.</ns95:changeNote>
+    <ns96:changeNote rdf:datatype="&xsd;string" xmlns:ns96="http://www.w3.org/2004/02/skos/core#">Changed sparql endpoint.</ns96:changeNote>
+    <ns97:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/process" xmlns:ns97="http://xmlns.com/foaf/0.1/" />
+  </ns0:Ontology>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/uom">
+    <ns98:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete" xmlns:ns98="http://ns.ottr.xyz/0.4/" />
+    <ns99:creator rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns99="http://purl.org/dc/elements/1.1/" />
+    <ns100:description rdf:datatype="&xsd;string" xmlns:ns100="http://purl.org/dc/elements/1.1/">Unit of measure ontology for PLM RDL. Includes cross-references to other sources of interest. Disclaimer: This ontology is based on an earlier, unspecified version of IDO and may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied.</ns100:description>
+    <ns101:title rdf:datatype="&xsd;string" xmlns:ns101="http://purl.org/dc/elements/1.1/">uom</ns101:title>
+    <ns102:issued rdf:datatype="&xsd;date" xmlns:ns102="http://purl.org/dc/terms/">2021-10-30</ns102:issued>
+    <ns103:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" xmlns:ns103="http://purl.org/dc/terms/" />
+    <ns104:modified rdf:datatype="&xsd;date" xmlns:ns104="http://purl.org/dc/terms/">2022-09-26</ns104:modified>
+    <ns105:publisher rdf:resource="http://www.posccaesar.org/" xmlns:ns105="http://purl.org/dc/terms/" />
+    <ns106:subject rdf:resource="https://en.wikipedia.org/wiki/Unit_of_measurement" xmlns:ns106="http://purl.org/dc/terms/" />
+    <ns107:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns107="http://purl.org/pav/" />
+    <ns108:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/uom/0.9.0" xmlns:ns108="http://purl.org/pav/" />
+    <ns109:lastUpdateOn rdf:datatype="&xsd;dateTime" xmlns:ns109="http://purl.org/pav/">2022-09-26T23:40:00Z</ns109:lastUpdateOn>
+    <ns110:preferredNamespacePrefix rdf:datatype="&xsd;string" xmlns:ns110="http://purl.org/vocab/vann/">rdl</ns110:preferredNamespacePrefix>
+    <ns111:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns111="http://purl.org/vocab/vann/" />
+    <ns112:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD" xmlns:ns112="http://rdfs.org/ns/void#" />
+    <ns113:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples" xmlns:ns113="http://rdfs.org/ns/void#" />
+    <ns114:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester" xmlns:ns114="http://rdfs.org/ns/void#" />
+    <ns115:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML" xmlns:ns115="http://rdfs.org/ns/void#" />
+    <ns116:feature rdf:resource="http://www.w3.org/ns/formats/Turtle" xmlns:ns116="http://rdfs.org/ns/void#" />
+    <ns117:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql" xmlns:ns117="http://rdfs.org/ns/void#" />
+    <rdfs:comment rdf:datatype="&xsd;string">Unit of measure ontology for PLM RDL. Includes cross-references to other sources of interest. Disclaimer: This ontology is based on an earlier, unspecified version of IDO. Since parts of IDO have been removed in later releases, this ontology may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied. Your feedback will help us develop updated ontologies aligned with the latest IDO version.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">uom</rdfs:label>
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <ns0:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/uom/0.9.1" />
+    <ns0:versionInfo rdf:datatype="&xsd;string">0.9.1</ns0:versionInfo>
+    <ns118:changeNote rdf:datatype="&xsd;string" xmlns:ns118="http://www.w3.org/2004/02/skos/core#">2026-08-25: Added direct skos:definition annotations to PLM RDL resources without iof-av:naturalLanguageDefinition, using applicable rdfs:comment values.</ns118:changeNote>
+    <ns119:changeNote rdf:datatype="&xsd;string" xmlns:ns119="http://www.w3.org/2004/02/skos/core#">Moved definitions from core to chebi/uom.</ns119:changeNote>
+    <ns120:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/uom" xmlns:ns120="http://xmlns.com/foaf/0.1/" />
+  </ns0:Ontology>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+  </ns0:ObjectProperty>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011">
+    <rdfs:label rdf:datatype="&xsd;string">Pumping</rdfs:label>
+  </ns0:Class>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000501">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">defining source for shortcut quantification data property</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000502">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">quality type of shortcut property</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000503">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">quantification type of shortcut property</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000504">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">datum type of shortcut property</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000505">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">unit of measure of shortcut property</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000510">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">default unit of measure</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001501">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">External RDL entity collection</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001502">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">External RDL entity</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001503">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">External RDL classifier</rdfs:label>
+  </ns0:Class>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">CFIHOS RDL entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">OntoCAPE ontology entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">PCA RDL entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002004">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">DEXPI model entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003536">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Discipline</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003537">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Specification</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003538">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Standard</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003539">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Industry Organization Standard</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003540">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">International Standard</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003541">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Material Standard</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003542">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">National Standard</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003543">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Technical Standard</rdfs:label>
+  </ns0:Class>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003544">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">specified magnitude</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003545">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">is specified magnitude of</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003546">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">measured magnitude</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003547">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">is measured magnitude of</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003548">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">rated magnitude</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003549">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">is rated magnitude of</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003550">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">nominal magnitude</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003551">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">is nominal magnitude of</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003552">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">has no match in scheme</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003553">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">SI Quantity Class</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003554">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">SI base quantity</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003555">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">SI derived quantity</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003556">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">SI unit</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003557">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">SI base unit</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003558">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">SI derived unit</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003559">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">non-SI Quantity Class</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003560">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">non-SI unit of measure</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003728">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">SI Physical Dimension</rdfs:label>
+  </ns0:Class>
+  <ns0:FunctionalProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003729">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">has dimension</rdfs:label>
+  </ns0:FunctionalProperty>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003730">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">dimension of</rdfs:label>
+  </ns0:ObjectProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003769">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">applicable unit of measure</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003770">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">OM ontology entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003771">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">QUDT ontology entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003772">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">External RDL individual</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004032">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Interpreted Quantity Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004033">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity Datum with specified Provenance</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004034">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity Datum with specified Scope</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004035">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Range Specifying Quantity Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004036">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Regularity Specified Quantity Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004037">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Specified Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004038">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Calculated Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004039">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Measured Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004040">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Estimated Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004041">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Set Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004042">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Design Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004043">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Operating Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004044">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Test Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004045">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Nominal Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004046">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Normal Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004047">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Average Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004048">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Maximum Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004049">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Minimum Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004050">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Actual Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004051">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Continuous Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004052">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Absolute Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004054">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Quantity Class</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004908">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Document</rdfs:label>
+  </ns0:Class>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004914">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">ChEBI ontology entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004919">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Symbol</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004920">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">P&amp;ID Symbol</rdfs:label>
+  </ns0:Class>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004921">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">dexpi identifier</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004922">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Z004 identifier</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004923">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">ISA-5.1 identifier</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004924">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Symbol identifier</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004927">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">P&amp;ID Symbol</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004928">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">DEXPI P&amp;ID Symbol</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004935">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">ChEBI classifier</rdfs:label>
+  </ns0:Class>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005602">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">IEC CDD RDL entities</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005604">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Material Composition</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005606">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Chemical Composition Datum</rdfs:label>
+  </ns0:Class>
+  <ns0:DatatypeProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005608">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">minCarbonAtoms</rdfs:label>
+  </ns0:DatatypeProperty>
+  <ns0:DatatypeProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100005609">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">maxCarbonAtoms</rdfs:label>
+  </ns0:DatatypeProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006763">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-001 rationale</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006764">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-001 extended definition</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006765">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-001 interests stakeholder category</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006766">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-001 describes structural element</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006767">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-001 Information Item</rdfs:label>
+  </ns0:Class>
+  <ns0:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006768">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-001 definition</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006769">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-DP-002 Structural Facility Elements</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006770">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">ISO/IEC 81355 Information Item</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006771">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">NORSOK Z-001 Information Item Category</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006772">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">CFIHOS Discipline</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns2:PCA_100001501 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100006773">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <rdfs:label rdf:datatype="&xsd;string">Z-001 Information Item</rdfs:label>
+  </ns2:PCA_100001501>
+  <ns0:AnnotationProperty rdf:about="&rdfs;comment">
+    <rdfs:label rdf:datatype="&xsd;string">comment</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="&rdfs;label">
+    <rdfs:label rdf:datatype="&xsd;string">label</rdfs:label>
+  </ns0:AnnotationProperty>
+  <rdfs:Datatype rdf:about="&xsd;date">
+    <rdf:type rdf:resource="&rdfs;Datatype" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="&xsd;dateTime">
+    <rdf:type rdf:resource="&rdfs;Datatype" />
+  </rdfs:Datatype>
+  <ns0:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty" />
+  </ns0:AnnotationProperty>
+  <ns3:LogEntry rdf:about="https://posccaesar.org/provisioning/logentry/47fe2b41-80a2-473a-962d-bd4e57748611">
+    <rdf:type rdf:resource="https://posccaesar.org/metadata/log/UploadLogEntry" />
+  </ns3:LogEntry>
 </rdf:RDF>

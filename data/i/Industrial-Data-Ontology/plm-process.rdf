@@ -1,1116 +1,307 @@
-<rdf:RDF
-    xmlns:req="https://w3id.org/requirement-ontology/rdl/"
-    xmlns:o-owl-ax="http://tpl.ottr.xyz/owl/axiom/0.1/"
-    xmlns:o-owl-dec="http://tpl.ottr.xyz/owl/declaration/0.1/"
-    xmlns:o-docttr="http://tpl.ottr.xyz/p/docttr/0.1/"
-    xmlns:o-owl-ma="http://tpl.ottr.xyz/owl/macro/0.1/"
-    xmlns:ntpl="http://norsok.org/templates/"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:pca="http://data.posccaesar.org/rdl/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
-    xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:orcid="https://orcid.org/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:lis="http://rds.posccaesar.org/ontology/lis14/rdl/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdl="http://rds.posccaesar.org/ontology/plm/rdl/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:rrdl="http://w3id.org/readi/rdl/"
-    xmlns:void="http://rdfs.org/ns/void#"
-    xmlns:o-rdfs="http://tpl.ottr.xyz/rdfs/0.1/"
-    xmlns:plmtpl="http://rds.posccaesar.org/ontology/plm/tpl/0.1/"
-    xmlns:listpl="http://rds.posccaesar.org/ontology/lis14/tpl/0.1/"
-    xmlns:ottr="http://ns.ottr.xyz/0.4/"
-    xmlns:ex="http://example.org/"
-    xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:o-owl-re="http://tpl.ottr.xyz/owl/restriction/0.1/"
-    xmlns:pav="http://purl.org/pav/"
-    xmlns:o-rdf="http://tpl.ottr.xyz/rdf/0.1/"
-    xmlns:reqtpl="http://w3id.org/requirement-ontology/tpl/0.1/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
-    xmlns:o-owl-ut="http://tpl.ottr.xyz/owl/util/0.1/">
-  <owl:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/process">
-    <foaf:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/process"/>
-    <vann:preferredNamespacePrefix>rdl</vann:preferredNamespacePrefix>
-    <skos:changeNote>Changed sparql endpoint</skos:changeNote>
-    <void:exampleResource>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011"/>
-    </void:exampleResource>
-    <void:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql"/>
-    <dcterms:publisher rdf:resource="http://www.posccaesar.org/"/>
-    <rdfs:comment>Process ontology for PLM RDL. Includes unit operations, reaction, transport.</rdfs:comment>
-    <vann:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/"/>
-    <dc:title>process</dc:title>
-    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-    <rdfs:label>process</rdfs:label>
-    <pav:contributedBy rdf:resource="https://dblp.org/pid/227/6122.html"/>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
-    <pav:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process/0.9.0"/>
-    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2021-08-30</dcterms:issued>
-    <owl:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core"/>
-    <ottr:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete"/>
-    <owl:versionInfo>0.9.1</owl:versionInfo>
-    <dc:creator rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <dc:contributor rdf:resource="https://orcid.org/0000-0002-1172-478X"/>
-    <dc:contributor rdf:resource="https://dblp.org/pid/227/6122.html"/>
-    <pav:lastUpdateOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-09-26T23:40:00Z</pav:lastUpdateOn>
-    <owl:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process/0.9.1"/>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
-    <pav:contributedBy rdf:resource="https://orcid.org/0000-0002-1172-478X"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2022-09-26</dcterms:modified>
-    <dcterms:subject rdf:resource="https://en.wikipedia.org/wiki/Chemical_plant"/>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD"/>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
-    <dc:description>Process ontology for PLM RDL. Includes unit operations, reaction, transport.</dc:description>
-    <void:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester"/>
-  </owl:Ontology>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138">
-    <skos:closeMatch>
-      <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9656792">
-        <rdfs:label>REDUCING (PCA RDL concept)</rdfs:label>
-        <rdfs:isDefinedBy>
-          <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003">
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9657467">
-                <rdfs:label>RECEIVING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9657467</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9685322">
-                <rdfs:label>CONNECTING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9685322</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9693827">
-                <rdfs:label>BARRING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9693827</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9679517">
-                <rdfs:label>DESORBING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9679517</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS10792819">
-                <rdfs:label>VAPOUR-LIQUID SEPARATION (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS10792819</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9693287">
-                <rdfs:label>BIFURCATING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9693287</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9681902">
-                <rdfs:label>DEFLECTING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9681902</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9685097">
-                <rdfs:label>CONTROLLING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9685097</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9654902">
-                <rdfs:label>SENDING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9654902</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9671102">
-                <rdfs:label>FIXING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9671102</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS327667805">
-                <rdfs:label>CLOSING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS327667805</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9652292">
-                <rdfs:label>TRANSPORTING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9652292</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9654947">
-                <rdfs:label>SENSING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9654947</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9652247">
-                <rdfs:label>TRANSMITTING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9652247</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9657917">
-                <rdfs:label>PUMPING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9657917</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9661922">
-                <rdfs:label>MEASURING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9661922</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9685862">
-                <rdfs:label>CONDUCTING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9685862</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9673082">
-                <rdfs:label>EXPANDING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9673082</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS10802134">
-                <rdfs:label>GAS COMPRESSION (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS10802134</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9651302">
-                <rdfs:label>WEIGHING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9651302</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS16015785">
-                <rdfs:label>PROCESS (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS16015785</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9647297">
-                <rdfs:label>SEPARATING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9647297</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS365579">
-                <rdfs:label>ENTROPY (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS365579</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9663902">
-                <rdfs:label>INJECTING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9663902</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9698327">
-                <rdfs:label>ABSORBING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9698327</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9677312">
-                <rdfs:label>DISPLAYING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9677312</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9653822">
-                <rdfs:label>STORING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9653822</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9666872">
-                <rdfs:label>HEATING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9666872</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member rdf:resource="http://data.posccaesar.org/rdl/RDS9656792"/>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9667367">
-                <rdfs:label>GUIDING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9667367</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS15936236">
-                <rdfs:label>TANK STORAGE (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS15936236</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9684422">
-                <rdfs:label>COOLING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9684422</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS359189">
-                <rdfs:label>ENTHALPY (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS359189</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://data.posccaesar.org/rdl/RDS9711287">
-                <rdfs:label>CHEMICAL REACTING (PCA RDL concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002003"/>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>RDS9711287</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-          </rdf:Description>
-        </rdfs:isDefinedBy>
-        <rdfs:comment>External RDL entity</rdfs:comment>
-        <dcterms:identifier>RDS9656792</dcterms:identifier>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </rdl:PCA_100001503>
-    </skos:closeMatch>
-    <rdfs:label>Reducing</rdfs:label>
-    <rdfs:comment>An activity that reduces size, amount, extent, or number</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9681902"/>
-    <rdfs:label>Deflecting</rdfs:label>
-    <rdfs:comment>Turning away from a straight course of fixed direction</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9651302"/>
-    <rdfs:label>Weighing</rdfs:label>
-    <rdfs:comment>Measuring a mass</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004146">
-    <rdfs:label>Transmitting Analog Signal</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9685322"/>
-    <rdfs:label>Connecting</rdfs:label>
-    <rdfs:comment>Joining or fastening, or linking together, often by means of something intervening.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9671102"/>
-    <rdfs:label>Fixing</rdfs:label>
-    <rdfs:comment>Acting by making firm, stable or stationary</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9677312"/>
-    <rdfs:label>Displaying</rdfs:label>
-    <rdfs:comment>Exhibiting to the sight or mind</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003">
-    <skos:closeMatch>
-      <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002">
-        <rdfs:label>UnitOperation (OntoCAPE concept)</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-        <rdfs:isDefinedBy>
-          <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002">
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009">
-                <rdfs:label>TemperatureChange (OntoCAPE concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002"/>
-                <rdfs:comment>OntoCAPE concept 'TemperatureChange' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>TemperatureChange</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007">
-                <rdfs:label>PressureChangeOfLiquid (OntoCAPE concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002"/>
-                <rdfs:comment>OntoCAPE concept 'PressureChangeOfLiquid' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>PressureChangeOfLiquid</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006">
-                <rdfs:label>PressureChangeOfGas (OntoCAPE concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002"/>
-                <rdfs:comment>OntoCAPE concept 'PressureChangeOfGas' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>PressureChangeOfGas</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005">
-                <rdfs:label>Separation (OntoCAPE concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002"/>
-                <rdfs:comment>OntoCAPE concept 'Separation' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>Separation</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004">
-                <rdfs:label>Reaction (OntoCAPE concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002"/>
-                <rdfs:comment>OntoCAPE concept 'Reaction' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>Reaction</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003">
-                <rdfs:label>EnthalpyChange (OntoCAPE concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002"/>
-                <rdfs:comment>OntoCAPE concept 'EnthalpyChange' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>EnthalpyChange</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-            <skos:member rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002"/>
-            <skos:member>
-              <rdl:PCA_100001503 rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001">
-                <rdfs:label>ProcessStep (OntoCAPE concept)</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape"/>
-                <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100002002"/>
-                <rdfs:comment>OntoCAPE concept 'ProcessStep' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-                <rdfs:comment>External RDL entity</rdfs:comment>
-                <dcterms:identifier>ProcessStep</dcterms:identifier>
-                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-              </rdl:PCA_100001503>
-            </skos:member>
-          </rdf:Description>
-        </rdfs:isDefinedBy>
-        <rdfs:comment>OntoCAPE concept 'UnitOperation' is defined in the OntoCAPE 'process.owl' module.</rdfs:comment>
-        <rdfs:comment>External RDL entity</rdfs:comment>
-        <dcterms:identifier>UnitOperation</dcterms:identifier>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </rdl:PCA_100001503>
-    </skos:closeMatch>
-    <rdfs:label>Unit Operation</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#UnitOperation'</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004"/>
-          <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005"/>
-          <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006"/>
-          <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007"/>
-          <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008"/>
-          <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004142">
-    <rdfs:label>Opening</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013">
-    <skos:closeMatch rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009"/>
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9684422"/>
-    <rdfs:label>Cooling</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#TemperatureChange'</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005">
-    <skos:relatedMatch rdf:resource="http://data.posccaesar.org/rdl/RDS359189"/>
-    <skos:closeMatch rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003"/>
-    <rdfs:label>Enthalpy Change</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#EnthalpyChange'</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9657467"/>
-    <rdfs:label>Receiving</rdfs:label>
-    <rdfs:comment>Acquiring in a passive way</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004144">
-    <rdfs:label>Transmitting Optical</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS15936236"/>
-    <rdfs:label>Tank Storage</rdfs:label>
-    <rdfs:comment>Not in OntoCAPE</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS16015785"/>
-    <rdfs:label>Plant Process</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9654902"/>
-    <rdfs:label>Sending</rdfs:label>
-    <rdfs:comment>Acting by directing, ordering, or requesting to go</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011">
-    <skos:closeMatch rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007"/>
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9657917"/>
-    <rdfs:label>Pumping</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#PressureChangeOfLiquid'</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9685097"/>
-    <rdfs:label>Controlling</rdfs:label>
-    <rdfs:comment>Influencing by exercising restraining or directing guidance</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS10792819"/>
-    <rdfs:label>Gas Liquid Separation</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#Separation'</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006">
-    <skos:closeMatch rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004"/>
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9711287"/>
-    <rdfs:label>Reaction</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#Reaction'</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9653822"/>
-    <rdfs:label>Containing</rdfs:label>
-    <rdfs:comment>Not in OntoCAPE</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9667367"/>
-    <rdfs:label>Guiding</rdfs:label>
-    <rdfs:comment>Acting by directing, regulating, or managing toward some desirable end, course, way, or development</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9673082"/>
-    <rdfs:label>Expanding</rdfs:label>
-    <rdfs:comment>Increasing in extent, size, number, volume, or scope</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004145">
-    <rdfs:label>Transmitting Radio Frequency</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9661922"/>
-    <rdfs:label>Measuring</rdfs:label>
-    <rdfs:comment>Transforming an aspect of something in a value expressed in a unit of measure</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004147">
-    <rdfs:label>Transmitting Digital Signal</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9693287"/>
-    <rdfs:label>Bifurcating</rdfs:label>
-    <rdfs:comment>Splitting by branching or separating in two parts</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS327667805"/>
-    <rdfs:label>Closing</rdfs:label>
-    <rdfs:comment>Acting by contracting, folding, swinging, or sliding so as to leave no opening.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9698327"/>
-    <rdfs:label>Absorbing</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#Separation'</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9693827"/>
-    <rdfs:label>Barring</rdfs:label>
-    <rdfs:comment>Blocking by obstructing, block up, or shut off by or as if by a barrier</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002">
-    <skos:closeMatch rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001"/>
-    <rdfs:label>Process Step</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#ProcessStep'</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9652247"/>
-    <rdfs:label>Transmitting</rdfs:label>
-    <rdfs:comment>Sending out a signal through some carrier</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004">
-    <skos:relatedMatch rdf:resource="http://data.posccaesar.org/rdl/RDS365579"/>
-    <rdfs:label>Entropy Change</rdfs:label>
-    <rdfs:comment>Not in OntoCAPE</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9685862"/>
-    <rdfs:label>Conducting</rdfs:label>
-    <rdfs:comment>Conveying energy or material</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9654947"/>
-    <rdfs:label>Sensing</rdfs:label>
-    <rdfs:comment>Observing by touching with an object sensitive for an intended property</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010">
-    <skos:closeMatch rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006"/>
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS10802134"/>
-    <rdfs:label>Compression</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#PressureChangeOfGas'</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9666872"/>
-    <rdfs:label>Heating</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#TemperatureChange'</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9663902"/>
-    <rdfs:label>Injecting</rdfs:label>
-    <rdfs:comment>Inserting a substance into some material using some force</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007">
-    <skos:closeMatch rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005"/>
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9647297"/>
-    <rdfs:label>Separating</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#Separation'</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9679517"/>
-    <rdfs:label>Desorbing</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#Separation'</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009">
-    <skos:closeMatch rdf:resource="http://data.posccaesar.org/rdl/RDS9652292"/>
-    <rdfs:label>Transporting</rdfs:label>
-    <rdfs:comment>Not in OntoCAPE</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Class>
-  <owl:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000019">
-    <rdfs:label>Three Phase Separation</rdfs:label>
-    <rdfs:comment>See OntoCAPE 'process.owl#Separation'</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007"/>
-  </owl:Class>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9652247"/>
-    <owl:annotatedProperty>
-      <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    </owl:annotatedProperty>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9671102"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003001"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9681902"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9663902"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9654902"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003002"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS327667805"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9698327"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9652292"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9657467"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003007"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9685097"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003006"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9693827"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003005"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9647297"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9656792"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <skos:note>not an Activity.</skos:note>
-    <skos:note>ENTHALPY in PCA RDL is a SinglePropertyDimension entity</skos:note>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS359189"/>
-    <owl:annotatedProperty>
-      <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-    </owl:annotatedProperty>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9693287"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9657917"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9673082"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9679517"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9661922"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9654947"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9651302"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9685322"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9666872"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003009"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS10792819"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018"/>
-  </owl:Axiom>
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#member"/>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9677312"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003004"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100003003"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS10802134"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9685862"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <skos:note>not an Activity.</skos:note>
-    <skos:note>ENTROPY in PCA RDL is a SinglePropertyDimension entity</skos:note>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS365579"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2022-02-22T09:43:38Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-9888-0557"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9667367"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS15936236"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9684422"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9653822"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS16015785"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001"/>
-  </owl:Axiom>
-  <owl:Axiom>
-    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2021-08-31T09:00:22Z</pav:createdOn>
-    <pav:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321"/>
-    <owl:annotatedTarget rdf:resource="http://data.posccaesar.org/rdl/RDS9711287"/>
-    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    <owl:annotatedSource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006"/>
-  </owl:Axiom>
+<?xml version="1.0" encoding="utf-16"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:ns0="http://www.w3.org/2002/07/owl#" xmlns:ns1="https://posccaesar.org/metadata/" xmlns:ns2="https://posccaesar.org/metadata/log/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+    <rdfs:label rdf:datatype="&xsd;string">issued</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+    <rdfs:label rdf:datatype="&xsd;string">license</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+    <rdfs:label rdf:datatype="&xsd;string">modified</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+    <rdfs:label rdf:datatype="&xsd;string">publisher</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/pav/contributedBy">
+    <rdfs:label rdf:datatype="&xsd;string">contributedBy</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/pav/createdBy">
+    <rdfs:label rdf:datatype="&xsd;string">Created by</rdfs:label>
+    <rdfs:label rdf:datatype="&xsd;string">createdBy</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/pav/derivedFrom">
+    <rdfs:label rdf:datatype="&xsd;string">derivedFrom</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="http://purl.org/pav/lastUpdateOn">
+    <rdfs:label rdf:datatype="&xsd;string">lastUpdateOn</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/core">
+    <rdfs:label rdf:datatype="&xsd;string">core</rdfs:label>
+  </ns0:Ontology>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/document">
+    <rdfs:label rdf:datatype="&xsd;string">document</rdfs:label>
+  </ns0:Ontology>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/equipment">
+    <ns3:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete" xmlns:ns3="http://ns.ottr.xyz/0.4/" />
+    <ns4:contributor rdf:resource="https://dblp.org/pid/227/6122.html" xmlns:ns4="http://purl.org/dc/elements/1.1/" />
+    <ns5:contributor rdf:resource="https://orcid.org/0000-0002-1172-478X" xmlns:ns5="http://purl.org/dc/elements/1.1/" />
+    <ns6:creator rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns6="http://purl.org/dc/elements/1.1/" />
+    <ns7:description rdf:datatype="&xsd;string" xmlns:ns7="http://purl.org/dc/elements/1.1/">Equipment ontology for PLM RDL. Demonstrates assignment of (only) function to generic equipment classes. Disclaimer: This ontology is based on an earlier, unspecified version of IDO and may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied.</ns7:description>
+    <ns8:title rdf:datatype="&xsd;string" xmlns:ns8="http://purl.org/dc/elements/1.1/">equipment</ns8:title>
+    <ns9:issued rdf:datatype="&xsd;date" xmlns:ns9="http://purl.org/dc/terms/">2021-08-27</ns9:issued>
+    <ns10:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" xmlns:ns10="http://purl.org/dc/terms/" />
+    <ns11:modified rdf:datatype="&xsd;date" xmlns:ns11="http://purl.org/dc/terms/">2022-09-26</ns11:modified>
+    <ns12:publisher rdf:resource="http://www.posccaesar.org/" xmlns:ns12="http://purl.org/dc/terms/" />
+    <ns13:subject rdf:resource="https://en.wikipedia.org/wiki/Chemical_plant" xmlns:ns13="http://purl.org/dc/terms/" />
+    <ns14:contributedBy rdf:resource="https://dblp.org/pid/227/6122.html" xmlns:ns14="http://purl.org/pav/" />
+    <ns15:contributedBy rdf:resource="https://orcid.org/0000-0002-1172-478X" xmlns:ns15="http://purl.org/pav/" />
+    <ns16:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns16="http://purl.org/pav/" />
+    <ns17:derivedFrom rdf:resource="https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape" xmlns:ns17="http://purl.org/pav/" />
+    <ns18:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/equipment/0.9.0" xmlns:ns18="http://purl.org/pav/" />
+    <ns19:lastUpdateOn rdf:datatype="&xsd;dateTime" xmlns:ns19="http://purl.org/pav/">2022-09-26T23:40:00Z</ns19:lastUpdateOn>
+    <ns20:preferredNamespacePrefix rdf:datatype="&xsd;string" xmlns:ns20="http://purl.org/vocab/vann/">rdl</ns20:preferredNamespacePrefix>
+    <ns21:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns21="http://purl.org/vocab/vann/" />
+    <ns22:exampleResource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001006" xmlns:ns22="http://rdfs.org/ns/void#" />
+    <ns23:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD" xmlns:ns23="http://rdfs.org/ns/void#" />
+    <ns24:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples" xmlns:ns24="http://rdfs.org/ns/void#" />
+    <ns25:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester" xmlns:ns25="http://rdfs.org/ns/void#" />
+    <ns26:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML" xmlns:ns26="http://rdfs.org/ns/void#" />
+    <ns27:feature rdf:resource="http://www.w3.org/ns/formats/Turtle" xmlns:ns27="http://rdfs.org/ns/void#" />
+    <ns28:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql" xmlns:ns28="http://rdfs.org/ns/void#" />
+    <rdfs:comment rdf:datatype="&xsd;string">Equipment ontology for PLM RDL. Demonstrates assignment of (only) function to generic equipment classes. Disclaimer: This ontology is based on an earlier, unspecified version of IDO. Since parts of IDO have been removed in later releases, this ontology may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied. Your feedback will help us develop updated ontologies aligned with the latest IDO version.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">equipment</rdfs:label>
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/document" />
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <ns0:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/equipment/0.9.1" />
+    <ns0:versionInfo rdf:datatype="&xsd;string">0.9.1</ns0:versionInfo>
+    <ns29:changeNote rdf:datatype="&xsd;string" xmlns:ns29="http://www.w3.org/2004/02/skos/core#">2026-08-25: Added direct skos:definition annotations to PLM RDL resources without iof-av:naturalLanguageDefinition, using applicable rdfs:comment values.</ns29:changeNote>
+    <ns30:changeNote rdf:datatype="&xsd;string" xmlns:ns30="http://www.w3.org/2004/02/skos/core#">Changed sparql endpoint.</ns30:changeNote>
+    <ns31:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/equipment" xmlns:ns31="http://xmlns.com/foaf/0.1/" />
+  </ns0:Ontology>
+  <ns0:Ontology rdf:about="http://rds.posccaesar.org/ontology/plm/ont/process">
+    <ns32:status rdf:resource="http://ns.ottr.xyz/0.4/incomplete" xmlns:ns32="http://ns.ottr.xyz/0.4/" />
+    <ns33:contributor rdf:resource="https://dblp.org/pid/227/6122.html" xmlns:ns33="http://purl.org/dc/elements/1.1/" />
+    <ns34:contributor rdf:resource="https://orcid.org/0000-0002-1172-478X" xmlns:ns34="http://purl.org/dc/elements/1.1/" />
+    <ns35:creator rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns35="http://purl.org/dc/elements/1.1/" />
+    <ns36:description rdf:datatype="&xsd;string" xmlns:ns36="http://purl.org/dc/elements/1.1/">Process ontology for PLM RDL. Includes unit operations, reaction, transport. Disclaimer: This ontology is based on an earlier, unspecified version of IDO and may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied.</ns36:description>
+    <ns37:title rdf:datatype="&xsd;string" xmlns:ns37="http://purl.org/dc/elements/1.1/">process</ns37:title>
+    <ns38:issued rdf:datatype="&xsd;date" xmlns:ns38="http://purl.org/dc/terms/">2021-08-30</ns38:issued>
+    <ns39:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/" xmlns:ns39="http://purl.org/dc/terms/" />
+    <ns40:modified rdf:datatype="&xsd;date" xmlns:ns40="http://purl.org/dc/terms/">2022-09-26</ns40:modified>
+    <ns41:publisher rdf:resource="http://www.posccaesar.org/" xmlns:ns41="http://purl.org/dc/terms/" />
+    <ns42:subject rdf:resource="https://en.wikipedia.org/wiki/Chemical_plant" xmlns:ns42="http://purl.org/dc/terms/" />
+    <ns43:contributedBy rdf:resource="https://dblp.org/pid/227/6122.html" xmlns:ns43="http://purl.org/pav/" />
+    <ns44:contributedBy rdf:resource="https://orcid.org/0000-0002-1172-478X" xmlns:ns44="http://purl.org/pav/" />
+    <ns45:createdBy rdf:resource="https://orcid.org/0000-0002-7167-7321" xmlns:ns45="http://purl.org/pav/" />
+    <ns46:hasPreviousVersion rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process/0.9.0" xmlns:ns46="http://purl.org/pav/" />
+    <ns47:lastUpdateOn rdf:datatype="&xsd;dateTime" xmlns:ns47="http://purl.org/pav/">2022-09-26T23:40:00Z</ns47:lastUpdateOn>
+    <ns48:preferredNamespacePrefix rdf:datatype="&xsd;string" xmlns:ns48="http://purl.org/vocab/vann/">rdl</ns48:preferredNamespacePrefix>
+    <ns49:preferredNamespaceUri rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/" xmlns:ns49="http://purl.org/vocab/vann/" />
+    <ns50:exampleResource rdf:resource="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011" xmlns:ns50="http://rdfs.org/ns/void#" />
+    <ns51:feature rdf:resource="http://www.w3.org/ns/formats/JSON-LD" xmlns:ns51="http://rdfs.org/ns/void#" />
+    <ns52:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples" xmlns:ns52="http://rdfs.org/ns/void#" />
+    <ns53:feature rdf:resource="http://www.w3.org/ns/formats/OWL_Manchester" xmlns:ns53="http://rdfs.org/ns/void#" />
+    <ns54:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML" xmlns:ns54="http://rdfs.org/ns/void#" />
+    <ns55:feature rdf:resource="http://www.w3.org/ns/formats/Turtle" xmlns:ns55="http://rdfs.org/ns/void#" />
+    <ns56:sparqlEndpoint rdf:resource="https://rds.posccaesar.org/ontology/sparql" xmlns:ns56="http://rdfs.org/ns/void#" />
+    <rdfs:comment rdf:datatype="&xsd;string">Process ontology for PLM RDL. Includes unit operations, reaction, transport. Disclaimer: This ontology is based on an earlier, unspecified version of IDO. Since parts of IDO have been removed in later releases, this ontology may include references that are not valid in the latest IDO version. It is published here to give users a starting point and inspiration for how IDO can be applied. Your feedback will help us develop updated ontologies aligned with the latest IDO version.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">process</rdfs:label>
+    <ns0:imports rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/core" />
+    <ns0:versionIRI rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process/0.9.1" />
+    <ns0:versionInfo rdf:datatype="&xsd;string">0.9.1</ns0:versionInfo>
+    <ns57:changeNote rdf:datatype="&xsd;string" xmlns:ns57="http://www.w3.org/2004/02/skos/core#">2026-08-25: Added direct skos:definition annotations to PLM RDL resources without iof-av:naturalLanguageDefinition, using applicable rdfs:comment values.</ns57:changeNote>
+    <ns58:changeNote rdf:datatype="&xsd;string" xmlns:ns58="http://www.w3.org/2004/02/skos/core#">Changed sparql endpoint.</ns58:changeNote>
+    <ns59:homepage rdf:resource="http://rds.posccaesar.org/ontology/plm/doc/process" xmlns:ns59="http://xmlns.com/foaf/0.1/" />
+  </ns0:Ontology>
+  <ns1:Provenance rdf:about="http://rds.posccaesar.org/ontology/plm/ont/process-provenance">
+    <ns1:hasLogEntry rdf:resource="https://posccaesar.org/provisioning/logentry/680810ff-0a23-4c57-a01e-e651c6dc47bb" />
+    <ns1:referent rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+  </ns1:Provenance>
+  <ns0:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+  </ns0:ObjectProperty>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000001">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Plant Process</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000002">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Process Step</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000003">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Unit Operation</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000004">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Entropy Change</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000005">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Enthalpy Change</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000006">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Reaction</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000007">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Separating</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000008">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Containing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000009">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Transporting</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000010">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Compression</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000011">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Pumping</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000012">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Heating</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000013">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Cooling</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000014">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Absorbing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000017">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Desorbing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000018">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Gas Liquid Separation</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000019">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Three Phase Separation</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100000021">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Tank Storage</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100001006">
+    <rdfs:label rdf:datatype="&xsd;string">Heat Exchanger</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004133">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Sensing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004134">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Weighing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004135">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Measuring</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004136">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Connecting</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004137">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Bifurcating</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004138">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Reducing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004139">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Expanding</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004140">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Controlling</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004141">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Closing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004142">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Opening</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004143">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Transmitting</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004144">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Transmitting Optical</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004145">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Transmitting Radio Frequency</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004146">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Transmitting Analog Signal</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004147">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Transmitting Digital Signal</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004148">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Fixing</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004149">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Guiding</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004150">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Sending</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004151">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Injecting</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004152">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Displaying</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004153">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Barring</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004154">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Receiving</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004155">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Conducting</rdfs:label>
+  </ns0:Class>
+  <ns0:Class rdf:about="http://rds.posccaesar.org/ontology/plm/rdl/PCA_100004156">
+    <rdfs:isDefinedBy rdf:resource="http://rds.posccaesar.org/ontology/plm/ont/process" />
+    <rdfs:label rdf:datatype="&xsd;string">Deflecting</rdfs:label>
+  </ns0:Class>
+  <ns0:AnnotationProperty rdf:about="&rdfs;comment">
+    <rdfs:label rdf:datatype="&xsd;string">comment</rdfs:label>
+  </ns0:AnnotationProperty>
+  <ns0:AnnotationProperty rdf:about="&rdfs;label">
+    <rdfs:label rdf:datatype="&xsd;string">label</rdfs:label>
+  </ns0:AnnotationProperty>
+  <rdfs:Datatype rdf:about="&xsd;date">
+    <rdf:type rdf:resource="&rdfs;Datatype" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="&xsd;dateTime">
+    <rdf:type rdf:resource="&rdfs;Datatype" />
+  </rdfs:Datatype>
+  <ns0:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty" />
+  </ns0:AnnotationProperty>
+  <ns2:LogEntry rdf:about="https://posccaesar.org/provisioning/logentry/680810ff-0a23-4c57-a01e-e651c6dc47bb">
+    <rdf:type rdf:resource="https://posccaesar.org/metadata/log/UploadLogEntry" />
+  </ns2:LogEntry>
 </rdf:RDF>
